@@ -1,5 +1,5 @@
 import spacy
-from spacy.cli.download import download as spacy_download   
+from spacy.cli.download import download as spacy_download
 
 def initialize(language):
     if language == "English": #(1)
