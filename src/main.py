@@ -16,10 +16,12 @@ if __name__=="__main__":
     torch.backends.cudnn.deterministic = True
 
 
-    #instantiate bert
+    # select bert model
     model_name = 'bert-base-multilingual-cased'
+    # get berts hyperparameters
     bert_config = BertConfig.from_pretrained(model_name, output_hidden_states=True)
     bert_tokenizer = BertTokenizer.from_pretrained(model_name)
+    # load the bert model
     bert_model = BertModel.from_pretrained(model_name, config=bert_config)
 
     modality = input("Do you want to train or test your system? ")
