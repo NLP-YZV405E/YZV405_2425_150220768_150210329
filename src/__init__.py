@@ -22,6 +22,7 @@ from torch.nn.utils.rnn import pad_sequence
 import torch.optim as optim
 from transformers import BertTokenizer, BertModel, BertConfig
 from transformers import XLMRobertaTokenizer, XLMRobertaModel, XLMRobertaConfig
-from TorchCRF import CRF
+#from TorchCRF import CRF
+import torchcrf
 import unicodedata
 import re

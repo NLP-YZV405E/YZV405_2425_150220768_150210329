@@ -1,41 +1,49 @@
 import stanza
+from tqdm import tqdm
+import torch
+import re
+
+
 
 def initialize(use_gpu=True):
-    tr_nlp = stanza.Pipeline("tr", processors="tokenize,mwt,lemma", use_gpu=use_gpu)
-    it_nlp = stanza.Pipeline("it", processors="tokenize,mwt,lemma", use_gpu=use_gpu)
-    return tr_nlp, it_nlp
+    print("Initializing Stanza pipelines...")
+    tr_nlp = stanza.Pipeline("tr", processors="tokenize,mwt,lemma", use_gpu=use_gpu, tokenize_pretokenized=True,)
+    it_nlp = stanza.Pipeline("it", processors="tokenize,mwt,lemma", use_gpu=use_gpu, tokenize_pretokenized=True,)
+    print("Stanza pipelines initialized.")
+    print("-" * 50 + "\n")
+    return {"tr": tr_nlp, "it": it_nlp}
+
+
 
 def get_idioms(dataset, tagger_dict):
+    print("Extracting idioms...\n")
     idioms = []
-
     for tokens, tags, langs in dataset:
-        idiom = ""
+        if isinstance(tags, torch.Tensor):
+            tags = tags.tolist()
 
-        # Group tokens by language
-        lang_tokens = {}
-        for idx, lng in enumerate(langs):
-            lang_tokens.setdefault(lng, []).append((idx, tokens[idx]))
+        lang_to_idxs = {}
+        for i, lang in enumerate(langs):
+            lang_to_idxs.setdefault(lang, []).append(i)
 
-        # Process each language once
-        lemmas = [None] * len(tokens)
-        for lng, idx_token_pairs in lang_tokens.items():
-            sentence = " ".join([tok for _, tok in idx_token_pairs])
-            doc = tagger_dict[lng](sentence)
-            extracted_lemmas = [word.lemma for sent in doc.sentences for word in sent.words]
+        lemmas = [None]*len(tokens)
+        for lang, idxs in lang_to_idxs.items():
+            doc = tagger_dict[lang]([tokens[i] for i in idxs])
+            extracted = [w.lemma for sent in doc.sentences for w in sent.words]
+            assert len(extracted) == len(idxs), "Length mismatch between extracted lemmas and indices"
+            for i, lemma in zip(idxs, extracted):
+                lemmas[i] = lemma
 
-            # Match lemmas to original token positions
-            for (idx, _), lemma in zip(idx_token_pairs, extracted_lemmas):
-                lemmas[idx] = lemma
-
-        # Now build the idiom
-        for lemma, tag in zip(lemmas, tags):
-            if tag in {1, 2} and lemma:
-                idiom += lemma + " "
-
-        if idiom.strip():
-            idioms.append(idiom.strip())
+        idiom_tokens = [lemma for lemma, tag in zip(lemmas, tags) if tag in (1, 2)]
+        if idiom_tokens:
+            idioms.append("".join(idiom_tokens))
+        
+    print("Idioms extracted.")
+    print("-" * 50 + "\n")
 
     return idioms
+
+
 
 
 def overlap_percentage_l1_in_l2(list1, list2):
@@ -44,4 +52,6 @@ def overlap_percentage_l1_in_l2(list1, list2):
         if elem in list2:
             count_in += 1
     
+    if len(list1) == 0:
+        return 0.0
     return count_in/len(list1)
