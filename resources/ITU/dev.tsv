@@ -5,6 +5,7 @@ düşüşü	O	tr
 sert	O	tr
 olur	O	tr
 .	O	tr
+
 Pandemi	O	tr
 döneminde	O	tr
 olanların	O	tr
@@ -12,6 +13,7 @@ hesabını	B-IDIOM	tr
 kimler	O	tr
 verecek	I-IDIOM	tr
 ?	O	tr
+
 Zaman	B-IDIOM	tr
 öldürmek	I-IDIOM	tr
 ,	O	tr
@@ -30,6 +32,7 @@ bilerek	O	tr
 zamanınızı	O	tr
 değerlendirin	O	tr
 .	O	tr
+
 Hoca	O	tr
 tahtadan	O	tr
 silince	O	tr
@@ -38,6 +41,7 @@ da	O	tr
 defterinden	O	tr
 silmiş	O	tr
 .	O	tr
+
 Masanın	O	tr
 ortasına	O	tr
 koyulan	O	tr
@@ -46,6 +50,7 @@ tatlılar	O	tr
 hemen	O	tr
 bitti	O	tr
 .	O	tr
+
 Oturduğu	O	tr
 binanın	O	tr
 karşısında	O	tr
@@ -53,12 +58,13 @@ ki	O	tr
 evde	O	tr
 kavga	O	tr
 çıkmıştı	O	tr
-.	O	tr
+
 Attığı	O	tr
 mesajların	O	tr
 üstüne	O	tr
 geldi	O	tr
 .	O	tr
+
 Yolda	O	tr
 beni	O	tr
 takip	O	tr
@@ -67,6 +73,7 @@ için	O	tr
 iz	O	tr
 bıraktım	O	tr
 .	O	tr
+
 Millete	O	tr
 el	B-IDIOM	tr
 açacağına	I-IDIOM	tr
@@ -75,6 +82,7 @@ kendin	O	tr
 ve	O	tr
 çabala	O	tr
 !	O	tr
+
 İtibarlı	O	tr
 bir	O	tr
 kimse	O	tr
@@ -88,6 +96,7 @@ açmak	I-IDIOM	tr
 daha	O	tr
 zordur	O	tr
 .	O	tr
+
 Ayva	O	tr
 yemek	O	tr
 istemiyorum	O	tr
@@ -99,6 +108,7 @@ muz	O	tr
 var	O	tr
 mı	O	tr
 ?	O	tr
+
 Arkadaşım	O	tr
 bu	O	tr
 projede	O	tr
@@ -107,6 +117,7 @@ bir	O	tr
 rol	B-IDIOM	tr
 oynadı	I-IDIOM	tr
 .	O	tr
+
 Hadi	O	tr
 çık	O	tr
 ortaya	O	tr
@@ -114,11 +125,13 @@ da	O	tr
 koyalım	O	tr
 şunu	O	tr
 .	O	tr
+
 Zamanını	B-IDIOM	tr
 öldürerek	I-IDIOM	tr
 hedeflerine	O	tr
 ulaşamazsın	O	tr
 .	O	tr
+
 Parmak	B-IDIOM	tr
 bastığı	I-IDIOM	tr
 konu	O	tr
@@ -128,13 +141,14 @@ bir	O	tr
 şekilde	O	tr
 oturup	O	tr
 düşünüyordu	O	tr
-.	O	tr
+
 Kalemin	O	tr
 içini	O	tr
 eriyen	O	tr
 uç	O	tr
 doldurmuşlar	O	tr
 .	O	tr
+
 Üçr	O	tr
 kadar	O	tr
 saydıktan	O	tr
@@ -146,6 +160,7 @@ kova	O	tr
 su	O	tr
 döktü	O	tr
 .	O	tr
+
 Artık	O	tr
 kaderimizi	O	tr
 elimize	B-IDIOM	tr
@@ -155,6 +170,7 @@ bir	O	tr
 çağa	O	tr
 girdik	O	tr
 .	O	tr
+
 Sapanla	O	tr
 kuşları	O	tr
 öldürdüğü	O	tr
@@ -163,12 +179,13 @@ vicdan	O	tr
 azabı	O	tr
 çekmişti	O	tr
 .	O	tr
+
 ders	O	tr
 için	O	tr
 üst	O	tr
 kata	O	tr
 çıkmalısın	O	tr
-.	O	tr
+
 Bilyelerini	O	tr
 saymak	O	tr
 için	O	tr
@@ -176,7 +193,7 @@ tüm	O	tr
 kutuyu	O	tr
 yere	O	tr
 döktü	O	tr
-.	O	tr
+
 Ellerini	O	tr
 yıkamadan	O	tr
 önce	O	tr
@@ -184,7 +201,7 @@ kollarını	O	tr
 sıvamazsan	O	tr
 sırılsıklam	O	tr
 olurlar	O	tr
-.	O	tr
+
 Her	O	tr
 işi	O	tr
 basamaklara	O	tr
@@ -194,6 +211,7 @@ yapmak	O	tr
 lazım	O	tr
 bence	O	tr
 .	O	tr
+
 Hesabı	O	tr
 şimdi	O	tr
 mi	O	tr
@@ -203,6 +221,7 @@ istersiniz	O	tr
 sonra	O	tr
 mı	O	tr
 ?	O	tr
+
 Haber	O	tr
 bültenlerinde	O	tr
 Türkiye'nin	O	tr
@@ -211,6 +230,7 @@ konumuna	O	tr
 yer	B-IDIOM	tr
 verildi	I-IDIOM	tr
 .	O	tr
+
 Mikrodalga	O	tr
 fırına	O	tr
 tereyağını	O	tr
@@ -220,6 +240,7 @@ tereyağın	O	tr
 içini	O	tr
 eritmişti	O	tr
 .	O	tr
+
 Yarışı	O	tr
 kazanmak	O	tr
 için	O	tr
@@ -228,6 +249,7 @@ zaman	O	tr
 haksızlığa	O	tr
 uğrattı	O	tr
 .	O	tr
+
 Sıkı	B-IDIOM	tr
 mı	O	tr
 durmam	I-IDIOM	tr
@@ -235,6 +257,7 @@ gerekirdi	O	tr
 müdürün	O	tr
 karşısında	O	tr
 ?	O	tr
+
 El	B-IDIOM	tr
 değil	O	tr
 açtığım	I-IDIOM	tr
@@ -243,6 +266,7 @@ benim	O	tr
 son	O	tr
 şansım	O	tr
 .	O	tr
+
 Hiç	O	tr
 acımadan	O	tr
 küçük	O	tr
@@ -250,7 +274,7 @@ küçük	O	tr
 paralarına	O	tr
 el	B-IDIOM	tr
 koydu	I-IDIOM	tr
-.	O	tr
+
 Orta	O	tr
 bahçeye	O	tr
 koydukları	O	tr
@@ -258,6 +282,7 @@ bahçe	O	tr
 süsleri	O	tr
 çalındı	O	tr
 .	O	tr
+
 Karşıdaki	O	tr
 evin	O	tr
 bacasından	O	tr
@@ -265,12 +290,13 @@ yoğun	O	tr
 dumanlar	O	tr
 çıkıyor	O	tr
 .	O	tr
+
 Kesilen	O	tr
 hayvanın	O	tr
 iç	O	tr
 yağları	O	tr
 erimiş	O	tr
-.	O	tr
+
 Üst	O	tr
 kata	O	tr
 mı	O	tr
@@ -284,6 +310,7 @@ oturmak	O	tr
 daha	O	tr
 iyi	O	tr
 ?	O	tr
+
 Karşıma	O	tr
 çıkan	O	tr
 ilk	O	tr
@@ -292,12 +319,13 @@ düşecek	O	tr
 kadar	O	tr
 güçsüzüm	O	tr
 .	O	tr
+
 Ben	O	tr
 seni	O	tr
 meydana	O	tr
 gelmeni	O	tr
 istiyorum	O	tr
-.	O	tr
+
 Tribünlerde	O	tr
 bu	O	tr
 kadar	O	tr
@@ -306,7 +334,7 @@ varken	O	tr
 kalkıp	O	tr
 yer	O	tr
 verdim	O	tr
-.	O	tr
+
 Gömleğin	O	tr
 kolları	O	tr
 sıvaya	O	tr
@@ -322,6 +350,7 @@ işine	O	tr
 karışma	O	tr
 diyeceğim	O	tr
 ?	O	tr
+
 Her	O	tr
 zamanki	O	tr
 gibi	O	tr
@@ -332,17 +361,18 @@ elinden	O	tr
 geleni	O	tr
 yapıyor	O	tr
 !	O	tr
+
 İnstagram	O	tr
 hesabında	O	tr
 öğütler	O	tr
 verdi	O	tr
-.	O	tr
+
 Bu	O	tr
 yaptığının	O	tr
 hesabını	B-IDIOM	tr
 ben	O	tr
 veriyorum	I-IDIOM	tr
-.	O	tr
+
 Cüneyt	O	tr
 özdemir	O	tr
 her	O	tr
@@ -358,18 +388,21 @@ dikkatleri	O	tr
 üzerine	O	tr
 çekiyor	O	tr
 .	O	tr
+
 Acıkanlar	O	tr
 ocak	O	tr
 başında	O	tr
 yerini	B-IDIOM	tr
 alsın	I-IDIOM	tr
 !	O	tr
+
 Çocuklar	O	tr
 hadi	O	tr
 üst	O	tr
 kata	O	tr
 çıkalım	O	tr
 !	O	tr
+
 Seni	O	tr
 bu	O	tr
 halde	O	tr
@@ -378,6 +411,7 @@ içimin	B-IDIOM	tr
 yağları	O	tr
 eridi	I-IDIOM	tr
 .	O	tr
+
 Yerle	O	tr
 bir	O	tr
 olan	O	tr
@@ -389,6 +423,7 @@ ayrı	O	tr
 sayfalar	O	tr
 verilmiş	O	tr
 .	O	tr
+
 Muğla'nın	O	tr
 Marmaris	O	tr
 ilçesinde	O	tr
@@ -409,6 +444,7 @@ veresiye	O	tr
 defterinden	O	tr
 sildi	O	tr
 .	O	tr
+
 Şizofreni	O	tr
 ve	O	tr
 bipolar	O	tr
@@ -422,6 +458,7 @@ faktörler	O	tr
 rol	B-IDIOM	tr
 oynamaktadır	I-IDIOM	tr
 .	O	tr
+
 Atina'da	O	tr
 meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
@@ -431,6 +468,7 @@ evleri	O	tr
 su	O	tr
 bastı	O	tr
 .	O	tr
+
 İmleci	O	tr
 o	O	tr
 cetvelin	O	tr
@@ -441,6 +479,7 @@ tekerleğini	O	tr
 ileri	O	tr
 sür	O	tr
 .	O	tr
+
 İçindeki	O	tr
 dondurma	O	tr
 erise	O	tr
@@ -449,6 +488,7 @@ tatlıyı	O	tr
 afiyetle	O	tr
 yedi	O	tr
 .	O	tr
+
 Toplantıda	O	tr
 konuşacak	O	tr
 başka	O	tr
@@ -460,6 +500,7 @@ yer	B-IDIOM	tr
 mi	O	tr
 vereyim	I-IDIOM	tr
 ?	O	tr
+
 Vücudum	O	tr
 da	O	tr
 sıkı	B-IDIOM	tr
@@ -471,6 +512,7 @@ nerede	O	tr
 o	O	tr
 günler	O	tr
 !	O	tr
+
 Gözüme	O	tr
 toz	O	tr
 kaçmasın	O	tr
@@ -478,6 +520,7 @@ diye	O	tr
 gözlerimi	O	tr
 yumdum	O	tr
 .	O	tr
+
 Uygulamada	O	tr
 yapılan	O	tr
 son	O	tr
@@ -487,6 +530,7 @@ sorunlara	O	tr
 yol	B-IDIOM	tr
 açtı	I-IDIOM	tr
 .	O	tr
+
 Büyüğüm	O	tr
 olduğunuz	O	tr
 için	O	tr
@@ -499,7 +543,7 @@ buraya	O	tr
 dökmenize	O	tr
 artık	O	tr
 katlanamıyorum	O	tr
-.	O	tr
+
 İSBAK	O	tr
 ,	O	tr
 Turquality	O	tr
@@ -508,6 +552,7 @@ arasında	O	tr
 yerini	B-IDIOM	tr
 aldı	I-IDIOM	tr
 .	O	tr
+
 parmağıyla	O	tr
 gitarın	O	tr
 tellerine	O	tr
@@ -520,16 +565,17 @@ melodi	O	tr
 icra	O	tr
 etti	O	tr
 .	O	tr
+
 izmirde	O	tr
 deprem	O	tr
 meydana	B-IDIOM	tr
 geldi	I-IDIOM	tr
-.	O	tr
+
 Seninle	O	tr
 meydana	O	tr
 gelmek	O	tr
 istiyorum	O	tr
-.	O	tr
+
 El	B-IDIOM	tr
 açtığı	I-IDIOM	tr
 kimseler	O	tr
@@ -540,11 +586,13 @@ değildi	O	tr
 belki	O	tr
 de	O	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 mı	O	tr
 kazanmaya	I-IDIOM	tr
 çalışıyorsun	O	tr
 ?	O	tr
+
 Ağzı	O	tr
 sıkı	O	tr
 biri	O	tr
@@ -555,6 +603,7 @@ duyunca	O	tr
 anlatmadan	O	tr
 duramamış	O	tr
 .	O	tr
+
 Meydandaki	O	tr
 çiçeklerden	O	tr
 gelince	O	tr
@@ -564,6 +613,7 @@ tane	O	tr
 koparır	O	tr
 mısın	O	tr
 ?	O	tr
+
 Kasa	O	tr
 masanın	O	tr
 üzerinde	O	tr
@@ -572,11 +622,12 @@ durmalı	O	tr
 altında	O	tr
 mı	O	tr
 ?	O	tr
+
 Telefonum	O	tr
 çok	O	tr
 sıkı	B-IDIOM	tr
 duruyor	I-IDIOM	tr
-.	O	tr
+
 Kafasında	O	tr
 sıkı	O	tr
 bir	O	tr
@@ -584,17 +635,19 @@ bandanayla	O	tr
 yanımda	O	tr
 durmuştu	O	tr
 .	O	tr
+
 Kaçmasına	O	tr
 göz	B-IDIOM	tr
 yummuşlar	I-IDIOM	tr
 .	O	tr
+
 Karşı	O	tr
 yakadaki	O	tr
 kargo	O	tr
 şubesinden	O	tr
 çıkış	O	tr
 olmuş	O	tr
-.	O	tr
+
 Her	O	tr
 geçen	O	tr
 zaman	O	tr
@@ -604,17 +657,17 @@ kazanacağımıza	O	tr
 olan	O	tr
 inancım	O	tr
 artıyor	O	tr
-.	O	tr
+
 Yemeğin	O	tr
 ortasına	O	tr
 sos	O	tr
 koydum	O	tr
-.	O	tr
+
 Sıkı	O	tr
 dura	O	tr
 dura	O	tr
 kazanacağız	O	tr
-.	O	tr
+
 Bu	O	tr
 yöntem	O	tr
 ileri	B-IDIOM	tr
@@ -627,17 +680,20 @@ artmasına	O	tr
 sebep	O	tr
 oluyor	O	tr
 .	O	tr
+
 Üniversite	O	tr
 sınavını	O	tr
 ne	O	tr
 zaman	O	tr
 kazanacak	O	tr
 ?	O	tr
+
 Olayın	O	tr
 nedeni	O	tr
 ortaya	B-IDIOM	tr
 çıktı	I-IDIOM	tr
 .	O	tr
+
 Yeni	O	tr
 hemşire	O	tr
 adaylarımızı	O	tr
@@ -651,24 +707,28 @@ tutulur	I-IDIOM	tr
 onu	O	tr
 öğreneceğiz	O	tr
 .	O	tr
+
 Bu	O	tr
 filmde	O	tr
 baş	O	tr
 rol	O	tr
 oynamış	O	tr
 .	O	tr
+
 Altını	O	tr
 çizdiğin	O	tr
 yerleri	O	tr
 danışmanınla	O	tr
 tartışmalısın	O	tr
 .	O	tr
+
 Manava	O	tr
 değişik	O	tr
 boyutlarda	O	tr
 ağırlıklar	O	tr
 verdim	O	tr
 .	O	tr
+
 Önce	O	tr
 karşı	O	tr
 duvara	O	tr
@@ -679,18 +739,20 @@ dairenin	O	tr
 içine	O	tr
 atla	O	tr
 .	O	tr
+
 Sıralamayı	O	tr
 görünce	O	tr
 ayva	O	tr
 yemekten	O	tr
 soğudu	O	tr
 .	O	tr
+
 Üst	O	tr
 kattaki	O	tr
 komşunun	O	tr
 ateşi	O	tr
 çıkmış	O	tr
-.	O	tr
+
 Kedim	O	tr
 oynasın	O	tr
 diye	O	tr
@@ -698,11 +760,13 @@ kartondan	O	tr
 basamaklar	O	tr
 yaptım	O	tr
 .	O	tr
+
 Paslaşarak	O	tr
 zaman	B-IDIOM	tr
 kazanmaya	I-IDIOM	tr
 çalışıyorlad	O	tr
 .	O	tr
+
 Arkadaşının	O	tr
 sana	O	tr
 yalan	O	tr
@@ -713,22 +777,24 @@ defterden	B-IDIOM	tr
 siler	I-IDIOM	tr
 misin	O	tr
 ?	O	tr
+
 Açsaydım	O	tr
 ellerimi	O	tr
 gitme	O	tr
 deseydim	O	tr
-.	O	tr
+
 Üstüne	O	tr
 bir	O	tr
 hırka	O	tr
 al	O	tr
 .	O	tr
+
 Koronananın	O	tr
 karşısında	O	tr
 adam	O	tr
 sıkı	B-IDIOM	tr
 duruyor	I-IDIOM	tr
-.	O	tr
+
 Üşenmeden	O	tr
 her	O	tr
 gün	O	tr
@@ -736,7 +802,7 @@ parmaklarına	O	tr
 bastırarak	O	tr
 masaj	O	tr
 yapıyor	O	tr
-.	O	tr
+
 Önerdiğim	O	tr
 tüm	O	tr
 fikirlere	O	tr
@@ -746,6 +812,7 @@ beni	O	tr
 kızdırmaya	O	tr
 çalışıyorsun	O	tr
 .	O	tr
+
 Benim	O	tr
 aracılığımla	O	tr
 nabız	B-IDIOM	tr
@@ -753,17 +820,19 @@ mı	O	tr
 tutmaya	I-IDIOM	tr
 çalışıyorsun	O	tr
 .	O	tr
+
 Yere	O	tr
 dökülen	O	tr
 eşyaları	O	tr
 saydın	O	tr
 mı	O	tr
 ?	O	tr
+
 Ortaya	B-IDIOM	tr
 fikir	O	tr
 koydum	I-IDIOM	tr
 al	O	tr
-.	O	tr
+
 Ekonomi	O	tr
 bakanı	O	tr
 bu	O	tr
@@ -772,19 +841,21 @@ altını	B-IDIOM	tr
 çizmekten	I-IDIOM	tr
 hoşlanıyor	O	tr
 .	O	tr
+
 Sesini	O	tr
 yükselterek	O	tr
 üste	B-IDIOM	tr
 çıkmaya	I-IDIOM	tr
 çalışıyordu	O	tr
 .	O	tr
+
 Yeni	O	tr
 aldığı	O	tr
 kıyafetlerin	O	tr
 hiçbiri	O	tr
 üstüne	O	tr
 olmamıştı	O	tr
-.	O	tr
+
 Balona	O	tr
 parmağıyla	O	tr
 bastıran	O	tr
@@ -793,7 +864,7 @@ birden	O	tr
 patlayınca	O	tr
 çok	O	tr
 korktu	O	tr
-.	O	tr
+
 Dilerim	O	tr
 bir	O	tr
 gün	O	tr
@@ -802,6 +873,7 @@ beni	O	tr
 de	O	tr
 silersin	I-IDIOM	tr
 !	O	tr
+
 Yok	O	tr
 artık	O	tr
 yine	O	tr
@@ -812,19 +884,20 @@ tasarım	O	tr
 işlerni	O	tr
 attı	I-IDIOM	tr
 .	O	tr
+
 Doktor	O	tr
 tıp	O	tr
 alanında	O	tr
 iz	O	tr
 bıraktı	O	tr
-.	O	tr
+
 Dışarı	O	tr
 çıkmak	O	tr
 için	O	tr
 üstüne	O	tr
 birşeyler	O	tr
 aldı	O	tr
-.	O	tr
+
 O	O	tr
 ‘	O	tr
 birileri	O	tr
@@ -840,6 +913,7 @@ zaman	O	tr
 işler	O	tr
 değişecek	O	tr
 .	O	tr
+
 Dört	O	tr
 çocuğuna	O	tr
 tek	O	tr
@@ -854,6 +928,7 @@ kovulduğu	O	tr
 içini	B-IDIOM	tr
 eritti	I-IDIOM	tr
 .	O	tr
+
 meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
 yangından	O	tr
@@ -861,11 +936,13 @@ yangından	O	tr
 kişi	O	tr
 kurtarıldı	O	tr
 .	O	tr
+
 Bir	O	tr
 daha	O	tr
 çıkma	O	tr
 karşıma	O	tr
 !	O	tr
+
 Bu	O	tr
 böreğin	O	tr
 yufkasını	O	tr
@@ -873,6 +950,7 @@ sana	O	tr
 ellerimle	O	tr
 açtım	O	tr
 .	O	tr
+
 Ekmek	O	tr
 ayvasını	O	tr
 yemek	O	tr
@@ -880,6 +958,7 @@ gerçekten	O	tr
 daha	O	tr
 kolay	O	tr
 .	O	tr
+
 Bu	O	tr
 konu	O	tr
 Üzerinde	B-IDIOM	tr
@@ -888,6 +967,7 @@ kadar	O	tr
 durmayalım	I-IDIOM	tr
 lütfen	O	tr
 .	O	tr
+
 Sevgilisinin	O	tr
 aldığı	O	tr
 ne	O	tr
@@ -899,12 +979,14 @@ koltuğun	O	tr
 ortasına	O	tr
 koydu	O	tr
 .	O	tr
+
 Karşılaştırma	O	tr
 ödevini	O	tr
 bitirmeden	O	tr
 odandan	O	tr
 çıkma	O	tr
 .	O	tr
+
 Şirketi	O	tr
 yönetirken	O	tr
 bir	O	tr
@@ -913,7 +995,7 @@ sana	O	tr
 hesap	B-IDIOM	tr
 mı	O	tr
 vereceğim	I-IDIOM	tr
-.	O	tr
+
 İslerin	O	tr
 artınca	O	tr
 üstüne	B-IDIOM	tr
@@ -923,7 +1005,7 @@ yoksa	O	tr
 kaçıyor	O	tr
 musun	O	tr
 göreceğiz	O	tr
-.	O	tr
+
 Ortaya	B-IDIOM	tr
 atılan	I-IDIOM	tr
 fikirlerden	O	tr
@@ -931,6 +1013,7 @@ en	O	tr
 mantıklısını	O	tr
 uygulayacağız	O	tr
 .	O	tr
+
 bu	O	tr
 kadar	O	tr
 şeyi	O	tr
@@ -939,7 +1022,7 @@ aldığımın	I-IDIOM	tr
 farkında	O	tr
 bile	O	tr
 değildim	O	tr
-.	O	tr
+
 aldığı	O	tr
 yeni	O	tr
 fincanı	O	tr
@@ -947,6 +1030,7 @@ masanın	O	tr
 üstüne	O	tr
 koydu	O	tr
 .	O	tr
+
 Zamanı	O	tr
 kim	O	tr
 okșayabilir	O	tr
@@ -960,6 +1044,7 @@ ince	O	tr
 beyaz	O	tr
 elini	O	tr
 .	O	tr
+
 Şu	O	tr
 işi	O	tr
 zamanında	O	tr
@@ -971,12 +1056,14 @@ yeriz	I-IDIOM	tr
 hızlı	O	tr
 olun	O	tr
 !	O	tr
+
 Bana	O	tr
 yer	B-IDIOM	tr
 mi	O	tr
 vermişler	I-IDIOM	tr
 gerçekten	O	tr
 ?	O	tr
+
 Zaman	O	tr
 ve	O	tr
 kazanmak	O	tr
@@ -985,6 +1072,7 @@ bize	O	tr
 cümle	O	tr
 kurdurdular	O	tr
 .	O	tr
+
 Zamanın	B-IDIOM	tr
 kazandığım	I-IDIOM	tr
 madalyaları	O	tr
@@ -992,6 +1080,7 @@ madalyaları	O	tr
 sergileme	O	tr
 zamanı	O	tr
 .	O	tr
+
 Eski	O	tr
 planları	O	tr
 pişirip	O	tr
@@ -1000,6 +1089,7 @@ kamuoyunun	O	tr
 önüne	B-IDIOM	tr
 sürüyorlar	I-IDIOM	tr
 .	O	tr
+
 Uçak	O	tr
 icat	O	tr
 edildikten	O	tr
@@ -1009,6 +1099,7 @@ zaman	B-IDIOM	tr
 kazanmaya	I-IDIOM	tr
 başladık	O	tr
 .	O	tr
+
 üstüme	O	tr
 iyilik	O	tr
 sağlık	O	tr
@@ -1018,7 +1109,7 @@ saatte	O	tr
 dışarı	O	tr
 mı	O	tr
 çıkacaksın	O	tr
-.	O	tr
+
 Belediye	O	tr
 ekipleri	O	tr
 kardan	O	tr
@@ -1030,6 +1121,7 @@ için	O	tr
 yola	O	tr
 çıktı	O	tr
 .	O	tr
+
 Şu	O	tr
 kasvetli	O	tr
 havayı	O	tr
@@ -1037,12 +1129,14 @@ havayı	O	tr
 atalım	I-IDIOM	tr
 hadi	O	tr
 .	O	tr
+
 Kıyafetinin	O	tr
 üzerinde	O	tr
 duran	O	tr
 boncuklar	O	tr
 düşecek	O	tr
 .	O	tr
+
 Bir	O	tr
 durup	O	tr
 da	O	tr
@@ -1054,11 +1148,13 @@ sıkı	O	tr
 mı	O	tr
 geldi	O	tr
 ?	O	tr
+
 Banka	O	tr
 hesabım	O	tr
 hata	O	tr
 verdi	O	tr
 .	O	tr
+
 Hamuru	O	tr
 açarken	O	tr
 eline	O	tr
@@ -1067,6 +1163,7 @@ için	O	tr
 zeytinyağı	O	tr
 kullandı	O	tr
 .	O	tr
+
 Bu	O	tr
 yazılımın	O	tr
 bana	O	tr
@@ -1075,6 +1172,7 @@ zaman	O	tr
 çok	O	tr
 fazla	O	tr
 .	O	tr
+
 O	O	tr
 zaman	O	tr
 sen	O	tr
@@ -1085,6 +1183,7 @@ kozu	O	tr
 sür	I-IDIOM	tr
 onun	O	tr
 .	O	tr
+
 Toplantıda	O	tr
 virüsle	O	tr
 mücadeleye	O	tr
@@ -1094,18 +1193,20 @@ fikirler	O	tr
 ileri	B-IDIOM	tr
 sürüldü	I-IDIOM	tr
 .	O	tr
+
 Okuma	O	tr
 yazması	O	tr
 olmadığından	O	tr
 parmak	O	tr
 bastı	O	tr
-.	O	tr
+
 Bugünün	O	tr
 kazananları	O	tr
 çok	O	tr
 zaman	O	tr
 harcamışlar	O	tr
 .	O	tr
+
 Karşımıza	O	tr
 çıkan	O	tr
 hatalar	O	tr
@@ -1117,7 +1218,7 @@ biz	O	tr
 hiç	O	tr
 şikayet	O	tr
 etmedik	O	tr
-.	O	tr
+
 Elmalar	O	tr
 masanın	O	tr
 üzerinde	O	tr
@@ -1126,6 +1227,7 @@ sepetin	O	tr
 içinde	O	tr
 duruyor	O	tr
 .	O	tr
+
 Patronum	O	tr
 kızınca	O	tr
 her	O	tr
@@ -1133,10 +1235,12 @@ her	O	tr
 sayıp	B-IDIOM	tr
 döktüm	I-IDIOM	tr
 .	O	tr
+
 İçin	O	tr
 erimiş	O	tr
 senin	O	tr
 .	O	tr
+
 piyanonun	O	tr
 üstünden	O	tr
 aldığın	O	tr
@@ -1144,11 +1248,12 @@ nota	O	tr
 defterini	O	tr
 nereye	O	tr
 koydun	O	tr
-.	O	tr
+
 Meydana	O	tr
 mı	O	tr
 geldiniz	O	tr
 ?	O	tr
+
 O	O	tr
 zaman	O	tr
 düşüncesine	O	tr
@@ -1157,6 +1262,7 @@ karşı	B-IDIOM	tr
 doğru	O	tr
 değildi	O	tr
 .	O	tr
+
 Gelen	O	tr
 hüzünlerle	O	tr
 üst	O	tr
@@ -1165,7 +1271,7 @@ başa	O	tr
 çıkmak	O	tr
 zorunda	O	tr
 kaldı	O	tr
-.	O	tr
+
 Bir	O	tr
 iz	B-IDIOM	tr
 bırak	I-IDIOM	tr
@@ -1173,19 +1279,19 @@ burda	O	tr
 iz	O	tr
 bırakanlar	O	tr
 unutulmaz	O	tr
-.	O	tr
+
 sıkıca	O	tr
 demirleri	O	tr
 tutup	O	tr
 duruyordu	O	tr
-.	O	tr
+
 sıkı	O	tr
 vücudu	O	tr
 için	O	tr
 durmadan	O	tr
 sağlıklı	O	tr
 besleniyordu	O	tr
-.	O	tr
+
 Üstüne	O	tr
 basa	O	tr
 basa	O	tr
@@ -1193,7 +1299,7 @@ dışarı	O	tr
 çıkmak	O	tr
 istediğini	O	tr
 söyledi	O	tr
-.	O	tr
+
 Telefonun	O	tr
 karşısında	O	tr
 yeni	O	tr
@@ -1204,6 +1310,7 @@ oylayayım	O	tr
 diye	O	tr
 bekliyorum	O	tr
 .	O	tr
+
 Eğer	O	tr
 banka	O	tr
 hesabını	O	tr
@@ -1212,6 +1319,7 @@ sana	O	tr
 para	O	tr
 yollayabilirim	O	tr
 .	O	tr
+
 Rakibine	O	tr
 karşı	O	tr
 elde	O	tr
@@ -1224,7 +1332,7 @@ bir	O	tr
 çıkmana	O	tr
 yardımcı	O	tr
 olacak	O	tr
-.	O	tr
+
 Teyzem	O	tr
 bize	O	tr
 el	O	tr
@@ -1232,17 +1340,19 @@ açması	O	tr
 börek	O	tr
 yaptı	O	tr
 .	O	tr
+
 Caddenin	O	tr
 ortasına	O	tr
 direk	O	tr
 koymuşlar	O	tr
-.	O	tr
+
 Kasadaki	O	tr
 elmaları	O	tr
 sayıp	O	tr
 tabaklara	O	tr
 döktüm	O	tr
 .	O	tr
+
 Hükümet	O	tr
 üyeleri	O	tr
 yolsuzlukların	O	tr
@@ -1253,6 +1363,7 @@ vermek	I-IDIOM	tr
 zorunda	O	tr
 kalacaklar	O	tr
 .	O	tr
+
 doktor	O	tr
 bir	O	tr
 yandan	O	tr
@@ -1264,12 +1375,14 @@ elinde	O	tr
 şırıngayı	O	tr
 tutuyordu	O	tr
 .	O	tr
+
 Aldığımız	O	tr
 yerler	O	tr
 kıymetli	O	tr
 hale	O	tr
 geldi	O	tr
 .	O	tr
+
 arabayı	O	tr
 çok	O	tr
 hızlı	O	tr
@@ -1279,12 +1392,12 @@ kaybedince	O	tr
 karşısındaki	O	tr
 kaldırıma	O	tr
 çıktı	O	tr
-.	O	tr
+
 Onu	O	tr
 görünce	O	tr
 içi	B-IDIOM	tr
 eridi	I-IDIOM	tr
-.	O	tr
+
 Ev	O	tr
 konusunda	O	tr
 tüm	O	tr
@@ -1297,6 +1410,7 @@ beni	O	tr
 kimse	O	tr
 aramıyor	O	tr
 .	O	tr
+
 Bütün	O	tr
 okurlarımızla	O	tr
 birlikte	O	tr
@@ -1308,6 +1422,7 @@ günü	O	tr
 sabırsızlıkla	O	tr
 bekliyoruz	O	tr
 .	O	tr
+
 Bir	O	tr
 de	O	tr
 hesap	B-IDIOM	tr
@@ -1315,6 +1430,7 @@ mı	O	tr
 vereceğim	I-IDIOM	tr
 sana	O	tr
 ?	O	tr
+
 Yap	O	tr
 sana	O	tr
 yapma	O	tr
@@ -1326,6 +1442,7 @@ ayvayı	B-IDIOM	tr
 nasıl	O	tr
 yiyorsun	I-IDIOM	tr
 ?	O	tr
+
 Üst	O	tr
 kattaki	O	tr
 depoda	O	tr
@@ -1333,14 +1450,14 @@ yeni	O	tr
 aldığımız	O	tr
 battaniyeler	O	tr
 var	O	tr
-.	O	tr
+
 Her	O	tr
 zaman	O	tr
 kazanmak	O	tr
 isteyen	O	tr
 oyuncular	O	tr
 olmalı	O	tr
-.	O	tr
+
 Ele	B-IDIOM	tr
 aldığımız	I-IDIOM	tr
 konular	O	tr
@@ -1350,11 +1467,13 @@ kuresel	O	tr
 da	O	tr
 var	O	tr
 .	O	tr
+
 Oynadığı	O	tr
 rol	O	tr
 üzerine	O	tr
 yapıştı	O	tr
 .	O	tr
+
 Tekerleklerin	O	tr
 iç	O	tr
 ve	O	tr
@@ -1366,14 +1485,14 @@ yarışı	O	tr
 önde	O	tr
 bitirmeyi	O	tr
 başardı	O	tr
-.	O	tr
+
 kenardaki	O	tr
 eşyaları	O	tr
 alıp	O	tr
 salonun	O	tr
 ortasına	O	tr
 koydu	O	tr
-.	O	tr
+
 Masaya	O	tr
 bir	O	tr
 kaç	O	tr
@@ -1386,6 +1505,7 @@ gelmek	O	tr
 doğru	O	tr
 değildir	O	tr
 .	O	tr
+
 defteri	O	tr
 öyle	O	tr
 kabarıktı	O	tr
@@ -1394,7 +1514,7 @@ sil	O	tr
 sil	O	tr
 bitmek	O	tr
 bilmedi	O	tr
-.	O	tr
+
 Bu	O	tr
 zamanda	O	tr
 internetten	O	tr
@@ -1402,6 +1522,7 @@ iyi	O	tr
 para	O	tr
 kazanılıyor	O	tr
 .	O	tr
+
 Bu	O	tr
 zamanlarda	O	tr
 parayı	O	tr
@@ -1411,13 +1532,14 @@ doğru	O	tr
 yatırım	O	tr
 yapmalı	O	tr
 .	O	tr
+
 Ağacın	O	tr
 üstündeki	O	tr
 meyveyi	O	tr
 al	O	tr
 da	O	tr
 yiyelim	O	tr
-.	O	tr
+
 onun	O	tr
 artık	O	tr
 benim	O	tr
@@ -1426,7 +1548,7 @@ yeri	O	tr
 yok	O	tr
 sildim	I-IDIOM	tr
 defterimden	B-IDIOM	tr
-.	O	tr
+
 Pastanın	O	tr
 içi	O	tr
 mi	O	tr
@@ -1434,6 +1556,7 @@ erimiş	O	tr
 dışı	O	tr
 mı	O	tr
 ?	O	tr
+
 Cumhuriyet	O	tr
 Bayramı	O	tr
 programında	O	tr
@@ -1447,15 +1570,18 @@ verilmesi	I-IDIOM	tr
 çok	O	tr
 etkileyici	O	tr
 .	O	tr
+
 Sıkı	B-IDIOM	tr
 dur	I-IDIOM	tr
 evlat	O	tr
 !	O	tr
+
 Yarın	O	tr
 bana	O	tr
 hesap	B-IDIOM	tr
 verecek	I-IDIOM	tr
 .	O	tr
+
 Nabzındaki	O	tr
 derin	O	tr
 düşüşe	O	tr
@@ -1472,6 +1598,7 @@ tutmaya	O	tr
 devam	O	tr
 ediyordu	O	tr
 .	O	tr
+
 Bu	O	tr
 okula	O	tr
 girerek	O	tr
@@ -1480,6 +1607,7 @@ mı	O	tr
 yedim	I-IDIOM	tr
 bilemiyorum	O	tr
 .	O	tr
+
 Boş	O	tr
 vaktinde	O	tr
 zaman	B-IDIOM	tr
@@ -1488,6 +1616,7 @@ yerine	O	tr
 kitap	O	tr
 okuyor	O	tr
 .	O	tr
+
 Sıralamada	O	tr
 benim	O	tr
 üstüme	O	tr
@@ -1496,7 +1625,7 @@ mi	O	tr
 işte	O	tr
 buna	O	tr
 gülerim	O	tr
-.	O	tr
+
 Yeni	O	tr
 çıkan	O	tr
 gazeteler	O	tr
@@ -1505,6 +1634,7 @@ bakkalda	O	tr
 var	O	tr
 mıdır	O	tr
 ?	O	tr
+
 Kutuyu	O	tr
 bana	O	tr
 vermesini	O	tr
@@ -1515,6 +1645,7 @@ olduğu	O	tr
 için	O	tr
 kaldıramadı	O	tr
 .	O	tr
+
 Aşıya	O	tr
 karşı	O	tr
 olanlar	O	tr
@@ -1524,6 +1655,7 @@ da	O	tr
 ne	O	tr
 oldu	O	tr
 ?	O	tr
+
 Kardeşinin	O	tr
 yemeğini	O	tr
 yersen	I-IDIOM	tr
@@ -1534,6 +1666,7 @@ yersin	O	tr
 ona	O	tr
 göre	O	tr
 !	O	tr
+
 Ege	O	tr
 Denizi'nde	O	tr
 Cuma	O	tr
@@ -1553,6 +1686,7 @@ sayısı	O	tr
 e	O	tr
 yükseldi	O	tr
 .	O	tr
+
 Üstünden	B-IDIOM	tr
 atmaya	I-IDIOM	tr
 çalıştığın	O	tr
@@ -1560,12 +1694,14 @@ işler	O	tr
 peşinden	O	tr
 gelecek	O	tr
 .	O	tr
+
 Yer	O	tr
 vermek	O	tr
 bir	O	tr
 kültür	O	tr
 meselesidir	O	tr
 .	O	tr
+
 'defterimden	B-IDIOM	tr
 adı	O	tr
 silinmek	I-IDIOM	tr
@@ -1576,13 +1712,14 @@ daha	O	tr
 '	O	tr
 diye	O	tr
 düşündüm	O	tr
-.	O	tr
+
 Meydanın	O	tr
 karşısına	O	tr
 gelince	O	tr
 beni	O	tr
 ara	O	tr
 .	O	tr
+
 Zaman	O	tr
 öldürme	O	tr
 deyimi	O	tr
@@ -1591,7 +1728,7 @@ vakit	O	tr
 geçirme	O	tr
 anlamına	O	tr
 gelmektedir	O	tr
-.	O	tr
+
 Meydana	O	tr
 gelmeye	O	tr
 yakın	O	tr
@@ -1603,6 +1740,7 @@ misin	O	tr
 oturdum	O	tr
 bekliyorum	O	tr
 .	O	tr
+
 Bu	O	tr
 kadar	O	tr
 profesyonel	O	tr
@@ -1615,6 +1753,7 @@ basmak	I-IDIOM	tr
 büyük	O	tr
 cesaret	O	tr
 .	O	tr
+
 Kitapta	O	tr
 yer	B-IDIOM	tr
 alan	I-IDIOM	tr
@@ -1625,6 +1764,7 @@ kontrol	O	tr
 edilmesi	O	tr
 gerekiyor	O	tr
 .	O	tr
+
 Hayvan	O	tr
 hakları	O	tr
 yasasına	O	tr
@@ -1633,6 +1773,7 @@ kim	O	tr
 çıkabilir	I-IDIOM	tr
 anlayamıyorum	O	tr
 .	O	tr
+
 Sıkı	O	tr
 sıkı	O	tr
 diz	O	tr
@@ -1642,6 +1783,7 @@ yolda	O	tr
 dağılmadan	O	tr
 dursunlar	O	tr
 .	O	tr
+
 Biraz	O	tr
 sıkıştırınca	O	tr
 ne	O	tr
@@ -1652,24 +1794,27 @@ sayıp	B-IDIOM	tr
 dökmeye	I-IDIOM	tr
 başladı	O	tr
 .	O	tr
+
 Arkasında	O	tr
 hiçbir	O	tr
 iz	B-IDIOM	tr
 bırakmamış	I-IDIOM	tr
 .	O	tr
+
 Belediye	O	tr
 başkanı	O	tr
 mitinglerde	O	tr
 halkın	O	tr
 nabzını	B-IDIOM	tr
 tutuyordu	I-IDIOM	tr
-.	O	tr
+
 Bütün	O	tr
 zamanını	B-IDIOM	tr
 kumarla	O	tr
 içkiyle	O	tr
 öldürüyormuş	I-IDIOM	tr
 .	O	tr
+
 Hem	O	tr
 suçlu	O	tr
 olup	O	tr
@@ -1682,6 +1827,7 @@ insanlar	O	tr
 beni	O	tr
 yoruyorsunuz	O	tr
 .	O	tr
+
 Maskenizi	O	tr
 açmayın	O	tr
 ve	O	tr
@@ -1690,18 +1836,20 @@ bol	O	tr
 elinizi	O	tr
 yıkayın	O	tr
 .	O	tr
+
 İleri	B-IDIOM	tr
 sürdüğün	I-IDIOM	tr
 fikir	O	tr
 çılgınca	O	tr
 .	O	tr
+
 Dağ	O	tr
 taş	O	tr
 gibi	O	tr
 sıkı	B-IDIOM	tr
 durmak	I-IDIOM	tr
 gerek	O	tr
-.	O	tr
+
 İçime	O	tr
 bir	O	tr
 şüphe	O	tr
@@ -1717,6 +1865,7 @@ acaba	O	tr
 erimeseler	O	tr
 bari	O	tr
 .	O	tr
+
 Petrol	O	tr
 yasasında	O	tr
 geri	O	tr
@@ -1724,6 +1873,7 @@ adım	B-IDIOM	tr
 mı	O	tr
 atılacak	I-IDIOM	tr
 .	O	tr
+
 Yer	B-IDIOM	tr
 aldığı	I-IDIOM	tr
 bütün	O	tr
@@ -1732,6 +1882,7 @@ kaybetti	O	tr
 şimdiye	O	tr
 kadar	O	tr
 .	O	tr
+
 Bir	O	tr
 an	O	tr
 önce	O	tr
@@ -1740,6 +1891,7 @@ sıvayıp	I-IDIOM	tr
 işe	O	tr
 başlayalım	O	tr
 .	O	tr
+
 Makine	O	tr
 öğrenimi	O	tr
 kitabı	O	tr
@@ -1750,19 +1902,19 @@ sıralamada	O	tr
 üstte	O	tr
 çıkmaya	O	tr
 çalışıyordu	O	tr
-.	O	tr
+
 otobanda	O	tr
 trafik	O	tr
 kazası	O	tr
 meydana	B-IDIOM	tr
 geldi	I-IDIOM	tr
-.	O	tr
+
 Altını	O	tr
 renkli	O	tr
 kalemler	O	tr
 ile	O	tr
 çizdi	O	tr
-.	O	tr
+
 Yönetimin	O	tr
 Üst	O	tr
 üste	O	tr
@@ -1771,7 +1923,7 @@ kararlar	O	tr
 onun	O	tr
 zararına	O	tr
 olmuştu	O	tr
-.	O	tr
+
 Fasülye	O	tr
 sırığına	O	tr
 tırmananarak	O	tr
@@ -1784,6 +1936,7 @@ devlerin	O	tr
 karşısında	O	tr
 buldu	O	tr
 .	O	tr
+
 Seyirci	O	tr
 sahadaki	O	tr
 futbolcuların	O	tr
@@ -1792,17 +1945,20 @@ yabancı	O	tr
 cisim	O	tr
 attı	O	tr
 .	O	tr
+
 Motorlarını	O	tr
 ormana	O	tr
 doğru	O	tr
 ileri	O	tr
 sürdüler	O	tr
 .	O	tr
+
 Yaptığım	O	tr
 basamakları	O	tr
 aşındırmandan	O	tr
 bıktım	O	tr
 .	O	tr
+
 Tüm	O	tr
 doktorlar	O	tr
 şehrin	O	tr
@@ -1813,12 +1969,13 @@ gelip	O	tr
 oturma	O	tr
 eylemi	O	tr
 yaptı	O	tr
-.	O	tr
+
 Kazan	O	tr
 kaynadı	O	tr
 zaman	O	tr
 doldu	O	tr
 .	O	tr
+
 Çadırımdan	O	tr
 çıkıp	O	tr
 kuzey	O	tr
@@ -1827,6 +1984,7 @@ karşısında	O	tr
 hayallere	O	tr
 daldım	O	tr
 .	O	tr
+
 Bu	O	tr
 hafta	O	tr
 okul	O	tr
@@ -1834,7 +1992,7 @@ sırasının	O	tr
 başına	O	tr
 Ayşe	O	tr
 geçti	O	tr
-.	O	tr
+
 Bunu	O	tr
 davranışla	O	tr
 zaman	B-IDIOM	tr
@@ -1846,6 +2004,7 @@ hiçbir	O	tr
 şey	O	tr
 yoktur	O	tr
 .	O	tr
+
 Herkesin	O	tr
 aksine	O	tr
 ,	O	tr
@@ -1856,6 +2015,7 @@ dondurmayı	O	tr
 yemeyi	O	tr
 severim	O	tr
 .	O	tr
+
 Üst	O	tr
 taraflardan	O	tr
 aldığım	O	tr
@@ -1863,7 +2023,7 @@ mal	O	tr
 bile	O	tr
 ezik	O	tr
 çıktı	O	tr
-.	O	tr
+
 Öğretim	O	tr
 ve	O	tr
 öğrenimin	O	tr
@@ -1875,6 +2035,7 @@ politik	O	tr
 tartışmalar	O	tr
 almıştı	I-IDIOM	tr
 .	O	tr
+
 Sevgilisi	O	tr
 elini	O	tr
 açmasını	O	tr
@@ -1887,16 +2048,18 @@ taş	O	tr
 yüzük	O	tr
 gözüktü	O	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 kazanmanın	I-IDIOM	tr
 zamanı	O	tr
 gelmişti	O	tr
-.	O	tr
+
 Ayva	O	tr
 yemeyi	O	tr
 çok	O	tr
 severim	O	tr
 .	O	tr
+
 Altını	B-IDIOM	tr
 çiziyorum	I-IDIOM	tr
 bu	O	tr
@@ -1904,13 +2067,14 @@ iş	O	tr
 böyle	O	tr
 yapılır	O	tr
 .	O	tr
+
 Başa	O	tr
 geçemedim	O	tr
 bugünkü	O	tr
 sıralamada	O	tr
 :	O	tr
 (	O	tr
-.	O	tr
+
 Ellerini	O	tr
 açıp	O	tr
 benden	O	tr
@@ -1918,6 +2082,7 @@ bir	O	tr
 şey	O	tr
 istedi	O	tr
 .	O	tr
+
 Otelde	O	tr
 deniz	O	tr
 görmeyen	O	tr
@@ -1925,7 +2090,7 @@ bir	O	tr
 yerden	O	tr
 oda	O	tr
 verdiler	O	tr
-.	O	tr
+
 Bu	O	tr
 toplantıda	O	tr
 altını	B-IDIOM	tr
@@ -1935,6 +2100,7 @@ bazı	O	tr
 konular	O	tr
 var	O	tr
 .	O	tr
+
 Yapılacak	O	tr
 olan	O	tr
 işte	O	tr
@@ -1944,6 +2110,7 @@ görev	O	tr
 neyse	O	tr
 alırım	I-IDIOM	tr
 .	O	tr
+
 Bağışıklık	O	tr
 sistemini	O	tr
 güçlü	O	tr
@@ -1955,6 +2122,7 @@ nabzın	O	tr
 yavaşladığından	O	tr
 bahsetti	O	tr
 .	O	tr
+
 Metroda	O	tr
 yaşlı	O	tr
 amcaya	O	tr
@@ -1964,12 +2132,13 @@ için	O	tr
 ayağa	O	tr
 kalktı	O	tr
 .	O	tr
+
 Üstüne	B-IDIOM	tr
 alınacağını	I-IDIOM	tr
 bilsem	O	tr
 böyle	O	tr
 davranmazdim	O	tr
-.	O	tr
+
 Eğer	O	tr
 biz	O	tr
 iz	O	tr
@@ -1980,6 +2149,7 @@ beni	O	tr
 kesin	O	tr
 bulurlardı	O	tr
 .	O	tr
+
 El	O	tr
 açması	O	tr
 hamur	O	tr
@@ -1988,7 +2158,7 @@ annelerimiz	O	tr
 çok	O	tr
 güzel	O	tr
 yapar	O	tr
-.	O	tr
+
 Kazanmak	O	tr
 ya	O	tr
 da	O	tr
@@ -2002,6 +2172,7 @@ ve	O	tr
 gayretini	O	tr
 göster	O	tr
 .	O	tr
+
 Hele	O	tr
 hele	O	tr
 corona	O	tr
@@ -2017,6 +2188,7 @@ hiç	O	tr
 gerek	O	tr
 yok	O	tr
 .	O	tr
+
 Kitap	O	tr
 okurken	O	tr
 beğendiği	O	tr
@@ -2025,6 +2197,7 @@ altını	O	tr
 dikkatle	O	tr
 çiziyordu	O	tr
 .	O	tr
+
 Elini	O	tr
 açtı	O	tr
 ve	O	tr
@@ -2033,7 +2206,7 @@ zardan	O	tr
 düşmesine	O	tr
 izin	O	tr
 vermedi	O	tr
-.	O	tr
+
 Meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
 bu	O	tr
@@ -2043,7 +2216,7 @@ daha	O	tr
 yaşadıklarımıza	O	tr
 hiç	O	tr
 benzemiyor	O	tr
-.	O	tr
+
 Bursa'da	O	tr
 heykel	O	tr
 meydanında	O	tr
@@ -2056,6 +2229,7 @@ kişi	O	tr
 gözaltına	O	tr
 alındı	O	tr
 .	O	tr
+
 Bunun	O	tr
 hesabını	B-IDIOM	tr
 uzun	O	tr
@@ -2063,19 +2237,20 @@ uzun	O	tr
 vereceksin	I-IDIOM	tr
 Mahmut	O	tr
 .	O	tr
+
 sıkı	O	tr
 dizilmiş	O	tr
 kitaplar	O	tr
 durmadan	O	tr
 tozlanıyordu	O	tr
-.	O	tr
+
 Televizyonda	O	tr
 haberi	O	tr
 gördükten	O	tr
 sonra	O	tr
 içi	B-IDIOM	tr
 eridi	I-IDIOM	tr
-.	O	tr
+
 El	O	tr
 oğlu	O	tr
 her	O	tr
@@ -2086,20 +2261,21 @@ ayakkabı	O	tr
 dükkanı	O	tr
 açıyor	O	tr
 .	O	tr
+
 Sormadan	O	tr
 söyliyeyim	O	tr
 ,	O	tr
 size	O	tr
 hesap	B-IDIOM	tr
 vermeyeceğim	I-IDIOM	tr
-.	O	tr
+
 Kitabın	O	tr
 ön	O	tr
 yüzüne	O	tr
 dahi	O	tr
 el	O	tr
 sürmemiş	O	tr
-.	O	tr
+
 Yeni	O	tr
 alınan	O	tr
 kararlar	O	tr
@@ -2110,7 +2286,7 @@ ki	O	tr
 oyuncularla	O	tr
 konuşmak	O	tr
 yasaklandı	O	tr
-.	O	tr
+
 Asker	O	tr
 nöbette	O	tr
 sabaha	O	tr
@@ -2118,6 +2294,7 @@ kadar	O	tr
 göz	O	tr
 yummadı	O	tr
 .	O	tr
+
 Hadi	O	tr
 gel	O	tr
 üste	O	tr
@@ -2128,7 +2305,7 @@ manzara	O	tr
 daha	O	tr
 net	O	tr
 gözüküyor	O	tr
-.	O	tr
+
 Gündemde	O	tr
 ele	B-IDIOM	tr
 alınan	I-IDIOM	tr
@@ -2136,7 +2313,7 @@ sorunlar	O	tr
 baya	O	tr
 baya	O	tr
 birikti	O	tr
-.	O	tr
+
 Bunca	O	tr
 geçen	O	tr
 zaman	O	tr
@@ -2146,7 +2323,7 @@ onu	O	tr
 vakti	O	tr
 nereden	O	tr
 buldun	O	tr
-.	O	tr
+
 Biraz	O	tr
 daha	O	tr
 üstüme	O	tr
@@ -2155,11 +2332,13 @@ silerim	I-IDIOM	tr
 adını	O	tr
 defterden	B-IDIOM	tr
 !	O	tr
+
 Defterdeki	O	tr
 bütün	O	tr
 borçları	O	tr
 sildirdi	O	tr
 .	O	tr
+
 Küreyi	O	tr
 eline	O	tr
 aldı	O	tr
@@ -2168,7 +2347,7 @@ biraz	O	tr
 oynayıp	O	tr
 yerine	O	tr
 bıraktı	O	tr
-.	O	tr
+
 Potanın	O	tr
 tam	O	tr
 ortasına	O	tr
@@ -2178,6 +2357,7 @@ topla	O	tr
 sayı	O	tr
 aldı	O	tr
 .	O	tr
+
 Bir	O	tr
 işin	O	tr
 başına	B-IDIOM	tr
@@ -2186,6 +2366,7 @@ sen	O	tr
 geçme	I-IDIOM	tr
 kardeşim	O	tr
 !	O	tr
+
 Üste	B-IDIOM	tr
 çıkmak	I-IDIOM	tr
 için	O	tr
@@ -2201,12 +2382,14 @@ bu	O	tr
 konuda	O	tr
 haksızsın	O	tr
 !	O	tr
+
 Ekip	O	tr
 içerisinde	O	tr
 yer	B-IDIOM	tr
 mi	O	tr
 alacaksın	I-IDIOM	tr
 ?	O	tr
+
 Basamak	O	tr
 yapmak	O	tr
 için	O	tr
@@ -2214,6 +2397,7 @@ tuğlaya	O	tr
 ihtiyacı	O	tr
 vardı	O	tr
 .	O	tr
+
 Yaptığı	O	tr
 kurabiyeleri	O	tr
 erimiş	O	tr
@@ -2222,6 +2406,7 @@ içine	O	tr
 batırıp	O	tr
 çıkardı	O	tr
 .	O	tr
+
 Şimdi	O	tr
 al	O	tr
 onu	O	tr
@@ -2231,6 +2416,7 @@ ve	O	tr
 karşıya	O	tr
 bırak	O	tr
 .	O	tr
+
 Elmanın	O	tr
 lifleri	O	tr
 o	O	tr
@@ -2241,6 +2427,7 @@ ki	O	tr
 çok	O	tr
 sertti	O	tr
 .	O	tr
+
 Yemek	O	tr
 masasına	O	tr
 oturduktan	O	tr
@@ -2250,23 +2437,26 @@ sıvayıp	O	tr
 yemek	O	tr
 yemeye	O	tr
 başladı	O	tr
-.	O	tr
+
 Şu	O	tr
 zamanda	O	tr
 yaşatmak	O	tr
 öldürmekten	O	tr
 zor	O	tr
 .	O	tr
+
 İlacın	O	tr
 etkisi	O	tr
 ortaya	B-IDIOM	tr
 koyuldu	I-IDIOM	tr
 .	O	tr
+
 Lütfen	O	tr
 hızlıca	O	tr
 yerinizi	B-IDIOM	tr
 alınız	I-IDIOM	tr
 .	O	tr
+
 Bu	O	tr
 hafta	O	tr
 yazısında	O	tr
@@ -2293,6 +2483,7 @@ giden	O	tr
 ilk	O	tr
 adımdı	O	tr
 .	O	tr
+
 Sıralamada	O	tr
 üst	O	tr
 sıralara	O	tr
@@ -2301,7 +2492,7 @@ dağarcığına	O	tr
 yeni	O	tr
 kelimeler	O	tr
 almalısın	O	tr
-.	O	tr
+
 Bu	O	tr
 kadar	O	tr
 üzerinde	B-IDIOM	tr
@@ -2309,7 +2500,7 @@ durulacak	I-IDIOM	tr
 bir	O	tr
 konu	O	tr
 değil	O	tr
-.	O	tr
+
 Altını	B-IDIOM	tr
 çizerek	I-IDIOM	tr
 belirtmek	O	tr
@@ -2317,7 +2508,7 @@ isterim	O	tr
 ki	O	tr
 hata	O	tr
 yaptınız	O	tr
-.	O	tr
+
 Ve	O	tr
 Rohan	O	tr
 cevap	O	tr
@@ -2326,11 +2517,13 @@ verecek	O	tr
 sıkı	B-IDIOM	tr
 durun	I-IDIOM	tr
 .	O	tr
+
 Terleyen	O	tr
 elimi	O	tr
 açınca	O	tr
 serinledi	O	tr
 .	O	tr
+
 Örneği	O	tr
 şikayet	O	tr
 etmem	O	tr
@@ -2344,6 +2537,7 @@ olduğu	O	tr
 anlamına	O	tr
 geliyor	O	tr
 .	O	tr
+
 Ellerimi	B-IDIOM	tr
 zaman	O	tr
 zaman	O	tr
@@ -2352,12 +2546,13 @@ birilerinden	O	tr
 yardım	O	tr
 bekliyorum	O	tr
 .	O	tr
+
 Zamanında	O	tr
 öldürdüğüm	O	tr
 hayvanlar	O	tr
 rüyalarıma	O	tr
 giriyor	O	tr
-.	O	tr
+
 Her	O	tr
 akşam	O	tr
 dizi	O	tr
@@ -2368,19 +2563,21 @@ karşısında	O	tr
 zaman	B-IDIOM	tr
 öldürüyorsun	I-IDIOM	tr
 .	O	tr
+
 defterimden	B-IDIOM	tr
 silemem	I-IDIOM	tr
 adını	O	tr
 altın	O	tr
 harflerle	O	tr
 yazdım	O	tr
-.	O	tr
+
 Elimi	B-IDIOM	tr
 kardeşime	O	tr
 dahi	O	tr
 açmak	I-IDIOM	tr
 istemem	O	tr
 .	O	tr
+
 Zamanı	O	tr
 geldiğinde	O	tr
 onu	O	tr
@@ -2388,7 +2585,7 @@ nasıl	O	tr
 öldürdüğünü	O	tr
 anlatıcam	O	tr
 sana	O	tr
-.	O	tr
+
 Daha	O	tr
 çok	O	tr
 başarı	O	tr
@@ -2397,12 +2594,14 @@ motivasyon	O	tr
 üzerinde	B-IDIOM	tr
 duruyorum	I-IDIOM	tr
 .	O	tr
+
 Boncukları	O	tr
 sayıp	O	tr
 halının	O	tr
 üstüne	O	tr
 döktü	O	tr
 .	O	tr
+
 Elini	O	tr
 açıp	O	tr
 beden	O	tr
@@ -2412,6 +2611,7 @@ seyler	O	tr
 anlatmaya	O	tr
 çalıştı	O	tr
 .	O	tr
+
 Zümrüt	O	tr
 gelince	O	tr
 hep	O	tr
@@ -2421,6 +2621,7 @@ kafeye	O	tr
 gidelim	O	tr
 mi	O	tr
 ?	O	tr
+
 Dışarı	O	tr
 çıkmadan	O	tr
 önce	O	tr
@@ -2431,13 +2632,14 @@ bölüp	O	tr
 bana	O	tr
 verdi	O	tr
 .	O	tr
+
 Elektrik	O	tr
 zammına	O	tr
 karşı	B-IDIOM	tr
 çıkmanın	I-IDIOM	tr
 vakti	O	tr
 geldi	O	tr
-.	O	tr
+
 Üstüme	B-IDIOM	tr
 aldığım	I-IDIOM	tr
 bütün	O	tr
@@ -2445,6 +2647,7 @@ görevlerde	O	tr
 başarısız	O	tr
 oldum	O	tr
 .	O	tr
+
 Terfi	O	tr
 alabilmek	O	tr
 için	O	tr
@@ -2454,6 +2657,7 @@ basamak	B-IDIOM	tr
 yaptığını	I-IDIOM	tr
 anlamıştık	O	tr
 .	O	tr
+
 Atılan	O	tr
 iftiraların	O	tr
 ,	O	tr
@@ -2464,6 +2668,7 @@ verme	I-IDIOM	tr
 vakti	O	tr
 geldi	O	tr
 .	O	tr
+
 bu	O	tr
 kokulu	O	tr
 silgi	O	tr
@@ -2473,14 +2678,14 @@ silemiyor	O	tr
 izi	O	tr
 kalıyor	O	tr
 hep	O	tr
-.	O	tr
+
 Yemeğin	O	tr
 üstündeki	O	tr
 böceği	O	tr
 eliyle	O	tr
 alıp	O	tr
 attı	O	tr
-.	O	tr
+
 Çıkan	O	tr
 ses	O	tr
 karşı	O	tr
@@ -2488,6 +2693,7 @@ komşudan	O	tr
 mı	O	tr
 geliyor	O	tr
 ?	O	tr
+
 Bu	O	tr
 işe	O	tr
 başlamak	O	tr
@@ -2495,13 +2701,14 @@ için	O	tr
 kolları	B-IDIOM	tr
 sıvadık	I-IDIOM	tr
 .	O	tr
+
 bugün	O	tr
 menüde	O	tr
 parmak	O	tr
 bastı	O	tr
 tatlısı	O	tr
 vardı	O	tr
-.	O	tr
+
 Derste	O	tr
 çok	O	tr
 üzerinde	B-IDIOM	tr
@@ -2512,6 +2719,7 @@ hiç	O	tr
 soru	O	tr
 çıkmamıştı	O	tr
 .	O	tr
+
 Yüksek	O	tr
 tempoda	O	tr
 oynamak	O	tr
@@ -2520,12 +2728,13 @@ kontrolü	O	tr
 elimize	B-IDIOM	tr
 almalıyız	I-IDIOM	tr
 .	O	tr
+
 Zamanlarını	B-IDIOM	tr
 acımadan	O	tr
 nasıl	O	tr
 da	O	tr
 öldürüyorlar	I-IDIOM	tr
-.	O	tr
+
 Elimi	O	tr
 koyduğum	O	tr
 yer	O	tr
@@ -2536,7 +2745,7 @@ için	O	tr
 dengemi	O	tr
 kaybederek	O	tr
 düştüm	O	tr
-.	O	tr
+
 Hukuk	O	tr
 sistemi	O	tr
 buna	O	tr
@@ -2550,6 +2759,7 @@ artmaya	O	tr
 devam	O	tr
 edecek	O	tr
 .	O	tr
+
 Rüzgara	O	tr
 karşı	O	tr
 tutarsan	O	tr
@@ -2558,6 +2768,7 @@ daha	O	tr
 yükseklere	O	tr
 çıkar	O	tr
 .	O	tr
+
 Sosyal	O	tr
 medya	O	tr
 hesaplarını	O	tr
@@ -2567,12 +2778,14 @@ için	O	tr
 bize	O	tr
 vermelisiniz	O	tr
 .	O	tr
+
 Sinemadan	O	tr
 beş	O	tr
 kişilik	O	tr
 yer	O	tr
 aldım	O	tr
 .	O	tr
+
 Beşiğin	O	tr
 üstüne	O	tr
 bir	O	tr
@@ -2581,6 +2794,7 @@ cibinlik	O	tr
 mi	O	tr
 alsak	O	tr
 ?	O	tr
+
 Kaşla	O	tr
 göz	O	tr
 arasında	O	tr
@@ -2590,6 +2804,7 @@ yediğini	I-IDIOM	tr
 anlayamadı	O	tr
 bile	O	tr
 .	O	tr
+
 Hafif	O	tr
 görüntüsünden	O	tr
 dolayı	O	tr
@@ -2599,6 +2814,7 @@ ağırlığı	O	tr
 insanı	O	tr
 şaşırtıyordu	O	tr
 .	O	tr
+
 Aldığı	O	tr
 tüm	O	tr
 kararlar	O	tr
@@ -2607,12 +2823,13 @@ onun	O	tr
 sıralara	O	tr
 çıkmasını	O	tr
 sağladı	O	tr
-.	O	tr
+
 Yaralarını	O	tr
 görünce	O	tr
 içim	B-IDIOM	tr
 eridi	I-IDIOM	tr
 .	O	tr
+
 Yaptığı	O	tr
 pastanın	O	tr
 üstüne	O	tr
@@ -2620,6 +2837,7 @@ yanlışlıkla	O	tr
 topu	O	tr
 attı	O	tr
 .	O	tr
+
 Karanlık	O	tr
 olunca	O	tr
 mumu	O	tr
@@ -2630,10 +2848,12 @@ için	O	tr
 bana	O	tr
 attı	O	tr
 .	O	tr
+
 Farkını	O	tr
 ortaya	B-IDIOM	tr
 koy	I-IDIOM	tr
 .	O	tr
+
 İş	O	tr
 başvurunda	O	tr
 hangi	O	tr
@@ -2641,6 +2861,7 @@ e-posta	O	tr
 hesabını	O	tr
 verdin	O	tr
 ?	O	tr
+
 parmağına	O	tr
 takdığı	O	tr
 yüzükle	O	tr
@@ -2649,18 +2870,20 @@ birlikte	O	tr
 yaşına	O	tr
 bastı	O	tr
 .	O	tr
+
 Oyları	O	tr
 sayarken	O	tr
 heyecandan	O	tr
 kahveyi	O	tr
 yerlere	O	tr
 döktü	O	tr
-.	O	tr
+
 Meydana	O	tr
 Aslı	O	tr
 geldi	O	tr
 mi	O	tr
 ?	O	tr
+
 Atina'da	O	tr
 Athena	O	tr
 Tapınağı'nın	O	tr
@@ -2671,6 +2894,7 @@ karşıdan	O	tr
 izleyenleri	O	tr
 büyüledi	O	tr
 .	O	tr
+
 Evet	O	tr
 ,	O	tr
 basamak	B-IDIOM	tr
@@ -2678,6 +2902,7 @@ yapılacak	I-IDIOM	tr
 insanlar	O	tr
 satıyorum	O	tr
 .	O	tr
+
 Ağırlığını	O	tr
 öne	O	tr
 doğru	O	tr
@@ -2685,6 +2910,7 @@ verdiğin	O	tr
 için	O	tr
 düşüyorsun	O	tr
 .	O	tr
+
 Kusura	O	tr
 bakma	O	tr
 ama	O	tr
@@ -2697,6 +2923,7 @@ sorumlusu	O	tr
 biz	O	tr
 değiliz	O	tr
 .	O	tr
+
 Terfi	O	tr
 edebilmek	O	tr
 için	O	tr
@@ -2704,6 +2931,7 @@ beni	O	tr
 basamak	B-IDIOM	tr
 yaptı	I-IDIOM	tr
 .	O	tr
+
 Ahmet	O	tr
 eşyalarını	O	tr
 bırakıp	O	tr
@@ -2711,7 +2939,7 @@ bırakıp	O	tr
 giyecek	O	tr
 birşeyler	O	tr
 aldı	O	tr
-.	O	tr
+
 Mansur	O	tr
 Yavaş	O	tr
 sıkı	B-IDIOM	tr
@@ -2719,6 +2947,7 @@ duran	I-IDIOM	tr
 bir	O	tr
 insandır	O	tr
 .	O	tr
+
 Arabayı	O	tr
 öne	O	tr
 doğru	O	tr
@@ -2730,6 +2959,7 @@ geri	O	tr
 gitmekte	O	tr
 zorlanıyorum	O	tr
 .	O	tr
+
 Varını	O	tr
 yoğunu	O	tr
 bu	O	tr
@@ -2741,6 +2971,7 @@ ulaşamayınca	O	tr
 içi	O	tr
 gitti	O	tr
 .	O	tr
+
 Başa	B-IDIOM	tr
 geçmek	I-IDIOM	tr
 için	O	tr
@@ -2749,7 +2980,7 @@ mücadeleye	O	tr
 hayran	O	tr
 kaldım	O	tr
 doğrusu	O	tr
-.	O	tr
+
 Bu	O	tr
 kaçıncı	O	tr
 ,	O	tr
@@ -2757,11 +2988,13 @@ neden	O	tr
 göz	B-IDIOM	tr
 yumuluyor	I-IDIOM	tr
 ?	O	tr
+
 Ayva	O	tr
 yerken	O	tr
 dişlerim	O	tr
 kırıldı	O	tr
 .	O	tr
+
 Üstünden	B-IDIOM	tr
 atmaya	I-IDIOM	tr
 çalışma	O	tr
@@ -2769,13 +3002,14 @@ boşuna	O	tr
 bunları	O	tr
 sana	O	tr
 yaptıracaklar	O	tr
-.	O	tr
+
 Yanlış	O	tr
 örneklere	O	tr
 karşı	B-IDIOM	tr
 çıkmak	I-IDIOM	tr
 zorundayız	O	tr
 .	O	tr
+
 Koruma	O	tr
 yasasına	O	tr
 en	O	tr
@@ -2789,6 +3023,7 @@ yaşanan	O	tr
 sorumluluğunu	O	tr
 almıyor	O	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 çok	O	tr
 kıymetli	O	tr
@@ -2798,6 +3033,7 @@ için	O	tr
 kaybetmemeyi	O	tr
 denemelisiniz	O	tr
 .	O	tr
+
 Bu	O	tr
 gece	O	tr
 yediklerimiz	O	tr
@@ -2806,6 +3042,7 @@ hesabı	O	tr
 kim	O	tr
 verecek	O	tr
 ?	O	tr
+
 Yılbaşı	O	tr
 ağacınının	O	tr
 üstünü	O	tr
@@ -2813,7 +3050,7 @@ süslemek	O	tr
 için	O	tr
 sandalyeye	O	tr
 çıkmış	O	tr
-.	O	tr
+
 Sisteme	O	tr
 sızan	O	tr
 hacker	O	tr
@@ -2823,6 +3060,7 @@ izler	O	tr
 sayesinde	O	tr
 bulundu	O	tr
 .	O	tr
+
 Yaptığı	O	tr
 hataların	O	tr
 hesabını	B-IDIOM	tr
@@ -2830,15 +3068,18 @@ tek	O	tr
 tek	O	tr
 verdi	I-IDIOM	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 kazandırdığın	I-IDIOM	tr
 için	O	tr
 teşekkürler	O	tr
 .	O	tr
+
 Ellerinizi	O	tr
 açın	O	tr
 bakiyim	O	tr
 .	O	tr
+
 bastığın	O	tr
 yerlerde	O	tr
 parmak	O	tr
@@ -2846,12 +3087,13 @@ izleri	O	tr
 mi	O	tr
 var	O	tr
 ?	O	tr
+
 Hesabının	O	tr
 şifresini	O	tr
 yetkililere	O	tr
 bile	O	tr
 verme	O	tr
-.	O	tr
+
 Sinirlenince	O	tr
 içindekileri	O	tr
 döktü	O	tr
@@ -2864,23 +3106,26 @@ saymaya	O	tr
 devam	O	tr
 etti	O	tr
 .	O	tr
+
 Tahtadaki	O	tr
 örneklerin	O	tr
 altını	O	tr
 çizdi	O	tr
 .	O	tr
+
 Bu	O	tr
 olaya	O	tr
 parmak	B-IDIOM	tr
 basmak	I-IDIOM	tr
 istedim	O	tr
 .	O	tr
+
 Cevdet	O	tr
 bey	O	tr
 bunun	O	tr
 hesabını	B-IDIOM	tr
 verecek	I-IDIOM	tr
-.	O	tr
+
 İleriye	O	tr
 sürdüğü	O	tr
 askerler	O	tr
@@ -2890,6 +3135,7 @@ komutan	O	tr
 gözyaşlarını	O	tr
 tutamadı	O	tr
 .	O	tr
+
 Saçlarını	O	tr
 sıkı	O	tr
 sıkı	O	tr
@@ -2900,7 +3146,7 @@ kıpırdaman	O	tr
 ayakta	O	tr
 dakikalarca	O	tr
 durdu	O	tr
-.	O	tr
+
 Hayırlı	O	tr
 bir	O	tr
 işe	O	tr
@@ -2908,6 +3154,7 @@ yol	B-IDIOM	tr
 açmış	I-IDIOM	tr
 olursun	O	tr
 .	O	tr
+
 Getir	O	tr
 ,	O	tr
 banabi	O	tr
@@ -2923,6 +3170,7 @@ size	O	tr
 zaman	O	tr
 kazandırır	I-IDIOM	tr
 .	O	tr
+
 Burası	O	tr
 ana	O	tr
 cadde	O	tr
@@ -2934,7 +3182,7 @@ karşına	O	tr
 ilk	O	tr
 otobüse	O	tr
 binmemelisin	O	tr
-.	O	tr
+
 Hata	O	tr
 çıkmasa	O	tr
 karşıma	O	tr
@@ -2942,6 +3190,7 @@ neler	O	tr
 yapacağım	O	tr
 da	O	tr
 !	O	tr
+
 Bu	O	tr
 ön	O	tr
 işlemlerin	O	tr
@@ -2949,6 +3198,7 @@ hiçbiri	O	tr
 sürdürülebilir	O	tr
 değil	O	tr
 .	O	tr
+
 Yaptığın	O	tr
 derste	O	tr
 bu	O	tr
@@ -2957,13 +3207,14 @@ konu	O	tr
 durman	I-IDIOM	tr
 gerek	O	tr
 .	O	tr
+
 Birileri	O	tr
 başa	B-IDIOM	tr
 geçmek	I-IDIOM	tr
 için	O	tr
 mücadele	O	tr
 veriyor	O	tr
-.	O	tr
+
 Verdiği	O	tr
 o	O	tr
 gereksiz	O	tr
@@ -2971,12 +3222,14 @@ tepkilerin	O	tr
 hesabını	B-IDIOM	tr
 verecek	I-IDIOM	tr
 !	O	tr
+
 Bu	O	tr
 noktanın	O	tr
 altını	B-IDIOM	tr
 çizmek	I-IDIOM	tr
 isterim	O	tr
 .	O	tr
+
 Toplum	O	tr
 içinde	O	tr
 yer	B-IDIOM	tr
@@ -2986,12 +3239,14 @@ olduğu	O	tr
 için	O	tr
 sevilirdi	O	tr
 .	O	tr
+
 Bir	O	tr
 oturuşta	O	tr
 kaç	O	tr
 ayva	O	tr
 yiyebilirsin	O	tr
 ?	O	tr
+
 El	B-IDIOM	tr
 açtım	I-IDIOM	tr
 tanrıya	O	tr
@@ -2999,6 +3254,7 @@ duysun	O	tr
 diye	O	tr
 beni	O	tr
 .	O	tr
+
 Dünyayı	O	tr
 dengede	O	tr
 tutmak	O	tr
@@ -3007,6 +3263,7 @@ kalbine	O	tr
 ağırlık	B-IDIOM	tr
 ver	I-IDIOM	tr
 .	O	tr
+
 Altını	B-IDIOM	tr
 çizerek	I-IDIOM	tr
 söylüyorum	O	tr
@@ -3020,6 +3277,7 @@ en	O	tr
 büyük	O	tr
 kötülüktü	O	tr
 .	O	tr
+
 Banka	O	tr
 hesabının	O	tr
 bilgilerini	O	tr
@@ -3027,19 +3285,22 @@ ona	O	tr
 mı	O	tr
 verdin	O	tr
 ?	O	tr
+
 Zamanı	O	tr
 geldiğinde	O	tr
 hesabını	B-IDIOM	tr
 vereceksin	I-IDIOM	tr
 .	O	tr
+
 Sıkı	B-IDIOM	tr
 dur	I-IDIOM	tr
 çarpacağım	O	tr
 .	O	tr
+
 Notlarım	O	tr
 defterimden	O	tr
 silinmiş	O	tr
-.	O	tr
+
 Dondurmanın	O	tr
 üstüne	O	tr
 bakkaldan	O	tr
@@ -3047,7 +3308,7 @@ aldığın	O	tr
 ılık	O	tr
 suyu	O	tr
 içmelisin	O	tr
-.	O	tr
+
 Bugün	O	tr
 tüm	O	tr
 yükümlülükleri	O	tr
@@ -3057,6 +3318,7 @@ ama	O	tr
 peki	O	tr
 yarın	O	tr
 ?	O	tr
+
 Bugün	O	tr
 yine	O	tr
 acıkıp	O	tr
@@ -3064,6 +3326,7 @@ evdeki	O	tr
 ayvayı	O	tr
 yedim	O	tr
 .	O	tr
+
 Yazar	O	tr
 bu	O	tr
 kitabı	O	tr
@@ -3083,6 +3346,7 @@ bir	O	tr
 eser	O	tr
 koymuş	I-IDIOM	tr
 .	O	tr
+
 Corona	O	tr
 virüs	O	tr
 1	O	tr
@@ -3095,7 +3359,7 @@ milyondan	O	tr
 fazla	O	tr
 kişiyi	O	tr
 öldürdü	O	tr
-.	O	tr
+
 Kazanacağınız	I-IDIOM	tr
 zamanı	B-IDIOM	tr
 biraz	O	tr
@@ -3104,6 +3368,7 @@ bana	O	tr
 ayırın	O	tr
 dostlar	O	tr
 .	O	tr
+
 Zamanında	O	tr
 işi	O	tr
 yetiştirememenin	O	tr
@@ -3111,20 +3376,20 @@ hesabını	B-IDIOM	tr
 müdüre	O	tr
 vermemiz	I-IDIOM	tr
 gerekecek	O	tr
-.	O	tr
+
 Sıkı	B-IDIOM	tr
 dur	I-IDIOM	tr
 sana	O	tr
 bir	O	tr
 müjdem	O	tr
 var	O	tr
-.	O	tr
+
 Masada	O	tr
 verdiği	O	tr
 hesapta	O	tr
 yanlışlık	O	tr
 olmuş	O	tr
-.	O	tr
+
 hiçbir	O	tr
 lafın	O	tr
 altında	O	tr
@@ -3134,12 +3399,13 @@ hemen	O	tr
 üste	B-IDIOM	tr
 çıkar	I-IDIOM	tr
 .	O	tr
+
 sıkı	B-IDIOM	tr
 mı	O	tr
 dursan	I-IDIOM	tr
 artık	O	tr
 yeter	O	tr
-.	O	tr
+
 Yaptığı	O	tr
 çalışmalarla	O	tr
 sonradan	O	tr
@@ -3147,6 +3413,7 @@ gelenelere	O	tr
 yol	B-IDIOM	tr
 açtı	I-IDIOM	tr
 .	O	tr
+
 Ona	O	tr
 buna	O	tr
 el	B-IDIOM	tr
@@ -3156,6 +3423,7 @@ bizim	O	tr
 dükkanda	O	tr
 çalış	O	tr
 .	O	tr
+
 Bu	O	tr
 habere	O	tr
 gerçekten	O	tr
@@ -3164,12 +3432,14 @@ mi	O	tr
 vereceksin	I-IDIOM	tr
 gazetende	O	tr
 ?	O	tr
+
 Hesabı	O	tr
 setcard	O	tr
 ile	O	tr
 vermek	O	tr
 istiyorum	O	tr
 .	O	tr
+
 Sınavda	O	tr
 ağırlık	B-IDIOM	tr
 ilk	O	tr
@@ -3177,12 +3447,14 @@ iki	O	tr
 konuya	O	tr
 verilmişti	I-IDIOM	tr
 .	O	tr
+
 Bütün	O	tr
 zorlukların	O	tr
 karşısında	O	tr
 sıkı	B-IDIOM	tr
 duruyordu	I-IDIOM	tr
 .	O	tr
+
 Üst	O	tr
 komşum	O	tr
 yaptığı	O	tr
@@ -3194,7 +3466,7 @@ koyabileceği	O	tr
 bir	O	tr
 mumluk	O	tr
 aldım	O	tr
-.	O	tr
+
 İzmir	O	tr
 depreminde	O	tr
 saatler	O	tr
@@ -3204,11 +3476,12 @@ küçük	O	tr
 çocuklara	O	tr
 içim	B-IDIOM	tr
 eridi	I-IDIOM	tr
-.	O	tr
+
 Herkese	O	tr
 el	B-IDIOM	tr
 açardı	I-IDIOM	tr
 .	O	tr
+
 Altını	O	tr
 bozdurup	O	tr
 ,	O	tr
@@ -3218,17 +3491,18 @@ listesinde	O	tr
 çizmesini	O	tr
 istedi	O	tr
 .	O	tr
+
 Üstüne	B-IDIOM	tr
 aldığı	I-IDIOM	tr
 suçlar	O	tr
 sonrasında	O	tr
 hapishaneye	O	tr
 girdi	O	tr
-.	O	tr
+
 Sonunda	O	tr
 ortaya	B-IDIOM	tr
 çıktı	I-IDIOM	tr
-.	O	tr
+
 Ayva	O	tr
 yerken	O	tr
 dikkat	O	tr
@@ -3237,12 +3511,14 @@ ki	O	tr
 boğazına	O	tr
 kaçmasın	O	tr
 .	O	tr
+
 Basamaksız	O	tr
 yapılan	O	tr
 merdiven	O	tr
 mi	O	tr
 olur	O	tr
 ?	O	tr
+
 Cam	O	tr
 sürahinin	O	tr
 altını	O	tr
@@ -3251,6 +3527,7 @@ için	O	tr
 elimde	O	tr
 tutuyordum	O	tr
 .	O	tr
+
 Bu	O	tr
 adam	O	tr
 toplumun	O	tr
@@ -3262,6 +3539,7 @@ gerçekten	O	tr
 iyi	O	tr
 biliyor	O	tr
 .	O	tr
+
 Meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
 toplumsal	O	tr
@@ -3271,12 +3549,13 @@ kargolar	O	tr
 teslim	O	tr
 edilememiştir	O	tr
 .	O	tr
+
 O	O	tr
 zalimlerin	O	tr
 elinde	O	tr
 ağzımı	O	tr
 açamadım	O	tr
-.	O	tr
+
 Basının	O	tr
 önemli	O	tr
 bir	O	tr
@@ -3287,6 +3566,7 @@ ele	B-IDIOM	tr
 almaktan	I-IDIOM	tr
 kaçınıyor	O	tr
 .	O	tr
+
 Yuja	O	tr
 Wang	O	tr
 Liszt'den	O	tr
@@ -3300,6 +3580,7 @@ başında	O	tr
 ellerini	O	tr
 açtı	O	tr
 .	O	tr
+
 Hic	O	tr
 çaresiz	O	tr
 kalmayacakmış	O	tr
@@ -3311,6 +3592,7 @@ el	B-IDIOM	tr
 açanları	I-IDIOM	tr
 kınamayın	O	tr
 .	O	tr
+
 Yaptığı	O	tr
 her	O	tr
 hataya	O	tr
@@ -3322,12 +3604,14 @@ hiçbir	O	tr
 şey	O	tr
 başaramayacak	O	tr
 .	O	tr
+
 Bu	O	tr
 işleri	O	tr
 sonunda	O	tr
 üstümden	B-IDIOM	tr
 attım	I-IDIOM	tr
 .	O	tr
+
 Konuşmasında	O	tr
 bu	O	tr
 önemli	O	tr
@@ -3335,7 +3619,7 @@ konuya	O	tr
 da	O	tr
 yer	B-IDIOM	tr
 verdi	I-IDIOM	tr
-.	O	tr
+
 Bunca	O	tr
 yaşanan	O	tr
 şeyden	O	tr
@@ -3345,6 +3629,7 @@ nasıl	O	tr
 açtın	I-IDIOM	tr
 ona	O	tr
 ?	O	tr
+
 Üst	O	tr
 komşudan	O	tr
 aldığımız	O	tr
@@ -3352,7 +3637,7 @@ tüm	O	tr
 meyveler	O	tr
 ezik	O	tr
 çıktı	O	tr
-.	O	tr
+
 Eski	O	tr
 arabasına	O	tr
 kıyasla	O	tr
@@ -3363,12 +3648,13 @@ epey	O	tr
 sıkı	B-IDIOM	tr
 duruyor	I-IDIOM	tr
 .	O	tr
+
 Gelirken	O	tr
 ayva	O	tr
 al	O	tr
 da	O	tr
 yiyelim	O	tr
-.	O	tr
+
 Zamanında	O	tr
 üstüne	B-IDIOM	tr
 o	O	tr
@@ -3381,7 +3667,7 @@ ki	O	tr
 şimdi	O	tr
 altından	O	tr
 kalkamıyor	O	tr
-.	O	tr
+
 Bugün	O	tr
 ne	O	tr
 kadar	O	tr
@@ -3397,6 +3683,7 @@ sorumluluğu	O	tr
 üstümden	B-IDIOM	tr
 atmalıyım	I-IDIOM	tr
 .	O	tr
+
 Bu	O	tr
 durum	O	tr
 karşısında	O	tr
@@ -3405,7 +3692,7 @@ sesin	O	tr
 daha	O	tr
 gür	O	tr
 çıkmalı	O	tr
-.	O	tr
+
 Bu	O	tr
 yarışta	O	tr
 derece	O	tr
@@ -3417,6 +3704,7 @@ olduğunu	O	tr
 ortaya	B-IDIOM	tr
 koydu	I-IDIOM	tr
 .	O	tr
+
 Basamakta	O	tr
 üç	O	tr
 kişi	O	tr
@@ -3428,17 +3716,20 @@ son	O	tr
 hazırlıklarını	O	tr
 yapıyorlar	O	tr
 ...	O	tr
+
 Oyun	O	tr
 hesabını	O	tr
 arkadaşına	O	tr
 ödünç	O	tr
 verdi	O	tr
 .	O	tr
+
 El	B-IDIOM	tr
 açanları	I-IDIOM	tr
 yargılamamayı	O	tr
 öğrendim	O	tr
 .	O	tr
+
 Altının	O	tr
 geçerli	O	tr
 olması	O	tr
@@ -3446,6 +3737,7 @@ için	O	tr
 çizmemek	O	tr
 gerekiyor	O	tr
 .	O	tr
+
 Evimde	O	tr
 hasar	O	tr
 meydana	B-IDIOM	tr
@@ -3453,6 +3745,7 @@ geldiğinde	I-IDIOM	tr
 ne	O	tr
 yapmalıyım	O	tr
 ?	O	tr
+
 Altını	B-IDIOM	tr
 da	O	tr
 çizmek	I-IDIOM	tr
@@ -3462,12 +3755,14 @@ meseleler	O	tr
 anlaşılsın	O	tr
 yeğenim	O	tr
 .	O	tr
+
 Hiç	O	tr
 bir	O	tr
 şeyin	O	tr
 hesabı	B-IDIOM	tr
 verilmiyor	I-IDIOM	tr
 .	O	tr
+
 Üstüme	O	tr
 üsteme	O	tr
 geliyor	O	tr
@@ -3476,6 +3771,7 @@ duvarlar	O	tr
 istiyorum	O	tr
 evden	O	tr
 .	O	tr
+
 Bahçedeki	O	tr
 ağaçtan	O	tr
 yediğim	O	tr
@@ -3483,6 +3779,7 @@ ayvalar	O	tr
 çok	O	tr
 güzeldi	O	tr
 .	O	tr
+
 Törende	O	tr
 sıranın	O	tr
 başına	O	tr
@@ -3491,6 +3788,7 @@ neye	O	tr
 göre	O	tr
 belirleyeceğiz	O	tr
 ?	O	tr
+
 Bozuk	O	tr
 paraları	O	tr
 sayıp	O	tr
@@ -3499,6 +3797,7 @@ koyarken	O	tr
 kavanozu	O	tr
 döktü	O	tr
 .	O	tr
+
 Raporu'nda	O	tr
 ortaya	B-IDIOM	tr
 koyulan	I-IDIOM	tr
@@ -3506,6 +3805,7 @@ görünümle	O	tr
 uyumlu	O	tr
 seyretmiştir	O	tr
 .	O	tr
+
 Yerimi	O	tr
 beğenmediğim	O	tr
 için	O	tr
@@ -3513,6 +3813,7 @@ başka	O	tr
 yer	O	tr
 aldım	O	tr
 .	O	tr
+
 Son	O	tr
 filminde	O	tr
 rolünü	O	tr
@@ -3520,6 +3821,7 @@ rolünü	O	tr
 iyi	O	tr
 oynamış	O	tr
 .	O	tr
+
 Sıkı	B-IDIOM	tr
 durun	I-IDIOM	tr
 ,	O	tr
@@ -3527,6 +3829,7 @@ duyunca	O	tr
 çok	O	tr
 şaşıracaksınız	O	tr
 .	O	tr
+
 Umut	O	tr
 doğar	O	tr
 genellikle	O	tr
@@ -3540,6 +3843,7 @@ yüzden	O	tr
 sıkı	B-IDIOM	tr
 durun	I-IDIOM	tr
 !	O	tr
+
 Tarihi	O	tr
 kilisede	O	tr
 meydana	B-IDIOM	tr
@@ -3550,7 +3854,7 @@ halkta	O	tr
 büyük	O	tr
 üzüntü	O	tr
 yarattı	O	tr
-.	O	tr
+
 Ferit	O	tr
 beni	O	tr
 basamak	B-IDIOM	tr
@@ -3559,6 +3863,7 @@ maaşı	O	tr
 artsın	O	tr
 diye	O	tr
 .	O	tr
+
 Genc	O	tr
 cocuk	O	tr
 ,	O	tr
@@ -3566,13 +3871,13 @@ otobuste	O	tr
 yasliya	O	tr
 yer	O	tr
 verdi	O	tr
-.	O	tr
+
 Son	O	tr
 sıralamada	O	tr
 yarışmacımız	O	tr
 yerini	B-IDIOM	tr
 aldı	I-IDIOM	tr
-.	O	tr
+
 Maçı	O	tr
 kaybedince	O	tr
 teknik	O	tr
@@ -3580,7 +3885,7 @@ direktör	O	tr
 başkana	O	tr
 hesap	B-IDIOM	tr
 verdi	I-IDIOM	tr
-.	O	tr
+
 Bana	O	tr
 yanlış	O	tr
 yaparsan	O	tr
@@ -3589,6 +3894,7 @@ de	O	tr
 defterden	B-IDIOM	tr
 silerim	I-IDIOM	tr
 .	O	tr
+
 Saatlerce	O	tr
 ;	O	tr
 günlerce	O	tr
@@ -3608,11 +3914,12 @@ ne	O	tr
 de	O	tr
 destekleyen	O	tr
 .	O	tr
+
 Bu	O	tr
 düşünceye	O	tr
 karşı	B-IDIOM	tr
 çıktım	I-IDIOM	tr
-.	O	tr
+
 Az	O	tr
 kaldı	O	tr
 ,	O	tr
@@ -3623,14 +3930,14 @@ tüm	O	tr
 olanların	O	tr
 hesabını	O	tr
 soracağım	O	tr
-.	O	tr
+
 Ağacın	O	tr
 üzerinde	O	tr
 dakikalarca	O	tr
 duran	O	tr
 kediyi	O	tr
 kurtardık	O	tr
-.	O	tr
+
 Ne	O	tr
 sözler	O	tr
 sayıp	B-IDIOM	tr
@@ -3639,6 +3946,7 @@ ama	O	tr
 kimse	O	tr
 anlamadı	O	tr
 .	O	tr
+
 Sıranın	O	tr
 başına	O	tr
 geçmek	O	tr
@@ -3650,7 +3958,7 @@ olan	O	tr
 sırayı	O	tr
 doğru	O	tr
 yönlendirmek	O	tr
-.	O	tr
+
 Gündemde	O	tr
 ekonomik	O	tr
 sorunlar	O	tr
@@ -3658,6 +3966,7 @@ yine	O	tr
 başa	B-IDIOM	tr
 geçti	I-IDIOM	tr
 .	O	tr
+
 Saçının	O	tr
 üzerinde	O	tr
 bir	O	tr
@@ -3665,24 +3974,26 @@ kaç	O	tr
 yaprak	O	tr
 duruyor	O	tr
 .	O	tr
+
 Metrodaki	O	tr
 hamile	O	tr
 kadına	O	tr
 yer	O	tr
 verdim	O	tr
 .	O	tr
+
 Dodiom	O	tr
 söylediğim	O	tr
 bunca	O	tr
 sözü	O	tr
 üstüne	B-IDIOM	tr
 almış	I-IDIOM	tr
-.	O	tr
+
 Sıkı	O	tr
 dur	O	tr
 ben	O	tr
 geliyorum	O	tr
-.	O	tr
+
 Yorgundu	O	tr
 ,	O	tr
 eve	O	tr
@@ -3696,13 +4007,14 @@ gibi	O	tr
 uykuya	O	tr
 daldı	O	tr
 .	O	tr
+
 Aldığı	O	tr
 oyuncakların	O	tr
 hepsi	O	tr
 üst	O	tr
 rafa	O	tr
 koymuştu	O	tr
-.	O	tr
+
 Bi	O	tr
 sakin	O	tr
 ol	O	tr
@@ -3714,6 +4026,7 @@ saymadan	B-IDIOM	tr
 bir	O	tr
 düşün	O	tr
 !	O	tr
+
 eğer	O	tr
 karşı	B-IDIOM	tr
 çıkmasaydı	I-IDIOM	tr
@@ -3722,7 +4035,7 @@ hepimiz	O	tr
 aynı	O	tr
 sorunu	O	tr
 yaşayacaktık	O	tr
-.	O	tr
+
 Trump	O	tr
 kazanamayacağını	O	tr
 görünce	O	tr
@@ -3731,13 +4044,14 @@ oyların	O	tr
 iddiasını	O	tr
 öne	B-IDIOM	tr
 sürdü	I-IDIOM	tr
-.	O	tr
+
 Bu	O	tr
 hafta	O	tr
 hep	O	tr
 zaman	B-IDIOM	tr
 öldürdün	I-IDIOM	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 kazanmak	I-IDIOM	tr
 için	O	tr
@@ -3745,6 +4059,7 @@ için	O	tr
 çaba	O	tr
 sarfetti	O	tr
 .	O	tr
+
 Falcao	O	tr
 bu	O	tr
 maçta	O	tr
@@ -3758,21 +4073,21 @@ en	O	tr
 sıraya	O	tr
 çıkmayı	O	tr
 garantiledi	O	tr
-.	O	tr
+
 En	O	tr
 kötü	O	tr
 buraya	O	tr
 üç	O	tr
 basamak	O	tr
 yaparım	O	tr
-.	O	tr
+
 Zaman	O	tr
 Zaman	O	tr
 babamı	O	tr
 öldüren	O	tr
 kişilerle	O	tr
 karşılaşıyorum	O	tr
-.	O	tr
+
 Bu	O	tr
 konuda	O	tr
 hesap	O	tr
@@ -3782,6 +4097,7 @@ sonucu	O	tr
 vermek	O	tr
 lazım	O	tr
 .	O	tr
+
 Gözü	O	tr
 tok	O	tr
 kimseye	O	tr
@@ -3789,6 +4105,7 @@ el	B-IDIOM	tr
 açmak	I-IDIOM	tr
 yok	O	tr
 .	O	tr
+
 Trabzonspor	O	tr
 bu	O	tr
 sefer	O	tr
@@ -3796,6 +4113,7 @@ kesin	O	tr
 ayvayı	B-IDIOM	tr
 yedi	I-IDIOM	tr
 .	O	tr
+
 Yazık	O	tr
 ,	O	tr
 hastalandığını	O	tr
@@ -3803,6 +4121,7 @@ duyunca	O	tr
 içim	B-IDIOM	tr
 eridi	I-IDIOM	tr
 .	O	tr
+
 Meydana	O	tr
 son	O	tr
 gelen	O	tr
@@ -3810,6 +4129,7 @@ diğerlerine	O	tr
 iskender	O	tr
 ısmarlar	O	tr
 .	O	tr
+
 Yine	O	tr
 film	O	tr
 izleyerek	O	tr
@@ -3818,6 +4138,7 @@ zaman	B-IDIOM	tr
 değil	O	tr
 mi	O	tr
 ?	O	tr
+
 köpek	O	tr
 parmağıma	O	tr
 basınca	O	tr
@@ -3825,12 +4146,13 @@ canım	O	tr
 nasıl	O	tr
 acıdı	O	tr
 bilemezsin	O	tr
-.	O	tr
+
 Şiddet	O	tr
 özgürlüğüne	O	tr
 göz	B-IDIOM	tr
 yummamalıyız	I-IDIOM	tr
 .	O	tr
+
 Hoca	O	tr
 kağıdını	O	tr
 görmek	O	tr
@@ -3839,30 +4161,34 @@ isteyen	O	tr
 karşı	B-IDIOM	tr
 çıktı	I-IDIOM	tr
 .	O	tr
+
 Öne	B-IDIOM	tr
 sürdüğü	I-IDIOM	tr
 fikir	O	tr
 çılgınca	O	tr
 .	O	tr
+
 Bugün	O	tr
 birinci	O	tr
 olarak	O	tr
 karşınıza	O	tr
 çıkacağım	O	tr
 .	O	tr
+
 tsunami	O	tr
 sonrası	O	tr
 denizde	O	tr
 dalgalar	O	tr
 meydana	B-IDIOM	tr
 geldi	I-IDIOM	tr
-.	O	tr
+
 İstanbul'da	O	tr
 deprem	O	tr
 olursa	O	tr
 ayvayı	B-IDIOM	tr
 yedik	I-IDIOM	tr
 .	O	tr
+
 Oğluma	O	tr
 saymayı	O	tr
 öğretmek	O	tr
@@ -3876,6 +4202,7 @@ döküp	I-IDIOM	tr
 yeniden	O	tr
 başladık	O	tr
 .	O	tr
+
 Proje	O	tr
 ile	O	tr
 ilgili	O	tr
@@ -3886,37 +4213,39 @@ durulması	I-IDIOM	tr
 gerektiği	O	tr
 söylendi	O	tr
 .	O	tr
+
 yoğunluktan	O	tr
 dolayı	O	tr
 yağ	O	tr
 suyun	O	tr
 üstüne	O	tr
 çıktı	O	tr
-.	O	tr
+
 Farkında	O	tr
 olmasa	O	tr
 da	O	tr
 içinden	B-IDIOM	tr
 içinden	O	tr
 eriyor	I-IDIOM	tr
-.	O	tr
+
 defterde	O	tr
 yazılanları	O	tr
 baştan	O	tr
 sona	O	tr
 sildirdi	O	tr
-.	O	tr
+
 Bugünkü	O	tr
 toplantıda	O	tr
 yer	B-IDIOM	tr
 alamayacağını	I-IDIOM	tr
 söyledi	O	tr
 .	O	tr
+
 Ağırlığımı	O	tr
 sana	O	tr
 mı	O	tr
 verdim	O	tr
-.	O	tr
+
 Memlekette	O	tr
 kaydedeğer	O	tr
 gündem	O	tr
@@ -3929,6 +4258,7 @@ konuşmalarla	O	tr
 zaman	B-IDIOM	tr
 öldürüyorlar	I-IDIOM	tr
 .	O	tr
+
 Kendini	O	tr
 bırakabilirsin	O	tr
 ,	O	tr
@@ -3940,12 +4270,13 @@ görünmene	O	tr
 gerek	O	tr
 yok	O	tr
 .	O	tr
+
 Elimde	O	tr
 dün	O	tr
 açtığım	O	tr
 paket	O	tr
 vardı	O	tr
-.	O	tr
+
 Sinirden	O	tr
 gözyaşlarım	O	tr
 dökülüyordu	O	tr
@@ -3957,7 +4288,7 @@ onu	O	tr
 saymam	O	tr
 gerektiğini	O	tr
 biliyordum	O	tr
-.	O	tr
+
 meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
 olayın	O	tr
@@ -3967,6 +4298,7 @@ olduğu	O	tr
 rapor	O	tr
 edildi	O	tr
 .	O	tr
+
 Kahve	O	tr
 içmesi	O	tr
 için	O	tr
@@ -3975,7 +4307,7 @@ komşuya	O	tr
 bir	O	tr
 fincan	O	tr
 aldım	O	tr
-.	O	tr
+
 Trafik	O	tr
 lambalarinda	O	tr
 el	B-IDIOM	tr
@@ -3985,21 +4317,24 @@ aslında	O	tr
 bizden	O	tr
 daha	O	tr
 zengin	O	tr
-.	O	tr
+
 Çık	O	tr
 karşıma	O	tr
 görüşelim	O	tr
 !	O	tr
+
 Verdiğin	O	tr
 hesabı	O	tr
 kontrol	O	tr
 ettin	O	tr
 mi	O	tr
 ?	O	tr
+
 Desene	O	tr
 ayvayı	B-IDIOM	tr
 yedik	I-IDIOM	tr
 !	O	tr
+
 Üstündekini	O	tr
 çıkarıp	O	tr
 bir	O	tr
@@ -4007,12 +4342,14 @@ tabak	O	tr
 al	O	tr
 kendine	O	tr
 .	O	tr
+
 Kimseye	O	tr
 hesap	B-IDIOM	tr
 vermek	I-IDIOM	tr
 zorunda	O	tr
 degilsin	O	tr
 .	O	tr
+
 Klima	O	tr
 açılınca	O	tr
 sıcağa	O	tr
@@ -4022,6 +4359,7 @@ paltosunu	O	tr
 üstünden	O	tr
 attı	O	tr
 .	O	tr
+
 Yıllar	O	tr
 önce	O	tr
 prens	O	tr
@@ -4032,6 +4370,7 @@ oyunun	O	tr
 yönetmenliğini	O	tr
 yapıyorum	O	tr
 .	O	tr
+
 Ziyaretçi	O	tr
 sayısı	O	tr
 ile	O	tr
@@ -4044,6 +4383,7 @@ yaptı	O	tr
 basamak	O	tr
 atladı	O	tr
 .	O	tr
+
 Bu	O	tr
 işin	O	tr
 gerçekleşmesinde	O	tr
@@ -4052,12 +4392,14 @@ oynadığı	I-IDIOM	tr
 rol	B-IDIOM	tr
 yadsınamaz	O	tr
 .	O	tr
+
 Sen	O	tr
 aslında	O	tr
 hiçbir	O	tr
 zaman	O	tr
 kazanmıyorsun	O	tr
 .	O	tr
+
 Bu	O	tr
 zamanlar	O	tr
 altın	O	tr
@@ -4067,6 +4409,7 @@ yaptırdığımızdan	O	tr
 fazlasını	O	tr
 kazanabiliriz	O	tr
 .	O	tr
+
 Bu	O	tr
 işin	O	tr
 altından	O	tr
@@ -4076,6 +4419,7 @@ ayvayı	B-IDIOM	tr
 yedik	I-IDIOM	tr
 sahiden	O	tr
 .	O	tr
+
 Partinin	O	tr
 sonunda	O	tr
 herkesin	O	tr
@@ -4085,6 +4429,7 @@ kağıt	O	tr
 süsler	O	tr
 attılar	O	tr
 .	O	tr
+
 sıkı	O	tr
 durup	O	tr
 ,	O	tr
@@ -4092,7 +4437,7 @@ onlara	O	tr
 kim	O	tr
 olduğumu	O	tr
 göstereceğim	O	tr
-.	O	tr
+
 Toplantıda	O	tr
 beşinci	O	tr
 maddeye	O	tr
@@ -4100,6 +4445,7 @@ ağırlık	B-IDIOM	tr
 vermek	I-IDIOM	tr
 istiyorum	O	tr
 .	O	tr
+
 Tarihte	O	tr
 iz	B-IDIOM	tr
 bırakmak	I-IDIOM	tr
@@ -4108,6 +4454,7 @@ yiğidin	O	tr
 harcı	O	tr
 değildir	O	tr
 .	O	tr
+
 televizyondaki	O	tr
 tartışmada	O	tr
 herkes	O	tr
@@ -4116,7 +4463,7 @@ bir	O	tr
 kişiye	O	tr
 karşı	B-IDIOM	tr
 çıktı	I-IDIOM	tr
-.	O	tr
+
 Sıkı	B-IDIOM	tr
 dur	I-IDIOM	tr
 ,	O	tr
@@ -4125,6 +4472,7 @@ bir	O	tr
 haberim	O	tr
 var	O	tr
 !	O	tr
+
 Hesabı	O	tr
 kapatıp	O	tr
 ,	O	tr
@@ -4134,6 +4482,7 @@ dilenciye	O	tr
 vermesini	O	tr
 istedi	O	tr
 .	O	tr
+
 Ortalığı	O	tr
 kızıştıracak	O	tr
 düşünceler	O	tr
@@ -4142,6 +4491,7 @@ atarak	I-IDIOM	tr
 köşesine	O	tr
 çekildi	O	tr
 .	O	tr
+
 Kaderin	O	tr
 böylesine	O	tr
 karşı	B-IDIOM	tr
@@ -4149,6 +4499,7 @@ karşı	B-IDIOM	tr
 ne	O	tr
 olur	O	tr
 .	O	tr
+
 Manzaraya	O	tr
 karşı	O	tr
 fırından	O	tr
@@ -4157,6 +4508,7 @@ yeni	O	tr
 simit	O	tr
 yedim	O	tr
 .	O	tr
+
 Doğduğu	O	tr
 zaman	O	tr
 öldürmek	O	tr
@@ -4164,14 +4516,14 @@ insanın	O	tr
 aklının	O	tr
 ucundan	O	tr
 geçmez	O	tr
-.	O	tr
+
 Açma	I-IDIOM	tr
 kimseye	O	tr
 el	B-IDIOM	tr
 sonra	O	tr
 pişman	O	tr
 olursun	O	tr
-.	O	tr
+
 Arkeologların	O	tr
 karşılaştığı	O	tr
 en	O	tr
@@ -4185,11 +4537,13 @@ altın	O	tr
 ikna	O	tr
 etmektir	O	tr
 .	O	tr
+
 Yazdıklarımı	O	tr
 defterimden	O	tr
 kim	O	tr
 silmiş	O	tr
 ?	O	tr
+
 karşı	O	tr
 masada	O	tr
 oturunca	O	tr
@@ -4197,7 +4551,7 @@ dışarı	O	tr
 çıkmak	O	tr
 zorunda	O	tr
 kaldı	O	tr
-.	O	tr
+
 Odanın	O	tr
 içinde	O	tr
 oturup	O	tr
@@ -4208,6 +4562,7 @@ eriyen	O	tr
 karı	O	tr
 izliyordum	O	tr
 .	O	tr
+
 Kıyıcık	O	tr
 ’	O	tr
 dan	O	tr
@@ -4216,6 +4571,7 @@ dönüm	O	tr
 yer	O	tr
 aldım	O	tr
 .	O	tr
+
 Lekelenmesin	O	tr
 diye	O	tr
 koltuğun	O	tr
@@ -4224,13 +4580,14 @@ koltuğun	O	tr
 bir	O	tr
 örtü	O	tr
 almış	O	tr
-.	O	tr
+
 Kitaplarımdan	O	tr
 bir	O	tr
 basamak	B-IDIOM	tr
 yaptım	I-IDIOM	tr
 geleceğe	O	tr
 .	O	tr
+
 Her	O	tr
 şeyi	O	tr
 öne	B-IDIOM	tr
@@ -4242,11 +4599,13 @@ bir	O	tr
 şey	O	tr
 kalmadı	O	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 öldürerek	I-IDIOM	tr
 ömür	O	tr
 geçer	O	tr
 !	O	tr
+
 Hocam	O	tr
 biz	O	tr
 şimdi	O	tr
@@ -4255,11 +4614,13 @@ mı	O	tr
 yedik	I-IDIOM	tr
 ya	O	tr
 ?	O	tr
+
 Ailemi	O	tr
 kaybedince	O	tr
 içim	B-IDIOM	tr
 eridi	I-IDIOM	tr
 .	O	tr
+
 Yaprak	O	tr
 döken	O	tr
 kaç	O	tr
@@ -4268,6 +4629,7 @@ var	O	tr
 saydın	O	tr
 mı	O	tr
 ?	O	tr
+
 Üste	B-IDIOM	tr
 çıkmak	I-IDIOM	tr
 için	O	tr
@@ -4275,7 +4637,7 @@ yalan	O	tr
 söylemeyi	O	tr
 huy	O	tr
 edindi	O	tr
-.	O	tr
+
 Halk	O	tr
 oyunu	O	tr
 ekibimizde	O	tr
@@ -4289,18 +4651,20 @@ için	O	tr
 madalya	O	tr
 verildi	O	tr
 .	O	tr
+
 Yolu	O	tr
 açın	O	tr
 hasta	O	tr
 geliyor	O	tr
 .	O	tr
+
 bakanın	O	tr
 açıklamaları	O	tr
 kanayan	O	tr
 yaramıza	O	tr
 parmak	B-IDIOM	tr
 basmıştı	I-IDIOM	tr
-.	O	tr
+
 Oyunlar	O	tr
 taşları	O	tr
 bir	O	tr
@@ -4309,23 +4673,26 @@ bir	O	tr
 tarafa	O	tr
 sürdüler	O	tr
 .	O	tr
+
 Öldürdüğü	I-IDIOM	tr
 zamanını	B-IDIOM	tr
 nasıl	O	tr
 telafi	O	tr
 edeceğini	O	tr
 düşünüyordu	O	tr
-.	O	tr
+
 Tüm	O	tr
 söylenenlere	O	tr
 karşı	B-IDIOM	tr
 çıktı	I-IDIOM	tr
 .	O	tr
+
 Mirastan	O	tr
 istediği	O	tr
 yeri	O	tr
 almış	O	tr
 .	O	tr
+
 zeytinyağı	O	tr
 gibi	O	tr
 üste	B-IDIOM	tr
@@ -4334,20 +4701,21 @@ bu	O	tr
 kez	O	tr
 kolay	O	tr
 değil	O	tr
-.	O	tr
+
 Ne	O	tr
 sayıp	B-IDIOM	tr
 döktün	I-IDIOM	tr
 be	O	tr
 adam	O	tr
 !	O	tr
+
 Kaybettiğin	O	tr
 zamanı	O	tr
 sınavı	O	tr
 kazanınca	O	tr
 telafi	O	tr
 edeceksin	O	tr
-.	O	tr
+
 Suyun	O	tr
 içine	O	tr
 attıklarım	O	tr
@@ -4359,6 +4727,7 @@ sıcaklar	O	tr
 geldi	O	tr
 yine	O	tr
 .	O	tr
+
 Bilimsel	O	tr
 çalışmalara	O	tr
 karşı	O	tr
@@ -4372,6 +4741,7 @@ ses	O	tr
 çıkmayacak	O	tr
 mı	O	tr
 ?	O	tr
+
 5	O	tr
 adım	O	tr
 attıktan	O	tr
@@ -4384,6 +4754,7 @@ adım	O	tr
 daha	O	tr
 at	O	tr
 .	O	tr
+
 Boş	O	tr
 ver	O	tr
 bu	O	tr
@@ -4392,7 +4763,7 @@ meselenin	O	tr
 durmana	I-IDIOM	tr
 gerek	O	tr
 yok	O	tr
-.	O	tr
+
 Senin	O	tr
 bu	O	tr
 dediklerin	O	tr
@@ -4403,6 +4774,7 @@ vahim	O	tr
 olaylar	O	tr
 olur	O	tr
 .	O	tr
+
 Onu	O	tr
 hediyeye	O	tr
 boğmak	O	tr
@@ -4413,12 +4785,14 @@ anda	O	tr
 üstüne	O	tr
 attı	O	tr
 .	O	tr
+
 Onu	O	tr
 bir	O	tr
 çırpıda	O	tr
 defterden	B-IDIOM	tr
 silemezsin	I-IDIOM	tr
 .	O	tr
+
 Yere	O	tr
 döktüğün	O	tr
 ıvır	O	tr
@@ -4432,6 +4806,7 @@ yerlerine	O	tr
 geri	O	tr
 koy	O	tr
 !	O	tr
+
 Zamanımı	B-IDIOM	tr
 neden	O	tr
 bunlarla	O	tr
@@ -4442,6 +4817,7 @@ gün	O	tr
 mızmızlanırdı	O	tr
 annem	O	tr
 .	O	tr
+
 En	O	tr
 iyiler	O	tr
 arasında	O	tr
@@ -4449,6 +4825,7 @@ yerimizi	B-IDIOM	tr
 alacağız	I-IDIOM	tr
 göreceksiniz	O	tr
 .	O	tr
+
 Evin	O	tr
 ön	O	tr
 yüzünce	O	tr
@@ -4456,7 +4833,7 @@ sürdüğü	O	tr
 sıva	O	tr
 dökülmeye	O	tr
 başlamış	O	tr
-.	O	tr
+
 Ortayı	O	tr
 sağ	O	tr
 kanattan	O	tr
@@ -4467,6 +4844,7 @@ koydu	O	tr
 gol	O	tr
 oldu	O	tr
 .	O	tr
+
 Elini	O	tr
 koyduğu	O	tr
 demirin	O	tr
@@ -4477,13 +4855,14 @@ o	O	tr
 yüzden	O	tr
 düşmüş	O	tr
 .	O	tr
+
 Bunu	O	tr
 yaparsak	O	tr
 zaman	B-IDIOM	tr
 mı	O	tr
 kazanmış	I-IDIOM	tr
 oluruz	O	tr
-.	O	tr
+
 Bütün	O	tr
 bu	O	tr
 sayıp	B-IDIOM	tr
@@ -4494,6 +4873,7 @@ inanacağımı	O	tr
 mı	O	tr
 düşündün	O	tr
 !	O	tr
+
 Sayın	O	tr
 Cumhurbaşkanı	O	tr
 tarafından	O	tr
@@ -4505,12 +4885,14 @@ ne	O	tr
 kadar	O	tr
 gerçekçidir	O	tr
 ?	O	tr
+
 Negatif	O	tr
 enerjisini	O	tr
 benim	O	tr
 üstümden	O	tr
 attı	O	tr
 .	O	tr
+
 Doktor	O	tr
 da	O	tr
 nabız	O	tr
@@ -4522,25 +4904,26 @@ olmadığını	O	tr
 ifade	O	tr
 etti	O	tr
 .	O	tr
+
 Ellerini	O	tr
 açıp	O	tr
 koltuğa	O	tr
 oturdu	O	tr
-.	O	tr
+
 Kitap	O	tr
 okurken	O	tr
 güzel	O	tr
 cümlelerin	O	tr
 altını	O	tr
 çizerim	O	tr
-.	O	tr
+
 sıkıca	O	tr
 çalış	O	tr
 ki	O	tr
 öyle	O	tr
 mahzun	O	tr
 durma	O	tr
-.	O	tr
+
 Yaptıklarının	O	tr
 hesabını	B-IDIOM	tr
 yarın	O	tr
@@ -4549,6 +4932,7 @@ vermeyeceğini	I-IDIOM	tr
 düşünüyorsan	O	tr
 yanılıyorsun	O	tr
 .	O	tr
+
 Bilimsel	O	tr
 verilere	O	tr
 de	O	tr
@@ -4556,6 +4940,7 @@ mi	O	tr
 karşı	B-IDIOM	tr
 çıkıyor	I-IDIOM	tr
 ?	O	tr
+
 Haksız	O	tr
 olduğunda	O	tr
 özür	O	tr
@@ -4579,6 +4964,7 @@ aşmış	O	tr
 kişilerin	O	tr
 hayranıyız	O	tr
 .	O	tr
+
 Konferansta	O	tr
 ona	O	tr
 karşı	B-IDIOM	tr
@@ -4587,12 +4973,13 @@ için	O	tr
 beni	O	tr
 dışladılar	O	tr
 .	O	tr
+
 af	O	tr
 çıkınca	O	tr
 adı	O	tr
 defterden	O	tr
 silindi	O	tr
-.	O	tr
+
 İlkin	O	tr
 yayımcılara	O	tr
 uğruyor	O	tr
@@ -4601,6 +4988,7 @@ onların	O	tr
 nabzını	B-IDIOM	tr
 tutuyorlar	I-IDIOM	tr
 .	O	tr
+
 Yalnız	O	tr
 kalman	O	tr
 ,	O	tr
@@ -4611,6 +4999,7 @@ yanıldığın	O	tr
 anlamına	O	tr
 gelmez	O	tr
 .	O	tr
+
 Eller	B-IDIOM	tr
 mi	O	tr
 açmadım	I-IDIOM	tr
@@ -4620,19 +5009,19 @@ kapanmadım	O	tr
 ben	O	tr
 daha	O	tr
 napayım	O	tr
-.	O	tr
+
 Şu	O	tr
 şalı	O	tr
 üstüne	O	tr
 al	O	tr
 üşüyeceksin	O	tr
-.	O	tr
+
 üste	O	tr
 çıkıp	O	tr
 bu	O	tr
 evrakları	O	tr
 getirmelisin	O	tr
-.	O	tr
+
 Bizim	O	tr
 ortaya	B-IDIOM	tr
 koyduğumuz	I-IDIOM	tr
@@ -4644,6 +5033,7 @@ herkes	O	tr
 bizim	O	tr
 dostumuzdur	O	tr
 .	O	tr
+
 Partisi	O	tr
 için	O	tr
 nabız	B-IDIOM	tr
@@ -4656,6 +5046,7 @@ ettiğinin	O	tr
 farkında	O	tr
 değildi	O	tr
 .	O	tr
+
 Eğer	O	tr
 o	O	tr
 antika	O	tr
@@ -4668,6 +5059,7 @@ ortaya	O	tr
 ayvayı	B-IDIOM	tr
 yersin	I-IDIOM	tr
 .	O	tr
+
 Civatayı	O	tr
 eliyle	O	tr
 açmayı	O	tr
@@ -4677,6 +5069,7 @@ uğraştığının	O	tr
 farkına	O	tr
 vardı	O	tr
 .	O	tr
+
 Yine	O	tr
 öğretmenin	O	tr
 anlattıklarında	O	tr
@@ -4686,6 +5079,7 @@ bir	O	tr
 şey	O	tr
 buldu	O	tr
 .	O	tr
+
 Adımını	O	tr
 attığı	O	tr
 an	O	tr
@@ -4693,12 +5087,14 @@ asansörün	O	tr
 kapısı	O	tr
 kapandı	O	tr
 .	O	tr
+
 Durmadan	O	tr
 sıkı	O	tr
 sıkı	O	tr
 tembihledi	O	tr
 hepimizi	O	tr
 .	O	tr
+
 Bayramların	O	tr
 kutlanmasının	O	tr
 önüne	O	tr
@@ -4709,6 +5105,7 @@ hesabını	B-IDIOM	tr
 nasıl	O	tr
 verecek	I-IDIOM	tr
 ?	O	tr
+
 Öne	O	tr
 değil	O	tr
 arkaya	O	tr
@@ -4716,6 +5113,7 @@ bakarak	O	tr
 süreceksin	O	tr
 arabayı	O	tr
 .	O	tr
+
 Metinlerin	O	tr
 altlarının	O	tr
 çizerek	O	tr
@@ -4726,6 +5124,7 @@ daha	O	tr
 faydalı	O	tr
 oluyor	O	tr
 .	O	tr
+
 Türkiye	O	tr
 ’	O	tr
 nin	O	tr
@@ -4742,9 +5141,10 @@ gerekli	O	tr
 ağırlığı	B-IDIOM	tr
 veremedik	I-IDIOM	tr
 .	O	tr
+
 İçim	B-IDIOM	tr
 eridi	I-IDIOM	tr
-.	O	tr
+
 Karşı	O	tr
 komşunun	O	tr
 oğlu	O	tr
@@ -4752,7 +5152,7 @@ cama	O	tr
 çıkınca	O	tr
 çok	O	tr
 korkuyorum	O	tr
-.	O	tr
+
 Öğrenciler	O	tr
 bahar	O	tr
 aylarını	O	tr
@@ -4764,6 +5164,7 @@ iptalini	O	tr
 talep	O	tr
 etti	O	tr
 .	O	tr
+
 Kanımın	O	tr
 son	O	tr
 damlasına	O	tr
@@ -4773,6 +5174,7 @@ karşı	B-IDIOM	tr
 bu	O	tr
 fikre	O	tr
 .	O	tr
+
 Asgari	O	tr
 ücret	O	tr
 toplantılarında	O	tr
@@ -4782,7 +5184,7 @@ sendika	O	tr
 sendika	O	tr
 karşı	B-IDIOM	tr
 çıktı	I-IDIOM	tr
-.	O	tr
+
 sıkıca	O	tr
 sarıldığı	O	tr
 kedisine	O	tr
@@ -4790,12 +5192,13 @@ durmadan	O	tr
 sakin	O	tr
 olmasını	O	tr
 söyledi	O	tr
-.	O	tr
+
 Playstation	O	tr
 hesabımı	O	tr
 sana	O	tr
 veremem	O	tr
 .	O	tr
+
 Belediye	O	tr
 ,	O	tr
 bu	O	tr
@@ -4806,12 +5209,14 @@ yol	O	tr
 mu	O	tr
 açacak	O	tr
 ?	O	tr
+
 Yolda	O	tr
 yürürken	O	tr
 başıma	O	tr
 güneş	O	tr
 geçti	O	tr
 .	O	tr
+
 Martılar	O	tr
 karşı	O	tr
 binanın	O	tr
@@ -4819,7 +5224,7 @@ binanın	O	tr
 çıkmayı	O	tr
 huy	O	tr
 edindi	O	tr
-.	O	tr
+
 Sen	O	tr
 bozuk	O	tr
 paraları	O	tr
@@ -4829,7 +5234,7 @@ uğraşırken	O	tr
 heryere	O	tr
 su	O	tr
 döktü	O	tr
-.	O	tr
+
 Toplantıda	O	tr
 öne	B-IDIOM	tr
 sürülen	I-IDIOM	tr
@@ -4837,6 +5242,7 @@ görüşler	O	tr
 basına	O	tr
 açıklanacak	O	tr
 .	O	tr
+
 Kedim	O	tr
 karşıma	O	tr
 aniden	O	tr
@@ -4844,13 +5250,14 @@ aniden	O	tr
 beni	O	tr
 korkuttu	O	tr
 .	O	tr
+
 İçi	B-IDIOM	tr
 eridi	I-IDIOM	tr
 ama	O	tr
 kimseye	O	tr
 belli	O	tr
 etmedi	O	tr
-.	O	tr
+
 Zaman	B-IDIOM	tr
 kazanmak	I-IDIOM	tr
 için	O	tr
@@ -4858,17 +5265,20 @@ kendine	O	tr
 scooter	O	tr
 aldı	O	tr
 .	O	tr
+
 Ayva	O	tr
 yemek	O	tr
 çok	O	tr
 faydalıdır	O	tr
 .	O	tr
+
 Hesap	O	tr
 vermek	O	tr
 bütçeme	O	tr
 zarar	O	tr
 vermez	O	tr
 .	O	tr
+
 Bir	O	tr
 eliyle	O	tr
 çocuğu	O	tr
@@ -4878,12 +5288,13 @@ eliyle	O	tr
 pencereyi	O	tr
 açıyordu	O	tr
 .	O	tr
+
 defterimden	B-IDIOM	tr
 o	O	tr
 silindi	I-IDIOM	tr
 sen	O	tr
 değil	O	tr
-.	O	tr
+
 meyvelerin	O	tr
 üstünde	O	tr
 ki	O	tr
@@ -4893,6 +5304,7 @@ alıp	O	tr
 dışarıya	O	tr
 attı	O	tr
 .	O	tr
+
 Ayvayı	O	tr
 limonla	O	tr
 yemenin	O	tr
@@ -4901,6 +5313,7 @@ nedir	O	tr
 Allah	O	tr
 aşkına	O	tr
 !	O	tr
+
 Tüm	O	tr
 maçları	O	tr
 her	O	tr
@@ -4908,6 +5321,7 @@ zaman	B-IDIOM	tr
 kazanmak	I-IDIOM	tr
 istiyoruz	O	tr
 .	O	tr
+
 Onu	O	tr
 öyle	O	tr
 zavallı	O	tr
@@ -4916,13 +5330,13 @@ görünce	O	tr
 içim	B-IDIOM	tr
 eridi	I-IDIOM	tr
 yeminle	O	tr
-.	O	tr
+
 Geldiğin	O	tr
 de	O	tr
 onu	O	tr
 meydana	O	tr
 götür	O	tr
-.	O	tr
+
 Defterden	B-IDIOM	tr
 mi	O	tr
 siler	I-IDIOM	tr
@@ -4933,6 +5347,7 @@ siler	O	tr
 bilemem	O	tr
 orasını	O	tr
 .	O	tr
+
 Karşı	O	tr
 binanın	O	tr
 çatısına	O	tr
@@ -4940,7 +5355,7 @@ binanın	O	tr
 kediyi	O	tr
 itfaiye	O	tr
 kurtardı	O	tr
-.	O	tr
+
 bu	O	tr
 projenin	O	tr
 başarılı	O	tr
@@ -4948,6 +5363,7 @@ olacağını	O	tr
 öne	B-IDIOM	tr
 sürüyorum	I-IDIOM	tr
 .	O	tr
+
 Pandomi	O	tr
 nedeniyle	O	tr
 üst	O	tr
@@ -4957,12 +5373,14 @@ nöbetlerden	O	tr
 bitap	O	tr
 düşmüştü	O	tr
 .	O	tr
+
 Muhasebe	O	tr
 hesaplarını	O	tr
 raporunu	O	tr
 müdürüme	O	tr
 verdim	O	tr
 .	O	tr
+
 Elini	O	tr
 koyduğu	O	tr
 masanın	O	tr
@@ -4976,10 +5394,11 @@ savaş	O	tr
 alanına	O	tr
 döndü	O	tr
 .	O	tr
+
 ağırlık	O	tr
 verdik	O	tr
 diyelim	O	tr
-.	O	tr
+
 Bu	O	tr
 işi	O	tr
 alabilmek	O	tr
@@ -4989,16 +5408,18 @@ yoğunu	O	tr
 ortaya	B-IDIOM	tr
 koydu	I-IDIOM	tr
 .	O	tr
+
 Yolları	O	tr
 açmak	O	tr
 için	O	tr
 çalışma	O	tr
 yaptılar	O	tr
 .	O	tr
+
 İlerideki	O	tr
 tarlayı	O	tr
 sürdüm	O	tr
-.	O	tr
+
 Bu	O	tr
 polemikle	O	tr
 Twitter	O	tr
@@ -5008,10 +5429,12 @@ sıralara	O	tr
 çıkmayı	O	tr
 garantiledi	O	tr
 !	O	tr
+
 Meydanda	O	tr
 yürüyüşe	O	tr
 geldiler	O	tr
 .	O	tr
+
 Bu	O	tr
 hayatta	O	tr
 çok	O	tr
@@ -5019,11 +5442,13 @@ defa	O	tr
 basamak	B-IDIOM	tr
 yapıldım	I-IDIOM	tr
 .	O	tr
+
 Bu	O	tr
 durumda	O	tr
 ayvayı	B-IDIOM	tr
 yedik	I-IDIOM	tr
 .	O	tr
+
 İstediğin	O	tr
 hususa	O	tr
 yer	B-IDIOM	tr
@@ -5035,6 +5460,7 @@ da	O	tr
 seni	O	tr
 yönlendirebilirler	O	tr
 .	O	tr
+
 Ortaya	B-IDIOM	tr
 koyduğu	I-IDIOM	tr
 düşüncelere	O	tr
@@ -5052,10 +5478,11 @@ aptallığını	O	tr
 ortaya	O	tr
 koyuyordu	O	tr
 .	O	tr
+
 Hesaplarını	O	tr
 başkasına	O	tr
 verme	O	tr
-.	O	tr
+
 Bu	O	tr
 seneki	O	tr
 yarışta	O	tr
@@ -5063,6 +5490,7 @@ ben	O	tr
 başa	B-IDIOM	tr
 geçtim	I-IDIOM	tr
 .	O	tr
+
 Okulun	O	tr
 basamaklarını	O	tr
 yapan	O	tr
@@ -5071,6 +5499,7 @@ hiç	O	tr
 ücret	O	tr
 almamış	O	tr
 .	O	tr
+
 Haydi	O	tr
 sende	O	tr
 1	O	tr
@@ -5079,7 +5508,7 @@ milyon	O	tr
 arasında	O	tr
 yerini	B-IDIOM	tr
 al	I-IDIOM	tr
-.	O	tr
+
 Buradan	O	tr
 alacağımız	O	tr
 6	O	tr
@@ -5090,6 +5519,7 @@ tekrardan	O	tr
 elimize	O	tr
 geçirebiliriz	O	tr
 .	O	tr
+
 Üstüne	B-IDIOM	tr
 aldığı	I-IDIOM	tr
 görevlerden	O	tr
@@ -5101,12 +5531,14 @@ a	O	tr
 deyimleri	O	tr
 öğretmekti	O	tr
 .	O	tr
+
 Her	O	tr
 yaşlıya	O	tr
 yer	O	tr
 mi	O	tr
 vereceğiz	O	tr
 ?	O	tr
+
 Sürprizim	O	tr
 için	O	tr
 sıkı	B-IDIOM	tr
@@ -5115,6 +5547,7 @@ durun	I-IDIOM	tr
 çok	O	tr
 şaşıracaksınız	O	tr
 .	O	tr
+
 Sen	O	tr
 öyle	O	tr
 zaman	B-IDIOM	tr
@@ -5127,6 +5560,7 @@ yarın	O	tr
 soracak	O	tr
 sana	O	tr
 !	O	tr
+
 Derse	O	tr
 başlamadan	O	tr
 önce	O	tr
@@ -5137,6 +5571,7 @@ altını	B-IDIOM	tr
 çizmek	I-IDIOM	tr
 istiyorum	O	tr
 .	O	tr
+
 Yer	B-IDIOM	tr
 verdiğin	I-IDIOM	tr
 konuların	O	tr
@@ -5144,19 +5579,21 @@ konuların	O	tr
 titizlikle	O	tr
 geçeceğim	O	tr
 .	O	tr
+
 Elim	O	tr
 dolu	O	tr
 kapıyı	O	tr
 açar	O	tr
 mısınız	O	tr
 ?	O	tr
+
 adamın	O	tr
 biri	O	tr
 karşıdaki	O	tr
 köprünün	O	tr
 korkuluklarına	O	tr
 çıkmış	O	tr
-.	O	tr
+
 Zamanında	O	tr
 kazandığım	O	tr
 parayı	O	tr
@@ -5165,6 +5602,7 @@ yatırdım	O	tr
 çok	O	tr
 pişmanım	O	tr
 .	O	tr
+
 Tahmin	O	tr
 yarışmasında	O	tr
 adamın	O	tr
@@ -5172,6 +5610,7 @@ nabız	O	tr
 sayısını	O	tr
 tutturdum	O	tr
 .	O	tr
+
 Ejderhayı	O	tr
 uyur	O	tr
 gördüğü	O	tr
@@ -5189,14 +5628,14 @@ mertlik	O	tr
 olmaz	O	tr
 .	O	tr
 ''	O	tr
-.	O	tr
+
 Emre	O	tr
 okuldaki	O	tr
 grafiti	O	tr
 işini	O	tr
 üstüne	B-IDIOM	tr
 aldı	I-IDIOM	tr
-.	O	tr
+
 Pazar	O	tr
 günü	O	tr
 posta	O	tr
@@ -5207,13 +5646,13 @@ sıkı	B-IDIOM	tr
 durmana	I-IDIOM	tr
 gerek	O	tr
 yok	O	tr
-.	O	tr
+
 defterimi	O	tr
 aldığımdan	O	tr
 beri	O	tr
 silmedim	O	tr
 yazdıklarımı	O	tr
-.	O	tr
+
 Ellerimi	B-IDIOM	tr
 bir	O	tr
 tek	O	tr
@@ -5223,6 +5662,7 @@ ona	O	tr
 da	O	tr
 gocunmam	O	tr
 .	O	tr
+
 Üst	O	tr
 üste	O	tr
 aldığı	O	tr
@@ -5232,6 +5672,7 @@ Galatasaray	O	tr
 şampiyonluğa	O	tr
 koşuyor	O	tr
 .	O	tr
+
 Dere	O	tr
 yatağında	O	tr
 aldığı	O	tr
@@ -5249,6 +5690,7 @@ yaptırması	O	tr
 gerektiğini	O	tr
 bildirdiler	O	tr
 .	O	tr
+
 Her	O	tr
 şeyden	O	tr
 önce	O	tr
@@ -5258,6 +5700,7 @@ altını	B-IDIOM	tr
 çizmek	I-IDIOM	tr
 istiyorum	O	tr
 .	O	tr
+
 Herkesin	O	tr
 kaç	O	tr
 deyim	O	tr
@@ -5267,6 +5710,7 @@ elimdeki	O	tr
 kahveyi	O	tr
 döktüm	O	tr
 .	O	tr
+
 Alnına	O	tr
 parmak	O	tr
 uçlarını	O	tr
@@ -5274,6 +5718,7 @@ bastırarak	O	tr
 masaj	O	tr
 yaptı	O	tr
 .	O	tr
+
 Mallarına	O	tr
 el	B-IDIOM	tr
 koyulan	I-IDIOM	tr
@@ -5287,12 +5732,14 @@ yere	O	tr
 çöküp	O	tr
 kaldı	O	tr
 .	O	tr
+
 Doların	O	tr
 artışının	O	tr
 hesabını	B-IDIOM	tr
 kim	O	tr
 verecek	I-IDIOM	tr
 ?	O	tr
+
 masanın	O	tr
 üstünde	O	tr
 ki	O	tr
@@ -5301,18 +5748,20 @@ manavdan	O	tr
 aldım	O	tr
 yiyebilirsin	O	tr
 .	O	tr
+
 Rakibini	O	tr
 eleyerek	O	tr
 başa	B-IDIOM	tr
 geçti	I-IDIOM	tr
 .	O	tr
+
 Bize	O	tr
 geldiğin	O	tr
 zaman	O	tr
 seni	O	tr
 öldürmek	O	tr
 istedim	O	tr
-.	O	tr
+
 Eve	O	tr
 gittigim	O	tr
 zaman	O	tr
@@ -5321,6 +5770,7 @@ madalyaları	O	tr
 duvara	O	tr
 asıcam	O	tr
 .	O	tr
+
 Zamanında	O	tr
 su	O	tr
 vermediği	O	tr
@@ -5329,6 +5779,7 @@ tüm	O	tr
 bitkileri	O	tr
 öldürdü	O	tr
 .	O	tr
+
 Kapakta	O	tr
 meydana	B-IDIOM	tr
 gelen	I-IDIOM	tr
@@ -5339,6 +5790,7 @@ açığa	O	tr
 sebep	O	tr
 olmaktadır	O	tr
 .	O	tr
+
 Üst	O	tr
 komşunun	O	tr
 oğlu	O	tr
@@ -5347,7 +5799,7 @@ aldığı	O	tr
 personellerin	O	tr
 hepsini	O	tr
 kovmuş	O	tr
-.	O	tr
+
 Ben	O	tr
 sana	O	tr
 git	O	tr
@@ -5359,6 +5811,7 @@ ekmegini	O	tr
 kazan	O	tr
 istedim	O	tr
 .	O	tr
+
 Kazanana	O	tr
 hediye	O	tr
 çeki	O	tr
@@ -5376,6 +5829,7 @@ tüm	O	tr
 oyunları	O	tr
 kazanıyor	O	tr
 .	O	tr
+
 Ali	O	tr
 kollarını	B-IDIOM	tr
 sıvayıp	I-IDIOM	tr
@@ -5385,6 +5839,7 @@ nin	O	tr
 yardımına	O	tr
 gitti	O	tr
 .	O	tr
+
 Toplantı	O	tr
 çıkışı	O	tr
 söylediğim	O	tr
@@ -5392,16 +5847,18 @@ sözleri	O	tr
 üstüne	B-IDIOM	tr
 almış	I-IDIOM	tr
 .	O	tr
+
 Otobüs	O	tr
 meydanın	O	tr
 yakınına	O	tr
 gelir	O	tr
 .	O	tr
+
 Elimdeki	O	tr
 açmayı	O	tr
 köpeğe	O	tr
 uzattım	O	tr
-.	O	tr
+
 Eli	O	tr
 açık	O	tr
 insanların	O	tr
@@ -5413,6 +5870,7 @@ daha	O	tr
 çok	O	tr
 kazanırsın	O	tr
 .	O	tr
+
 Zaman	B-IDIOM	tr
 mı	O	tr
 kazandın	I-IDIOM	tr
@@ -5420,6 +5878,7 @@ bisiklet	O	tr
 ile	O	tr
 giderek	O	tr
 ?	O	tr
+
 Limandaki	O	tr
 küçük	O	tr
 tekneyle	O	tr
@@ -5435,7 +5894,7 @@ geçeriz	O	tr
 diye	O	tr
 tahmin	O	tr
 ediyoruz	O	tr
-.	O	tr
+
 Parka	O	tr
 çıkmak	O	tr
 için	O	tr
@@ -5443,18 +5902,20 @@ yolun	O	tr
 karşısına	O	tr
 geçmek	O	tr
 zorunda	O	tr
-.	O	tr
+
 Sonradan	O	tr
 onun	O	tr
 yaptığı	O	tr
 ortaya	B-IDIOM	tr
 çıktı	I-IDIOM	tr
 .	O	tr
+
 Kitabı	O	tr
 masanın	O	tr
 üstünden	O	tr
 aldım	O	tr
 .	O	tr
+
 Pazar	O	tr
 yeri	O	tr
 açılınca	O	tr
@@ -5464,12 +5925,14 @@ meydanına	O	tr
 doğru	O	tr
 geldi	O	tr
 .	O	tr
+
 Bunlar	O	tr
 hep	O	tr
 karşılıklı	O	tr
 çıkar	O	tr
 ilişkisi	O	tr
 !	O	tr
+
 Aldığın	O	tr
 çiçekler	O	tr
 yetmedi	O	tr
@@ -5480,6 +5943,7 @@ ağacı	O	tr
 mı	O	tr
 aldın	O	tr
 ?	O	tr
+
 Havanda	O	tr
 sarımsağı	O	tr
 öldürdükten	O	tr
@@ -5488,12 +5952,13 @@ zamanında	O	tr
 yoğurda	O	tr
 katmalısın	O	tr
 .	O	tr
+
 Gönderdiği	O	tr
 kargo	O	tr
 karşıdaki	O	tr
 yoldan	O	tr
 çıkmış	O	tr
-.	O	tr
+
 Oyunu	O	tr
 kazanmak	O	tr
 için	O	tr
@@ -5503,6 +5968,7 @@ daha	O	tr
 zaman	O	tr
 ayırmalısın	O	tr
 .	O	tr
+
 Teknenin	O	tr
 baş	O	tr
 tarafına	O	tr
@@ -5518,6 +5984,7 @@ paniğe	O	tr
 neden	O	tr
 oldu	O	tr
 .	O	tr
+
 Çalışmayıp	O	tr
 da	O	tr
 kocana	O	tr
@@ -5525,6 +5992,7 @@ el	B-IDIOM	tr
 mi	O	tr
 açacaksın	I-IDIOM	tr
 ?	O	tr
+
 Yıllar	O	tr
 önce	O	tr
 Çınarcık'tan	O	tr
@@ -5539,11 +6007,13 @@ olduğunu	O	tr
 ifade	O	tr
 etti	O	tr
 .	O	tr
+
 Kazandığın	O	tr
 zaman	O	tr
 beni	O	tr
 anlayacaksın	O	tr
 .	O	tr
+
 Tüm	O	tr
 bu	O	tr
 tartışmalardan	O	tr
@@ -5555,11 +6025,13 @@ bulacak	O	tr
 biri	O	tr
 çıktı	O	tr
 .	O	tr
+
 Ergenekon'da	O	tr
 dağların	O	tr
 içi	O	tr
 eritilmiş	O	tr
 .	O	tr
+
 Varlığıyla	O	tr
 iz	B-IDIOM	tr
 bırakmıştı	I-IDIOM	tr
@@ -5568,6 +6040,7 @@ Yokluğuyla	O	tr
 da	O	tr
 bıraktı	O	tr
 .	O	tr
+
 Başarıda	O	tr
 kendisi	O	tr
 kadar	O	tr
@@ -5579,6 +6052,7 @@ oynadığını	I-IDIOM	tr
 ifade	O	tr
 etti	O	tr
 .	O	tr
+
 Bu	O	tr
 konunun	O	tr
 ne	O	tr
@@ -5592,6 +6066,7 @@ yeterince	O	tr
 ağırlık	B-IDIOM	tr
 vermiyordu	I-IDIOM	tr
 .	O	tr
+
 Elinde	O	tr
 tuttuğu	O	tr
 çantada	O	tr
@@ -5600,6 +6075,7 @@ nabız	O	tr
 aleti	O	tr
 vardı	O	tr
 .	O	tr
+
 Kaç	O	tr
 maaş	O	tr
 aldığını	O	tr
@@ -5610,6 +6086,7 @@ duyunca	O	tr
 sıkı	B-IDIOM	tr
 dur	I-IDIOM	tr
 !	O	tr
+
 sıkı	O	tr
 kurallar	O	tr
 uygulanmasına	O	tr
@@ -5617,7 +6094,7 @@ rağmen	O	tr
 ,	O	tr
 sorunlar	O	tr
 durmuyordu	O	tr
-.	O	tr
+
 Kötü	O	tr
 şeylere	O	tr
 yol	B-IDIOM	tr
@@ -5628,6 +6105,7 @@ nereden	O	tr
 bilecektim	O	tr
 ki	O	tr
 ?	O	tr
+
 Yoğun	O	tr
 trafikte	O	tr
 yolun	O	tr
@@ -5637,29 +6115,33 @@ beklemek	O	tr
 zorunda	O	tr
 kaldım	O	tr
 .	O	tr
+
 Kaynamak	O	tr
 için	O	tr
 önce	O	tr
 erimek	O	tr
 gerekir	O	tr
 .	O	tr
+
 Instagram	O	tr
 hesabını	O	tr
 bana	O	tr
 verir	O	tr
 misin	O	tr
 ?	O	tr
+
 Ayva	O	tr
 yemeyi	O	tr
 çok	O	tr
 severim	O	tr
 .	O	tr
+
 Yolda	O	tr
 yürürken	O	tr
 birden	O	tr
 karşıma	O	tr
 çıkıverdi	O	tr
-.	O	tr
+
 Bir	O	tr
 üst	O	tr
 kattaki	O	tr
@@ -5668,7 +6150,7 @@ bu	O	tr
 ay	O	tr
 evden	O	tr
 çıkıyormuş	O	tr
-.	O	tr
+
 Sıkı	O	tr
 fıkı	O	tr
 duruyorlar	O	tr
@@ -5678,6 +6160,7 @@ hiç	O	tr
 sevmiyorlar	O	tr
 birbirlerini	O	tr
 .	O	tr
+
 Öyle	O	tr
 bir	O	tr
 sinirlendi	O	tr
@@ -5686,6 +6169,7 @@ saydı	B-IDIOM	tr
 da	O	tr
 döktü	I-IDIOM	tr
 .	O	tr
+
 Sen	O	tr
 bizim	O	tr
 gönlümüzü	O	tr
@@ -5697,6 +6181,7 @@ mı	O	tr
 yükseleceğini	O	tr
 zannediyorsun	O	tr
 .	O	tr
+
 Ayvayı	B-IDIOM	tr
 yedim	I-IDIOM	tr
 derken	O	tr
@@ -5704,20 +6189,21 @@ meğer	O	tr
 tehlike	O	tr
 sona	O	tr
 ermiş	O	tr
-.	O	tr
+
 Yolda	O	tr
 bıraktığın	O	tr
 iz	O	tr
 üzerinden	O	tr
 geliyoruz	O	tr
 .	O	tr
+
 ağzı	O	tr
 sıkı	O	tr
 olanın	O	tr
 karşısında	O	tr
 durmadan	O	tr
 çabaladı	O	tr
-.	O	tr
+
 Böyle	O	tr
 bağırarak	O	tr
 üste	B-IDIOM	tr
@@ -5728,6 +6214,7 @@ mı	O	tr
 giriyor	O	tr
 sanıyorsun	O	tr
 ?	O	tr
+
 Yeni	O	tr
 teknolojiyi	O	tr
 projeye	O	tr
@@ -5739,6 +6226,7 @@ adımları	B-IDIOM	tr
 atmaya	I-IDIOM	tr
 başlamıştı	O	tr
 .	O	tr
+
 Anche	O	it
 se	O	it
 ha	B-IDIOM	it
@@ -5752,7 +6240,7 @@ migliore	O	it
 nel	O	it
 suo	O	it
 campo	O	it
-.	O	it
+
 Le	O	it
 cotolette	O	it
 appena	O	it
@@ -5766,7 +6254,7 @@ lì	O	it
 accanto	O	it
 a	O	it
 te	O	it
-.	O	it
+
 Prendere	O	it
 la	O	it
 verdura	O	it
@@ -5776,7 +6264,7 @@ pinze	O	it
 è	O	it
 più	O	it
 igienico	O	it
-.	O	it
+
 Stava	O	it
 brancolando	O	it
 nel	O	it
@@ -5787,7 +6275,7 @@ di	O	it
 una	O	it
 via	O	it
 d'uscita	O	it
-.	O	it
+
 Ti	O	it
 ho	O	it
 mandato	O	it
@@ -5799,6 +6287,7 @@ casa	O	it
 è	O	it
 arrivato	O	it
 ?	O	it
+
 Questo	O	it
 treno	O	it
 è	B-IDIOM	it
@@ -5806,13 +6295,14 @@ su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Sono	O	it
 andato	B-IDIOM	it
 a	I-IDIOM	it
 gonfie	I-IDIOM	it
 vele	I-IDIOM	it
 !	O	it
+
 non	O	it
 mi	O	it
 spiego	O	it
@@ -5825,7 +6315,7 @@ all	O	it
 improvviso	O	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Nonostante	O	it
 stessi	O	it
 male	O	it
@@ -5843,7 +6333,7 @@ ne	O	it
 aveva	O	it
 più	O	it
 bisogno	O	it
-.	O	it
+
 Devi	O	it
 mettere	O	it
 la	O	it
@@ -5851,7 +6341,7 @@ mascherina	O	it
 dentro	O	it
 i	O	it
 negozi	O	it
-.	O	it
+
 Dopo	O	it
 la	O	it
 dichiarazione	O	it
@@ -5865,6 +6355,7 @@ brancolavano	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
 .	O	it
+
 L'istruttore	O	it
 mi	O	it
 ha	O	it
@@ -5876,7 +6367,7 @@ per	O	it
 fare	O	it
 gli	O	it
 esercizi	O	it
-.	O	it
+
 Non	O	it
 vuoi	O	it
 mai	O	it
@@ -5893,7 +6384,7 @@ di	O	it
 non	O	it
 saper	O	it
 cucinare	O	it
-.	O	it
+
 Solitamente	O	it
 sono	O	it
 timida	O	it
@@ -5909,6 +6400,7 @@ che	O	it
 mi	O	it
 fermi	O	it
 .	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -5920,7 +6412,7 @@ quello	O	it
 di	O	it
 sua	O	it
 nonna	O	it
-.	O	it
+
 Diede	O	it
 una	O	it
 corda	O	it
@@ -5933,7 +6425,7 @@ e	O	it
 salvare	O	it
 il	O	it
 gattino	O	it
-.	O	it
+
 Dopo	O	it
 l	O	it
 ’	O	it
@@ -5961,6 +6453,7 @@ bevuta	O	it
 per	O	it
 mesi	O	it
 .	O	it
+
 nessuno	O	it
 può	O	it
 voltarmi	B-IDIOM	it
@@ -5970,6 +6463,7 @@ faccia	I-IDIOM	it
 nemmeno	O	it
 tu	O	it
 !	O	it
+
 Fidati	O	it
 di	O	it
 me	O	it
@@ -5982,7 +6476,7 @@ parole	O	it
 con	I-IDIOM	it
 le	O	it
 pinze	I-IDIOM	it
-.	O	it
+
 In	O	it
 questa	O	it
 casa	O	it
@@ -5994,7 +6488,7 @@ cosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Tirati	B-IDIOM	it
 su	I-IDIOM	it
 ,	O	it
@@ -6003,7 +6497,7 @@ pavimento	O	it
 non	O	it
 è	O	it
 pulito	O	it
-.	O	it
+
 Raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 bersaglio	I-IDIOM	it
@@ -6015,7 +6509,7 @@ prefissato	O	it
 ti	O	it
 renderà	O	it
 felice	O	it
-.	O	it
+
 Amo	O	it
 coltivare	O	it
 ,	O	it
@@ -6031,7 +6525,7 @@ avere	O	it
 il	O	it
 proprio	O	it
 orto	O	it
-.	O	it
+
 Hai	O	it
 buttato	B-IDIOM	it
 al	I-IDIOM	it
@@ -6040,7 +6534,7 @@ ogni	O	it
 possibilità	O	it
 di	O	it
 successo	O	it
-.	O	it
+
 mi	O	it
 hai	O	it
 voltato	B-IDIOM	it
@@ -6049,7 +6543,7 @@ e	O	it
 più	O	it
 volte	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Linda	O	it
 non	O	it
 poteva	O	it
@@ -6063,13 +6557,13 @@ loro	O	it
 storia	O	it
 al	I-IDIOM	it
 vento	I-IDIOM	it
-.	O	it
+
 Smettetela	O	it
 di	O	it
 gettare	O	it
 le	O	it
 spugne	O	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -6079,7 +6573,7 @@ mano	O	it
 è	O	it
 in	O	it
 legno	O	it
-.	O	it
+
 Ora	O	it
 tocca	O	it
 a	O	it
@@ -6092,6 +6586,7 @@ mano	I-IDIOM	it
 della	O	it
 situazione	O	it
 !	O	it
+
 Ho	O	it
 rotto	O	it
 il	O	it
@@ -6105,7 +6600,7 @@ lampo	O	it
 con	O	it
 troppa	O	it
 forza	O	it
-.	O	it
+
 Se	O	it
 ne	O	it
 è	O	it
@@ -6123,7 +6618,7 @@ e	O	it
 avevo	O	it
 da	O	it
 fare	O	it
-.	O	it
+
 Non	O	it
 buttare	O	it
 le	O	it
@@ -6134,7 +6629,7 @@ vento	O	it
 sii	O	it
 più	O	it
 ordinato	O	it
-.	O	it
+
 Nei	O	it
 momenti	O	it
 difficili	O	it
@@ -6149,7 +6644,7 @@ ti	O	it
 voltano	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Se	O	it
 non	O	it
 apri	B-IDIOM	it
@@ -6157,7 +6652,7 @@ gli	I-IDIOM	it
 occhi	I-IDIOM	it
 ti	O	it
 fregheranno	O	it
-.	O	it
+
 Devi	O	it
 capire	O	it
 che	O	it
@@ -6172,7 +6667,7 @@ la	O	it
 renderà	O	it
 più	O	it
 comprensibile	O	it
-.	O	it
+
 Prendi	O	it
 l	O	it
 ’	O	it
@@ -6183,7 +6678,7 @@ pinze	O	it
 per	O	it
 non	O	it
 pungerti	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -6199,7 +6694,7 @@ sul	O	it
 libro	O	it
 dice	O	it
 diversamente	O	it
-.	O	it
+
 Mio	O	it
 padre	O	it
 è	B-IDIOM	it
@@ -6207,7 +6702,7 @@ su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 L'acqua	O	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
@@ -6219,6 +6714,7 @@ che	O	it
 pasta	O	it
 vuoi	O	it
 ?	O	it
+
 Non	O	it
 voglio	O	it
 darti	B-IDIOM	it
@@ -6226,7 +6722,7 @@ corda	I-IDIOM	it
 perché	O	it
 sei	O	it
 stupida	O	it
-.	O	it
+
 Non	O	it
 sapevo	O	it
 che	O	it
@@ -6239,7 +6735,7 @@ questi	O	it
 insulti	O	it
 -	O	it
 Cheffftony	O	it
-.	O	it
+
 Per	O	it
 forza	O	it
 che	O	it
@@ -6256,20 +6752,20 @@ un	O	it
 binario	O	it
 morto	O	it
 🤷‍♂️	O	it
-.	O	it
+
 essere	B-IDIOM	it
 su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Lui	O	it
 è	B-IDIOM	it
 su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Di	O	it
 getto	O	it
 ,	O	it
@@ -6287,7 +6783,7 @@ colpa	O	it
 dentro	O	it
 di	O	it
 te	O	it
-.	O	it
+
 Gettare	O	it
 in	O	it
 modo	O	it
@@ -6298,7 +6794,7 @@ fa	O	it
 schizzare	O	it
 solo	O	it
 acqua	O	it
-.	O	it
+
 L	O	it
 ’	O	it
 ha	O	it
@@ -6308,7 +6804,7 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Quando	O	it
 guido	O	it
 ho	O	it
@@ -6322,7 +6818,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Nel	O	it
 tiro	O	it
 a	O	it
@@ -6334,7 +6830,7 @@ per	O	it
 raggiungere	O	it
 il	O	it
 bersaglio	O	it
-.	O	it
+
 Povero	O	it
 lui	O	it
 ,	O	it
@@ -6357,6 +6853,7 @@ la	O	it
 sua	O	it
 amica	O	it
 .	O	it
+
 Luca	O	it
 ha	O	it
 perso	O	it
@@ -6372,7 +6869,7 @@ a	O	it
 raggiungere	O	it
 il	O	it
 bersaglio	O	it
-.	O	it
+
 mi	O	it
 ha	O	it
 voltato	B-IDIOM	it
@@ -6383,6 +6880,7 @@ un	O	it
 altra	O	it
 volta	O	it
 !	O	it
+
 Non	O	it
 ha	O	it
 il	O	it
@@ -6391,7 +6889,7 @@ cane	O	it
 nel	O	it
 suo	O	it
 orto	O	it
-.	O	it
+
 Non	O	it
 voglio	O	it
 dare	B-IDIOM	it
@@ -6401,7 +6899,7 @@ Marta	O	it
 perché	O	it
 è	O	it
 stupida	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -6413,7 +6911,7 @@ renderà	O	it
 una	O	it
 persona	O	it
 migliore	O	it
-.	O	it
+
 Come	O	it
 fai	O	it
 ad	O	it
@@ -6425,7 +6923,7 @@ quando	O	it
 prendi	O	it
 la	O	it
 mira	O	it
-.	O	it
+
 Nel	O	it
 1961	O	it
 la	O	it
@@ -6443,7 +6941,7 @@ come	O	it
 Muro	O	it
 di	O	it
 Berlino	O	it
-.	O	it
+
 Riesce	O	it
 ad	O	it
 aprire	O	it
@@ -6452,7 +6950,7 @@ occhi	O	it
 quando	O	it
 va	O	it
 sott'acqua	O	it
-.	O	it
+
 Questo	O	it
 sono	O	it
 le	O	it
@@ -6463,7 +6961,7 @@ ho	O	it
 preso	O	it
 gli	O	it
 spaghetti	O	it
-.	O	it
+
 Marco	O	it
 durante	O	it
 le	O	it
@@ -6474,7 +6972,7 @@ becco	I-IDIOM	it
 sempre	O	it
 troppo	O	it
 lungo	I-IDIOM	it
-.	O	it
+
 Fu	O	it
 beccato	O	it
 mentre	O	it
@@ -6488,7 +6986,7 @@ finestrino	O	it
 e	O	it
 fu	O	it
 multato	O	it
-.	O	it
+
 Non	O	it
 buttare	B-IDIOM	it
 tutto	O	it
@@ -6496,7 +6994,7 @@ al	I-IDIOM	it
 vento	I-IDIOM	it
 proprio	O	it
 ora	O	it
-.	O	it
+
 Mia	O	it
 suocera	O	it
 non	O	it
@@ -6508,7 +7006,7 @@ avere	O	it
 il	O	it
 becco	O	it
 lungo	O	it
-.	O	it
+
 Per	O	it
 questa	O	it
 foto	O	it
@@ -6519,11 +7017,12 @@ di	O	it
 meno	O	it
 la	O	it
 faccia	O	it
-.	O	it
+
 Getterai	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 ?	O	it
+
 Ha	O	it
 gettato	O	it
 la	O	it
@@ -6531,6 +7030,7 @@ spugna	O	it
 nel	O	it
 lavandino	O	it
 .	O	it
+
 Getta	O	it
 la	O	it
 spugna	O	it
@@ -6541,6 +7041,7 @@ suggerito	O	it
 perché	O	it
 puzza	O	it
 .	O	it
+
 Prova	O	it
 a	O	it
 voltarmi	B-IDIOM	it
@@ -6550,6 +7051,7 @@ e	O	it
 finirai	O	it
 male	O	it
 .	O	it
+
 Apri	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
@@ -6562,6 +7064,7 @@ soldi	O	it
 che	O	it
 hai	O	it
 !	O	it
+
 Continua	O	it
 a	O	it
 coltivare	O	it
@@ -6573,6 +7076,7 @@ pensare	O	it
 agli	O	it
 altri	O	it
 .	O	it
+
 Ho	O	it
 gettato	B-IDIOM	it
 la	I-IDIOM	it
@@ -6589,6 +7093,7 @@ sue	O	it
 inutili	O	it
 difese	O	it
 .	O	it
+
 “	O	it
 Avere	B-IDIOM	it
 le	I-IDIOM	it
@@ -6602,6 +7107,7 @@ propenso	O	it
 al	O	it
 furto	O	it
 .	O	it
+
 La	O	it
 professoressa	O	it
 ha	B-IDIOM	it
@@ -6611,6 +7117,7 @@ mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
 ..	O	it
+
 Il	O	it
 titolare	O	it
 dell	O	it
@@ -6628,6 +7135,7 @@ senza	O	it
 alcun	O	it
 preavviso	O	it
 .	O	it
+
 La	O	it
 polizia	O	it
 brancola	B-IDIOM	it
@@ -6639,7 +7147,7 @@ perché	O	it
 non	O	it
 ha	O	it
 sospettati	O	it
-.	O	it
+
 non	O	it
 continuare	O	it
 a	O	it
@@ -6648,7 +7156,7 @@ corda	I-IDIOM	it
 a	O	it
 certi	O	it
 individui	O	it
-.	O	it
+
 Non	O	it
 tirare	O	it
 troppo	O	it
@@ -6658,7 +7166,7 @@ che	O	it
 ti	O	it
 mettono	B-IDIOM	it
 dentro	I-IDIOM	it
-.	O	it
+
 Il	O	it
 gatto	O	it
 brancolava	O	it
@@ -6669,7 +7177,7 @@ la	O	it
 via	O	it
 del	O	it
 ritorno	O	it
-.	O	it
+
 Da	O	it
 quando	O	it
 è	O	it
@@ -6685,7 +7193,7 @@ su	O	it
 nemmeno	O	it
 un	O	it
 kg	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -6695,7 +7203,7 @@ che	O	it
 dicono	O	it
 gli	O	it
 invidiosi	O	it
-.	O	it
+
 In	O	it
 questa	O	it
 cucina	O	it
@@ -6712,7 +7220,7 @@ non	O	it
 lo	O	it
 trovo	O	it
 più	O	it
-.	O	it
+
 Non	O	it
 buttare	B-IDIOM	it
 tutti	O	it
@@ -6726,7 +7234,7 @@ perché	O	it
 un	O	it
 periodo	O	it
 no	O	it
-.	O	it
+
 Quando	O	it
 sono	O	it
 in	O	it
@@ -6739,7 +7247,7 @@ su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Ho	B-IDIOM	it
 le	I-IDIOM	it
 batterie	I-IDIOM	it
@@ -6750,7 +7258,7 @@ una	O	it
 giornata	O	it
 di	O	it
 studio	O	it
-.	O	it
+
 Perfino	O	it
 il	O	it
 mio	O	it
@@ -6769,7 +7277,7 @@ nel	I-IDIOM	it
 buio	I-IDIOM	it
 durante	O	it
 l'esame	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -6784,7 +7292,7 @@ il	O	it
 bene	O	it
 della	O	it
 comunità	O	it
-.	O	it
+
 Il	O	it
 medico	O	it
 mi	O	it
@@ -6801,7 +7309,7 @@ devo	O	it
 stare	O	it
 a	O	it
 riposo	O	it
-.	O	it
+
 Ha	O	it
 voltato	O	it
 subito	O	it
@@ -6819,7 +7327,7 @@ per	O	it
 darle	O	it
 uno	O	it
 schiaffo	O	it
-.	O	it
+
 la	O	it
 prima	O	it
 cosa	O	it
@@ -6834,6 +7342,7 @@ il	I-IDIOM	it
 becco	I-IDIOM	it
 lungo	I-IDIOM	it
 !	O	it
+
 Bisogna	O	it
 prendere	B-IDIOM	it
 con	I-IDIOM	it
@@ -6847,7 +7356,7 @@ vogliono	O	it
 solo	O	it
 guadagnare	O	it
 voti	O	it
-.	O	it
+
 Claudia	O	it
 ha	B-IDIOM	it
 le	I-IDIOM	it
@@ -6858,14 +7367,14 @@ si	O	it
 trova	O	it
 in	O	it
 gioielleria	O	it
-.	O	it
+
 Non	O	it
 mi	O	it
 piace	O	it
 abbaiare	B-IDIOM	it
 alla	I-IDIOM	it
 luna	I-IDIOM	it
-.	O	it
+
 La	O	it
 nonna	O	it
 ha	O	it
@@ -6878,7 +7387,7 @@ mamma	O	it
 aveva	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Ho	O	it
 voltato	O	it
 la	O	it
@@ -6889,7 +7398,7 @@ incontrare	O	it
 il	O	it
 suo	O	it
 sguardo	O	it
-.	O	it
+
 Mio	O	it
 zio	O	it
 quando	O	it
@@ -6906,6 +7415,7 @@ non	O	it
 proprio	O	it
 capace	O	it
 !	O	it
+
 Se	O	it
 ti	O	it
 diamo	B-IDIOM	it
@@ -6914,7 +7424,7 @@ corda	I-IDIOM	it
 se	O	it
 approfitti	O	it
 sempre	O	it
-.	O	it
+
 Giovanni	O	it
 sta	O	it
 '	O	it
@@ -6927,11 +7437,12 @@ orto	O	it
 da	O	it
 ieri	O	it
 !	O	it
+
 puoi	O	it
 darmi	O	it
 la	O	it
 corda	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -6941,7 +7452,7 @@ che	O	it
 dicono	O	it
 le	O	it
 persone	O	it
-.	O	it
+
 Ho	O	it
 bevuto	O	it
 così	O	it
@@ -6954,6 +7465,7 @@ birra	O	it
 in	O	it
 corpo	O	it
 .	O	it
+
 Mi	O	it
 sono	O	it
 tirata	B-IDIOM	it
@@ -6967,7 +7479,7 @@ di	O	it
 acqua	O	it
 di	O	it
 mare	O	it
-.	O	it
+
 Oggi	O	it
 ho	B-IDIOM	it
 proprio	O	it
@@ -6981,13 +7493,14 @@ tutto	O	it
 il	O	it
 giorno	O	it
 !	O	it
+
 Ho	O	it
 dato	B-IDIOM	it
 corda	I-IDIOM	it
 alle	O	it
 persone	O	it
 sbagliate	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -7003,7 +7516,7 @@ di	O	it
 quello	O	it
 che	O	it
 dico	O	it
-.	O	it
+
 Il	O	it
 proprio	O	it
 orto	O	it
@@ -7011,6 +7524,7 @@ va	O	it
 sempre	O	it
 curato	O	it
 .	O	it
+
 Sposarsi	O	it
 non	O	it
 vuol	O	it
@@ -7021,7 +7535,7 @@ propria	O	it
 carriera	O	it
 al	I-IDIOM	it
 vento	I-IDIOM	it
-.	O	it
+
 Mi	O	it
 ha	O	it
 preso	O	it
@@ -7035,7 +7549,7 @@ ho	O	it
 sentito	O	it
 molto	O	it
 dolore	O	it
-.	O	it
+
 Non	O	it
 voglio	O	it
 buttare	B-IDIOM	it
@@ -7046,7 +7560,7 @@ nostra	O	it
 amicizia	O	it
 per	O	it
 un'incomprensione	O	it
-.	O	it
+
 Quella	O	it
 sera	O	it
 brancolavo	O	it
@@ -7062,7 +7576,7 @@ grazie	O	it
 al	O	it
 mio	O	it
 cane	O	it
-.	O	it
+
 Ieri	O	it
 ,	O	it
 è	O	it
@@ -7076,7 +7590,7 @@ più	O	it
 famosi	O	it
 del	O	it
 mondo	O	it
-.	O	it
+
 È	O	it
 troppo	O	it
 ingenua	O	it
@@ -7085,7 +7599,7 @@ dovrebbe	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
-.	O	it
+
 Se	O	it
 i	O	it
 giocattoli	O	it
@@ -7101,6 +7615,7 @@ a	O	it
 non	O	it
 calpestarli	O	it
 .	O	it
+
 Tante	O	it
 difficoltà	O	it
 nella	O	it
@@ -7113,6 +7628,7 @@ gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 .	O	it
+
 Mi	O	it
 chiese	O	it
 se	O	it
@@ -7127,6 +7643,7 @@ ed	O	it
 io	O	it
 mentii	O	it
 .	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -7137,7 +7654,7 @@ mano	O	it
 quello	O	it
 di	O	it
 plastica	O	it
-.	O	it
+
 Vorrei	O	it
 raggiungere	B-IDIOM	it
 il	I-IDIOM	it
@@ -7146,7 +7663,7 @@ bersaglio	I-IDIOM	it
 ma	O	it
 sembra	O	it
 impossibile	O	it
-.	O	it
+
 Non	O	it
 tutti	O	it
 gli	O	it
@@ -7155,7 +7672,7 @@ hanno	O	it
 il	O	it
 becco	O	it
 lungo	O	it
-.	O	it
+
 Forse	O	it
 se	O	it
 brancoliamo	B-IDIOM	it
@@ -7170,7 +7687,7 @@ seguendo	O	it
 la	O	it
 pista	O	it
 sbagliata	O	it
-.	O	it
+
 Smettila	O	it
 di	O	it
 comportarti	O	it
@@ -7184,6 +7701,7 @@ una	O	it
 grande	O	it
 occasione	O	it
 !	O	it
+
 Lucia	O	it
 non	O	it
 poteva	O	it
@@ -7201,6 +7719,7 @@ della	O	it
 loro	O	it
 relazione	O	it
 .	O	it
+
 Tua	O	it
 madre	O	it
 ha	O	it
@@ -7209,7 +7728,7 @@ su	O	it
 un	O	it
 bel	O	it
 giovanotto	O	it
-.	O	it
+
 Non	O	it
 ho	O	it
 bisogno	O	it
@@ -7225,13 +7744,13 @@ il	O	it
 buono	O	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
-.	O	it
+
 Non	O	it
 gettate	O	it
 la	O	it
 spugna	O	it
 vecchia	O	it
-.	O	it
+
 Michele	O	it
 pensava	O	it
 di	O	it
@@ -7253,6 +7772,7 @@ birra	I-IDIOM	it
 in	O	it
 corpo	I-IDIOM	it
 .	O	it
+
 Ho	O	it
 preso	O	it
 con	O	it
@@ -7264,6 +7784,7 @@ quei	O	it
 calzini	O	it
 puzzolenti	O	it
 .	O	it
+
 Prendi	B-IDIOM	it
 le	I-IDIOM	it
 parole	O	it
@@ -7278,13 +7799,13 @@ detto	O	it
 tutto	O	it
 per	O	it
 rabbia	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Non	O	it
 ho	O	it
 preso	O	it
@@ -7299,7 +7820,7 @@ pinze	O	it
 sentivo	O	it
 troppo	O	it
 dolore	O	it
-.	O	it
+
 Non	O	it
 hai	O	it
 mai	O	it
@@ -7320,7 +7841,7 @@ mi	O	it
 lasci	O	it
 mai	O	it
 cucinare	O	it
-.	O	it
+
 Raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 bersaglio	I-IDIOM	it
@@ -7329,11 +7850,11 @@ il	O	it
 mio	O	it
 unico	O	it
 obiettivo	O	it
-.	O	it
+
 Portare	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Apri	O	it
 gli	O	it
 occhi	O	it
@@ -7342,7 +7863,7 @@ ho	O	it
 spento	O	it
 la	O	it
 luce	O	it
-.	O	it
+
 Ho	O	it
 buttato	O	it
 al	O	it
@@ -7355,7 +7876,7 @@ dopo	O	it
 l	O	it
 ’	O	it
 esame	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -7372,7 +7893,7 @@ queste	O	it
 cose	O	it
 di	O	it
 te	O	it
-.	O	it
+
 Mia	O	it
 mamma	O	it
 ha	O	it
@@ -7381,7 +7902,7 @@ la	O	it
 spugna	O	it
 nel	O	it
 cestino	O	it
-.	O	it
+
 È	O	it
 inutile	O	it
 prendere	O	it
@@ -7395,7 +7916,7 @@ poi	O	it
 non	O	it
 le	O	it
 sciacqui	O	it
-.	O	it
+
 Non	O	it
 mi	O	it
 ha	O	it
@@ -7407,7 +7928,7 @@ ora	O	it
 appare	O	it
 così	O	it
 all'improvviso	O	it
-.	O	it
+
 La	O	it
 cicogna	O	it
 ha	O	it
@@ -7415,7 +7936,7 @@ il	O	it
 becco	O	it
 molto	O	it
 lungo	O	it
-.	O	it
+
 Il	O	it
 corriere	O	it
 porterà	B-IDIOM	it
@@ -7426,7 +7947,7 @@ il	O	it
 pacco	O	it
 stasera	O	it
 stessa	O	it
-.	O	it
+
 Non	O	it
 avevo	B-IDIOM	it
 più	O	it
@@ -7446,6 +7967,7 @@ me	O	it
 ne	O	it
 andai	O	it
 .	O	it
+
 Lei	O	it
 avrebbe	O	it
 proprio	O	it
@@ -7455,7 +7977,7 @@ tirarsi	B-IDIOM	it
 su	I-IDIOM	it
 col	O	it
 morale	O	it
-.	O	it
+
 Dopo	O	it
 numerosi	O	it
 furti	O	it
@@ -7467,7 +7989,7 @@ stato	O	it
 finalmente	O	it
 messo	B-IDIOM	it
 dentro	I-IDIOM	it
-.	O	it
+
 Raggiunse	B-IDIOM	it
 il	I-IDIOM	it
 suo	O	it
@@ -7475,7 +7997,7 @@ bersaglio	I-IDIOM	it
 quando	O	it
 vinse	O	it
 Sanremo	O	it
-.	O	it
+
 È	O	it
 un	O	it
 gran	O	it
@@ -7488,7 +8010,7 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 La	O	it
 mia	O	it
 vicina	O	it
@@ -7498,14 +8020,14 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Maria	O	it
 aveva	B-IDIOM	it
 la	I-IDIOM	it
 coda	I-IDIOM	it
 di	I-IDIOM	it
 paglia	I-IDIOM	it
-.	O	it
+
 Lo	O	it
 trovo	O	it
 ovunque	O	it
@@ -7516,6 +8038,7 @@ tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
 !	O	it
+
 Il	O	it
 rettore	O	it
 con	O	it
@@ -7526,7 +8049,7 @@ farci	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Ha	O	it
 attaccato	O	it
 male	O	it
@@ -7542,6 +8065,7 @@ nuovo	O	it
 per	O	it
 cadere	O	it
 .	O	it
+
 se	O	it
 lo	O	it
 mandi	B-IDIOM	it
@@ -7557,6 +8081,7 @@ un	O	it
 nuovo	O	it
 lavoro	O	it
 ?	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -7569,7 +8094,7 @@ sorella	O	it
 di	O	it
 legno	O	it
 pregiato	O	it
-.	O	it
+
 Non	O	it
 c'erano	O	it
 soluzioni	O	it
@@ -7579,7 +8104,7 @@ indagini	O	it
 brancolavano	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Non	O	it
 ho	O	it
 gettato	B-IDIOM	it
@@ -7588,7 +8113,7 @@ spugna	I-IDIOM	it
 e	O	it
 sono	O	it
 Leader	O	it
-.	O	it
+
 l'ho	O	it
 mandato	O	it
 dritto	O	it
@@ -7597,7 +8122,7 @@ casa	O	it
 ,	O	it
 doveva	O	it
 studiare	O	it
-.	O	it
+
 Il	O	it
 tucano	O	it
 è	O	it
@@ -7610,6 +8135,7 @@ becco	O	it
 molto	O	it
 lungo	O	it
 .	O	it
+
 Vorrei	O	it
 scrivere	O	it
 in	O	it
@@ -7626,7 +8152,7 @@ rumore	O	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Mio	O	it
 padre	O	it
 è	O	it
@@ -7644,6 +8170,7 @@ pagnotta	O	it
 a	O	it
 casa	I-IDIOM	it
 .	O	it
+
 Per	O	it
 la	O	it
 mia	O	it
@@ -7658,6 +8185,7 @@ bottone	I-IDIOM	it
 con	O	it
 qualcuno	O	it
 .	O	it
+
 Non	O	it
 ce	O	it
 la	I-IDIOM	it
@@ -7669,7 +8197,7 @@ che	O	it
 getterò	B-IDIOM	it
 la	O	it
 spugna	I-IDIOM	it
-.	O	it
+
 La	O	it
 spugna	O	it
 è	O	it
@@ -7678,7 +8206,7 @@ gettata	O	it
 dal	O	it
 quinto	O	it
 piano	O	it
-.	O	it
+
 L'uccello	O	it
 che	O	it
 ha	O	it
@@ -7689,7 +8217,7 @@ lungo	O	it
 è	O	it
 il	O	it
 Colibrì	O	it
-.	O	it
+
 Claudia	O	it
 era	O	it
 stata	O	it
@@ -7699,7 +8227,7 @@ una	O	it
 volta	O	it
 dentro	I-IDIOM	it
 ingiustamente	O	it
-.	O	it
+
 Non	O	it
 posso	O	it
 gettare	B-IDIOM	it
@@ -7711,6 +8239,7 @@ che	O	it
 sto	O	it
 vincendo	O	it
 .	O	it
+
 Devi	O	it
 aprire	B-IDIOM	it
 sempre	O	it
@@ -7720,7 +8249,7 @@ quando	O	it
 sospetti	O	it
 un	O	it
 turto	O	it
-.	O	it
+
 Mia	O	it
 suocera	O	it
 ha	B-IDIOM	it
@@ -7728,7 +8257,7 @@ sempre	O	it
 il	I-IDIOM	it
 becco	I-IDIOM	it
 lungo	I-IDIOM	it
-.	O	it
+
 È	O	it
 la	O	it
 tua	O	it
@@ -7749,7 +8278,7 @@ o	O	it
 dimenticati	O	it
 di	O	it
 me	O	it
-.	O	it
+
 Il	O	it
 poliziotto	O	it
 corrotto	O	it
@@ -7764,7 +8293,7 @@ evadere	O	it
 calandosi	O	it
 dalla	O	it
 finestra	O	it
-.	O	it
+
 Ho	O	it
 bisogno	O	it
 di	O	it
@@ -7775,6 +8304,7 @@ voltare	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
 !	O	it
+
 Gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
@@ -7783,12 +8313,13 @@ causa	O	it
 dell	O	it
 ’	O	it
 ansia	O	it
-.	O	it
+
 Butta	O	it
 giù	O	it
 quella	O	it
 sigaretta	O	it
 .	O	it
+
 Non	O	it
 devi	O	it
 avvilirti	O	it
@@ -7802,7 +8333,7 @@ raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 tuo	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 Oggi	O	it
 Dodiom	O	it
 sta	O	it
@@ -7812,6 +8343,7 @@ casa	I-IDIOM	it
 tanti	O	it
 suggerimenti	O	it
 !	O	it
+
 Non	O	it
 aprire	O	it
 gli	O	it
@@ -7820,6 +8352,7 @@ sott	O	it
 ’	O	it
 acqua	O	it
 !	O	it
+
 Non	O	it
 riuscirai	O	it
 facilmente	O	it
@@ -7831,7 +8364,7 @@ se	O	it
 continui	O	it
 ad	O	it
 allontanarti	O	it
-.	O	it
+
 Ho	O	it
 portato	B-IDIOM	it
 a	I-IDIOM	it
@@ -7839,7 +8372,7 @@ casa	I-IDIOM	it
 questo	O	it
 gattino	O	it
 abbandonato	O	it
-.	O	it
+
 Amici	O	it
 e	O	it
 amici	O	it
@@ -7851,7 +8384,7 @@ ti	O	it
 voltano	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 L'azienda	O	it
 ha	B-IDIOM	it
 ancora	O	it
@@ -7871,6 +8404,7 @@ i	O	it
 prossimi	O	it
 mesi	O	it
 .	O	it
+
 Quando	O	it
 lavoro	O	it
 alla	O	it
@@ -7882,7 +8416,7 @@ in	O	it
 mano	O	it
 per	O	it
 ore	O	it
-.	O	it
+
 Se	O	it
 fai	O	it
 la	O	it
@@ -7899,7 +8433,7 @@ drago	O	it
 a	O	it
 sorvegliare	O	it
 fuori	O	it
-.	O	it
+
 Non	O	it
 si	O	it
 butta	O	it
@@ -7907,12 +8441,13 @@ l'immondizia	O	it
 giù	O	it
 dalla	O	it
 finestra	O	it
-.	O	it
+
 puoi	O	it
 darle	O	it
 la	O	it
 corda	O	it
 ?	O	it
+
 Dovresti	O	it
 cambiare	O	it
 le	O	it
@@ -7922,13 +8457,13 @@ hanno	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 non	O	it
 le	O	it
 darò	B-IDIOM	it
 più	O	it
 corda	I-IDIOM	it
-.	O	it
+
 Se	O	it
 non	O	it
 mi	O	it
@@ -7945,7 +8480,7 @@ brancolerei	B-IDIOM	it
 ancora	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Non	O	it
 bisogna	O	it
 mai	O	it
@@ -7957,7 +8492,7 @@ fronte	O	it
 al	O	it
 primo	O	it
 ostacolo	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 le	I-IDIOM	it
 mani	I-IDIOM	it
@@ -7965,7 +8500,7 @@ lunghe	I-IDIOM	it
 significa	O	it
 essere	O	it
 cleptomani	O	it
-.	O	it
+
 Dopo	O	it
 aver	O	it
 buttato	O	it
@@ -7976,7 +8511,7 @@ vento	O	it
 è	O	it
 corso	O	it
 via	O	it
-.	O	it
+
 il	O	it
 pane	O	it
 l'ho	O	it
@@ -7984,12 +8519,12 @@ messo	O	it
 dentro	O	it
 il	O	it
 mobile	O	it
-.	O	it
+
 Mai	O	it
 ammainare	B-IDIOM	it
 la	I-IDIOM	it
 vela	I-IDIOM	it
-.	O	it
+
 Sono	O	it
 convinta	O	it
 che	O	it
@@ -8012,7 +8547,7 @@ prenderanno	O	it
 solo	O	it
 polvere	O	it
 lì	O	it
-.	O	it
+
 Gettate	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
@@ -8021,6 +8556,7 @@ voi	O	it
 che	O	it
 giocate	O	it
 .	O	it
+
 Tranquilla	O	it
 ,	O	it
 ho	B-IDIOM	it
@@ -8039,13 +8575,14 @@ per	O	it
 il	O	it
 trasloco	O	it
 .	O	it
+
 Tira	B-IDIOM	it
 su	I-IDIOM	it
 quel	O	it
 che	O	it
 è	O	it
 caduto	O	it
-.	O	it
+
 La	O	it
 cuoca	O	it
 della	O	it
@@ -8055,7 +8592,7 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Chi	O	it
 ha	B-IDIOM	it
 il	I-IDIOM	it
@@ -8068,7 +8605,7 @@ minestra	O	it
 a	O	it
 modo	O	it
 suo	O	it
-.	O	it
+
 Chi	O	it
 getta	B-IDIOM	it
 la	I-IDIOM	it
@@ -8078,7 +8615,7 @@ merita	O	it
 il	O	it
 mio	O	it
 supporto	O	it
-.	O	it
+
 Era	O	it
 notte	O	it
 fonda	O	it
@@ -8088,7 +8625,7 @@ nave	O	it
 brancolava	O	it
 nel	O	it
 buio	O	it
-.	O	it
+
 Quella	O	it
 ragazza	O	it
 vive	O	it
@@ -8101,7 +8638,7 @@ dovrebbe	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
-.	O	it
+
 Per	O	it
 raggiungere	O	it
 il	O	it
@@ -8109,7 +8646,7 @@ bersaglio	O	it
 occorre	O	it
 mirare	O	it
 dritto	O	it
-.	O	it
+
 Dovevi	O	it
 avere	O	it
 cura	O	it
@@ -8121,7 +8658,7 @@ non	O	it
 buttarli	O	it
 al	O	it
 vento	O	it
-.	O	it
+
 Mia	O	it
 nonna	O	it
 dice	O	it
@@ -8133,7 +8670,7 @@ lungo	I-IDIOM	it
 è	O	it
 poco	O	it
 educato	O	it
-.	O	it
+
 Mia	O	it
 zia	O	it
 ha	B-IDIOM	it
@@ -8149,13 +8686,14 @@ i	O	it
 fatti	O	it
 suoi	O	it
 .	O	it
+
 Il	O	it
 bimbo	O	it
 ha	O	it
 aperto	O	it
 gli	O	it
 occhi	O	it
-.	O	it
+
 Se	O	it
 ho	O	it
 il	O	it
@@ -8168,6 +8706,7 @@ io	O	it
 in	O	it
 cucina	O	it
 !	O	it
+
 Va	O	it
 preso	B-IDIOM	it
 con	I-IDIOM	it
@@ -8177,6 +8716,7 @@ perchè	O	it
 è	O	it
 permaloso	O	it
 .	O	it
+
 Tirati	B-IDIOM	it
 su	I-IDIOM	it
 col	O	it
@@ -8185,14 +8725,14 @@ e	O	it
 smettila	O	it
 di	O	it
 lamentarti	O	it
-.	O	it
+
 I	O	it
 lupi	O	it
 mannari	O	it
 abbaiano	O	it
 alla	O	it
 luna	O	it
-.	O	it
+
 Mamma	O	it
 ti	O	it
 assicuro	O	it
@@ -8206,7 +8746,7 @@ che	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Dopo	O	it
 la	O	it
 corsa	O	it
@@ -8217,7 +8757,7 @@ proprio	O	it
 le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -8226,7 +8766,7 @@ ciò	O	it
 che	O	it
 ti	O	it
 dice	O	it
-.	O	it
+
 Non	O	it
 sono	O	it
 riuscito	O	it
@@ -8239,6 +8779,7 @@ le	O	it
 mie	O	it
 freccette	O	it
 .	O	it
+
 Non	O	it
 riesco	O	it
 a	O	it
@@ -8256,7 +8797,7 @@ calcolo	O	it
 brancolo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 proprio	O	it
@@ -8265,7 +8806,7 @@ può	O	it
 richiedere	O	it
 molti	O	it
 sacrifici	O	it
-.	O	it
+
 Dopo	O	it
 mesi	O	it
 che	O	it
@@ -8278,7 +8819,7 @@ detective	O	it
 lasciò	O	it
 il	O	it
 caso	O	it
-.	O	it
+
 Non	O	it
 devi	O	it
 cucinare	O	it
@@ -8290,7 +8831,7 @@ buio	O	it
 può	O	it
 essere	O	it
 pericoloso	O	it
-.	O	it
+
 Dovrebbe	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
@@ -8308,7 +8849,7 @@ rubando	O	it
 tutti	O	it
 i	O	it
 soldi	O	it
-.	O	it
+
 Avere	O	it
 il	O	it
 mestolo	O	it
@@ -8319,7 +8860,7 @@ ti	O	it
 rende	O	it
 un	O	it
 cuoco	O	it
-.	O	it
+
 Non	O	it
 pensavo	O	it
 che	O	it
@@ -8329,7 +8870,7 @@ il	I-IDIOM	it
 becco	I-IDIOM	it
 così	O	it
 lungo	I-IDIOM	it
-.	O	it
+
 Ha	O	it
 voltato	O	it
 la	O	it
@@ -8338,6 +8879,7 @@ quando	O	it
 l'ho	O	it
 chiamato	O	it
 .	O	it
+
 Supererò	O	it
 qualsiasi	O	it
 difficoltà	O	it
@@ -8346,7 +8888,7 @@ raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 mio	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 ``	O	it
 Era	O	it
 notte	O	it
@@ -8365,7 +8907,7 @@ il	O	it
 mio	O	it
 libro	O	it
 preferito	O	it
-.	O	it
+
 Gettiamo	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
@@ -8376,6 +8918,7 @@ vincitore	O	it
 per	O	it
 oggi	O	it
 .	O	it
+
 Solo	O	it
 prendendo	B-IDIOM	it
 le	I-IDIOM	it
@@ -8392,7 +8935,7 @@ credere	O	it
 in	O	it
 te	O	it
 stesso	O	it
-.	O	it
+
 Ho	O	it
 vinto	O	it
 il	O	it
@@ -8407,7 +8950,7 @@ casa	I-IDIOM	it
 un	O	it
 bel	O	it
 pupazzo	O	it
-.	O	it
+
 Vado	O	it
 a	O	it
 mettere	O	it
@@ -8417,14 +8960,14 @@ dentro	O	it
 la	O	it
 cabina	O	it
 armadio	O	it
-.	O	it
+
 I	O	it
 merli	O	it
 hanno	O	it
 il	O	it
 becco	O	it
 lungo	O	it
-.	O	it
+
 Smettila	O	it
 di	O	it
 tirare	O	it
@@ -8437,7 +8980,7 @@ un	O	it
 pacco	O	it
 di	O	it
 fazzoletti	O	it
-.	O	it
+
 La	O	it
 polizia	O	it
 brancola	B-IDIOM	it
@@ -8449,7 +8992,7 @@ perché	O	it
 non	O	it
 ha	O	it
 sospettati	O	it
-.	O	it
+
 Non	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
@@ -8459,6 +9002,7 @@ ci	O	it
 sei	O	it
 quasi	O	it
 !	O	it
+
 E	O	it
 si	O	it
 vede	O	it
@@ -8471,7 +9015,7 @@ bersaglio	I-IDIOM	it
 che	O	it
 vuole	O	it
 raggiungere	B-IDIOM	it
-.	O	it
+
 Ogni	O	it
 volta	O	it
 che	O	it
@@ -8489,7 +9033,7 @@ te	O	it
 li	O	it
 darà	O	it
 più	O	it
-.	O	it
+
 Non	O	it
 ho	O	it
 ancora	O	it
@@ -8503,7 +9047,7 @@ lavorando	O	it
 molto	O	it
 per	O	it
 farlo	O	it
-.	O	it
+
 La	O	it
 mamma	O	it
 aveva	O	it
@@ -8517,7 +9061,7 @@ ciascun	O	it
 bambino	O	it
 della	O	it
 classe	O	it
-.	O	it
+
 Non	O	it
 ho	O	it
 gettato	B-IDIOM	it
@@ -8532,7 +9076,7 @@ dei	O	it
 modi	O	it
 di	O	it
 dire	O	it
-.	O	it
+
 Gettare	O	it
 la	O	it
 spugna	O	it
@@ -8541,7 +9085,7 @@ l'utilizzo	O	it
 non	O	it
 va	O	it
 bene	O	it
-.	O	it
+
 L'investigatore	O	it
 non	O	it
 trova	O	it
@@ -8551,7 +9095,7 @@ sta	O	it
 brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Se	O	it
 non	O	it
 mi	O	it
@@ -8567,6 +9111,7 @@ pacchi	O	it
 cadrà	O	it
 tutto	O	it
 !	O	it
+
 Ora	O	it
 che	O	it
 ti	O	it
@@ -8584,6 +9129,7 @@ mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
 !	O	it
+
 Abbaia	B-IDIOM	it
 alla	I-IDIOM	it
 luna	I-IDIOM	it
@@ -8595,7 +9141,7 @@ non	O	it
 ne	O	it
 posso	O	it
 più	O	it
-.	O	it
+
 Non	O	it
 è	O	it
 stata	O	it
@@ -8617,7 +9163,7 @@ dopo	O	it
 mi	O	it
 ha	O	it
 tradita	O	it
-.	O	it
+
 Ho	O	it
 brancolato	B-IDIOM	it
 per	O	it
@@ -8629,7 +9175,7 @@ di	O	it
 trovare	O	it
 una	O	it
 soluzione	O	it
-.	O	it
+
 E	O	it
 '	O	it
 inciampato	O	it
@@ -8642,6 +9188,7 @@ i	O	it
 suoi	O	it
 piedi	O	it
 .	O	it
+
 A	O	it
 Natale	O	it
 ho	O	it
@@ -8650,7 +9197,7 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -8660,7 +9207,7 @@ che	O	it
 leggi	O	it
 su	O	it
 internet	O	it
-.	O	it
+
 Prendi	O	it
 le	O	it
 pinze	O	it
@@ -8669,7 +9216,7 @@ la	O	it
 punta	O	it
 in	O	it
 gomma	O	it
-.	O	it
+
 Ogni	O	it
 volta	O	it
 che	O	it
@@ -8684,7 +9231,7 @@ sempre	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Marta	O	it
 ha	B-IDIOM	it
 il	I-IDIOM	it
@@ -8697,7 +9244,7 @@ i	O	it
 fatti	O	it
 di	O	it
 tutti	O	it
-.	O	it
+
 Hai	B-IDIOM	it
 il	I-IDIOM	it
 becco	I-IDIOM	it
@@ -8711,6 +9258,7 @@ si	O	it
 definisce	O	it
 timido	O	it
 !	O	it
+
 Non	O	it
 raggiunse	O	it
 il	O	it
@@ -8719,7 +9267,7 @@ e	O	it
 perse	O	it
 la	O	it
 partita	O	it
-.	O	it
+
 Spero	O	it
 che	O	it
 Claudia	O	it
@@ -8732,7 +9280,7 @@ vento	I-IDIOM	it
 ha	O	it
 studiato	O	it
 tantissimo	O	it
-.	O	it
+
 Hai	B-IDIOM	it
 il	I-IDIOM	it
 becco	I-IDIOM	it
@@ -8743,7 +9291,7 @@ piacere	O	it
 a	O	it
 mia	O	it
 sorella	O	it
-.	O	it
+
 Non	O	it
 buttare	O	it
 al	O	it
@@ -8752,7 +9300,7 @@ i	O	it
 fogli	O	it
 ,	O	it
 rilegali	O	it
-.	O	it
+
 Scusa	O	it
 puoi	O	it
 ricordarmi	O	it
@@ -8767,6 +9315,7 @@ lavare	O	it
 i	O	it
 piatti	O	it
 ?	O	it
+
 Ti	O	it
 consiglio	O	it
 di	O	it
@@ -8780,7 +9329,7 @@ per	O	it
 non	O	it
 farti	O	it
 male	O	it
-.	O	it
+
 Pare	O	it
 che	O	it
 l'acqua	O	it
@@ -8789,6 +9338,7 @@ pentola	O	it
 bolla	O	it
 già	O	it
 .	O	it
+
 Le	O	it
 batterie	O	it
 che	O	it
@@ -8798,7 +9348,7 @@ casa	O	it
 sono	O	it
 tutte	O	it
 scariche	O	it
-.	O	it
+
 Non	O	it
 mi	O	it
 interessa	O	it
@@ -8812,7 +9362,7 @@ ho	O	it
 stima	O	it
 di	O	it
 te	O	it
-.	O	it
+
 Nonna	O	it
 credeva	O	it
 di	O	it
@@ -8827,6 +9377,7 @@ era	O	it
 il	O	it
 forchettone	O	it
 !	O	it
+
 Se	O	it
 prendiamo	B-IDIOM	it
 tutto	O	it
@@ -8840,7 +9391,7 @@ ci	O	it
 fidiamo	O	it
 di	O	it
 nessuno	O	it
-.	O	it
+
 Stai	O	it
 acchiappando	B-IDIOM	it
 solo	O	it
@@ -8851,7 +9402,7 @@ riparare	O	it
 quella	O	it
 vecchia	O	it
 lavatrice	O	it
-.	O	it
+
 manda	O	it
 il	O	it
 cane	O	it
@@ -8859,6 +9410,7 @@ dritto	O	it
 a	O	it
 casa	O	it
 !	O	it
+
 Smettila	O	it
 di	O	it
 dare	B-IDIOM	it
@@ -8869,7 +9421,7 @@ persone	O	it
 ,	O	it
 ti	O	it
 rovineranno	O	it
-.	O	it
+
 Quelli	O	it
 che	O	it
 ho	O	it
@@ -8881,13 +9433,14 @@ erano	O	it
 noodles	O	it
 non	O	it
 bucatini	O	it
-.	O	it
+
 Ha	O	it
 gettato	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 immediatamente	O	it
 .	O	it
+
 Alessio	O	it
 è	O	it
 un	O	it
@@ -8903,6 +9456,7 @@ pagnotta	O	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
 .	O	it
+
 Possa	O	it
 il	O	it
 mestolo	O	it
@@ -8912,7 +9466,7 @@ in	O	it
 mano	O	it
 e	O	it
 ascoltami	O	it
-.	O	it
+
 Voglio	O	it
 raggiungere	B-IDIOM	it
 il	I-IDIOM	it
@@ -8923,7 +9477,7 @@ costo	O	it
 e	O	it
 sarò	O	it
 felice	O	it
-.	O	it
+
 In	I-IDIOM	it
 barca	I-IDIOM	it
 dovrai	O	it
@@ -8933,7 +9487,7 @@ il	O	it
 coronavirus	O	it
 non	O	it
 scompare	O	it
-.	O	it
+
 La	O	it
 mia	O	it
 lampada	O	it
@@ -8957,7 +9511,7 @@ sempre	O	it
 lui	O	it
 quelle	O	it
 nuove	O	it
-.	O	it
+
 Gli	I-IDIOM	it
 occhi	I-IDIOM	it
 son	O	it
@@ -8965,7 +9519,7 @@ stati	O	it
 aperti	B-IDIOM	it
 al	O	it
 popolo	O	it
-.	O	it
+
 Sto	O	it
 brancolando	O	it
 nei	O	it
@@ -8976,7 +9530,7 @@ di	O	it
 una	O	it
 torcia	O	it
 lad	O	it
-.	O	it
+
 Prendi	O	it
 la	O	it
 spina	O	it
@@ -8985,7 +9539,7 @@ le	O	it
 pinze	O	it
 e	O	it
 toglila	O	it
-.	O	it
+
 Prendi	O	it
 i	O	it
 fili	O	it
@@ -8994,7 +9548,7 @@ le	O	it
 pinze	O	it
 e	O	it
 legali	O	it
-.	O	it
+
 Queste	O	it
 persone	O	it
 hanno	B-IDIOM	it
@@ -9007,7 +9561,7 @@ quando	O	it
 entrano	O	it
 in	O	it
 negozio	O	it
-.	O	it
+
 Maria	O	it
 prese	O	it
 le	O	it
@@ -9017,7 +9571,7 @@ la	O	it
 punta	O	it
 di	O	it
 gomma	O	it
-.	O	it
+
 Coltivare	O	it
 solo	O	it
 il	B-IDIOM	it
@@ -9027,7 +9581,7 @@ orto	I-IDIOM	it
 la	O	it
 miglior	O	it
 cosa	O	it
-.	O	it
+
 Ho	O	it
 raggiunto	B-IDIOM	it
 finalmente	O	it
@@ -9036,7 +9590,7 @@ mio	O	it
 bersaglio	I-IDIOM	it
 da	O	it
 sola	O	it
-.	O	it
+
 Oggi	O	it
 ho	O	it
 acquistato	O	it
@@ -9048,6 +9602,7 @@ getterò	O	it
 la	O	it
 vecchia	O	it
 .	O	it
+
 Ieri	O	it
 c	O	it
 '	O	it
@@ -9064,7 +9619,7 @@ ho	O	it
 sbattuto	O	it
 la	O	it
 testa	O	it
-.	O	it
+
 Coltivare	O	it
 è	O	it
 impegnativo	O	it
@@ -9074,7 +9629,7 @@ il	O	it
 proprio	O	it
 orto	O	it
 poi	O	it
-.	O	it
+
 Non	O	it
 puoi	O	it
 gettare	O	it
@@ -9083,7 +9638,7 @@ spugna	O	it
 nell	O	it
 ’	O	it
 umido	O	it
-.	O	it
+
 E	O	it
 ora	O	it
 come	O	it
@@ -9096,6 +9651,7 @@ gettato	O	it
 la	O	it
 spugna	O	it
 ?	O	it
+
 Non	O	it
 ti	O	it
 mettere	O	it
@@ -9104,7 +9660,7 @@ dita	O	it
 dentro	O	it
 al	O	it
 naso	O	it
-.	O	it
+
 Abbiamo	O	it
 rischiato	O	it
 di	O	it
@@ -9113,6 +9669,7 @@ subito	O	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 .	O	it
+
 Smettila	O	it
 di	O	it
 tirare	O	it
@@ -9120,6 +9677,7 @@ su	O	it
 col	O	it
 naso	O	it
 !	O	it
+
 Aiutami	O	it
 ,	O	it
 non	O	it
@@ -9129,7 +9687,7 @@ tutto	O	it
 al	I-IDIOM	it
 vento	I-IDIOM	it
 ora	O	it
-.	O	it
+
 Quando	O	it
 sono	O	it
 a	O	it
@@ -9142,6 +9700,7 @@ mestolo	O	it
 in	O	it
 mano	O	it
 .	O	it
+
 La	O	it
 questione	O	it
 era	O	it
@@ -9153,7 +9712,7 @@ presa	O	it
 con	O	it
 le	O	it
 pinze	O	it
-.	O	it
+
 Ognuno	O	it
 coltiva	O	it
 il	B-IDIOM	it
@@ -9165,7 +9724,7 @@ ai	O	it
 problemi	O	it
 degli	O	it
 altri	O	it
-.	O	it
+
 Se	O	it
 ti	O	it
 dico	O	it
@@ -9180,7 +9739,7 @@ prenderlo	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -9192,7 +9751,7 @@ quando	O	it
 sono	O	it
 troppo	O	it
 corti	O	it
-.	O	it
+
 Ci	O	it
 sono	O	it
 troppi	O	it
@@ -9201,7 +9760,7 @@ con	O	it
 voltare	O	it
 la	O	it
 faccia	O	it
-.	O	it
+
 La	O	it
 prima	O	it
 cosa	O	it
@@ -9221,6 +9780,7 @@ bottoni	O	it
 delle	O	it
 camicie	O	it
 .	O	it
+
 Non	O	it
 butterò	B-IDIOM	it
 al	I-IDIOM	it
@@ -9233,14 +9793,14 @@ durante	O	it
 le	O	it
 feste	O	it
 natalizie	O	it
-.	O	it
+
 Gettate	B-IDIOM	it
 tutti	O	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 ,	O	it
 perdenti	O	it
-.	O	it
+
 Una	O	it
 folata	O	it
 ha	O	it
@@ -9250,7 +9810,7 @@ vento	O	it
 i	O	it
 miei	O	it
 fogli	O	it
-.	O	it
+
 Se	O	it
 mi	O	it
 da	O	it
@@ -9266,7 +9826,7 @@ ti	O	it
 passo	O	it
 il	O	it
 piatto	O	it
-.	O	it
+
 Hai	O	it
 buttato	B-IDIOM	it
 al	I-IDIOM	it
@@ -9275,7 +9835,7 @@ tutta	O	it
 la	O	it
 tua	O	it
 vita	O	it
-.	O	it
+
 Quando	O	it
 faccio	O	it
 i	O	it
@@ -9284,7 +9844,7 @@ brancolo	B-IDIOM	it
 sempre	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 non	O	it
 riesco	O	it
 più	O	it
@@ -9297,7 +9857,7 @@ dovrò	O	it
 vedere	O	it
 un	O	it
 chiropratico	O	it
-.	O	it
+
 Alla	O	it
 faccia	O	it
 di	O	it
@@ -9311,7 +9871,7 @@ luna	I-IDIOM	it
 o	O	it
 suoi	O	it
 blog	O	it
-.	O	it
+
 Non	O	it
 gettare	O	it
 la	O	it
@@ -9320,7 +9880,7 @@ bella	O	it
 spugna	O	it
 sul	O	it
 pavimento	O	it
-.	O	it
+
 Avere	O	it
 il	O	it
 becco	O	it
@@ -9332,7 +9892,7 @@ sopravvivenza	O	it
 di	O	it
 molti	O	it
 animali	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 tuo	O	it
 fratello	O	it
@@ -9344,7 +9904,7 @@ vedi	O	it
 che	O	it
 è	O	it
 irritabile	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 sempre	O	it
 con	I-IDIOM	it
@@ -9361,6 +9921,7 @@ persona	O	it
 totalmente	O	it
 affidabile	O	it
 .	O	it
+
 Abbiamo	O	it
 aiutato	O	it
 Marco	O	it
@@ -9372,7 +9933,7 @@ vento	I-IDIOM	it
 il	O	it
 suo	O	it
 progetto	O	it
-.	O	it
+
 Mi	O	it
 ha	O	it
 telefonato	O	it
@@ -9393,21 +9954,21 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Ho	B-IDIOM	it
 finalmente	O	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Nel	O	it
 medioevo	O	it
 l'uomo	O	it
 brancolava	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Prendi	O	it
 il	O	it
 cibo	O	it
@@ -9417,7 +9978,7 @@ caduto	O	it
 con	O	it
 le	O	it
 pinze	O	it
-.	O	it
+
 Sto	O	it
 mandando	O	it
 a	O	it
@@ -9429,7 +9990,7 @@ un	O	it
 mazzo	O	it
 di	O	it
 fiori	O	it
-.	O	it
+
 Ha	B-IDIOM	it
 ancora	O	it
 tanta	O	it
@@ -9444,6 +10005,7 @@ finire	O	it
 la	O	it
 partita	O	it
 .	O	it
+
 Brancolando	O	it
 nel	O	it
 buio	O	it
@@ -9451,7 +10013,7 @@ si	O	it
 ferì	O	it
 la	O	it
 mano	O	it
-.	O	it
+
 luigi	O	it
 ha	O	it
 acchiappato	O	it
@@ -9461,6 +10023,7 @@ con	O	it
 il	O	it
 retino	O	it
 .	O	it
+
 Dammi	B-IDIOM	it
 corda	I-IDIOM	it
 ,	O	it
@@ -9468,13 +10031,13 @@ non	O	it
 te	O	it
 ne	O	it
 pentirai	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 tutto	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 mando	O	it
 una	O	it
 cartolina	O	it
@@ -9483,7 +10046,7 @@ casa	O	it
 dei	O	it
 miei	O	it
 genitori	O	it
-.	O	it
+
 In	O	it
 quella	O	it
 stanza	O	it
@@ -9498,7 +10061,7 @@ cercando	O	it
 l'interruttore	O	it
 della	O	it
 luce	O	it
-.	O	it
+
 Dopo	O	it
 la	O	it
 doccia	O	it
@@ -9510,7 +10073,7 @@ la	O	it
 spugna	O	it
 sul	O	it
 pavimento	O	it
-.	O	it
+
 È	O	it
 da	O	it
 settimane	O	it
@@ -9525,7 +10088,7 @@ seguire	O	it
 una	O	it
 pista	O	it
 diversa	O	it
-.	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -9534,14 +10097,14 @@ in	O	it
 acciaio	O	it
 il	O	it
 cibo	O	it
-.	O	it
+
 Ho	B-IDIOM	it
 in	O	it
 mano	I-IDIOM	it
 la	I-IDIOM	it
 lunga	I-IDIOM	it
 sciarpa	O	it
-.	O	it
+
 Non	O	it
 riesco	O	it
 a	O	it
@@ -9562,7 +10125,7 @@ me	O	it
 è	O	it
 oro	O	it
 colato	O	it
-.	O	it
+
 non	O	it
 riesci	O	it
 a	O	it
@@ -9571,6 +10134,7 @@ di	O	it
 dargli	B-IDIOM	it
 corda	I-IDIOM	it
 ?	O	it
+
 È	O	it
 stata	O	it
 mandata	O	it
@@ -9586,6 +10150,7 @@ pagamento	O	it
 delle	O	it
 tasse	O	it
 .	O	it
+
 L'amica	O	it
 di	O	it
 mia	O	it
@@ -9600,13 +10165,14 @@ lungo	I-IDIOM	it
 molto	O	it
 indisponente	O	it
 .	O	it
+
 È	O	it
 ora	O	it
 di	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 non	O	it
 mi	O	it
 sarei	O	it
@@ -9627,7 +10193,7 @@ non	O	it
 io	O	it
 fossi	O	it
 nessuno	O	it
-.	O	it
+
 Era	O	it
 stremata	O	it
 :	O	it
@@ -9636,7 +10202,7 @@ davvero	O	it
 le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 dovuto	O	it
 brancolare	O	it
@@ -9647,19 +10213,19 @@ di	O	it
 accendere	O	it
 la	O	it
 luce	O	it
-.	O	it
+
 meglio	O	it
 non	O	it
 dargli	B-IDIOM	it
 corda	I-IDIOM	it
-.	O	it
+
 Io	O	it
 sono	B-IDIOM	it
 su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Bon	O	it
 voyage	O	it
 ,	O	it
@@ -9669,7 +10235,7 @@ di	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Mi	O	it
 piace	O	it
 morto	O	it
@@ -9686,7 +10252,7 @@ proprio	O	it
 orto	O	it
 da	O	it
 coltivare	O	it
-.	O	it
+
 gli	O	it
 ho	O	it
 mandato	O	it
@@ -9694,7 +10260,7 @@ il	O	it
 regalo	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Prendi	O	it
 queli	O	it
 bulloni	O	it
@@ -9702,6 +10268,7 @@ con	O	it
 le	O	it
 pinze	O	it
 .	O	it
+
 Passami	O	it
 il	O	it
 mestolo	O	it
@@ -9715,7 +10282,7 @@ serve	O	it
 per	O	it
 il	O	it
 risotto	O	it
-.	O	it
+
 Non	O	it
 voglio	O	it
 brancolare	O	it
@@ -9728,7 +10295,7 @@ almeno	O	it
 dammi	O	it
 un	O	it
 indizio	O	it
-.	O	it
+
 È	O	it
 troppo	O	it
 sicuro	O	it
@@ -9737,7 +10304,7 @@ qualcosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Non	O	it
 buttare	B-IDIOM	it
 la	O	it
@@ -9750,6 +10317,7 @@ uno	O	it
 come	O	it
 lui	O	it
 !	O	it
+
 Mia	O	it
 madre	O	it
 ha	B-IDIOM	it
@@ -9766,7 +10334,7 @@ fatti	O	it
 alle	O	it
 sue	O	it
 amiche	O	it
-.	O	it
+
 Ho	O	it
 preso	O	it
 gli	O	it
@@ -9777,7 +10345,7 @@ pinze	O	it
 per	O	it
 impiattare	O	it
 bene	O	it
-.	O	it
+
 Al	O	it
 supermercato	O	it
 ,	O	it
@@ -9800,6 +10368,7 @@ terra	O	it
 che	O	it
 imbarazzo	O	it
 !	O	it
+
 non	O	it
 darmi	B-IDIOM	it
 corda	I-IDIOM	it
@@ -9808,6 +10377,7 @@ o	O	it
 ne	O	it
 approfitto	O	it
 !	O	it
+
 Ho	O	it
 portato	O	it
 a	O	it
@@ -9833,7 +10403,7 @@ che	O	it
 possa	O	it
 non	O	it
 piacerle	O	it
-.	O	it
+
 Anche	O	it
 se	O	it
 non	O	it
@@ -9853,7 +10423,7 @@ aveva	O	it
 fatto	O	it
 in	O	it
 precedenza	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -9863,7 +10433,7 @@ che	O	it
 leggi	O	it
 sui	O	it
 social	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -9876,7 +10446,7 @@ in	O	it
 maniera	O	it
 molto	O	it
 positiva	O	it
-.	O	it
+
 Ho	O	it
 bisogno	O	it
 di	O	it
@@ -9892,7 +10462,7 @@ le	O	it
 cose	O	it
 a	O	it
 lavoro	O	it
-.	O	it
+
 Ero	O	it
 al	O	it
 bar	O	it
@@ -9910,6 +10480,7 @@ modo	O	it
 molto	O	it
 fastidioso	O	it
 .	O	it
+
 il	O	it
 medico	O	it
 l'ha	O	it
@@ -9919,7 +10490,7 @@ a	O	it
 casa	O	it
 per	O	it
 riposare	O	it
-.	O	it
+
 Questa	O	it
 trattativa	O	it
 è	B-IDIOM	it
@@ -9927,7 +10498,7 @@ su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -9942,7 +10513,7 @@ all'asta	O	it
 di	O	it
 legno	O	it
 pregiato	O	it
-.	O	it
+
 Quando	O	it
 ho	O	it
 aperto	O	it
@@ -9964,7 +10535,7 @@ ho	O	it
 pianto	O	it
 di	O	it
 gioia	O	it
-.	O	it
+
 Ho	O	it
 raggiunto	B-IDIOM	it
 il	I-IDIOM	it
@@ -9974,14 +10545,14 @@ ho	O	it
 vinto	O	it
 la	O	it
 competizione	O	it
-.	O	it
+
 Non	O	it
 bisogna	O	it
 mai	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 La	O	it
 commessa	O	it
 prese	O	it
@@ -9995,7 +10566,7 @@ non	O	it
 riusciva	O	it
 a	O	it
 prendere	O	it
-.	O	it
+
 Anche	O	it
 Didiom	O	it
 ha	O	it
@@ -10007,6 +10578,7 @@ faccia	I-IDIOM	it
 ai	O	it
 partecipanti	O	it
 .	O	it
+
 È	O	it
 riuscito	O	it
 a	O	it
@@ -10016,7 +10588,7 @@ sforzo	O	it
 il	I-IDIOM	it
 suo	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 hanno	O	it
 mandato	O	it
 mia	O	it
@@ -10026,7 +10598,7 @@ casa	O	it
 perché	O	it
 c'era	O	it
 sciopero	O	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -10035,7 +10607,7 @@ in	O	it
 mano	O	it
 é	O	it
 bellissimo	O	it
-.	O	it
+
 l'ho	O	it
 dovuta	O	it
 mandare	O	it
@@ -10045,7 +10617,7 @@ casa	O	it
 perché	O	it
 stava	O	it
 male	O	it
-.	O	it
+
 Al	O	it
 supermercato	O	it
 ho	O	it
@@ -10056,7 +10628,7 @@ con	O	it
 una	O	it
 bella	O	it
 confezione	O	it
-.	O	it
+
 Ha	O	it
 voltato	O	it
 la	O	it
@@ -10067,7 +10639,7 @@ il	O	it
 cane	O	it
 ha	O	it
 abbaiato	O	it
-.	O	it
+
 Era	O	it
 troppo	O	it
 difficile	O	it
@@ -10078,6 +10650,7 @@ gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 .	O	it
+
 Mi	O	it
 sono	O	it
 ferito	O	it
@@ -10086,7 +10659,7 @@ piede	O	it
 brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Come	O	it
 sempre	O	it
 ,	O	it
@@ -10096,7 +10669,7 @@ di	O	it
 abbaiare	O	it
 alla	O	it
 luna	O	it
-.	O	it
+
 Fu	O	it
 beccato	O	it
 mentre	O	it
@@ -10108,7 +10681,7 @@ vento	O	it
 e	O	it
 fu	O	it
 multato	O	it
-.	O	it
+
 Certo	O	it
 che	O	it
 sembra	O	it
@@ -10122,7 +10695,7 @@ da	O	it
 ore	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Sara	O	it
 dovrebbe	O	it
 farsi	O	it
@@ -10134,7 +10707,7 @@ pantaloni	O	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
 sua	O	it
-.	O	it
+
 È	O	it
 suo	O	it
 solito	O	it
@@ -10143,7 +10716,7 @@ la	O	it
 faccia	I-IDIOM	it
 alle	O	it
 responsabilità	O	it
-.	O	it
+
 non	O	it
 mi	O	it
 ha	O	it
@@ -10151,7 +10724,7 @@ più	O	it
 dato	O	it
 la	O	it
 corda	O	it
-.	O	it
+
 Il	O	it
 mio	O	it
 cane	O	it
@@ -10167,7 +10740,7 @@ altri	O	it
 cani	O	it
 del	O	it
 quartiere	O	it
-.	O	it
+
 Manda	B-IDIOM	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
@@ -10175,6 +10748,7 @@ il	O	it
 tuo	O	it
 avversario	O	it
 !	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -10183,7 +10757,7 @@ le	O	it
 spine	O	it
 di	O	it
 pesce	O	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -10195,7 +10769,7 @@ stato	O	it
 mordicchiato	O	it
 dal	O	it
 cane	O	it
-.	O	it
+
 La	O	it
 mezzanotte	O	it
 è	O	it
@@ -10205,7 +10779,7 @@ non	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Dando	B-IDIOM	it
 corda	I-IDIOM	it
 a	O	it
@@ -10216,7 +10790,7 @@ ritrovata	O	it
 in	O	it
 questa	O	it
 situazione	O	it
-.	O	it
+
 Un	O	it
 passeggero	O	it
 è	O	it
@@ -10224,7 +10798,7 @@ su	O	it
 un	O	it
 binario	O	it
 morto	O	it
-.	O	it
+
 Se	O	it
 getti	O	it
 la	O	it
@@ -10233,7 +10807,7 @@ nel	O	it
 water	O	it
 ti	O	it
 picchio	O	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -10247,7 +10821,7 @@ al	O	it
 mercato	O	it
 del	O	it
 paese	O	it
-.	O	it
+
 Oggi	O	it
 non	O	it
 ho	B-IDIOM	it
@@ -10262,6 +10836,7 @@ le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
 .	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -10274,7 +10849,7 @@ costoso	O	it
 ,	O	it
 abbine	O	it
 cura	O	it
-.	O	it
+
 Prendi	O	it
 le	O	it
 pinze	O	it
@@ -10283,7 +10858,7 @@ il	O	it
 manico	O	it
 di	O	it
 gomma	O	it
-.	O	it
+
 Crede	O	it
 di	O	it
 avere	B-IDIOM	it
@@ -10297,7 +10872,7 @@ nessuno	O	it
 le	O	it
 dà	O	it
 ascolto	O	it
-.	O	it
+
 Volevo	O	it
 provare	O	it
 a	O	it
@@ -10321,7 +10896,7 @@ bisogno	O	it
 di	O	it
 un	O	it
 istruttore	O	it
-.	O	it
+
 Appena	O	it
 ho	O	it
 visto	O	it
@@ -10344,7 +10919,7 @@ era	O	it
 di	O	it
 qualcun	O	it
 altro	O	it
-.	O	it
+
 Se	O	it
 ti	O	it
 ostini	O	it
@@ -10359,6 +10934,7 @@ molto	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
 .	O	it
+
 Non	O	it
 sfilarmi	O	it
 il	O	it
@@ -10368,6 +10944,7 @@ ho	O	it
 in	O	it
 mano	O	it
 !	O	it
+
 Dopo	O	it
 una	O	it
 giornata	O	it
@@ -10378,7 +10955,7 @@ sempre	O	it
 le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
-.	O	it
+
 Il	O	it
 mestolo	O	it
 che	O	it
@@ -10390,7 +10967,7 @@ quello	O	it
 di	O	it
 zia	O	it
 Sofia	O	it
-.	O	it
+
 Quando	O	it
 fa	O	it
 così	O	it
@@ -10400,7 +10977,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Tira	O	it
 su	O	it
 la	O	it
@@ -10412,6 +10989,7 @@ caduta	O	it
 a	O	it
 terra	O	it
 .	O	it
+
 Trovò	O	it
 un	O	it
 gatto	O	it
@@ -10422,7 +11000,7 @@ lo	O	it
 portò	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Mio	O	it
 padre	O	it
 lavora	O	it
@@ -10434,7 +11012,7 @@ a	O	it
 brancolare	O	it
 nel	O	it
 buio	O	it
-.	O	it
+
 Secondo	O	it
 me	O	it
 se	O	it
@@ -10447,7 +11025,7 @@ commercialista	O	it
 acchiappi	B-IDIOM	it
 solo	O	it
 farfalle	I-IDIOM	it
-.	O	it
+
 Il	O	it
 medico	O	it
 le	O	it
@@ -10461,6 +11039,7 @@ dall	O	it
 altra	O	it
 parte	O	it
 .	O	it
+
 Mio	O	it
 padre	O	it
 mi	O	it
@@ -10479,7 +11058,7 @@ e	O	it
 si	O	it
 è	O	it
 risposata	O	it
-.	O	it
+
 Anche	O	it
 il	O	it
 procuratore	O	it
@@ -10491,7 +11070,7 @@ da	O	it
 mesi	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 praticamente	O	it
 mi	O	it
 ha	O	it
@@ -10508,7 +11087,7 @@ lavorare	O	it
 da	O	it
 una	O	it
 settimana	O	it
-.	O	it
+
 È	O	it
 terribile	O	it
 quando	O	it
@@ -10523,7 +11102,7 @@ piange	O	it
 tutta	O	it
 la	O	it
 notte	O	it
-.	O	it
+
 Raggiunse	B-IDIOM	it
 il	I-IDIOM	it
 suo	O	it
@@ -10531,7 +11110,7 @@ bersaglio	I-IDIOM	it
 quando	O	it
 ha	O	it
 vinto	O	it
-.	O	it
+
 Se	O	it
 si	O	it
 vuole	O	it
@@ -10547,7 +11126,7 @@ assicurare	O	it
 di	O	it
 essere	O	it
 predisposti	O	it
-.	O	it
+
 Gli	O	it
 ho	O	it
 dato	B-IDIOM	it
@@ -10557,6 +11136,7 @@ mi	O	it
 aveva	O	it
 stancato	O	it
 .	O	it
+
 Avendo	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -10567,7 +11147,7 @@ aiutare	O	it
 l'azienda	O	it
 a	O	it
 migliorare	O	it
-.	O	it
+
 Apri	O	it
 bene	O	it
 gli	O	it
@@ -10582,7 +11162,7 @@ ci	O	it
 sono	O	it
 molti	O	it
 borseggiatori	O	it
-.	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -10593,12 +11173,12 @@ fare	O	it
 bene	O	it
 il	O	it
 meccanico	O	it
-.	O	it
+
 non	O	it
 darle	O	it
 la	O	it
 corda	O	it
-.	O	it
+
 Tuo	O	it
 padre	O	it
 ha	B-IDIOM	it
@@ -10610,7 +11190,7 @@ quando	O	it
 è	O	it
 in	O	it
 casa	O	it
-.	O	it
+
 Ho	O	it
 tirato	B-IDIOM	it
 su	I-IDIOM	it
@@ -10625,7 +11205,7 @@ certo	O	it
 bisogno	O	it
 di	O	it
 te	O	it
-.	O	it
+
 Che	O	it
 tu	O	it
 abbia	O	it
@@ -10642,6 +11222,7 @@ imparerai	O	it
 a	O	it
 suonare	O	it
 .	O	it
+
 Con	O	it
 questa	O	it
 mossa	O	it
@@ -10652,7 +11233,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 L'uomo	O	it
 si	O	it
 ritrovò	O	it
@@ -10667,7 +11248,7 @@ tutti	O	it
 i	O	it
 suoi	O	it
 soldi	O	it
-.	O	it
+
 Per	O	it
 sicurezza	O	it
 prendi	B-IDIOM	it
@@ -10678,7 +11259,7 @@ dice	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Apri	O	it
 gli	O	it
 occhi	O	it
@@ -10691,7 +11272,7 @@ potresti	O	it
 fare	O	it
 qualche	O	it
 incidente	O	it
-.	O	it
+
 Quanto	O	it
 ci	O	it
 metti	O	it
@@ -10701,6 +11282,7 @@ dentro	O	it
 la	O	it
 città	O	it
 ?	O	it
+
 Il	O	it
 mercante	O	it
 aveva	O	it
@@ -10714,7 +11296,7 @@ legno	O	it
 dell'artigiano	O	it
 di	O	it
 Tver	O	it
-.	O	it
+
 Parlare	O	it
 con	O	it
 Mario	O	it
@@ -10724,6 +11306,7 @@ abbaiare	B-IDIOM	it
 alla	I-IDIOM	it
 luna	I-IDIOM	it
 .	O	it
+
 Ieri	O	it
 sera	O	it
 è	O	it
@@ -10736,6 +11319,7 @@ brancolavo	O	it
 nel	O	it
 buio	O	it
 .	O	it
+
 Devi	O	it
 voltare	O	it
 la	O	it
@@ -10747,7 +11331,7 @@ meglio	O	it
 quel	O	it
 punto	O	it
 all'orizzonte	O	it
-.	O	it
+
 Pensi	O	it
 che	O	it
 danno	B-IDIOM	it
@@ -10759,13 +11343,14 @@ lei	O	it
 ti	O	it
 aiuterà	O	it
 ?	O	it
+
 Il	O	it
 ladro	O	it
 aveva	B-IDIOM	it
 le	I-IDIOM	it
 mani	I-IDIOM	it
 lunghe	I-IDIOM	it
-.	O	it
+
 I	O	it
 camerieri	O	it
 prendono	B-IDIOM	it
@@ -10774,7 +11359,7 @@ giaccio	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Durante	O	it
 le	O	it
 liti	O	it
@@ -10789,7 +11374,7 @@ il	O	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Non	O	it
 ho	O	it
 nessuna	O	it
@@ -10797,7 +11382,7 @@ intenzione	O	it
 di	O	it
 dargli	B-IDIOM	it
 corda	I-IDIOM	it
-.	O	it
+
 Gettando	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
@@ -10806,6 +11391,7 @@ ha	O	it
 deluso	O	it
 molto	O	it
 .	O	it
+
 Da	O	it
 piccola	O	it
 mi	O	it
@@ -10815,6 +11401,7 @@ su	I-IDIOM	it
 mia	O	it
 nonna	O	it
 .	O	it
+
 Devi	O	it
 prendere	O	it
 con	O	it
@@ -10827,6 +11414,7 @@ altrimenti	O	it
 scivoleranno	O	it
 via	O	it
 .	O	it
+
 Mi	O	it
 devi	O	it
 buttare	O	it
@@ -10837,7 +11425,7 @@ se	O	it
 non	O	it
 mi	O	it
 sveglio	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 quello	O	it
 che	O	it
@@ -10851,7 +11439,7 @@ se	O	it
 non	O	it
 ti	O	it
 fidi	O	it
-.	O	it
+
 Brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
@@ -10861,7 +11449,7 @@ non	O	it
 perdeva	O	it
 la	O	it
 speranza	O	it
-.	O	it
+
 Sì	O	it
 è	O	it
 fatta	O	it
@@ -10869,7 +11457,7 @@ male	O	it
 brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Gli	O	it
 uccelli	O	it
 che	O	it
@@ -10882,7 +11470,7 @@ il	O	it
 becco	O	it
 molto	O	it
 lungo	O	it
-.	O	it
+
 Aprire	B-IDIOM	it
 sempre	O	it
 gli	I-IDIOM	it
@@ -10893,7 +11481,7 @@ te	O	it
 un	O	it
 uomo	O	it
 previdente	O	it
-.	O	it
+
 Ho	O	it
 preso	O	it
 con	O	it
@@ -10903,7 +11491,7 @@ gli	O	it
 spaghetti	O	it
 dalla	O	it
 pentola	O	it
-.	O	it
+
 Non	O	it
 mi	O	it
 interessi	O	it
@@ -10912,7 +11500,7 @@ non	O	it
 ti	O	it
 darò	B-IDIOM	it
 corda	I-IDIOM	it
-.	O	it
+
 Se	O	it
 hai	O	it
 il	O	it
@@ -10927,7 +11515,7 @@ dentro	I-IDIOM	it
 per	O	it
 pandemia	O	it
 colposa	O	it
-.	O	it
+
 Marta	O	it
 aveva	O	it
 il	O	it
@@ -10940,6 +11528,7 @@ nell'altra	O	it
 il	O	it
 pepe	O	it
 .	O	it
+
 Mi	O	it
 creda	O	it
 agente	O	it
@@ -10949,7 +11538,7 @@ nel	O	it
 buio	O	it
 quanto	O	it
 lei	O	it
-.	O	it
+
 Non	O	it
 ti	O	it
 darò	B-IDIOM	it
@@ -10958,7 +11547,7 @@ perché	O	it
 non	O	it
 ti	O	it
 credo	O	it
-.	O	it
+
 Se	O	it
 vuoi	O	it
 dare	B-IDIOM	it
@@ -10970,14 +11559,14 @@ contare	O	it
 su	O	it
 di	O	it
 me	O	it
-.	O	it
+
 Vorrei	O	it
 sapere	O	it
 cosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 È	O	it
 bastata	O	it
 una	O	it
@@ -10988,7 +11577,7 @@ sono	O	it
 andata	B-IDIOM	it
 in	I-IDIOM	it
 barca	I-IDIOM	it
-.	O	it
+
 Sembri	O	it
 un	O	it
 vampiro	O	it
@@ -10997,20 +11586,20 @@ brancoli	O	it
 sempre	O	it
 nel	O	it
 buio	O	it
-.	O	it
+
 gli	O	it
 dovresti	O	it
 dare	O	it
 la	O	it
 corda	O	it
-.	O	it
+
 Vorrei	O	it
 raggiungere	B-IDIOM	it
 subito	O	it
 il	I-IDIOM	it
 mio	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 Raggiungere	B-IDIOM	it
 il	I-IDIOM	it
 proprio	O	it
@@ -11022,7 +11611,7 @@ a	O	it
 fare	O	it
 dei	O	it
 sacrifici	O	it
-.	O	it
+
 le	O	it
 ho	O	it
 mandato	O	it
@@ -11031,7 +11620,7 @@ fiori	O	it
 a	O	it
 casa	O	it
 sua	O	it
-.	O	it
+
 Ho	O	it
 seguito	O	it
 tutte	O	it
@@ -11045,7 +11634,7 @@ all'esame	O	it
 brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 tirato	B-IDIOM	it
 su	I-IDIOM	it
@@ -11059,7 +11648,7 @@ padre	O	it
 lo	O	it
 ha	O	it
 abbandonato	O	it
-.	O	it
+
 ho	O	it
 smesso	O	it
 da	O	it
@@ -11071,7 +11660,7 @@ a	O	it
 te	O	it
 ,	O	it
 basta	O	it
-.	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -11083,7 +11672,7 @@ che	O	it
 ti	O	it
 è	O	it
 caduto	O	it
-.	O	it
+
 Ha	O	it
 voltato	O	it
 la	O	it
@@ -11094,7 +11683,7 @@ ho	O	it
 chiesto	O	it
 di	O	it
 aiutarmi	O	it
-.	O	it
+
 Metti	O	it
 tutta	O	it
 questa	O	it
@@ -11102,7 +11691,7 @@ roba	O	it
 dentro	O	it
 la	O	it
 cassapanca	O	it
-.	O	it
+
 Devi	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
@@ -11112,7 +11701,7 @@ ti	O	it
 racconta	O	it
 solo	O	it
 bugie	O	it
-.	O	it
+
 Mi	O	it
 vide	O	it
 e	O	it
@@ -11123,13 +11712,14 @@ per	O	it
 terra	O	it
 dalla	O	it
 paura	O	it
-.	O	it
+
 lo	O	it
 mandi	O	it
 a	O	it
 casa	O	it
 mia	O	it
 ?	O	it
+
 Aveva	B-IDIOM	it
 la	I-IDIOM	it
 coda	I-IDIOM	it
@@ -11147,7 +11737,7 @@ continuava	O	it
 ad	O	it
 urlarmi	O	it
 addosso	O	it
-.	O	it
+
 Brancoliamo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
@@ -11162,7 +11752,7 @@ crisi	O	it
 avrà	O	it
 sulle	O	it
 imprese	O	it
-.	O	it
+
 A	O	it
 volte	O	it
 bisogna	O	it
@@ -11177,7 +11767,7 @@ per	O	it
 evitare	O	it
 discussioni	O	it
 inutili	O	it
-.	O	it
+
 Non	O	it
 mi	O	it
 aspettavo	O	it
@@ -11189,7 +11779,7 @@ mi	O	it
 voltassero	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 non	O	it
 vorrei	O	it
 essere	O	it
@@ -11203,6 +11793,7 @@ tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
 !	O	it
+
 ho	O	it
 dato	O	it
 la	O	it
@@ -11216,7 +11807,7 @@ si	O	it
 divertito	O	it
 a	O	it
 tirarla	O	it
-.	O	it
+
 Sembra	O	it
 che	O	it
 tu	O	it
@@ -11224,7 +11815,7 @@ stia	O	it
 brancolando	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Hai	B-IDIOM	it
 il	I-IDIOM	it
 becco	I-IDIOM	it
@@ -11240,7 +11831,7 @@ che	O	it
 non	O	it
 ti	O	it
 riguardano	O	it
-.	O	it
+
 Nonostante	O	it
 io	O	it
 sia	O	it
@@ -11252,7 +11843,7 @@ qualcosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Per	O	it
 aver	O	it
 raggiunto	B-IDIOM	it
@@ -11263,7 +11854,7 @@ hanno	O	it
 fatto	O	it
 un	O	it
 regalo	O	it
-.	O	it
+
 Il	O	it
 mio	O	it
 scopo	O	it
@@ -11274,7 +11865,7 @@ bersaglio	I-IDIOM	it
 e	O	it
 lo	O	it
 farò	O	it
-.	O	it
+
 Il	O	it
 colloquio	O	it
 è	O	it
@@ -11282,7 +11873,7 @@ andato	B-IDIOM	it
 a	I-IDIOM	it
 gonfie	I-IDIOM	it
 vele	I-IDIOM	it
-.	O	it
+
 Sono	O	it
 Cheffftony	O	it
 e	O	it
@@ -11293,7 +11884,7 @@ mai	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Mattarella	O	it
 essendo	O	it
 il	I-IDIOM	it
@@ -11306,7 +11897,7 @@ il	O	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 La	O	it
 mattina	O	it
 è	O	it
@@ -11323,7 +11914,7 @@ stesse	O	it
 cose	O	it
 di	O	it
 sempre	O	it
-.	O	it
+
 Ho	O	it
 scelto	O	it
 di	O	it
@@ -11340,7 +11931,7 @@ sicura	O	it
 della	O	it
 loro	O	it
 qualità	O	it
-.	O	it
+
 Non	O	it
 hai	O	it
 fatto	O	it
@@ -11352,7 +11943,7 @@ faccia	I-IDIOM	it
 a	O	it
 qualsiasi	O	it
 responsabilità	O	it
-.	O	it
+
 Odio	O	it
 le	O	it
 persone	O	it
@@ -11362,7 +11953,7 @@ il	I-IDIOM	it
 becco	I-IDIOM	it
 troppo	O	it
 lungo	I-IDIOM	it
-.	O	it
+
 Il	O	it
 nemico	O	it
 era	O	it
@@ -11376,7 +11967,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 iniziato	O	it
 a	O	it
@@ -11394,7 +11985,7 @@ raggiungere	B-IDIOM	it
 il	O	it
 mio	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 Mi	O	it
 creda	O	it
 agente	O	it
@@ -11404,7 +11995,7 @@ nel	I-IDIOM	it
 buio	I-IDIOM	it
 quanto	O	it
 lei	O	it
-.	O	it
+
 Raggiunse	B-IDIOM	it
 il	I-IDIOM	it
 suo	O	it
@@ -11416,7 +12007,7 @@ l	O	it
 ansia	O	it
 da	O	it
 palcoscenico	O	it
-.	O	it
+
 Speriamo	O	it
 sia	O	it
 l'ultimo	O	it
@@ -11434,6 +12025,7 @@ la	O	it
 mia	O	it
 tranquillità	O	it
 .	O	it
+
 Il	O	it
 mio	O	it
 pescivendolo	O	it
@@ -11456,6 +12048,7 @@ mangiamo	O	it
 mai	O	it
 pesce	O	it
 !	O	it
+
 Meglio	O	it
 coltivare	O	it
 il	B-IDIOM	it
@@ -11465,7 +12058,7 @@ che	O	it
 giudicare	O	it
 quello	O	it
 altrui	O	it
-.	O	it
+
 Se	O	it
 ognuno	O	it
 coltivasse	O	it
@@ -11477,7 +12070,7 @@ ci	O	it
 sarebbero	O	it
 meno	O	it
 impiccioni	O	it
-.	O	it
+
 Tradurre	O	it
 un	O	it
 testo	O	it
@@ -11488,7 +12081,7 @@ non	O	it
 getterò	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Il	O	it
 telecomando	O	it
 ha	O	it
@@ -11497,6 +12090,7 @@ le	O	it
 batterie	O	it
 scariche	O	it
 !	O	it
+
 Mia	O	it
 madre	O	it
 prende	B-IDIOM	it
@@ -11504,7 +12098,7 @@ tutto	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Sarebbe	O	it
 terribile	O	it
 se	O	it
@@ -11519,7 +12113,7 @@ avessero	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Sono	O	it
 arrivata	O	it
 a	O	it
@@ -11544,6 +12138,7 @@ di	O	it
 15	O	it
 minuti	O	it
 .	O	it
+
 mi	O	it
 hai	O	it
 aiutato	O	it
@@ -11553,14 +12148,14 @@ ho	O	it
 voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 “	O	it
 Non	O	it
 dovresti	O	it
 dargli	B-IDIOM	it
 corda	I-IDIOM	it
 ”	O	it
-.	O	it
+
 Hai	O	it
 sempre	O	it
 da	O	it
@@ -11574,6 +12169,7 @@ becco	I-IDIOM	it
 troppo	O	it
 lungo	I-IDIOM	it
 !	O	it
+
 Preso	O	it
 dall'ira	O	it
 buttò	O	it
@@ -11581,7 +12177,7 @@ al	O	it
 vento	O	it
 il	O	it
 posacenere	O	it
-.	O	it
+
 Il	O	it
 truffatore	O	it
 non	O	it
@@ -11593,7 +12189,7 @@ ancora	O	it
 una	O	it
 volta	O	it
 dentro	I-IDIOM	it
-.	O	it
+
 Bisogna	O	it
 prendere	B-IDIOM	it
 con	I-IDIOM	it
@@ -11605,7 +12201,7 @@ si	O	it
 legge	O	it
 su	O	it
 internet	O	it
-.	O	it
+
 Non	O	it
 prendere	B-IDIOM	it
 le	I-IDIOM	it
@@ -11620,7 +12216,7 @@ sto	O	it
 dicendo	O	it
 la	O	it
 verità	O	it
-.	O	it
+
 Ha	O	it
 l	O	it
 ’	O	it
@@ -11631,7 +12227,7 @@ la	O	it
 faccia	O	it
 quando	O	it
 parla	O	it
-.	O	it
+
 Dammi	O	it
 12	O	it
 punti	O	it
@@ -11642,7 +12238,7 @@ con	O	it
 voltare	O	it
 la	O	it
 faccia	O	it
-.	O	it
+
 Devo	O	it
 raggiungere	B-IDIOM	it
 assolutamente	O	it
@@ -11650,7 +12246,7 @@ il	I-IDIOM	it
 bersaglio	I-IDIOM	it
 questa	O	it
 volta	O	it
-.	O	it
+
 ho	O	it
 mandato	O	it
 un	O	it
@@ -11658,7 +12254,7 @@ pacco	O	it
 a	O	it
 casa	O	it
 tua	O	it
-.	O	it
+
 Non	O	it
 aprire	O	it
 gli	O	it
@@ -11669,7 +12265,7 @@ ti	O	it
 do	O	it
 l'ok	O	it
 )	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 questa	O	it
 informazione	O	it
@@ -11681,7 +12277,7 @@ devo	O	it
 fare	O	it
 delle	O	it
 ricerche	O	it
-.	O	it
+
 Ha	O	it
 preso	O	it
 un	O	it
@@ -11692,7 +12288,7 @@ su	O	it
 un	O	it
 binario	O	it
 morto	O	it
-.	O	it
+
 Ha	O	it
 attaccato	O	it
 il	O	it
@@ -11706,6 +12302,7 @@ perché	O	it
 era	O	it
 caduto	O	it
 .	O	it
+
 Se	O	it
 sei	B-IDIOM	it
 tra	I-IDIOM	it
@@ -11721,12 +12318,14 @@ a	O	it
 concludere	O	it
 nulla	O	it
 .	O	it
+
 Smettila	O	it
 di	O	it
 voltarmi	O	it
 la	O	it
 faccia	O	it
 !	O	it
+
 Ho	O	it
 dato	B-IDIOM	it
 loro	O	it
@@ -11738,7 +12337,7 @@ ritrovo	O	it
 in	O	it
 questa	O	it
 situazione	O	it
-.	O	it
+
 Avere	O	it
 una	O	it
 possibilità	O	it
@@ -11752,7 +12351,7 @@ sarebbe	O	it
 uno	O	it
 spreco	O	it
 enorme	O	it
-.	O	it
+
 Dopo	O	it
 aver	O	it
 pulito	O	it
@@ -11762,7 +12361,7 @@ piatti	O	it
 getta	O	it
 la	O	it
 spugna	O	it
-.	O	it
+
 G	O	it
 di	O	it
 insulti	O	it
@@ -11774,7 +12373,7 @@ vuole	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Se	O	it
 ti	O	it
 addormenti	O	it
@@ -11788,7 +12387,7 @@ ad	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
-.	O	it
+
 Ne	O	it
 ``	O	it
 Il	O	it
@@ -11804,6 +12403,7 @@ le	I-IDIOM	it
 mani	I-IDIOM	it
 lunghe	I-IDIOM	it
 !	O	it
+
 davvero	O	it
 vuoi	O	it
 mandarla	B-IDIOM	it
@@ -11814,6 +12414,7 @@ tutti	O	it
 questi	O	it
 anni	O	it
 ?	O	it
+
 Quel	O	it
 farabutto	O	it
 sta	O	it
@@ -11827,7 +12428,7 @@ aprire	B-IDIOM	it
 bene	O	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
-.	O	it
+
 Il	O	it
 mio	O	it
 cane	O	it
@@ -11841,7 +12442,7 @@ sui	O	it
 cani	O	it
 dei	O	it
 vicini	O	it
-.	O	it
+
 Lascia	O	it
 il	O	it
 mestolo	O	it
@@ -11853,7 +12454,7 @@ e	O	it
 accendi	O	it
 il	O	it
 fuoco	O	it
-.	O	it
+
 In	O	it
 classe	O	it
 la	O	it
@@ -11864,7 +12465,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 L'elettricista	O	it
 cambiò	O	it
 le	O	it
@@ -11874,11 +12475,12 @@ avevano	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Vorresti	O	it
 buttarmi	B-IDIOM	it
 giù	I-IDIOM	it
 ?	O	it
+
 Se	O	it
 è	O	it
 così	O	it
@@ -11894,6 +12496,7 @@ tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
 .	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -11902,7 +12505,7 @@ qualsiasi	O	it
 cosa	O	it
 ti	O	it
 dica	O	it
-.	O	it
+
 Il	O	it
 boss	O	it
 mandò	B-IDIOM	it
@@ -11918,6 +12521,7 @@ puntuale	O	it
 a	O	it
 lavoro	O	it
 .	O	it
+
 Se	O	it
 hai	B-IDIOM	it
 ancora	O	it
@@ -11934,6 +12538,7 @@ finirlo	O	it
 entro	O	it
 stasera	O	it
 .	O	it
+
 Dovresti	O	it
 mandarlo	B-IDIOM	it
 a	I-IDIOM	it
@@ -11943,6 +12548,7 @@ te	O	it
 ne	O	it
 pentirai	O	it
 !	O	it
+
 ho	O	it
 voltato	B-IDIOM	it
 la	O	it
@@ -11950,7 +12556,7 @@ faccia	I-IDIOM	it
 al	O	it
 mio	O	it
 amico	O	it
-.	O	it
+
 Ho	O	it
 imparato	O	it
 a	O	it
@@ -11964,6 +12570,7 @@ dice	O	it
 di	O	it
 vedere	O	it
 .	O	it
+
 Non	O	it
 prendere	O	it
 la	O	it
@@ -11976,7 +12583,7 @@ prendi	O	it
 con	O	it
 le	O	it
 pinze	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 le	I-IDIOM	it
 parole	O	it
@@ -11993,7 +12600,7 @@ attirare	O	it
 l	O	it
 ’	O	it
 attenzione	O	it
-.	O	it
+
 Nel	O	it
 servizio	O	it
 di	O	it
@@ -12005,6 +12612,7 @@ mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
 !	O	it
+
 Giulia	O	it
 ha	B-IDIOM	it
 le	I-IDIOM	it
@@ -12012,7 +12620,7 @@ mani	I-IDIOM	it
 lunghe	I-IDIOM	it
 ed	O	it
 affusolate	O	it
-.	O	it
+
 Al	O	it
 momento	O	it
 non	O	it
@@ -12022,7 +12630,7 @@ i	I-IDIOM	it
 piedi	I-IDIOM	it
 per	O	it
 fortuna	O	it
-.	O	it
+
 Quando	O	it
 diamo	B-IDIOM	it
 troppa	O	it
@@ -12033,7 +12641,7 @@ persone	O	it
 loro	O	it
 ne	O	it
 approfittano	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -12050,7 +12658,7 @@ solo	O	it
 venderti	O	it
 il	O	it
 prodotto	O	it
-.	O	it
+
 Ora	O	it
 vado	O	it
 a	O	it
@@ -12063,6 +12671,7 @@ comprato	O	it
 dal	O	it
 cinese	O	it
 .	O	it
+
 Brancolare	O	it
 nel	O	it
 buio	O	it
@@ -12073,7 +12682,7 @@ pericoloso	O	it
 puoi	O	it
 farti	O	it
 male	O	it
-.	O	it
+
 Il	O	it
 proprio	O	it
 (	O	it
@@ -12086,7 +12695,7 @@ stato	O	it
 da	O	it
 lui	O	it
 coltivato	O	it
-.	O	it
+
 A	O	it
 pranzo	O	it
 ho	O	it
@@ -12100,6 +12709,7 @@ pasta	O	it
 al	O	it
 forno	O	it
 .	O	it
+
 In	O	it
 questo	O	it
 punto	O	it
@@ -12110,7 +12720,7 @@ su	O	it
 un	O	it
 binario	O	it
 morto	O	it
-.	O	it
+
 Nonostante	O	it
 la	O	it
 spiegazione	O	it
@@ -12123,7 +12733,7 @@ verifica	O	it
 brancolavo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Sott'acqua	O	it
 non	O	it
 riesco	O	it
@@ -12131,7 +12741,7 @@ ad	O	it
 aprire	O	it
 gli	O	it
 occhi	O	it
-.	O	it
+
 Di	O	it
 solito	O	it
 con	O	it
@@ -12143,7 +12753,7 @@ oggetti	O	it
 di	O	it
 piccole	O	it
 dimensioni	O	it
-.	O	it
+
 Devo	O	it
 attaccare	O	it
 un	O	it
@@ -12156,6 +12766,7 @@ non	O	it
 so	O	it
 farlo	O	it
 .	O	it
+
 Davide	O	it
 dovrebbe	O	it
 mettere	O	it
@@ -12166,7 +12777,7 @@ dentro	O	it
 il	O	it
 suo	O	it
 parcheggio	O	it
-.	O	it
+
 Ci	O	it
 eravamo	O	it
 fatti	O	it
@@ -12180,6 +12791,7 @@ voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
 .	O	it
+
 I	O	it
 miei	O	it
 colleghi	O	it
@@ -12190,7 +12802,7 @@ per	O	it
 vincere	O	it
 questo	O	it
 gioco	O	it
-.	O	it
+
 La	O	it
 fede	O	it
 lo	O	it
@@ -12209,10 +12821,10 @@ questo	O	it
 è	O	it
 diventato	O	it
 prete	O	it
-.	O	it
+
 Dammi	B-IDIOM	it
 corda	I-IDIOM	it
-.	O	it
+
 Hai	O	it
 studiato	O	it
 e	O	it
@@ -12230,7 +12842,7 @@ buttare	B-IDIOM	it
 tutto	O	it
 al	I-IDIOM	it
 vento	I-IDIOM	it
-.	O	it
+
 Perchè	O	it
 l'hai	O	it
 preso	O	it
@@ -12238,6 +12850,7 @@ con	O	it
 le	O	it
 pinze	O	it
 ?	O	it
+
 Mi	O	it
 risulta	O	it
 difficile	O	it
@@ -12249,7 +12862,7 @@ da	O	it
 ore	O	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Mai	O	it
 avrei	O	it
 pensato	O	it
@@ -12263,7 +12876,7 @@ invece	O	it
 il	B-IDIOM	it
 proprio	I-IDIOM	it
 orto	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 abbaiato	B-IDIOM	it
 alla	I-IDIOM	it
@@ -12271,7 +12884,7 @@ luna	I-IDIOM	it
 quando	O	it
 l'ho	O	it
 saputo	O	it
-.	O	it
+
 Iniziò	O	it
 a	O	it
 brancolare	O	it
@@ -12286,7 +12899,7 @@ nel	O	it
 buio	O	it
 della	O	it
 notte	O	it
-.	O	it
+
 Non	O	it
 bisogna	O	it
 gettare	B-IDIOM	it
@@ -12296,7 +12909,7 @@ spugna	I-IDIOM	it
 al	O	it
 primo	O	it
 tentativo	O	it
-.	O	it
+
 Francesco	O	it
 è	O	it
 un	O	it
@@ -12313,6 +12926,7 @@ pagnotta	O	it
 a	O	it
 casa	I-IDIOM	it
 .	O	it
+
 Continua	O	it
 pure	O	it
 a	O	it
@@ -12323,7 +12937,7 @@ faccia	I-IDIOM	it
 non	O	it
 mi	O	it
 interessa	O	it
-.	O	it
+
 Nulla	O	it
 di	O	it
 personale	O	it
@@ -12334,7 +12948,7 @@ a	O	it
 voltarvi	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Bisogna	O	it
 prendere	B-IDIOM	it
 ,	O	it
@@ -12344,7 +12958,7 @@ tutto	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Le	O	it
 ho	O	it
 detto	O	it
@@ -12357,7 +12971,7 @@ essermi	B-IDIOM	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Mi	O	it
 sa	O	it
 che	O	it
@@ -12375,6 +12989,7 @@ prenderesti	O	it
 per	O	it
 favore	O	it
 ?	O	it
+
 Cheffftony	O	it
 devi	O	it
 gettare	B-IDIOM	it
@@ -12385,7 +13000,7 @@ ti	O	it
 segnalo	O	it
 i	O	it
 suggerimenti	O	it
-.	O	it
+
 Ho	O	it
 gettato	O	it
 la	O	it
@@ -12399,7 +13014,7 @@ sostituita	O	it
 con	O	it
 una	O	it
 nuova	O	it
-.	O	it
+
 Non	O	it
 sono	O	it
 sicura	O	it
@@ -12413,7 +13028,7 @@ ciò	O	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Se	O	it
 ti	O	it
 infiltrerai	O	it
@@ -12424,7 +13039,7 @@ bosco	O	it
 brancolerai	O	it
 nel	O	it
 buio	O	it
-.	O	it
+
 Ho	O	it
 gettato	O	it
 la	O	it
@@ -12434,7 +13049,7 @@ averla	O	it
 usata	O	it
 tre	O	it
 volte	O	it
-.	O	it
+
 Guarda	O	it
 che	O	it
 non	O	it
@@ -12447,7 +13062,7 @@ i	O	it
 bottoni	O	it
 alle	O	it
 camicie	O	it
-.	O	it
+
 Sto	O	it
 brancolando	O	it
 nei	O	it
@@ -12458,7 +13073,7 @@ di	O	it
 non	O	it
 farmi	O	it
 male	O	it
-.	O	it
+
 Non	O	it
 puoi	O	it
 cucinare	O	it
@@ -12468,7 +13083,7 @@ il	O	it
 mestolo	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 becco	I-IDIOM	it
@@ -12479,7 +13094,7 @@ di	O	it
 certo	O	it
 un	O	it
 pregio	O	it
-.	O	it
+
 Raggiungere	B-IDIOM	it
 velocemente	O	it
 il	I-IDIOM	it
@@ -12487,7 +13102,7 @@ bersaglio	I-IDIOM	it
 potrebbe	O	it
 essere	O	it
 difficile	O	it
-.	O	it
+
 Ha	O	it
 aperto	O	it
 gli	O	it
@@ -12496,7 +13111,7 @@ occhi	O	it
 ha	O	it
 ripreso	O	it
 coscienza	O	it
-.	O	it
+
 Pensavo	O	it
 di	O	it
 essere	B-IDIOM	it
@@ -12505,6 +13120,7 @@ un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
 .	O	it
+
 Non	O	it
 credevo	O	it
 che	O	it
@@ -12516,7 +13132,7 @@ sarebbe	O	it
 stato	O	it
 così	O	it
 difficile	O	it
-.	O	it
+
 Ho	O	it
 buttato	O	it
 tutti	O	it
@@ -12533,7 +13149,7 @@ un	O	it
 mio	O	it
 vecchio	O	it
 maglione	O	it
-.	O	it
+
 Giuseppe	O	it
 ha	O	it
 finto	O	it
@@ -12558,7 +13174,7 @@ faccia	I-IDIOM	it
 scalando	O	it
 la	O	it
 classifica	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -12570,7 +13186,7 @@ il	O	it
 controllo	O	it
 della	O	it
 situazione	O	it
-.	O	it
+
 Ho	O	it
 provato	O	it
 a	O	it
@@ -12585,6 +13201,7 @@ davvero	O	it
 triste	O	it
 oggi	O	it
 .	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -12596,7 +13213,7 @@ Mario	O	it
 ,	O	it
 era	O	it
 ubriaco	O	it
-.	O	it
+
 Mi	O	it
 ha	O	it
 voltato	B-IDIOM	it
@@ -12606,7 +13223,7 @@ nonostante	O	it
 sia	O	it
 mia	O	it
 sorella	O	it
-.	O	it
+
 Non	O	it
 si	O	it
 mette	O	it
@@ -12623,7 +13240,7 @@ c	O	it
 già	O	it
 il	O	it
 sale	O	it
-.	O	it
+
 Il	O	it
 peso	O	it
 è	O	it
@@ -12635,6 +13252,7 @@ piedi	O	it
 ora	O	it
 sollevalo	O	it
 !	O	it
+
 Non	O	it
 ha	O	it
 raggiunto	O	it
@@ -12645,7 +13263,7 @@ ha	O	it
 sbagliato	O	it
 la	O	it
 mira	O	it
-.	O	it
+
 Nell	O	it
 ’	O	it
 antichità	O	it
@@ -12663,6 +13281,7 @@ amputazione	O	it
 delle	O	it
 stesse	O	it
 .	O	it
+
 gli	O	it
 ha	O	it
 voltato	B-IDIOM	it
@@ -12673,6 +13292,7 @@ al	O	it
 suo	O	it
 amico	O	it
 !	O	it
+
 Lo	O	it
 chef	O	it
 non	O	it
@@ -12684,7 +13304,7 @@ di	O	it
 acciaio	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Per	O	it
 far	O	it
 andare	B-IDIOM	it
@@ -12699,7 +13319,7 @@ aprirlo	O	it
 in	O	it
 via	O	it
 tribunali	O	it
-.	O	it
+
 Ha	O	it
 trovato	O	it
 un	O	it
@@ -12712,7 +13332,7 @@ ha	O	it
 portato	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Sono	O	it
 davvero	O	it
 scoraggiato	O	it
@@ -12725,7 +13345,7 @@ d'uscita	O	it
 brancolo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 gettato	O	it
 la	O	it
@@ -12738,6 +13358,7 @@ perché	O	it
 era	O	it
 bucata	O	it
 .	O	it
+
 Lei	O	it
 lo	O	it
 tradisce	O	it
@@ -12749,7 +13370,7 @@ proprio	O	it
 aprire	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
-.	O	it
+
 Mentre	O	it
 voi	O	it
 giocate	O	it
@@ -12763,7 +13384,7 @@ voglio	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Se	O	it
 solo	O	it
 avessi	O	it
@@ -12777,7 +13398,7 @@ su	O	it
 con	O	it
 un	O	it
 codino	O	it
-.	O	it
+
 Non	O	it
 devi	O	it
 gettare	O	it
@@ -12786,7 +13407,7 @@ mia	O	it
 spugna	O	it
 sul	O	it
 pavimento	O	it
-.	O	it
+
 Ho	O	it
 tradito	O	it
 la	O	it
@@ -12798,7 +13419,7 @@ ha	O	it
 voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 dato	B-IDIOM	it
 a	O	it
@@ -12811,14 +13432,14 @@ se	O	it
 ne	O	it
 è	O	it
 approfittata	O	it
-.	O	it
+
 Gettate	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 perché	O	it
 vincerò	O	it
 io	O	it
-.	O	it
+
 Avere	B-IDIOM	it
 il	I-IDIOM	it
 mestolo	I-IDIOM	it
@@ -12830,7 +13451,7 @@ tutto	O	it
 ciò	O	it
 che	O	it
 conta	O	it
-.	O	it
+
 Sono	O	it
 tutti	O	it
 silenziosi	O	it
@@ -12839,12 +13460,12 @@ qualcosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Non	O	it
 getterò	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Mio	O	it
 figlio	O	it
 non	O	it
@@ -12857,7 +13478,7 @@ scariche	I-IDIOM	it
 è	O	it
 sempre	O	it
 attivo	O	it
-.	O	it
+
 Sono	O	it
 andata	O	it
 dall'oculista	O	it
@@ -12868,7 +13489,7 @@ ad	O	it
 aprire	O	it
 gli	O	it
 occhi	O	it
-.	O	it
+
 I	O	it
 bambini	O	it
 il	O	it
@@ -12883,7 +13504,7 @@ al	O	it
 vento	O	it
 i	O	it
 coriandoli	O	it
-.	O	it
+
 Vorrei	O	it
 fosse	O	it
 possibile	O	it
@@ -12895,7 +13516,7 @@ senza	O	it
 tutte	O	it
 queste	O	it
 intemperie	O	it
-.	O	it
+
 Non	O	it
 voltare	O	it
 la	O	it
@@ -12906,6 +13527,7 @@ ti	O	it
 sta	O	it
 parlando	O	it
 !	O	it
+
 Ho	O	it
 voltato	O	it
 la	O	it
@@ -12913,7 +13535,7 @@ faccia	O	it
 verso	O	it
 il	O	it
 sole	O	it
-.	O	it
+
 gli	O	it
 ha	O	it
 voltato	B-IDIOM	it
@@ -12928,7 +13550,7 @@ aveva	O	it
 bisogno	O	it
 di	O	it
 lui	O	it
-.	O	it
+
 Apri	B-IDIOM	it
 subito	O	it
 gli	I-IDIOM	it
@@ -12938,7 +13560,7 @@ vedi	O	it
 qualcuno	O	it
 di	O	it
 sospetto	O	it
-.	O	it
+
 Dammi	O	it
 il	O	it
 mestolo	O	it
@@ -12952,7 +13574,7 @@ ti	O	it
 verso	O	it
 la	O	it
 zuppa	O	it
-.	O	it
+
 non	O	it
 lavora	O	it
 più	O	it
@@ -12962,7 +13584,7 @@ dovresti	O	it
 mandarlo	B-IDIOM	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
-.	O	it
+
 Sto	O	it
 cercando	O	it
 di	O	it
@@ -12975,7 +13597,7 @@ mi	O	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Brancolando	O	it
 nel	O	it
 buio	O	it
@@ -12985,7 +13607,7 @@ contro	O	it
 l	O	it
 ’	O	it
 armadio	O	it
-.	O	it
+
 Nel	O	it
 museo	O	it
 le	O	it
@@ -12997,7 +13619,7 @@ su	O	it
 un	O	it
 binario	O	it
 morto	O	it
-.	O	it
+
 Quando	O	it
 aperto	B-IDIOM	it
 gli	I-IDIOM	it
@@ -13010,7 +13632,7 @@ era	O	it
 solo	O	it
 un	O	it
 sogno	O	it
-.	O	it
+
 Avevo	O	it
 il	O	it
 mestolo	O	it
@@ -13020,7 +13642,7 @@ ma	O	it
 mi	O	it
 è	O	it
 caduto	O	it
-.	O	it
+
 hai	O	it
 sempre	O	it
 voltato	B-IDIOM	it
@@ -13029,14 +13651,14 @@ faccia	I-IDIOM	it
 a	O	it
 questi	O	it
 problemi	O	it
-.	O	it
+
 Gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 è	O	it
 da	O	it
 vigliaccheria	O	it
-.	O	it
+
 Claudia	O	it
 aveva	B-IDIOM	it
 le	I-IDIOM	it
@@ -13044,7 +13666,7 @@ mani	I-IDIOM	it
 lunghe	I-IDIOM	it
 e	O	it
 delicate	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 quello	O	it
 che	O	it
@@ -13062,7 +13684,7 @@ più	O	it
 fiducia	O	it
 negli	O	it
 altri	O	it
-.	O	it
+
 non	O	it
 voltare	O	it
 troppo	O	it
@@ -13073,7 +13695,7 @@ ti	O	it
 viene	O	it
 il	O	it
 torcicollo	O	it
-.	O	it
+
 Per	O	it
 Natale	O	it
 il	O	it
@@ -13083,6 +13705,7 @@ bolle	O	it
 in	O	it
 pentola	O	it
 .	O	it
+
 Sono	B-IDIOM	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
@@ -13092,11 +13715,13 @@ rimango	O	it
 qui	O	it
 stanotte	O	it
 ?	O	it
+
 Vorresti	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 ?	O	it
+
 Quando	O	it
 lavoravo	O	it
 in	O	it
@@ -13110,7 +13735,7 @@ hanno	B-IDIOM	it
 le	I-IDIOM	it
 mani	I-IDIOM	it
 lunghe	I-IDIOM	it
-.	O	it
+
 In	O	it
 caso	O	it
 di	O	it
@@ -13125,19 +13750,20 @@ sempre	O	it
 meglio	O	it
 che	O	it
 niente	O	it
-.	O	it
+
 Noi	O	it
 demmo	B-IDIOM	it
 corda	I-IDIOM	it
 a	O	it
 persone	O	it
 sbagliate	O	it
-.	O	it
+
 Quanti	O	it
 ne	O	it
 mettiamo	O	it
 dentro	O	it
 ?	O	it
+
 Se	O	it
 avessimo	O	it
 comprato	O	it
@@ -13152,7 +13778,7 @@ fogli	O	it
 buttati	O	it
 al	O	it
 vento	O	it
-.	O	it
+
 Fai	O	it
 attenzione	O	it
 a	O	it
@@ -13163,7 +13789,7 @@ senza	O	it
 uccidere	O	it
 persone	O	it
 innocenti	O	it
-.	O	it
+
 Siccome	O	it
 tu	O	it
 hai	O	it
@@ -13181,7 +13807,7 @@ il	O	it
 fondo	O	it
 del	O	it
 vaso	O	it
-.	O	it
+
 Le	O	it
 sue	O	it
 parole	O	it
@@ -13190,7 +13816,7 @@ prese	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Hai	B-IDIOM	it
 ancora	I-IDIOM	it
 della	I-IDIOM	it
@@ -13200,7 +13826,7 @@ corpo	I-IDIOM	it
 da	O	it
 ieri	O	it
 sera	O	it
-.	O	it
+
 Quando	O	it
 voglio	O	it
 tranquillità	O	it
@@ -13214,7 +13840,7 @@ che	O	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 fame	O	it
 ,	O	it
@@ -13227,7 +13853,7 @@ e	O	it
 abbandonare	O	it
 la	O	it
 lezione	O	it
-.	O	it
+
 Prima	O	it
 di	O	it
 andare	O	it
@@ -13236,7 +13862,7 @@ psicologa	O	it
 brancolavo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Non	O	it
 sono	O	it
 riuscita	O	it
@@ -13253,7 +13879,7 @@ mi	O	it
 sono	O	it
 allenata	O	it
 abbastanza	O	it
-.	O	it
+
 Cara	O	it
 Camilla	O	it
 ,	O	it
@@ -13265,7 +13891,7 @@ getteremo	B-IDIOM	it
 tutti	O	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Non	O	it
 voglio	O	it
 più	O	it
@@ -13277,7 +13903,7 @@ non	O	it
 ho	O	it
 più	O	it
 tempo	O	it
-.	O	it
+
 Il	O	it
 bidello	O	it
 ,	O	it
@@ -13292,7 +13918,7 @@ gesso	O	it
 e	O	it
 si	O	it
 ruppe	O	it
-.	O	it
+
 Il	O	it
 mio	O	it
 cane	O	it
@@ -13306,6 +13932,7 @@ non	O	it
 vuole	O	it
 giocare	O	it
 .	O	it
+
 Hai	O	it
 gettato	O	it
 la	O	it
@@ -13317,6 +13944,7 @@ detto	O	it
 di	O	it
 buttare	O	it
 ?	O	it
+
 Dopo	O	it
 aver	O	it
 raggiunto	O	it
@@ -13338,11 +13966,12 @@ l'ho	O	it
 più	O	it
 sentita	O	it
 .	O	it
+
 Ora	O	it
 getta	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Non	O	it
 mi	O	it
 piace	O	it
@@ -13357,7 +13986,7 @@ a	O	it
 volte	O	it
 è	O	it
 necessario	O	it
-.	O	it
+
 Il	O	it
 lupo	O	it
 ha	O	it
@@ -13367,7 +13996,7 @@ in	O	it
 mano	O	it
 sulle	O	it
 pecore	O	it
-.	O	it
+
 Non	O	it
 posso	O	it
 accendere	O	it
@@ -13380,7 +14009,7 @@ tutti	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Vorrei	O	it
 che	O	it
 non	O	it
@@ -13389,7 +14018,7 @@ sempre	O	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Sto	O	it
 brancolando	O	it
 da	O	it
@@ -13400,7 +14029,7 @@ perché	O	it
 manca	O	it
 la	O	it
 corrente	O	it
-.	O	it
+
 Quando	O	it
 era	O	it
 giovane	O	it
@@ -13419,14 +14048,14 @@ preferisce	O	it
 stare	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Non	O	it
 voglio	O	it
 dare	B-IDIOM	it
 corda	I-IDIOM	it
 a	O	it
 truffatori	O	it
-.	O	it
+
 Ho	O	it
 deciso	O	it
 di	O	it
@@ -13443,6 +14072,7 @@ l'ha	O	it
 presa	O	it
 bene	O	it
 .	O	it
+
 è	O	it
 stato	O	it
 il	O	it
@@ -13454,6 +14084,7 @@ mandare	O	it
 a	O	it
 casa	O	it
 ?	O	it
+
 Dodiom	O	it
 come	O	it
 hai	O	it
@@ -13464,6 +14095,7 @@ tu	O	it
 la	O	it
 faccia	I-IDIOM	it
 ?	O	it
+
 Purtroppo	O	it
 non	O	it
 so	O	it
@@ -13480,7 +14112,7 @@ rivolgo	O	it
 ad	O	it
 una	O	it
 sarta	O	it
-.	O	it
+
 Da	O	it
 piccolo	O	it
 quando	O	it
@@ -13499,7 +14131,7 @@ mano	O	it
 ,	O	it
 ero	O	it
 terrorizzato	O	it
-.	O	it
+
 Raggiunse	B-IDIOM	it
 il	I-IDIOM	it
 suo	O	it
@@ -13508,7 +14140,7 @@ quando	O	it
 vinse	O	it
 il	O	it
 concorso	O	it
-.	O	it
+
 Non	O	it
 avrei	O	it
 mai	O	it
@@ -13520,7 +14152,7 @@ il	I-IDIOM	it
 becco	I-IDIOM	it
 così	O	it
 lungo	I-IDIOM	it
-.	O	it
+
 Odio	O	it
 le	O	it
 persone	O	it
@@ -13531,6 +14163,7 @@ becco	I-IDIOM	it
 troppo	O	it
 lungo	I-IDIOM	it
 !	O	it
+
 Raggiungi	B-IDIOM	it
 il	I-IDIOM	it
 bersaglio	I-IDIOM	it
@@ -13542,7 +14175,7 @@ promozione	O	it
 che	O	it
 tanto	O	it
 desideri	O	it
-.	O	it
+
 Ti	O	it
 ho	O	it
 chiesto	O	it
@@ -13556,7 +14189,7 @@ hai	O	it
 buttate	O	it
 al	O	it
 vento	O	it
-.	O	it
+
 Sarà	O	it
 difficile	O	it
 raggiungere	B-IDIOM	it
@@ -13567,7 +14200,7 @@ ma	O	it
 ce	O	it
 la	O	it
 farò	O	it
-.	O	it
+
 Il	O	it
 bambino	O	it
 brancolava	O	it
@@ -13578,7 +14211,7 @@ cerca	O	it
 di	O	it
 sua	O	it
 madre	O	it
-.	O	it
+
 Le	O	it
 ho	O	it
 dato	B-IDIOM	it
@@ -13588,7 +14221,7 @@ mi	O	it
 fidavo	O	it
 di	O	it
 lei	O	it
-.	O	it
+
 Non	O	it
 puoi	O	it
 avere	O	it
@@ -13602,20 +14235,20 @@ volta	O	it
 ti	O	it
 sei	O	it
 scottata	O	it
-.	O	it
+
 Getta	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 ,	O	it
 ora	O	it
-.	O	it
+
 Getta	O	it
 la	O	it
 spugna	O	it
 dopo	O	it
 averla	O	it
 usata	O	it
-.	O	it
+
 non	O	it
 puoi	O	it
 mandarla	B-IDIOM	it
@@ -13628,6 +14261,7 @@ anni	O	it
 di	O	it
 lavoro	O	it
 !	O	it
+
 Non	O	it
 buttare	B-IDIOM	it
 al	I-IDIOM	it
@@ -13638,7 +14272,7 @@ tuoi	O	it
 sacrifici	O	it
 proprio	O	it
 ora	O	it
-.	O	it
+
 Non	O	it
 è	O	it
 Luca	O	it
@@ -13647,7 +14281,7 @@ Cheffftony	O	it
 gettate	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Non	O	it
 riesco	O	it
 proprio	O	it
@@ -13662,7 +14296,7 @@ a	O	it
 me	O	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Un	O	it
 grande	O	it
 ,	O	it
@@ -13676,6 +14310,7 @@ troppo	O	it
 in	O	it
 corpo	O	it
 .	O	it
+
 Sta	O	it
 voltando	B-IDIOM	it
 la	O	it
@@ -13684,7 +14319,7 @@ alla	O	it
 possibilità	O	it
 di	O	it
 migliorarsi	O	it
-.	O	it
+
 sembrava	O	it
 che	O	it
 fosse	O	it
@@ -13699,11 +14334,11 @@ ha	O	it
 voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Voltare	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Guardala	O	it
 ,	O	it
 è	O	it
@@ -13714,6 +14349,7 @@ le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
 .	O	it
+
 I	O	it
 gatti	O	it
 non	O	it
@@ -13724,7 +14360,7 @@ buio	O	it
 vedono	O	it
 sempre	O	it
 bene	O	it
-.	O	it
+
 Questa	O	it
 pinza	O	it
 per	O	it
@@ -13739,6 +14375,7 @@ non	O	it
 mi	O	it
 piace	O	it
 !	O	it
+
 Ha	O	it
 attaccato	B-IDIOM	it
 bottone	I-IDIOM	it
@@ -13748,6 +14385,7 @@ la	O	it
 persona	O	it
 sbagliata	O	it
 .	O	it
+
 se	O	it
 non	O	it
 la	O	it
@@ -13760,7 +14398,7 @@ andrà	O	it
 a	O	it
 finire	O	it
 male	O	it
-.	O	it
+
 ``	O	it
 Sono	O	it
 triste	O	it
@@ -13777,7 +14415,7 @@ su	O	it
 un	O	it
 binario	O	it
 morto	O	it
-.	O	it
+
 La	O	it
 getteresti	B-IDIOM	it
 la	I-IDIOM	it
@@ -13785,12 +14423,14 @@ spugna	I-IDIOM	it
 per	O	it
 me	O	it
 ?	O	it
+
 ti	O	it
 ha	O	it
 dato	O	it
 la	O	it
 corda	O	it
 ?	O	it
+
 Getterei	O	it
 volentieri	O	it
 la	O	it
@@ -13800,6 +14440,7 @@ perché	O	it
 è	O	it
 consumata	O	it
 .	O	it
+
 Ci	O	it
 sono	O	it
 molti	O	it
@@ -13814,7 +14455,7 @@ sono	O	it
 piccoli	O	it
 di	O	it
 dimensione	O	it
-.	O	it
+
 Perfino	O	it
 il	O	it
 mio	O	it
@@ -13823,7 +14464,7 @@ sembra	O	it
 brancolare	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Lia	O	it
 ha	O	it
 il	O	it
@@ -13831,7 +14472,7 @@ mestolo	O	it
 d'argento	O	it
 in	O	it
 mano	O	it
-.	O	it
+
 Didiom	O	it
 mi	O	it
 sprona	O	it
@@ -13842,6 +14483,7 @@ mai	O	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 .	O	it
+
 Impara	O	it
 a	O	it
 mettere	O	it
@@ -13852,7 +14494,7 @@ ricordi	O	it
 dentro	O	it
 una	O	it
 scatola	O	it
-.	O	it
+
 Quando	O	it
 mi	O	it
 ha	O	it
@@ -13868,7 +14510,7 @@ ho	O	it
 voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
-.	O	it
+
 Prendi	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
@@ -13878,7 +14520,7 @@ informazioni	O	it
 che	O	it
 ti	O	it
 dà	O	it
-.	O	it
+
 Non	O	it
 le	O	it
 credevo	O	it
@@ -13889,13 +14531,13 @@ non	O	it
 le	O	it
 diedi	B-IDIOM	it
 corda	I-IDIOM	it
-.	O	it
+
 essere	B-IDIOM	it
 su	I-IDIOM	it
 un	I-IDIOM	it
 binario	I-IDIOM	it
 morto	I-IDIOM	it
-.	O	it
+
 Quando	O	it
 si	O	it
 sfrena	O	it
@@ -13910,7 +14552,7 @@ quando	O	it
 torna	O	it
 a	O	it
 casa	O	it
-.	O	it
+
 Quel	O	it
 campione	O	it
 ha	O	it
@@ -13919,6 +14561,7 @@ gettato	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
 !	O	it
+
 Non	O	it
 dare	B-IDIOM	it
 corda	I-IDIOM	it
@@ -13926,7 +14569,7 @@ a	O	it
 chi	O	it
 non	O	it
 conosci	O	it
-.	O	it
+
 Non	O	it
 gettare	O	it
 la	O	it
@@ -13934,7 +14577,7 @@ spugna	O	it
 ,	O	it
 la	O	it
 amk	O	it
-.	O	it
+
 Non	O	it
 è	O	it
 possibile	O	it
@@ -13949,7 +14592,7 @@ scariche	I-IDIOM	it
 sei	O	it
 uno	O	it
 scansafatiche	O	it
-.	O	it
+
 Quello	O	it
 che	O	it
 ti	O	it
@@ -13966,7 +14609,7 @@ prendere	B-IDIOM	it
 con	I-IDIOM	it
 le	I-IDIOM	it
 pinze	I-IDIOM	it
-.	O	it
+
 Hai	O	it
 passato	O	it
 una	O	it
@@ -13977,13 +14620,14 @@ con	O	it
 tuo	O	it
 marito	O	it
 farfalle	I-IDIOM	it
-.	O	it
+
 Perché	O	it
 le	O	it
 avete	O	it
 dato	B-IDIOM	it
 corda	I-IDIOM	it
 ?	O	it
+
 Ogni	O	it
 volta	O	it
 che	O	it
@@ -13999,6 +14643,7 @@ voltato	B-IDIOM	it
 la	O	it
 faccia	I-IDIOM	it
 .	O	it
+
 È	O	it
 inutile	O	it
 che	O	it
@@ -14013,7 +14658,7 @@ e	O	it
 non	O	it
 ne	O	it
 parli	O	it
-.	O	it
+
 Odio	O	it
 i	O	it
 codardi	O	it
@@ -14024,7 +14669,7 @@ spugna	I-IDIOM	it
 alle	O	it
 prime	O	it
 difficoltà	O	it
-.	O	it
+
 Per	O	it
 sbaglio	O	it
 ho	O	it
@@ -14034,6 +14679,7 @@ spugna	O	it
 dal	O	it
 balcone	O	it
 !	O	it
+
 Dobbiamo	O	it
 comprare	O	it
 una	O	it
@@ -14047,7 +14693,7 @@ al	O	it
 vento	O	it
 i	O	it
 fogli	O	it
-.	O	it
+
 Perché	O	it
 hai	O	it
 gettato	O	it
@@ -14056,6 +14702,7 @@ spugna	O	it
 per	O	it
 aria	O	it
 ?	O	it
+
 Farò	O	it
 questa	O	it
 cosa	O	it
@@ -14072,7 +14719,7 @@ vento	I-IDIOM	it
 il	O	it
 mio	O	it
 tempo	O	it
-.	O	it
+
 Non	O	it
 puoi	O	it
 fidarti	O	it
@@ -14087,7 +14734,7 @@ sconosciuti	O	it
 con	I-IDIOM	it
 le	O	it
 pinze	I-IDIOM	it
-.	O	it
+
 Se	O	it
 credi	O	it
 di	O	it
@@ -14097,7 +14744,7 @@ giù	I-IDIOM	it
 ,	O	it
 sei	O	it
 un'illusa	O	it
-.	O	it
+
 Ho	O	it
 dato	O	it
 la	O	it
@@ -14109,7 +14756,7 @@ gli	O	it
 serviva	O	it
 per	O	it
 salpare	O	it
-.	O	it
+
 Ho	O	it
 buttato	B-IDIOM	it
 tutto	O	it
@@ -14118,7 +14765,7 @@ vento	I-IDIOM	it
 perché	O	it
 sono	O	it
 impulsiva	O	it
-.	O	it
+
 Ora	O	it
 che	O	it
 è	O	it
@@ -14132,7 +14779,7 @@ di	O	it
 nuovo	O	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 preso	O	it
 la	O	it
@@ -14143,7 +14790,7 @@ pinze	O	it
 per	O	it
 non	O	it
 sporcarmi	O	it
-.	O	it
+
 Ho	B-IDIOM	it
 fatto	O	it
 arrestare	O	it
@@ -14153,7 +14800,7 @@ con	O	it
 le	I-IDIOM	it
 mani	I-IDIOM	it
 lunghe	I-IDIOM	it
-.	O	it
+
 non	O	it
 avrei	O	it
 voluto	O	it
@@ -14169,7 +14816,7 @@ il	O	it
 codice	O	it
 etico	O	it
 dell'azienda	O	it
-.	O	it
+
 Non	O	it
 penso	O	it
 sia	O	it
@@ -14185,7 +14832,7 @@ passare	O	it
 Rosa	O	it
 nei	O	it
 corridoi	O	it
-.	O	it
+
 Se	O	it
 portassi	O	it
 a	O	it
@@ -14199,13 +14846,14 @@ cerimonia	O	it
 si	O	it
 preoccuperebbero	O	it
 tutti	O	it
-.	O	it
+
 Oggi	O	it
 si	O	it
 butta	O	it
 giù	O	it
 Tony	O	it
 .	O	it
+
 Ieri	O	it
 non	O	it
 sono	O	it
@@ -14217,6 +14865,7 @@ le	I-IDIOM	it
 batterie	I-IDIOM	it
 scariche	I-IDIOM	it
 .	O	it
+
 Non	O	it
 voglio	O	it
 buttare	B-IDIOM	it
@@ -14227,7 +14876,7 @@ di	O	it
 uscire	O	it
 con	O	it
 lei	O	it
-.	O	it
+
 Portare	B-IDIOM	it
 velocemente	O	it
 a	I-IDIOM	it
@@ -14248,6 +14897,7 @@ riuscito	O	it
 alla	O	it
 grande	O	it
 !	O	it
+
 Dissi	O	it
 loro	O	it
 di	O	it
@@ -14259,7 +14909,7 @@ e	O	it
 iniziare	O	it
 a	O	it
 lavorare	O	it
-.	O	it
+
 Non	O	it
 ho	O	it
 capito	O	it
@@ -14280,6 +14930,7 @@ bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
 !	O	it
+
 Mi	O	it
 annoi	O	it
 a	O	it
@@ -14288,7 +14939,7 @@ credo	O	it
 getterò	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Prendi	B-IDIOM	it
 le	I-IDIOM	it
 parole	O	it
@@ -14303,7 +14954,7 @@ perde	O	it
 occasione	O	it
 per	O	it
 mentire	O	it
-.	O	it
+
 Mia	O	it
 suocera	O	it
 credeva	O	it
@@ -14319,6 +14970,7 @@ era	O	it
 un	O	it
 cucchiaio	O	it
 !	O	it
+
 Fai	O	it
 bene	O	it
 a	O	it
@@ -14331,7 +14983,7 @@ che	O	it
 trovi	O	it
 su	O	it
 internet	O	it
-.	O	it
+
 I	O	it
 fili	O	it
 della	O	it
@@ -14342,6 +14994,7 @@ con	O	it
 le	O	it
 pinze	O	it
 !	O	it
+
 Mia	O	it
 zia	O	it
 fa	O	it
@@ -14356,6 +15009,7 @@ attaccarmi	O	it
 i	O	it
 bottoni	O	it
 .	O	it
+
 Ho	O	it
 appena	O	it
 riciclato	O	it
@@ -14363,7 +15017,7 @@ le	O	it
 vecchie	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Quello	O	it
 lì	O	it
 mi	O	it
@@ -14375,7 +15029,7 @@ sempre	O	it
 tra	I-IDIOM	it
 i	I-IDIOM	it
 piedi	I-IDIOM	it
-.	O	it
+
 Metti	O	it
 la	O	it
 palla	O	it
@@ -14383,6 +15037,7 @@ dentro	O	it
 la	O	it
 buca	O	it
 !	O	it
+
 Se	O	it
 leggessi	O	it
 meglio	O	it
@@ -14395,7 +15050,7 @@ vorrei	O	it
 gettare	B-IDIOM	it
 la	I-IDIOM	it
 spugna	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 raggiunto	B-IDIOM	it
 finalmente	O	it
@@ -14403,7 +15058,7 @@ il	I-IDIOM	it
 mio	O	it
 bersaglio	I-IDIOM	it
 impegnandomi	O	it
-.	O	it
+
 Ho	O	it
 svolto	O	it
 un	O	it
@@ -14415,7 +15070,7 @@ prendendo	O	it
 le	O	it
 pinze	O	it
 nuove	O	it
-.	O	it
+
 Vorrei	O	it
 che	O	it
 Marta	O	it
@@ -14430,7 +15085,7 @@ tanto	O	it
 importante	O	it
 per	O	it
 lei	O	it
-.	O	it
+
 Ha	O	it
 le	O	it
 mani	O	it
@@ -14443,7 +15098,7 @@ le	O	it
 bacche	O	it
 più	O	it
 nascoste	O	it
-.	O	it
+
 Ho	O	it
 gettato	O	it
 la	O	it
@@ -14458,7 +15113,7 @@ ho	O	it
 comprato	O	it
 una	O	it
 nuova	O	it
-.	O	it
+
 Dopo	O	it
 aver	O	it
 brancolato	B-IDIOM	it
@@ -14472,7 +15127,7 @@ ha	O	it
 capito	O	it
 come	O	it
 comportarsi	O	it
-.	O	it
+
 Ti	O	it
 conosco	O	it
 e	O	it
@@ -14482,7 +15137,7 @@ qualcosa	O	it
 bolle	B-IDIOM	it
 in	I-IDIOM	it
 pentola	I-IDIOM	it
-.	O	it
+
 Aveva	O	it
 il	O	it
 mestolo	O	it
@@ -14497,6 +15152,7 @@ sugo	O	it
 della	O	it
 nonna	O	it
 .	O	it
+
 Ognuno	O	it
 qui	O	it
 pensa	O	it
@@ -14506,7 +15162,7 @@ il	I-IDIOM	it
 mestolo	I-IDIOM	it
 in	I-IDIOM	it
 mano	I-IDIOM	it
-.	O	it
+
 Non	O	it
 ho	O	it
 idea	O	it
@@ -14521,7 +15177,7 @@ lavoro	O	it
 brancolo	B-IDIOM	it
 nel	I-IDIOM	it
 buio	I-IDIOM	it
-.	O	it
+
 Il	O	it
 mio	O	it
 cane	O	it
@@ -14532,7 +15188,7 @@ di	O	it
 abbaiare	O	it
 alla	O	it
 luna	O	it
-.	O	it
+
 Il	O	it
 gatto	O	it
 mi	O	it
@@ -14559,7 +15215,7 @@ davvero	O	it
 cacciare	O	it
 di	O	it
 casa	O	it
-.	O	it
+
 Non	O	it
 posso	O	it
 cambiare	O	it
@@ -14571,14 +15227,14 @@ ha	O	it
 le	O	it
 batterie	O	it
 scariche	O	it
-.	O	it
+
 Ho	O	it
 raggiunto	B-IDIOM	it
 finalmente	O	it
 il	I-IDIOM	it
 mio	O	it
 bersaglio	I-IDIOM	it
-.	O	it
+
 Ho	O	it
 buttato	B-IDIOM	it
 giù	I-IDIOM	it
@@ -14588,13 +15244,14 @@ in	O	it
 due	O	it
 bocconi	O	it
 .	O	it
+
 devo	O	it
 smetterla	O	it
 di	O	it
 abbaiare	B-IDIOM	it
 alla	I-IDIOM	it
 luna	I-IDIOM	it
-.	O	it
+
 Prendi	O	it
 con	O	it
 le	O	it
@@ -14603,7 +15260,7 @@ le	O	it
 castagne	O	it
 sul	O	it
 fuoco	O	it
-.	O	it
+
 Prendi	B-IDIOM	it
 le	I-IDIOM	it
 parole	O	it
@@ -14620,7 +15277,7 @@ sapesse	O	it
 il	O	it
 fatto	O	it
 suo	O	it
-.	O	it
+
 Sei	O	it
 talmente	O	it
 preso	O	it
@@ -14644,10 +15301,11 @@ apri	B-IDIOM	it
 gli	I-IDIOM	it
 occhi	I-IDIOM	it
 !	O	it
+
 Non	O	it
 sono	B-IDIOM	it
 in	I-IDIOM	it
 vena	I-IDIOM	it
 di	O	it
 scherzi	O	it
-.	O	it
+

@@ -83,6 +83,7 @@ la	O	it
 confessione	O	it
 cattolica	O	it
 .	O	it
+
 Inoltre	O	it
 ,	O	it
 il	O	it
@@ -164,6 +165,7 @@ educazione	O	it
 religiosa	O	it
 cattolica.	O	it
 »	O	it
+
 Io	O	it
 posso	O	it
 dire	O	it
@@ -224,6 +226,7 @@ di	O	it
 essere	O	it
 vissuta	O	it
 .	O	it
+
 Oppure	O	it
 quel	O	it
 paziente	O	it
@@ -332,6 +335,7 @@ di	O	it
 la	O	it
 famiglia	O	it
 .	O	it
+
 La	O	it
 studentessa	O	it
 universitaria	O	it
@@ -346,11 +350,13 @@ Miei	O	it
 cari	O	it
 studi	O	it
 .	O	it
+
 Studentessa	O	it
 ,	O	it
 19	O	it
 anni	O	it
 .	O	it
+
 Lavoro	O	it
 alimentare	O	it
 :	O	it
@@ -361,8 +367,10 @@ aperto	B-IDIOM	it
 un	I-IDIOM	it
 caso	I-IDIOM	it
 .	O	it
+
 Dicono	O	it
 .	O	it
+
 Ma	O	it
 in	O	it
 realtà	O	it
@@ -374,6 +382,7 @@ aperto	O	it
 da	O	it
 anni	O	it
 .	O	it
+
 Il	O	it
 libro	O	it
 in	O	it
@@ -437,6 +446,7 @@ di	O	it
 le	O	it
 studentesse	O	it
 .	O	it
+
 Laura	O	it
 D.	O	it
 ,	O	it
@@ -530,11 +540,13 @@ si	I-IDIOM	it
 fuori	I-IDIOM	it
 facilmente	O	it
 .	O	it
+
 Descrive	O	it
 anni	O	it
 da	O	it
 incubo	O	it
 .	O	it
+
 Le	O	it
 interviste	O	it
 che	O	it
@@ -569,6 +581,7 @@ sapore	O	it
 decisamente	O	it
 diverso	O	it
 .	O	it
+
 Parlavano	O	it
 di	O	it
 ottimi	O	it
@@ -596,6 +609,7 @@ i	O	it
 loro	O	it
 padri	O	it
 .	O	it
+
 La	O	it
 prestazione	O	it
 sessuale	O	it
@@ -616,6 +630,7 @@ uomo	O	it
 in	O	it
 questione	O	it
 .	O	it
+
 Riuscivano	O	it
 così	O	it
 a	O	it
@@ -644,6 +659,7 @@ a	O	it
 il	O	it
 mese	O	it
 .	O	it
+
 "	O	it
 Poi-dicevano-dipende	O	it
 dal	O	it
@@ -652,6 +668,7 @@ il	O	it
 mese	O	it
 "	O	it
 .	O	it
+
 Caro	O	it
 Luca	O	it
 ,	O	it
@@ -659,6 +676,7 @@ ridimensioniamo	O	it
 un	O	it
 pò	O	it
 ?	O	it
+
 Intanto	O	it
 ...	O	it
 nessuno	O	it
@@ -681,6 +699,7 @@ e	O	it
 connessi	O	it
 )	O	it
 .	O	it
+
 Anzi	O	it
 se	O	it
 vuoi	O	it
@@ -708,6 +727,7 @@ ne	O	it
 sarei	O	it
 grata	O	it
 .	O	it
+
 Credo	O	it
 che	O	it
 anche	O	it
@@ -718,6 +738,7 @@ avresti	O	it
 da	O	it
 dire	O	it
 .	O	it
+
 C'	O	it
 era	O	it
 una	O	it
@@ -741,6 +762,7 @@ ancora	O	it
 deve	O	it
 accadere	O	it
 .	O	it
+
 L'	O	it
 articolo	O	it
 della	O	it
@@ -769,12 +791,14 @@ di	O	it
 la	O	it
 manifestazione	O	it
 .	O	it
+
 Allora	O	it
 perchè	O	it
 non	O	it
 commentare	O	it
 prima	O	it
 ?	O	it
+
 Lasciando	O	it
 un	O	it
 parere	O	it
@@ -807,6 +831,7 @@ il	O	it
 mio	O	it
 disappunto	O	it
 .	O	it
+
 Perchè	O	it
 la	O	it
 ragione	B-IDIOM	it
@@ -817,6 +842,7 @@ il	I-IDIOM	it
 mezzo	I-IDIOM	it
 no	O	it
 ?	O	it
+
 Hai	O	it
 espresso	O	it
 la	O	it
@@ -844,6 +870,7 @@ avete	B-IDIOM	it
 ragione	I-IDIOM	it
 "	O	it
 .	O	it
+
 Di	O	it
 seguito	O	it
 ha	O	it
@@ -852,6 +879,7 @@ il	O	it
 suo	O	it
 parere	O	it
 .	O	it
+
 Ma	O	it
 la	O	it
 vogliamo	O	it
@@ -868,6 +896,7 @@ a	O	it
 monte	O	it
 "	O	it
 ?	O	it
+
 Una	O	it
 critica	O	it
 a	O	it
@@ -879,6 +908,7 @@ in	O	it
 questo	O	it
 caso	O	it
 .	O	it
+
 Un	O	it
 "	O	it
 speriamo	O	it
@@ -895,6 +925,7 @@ fatta	O	it
 colà	O	it
 "	O	it
 .	O	it
+
 Che	O	it
 senso	O	it
 ha	O	it
@@ -902,6 +933,7 @@ altrimenti	O	it
 tutto	O	it
 questo	O	it
 ?	O	it
+
 Questo	O	it
 blog	O	it
 è	O	it
@@ -917,6 +949,7 @@ e	O	it
 chi	O	it
 FA	O	it
 .	O	it
+
 è	O	it
 uno	O	it
 strumento	O	it
@@ -929,6 +962,7 @@ tra	I-IDIOM	it
 le	I-IDIOM	it
 mani	I-IDIOM	it
 .	O	it
+
 E	O	it
 va	B-IDIOM	it
 al	O	it
@@ -944,6 +978,7 @@ a	O	it
 fatto	O	it
 compiuto	O	it
 .	O	it
+
 Sabato	O	it
 29	O	it
 novembre	O	it
@@ -980,6 +1015,7 @@ Opere	O	it
 Impresa	O	it
 Sociale	O	it
 .	O	it
+
 Sarà	O	it
 possibile	O	it
 in	O	it
@@ -1015,6 +1051,7 @@ la	O	it
 popolazione	O	it
 italiana	O	it
 .	O	it
+
 In	O	it
 oltre	O	it
 7600	O	it
@@ -1096,6 +1133,7 @@ accoglienza	O	it
 ecc.	O	it
 )	O	it
 .	O	it
+
 La	O	it
 durezza	O	it
 del	O	it
@@ -1110,6 +1148,7 @@ il	O	it
 nostro	O	it
 popolo	O	it
 .	O	it
+
 La	O	it
 solitudine	O	it
 e	O	it
@@ -1136,6 +1175,7 @@ economico	O	it
 già	O	it
 allarmante	O	it
 .	O	it
+
 In	O	it
 questa	O	it
 situazione	O	it
@@ -1171,6 +1211,7 @@ il	O	it
 buio	O	it
 "	O	it
 .	O	it
+
 L'	O	it
 estraneità	O	it
 e	O	it
@@ -1210,6 +1251,7 @@ di	O	it
 il	O	it
 vivere	O	it
 .	O	it
+
 Si	B-IDIOM	it
 chiama	I-IDIOM	it
 "	O	it
@@ -1249,6 +1291,7 @@ i	O	it
 suoi	O	it
 cari	O	it
 .	O	it
+
 Io	O	it
 ho	O	it
 pensato	O	it
@@ -1264,6 +1307,7 @@ la	O	it
 in	O	it
 metafora	O	it
 .	O	it
+
 Una	O	it
 specie	O	it
 di	O	it
@@ -1271,6 +1315,7 @@ GIROTONDO	O	it
 DI	O	it
 IDEE	O	it
 .	O	it
+
 Esco	O	it
 un	O	it
 pò	O	it
@@ -1332,6 +1377,7 @@ un	O	it
 pezzo.Vi	O	it
 spiego	O	it
 .	O	it
+
 A	O	it
 tutti	O	it
 piace	O	it
@@ -1348,6 +1394,7 @@ nostra	O	it
 città	O	it
 addobbata	O	it
 .	O	it
+
 E	O	it
 vivere	O	it
 le	O	it
@@ -1358,6 +1405,7 @@ la	O	it
 nostra	O	it
 città	O	it
 .	O	it
+
 Commentare	O	it
 con	O	it
 assenso	O	it
@@ -1404,6 +1452,7 @@ era	O	it
 meglio	O	it
 "	O	it
 .	O	it
+
 Etc	O	it
 ...	O	it
 Insomma	O	it
@@ -1420,6 +1469,7 @@ città	O	it
 ,	O	it
 fa	O	it
 .	O	it
+
 Certo	O	it
 è	O	it
 che	O	it
@@ -1436,6 +1486,7 @@ le	O	it
 proprie	O	it
 idee	O	it
 .	O	it
+
 E	O	it
 spesso	O	it
 i	O	it
@@ -1445,10 +1496,12 @@ idee	O	it
 ne	O	it
 hanno	O	it
 .	O	it
+
 E	O	it
 ben	O	it
 chiare	O	it
 .	O	it
+
 Lo	O	it
 so	O	it
 che	O	it
@@ -1480,10 +1533,12 @@ figli	O	it
 le	O	it
 tasse	O	it
 .	O	it
+
 E	O	it
 tanto	O	it
 altro	O	it
 .	O	it
+
 Ma	O	it
 a	O	it
 chi	O	it
@@ -1495,6 +1550,7 @@ una	O	it
 buona	O	it
 idea	I-IDIOM	it
 ?	O	it
+
 Una	O	it
 buona	O	it
 idea	O	it
@@ -1520,6 +1576,7 @@ UNA	O	it
 BUONA	O	it
 IDEA	O	it
 .	O	it
+
 Una	O	it
 buona	O	it
 idea	O	it
@@ -1532,6 +1589,7 @@ Natale	O	it
 in	O	it
 città	O	it
 .	O	it
+
 Senza	O	it
 nulla	O	it
 togliere	O	it
@@ -1554,6 +1612,7 @@ lavorano	O	it
 per	O	it
 noi	O	it
 .	O	it
+
 Ma	O	it
 che	O	it
 magari	O	it
@@ -1570,6 +1629,7 @@ di	O	it
 realizzar-	O	it
 la	O	it
 .	O	it
+
 Ritrovarla	O	it
 nei	O	it
 in	O	it
@@ -1578,10 +1638,12 @@ cittadini	O	it
 ,	O	it
 certo	O	it
 .	O	it
+
 E	O	it
 dove	O	it
 altrimenti	O	it
 ?	O	it
+
 E	O	it
 se	O	it
 siamo	B-IDIOM	it
@@ -1607,21 +1669,25 @@ il	O	it
 prossimo	O	it
 anno	O	it
 .	O	it
+
 Di	O	it
 cosa	O	it
 siete	O	it
 stanchi	O	it
 ?	O	it
+
 Che	O	it
 cosa	O	it
 vorreste	O	it
 ?	O	it
+
 Cosa	O	it
 vi	O	it
 piacerebbe	O	it
 per	O	it
 Natale	O	it
 ?	O	it
+
 Avete	B-IDIOM	it
 voglia	I-IDIOM	it
 di	O	it
@@ -1641,6 +1707,7 @@ Natale	O	it
 in	O	it
 città	O	it
 ?	O	it
+
 (	O	it
 senza	O	it
 diritti	O	it
@@ -1660,6 +1727,7 @@ potete	O	it
 far-	O	it
 lo	O	it
 .	O	it
+
 Sono	O	it
 le	O	it
 idee	O	it
@@ -1669,6 +1737,7 @@ girare	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 è	O	it
 da	O	it
 molti	O	it
@@ -1694,6 +1763,7 @@ in	O	it
 il	O	it
 piovese	O	it
 .	O	it
+
 In	O	it
 quest'	O	it
 ottica	O	it
@@ -1755,6 +1825,7 @@ leggi	O	it
 specifiche	O	it
 )	O	it
 .	O	it
+
 La	O	it
 distruzione	O	it
 del	O	it
@@ -1800,6 +1871,7 @@ di	O	it
 il	O	it
 passato	O	it
 .	O	it
+
 Sarebbe	O	it
 utile	O	it
 invece	O	it
@@ -1835,6 +1907,7 @@ storico	O	it
 ed	O	it
 artistico	O	it
 .	O	it
+
 Non	O	it
 ho	O	it
 mai	O	it
@@ -1858,6 +1931,7 @@ la	O	it
 voglio	O	it
 dire	O	it
 .	O	it
+
 Quando	O	it
 si	B-IDIOM	it
 fa	I-IDIOM	it
@@ -1923,6 +1997,7 @@ a	O	it
 tutti	O	it
 "	O	it
 .	O	it
+
 Ognuno	O	it
 reagisce	O	it
 secondo	O	it
@@ -1959,6 +2034,7 @@ sia	O	it
 il	O	it
 campo	O	it
 .	O	it
+
 Io	O	it
 personalmente	O	it
 sono	O	it
@@ -2007,6 +2083,7 @@ avevo	O	it
 mai	O	it
 considerato	O	it
 .	O	it
+
 Caro	O	it
 frenk	O	it
 ...	O	it
@@ -2030,6 +2107,7 @@ la	O	it
 NON	O	it
 VA	O	it
 .	O	it
+
 Quindi	O	it
 per	O	it
 cortesia	O	it
@@ -2042,6 +2120,7 @@ non	O	it
 LA	O	it
 Stellin	O	it
 .	O	it
+
 Detto	O	it
 questo	O	it
 ,	O	it
@@ -2056,6 +2135,7 @@ CAPO	O	it
 !	O	it
 "	O	it
 .	O	it
+
 Del	O	it
 Di	O	it
 il	O	it
@@ -2076,6 +2156,7 @@ su	I-IDIOM	it
 questa	I-IDIOM	it
 strada	I-IDIOM	it
 .	O	it
+
 Non	O	it
 sopporto	O	it
 le	O	it
@@ -2127,6 +2208,7 @@ provo	O	it
 affatto	O	it
 simpatia	O	it
 .	O	it
+
 Ma	O	it
 ovviamente	O	it
 "	O	it
@@ -2160,6 +2242,7 @@ amiche	O	it
 ?	O	it
 )	O	it
 .	O	it
+
 Elogiamo	O	it
 adriashopping	O	it
 ,	O	it
@@ -2175,6 +2258,7 @@ elogiamo	O	it
 la	O	it
 proloco	O	it
 .	O	it
+
 Vede	O	it
 Frenk	O	it
 sono	O	it
@@ -2216,12 +2300,14 @@ cose	O	it
 andrebbero	O	it
 meglio	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 il	O	it
 mio	O	it
 parere	O	it
 .	O	it
+
 Le	O	it
 consiglio	O	it
 un	O	it
@@ -2238,6 +2324,7 @@ per	O	it
 la	O	it
 mente	O	it
 .	O	it
+
 La	O	it
 copertina	O	it
 di	O	it
@@ -2256,11 +2343,13 @@ titolino	O	it
 in	O	it
 rosso	O	it
 .	O	it
+
 Dice	O	it
 "	O	it
 HELP	O	it
 LAVORO	O	it
 .	O	it
+
 HO	O	it
 30	O	it
 ANNI	O	it
@@ -2272,6 +2361,7 @@ QUASI	O	it
 NULLA	I-IDIOM	it
 "	O	it
 .	O	it
+
 Da	O	it
 questo	O	it
 articolo	O	it
@@ -2301,6 +2391,7 @@ di	O	it
 grande	O	it
 precarietà	O	it
 .	O	it
+
 Come	O	it
 a	O	it
 dire	O	it
@@ -2318,6 +2409,7 @@ COLPA	O	it
 MIA	O	it
 "	O	it
 .	O	it
+
 Francesco	O	it
 Delzio	O	it
 ,34	O	it
@@ -2334,6 +2426,7 @@ GENERAZIONE	O	it
 TUAREG	O	it
 "	O	it
 .	O	it
+
 Dice	O	it
 ,	O	it
 lo	O	it
@@ -2367,6 +2460,7 @@ di	O	it
 il	O	it
 lavoro	O	it
 .	O	it
+
 Colpa	O	it
 della	O	it
 di	O	it
@@ -2380,6 +2474,7 @@ rapidità	O	it
 di	O	it
 cambiamento	O	it
 .	O	it
+
 Facile	O	it
 "	O	it
 piantar-	B-IDIOM	it
@@ -2393,6 +2488,7 @@ di	O	it
 il	O	it
 genere	O	it
 .	O	it
+
 I	O	it
 giovani	O	it
 italiani	O	it
@@ -2430,6 +2526,7 @@ di	O	it
 l'	O	it
 autonomia	O	it
 .	O	it
+
 (	O	it
 da	O	it
 una	O	it
@@ -2443,6 +2540,7 @@ DI	O	it
 MILANO	O	it
 )	O	it
 .	O	it
+
 A	O	it
 studi	O	it
 terminati	O	it
@@ -2476,11 +2574,13 @@ fisso	O	it
 una	I-IDIOM	it
 chimera	I-IDIOM	it
 .	O	it
+
 Non	O	it
 bisogna	O	it
 colpevolizzar-	O	it
 si	O	it
 .	O	it
+
 In	O	it
 questo	O	it
 le	O	it
@@ -2492,6 +2592,7 @@ modo	O	it
 sono	O	it
 bravissime	O	it
 .	O	it
+
 Pensare	O	it
 di	O	it
 aver	O	it
@@ -2512,6 +2613,7 @@ stabile	O	it
 un	O	it
 errore	O	it
 .	O	it
+
 Chi	O	it
 si	O	it
 auto	O	it
@@ -2530,6 +2632,7 @@ aiuta	O	it
 a	O	it
 reagire	O	it
 .	O	it
+
 Giovanna	O	it
 D'	O	it
 Alessio	O	it
@@ -2558,6 +2661,7 @@ specchietto	O	it
 retrovisore	O	it
 "	O	it
 .	O	it
+
 I	O	it
 30	O	it
 anni	O	it
@@ -2571,6 +2675,7 @@ di	O	it
 il	O	it
 RACCOLTO	O	it
 .	O	it
+
 C'	O	it
 è	O	it
 ancora	O	it
@@ -2578,6 +2683,7 @@ tempo	O	it
 per	O	it
 seminare	O	it
 .	O	it
+
 Bisogna	O	it
 imparare	O	it
 a	O	it
@@ -2585,6 +2691,7 @@ cavalcare	O	it
 la	O	it
 flessibilità	O	it
 .	O	it
+
 A	O	it
 dir-	O	it
 la	O	it
@@ -2612,6 +2719,7 @@ circa	O	it
 anni	O	it
 fa	O	it
 .	O	it
+
 Ci	O	it
 sono	O	it
 metodi	O	it
@@ -2620,6 +2728,7 @@ per	O	it
 far-	O	it
 lo	O	it
 .	O	it
+
 Ci	O	it
 sono	O	it
 associazioni	O	it
@@ -2666,6 +2775,7 @@ info	O	it
 ,	O	it
 www.fondosocialeuropeo.it	O	it
 )	O	it
+
 Non	O	it
 bisogna	O	it
 far-	B-IDIOM	it
@@ -2679,6 +2789,7 @@ di	O	it
 arrender-	O	it
 si	O	it
 .	O	it
+
 Molti	O	it
 giovani	O	it
 si	B-IDIOM	it
@@ -2701,6 +2812,7 @@ avrebbero	O	it
 voluto	O	it
 fare	O	it
 .	O	it
+
 Oppure	O	it
 molti	O	it
 altri	O	it
@@ -2727,6 +2839,7 @@ di	O	it
 il	O	it
 lavoro	O	it
 .	O	it
+
 Un'	O	it
 altra	O	it
 coach	O	it
@@ -2752,6 +2865,7 @@ un	O	it
 auto	O	it
 sabotaggio	O	it
 .	O	it
+
 Si	O	it
 finisce	O	it
 per	O	it
@@ -2765,6 +2879,7 @@ non	O	it
 ci	O	it
 interessa	O	it
 .	O	it
+
 Ma	O	it
 fare	O	it
 un	O	it
@@ -2783,6 +2898,7 @@ nostra	O	it
 vita	O	it
 migliore	O	it
 .	O	it
+
 Piiuttosto	O	it
 ,	O	it
 meglio	O	it
@@ -2807,6 +2923,7 @@ aspirazioni	O	it
 più	O	it
 vere	O	it
 .	O	it
+
 Se	O	it
 abbiamo	O	it
 già	O	it
@@ -2827,6 +2944,7 @@ la	O	it
 nostra	O	it
 azienda	O	it
 .	O	it
+
 In	O	it
 Italia	O	it
 le	O	it
@@ -2838,6 +2956,7 @@ idea	O	it
 di	O	it
 MERITOCRAZIA	O	it
 .	O	it
+
 Difficile	O	it
 alle	O	it
 a	O	it
@@ -2866,8 +2985,10 @@ da	O	it
 altre	O	it
 cause	O	it
 .	O	it
+
 Consiglio	O	it
 ?	O	it
+
 Cercare	O	it
 un	O	it
 mentore	O	it
@@ -2896,6 +3017,7 @@ il	O	it
 vostro	O	it
 operato	O	it
 .	O	it
+
 In	O	it
 realtà	O	it
 meglio	O	it
@@ -2917,6 +3039,7 @@ in	O	it
 direzione	O	it
 opposta	O	it
 .	O	it
+
 Invece	O	it
 che	O	it
 guardare	B-IDIOM	it
@@ -2936,6 +3059,7 @@ e	O	it
 propone	O	it
 consigli	O	it
 .	O	it
+
 Possibilmente	O	it
 affidar-	B-IDIOM	it
 si	I-IDIOM	it
@@ -2953,6 +3077,7 @@ un'	O	it
 ottima	O	it
 scelta	O	it
 .	O	it
+
 Dobbiamo	O	it
 guardare	B-IDIOM	it
 agli	O	it
@@ -2961,6 +3086,7 @@ gli	O	it
 esempi	O	it
 positivi	O	it
 .	O	it
+
 Ovvero	O	it
 a	O	it
 quelle	O	it
@@ -2984,8 +3110,10 @@ e	O	it
 la	O	it
 precarietà	O	it
 .	O	it
+
 Esempio	O	it
 ?	O	it
+
 A	O	it
 fronte	O	it
 dell'	O	it
@@ -3007,6 +3135,7 @@ da	O	it
 le	O	it
 imprese	O	it
 .	O	it
+
 L'	O	it
 ICOM	O	it
 per	O	it
@@ -3019,6 +3148,7 @@ le	O	it
 energie	O	it
 rinnovabili	O	it
 .	O	it
+
 Le	O	it
 soluzioni	O	it
 per	O	it
@@ -3028,6 +3158,7 @@ flessibilità	O	it
 ci	O	it
 sono	O	it
 .	O	it
+
 A	O	it
 quanto	O	it
 pare	O	it
@@ -3046,6 +3177,7 @@ le	O	it
 dritte	O	it
 giuste	O	it
 .	O	it
+
 In	O	it
 fin	O	it
 dei	O	it
@@ -3056,6 +3188,7 @@ conti	O	it
 siamo	O	it
 giovani	O	it
 .	O	it
+
 Non	O	it
 solo	O	it
 trentenni	O	it
@@ -3103,6 +3236,7 @@ migliorare	O	it
 la	O	it
 situazione	O	it
 !	O	it
+
 Hai	B-IDIOM	it
 ragione	I-IDIOM	it
 ,	O	it
@@ -3122,6 +3256,7 @@ a	O	it
 lunga	O	it
 durata	O	it
 .	O	it
+
 Bisogna	O	it
 voler-	O	it
 lo	O	it
@@ -3138,6 +3273,7 @@ nulla	O	it
 da	O	it
 perdere	O	it
 .	O	it
+
 Conosco	O	it
 molti	O	it
 giovani	O	it
@@ -3163,6 +3299,7 @@ come	O	it
 fossi	O	it
 matto	O	it
 .	O	it
+
 Avere	B-IDIOM	it
 il	O	it
 coraggio	I-IDIOM	it
@@ -3184,12 +3321,14 @@ di	O	it
 essere	O	it
 arrivati	O	it
 .	O	it
+
 non	O	it
 son	O	it
 scappato	O	it
 ma	O	it
 trasferito	O	it
 .	O	it
+
 anche	O	it
 se	O	it
 abito	O	it
@@ -3201,12 +3340,14 @@ ci	O	it
 torno	O	it
 spesso	O	it
 .	O	it
+
 cambiare	O	it
 a	O	it
 volte	O	it
 fa	O	it
 bene	O	it
 .	O	it
+
 faccio	O	it
 ancora	O	it
 l'	O	it
@@ -3225,6 +3366,7 @@ potrei	O	it
 anche	O	it
 cambiare	O	it
 .	O	it
+
 per	O	it
 ora	O	it
 sono	O	it
@@ -3246,6 +3388,7 @@ per	O	it
 conto	O	it
 nostro	O	it
 .	O	it
+
 però	O	it
 è	O	it
 anche	O	it
@@ -3276,6 +3419,7 @@ relativi	O	it
 bassi	O	it
 stipendi	O	it
 .	O	it
+
 non	O	it
 è	O	it
 sempre	O	it
@@ -3286,6 +3430,7 @@ di	O	it
 essere	B-IDIOM	it
 bamboccioni	I-IDIOM	it
 .	O	it
+
 anzi	O	it
 ,	O	it
 quegli	O	it
@@ -3367,6 +3512,7 @@ i	O	it
 propri	O	it
 genitori	O	it
 .	O	it
+
 non	O	it
 lo	O	it
 dico	O	it
@@ -3388,6 +3534,7 @@ tutto	O	it
 più	O	it
 difficile	O	it
 .	O	it
+
 ma	O	it
 quando	O	it
 ne	O	it
@@ -3418,9 +3565,11 @@ significa	O	it
 crisi	O	it
 vera	O	it
 .	O	it
+
 Che	O	it
 dispiasere	O	it
 .	O	it
+
 Bobo	O	it
 da	O	it
 na	O	it
@@ -3432,6 +3581,7 @@ da	O	it
 n'	O	it
 antra	O	it
 .	O	it
+
 Sì	O	it
 parchè	O	it
 tuti	O	it
@@ -3472,6 +3622,7 @@ sa	O	it
 mezo	O	it
 incapotà	O	it
 .	O	it
+
 Na	O	it
 copia	O	it
 cusì	O	it
@@ -3486,6 +3637,7 @@ gera	O	it
 mai	O	it
 sta	O	it
 .	O	it
+
 Chi	O	it
 lo	O	it
 gavarìa	O	it
@@ -3497,6 +3649,7 @@ ciapàva	O	it
 strade	O	it
 diverse	O	it
 .	O	it
+
 Se	O	it
 gheva	O	it
 capio	O	it
@@ -3529,6 +3682,7 @@ giorni	O	it
 dea	O	it
 zente	O	it
 .	O	it
+
 Me	O	it
 ricordo	O	it
 quando	O	it
@@ -3550,6 +3704,7 @@ la	O	it
 raccolta	O	it
 differensià	O	it
 .	O	it
+
 La	O	it
 gà	O	it
 spiegà	O	it
@@ -3562,6 +3717,7 @@ anche	O	it
 i	O	it
 putini	O	it
 .	O	it
+
 "	O	it
 No	O	it
 stè	O	it
@@ -3594,10 +3750,12 @@ in	O	it
 tel	O	it
 seco	O	it
 .	O	it
+
 Capìo	O	it
 ?	O	it
 "	O	it
 .	O	it
+
 E	O	it
 Bobo	O	it
 fasèa	O	it
@@ -3605,9 +3763,11 @@ finta	O	it
 de	O	it
 sì	O	it
 .	O	it
+
 Pecà	O	it
 veramente	O	it
 .	O	it
+
 Speremo	O	it
 comunque	O	it
 de	O	it
@@ -3619,6 +3779,7 @@ la	O	it
 prossima	O	it
 epifania	O	it
 .	O	it
+
 Si	O	it
 può	O	it
 anche	O	it
@@ -3658,12 +3819,14 @@ tanto	O	it
 salta	I-IDIOM	it
 fuori	I-IDIOM	it
 .	O	it
+
 Però	O	it
 forse	O	it
 sono	O	it
 una	O	it
 rarità	O	it
 .	O	it
+
 Da	O	it
 ultimo	O	it
 mi	B-IDIOM	it
@@ -3747,6 +3910,7 @@ di	O	it
 la	O	it
 Sardegna	O	it
 .	O	it
+
 Premetto	O	it
 che	O	it
 l'	O	it
@@ -3798,6 +3962,7 @@ le	O	it
 regioni	O	it
 peggiori	O	it
 .	O	it
+
 Soru	O	it
 ha	O	it
 detto	O	it
@@ -3819,6 +3984,7 @@ di	O	it
 continuare	O	it
 così	O	it
 .	O	it
+
 Abbiamo	B-IDIOM	it
 il	O	it
 dovere	I-IDIOM	it
@@ -3832,9 +3998,11 @@ generazioni	O	it
 future	O	it
 "	O	it
 .	O	it
+
 Troppo	O	it
 vero	O	it
 !	O	it
+
 Provate	O	it
 a	O	it
 immaginare	O	it
@@ -3865,6 +4033,7 @@ in	O	it
 questo	O	it
 modo	O	it
 !	O	it
+
 Tanto	O	it
 di	O	it
 cappello	O	it
@@ -3877,6 +4046,7 @@ di	O	it
 dimetter-	B-IDIOM	it
 si	I-IDIOM	it
 .	O	it
+
 Il	O	it
 video	O	it
 dell'	O	it
@@ -3897,6 +4067,7 @@ tempo	O	it
 che	O	it
 fa	O	it
 .	O	it
+
 Una	O	it
 signora	O	it
 ci	O	it
@@ -3964,6 +4135,7 @@ di	O	it
 una	O	it
 pensione	O	it
 .	O	it
+
 Questo	O	it
 fatto	O	it
 ci	O	it
@@ -3991,6 +4163,7 @@ i	O	it
 nostri	O	it
 figli	O	it
 ?	O	it
+
 Forse	O	it
 comprare	O	it
 loro	O	it
@@ -4012,6 +4185,7 @@ di	O	it
 Nike	O	it
 ?	O	it
 .	O	it
+
 <<	O	it
 Siamo	O	it
 dei	O	it
@@ -4036,6 +4210,7 @@ a	O	it
 gli	O	it
 altri	O	it
 .	O	it
+
 Viviamo	O	it
 per	O	it
 noi	O	it
@@ -4060,6 +4235,7 @@ se	O	it
 è	O	it
 perfetta	O	it
 .	O	it
+
 Ma	O	it
 è	O	it
 un'	O	it
@@ -4091,6 +4267,7 @@ di	O	it
 vita	O	it
 >>	O	it
 .	O	it
+
 Spesso	O	it
 e	O	it
 volentieri	O	it
@@ -4109,6 +4286,7 @@ vecchi	O	it
 video	O	it
 musicali	O	it
 .	O	it
+
 Alcuni	O	it
 mesi	O	it
 fa	O	it
@@ -4136,6 +4314,7 @@ la	I-IDIOM	it
 mia	O	it
 attenzione	I-IDIOM	it
 .	O	it
+
 L'	O	it
 immagine	O	it
 principale	O	it
@@ -4156,11 +4335,13 @@ PRIMA-DOPO	O	it
 "	O	it
 sconcertante	O	it
 .	O	it
+
 Titolo	O	it
 :	O	it
 CRYSTAL	O	it
 METH	O	it
 .	O	it
+
 Apro	O	it
 il	O	it
 video	O	it
@@ -4170,6 +4351,7 @@ scorrere	I-IDIOM	it
 le	O	it
 immagini	O	it
 .	O	it
+
 Volti	O	it
 di	O	it
 qualsiasi	O	it
@@ -4215,6 +4397,7 @@ pieni	O	it
 di	O	it
 ferite	O	it
 .	O	it
+
 Ho	O	it
 pensato	O	it
 che	O	it
@@ -4241,8 +4424,10 @@ su	O	it
 i	O	it
 minori	O	it
 .	O	it
+
 Sbagliato	O	it
 .	O	it
+
 Quelli	O	it
 sono	O	it
 gli	O	it
@@ -4255,6 +4440,7 @@ la	O	it
 CRYSTAL	O	it
 METH	O	it
 .	O	it
+
 Consiglio	O	it
 tra	O	it
 l'	O	it
@@ -4296,6 +4482,7 @@ rendano	I-IDIOM	it
 l'	I-IDIOM	it
 idea	I-IDIOM	it
 .	O	it
+
 Perché	O	it
 di	B-IDIOM	it
 quello	O	it
@@ -4305,6 +4492,7 @@ tratta	I-IDIOM	it
 di	I-IDIOM	it
 metanfetamina	O	it
 .	O	it
+
 L'	O	it
 eroina	O	it
 è	O	it
@@ -4313,6 +4501,7 @@ da	O	it
 ricchi	O	it
 ormai	O	it
 .	O	it
+
 Questo	O	it
 tipo	O	it
 di	O	it
@@ -4329,6 +4518,7 @@ anche	O	it
 in	O	it
 casa	O	it
 .	O	it
+
 Leggo	O	it
 in	O	it
 uno	O	it
@@ -4358,6 +4548,7 @@ in	O	it
 internet	O	it
 "	O	it
 .	O	it
+
 Non	O	it
 so	O	it
 dir-	O	it
@@ -4394,6 +4585,7 @@ un'	O	it
 ipotesi	O	it
 reale	O	it
 .	O	it
+
 La	O	it
 CRYSTAL	O	it
 spopola	O	it
@@ -4419,6 +4611,7 @@ provincia	O	it
 di	O	it
 Brescia	O	it
 .	O	it
+
 Come	O	it
 tutte	O	it
 le	O	it
@@ -4467,6 +4660,7 @@ cervello	O	it
 e	O	it
 fegato	O	it
 .	O	it
+
 Questa	O	it
 DROGA	O	it
 DA	O	it
@@ -4507,6 +4701,7 @@ succhi	O	it
 di	O	it
 frutta	O	it
 .	O	it
+
 Si	B-IDIOM	it
 chiama	I-IDIOM	it
 Crystal	O	it
@@ -4548,6 +4743,7 @@ maggiore	O	it
 attività	O	it
 centrale	O	it
 .	O	it
+
 Ha	O	it
 un	O	it
 utilizzo	O	it
@@ -4572,6 +4768,7 @@ Filippine	O	it
 ecc	O	it
 )	O	it
 .	O	it
+
 Condivide	O	it
 con	O	it
 l'	O	it
@@ -4697,6 +4894,7 @@ la	O	it
 pelle	O	it
 »	O	it
 .	O	it
+
 Ora	O	it
 negli	O	it
 in	O	it
@@ -4736,6 +4934,7 @@ che	O	it
 vogliono	O	it
 dimagrire	O	it
 .	O	it
+
 Ma	O	it
 La	O	it
 tossicità	O	it
@@ -4745,6 +4944,7 @@ droga	O	it
 è	O	it
 certa	O	it
 .	O	it
+
 Negli	O	it
 In	O	it
 gli	O	it
@@ -4762,6 +4962,7 @@ sono	O	it
 dimostrati	I-IDIOM	it
 irreversibili	O	it
 .	O	it
+
 Ma	O	it
 sono	O	it
 sempre	O	it
@@ -4871,6 +5072,7 @@ il	O	it
 menefreghismo	O	it
 sociale	O	it
 .	O	it
+
 Io	O	it
 sono	O	it
 convinto	O	it
@@ -4891,6 +5093,7 @@ debba	O	it
 profondamente	O	it
 cambiare	O	it
 .	O	it
+
 Il	O	it
 sistema	O	it
 agronomico	O	it
@@ -5044,6 +5247,7 @@ tutta	O	it
 l'	O	it
 umanità	O	it
 .	O	it
+
 Le	O	it
 due	O	it
 condizioni	O	it
@@ -5105,6 +5309,7 @@ organizza	O	it
 la	O	it
 società	O	it
 .	O	it
+
 Premetto	O	it
 che	O	it
 ho	O	it
@@ -5175,6 +5380,7 @@ Associazioni	O	it
 di	O	it
 categoria	O	it
 .	O	it
+
 Dopo	O	it
 quegli	O	it
 incontri	O	it
@@ -5245,6 +5451,7 @@ che	O	it
 vi	O	it
 ricorrano	O	it
 .	O	it
+
 Visto	O	it
 che	O	it
 ,	O	it
@@ -5341,6 +5548,7 @@ il	O	it
 servizio	O	it
 richiesto	O	it
 .	O	it
+
 è	O	it
 stati	O	it
 riportato	O	it
@@ -5385,6 +5593,7 @@ i	O	it
 privati	O	it
 "	O	it
 .	O	it
+
 è	O	it
 sicuramente	O	it
 vero	O	it
@@ -5433,6 +5642,7 @@ che	O	it
 li	O	it
 richiedevano	O	it
 .	O	it
+
 Ma	O	it
 questa	O	it
 non	O	it
@@ -5461,6 +5671,7 @@ le	O	it
 piccole	O	it
 imprese	O	it
 .	O	it
+
 Non	O	it
 si	B-IDIOM	it
 tratta	I-IDIOM	it
@@ -5481,6 +5692,7 @@ grado	I-IDIOM	it
 di	O	it
 partecipare	O	it
 .	O	it
+
 Credo	O	it
 che	O	it
 il	O	it
@@ -5518,8 +5730,10 @@ amministratori	O	it
 ed	O	it
 amministrati	O	it
 .	O	it
+
 MAXIAPPALTO	O	it
 .	O	it
+
 Sull'	O	it
 Su	O	it
 l'	O	it
@@ -5543,6 +5757,7 @@ notizie	O	it
 sono	O	it
 trapelate	O	it
 .	O	it
+
 L'	O	it
 incontro	O	it
 non	O	it
@@ -5569,6 +5784,7 @@ di	O	it
 i	O	it
 ricorrenti	O	it
 .	O	it
+
 Ma	O	it
 ,	O	it
 si	O	it
@@ -5592,6 +5808,7 @@ fatto	O	it
 riflettere	O	it
 molti	O	it
 .	O	it
+
 La	O	it
 sete	O	it
 di	O	it
@@ -5613,6 +5830,7 @@ di	O	it
 il	O	it
 Polesine	O	it
 .	O	it
+
 Il	O	it
 ricorso	O	it
 al	O	it
@@ -5651,6 +5869,7 @@ di	O	it
 l'	O	it
 Amministrazione	O	it
 .	O	it
+
 Si	O	it
 è	O	it
 parlato	O	it
@@ -5685,6 +5904,7 @@ di	O	it
 la	O	it
 questione	O	it
 .	O	it
+
 Un	O	it
 bando	O	it
 discriminatorio	O	it
@@ -5718,6 +5938,7 @@ l'	O	it
 errore	O	it
 "	O	it
 .	O	it
+
 è	O	it
 molto	O	it
 più	O	it
@@ -5736,6 +5957,7 @@ L'	O	it
 ERRORE	O	it
 "	O	it
 .	O	it
+
 Per	O	it
 il	O	it
 bene	O	it
@@ -5744,6 +5966,7 @@ di	O	it
 la	O	it
 città	O	it
 .	O	it
+
 Infine	O	it
 questi	O	it
 rappresentanti	O	it
@@ -5764,6 +5987,7 @@ di	O	it
 l'	O	it
 economia	O	it
 .	O	it
+
 Ma	O	it
 credono	O	it
 proprio	O	it
@@ -5814,6 +6038,7 @@ anni	O	it
 di	O	it
 recessione	O	it
 ?	O	it
+
 E	O	it
 poi	O	it
 perché	O	it
@@ -5851,6 +6076,7 @@ di	O	it
 il	O	it
 totale	O	it
 ?	O	it
+
 E	O	it
 perché	O	it
 poi	O	it
@@ -5890,6 +6116,7 @@ numero	O	it
 ben	O	it
 maggiore	O	it
 ?	O	it
+
 Non	O	it
 sarà	O	it
 che	O	it
@@ -5915,6 +6142,7 @@ soltanto	O	it
 lo	O	it
 strumento	O	it
 ?	O	it
+
 Pura	O	it
 miopia	O	it
 infine	O	it
@@ -5949,6 +6177,7 @@ abbiano	O	it
 mai	O	it
 fatta	O	it
 .	O	it
+
 Ma	O	it
 tant'	O	it
 è	O	it
@@ -5959,6 +6188,7 @@ polesani	O	it
 sono	O	it
 questi	O	it
 !	O	it
+
 Ebbene	O	it
 ,	O	it
 è	O	it
@@ -6066,6 +6296,7 @@ la	O	it
 nuova	O	it
 Centrale	O	it
 .	O	it
+
 L'	O	it
 esempio	O	it
 recente	O	it
@@ -6090,6 +6321,7 @@ economiche	O	it
 ed	O	it
 occupazionali	O	it
 .	O	it
+
 Infatti	O	it
 ,	O	it
 una	O	it
@@ -6126,6 +6358,7 @@ di	O	it
 notevole	O	it
 interesse	O	it
 .	O	it
+
 In	O	it
 circa	O	it
 3	O	it
@@ -6178,6 +6411,7 @@ a	O	it
 il	O	it
 Paese	O	it
 .	O	it
+
 Le	O	it
 eventuali	O	it
 multe	O	it
@@ -6284,6 +6518,7 @@ il	O	it
 nucleare	O	it
 )	O	it
 .	O	it
+
 Bisognerebbe	O	it
 quindi	O	it
 batter-	O	it
@@ -6331,6 +6566,7 @@ demografico	O	it
 ed	O	it
 industriale	O	it
 .	O	it
+
 Invece	O	it
 di	O	it
 far	O	it
@@ -6450,6 +6686,7 @@ senza	O	it
 saper-	O	it
 lo	O	it
 !	O	it
+
 Il	O	it
 giorno	O	it
 dell'	O	it
@@ -6466,6 +6703,7 @@ la	O	it
 vécia	O	it
 "	O	it
 .	O	it
+
 Questa	O	it
 usanza	O	it
 deriva	O	it
@@ -6514,6 +6752,7 @@ e	O	it
 vin	O	it
 "	O	it
 .	O	it
+
 In	O	it
 altri	O	it
 casi	O	it
@@ -6557,6 +6796,7 @@ la	O	it
 nuova	O	it
 piantina	O	it
 .	O	it
+
 Persa	O	it
 la	O	it
 cultura	O	it
@@ -6578,6 +6818,7 @@ su	O	it
 il	O	it
 rogo	O	it
 .	O	it
+
 Per	O	it
 noi	O	it
 adulti	O	it
@@ -6602,6 +6843,7 @@ domani	O	it
 sia	O	it
 migliore	O	it
 .	O	it
+
 Tuttavia	O	it
 ,	O	it
 a	O	it
@@ -6623,6 +6865,7 @@ momento	O	it
 di	O	it
 festa	O	it
 .	O	it
+
 Se	O	it
 il	O	it
 significato	O	it
@@ -6655,6 +6898,7 @@ gentile	O	it
 con	O	it
 noi	O	it
 .	O	it
+
 a	O	it
 tutti	O	it
 gli	O	it
@@ -6668,6 +6912,7 @@ un	O	it
 buon	O	it
 natale	O	it
 .	O	it
+
 Guardando	O	it
 i	O	it
 telegiornali	O	it
@@ -6683,6 +6928,7 @@ stata	O	it
 momentaneamente	O	it
 accantonata	O	it
 .	O	it
+
 La	O	it
 neve	O	it
 in	O	it
@@ -6704,6 +6950,7 @@ di	O	it
 villeggiatura	O	it
 invernale	O	it
 .	O	it
+
 Mi	O	it
 stupisco	O	it
 anche	O	it
@@ -6727,6 +6974,7 @@ ultimi	O	it
 30	O	it
 anni	O	it
 .	O	it
+
 Il	O	it
 riscaldamento	O	it
 del	O	it
@@ -6738,6 +6986,7 @@ facendo	O	it
 strani	O	it
 scherzi	O	it
 .	O	it
+
 Parlando	O	it
 con	O	it
 amici	O	it
@@ -6759,6 +7008,7 @@ sempre	O	it
 in	I-IDIOM	it
 agguato	I-IDIOM	it
 .	O	it
+
 Eppure	O	it
 anche	O	it
 a	O	it
@@ -6784,6 +7034,7 @@ a	O	it
 la	O	it
 produzione	O	it
 .	O	it
+
 In	O	it
 tal	O	it
 modo	O	it
@@ -6816,6 +7067,7 @@ eccessivo	O	it
 di	O	it
 risorse	O	it
 .	O	it
+
 parte	O	it
 da	O	it
 noi	O	it
@@ -6835,6 +7087,7 @@ moderare	O	it
 i	O	it
 consumi	O	it
 .	O	it
+
 Senza	O	it
 nulla	O	it
 togliere	O	it
@@ -6877,6 +7130,7 @@ non	O	it
 ci	O	it
 crede	O	it
 .	O	it
+
 Dopo	O	it
 tanto	O	it
 terra	O	it
@@ -6896,12 +7150,14 @@ guradare	I-IDIOM	it
 in	I-IDIOM	it
 alto	I-IDIOM	it
 .	O	it
+
 Sperando	O	it
 in	O	it
 qualunque	O	it
 entità	O	it
 vogliate	O	it
 .	O	it
+
 Quando	O	it
 il	O	it
 sentimento	O	it
@@ -6916,6 +7172,7 @@ i	O	it
 Cieli	O	it
 rispondono	O	it
 .	O	it
+
 Dal	O	it
 Da	O	it
 il	O	it
@@ -6954,6 +7211,7 @@ sono	B-IDIOM	it
 in	I-IDIOM	it
 grado	I-IDIOM	it
 .	O	it
+
 Buon	O	it
 Natale	O	it
 ,	O	it
@@ -6967,6 +7225,7 @@ chi	O	it
 è	O	it
 lontano	O	it
 .	O	it
+
 Due	O	it
 sere	O	it
 fa	O	it
@@ -6998,6 +7257,7 @@ sera	O	it
 su	O	it
 MTV	O	it
 .	O	it
+
 Esattamente	O	it
 la	O	it
 stessa	O	it
@@ -7025,6 +7285,7 @@ MORE	O	it
 TIME	O	it
 "	O	it
 .	O	it
+
 Ho	O	it
 sempre	O	it
 seguito	O	it
@@ -7085,6 +7346,7 @@ la	O	it
 propria	O	it
 salute	O	it
 .	O	it
+
 Ascoltando	O	it
 e	O	it
 leggendo	O	it
@@ -7118,6 +7380,7 @@ vero	O	it
 tutto	O	it
 "	O	it
 .	O	it
+
 Pare	O	it
 una	O	it
 trovata	O	it
@@ -7140,11 +7403,13 @@ in	O	it
 periodo	O	it
 natalizio	O	it
 .	O	it
+
 E	O	it
 magari	O	it
 lo	O	it
 è	O	it
 .	O	it
+
 C'	O	it
 è	O	it
 chi	O	it
@@ -7156,6 +7421,7 @@ di	O	it
 riscatto	O	it
 "	O	it
 .	O	it
+
 Ma	O	it
 la	O	it
 cantante	O	it
@@ -7173,6 +7439,7 @@ la	O	it
 sua	O	it
 versione	O	it
 .	O	it
+
 Non	O	it
 solo	O	it
 quella	O	it
@@ -7202,10 +7469,12 @@ GIOVANI	O	it
 IN	O	it
 CRISI	O	it
 .	O	it
+
 PERCHé	O	it
 ?	O	it
 "	O	it
 .	O	it
+
 Britney	O	it
 parla	O	it
 cosi	O	it
@@ -7216,11 +7485,13 @@ in	O	it
 casa	O	it
 mia	O	it
 .	O	it
+
 Lo	O	it
 sono	O	it
 tutt'	O	it
 ora	O	it
 .	O	it
+
 All'	O	it
 A	O	it
 l'	O	it
@@ -7272,6 +7543,7 @@ di	O	it
 il	O	it
 personale	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -7290,6 +7562,7 @@ moto	O	it
 di	O	it
 ribellione	O	it
 .	O	it
+
 Diciamocelo	O	it
 ,	O	it
 quanti	O	it
@@ -7299,6 +7572,7 @@ rasano	O	it
 i	O	it
 capelli	O	it
 ?	O	it
+
 Però	O	it
 ,	O	it
 se	O	it
@@ -7323,6 +7597,7 @@ di	O	it
 divertir-	O	it
 me	O	it
 .	O	it
+
 Nello	O	it
 In	O	it
 lo	O	it
@@ -7351,12 +7626,14 @@ in	O	it
 lo	O	it
 sconforto	O	it
 .	O	it
+
 Una	O	it
 casa	O	it
 grande	O	it
 ,	O	it
 troppo	O	it
 .	O	it
+
 Tutta	O	it
 per	O	it
 me	O	it
@@ -7366,6 +7643,7 @@ i	O	it
 miei	O	it
 figli	O	it
 .	O	it
+
 Mi	O	it
 sono	O	it
 domandata	O	it
@@ -7376,6 +7654,7 @@ FACCIO	O	it
 DI	O	it
 ME	O	it
 ?	O	it
+
 Avevo	O	it
 grossi	O	it
 problemi	O	it
@@ -7391,11 +7670,13 @@ i	O	it
 miei	O	it
 figli	O	it
 .	O	it
+
 Non	O	it
 volevo	O	it
 perder-	O	it
 li	O	it
 "	O	it
+
 Alla	O	it
 A	O	it
 la	O	it
@@ -7422,6 +7703,7 @@ sua	O	it
 reale	O	it
 situazione	O	it
 ?	O	it
+
 La	O	it
 gente	O	it
 avrebbe	O	it
@@ -7442,6 +7724,7 @@ fatti	O	it
 loro	O	it
 "	O	it
 .	O	it
+
 E	O	it
 poi	O	it
 continua	O	it
@@ -7455,6 +7738,7 @@ pazza	O	it
 ,	O	it
 drogata	O	it
 .	O	it
+
 Avevo	B-IDIOM	it
 solo	O	it
 voglia	I-IDIOM	it
@@ -7480,6 +7764,7 @@ il	O	it
 lavoro	O	it
 "	O	it
 .	O	it
+
 Ammette	O	it
 comunque	O	it
 che	O	it
@@ -7487,6 +7772,7 @@ le	O	it
 piaceva	O	it
 bere	O	it
 .	O	it
+
 Tra	O	it
 un	O	it
 tratto	O	it
@@ -7526,6 +7812,7 @@ i	O	it
 due	O	it
 bambini	O	it
 .	O	it
+
 "	O	it
 Lo	O	it
 so	O	it
@@ -7542,6 +7829,7 @@ di	O	it
 le	O	it
 mie	O	it
 .	O	it
+
 Ma	O	it
 io	O	it
 vorrei	O	it
@@ -7553,9 +7841,11 @@ mia	O	it
 è	O	it
 facile	O	it
 .	O	it
+
 O	O	it
 normale.	O	it
 "	O	it
+
 "	O	it
 Nella	O	it
 In	O	it
@@ -7577,6 +7867,7 @@ di	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 E	O	it
 ammetto	O	it
 che	O	it
@@ -7588,6 +7879,7 @@ un	O	it
 vero	O	it
 inferno	O	it
 .	O	it
+
 Contemporaneamente	O	it
 ho	O	it
 visto	O	it
@@ -7599,6 +7891,7 @@ di	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 E	O	it
 quella	O	it
 ...	O	it
@@ -7607,14 +7900,18 @@ davvero	O	it
 un	O	it
 paradiso	O	it
 .	O	it
+
 You	O	it
 know	O	it
 ?	O	it
+
 "	O	it
+
 Va	O	it
 sicura	O	it
 Britney	O	it
 .	O	it
+
 Poche	O	it
 parole	O	it
 ,	O	it
@@ -7626,6 +7923,7 @@ sono	O	it
 come	O	it
 loro	O	it
 .	O	it
+
 Amo	O	it
 i	O	it
 miei	O	it
@@ -7634,9 +7932,11 @@ e	O	it
 lavoro	O	it
 sodo	O	it
 .	O	it
+
 Nient'	O	it
 altro	O	it
 "	O	it
+
 Le	O	it
 stelle	O	it
 dello	O	it
@@ -7668,6 +7968,7 @@ una	O	it
 rivista	O	it
 patinata	O	it
 .	O	it
+
 Noi	O	it
 con	O	it
 i	O	it
@@ -7680,6 +7981,7 @@ i	O	it
 loro	O	it
 problemi	O	it
 .	O	it
+
 Ci	O	it
 rispondiamo	O	it
 sempre	O	it
@@ -7701,6 +8003,7 @@ a	O	it
 la	O	it
 crisi	O	it
 .	O	it
+
 Ma	O	it
 personalmente	O	it
 ,	O	it
@@ -7728,6 +8031,7 @@ ogni	O	it
 giorno	O	it
 godo	O	it
 .	O	it
+
 Persino	O	it
 quella	O	it
 di	O	it
@@ -7744,6 +8048,7 @@ se	O	it
 lo	O	it
 voglio	O	it
 .	O	it
+
 sarò	O	it
 sincera	O	it
 ...	O	it
@@ -7813,6 +8118,7 @@ personale	O	it
 almeno	O	it
 credo	O	it
 .	O	it
+
 Ma	O	it
 mi	B-IDIOM	it
 dispiace	I-IDIOM	it
@@ -7822,6 +8128,7 @@ perso	O	it
 il	O	it
 resto	O	it
 .	O	it
+
 Io	O	it
 stimo	O	it
 molto	O	it
@@ -7838,12 +8145,14 @@ la	O	it
 propria	O	it
 vita	O	it
 .	O	it
+
 Ti	O	it
 ringrazio	O	it
 per	O	it
 i	O	it
 complimenti	O	it
 .	O	it
+
 Io	O	it
 non	O	it
 scrivo	O	it
@@ -7872,6 +8181,7 @@ ho	O	it
 provato	O	it
 io	O	it
 .	O	it
+
 Per	O	it
 il	O	it
 resto	O	it
@@ -7897,6 +8207,7 @@ il	O	it
 suo	O	it
 esordio	O	it
 .	O	it
+
 E	O	it
 da	O	it
 allora	O	it
@@ -7906,6 +8217,7 @@ ne	O	it
 sono	O	it
 appassionata	O	it
 .	O	it
+
 Spero	O	it
 per	O	it
 lei	O	it
@@ -7930,6 +8242,7 @@ forte	O	it
 di	O	it
 prima	O	it
 .	O	it
+
 Per	O	it
 quanto	O	it
 riguarda	O	it
@@ -7989,6 +8302,7 @@ non	O	it
 traspare	O	it
 emozioni	O	it
 .	O	it
+
 Britney	O	it
 è	O	it
 una	O	it
@@ -8022,6 +8336,7 @@ che	O	it
 lo	O	it
 insegue	O	it
 .	O	it
+
 Non	O	it
 ha	O	it
 amiche	O	it
@@ -8082,10 +8397,12 @@ BRIT	O	it
 !	O	it
 !	O	it
 !	O	it
+
 Inventato	O	it
 da	O	it
 Ern	O	it
 ?	O	it
+
 Rubik	O	it
 ,	O	it
 professore	O	it
@@ -8141,6 +8458,7 @@ di	O	it
 colore	O	it
 bianco	O	it
 .	O	it
+
 Questa	O	it
 è	O	it
 la	O	it
@@ -8160,6 +8478,7 @@ quadrati	O	it
 per	O	it
 faccia	O	it
 .	O	it
+
 Esistono	O	it
 molte	O	it
 altre	O	it
@@ -8180,6 +8499,7 @@ x	O	it
 x	O	it
 2	O	it
 .	O	it
+
 RITENGO	O	it
 CHE	O	it
 LE	O	it
@@ -8219,6 +8539,7 @@ QUESTE	O	it
 PERSONALI	O	it
 DISCUSSIONI	O	it
 .	O	it
+
 SECONDO	O	it
 IL	O	it
 MIO	O	it
@@ -8228,6 +8549,7 @@ STANNO	O	it
 ENTRAMBI	O	it
 SBAGLIANDO	O	it
 .	O	it
+
 IL	O	it
 PRIMO	O	it
 VUOLE	O	it
@@ -8245,6 +8567,7 @@ SUA	O	it
 CREATURA	O	it
 POLITICA	O	it
 .	O	it
+
 OCCORRE	O	it
 ANALIZZARE	O	it
 ,	O	it
@@ -8254,6 +8577,7 @@ TECNICI	O	it
 ALCUNI	O	it
 ASPETTI	O	it
 .	O	it
+
 QUALE	O	it
 POTREBBE	O	it
 ESSERE	O	it
@@ -8291,6 +8615,7 @@ VIARIE	O	it
 DI	O	it
 ADRIA	O	it
 ?	O	it
+
 MOLTI	O	it
 SOLDI	O	it
 SONO	O	it
@@ -8322,6 +8647,7 @@ ZONA	O	it
 DI	O	it
 ADRIA	O	it
 .	O	it
+
 PER	O	it
 RISPOPNDERE	O	it
 A	O	it
@@ -8352,6 +8678,7 @@ INTASATE	O	it
 DI	O	it
 ADRIA	O	it
 .	O	it
+
 è	O	it
 PUR	O	it
 VERO	O	it
@@ -8376,6 +8703,7 @@ LOCALITà	O	it
 SAN	O	it
 GIOVANNI	O	it
 .	O	it
+
 OCCORRE	O	it
 PENSARE	O	it
 ALLE	O	it
@@ -8395,6 +8723,7 @@ IN	O	it
 CAMPAGNA	O	it
 ELETTORALE	O	it
 .	O	it
+
 ADRIA	O	it
 è	B-IDIOM	it
 ALLA	I-IDIOM	it
@@ -8416,6 +8745,7 @@ I	O	it
 NOSTRI	O	it
 PROBLEMI	O	it
 .	O	it
+
 CERTO	O	it
 OCCORRE	O	it
 LAVORARE	O	it
@@ -8499,6 +8829,7 @@ ELEZIONI	O	it
 DI	O	it
 PRIMAVERA	O	it
 .	O	it
+
 IL	O	it
 PONTE	O	it
 BETTOLA	O	it
@@ -8534,6 +8865,7 @@ VIABILITà	O	it
 DI	O	it
 ADRIA	O	it
 .	O	it
+
 Condivido	O	it
 al	O	it
 a	O	it
@@ -8556,6 +8888,7 @@ viabilità	O	it
 di	O	it
 Adria	O	it
 .	O	it
+
 è	O	it
 vero	O	it
 però	O	it
@@ -8617,6 +8950,7 @@ peraltro	O	it
 citar-	O	it
 li	O	it
 .	O	it
+
 A	O	it
 me	O	it
 la	O	it
@@ -8652,8 +8986,10 @@ solo	O	it
 ad	O	it
 avere	O	it
 .	O	it
+
 Grazie	O	it
 .	O	it
+
 Caro	O	it
 Panetto	O	it
 non	O	it
@@ -8681,6 +9017,7 @@ che	O	it
 è	O	it
 diverso	O	it
 .	O	it
+
 Dopotutti	O	it
 i	O	it
 soldi	O	it
@@ -8719,6 +9056,7 @@ che	O	it
 potrà	O	it
 creare	I-IDIOM	it
 .	O	it
+
 Citavo	O	it
 il	O	it
 Lidl	O	it
@@ -8767,6 +9105,7 @@ da	O	it
 ponte	O	it
 Amolara	O	it
 ?	O	it
+
 a	O	it
 meno	O	it
 che	O	it
@@ -8791,6 +9130,7 @@ era	O	it
 anche	O	it
 bella	O	it
 ?	O	it
+
 Chiarito	O	it
 questo	O	it
 le	O	it
@@ -8811,6 +9151,7 @@ ho	O	it
 sostenuto	O	it
 io	O	it
 .	O	it
+
 Infatti	O	it
 dice	O	it
 :	O	it
@@ -8834,6 +9175,7 @@ IN	O	it
 CAMPAGNA	O	it
 ELETTORALE	O	it
 "	O	it
+
 Questa	O	it
 cosa	O	it
 in	O	it
@@ -8891,6 +9233,7 @@ porseguiva	O	it
 per	O	it
 cavarzere	O	it
 .	O	it
+
 Ai	O	it
 A	O	it
 i	O	it
@@ -8924,6 +9267,7 @@ a	O	it
 la	O	it
 statale	O	it
 .	O	it
+
 Roba	O	it
 da	O	it
 sogni	O	it
@@ -8943,6 +9287,7 @@ la	O	it
 viabilita	O	it
 urbana	O	it
 .	O	it
+
 Qsto	O	it
 era	O	it
 razionalizzare	O	it
@@ -8951,6 +9296,7 @@ fuori	O	it
 il	O	it
 traffico	O	it
 .	O	it
+
 Però	O	it
 si	O	it
 sa	O	it
@@ -8966,6 +9312,7 @@ bettola	O	it
 tutto	O	it
 fermo	O	it
 ........	O	it
+
 Risposta	O	it
 :	O	it
 il	O	it
@@ -9010,6 +9357,7 @@ di	O	it
 demolire	O	it
 quello	O	it
 .	O	it
+
 Intanto	O	it
 siccome	O	it
 in	O	it
@@ -9078,6 +9426,7 @@ con	O	it
 il	O	it
 ponte	O	it
 .	O	it
+
 Adesso	O	it
 riassuminamo	O	it
 :	O	it
@@ -9154,6 +9503,7 @@ entra	O	it
 da	O	it
 chieppara	O	it
 .	O	it
+
 Secondo	O	it
 me	O	it
 c'	O	it
@@ -9170,6 +9520,7 @@ a	O	it
 conseguenti	O	it
 sprechi	O	it
 .	O	it
+
 Credo	O	it
 ma	O	it
 lo	O	it
@@ -9235,6 +9586,7 @@ un	O	it
 ponte	O	it
 fisso	O	it
 .........	O	it
+
 E	O	it
 anche	O	it
 qui	O	it
@@ -9259,6 +9611,7 @@ hanno	O	it
 pensato	O	it
 prima	O	it
 .	O	it
+
 Detto	O	it
 tutto	O	it
 questo	O	it
@@ -9357,6 +9710,7 @@ modo	O	it
 piu	O	it
 preciso	O	it
 .	O	it
+
 detto	O	it
 questo	O	it
 caro	O	it
@@ -9375,6 +9729,7 @@ per	O	it
 la	O	it
 viabilità	O	it
 ?	O	it
+
 magari	O	it
 diremo	O	it
 qualche	O	it
@@ -9392,6 +9747,7 @@ buono	O	it
 potrebbe	O	it
 uscire	O	it
 .	O	it
+
 Scarparo	O	it
 non	O	it
 spostare	O	it
@@ -9453,6 +9809,7 @@ mille	O	it
 altri	O	it
 esempi	O	it
 .	O	it
+
 Mestre	O	it
 aveva	O	it
 un	O	it
@@ -9508,6 +9865,7 @@ per	O	it
 capir-	O	it
 lo	O	it
 .	O	it
+
 Ora	O	it
 caro	O	it
 Ceccarello	O	it
@@ -9574,6 +9932,7 @@ per	O	it
 demolir-	O	it
 lo	O	it
 .	O	it
+
 Su	O	it
 una	O	it
 cosa	O	it
@@ -9624,6 +9983,7 @@ dove	O	it
 siamo	O	it
 bloccati	O	it
 ?	O	it
+
 siamo	O	it
 stanchi	O	it
 vogliamo	O	it
@@ -9652,6 +10012,7 @@ sinistra	O	it
 !	O	it
 !	O	it
 !	O	it
+
 I	O	it
 suoi	O	it
 confini	O	it
@@ -9670,6 +10031,7 @@ i	O	it
 paesi	O	it
 limitrofi	O	it
 .	O	it
+
 Ad	O	it
 oggi	O	it
 ,	O	it
@@ -9706,6 +10068,7 @@ Siria	O	it
 e	O	it
 Libano	O	it
 .	O	it
+
 Resta	O	it
 a	O	it
 tutt'	O	it
@@ -9740,6 +10103,7 @@ il	O	it
 2005	O	it
 )	O	it
 .	O	it
+
 La	O	it
 comunità	O	it
 internazionale	O	it
@@ -9799,6 +10163,7 @@ di	O	it
 il	O	it
 1948	O	it
 .	O	it
+
 Israele	O	it
 non	O	it
 si	B-IDIOM	it
@@ -9832,6 +10197,7 @@ la	O	it
 scuola	O	it
 "	O	it
 .	O	it
+
 E	O	it
 così	O	it
 in	O	it
@@ -9918,6 +10284,7 @@ non	O	it
 terrorismo	O	it
 "	O	it
 ?	O	it
+
 Dov'	O	it
 è	O	it
 la	O	it
@@ -9925,6 +10292,7 @@ differenza	O	it
 ?	O	it
 )	O	it
 .	O	it
+
 E	O	it
 poi	O	it
 c'	O	it
@@ -9933,6 +10301,7 @@ l'	O	it
 apparato	O	it
 ideologico	O	it
 .	O	it
+
 Scandalo	O	it
 per	O	it
 le	O	it
@@ -10037,11 +10406,13 @@ scudo	O	it
 "	O	it
 )	O	it
 .	O	it
+
 Sono	O	it
 un	O	it
 prete	O	it
 cattolico	O	it
 .	O	it
+
 Prego	O	it
 tutti	O	it
 i	O	it
@@ -10166,6 +10537,7 @@ o	O	it
 islamica	O	it
 )	O	it
 .	O	it
+
 Conosco	O	it
 la	O	it
 Bibbia	O	it
@@ -10282,6 +10654,7 @@ di	O	it
 iniquità	O	it
 "	O	it
 !	O	it
+
 Don	O	it
 Milani	O	it
 ,	O	it
@@ -10343,23 +10716,27 @@ stai	O	it
 ?	O	it
 "	O	it
 .	O	it
+
 Non	O	it
 importa	O	it
 la	O	it
 divisa	O	it
 .	O	it
+
 Un	O	it
 oppressore	O	it
 è	O	it
 un	O	it
 oppressore	O	it
 .	O	it
+
 Un	O	it
 assassino	O	it
 è	O	it
 un	O	it
 assassino	O	it
 .	O	it
+
 Un	O	it
 terrorista	O	it
 è	O	it
@@ -10413,6 +10790,7 @@ sconcertanti	O	it
 !	O	it
 )	O	it
 .	O	it
+
 Un	O	it
 uomo	O	it
 è	O	it
@@ -10478,6 +10856,7 @@ né	O	it
 appartenenze	O	it
 politiche	O	it
 .	O	it
+
 I	O	it
 bambini	O	it
 sono	O	it
@@ -10495,6 +10874,7 @@ o	O	it
 di	O	it
 musulmani	O	it
 .	O	it
+
 Hanno	O	it
 diritto	O	it
 di	O	it
@@ -10502,6 +10882,7 @@ vivere	O	it
 ,	O	it
 sempre	O	it
 .	O	it
+
 E	O	it
 non	O	it
 si	O	it
@@ -10513,6 +10894,7 @@ bambini	O	it
 ,	O	it
 mai	O	it
 .	O	it
+
 Grande	O	it
 Alessandro	O	it
 ,	O	it
@@ -10526,6 +10908,7 @@ ALESSANDRO	O	it
 MAGNO	O	it
 "	O	it
 .	O	it
+
 Ho	O	it
 letto	O	it
 sul	O	it
@@ -10597,6 +10980,7 @@ importante	O	it
 polo	O	it
 culturale	O	it
 .	O	it
+
 Con	O	it
 l'	O	it
 adozione	O	it
@@ -10634,6 +11018,7 @@ DI	O	it
 L'	O	it
 AMMINISTRAZIONE	O	it
 .	O	it
+
 Questa	O	it
 struttura	O	it
 ,	O	it
@@ -10662,16 +11047,19 @@ ed	O	it
 esposizioni	O	it
 "	O	it
 .	O	it
+
 Cavoli	O	it
 ,	O	it
 sei	O	it
 un	O	it
 genio	O	it
 .	O	it
+
 Come	O	it
 hai	O	it
 fatto	O	it
 ?	O	it
+
 Un	O	it
 regalo	O	it
 del	O	it
@@ -10687,6 +11075,7 @@ nulla	O	it
 in	I-IDIOM	it
 cambio	I-IDIOM	it
 !	O	it
+
 Se	O	it
 è	O	it
 vero	O	it
@@ -10711,6 +11100,7 @@ uno	O	it
 più	O	it
 bravo	O	it
 .	O	it
+
 Se	O	it
 invece	O	it
 ci	O	it
@@ -10727,12 +11117,14 @@ a	O	it
 le	O	it
 solite	O	it
 .	O	it
+
 Aspetto	O	it
 fiducioso	O	it
 una	O	it
 risposta	O	it
 esauriente	O	it
 .	O	it
+
 Fabio	O	it
 ,	O	it
 che	O	it
@@ -10836,6 +11228,7 @@ restauro	O	it
 vada	O	it
 fatto	O	it
 .	O	it
+
 Ora	O	it
 al	O	it
 a	O	it
@@ -10879,6 +11272,7 @@ su	O	it
 i	O	it
 garage	O	it
 .	O	it
+
 Lasciando	O	it
 da	O	it
 parte	O	it
@@ -10923,6 +11317,7 @@ linea	O	it
 di	O	it
 principio	O	it
 .	O	it
+
 Da	O	it
 ultimo	O	it
 la	O	it
@@ -10975,6 +11370,7 @@ affare	O	it
 tutto	O	it
 fatto	O	it
 .	O	it
+
 La	O	it
 Regione	O	it
 VENETO	O	it
@@ -11041,6 +11437,7 @@ spese	O	it
 in	O	it
 questione	O	it
 .	O	it
+
 A	O	it
 questo	O	it
 proposito	O	it
@@ -11108,6 +11505,7 @@ la	O	it
 mobilità	O	it
 comunale	O	it
 .	O	it
+
 In	O	it
 tempi	O	it
 in	O	it
@@ -11179,6 +11577,7 @@ mondo	O	it
 ci	O	it
 sia	O	it
 .	O	it
+
 E	O	it
 il	O	it
 senso	O	it
@@ -11204,6 +11603,7 @@ salverà	O	it
 la	O	it
 sua	O	it
 .	O	it
+
 io	O	it
 invece	O	it
 consiglio	O	it
@@ -11242,6 +11642,7 @@ Golden	O	it
 Globe	O	it
 )	O	it
 .	O	it
+
 Ti	O	it
 fa	O	it
 divertire	O	it
@@ -11275,6 +11676,7 @@ di	O	it
 menti	O	it
 umane	O	it
 .	O	it
+
 Si	O	it
 lascia	O	it
 il	O	it
@@ -11317,6 +11719,7 @@ il	O	it
 proprio	O	it
 PARADISO	O	it
 .	O	it
+
 Ed	O	it
 ecco	O	it
 allora	O	it
@@ -11340,6 +11743,7 @@ di	O	it
 le	O	it
 idee	O	it
 .	O	it
+
 Ebbene	O	it
 si	O	it
 ,	O	it
@@ -11363,6 +11767,7 @@ già	O	it
 54	O	it
 membri	O	it
 .	O	it
+
 Certo	O	it
 ,	O	it
 nel	O	it
@@ -11376,6 +11781,7 @@ in	O	it
 maniera	O	it
 ironica	O	it
 .	O	it
+
 Ma	O	it
 alzo	B-IDIOM	it
 le	I-IDIOM	it
@@ -11454,6 +11860,7 @@ d'	O	it
 arredamento	O	it
 "	O	it
 .	O	it
+
 direi	O	it
 che	O	it
 dopo	O	it
@@ -11479,6 +11886,7 @@ su	I-IDIOM	it
 la	I-IDIOM	it
 lingua	I-IDIOM	it
 .	O	it
+
 in	O	it
 qualsivoglia	O	it
 caso	O	it
@@ -11522,6 +11930,7 @@ di	O	it
 il	O	it
 risultato	O	it
 .	O	it
+
 quando	O	it
 nel	O	it
 in	O	it
@@ -11561,6 +11970,7 @@ di	O	it
 nuova	O	it
 estetica	O	it
 .	O	it
+
 a	B-IDIOM	it
 guardar-	I-IDIOM	it
 lo	O	it
@@ -11604,6 +12014,7 @@ l'	O	it
 altro	O	it
 pezzo	O	it
 .	O	it
+
 positivo	O	it
 però	O	it
 è	O	it
@@ -11628,6 +12039,7 @@ avrebbe	O	it
 ricevuto	O	it
 critiche	O	it
 .	O	it
+
 e	O	it
 positivo	O	it
 è	O	it
@@ -11682,6 +12094,7 @@ con	O	it
 le	O	it
 pinne	O	it
 .	O	it
+
 e	O	it
 quelli	O	it
 all'	O	it
@@ -11698,6 +12111,7 @@ di	O	it
 guerre	O	it
 stellari	O	it
 .	O	it
+
 scusate	O	it
 l'	O	it
 ironia	O	it
@@ -11731,6 +12145,7 @@ a	O	it
 l'	O	it
 avanguardia	O	it
 .	O	it
+
 Da	O	it
 ben	O	it
 13	O	it
@@ -11746,6 +12161,7 @@ di	O	it
 l'	O	it
 urbanistica	O	it
 .	O	it
+
 Ebbene	O	it
 ,	O	it
 esprimo	O	it
@@ -11759,6 +12175,7 @@ Adria	O	it
 stata	O	it
 stravolta	O	it
 .	O	it
+
 Rigoni	O	it
 deve	O	it
 assumer-	B-IDIOM	it
@@ -11776,6 +12193,7 @@ come	O	it
 il	O	it
 Papa	O	it
 ?	O	it
+
 Ha	O	it
 concesso	O	it
 alle	O	it
@@ -11796,6 +12214,7 @@ i	O	it
 singoli	O	it
 cittadini	O	it
 .	O	it
+
 Le	O	it
 imprese	O	it
 hanno	O	it
@@ -11828,6 +12247,7 @@ senza	O	it
 alcuna	O	it
 osservazione	O	it
 .	O	it
+
 Cosa	O	it
 dice	O	it
 della	O	it
@@ -11848,6 +12268,7 @@ a	O	it
 il	O	it
 Porto	O	it
 ?	O	it
+
 Pensiamo	O	it
 :	O	it
 Rigoni	O	it
@@ -11905,6 +12326,7 @@ gestito	O	it
 da	O	it
 Rigoni	O	it
 .	O	it
+
 Bravo	O	it
 assessore	O	it
 :	O	it
@@ -11968,6 +12390,7 @@ Stalingrado	O	it
 coerenza	O	it
 architettonica	O	it
 ?	O	it
+
 Macchè	O	it
 ,	O	it
 scelte	O	it
@@ -12010,6 +12433,7 @@ che	O	it
 ha	O	it
 fatto	O	it
 .	O	it
+
 Le	O	it
 sue	O	it
 scelte	O	it
@@ -12033,6 +12457,7 @@ cementato	O	it
 le	O	it
 aiuole	O	it
 ?	O	it
+
 è	O	it
 logico	O	it
 che	O	it
@@ -12085,6 +12510,7 @@ fa	O	it
 l'	O	it
 assessore	O	it
 .	O	it
+
 Più	O	it
 presto	O	it
 se	O	it
@@ -12097,6 +12523,7 @@ la	O	it
 città	O	it
 respira	O	it
 .	O	it
+
 Tralascio	O	it
 le	O	it
 ilazioni	O	it
@@ -12108,12 +12535,14 @@ pervade	O	it
 certi	O	it
 commenti	O	it
 .	O	it
+
 Stiamo	O	it
 alle	O	it
 a	O	it
 le	O	it
 questioni	O	it
 .	O	it
+
 La	O	it
 parte	O	it
 interrata	O	it
@@ -12181,6 +12610,7 @@ a	O	it
 la	O	it
 Pretura	O	it
 .	O	it
+
 La	O	it
 cubatura	O	it
 utilizzata	O	it
@@ -12233,6 +12663,7 @@ impliciti	O	it
 ed	O	it
 espliciti	O	it
 .	O	it
+
 è	O	it
 prevista	O	it
 una	O	it
@@ -12274,6 +12705,7 @@ di	O	it
 San	O	it
 Nicola	O	it
 .	O	it
+
 L'	O	it
 utilizzo	O	it
 della	O	it
@@ -12308,6 +12740,7 @@ e	O	it
 bivacchi	O	it
 incontrollati	O	it
 .	O	it
+
 Colgo	B-IDIOM	it
 l'	I-IDIOM	it
 occasione	I-IDIOM	it
@@ -12358,6 +12791,7 @@ da	O	it
 i	O	it
 professionisti	O	it
 .	O	it
+
 Il	O	it
 tutto	O	it
 gestito	O	it
@@ -12388,6 +12822,7 @@ senza	O	it
 assolutamente	O	it
 intervenire	O	it
 .	O	it
+
 Non	O	it
 ci	O	it
 siamo	O	it
@@ -12411,6 +12846,7 @@ dietrologie	O	it
 e	O	it
 speculazioni	O	it
 .	O	it
+
 Ricordo	O	it
 che	O	it
 il	O	it
@@ -12500,6 +12936,7 @@ un	O	it
 polo	O	it
 culturale	O	it
 .	O	it
+
 Rigoni	O	it
 afferma	O	it
 che	O	it
@@ -12564,6 +13001,7 @@ di	O	it
 la	O	it
 città	O	it
 .	O	it
+
 Palazzo	O	it
 Bocchi	O	it
 ,	O	it
@@ -12592,6 +13030,7 @@ e	O	it
 legalmente	O	it
 rappresentata	O	it
 .	O	it
+
 Nessuno	O	it
 ha	O	it
 mai	O	it
@@ -12622,6 +13061,7 @@ abbastanza	O	it
 di	O	it
 recente	O	it
 .	O	it
+
 Che	O	it
 la	O	it
 pubblica	O	it
@@ -12643,6 +13083,7 @@ disporre	O	it
 mi	O	it
 meraviglia	O	it
 .	O	it
+
 Tengo	O	it
 infatti	O	it
 a	O	it
@@ -12689,6 +13130,7 @@ la	O	it
 fondazione	O	it
 stessa	O	it
 .	O	it
+
 Quanto	O	it
 poi	O	it
 al	O	it
@@ -12738,6 +13180,7 @@ di	O	it
 la	O	it
 Fondazione.	O	it
 "	O	it
+
 "	O	it
 Leggo	O	it
 addesso	O	it
@@ -12757,6 +13200,7 @@ di	O	it
 il	O	it
 blog	O	it
 .	O	it
+
 Affermi	O	it
 che	O	it
 c'	O	it
@@ -12770,6 +13214,7 @@ IP	O	it
 di	O	it
 tutti	O	it
 .	O	it
+
 Quindi	O	it
 ,	O	it
 anche	O	it
@@ -12799,6 +13244,7 @@ quale	O	it
 pc	O	it
 proviene	O	it
 .	O	it
+
 Penso	O	it
 che	O	it
 avresti	O	it
@@ -12822,6 +13268,7 @@ sei	O	it
 proptio	O	it
 TU	O	it
 .	O	it
+
 Il	O	it
 blog	O	it
 è	O	it
@@ -12859,6 +13306,7 @@ querela	O	it
 o	O	it
 denuncia	O	it
 .	O	it
+
 Quanto	O	it
 sarebbe	O	it
 bello	O	it
@@ -12877,6 +13325,7 @@ dopo	O	it
 cosa	O	it
 succederebbe	O	it
 ?	O	it
+
 In	O	it
 questa	O	it
 nostra	O	it
@@ -12899,6 +13348,7 @@ i	O	it
 tuoi	O	it
 familiari	O	it
 .	O	it
+
 Immagina	O	it
 che	O	it
 tutti	O	it
@@ -12924,6 +13374,7 @@ nostro	O	it
 pontificato	O	it
 assessore	O	it
 ?	O	it
+
 La	O	it
 libertà	O	it
 d'	O	it
@@ -12932,6 +13383,7 @@ espressione	O	it
 pura	O	it
 teoria	O	it
 .	O	it
+
 Termino	O	it
 :	O	it
 mi	O	it
@@ -12962,6 +13414,7 @@ in	O	it
 questi	O	it
 anni	O	it
 .	O	it
+
 Non	O	it
 ha	O	it
 trovato	O	it
@@ -12997,6 +13450,7 @@ ne	O	it
 sarebbero	O	it
 conseguite	O	it
 .	O	it
+
 Bravo	O	it
 il	O	it
 nostro	O	it
@@ -13013,6 +13467,7 @@ intelligente	O	it
 e	O	it
 furbo	O	it
 .	O	it
+
 Sottolineo	O	it
 ancora	O	it
 una	O	it
@@ -13050,6 +13505,7 @@ i	O	it
 nuovi	O	it
 insediamenti	O	it
 .	O	it
+
 Come	O	it
 si	O	it
 è	O	it
@@ -13065,6 +13521,7 @@ a	I-IDIOM	it
 la	I-IDIOM	it
 giornata	I-IDIOM	it
 .	O	it
+
 Pensate	O	it
 ,	O	it
 cari	O	it
@@ -13087,6 +13544,7 @@ incisio	O	it
 l'	O	it
 ass	O	it
 .	O	it
+
 Gianni	O	it
 Ferro	O	it
 :	O	it
@@ -13131,6 +13589,7 @@ di	O	it
 la	O	it
 sinistra	O	it
 ?	O	it
+
 Lui	O	it
 non	O	it
 rappresenta	O	it
@@ -13151,6 +13610,7 @@ zitti	O	it
 ,	O	it
 perché	O	it
 ?	O	it
+
 Ferro	O	it
 ,	O	it
 chiamato	O	it
@@ -13167,19 +13627,23 @@ sinistra	O	it
 :	O	it
 quando	O	it
 ?	O	it
+
 dove	O	it
 ?	O	it
+
 che	O	it
 cosa	O	it
 ha	O	it
 fatto	O	it
 ?	O	it
+
 qual	O	it
 è	O	it
 la	O	it
 sua	O	it
 storia	O	it
 ?	O	it
+
 Tutto	O	it
 ridicolo	O	it
 e	O	it
@@ -13226,6 +13690,7 @@ da	O	it
 la	O	it
 boscaglia	O	it
 .	O	it
+
 Ma	O	it
 allora	O	it
 ,	O	it
@@ -13251,6 +13716,7 @@ o	O	it
 troppo	O	it
 offensivo	O	it
 ?	O	it
+
 Dico	O	it
 male	O	it
 se	O	it
@@ -13268,6 +13734,7 @@ in	O	it
 modo	O	it
 orribile	O	it
 ?	O	it
+
 Non	O	it
 parliamo	O	it
 poi	O	it
@@ -13304,6 +13771,7 @@ che	O	it
 fa	I-IDIOM	it
 comodo	I-IDIOM	it
 .	O	it
+
 Basta	O	it
 per	O	it
 oggi	O	it
@@ -13315,6 +13783,7 @@ detto	O	it
 anche	O	it
 troppo.	O	it
 "	O	it
+
 L'	O	it
 associazione	O	it
 ambientalista	O	it
@@ -13377,6 +13846,7 @@ ossigenante	O	it
 potremo	O	it
 aggiungere	O	it
 .	O	it
+
 Entrambe	O	it
 avrebbero	O	it
 dovuto	O	it
@@ -13407,6 +13877,7 @@ da	O	it
 la	O	it
 Provincia	O	it
 .	O	it
+
 Nessun	O	it
 cenno	O	it
 ,	O	it
@@ -13416,6 +13887,7 @@ si	O	it
 è	O	it
 percepito	O	it
 .	O	it
+
 Soffriamo	O	it
 di	O	it
 mancata	O	it
@@ -13449,6 +13921,7 @@ preziosi	O	it
 quello	O	it
 ambientale	O	it
 .	O	it
+
 Lo	O	it
 consideriamo	O	it
 spesso	O	it
@@ -13465,6 +13938,7 @@ lo	O	it
 sviluppo	O	it
 economico	O	it
 .	O	it
+
 Questo	O	it
 può	O	it
 spiegare	O	it
@@ -13508,6 +13982,7 @@ i	O	it
 lavori	O	it
 pubblici	O	it
 .	O	it
+
 C'	O	it
 è	O	it
 un	O	it
@@ -13525,6 +14000,7 @@ e	O	it
 da	O	it
 pigrizie	O	it
 .	O	it
+
 Nessuno	O	it
 può	O	it
 smentire	O	it
@@ -13585,6 +14061,7 @@ gas	O	it
 metano	O	it
 )	O	it
 .	O	it
+
 Ovviamente	O	it
 ,	O	it
 tale	O	it
@@ -13609,6 +14086,7 @@ ci	O	it
 stiamo	O	it
 interessando	O	it
 .	O	it
+
 Altra	O	it
 cosa	O	it
 ,	O	it
@@ -13712,6 +14190,7 @@ N2O	O	it
 ,	O	it
 eccetera	O	it
 .	O	it
+
 Quindi	O	it
 ,	O	it
 serve	O	it
@@ -13790,6 +14269,7 @@ Paesi	O	it
 di	O	it
 provenienza	O	it
 .	O	it
+
 La	O	it
 differenza	O	it
 –	O	it
@@ -13835,6 +14315,7 @@ che	O	it
 non	O	it
 esistano	O	it
 .	O	it
+
 è	O	it
 purtroppo	O	it
 vero	O	it
@@ -13890,6 +14371,7 @@ i	O	it
 combustibili	O	it
 fossili	O	it
 .	O	it
+
 L'	O	it
 inganno	O	it
 tuttavia	O	it
@@ -13937,6 +14419,7 @@ con	O	it
 quale	O	it
 risultato	O	it
 ?	O	it
+
 Ottenere	O	it
 l'	O	it
 equivalente	O	it
@@ -13955,6 +14438,7 @@ benzina	O	it
 o	O	it
 metano	O	it
 .	O	it
+
 Cioè	O	it
 i	O	it
 combustibili	O	it
@@ -13963,6 +14447,7 @@ si	O	it
 vorrebbero	O	it
 sostituire	O	it
 .	O	it
+
 Se	O	it
 invece	O	it
 parliamo	O	it
@@ -14059,6 +14544,7 @@ Euro	O	it
 per	O	it
 tonnellata	O	it
 .	O	it
+
 Questo	O	it
 ,	O	it
 proprio	O	it
@@ -14088,6 +14574,7 @@ notevolmente	O	it
 più	O	it
 bassi	O	it
 .	O	it
+
 Tuttavia	O	it
 questa	O	it
 è	O	it
@@ -14115,6 +14602,7 @@ di	O	it
 emissione	O	it
 "	O	it
 .	O	it
+
 Io	O	it
 ci	O	it
 sto	O	it
@@ -14151,6 +14639,7 @@ importanti	O	it
 Paesi	O	it
 Ue	O	it
 .	O	it
+
 Ma	O	it
 è	O	it
 un	O	it
@@ -14176,6 +14665,7 @@ su	O	it
 il	O	it
 tema	O	it
 .	O	it
+
 Anche	O	it
 per	O	it
 quanto	O	it
@@ -14190,6 +14680,7 @@ alle	O	it
 a	I-IDIOM	it
 le	O	it
 ...	O	it
+
 Ritengo	O	it
 però	O	it
 che	O	it
@@ -14213,6 +14704,7 @@ nulla	O	it
 di	O	it
 costruttivo	O	it
 .	O	it
+
 Anch'	O	it
 io	O	it
 sto	O	it
@@ -14243,6 +14735,7 @@ a	O	it
 il	O	it
 dialogo	O	it
 .	O	it
+
 Se	O	it
 dovessero	O	it
 arrivare	O	it
@@ -14259,6 +14752,7 @@ ad	O	it
 una	O	it
 soluzione	O	it
 .	O	it
+
 Come	O	it
 stai	O	it
 impostando	O	it
@@ -14283,6 +14777,7 @@ di	O	it
 discussione	O	it
 costruttivo	O	it
 .	O	it
+
 Il	O	it
 mio	O	it
 esempio	O	it
@@ -14301,6 +14796,7 @@ non	O	it
 una	O	it
 balla	O	it
 .	O	it
+
 La	O	it
 storia	O	it
 parla	O	it
@@ -14311,6 +14807,7 @@ e	O	it
 successivi	O	it
 scongelamenti	O	it
 .	O	it
+
 Per	O	it
 non	O	it
 parlare	O	it
@@ -14321,6 +14818,7 @@ periodo	O	it
 glaciale	O	it
 preistorico	O	it
 .	O	it
+
 Ma	O	it
 non	O	it
 andiamo	B-IDIOM	it
@@ -14334,6 +14832,7 @@ in	O	it
 il	O	it
 discorso	O	it
 .	O	it
+
 Credo	O	it
 che	O	it
 nessun	O	it
@@ -14348,6 +14847,7 @@ che	O	it
 ho	O	it
 citato	O	it
 .	O	it
+
 Ricordo	O	it
 ,	O	it
 inoltre	O	it
@@ -14425,6 +14925,7 @@ di	O	it
 il	O	it
 Messico	O	it
 .	O	it
+
 Questo	O	it
 arretramento	O	it
 provocherebbe	O	it
@@ -14453,6 +14954,7 @@ aumento	O	it
 di	O	it
 ghiacciai	O	it
 .	O	it
+
 Circa	O	it
 50	O	it
 anni	O	it
@@ -14556,6 +15058,7 @@ il	O	it
 gelo	O	it
 )	O	it
 .	O	it
+
 Poi	O	it
 l'	O	it
 acqua	O	it
@@ -14578,6 +15081,7 @@ golfo	O	it
 ritornata	O	it
 normale	O	it
 .	O	it
+
 Qualche	O	it
 giorno	O	it
 fa	O	it
@@ -14626,6 +15130,7 @@ sud	O	it
 è	O	it
 aumentata	O	it
 .	O	it
+
 Mi	O	it
 domando	O	it
 se	O	it
@@ -14634,6 +15139,7 @@ voglia	O	it
 dire	O	it
 qualcosa	O	it
 .	O	it
+
 Il	O	it
 buco	O	it
 dell'	O	it
@@ -14648,8 +15154,10 @@ sia	O	it
 moderatamente	O	it
 richiuso	O	it
 .	O	it
+
 Oooops	O	it
 .	O	it
+
 Credo	O	it
 che	O	it
 queste	O	it
@@ -14698,6 +15206,7 @@ la	O	it
 nostra	O	it
 volontà	O	it
 .	O	it
+
 Con	O	it
 questo	O	it
 non	O	it
@@ -14725,11 +15234,13 @@ centrale	O	it
 a	O	it
 carbone	O	it
 .	O	it
+
 No	O	it
 ,	O	it
 è	O	it
 importante	O	it
 .	O	it
+
 Perchè	O	it
 ,	O	it
 (	O	it
@@ -14769,6 +15280,7 @@ sua	O	it
 bicicletta	O	it
 nuova	O	it
 ?	O	it
+
 Credo	O	it
 manchi	O	it
 soprattutto	O	it
@@ -14803,6 +15315,7 @@ una	O	it
 scelta	O	it
 innovativa	O	it
 .	O	it
+
 Prima	O	it
 o	O	it
 dopo	O	it
@@ -14821,6 +15334,7 @@ di	O	it
 le	O	it
 cose	O	it
 .	O	it
+
 Prima	O	it
 di	O	it
 cambiare	O	it
@@ -14830,6 +15344,7 @@ sbattere	I-IDIOM	it
 il	I-IDIOM	it
 naso	I-IDIOM	it
 .	O	it
+
 La	O	it
 questione	O	it
 ambientale	O	it
@@ -14883,6 +15398,7 @@ il	O	it
 problema	O	it
 ambientale	O	it
 .	O	it
+
 Sto	O	it
 prendendo-	O	it
 la	O	it
@@ -14894,6 +15410,7 @@ largo	O	it
 ?	O	it
 ?	O	it
 ?	O	it
+
 Con	O	it
 la	O	it
 lettera	O	it
@@ -14944,6 +15461,7 @@ le	O	it
 PMI	O	it
 locali	O	it
 .	O	it
+
 Tale	O	it
 situazione	O	it
 contrasta	O	it
@@ -15010,6 +15528,7 @@ e	O	it
 sviluppar-	I-IDIOM	it
 si	I-IDIOM	it
 "	O	it
+
 Infatti	O	it
 il	O	it
 punto	O	it
@@ -15080,6 +15599,7 @@ ad	O	it
 €	O	it
 500.000	O	it
 ,00.	O	it
+
 In	O	it
 caso	O	it
 di	O	it
@@ -15118,6 +15638,7 @@ almeno	O	it
 il	O	it
 60%	O	it
 "	O	it
+
 Siccome	O	it
 sia	O	it
 su	O	it
@@ -15141,6 +15662,7 @@ esprimere	O	it
 alcune	O	it
 considerazioni	O	it
 .	O	it
+
 Premesso	O	it
 che	O	it
 appoggiamo	O	it
@@ -15201,6 +15723,7 @@ rischio	I-IDIOM	it
 di	O	it
 default	O	it
 .	O	it
+
 Abbiamo	O	it
 sentito	O	it
 da	O	it
@@ -15264,6 +15787,7 @@ da	O	it
 imprese	O	it
 strutturate	O	it
 .	O	it
+
 Basti	O	it
 ricordare	O	it
 che	O	it
@@ -15309,6 +15833,7 @@ spesa	O	it
 di	O	it
 30.000	O	it
 €.	O	it
+
 Ma	O	it
 non	O	it
 era	B-IDIOM	it
@@ -15319,6 +15844,7 @@ in	O	it
 argomenti	O	it
 tecnici	O	it
 .	O	it
+
 Ho	O	it
 anche	O	it
 capito	O	it
@@ -15355,6 +15881,7 @@ risolvere	O	it
 diversi	O	it
 problemi	O	it
 .	O	it
+
 Probabilmente	O	it
 è	O	it
 vero	O	it
@@ -15392,6 +15919,7 @@ piccole	O	it
 imprese	O	it
 locali	O	it
 .	O	it
+
 Ho	O	it
 interpellato	O	it
 il	O	it
@@ -15452,6 +15980,7 @@ e	O	it
 le	O	it
 imprese	O	it
 .	O	it
+
 Ripeto	O	it
 che	O	it
 la	O	it
@@ -15481,6 +16010,7 @@ gli	O	it
 altri	O	it
 servizi	O	it
 .	O	it
+
 Da	O	it
 parte	O	it
 nostra	O	it
@@ -15502,6 +16032,7 @@ bando	O	it
 così	O	it
 riemesso	O	it
 .	O	it
+
 Non	O	it
 si	B-IDIOM	it
 tratta	I-IDIOM	it
@@ -15543,10 +16074,12 @@ altrimenti	O	it
 non	O	it
 avrebbero	O	it
 .	O	it
+
 Niente	O	it
 di	O	it
 più	O	it
 .	O	it
+
 Purtroppo	O	it
 il	O	it
 tempo	O	it
@@ -15561,11 +16094,13 @@ agire	O	it
 in	O	it
 fretta	O	it
 .	O	it
+
 Grazie	O	it
 per	O	it
 l'	O	it
 accoglienza	O	it
 .	O	it
+
 Le	O	it
 tecniche	O	it
 di	O	it
@@ -15773,6 +16308,7 @@ in	O	it
 il	O	it
 giacimento	O	it
 .	O	it
+
 Questa	O	it
 è	O	it
 la	O	it
@@ -15789,6 +16325,7 @@ di	O	it
 via	O	it
 Panisperna	O	it
 .	O	it
+
 Le	O	it
 centrali	O	it
 nucleari	O	it
@@ -15824,6 +16361,7 @@ video	O	it
 anni	O	it
 '80	O	it
 .	O	it
+
 Le	O	it
 marce	O	it
 del	O	it
@@ -15839,6 +16377,7 @@ sono	O	it
 archeologia	O	it
 storica	O	it
 .	O	it
+
 Il	O	it
 nucleare	O	it
 ,	O	it
@@ -15859,6 +16398,7 @@ più	O	it
 un	O	it
 tabù	O	it
 .	O	it
+
 Lo	O	it
 dicono	O	it
 gli	O	it
@@ -15869,10 +16409,12 @@ tutto	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 Qualcosa	O	it
 è	O	it
 cambiato	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 il	O	it
@@ -15890,6 +16432,7 @@ ci	O	it
 siamo	O	it
 sbagliati	O	it
 .	O	it
+
 Le	O	it
 centrali	O	it
 nucleari	O	it
@@ -15903,6 +16446,7 @@ di	O	it
 anidride	O	it
 carbonica	O	it
 .	O	it
+
 Il	O	it
 concetto	O	it
 è	O	it
@@ -15924,6 +16468,7 @@ caro	O	it
 vecchio	O	it
 atomo	O	it
 .	O	it
+
 È	O	it
 quello	O	it
 che	O	it
@@ -15938,6 +16483,7 @@ inglesi	O	it
 pentiti	O	it
 »	O	it
 .	O	it
+
 Stephen	O	it
 Tindale	O	it
 ,	O	it
@@ -15961,6 +16507,7 @@ una	O	it
 conversione	O	it
 religiosa	O	it
 .	O	it
+
 Essere	O	it
 contro	O	it
 il	O	it
@@ -15991,6 +16538,7 @@ cambiamenti	O	it
 climatici	O	it
 »	O	it
 .	O	it
+
 E	O	it
 chi	O	it
 sono	O	it
@@ -15998,6 +16546,7 @@ gli	O	it
 altri	O	it
 tre	O	it
 ?	O	it
+
 Lord	O	it
 Chris	O	it
 Smith	O	it
@@ -16021,6 +16570,7 @@ per	O	it
 l'	O	it
 ambiente	O	it
 .	O	it
+
 Chris	O	it
 Goodall	O	it
 ,	O	it
@@ -16063,6 +16613,7 @@ finiremo	B-IDIOM	it
 tutti	O	it
 arrosto	I-IDIOM	it
 .	O	it
+
 Questi	O	it
 quattro	O	it
 cavalieri	O	it
@@ -16092,6 +16643,7 @@ mortali	O	it
 il	O	it
 nucleare	O	it
 .	O	it
+
 Lynas	O	it
 arriva	B-IDIOM	it
 perfino	O	it
@@ -16136,6 +16688,7 @@ il	O	it
 prezzo	O	it
 »	O	it
 .	O	it
+
 Gli	O	it
 ecologisti	O	it
 si	B-IDIOM	it
@@ -16157,6 +16710,7 @@ centrali	O	it
 a	O	it
 carbone	O	it
 .	O	it
+
 Quelle	O	it
 che	O	it
 hanno	O	it
@@ -16167,6 +16721,7 @@ di	O	it
 nebbia	O	it
 verde	O	it
 .	O	it
+
 Tutti	O	it
 gli	O	it
 anti	O	it
@@ -16181,6 +16736,7 @@ di	O	it
 un	O	it
 pregiudizio	O	it
 .	O	it
+
 Gwyneth	O	it
 Cravens	O	it
 ,	O	it
@@ -16206,6 +16762,7 @@ di	O	it
 New	O	it
 York	O	it
 .	O	it
+
 È	O	it
 cresciuta	O	it
 a	O	it
@@ -16265,6 +16822,7 @@ da	O	it
 le	O	it
 radiazioni	O	it
 .	O	it
+
 Poi	O	it
 ho	O	it
 scoperto	O	it
@@ -16274,12 +16832,14 @@ fatti	O	it
 le	O	it
 cifre	O	it
 .	O	it
+
 E	O	it
 ho	O	it
 cambiato	O	it
 idea	O	it
 »	O	it
 .	O	it
+
 La	O	it
 luce	O	it
 arriva	O	it
@@ -16310,6 +16870,7 @@ il	O	it
 Nuovo	O	it
 Messico	O	it
 .	O	it
+
 «	O	it
 Un	O	it
 giorno	O	it
@@ -16327,6 +16888,7 @@ in	I-IDIOM	it
 completo	O	it
 disaccordo	I-IDIOM	it
 .	O	it
+
 Lui	O	it
 mi	O	it
 suggerì	O	it
@@ -16339,12 +16901,14 @@ i	O	it
 miei	O	it
 occhi	O	it
 .	O	it
+
 È	O	it
 quello	O	it
 che	O	it
 feci	O	it
 »	O	it
 .	O	it
+
 Il	O	it
 risultato	O	it
 è	O	it
@@ -16367,6 +16931,7 @@ rischi	O	it
 di	O	it
 malattie	O	it
 cardio-respiratorie.	O	it
+
 L'	O	it
 esempio	O	it
 migliore	O	it
@@ -16374,6 +16939,7 @@ migliore	O	it
 la	O	it
 Francia	O	it
 .	O	it
+
 «	O	it
 Il	O	it
 cielo	O	it
@@ -16386,6 +16952,7 @@ oggi	O	it
 pulito	O	it
 »	O	it
 .	O	it
+
 >	O	it
 "	O	it
 sono	O	it
@@ -16484,6 +17051,7 @@ gruppi	O	it
 di	O	it
 potere.	O	it
 "	O	it
+
 Finalmente	O	it
 una	O	it
 ventata	O	it
@@ -16492,6 +17060,7 @@ freschezza	O	it
 !	O	it
 !	O	it
 !	O	it
+
 la	O	it
 Marcegaglia	O	it
 figlia	O	it
@@ -16576,6 +17145,7 @@ reato	O	it
 di	O	it
 corruzzione	O	it
 ;	O	it
+
 Allora	O	it
 finalmente	O	it
 mi	O	it
@@ -16775,6 +17345,7 @@ usciva	O	it
 questo	O	it
 articolo	O	it
 :	O	it
+
 DAL	O	it
 DA	O	it
 IL	O	it
@@ -16794,6 +17365,7 @@ una	O	it
 drammatica	O	it
 realtà	O	it
 .	O	it
+
 L'	O	it
 amministrazione	O	it
 Bush	O	it
@@ -16846,6 +17418,7 @@ a	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 Afferma	O	it
 che	O	it
 per	O	it
@@ -16871,6 +17444,7 @@ cemento	O	it
 sarebbe	O	it
 sicuro	O	it
 .	O	it
+
 Ma	O	it
 una	O	it
 sentenza	O	it
@@ -16907,6 +17481,7 @@ un	O	it
 miracolo	O	it
 tecnologico	O	it
 .	O	it
+
 La	O	it
 Corte	O	it
 si	B-IDIOM	it
@@ -16951,6 +17526,7 @@ tra	O	it
 mila	O	it
 anni	O	it
 .	O	it
+
 Chi	O	it
 si	B-IDIOM	it
 trovasse	I-IDIOM	it
@@ -16973,6 +17549,7 @@ a	O	it
 il	O	it
 consentito	O	it
 .	O	it
+
 E	O	it
 col	O	it
 con	O	it
@@ -17005,6 +17582,7 @@ sempre	O	it
 più	O	it
 ampia	O	it
 .	O	it
+
 Basando-	B-IDIOM	it
 si	I-IDIOM	it
 su	I-IDIOM	it
@@ -17050,6 +17628,7 @@ di	O	it
 la	O	it
 montagna	O	it
 .	O	it
+
 L'	O	it
 ha	O	it
 fermata	O	it
@@ -17085,6 +17664,7 @@ il	O	it
 Sierra	O	it
 Club	O	it
 .	O	it
+
 Il	O	it
 Nevada	O	it
 ,	O	it
@@ -17113,6 +17693,7 @@ progetto	O	it
 è	O	it
 incostituzionale	O	it
 .	O	it
+
 La	O	it
 Corte	O	it
 ne	O	it
@@ -17158,6 +17739,7 @@ le	O	it
 scienze	O	it
 »	O	it
 .	O	it
+
 La	O	it
 Corte	O	it
 non	O	it
@@ -17183,6 +17765,7 @@ Congresso	O	it
 di	O	it
 decidere	O	it
 .	O	it
+
 Non	O	it
 è	O	it
 escluso	O	it
@@ -17227,6 +17810,7 @@ tempo	O	it
 ragionevole	O	it
 »	O	it
 .	O	it
+
 La	O	it
 vicenda	O	it
 ha	O	it
@@ -17236,6 +17820,7 @@ Usa	O	it
 in	I-IDIOM	it
 due	I-IDIOM	it
 .	O	it
+
 Mentre	O	it
 il	O	it
 Nevada	O	it
@@ -17283,6 +17868,7 @@ il	O	it
 monte	O	it
 Yucca	O	it
 .	O	it
+
 Ma	O	it
 chiedono	O	it
 che	O	it
@@ -17330,6 +17916,7 @@ segua	O	it
 le	O	it
 direttive	O	it
 .	O	it
+
 Nella	O	it
 In	O	it
 la	O	it
@@ -17364,6 +17951,7 @@ comprensione	O	it
 umana	O	it
 »	O	it
 .	O	it
+
 La	O	it
 scadenza	O	it
 fissata	O	it
@@ -17424,6 +18012,7 @@ le	O	it
 loro	O	it
 scorie	O	it
 .	O	it
+
 La	O	it
 loro	O	it
 abilitazione	O	it
@@ -17451,6 +18040,7 @@ di	O	it
 tiro	O	it
 atomico	O	it
 .	O	it
+
 Lo	O	it
 spettro	O	it
 delle	O	it
@@ -17501,6 +18091,7 @@ una	O	it
 massiccia	O	it
 evacuazione	O	it
 .	O	it
+
 La	O	it
 costruzione	O	it
 di	O	it
@@ -17523,6 +18114,7 @@ Chernobyl	O	it
 in	O	it
 Ucraina	O	it
 .	O	it
+
 Negli	O	it
 In	O	it
 gli	O	it
@@ -17554,6 +18146,7 @@ cui	O	it
 alcune	O	it
 datate	O	it
 .	O	it
+
 La	O	it
 pubblica	O	it
 opinione	O	it
@@ -17573,6 +18166,7 @@ di	O	it
 energia	O	it
 atomica	O	it
 .	O	it
+
 Questa	O	it
 non	O	it
 è	O	it
@@ -17695,6 +18289,7 @@ una	O	it
 centrale	O	it
 nucleare	O	it
 .	O	it
+
 non	O	it
 ci	O	it
 sarebbe	O	it
@@ -17862,6 +18457,7 @@ la	O	it
 Gran	O	it
 Bretagna	O	it
 .	O	it
+
 Basta	O	it
 ,	O	it
 infatti	O	it
@@ -17916,6 +18512,7 @@ di	O	it
 il	O	it
 sangue	O	it
 .	O	it
+
 L'	O	it
 azione	O	it
 tossica	O	it
@@ -17947,6 +18544,7 @@ con	O	it
 collasso	O	it
 vascolare	O	it
 .	O	it
+
 La	O	it
 presenza	O	it
 del	O	it
@@ -17993,6 +18591,7 @@ concentrazioni	O	it
 di	O	it
 qualche	O	it
 ng/Nm3.	O	it
+
 Annesse	O	it
 a	O	it
 queste	O	it
@@ -18079,6 +18678,7 @@ a	O	it
 le	O	it
 nanopatologie	O	it
 .	O	it
+
 Queste	O	it
 microscopiche	O	it
 particelle	O	it
@@ -18227,6 +18827,7 @@ quelle	O	it
 molecolari	O	it
 )	O	it
 .	O	it
+
 Il	O	it
 macrofago	O	it
 persiste	O	it
@@ -18299,6 +18900,7 @@ in	O	it
 cellule	O	it
 tumorali	O	it
 .	O	it
+
 Queste	O	it
 alterazioni	O	it
 sono	O	it
@@ -18341,6 +18943,7 @@ giorni	O	it
 di	O	it
 sviluppo	O	it
 .	O	it
+
 Un'	O	it
 associazione	O	it
 di	O	it
@@ -18447,6 +19050,7 @@ la	O	it
 caratteristica	O	it
 sfericità	O	it
 .	O	it
+
 La	O	it
 sedimentazione	O	it
 negli	O	it
@@ -18498,6 +19102,7 @@ più	O	it
 resistenti	O	it
 )	O	it
 .	O	it
+
 L'	O	it
 arsenico	O	it
 assunto	O	it
@@ -18602,6 +19207,7 @@ in	O	it
 l'	O	it
 organismo	O	it
 .	O	it
+
 I	O	it
 sedimenti	O	it
 di	O	it
@@ -18622,6 +19228,7 @@ in	O	it
 modo	O	it
 permanente	O	it
 .	O	it
+
 Per	O	it
 ridurre	O	it
 a	O	it
@@ -18710,6 +19317,7 @@ ad	O	it
 elevata	O	it
 temperatura	O	it
 .	O	it
+
 Se	O	it
 nel	O	it
 in	O	it
@@ -18846,6 +19454,7 @@ di	O	it
 Polesine	O	it
 Camerini	O	it
 .	O	it
+
 Meno	O	it
 bene	B-IDIOM	it
 va	I-IDIOM	it
@@ -18896,6 +19505,7 @@ di	O	it
 le	O	it
 acque	O	it
 .	O	it
+
 Un	O	it
 fatto	O	it
 che	O	it
@@ -18924,6 +19534,7 @@ il	O	it
 suolo	O	it
 "	O	it
 .	O	it
+
 ho	O	it
 capito	O	it
 ...	O	it
@@ -18940,6 +19551,7 @@ lo	O	it
 scrivo	O	it
 ?	O	it
 ?	O	it
+
 Bè	O	it
 il	O	it
 mio	O	it
@@ -19011,6 +19623,7 @@ di	O	it
 il	O	it
 O.c	O	it
 .	O	it
+
 Di	O	it
 Adria	O	it
 ke	O	it
@@ -19063,6 +19676,7 @@ nn	O	it
 bevo	O	it
 alcolici	O	it
 ...	O	it
+
 Se	O	it
 poi	O	it
 qualcuno	O	it
@@ -19086,6 +19700,7 @@ su	O	it
 l'	O	it
 Himalaya	O	it
 ?	O	it
+
 Complimenti	O	it
 a	O	it
 Cod.	O	it
@@ -19114,6 +19729,7 @@ in	O	it
 le	O	it
 rotatorie	O	it
 .	O	it
+
 Ho	O	it
 letto	O	it
 e	O	it
@@ -19156,6 +19772,7 @@ anche	O	it
 quella	O	it
 privata	O	it
 .	O	it
+
 Aggiungo	O	it
 che	O	it
 tali	O	it
@@ -19174,6 +19791,7 @@ Chieppara	O	it
 verso	O	it
 Curicchi	O	it
 .	O	it
+
 Qui	O	it
 ,	O	it
 giorni	O	it
@@ -19194,6 +19812,7 @@ Balletto	O	it
 di	O	it
 Cuba	O	it
 .	O	it
+
 Dopo	O	it
 un	O	it
 paio	O	it
@@ -19223,6 +19842,7 @@ Il	O	it
 Porto	O	it
 "	O	it
 .	O	it
+
 Domando	O	it
 :	O	it
 ma	O	it
@@ -19240,6 +19860,7 @@ in	O	it
 questo	O	it
 modo	O	it
 ?	O	it
+
 Se	O	it
 andiamo	O	it
 anche	O	it
@@ -19261,6 +19882,7 @@ le	O	it
 loro	O	it
 iniziative	O	it
 .	O	it
+
 Noi	O	it
 stiamo	O	it
 facendo	B-IDIOM	it
@@ -19271,6 +19893,7 @@ di	O	it
 i	O	it
 trogloditi	O	it
 .	O	it
+
 A	O	it
 quanto	O	it
 pare	O	it
@@ -19293,6 +19916,7 @@ contradditori	O	it
 per	O	it
 altri	O	it
 .	O	it
+
 quello	O	it
 che	O	it
 riportiamo	O	it
@@ -19309,6 +19933,7 @@ il	O	it
 Circolo	O	it
 Unione	O	it
 .	O	it
+
 Per	O	it
 alcuni	O	it
 si	O	it
@@ -19360,6 +19985,7 @@ ancora	O	it
 in	O	it
 vita	O	it
 .	O	it
+
 Che	O	it
 andrebbero	O	it
 eliminati	O	it
@@ -19417,6 +20043,7 @@ a	O	it
 liello	O	it
 nazionale	O	it
 .	O	it
+
 Per	O	it
 altri	O	it
 invece	O	it
@@ -19448,6 +20075,7 @@ realtà	O	it
 anoi	O	it
 vicine	O	it
 .	O	it
+
 Ecco	O	it
 il	O	it
 perchè	O	it
@@ -19470,6 +20098,7 @@ di	O	it
 Porto	O	it
 Viro	O	it
 .	O	it
+
 Realtà	O	it
 che	O	it
 stanno	O	it
@@ -19483,6 +20112,7 @@ aree	O	it
 artigianali	O	it
 notevole	O	it
 .	O	it
+
 Altra	O	it
 obiezione	O	it
 mossa	O	it
@@ -19506,6 +20136,7 @@ di	O	it
 i	O	it
 relatori	O	it
 .	O	it
+
 Quello	O	it
 che	O	it
 è	O	it
@@ -19561,6 +20192,7 @@ di	O	it
 questa	O	it
 coalizione	O	it
 .	O	it
+
 Anche	O	it
 perchè	O	it
 la	O	it
@@ -19590,6 +20222,7 @@ che	O	it
 la	O	it
 appoggerà	O	it
 .	O	it
+
 L'	O	it
 Udc	O	it
 è	O	it
@@ -19615,6 +20248,7 @@ a	O	it
 l'	O	it
 opposizione	O	it
 .	O	it
+
 Per	O	it
 ora	O	it
 si	O	it
@@ -19632,6 +20266,7 @@ le	O	it
 prossime	O	it
 amministrative	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -19641,6 +20276,7 @@ ora	O	it
 tutto	O	it
 tace	O	it
 .	O	it
+
 Il	O	it
 sindaco	O	it
 Lodo	O	it
@@ -19652,6 +20288,7 @@ il	O	it
 loro	O	it
 lavoro	O	it
 .	O	it
+
 Qualche	O	it
 sorpresa	O	it
 sulle	O	it
@@ -19672,6 +20309,7 @@ di	O	it
 il	O	it
 centrosinistra	O	it
 .	O	it
+
 Anche	O	it
 nel	O	it
 in	O	it
@@ -19685,6 +20323,7 @@ ancora	O	it
 stati	O	it
 formulati	O	it
 .	O	it
+
 Ma	O	it
 sembra	O	it
 che	O	it
@@ -19718,6 +20357,7 @@ per	O	it
 le	O	it
 amministrative	O	it
 .	O	it
+
 Gli	O	it
 unici	O	it
 due	O	it
@@ -19755,6 +20395,7 @@ in	O	it
 il	O	it
 centrosinistra	O	it
 .	O	it
+
 Se	O	it
 posso	O	it
 aggiungere	O	it
@@ -19795,6 +20436,7 @@ sei	O	it
 già	O	it
 stato	O	it
 .	O	it
+
 Dipende	O	it
 dalle	O	it
 da	O	it
@@ -19823,6 +20465,7 @@ il	O	it
 tuo	O	it
 progetto	O	it
 .	O	it
+
 E	O	it
 sinceramente	O	it
 ,	O	it
@@ -19855,6 +20498,7 @@ di	O	it
 questa	O	it
 città	O	it
 .	O	it
+
 Ci	B-IDIOM	it
 vuole	I-IDIOM	it
 un	O	it
@@ -19896,6 +20540,7 @@ di	O	it
 i	O	it
 partiti	O	it
 .	O	it
+
 Allora	O	it
 ,	O	it
 in	O	it
@@ -19905,6 +20550,7 @@ siamo	O	it
 tutti	O	it
 precari	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -19977,6 +20623,7 @@ altri	O	it
 due	O	it
 lavoretti	O	it
 .	O	it
+
 Ci	O	it
 avevano	O	it
 detto	O	it
@@ -19998,6 +20645,7 @@ elastici	O	it
 e	O	it
 duttili	O	it
 .	O	it
+
 Il	O	it
 precario	O	it
 deve	O	it
@@ -20008,6 +20656,7 @@ cambiare	O	it
 spesso	O	it
 lavoro	O	it
 .	O	it
+
 Eh	O	it
 ma	O	it
 così	O	it
@@ -20017,6 +20666,7 @@ in	O	it
 più	O	it
 settori	O	it
 .	O	it
+
 Vuoi	O	it
 mettere	O	it
 ?	O	it
@@ -20028,6 +20678,7 @@ volutamente	O	it
 ironico	O	it
 )	O	it
 .	O	it
+
 Io	O	it
 mi	B-IDIOM	it
 rendo	I-IDIOM	it
@@ -20037,6 +20688,7 @@ di	O	it
 una	O	it
 cosa	O	it
 .	O	it
+
 Che	O	it
 se	O	it
 devo	O	it
@@ -20070,6 +20722,7 @@ di	O	it
 sfinir-	O	it
 me	O	it
 .	O	it
+
 Io	O	it
 non	O	it
 ho	O	it
@@ -20082,6 +20735,7 @@ va	B-IDIOM	it
 ancora	O	it
 bene	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 mia	O	it
 mamma	O	it
@@ -20101,6 +20755,7 @@ suo	O	it
 ristorante	O	it
 chiude	O	it
 .	O	it
+
 Ma	O	it
 la	O	it
 mia	O	it
@@ -20109,6 +20764,7 @@ domanda	O	it
 un'	O	it
 altra	O	it
 .	O	it
+
 Per	O	it
 quanto	O	it
 tempo	O	it
@@ -20120,6 +20776,7 @@ ricominciare	O	it
 "	O	it
 sempre	O	it
 ?	O	it
+
 caro	O	it
 Fabio	O	it
 ,	O	it
@@ -20150,6 +20807,7 @@ messa	I-IDIOM	it
 male	I-IDIOM	it
 eh	O	it
 ?	O	it
+
 No	O	it
 ,	O	it
 non	O	it
@@ -20157,6 +20815,7 @@ non	O	it
 lavoro	O	it
 quello	O	it
 .	O	it
+
 Io	O	it
 mi	O	it
 lamento	O	it
@@ -20175,6 +20834,7 @@ situazione	O	it
 davvero	O	it
 difficile	O	it
 .	O	it
+
 E	O	it
 tuo	O	it
 nonno	O	it
@@ -20183,6 +20843,7 @@ diceva	B-IDIOM	it
 anche	O	it
 bene	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 lamentar-	B-IDIOM	it
 si	I-IDIOM	it
@@ -20197,6 +20858,7 @@ perdere	O	it
 il	O	it
 lavoro	O	it
 .	O	it
+
 magari	O	it
 ce	O	it
 ne	O	it
@@ -20205,6 +20867,7 @@ trovare	O	it
 uno	O	it
 migliore	O	it
 ?	O	it
+
 (	O	it
 a	O	it
 forza	O	it
@@ -20213,6 +20876,7 @@ lamenti	O	it
 ...	O	it
 )	O	it
 .	O	it
+
 E	O	it
 non	O	it
 è	O	it
@@ -20224,6 +20888,7 @@ si	O	it
 trova	O	it
 sempre	O	it
 .	O	it
+
 Forse	O	it
 ai	O	it
 a	O	it
@@ -20242,6 +20907,7 @@ di	O	it
 il	O	it
 mio	O	it
 .	O	it
+
 Ora	O	it
 è	O	it
 tutta	O	it
@@ -20249,6 +20915,7 @@ un'	O	it
 altra	O	it
 minestra	O	it
 ...	O	it
+
 Grande	O	it
 criticità	O	it
 di	O	it
@@ -20285,6 +20952,7 @@ e	O	it
 a	O	it
 Piano	O	it
 .	O	it
+
 Quindi	O	it
 progetto	O	it
 di	O	it
@@ -20362,6 +21030,7 @@ per	O	it
 500	O	it
 persone	O	it
 .	O	it
+
 Il	O	it
 Sindaco	O	it
 di	O	it
@@ -20437,6 +21106,7 @@ l'	O	it
 abbiamo	O	it
 avuto	O	it
 .	O	it
+
 Tutto	O	it
 ciò	O	it
 approfittando	O	it
@@ -20485,6 +21155,7 @@ nostro	O	it
 palazzo	O	it
 comunale	O	it
 .	O	it
+
 Tra	O	it
 l'	O	it
 altro	O	it
@@ -20515,6 +21186,7 @@ i	O	it
 Comuni	O	it
 interessati	O	it
 .	O	it
+
 Quindi	O	it
 riqualificazione	O	it
 della	O	it
@@ -20556,6 +21228,7 @@ ettari	O	it
 zona	O	it
 Cantarana	O	it
 .	O	it
+
 Il	O	it
 Vice	O	it
 Sindaco	O	it
@@ -20659,6 +21332,7 @@ nazionali	O	it
 e	O	it
 regionali	O	it
 .	O	it
+
 Tre	O	it
 sono	O	it
 i	O	it
@@ -20677,6 +21351,7 @@ e	O	it
 Porto	O	it
 Viro	O	it
 .	O	it
+
 I	O	it
 due	O	it
 milioni	O	it
@@ -20701,6 +21376,7 @@ la	O	it
 nostra	O	it
 gente	O	it
 .	O	it
+
 Risulta	O	it
 che	O	it
 molti	O	it
@@ -20742,6 +21418,7 @@ un	O	it
 continuo	O	it
 pericolo	O	it
 .	O	it
+
 Inoltre	O	it
 un	O	it
 effetto	O	it
@@ -20777,6 +21454,7 @@ fermaporta	O	it
 di	O	it
 casa	O	it
 .	O	it
+
 Le	O	it
 cause	O	it
 possono	O	it
@@ -20817,6 +21495,7 @@ cubetti	O	it
 di	O	it
 porfido	O	it
 .	O	it
+
 In	O	it
 entrambi	O	it
 i	O	it
@@ -20869,6 +21548,7 @@ risolverebbe	O	it
 il	O	it
 problema	O	it
 .	O	it
+
 Ma	O	it
 soprattutto	O	it
 sarebbe	O	it
@@ -20890,6 +21570,7 @@ la	O	it
 società	O	it
 ECOGEST	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -20910,6 +21591,7 @@ sicuro	O	it
 adeguatamente	O	it
 assicurata	O	it
 .	O	it
+
 riviera	O	it
 c.	O	it
 battisti	O	it
@@ -21044,6 +21726,7 @@ stato	O	it
 di	O	it
 degrado	O	it
 ...	O	it
+
 Mi	O	it
 domando	O	it
 se	O	it
@@ -21117,6 +21800,7 @@ Z.T.L	O	it
 what	O	it
 else	O	it
 ?	O	it
+
 Si	O	it
 vieta	O	it
 il	O	it
@@ -21209,6 +21893,7 @@ Carducci	O	it
 ...	O	it
 macchè	O	it
 !	O	it
+
 Non	O	it
 so	O	it
 se	O	it
@@ -21297,6 +21982,7 @@ neanche	O	it
 altri	O	it
 !	O	it
 !	O	it
+
 Torraca	O	it
 è	O	it
 un	O	it
@@ -21312,6 +21998,7 @@ Campania	O	it
 e	O	it
 Basilicata	O	it
 .	O	it
+
 è	O	it
 il	O	it
 primo	O	it
@@ -21386,6 +22073,7 @@ di	O	it
 10	O	it
 anni	O	it
 .	O	it
+
 Il	O	it
 progetto	O	it
 è	O	it
@@ -21415,6 +22103,7 @@ Elettronica	O	it
 Gelbison	O	it
 "	O	it
 .	O	it
+
 Il	O	it
 led	O	it
 è	O	it
@@ -21440,6 +22129,7 @@ guarnizione	O	it
 di	O	it
 silicio	O	it
 .	O	it
+
 Tra	O	it
 i	O	it
 vantaggi	O	it
@@ -21495,6 +22185,7 @@ appena	O	it
 24	O	it
 volt	O	it
 .	O	it
+
 La	O	it
 tecnologia	O	it
 a	O	it
@@ -21517,6 +22208,7 @@ di	O	it
 il	O	it
 futuro	O	it
 .	O	it
+
 Spiega	O	it
 il	O	it
 Prof.	O	it
@@ -21564,6 +22256,7 @@ i	O	it
 più	O	it
 piccoli	O	it
 .	O	it
+
 Attraverso	O	it
 questo	O	it
 progetto	O	it
@@ -21605,6 +22298,7 @@ su	O	it
 quello	O	it
 economico	O	it
 .	O	it
+
 E	O	it
 vuole	O	it
 essere	B-IDIOM	it
@@ -21636,6 +22330,7 @@ i	O	it
 nostri	O	it
 ragazzi	O	it
 .	O	it
+
 Il	O	it
 CUR	O	it
 ,	O	it
@@ -21699,6 +22394,7 @@ di	O	it
 forza	O	it
 "	O	it
 .	O	it
+
 N.B.	O	it
 A	O	it
 scanso	O	it
@@ -21715,6 +22411,7 @@ ricerche	O	it
 storico	O	it
 documentali	O	it
 .	O	it
+
 Sono	B-IDIOM	it
 frutto	I-IDIOM	it
 della	O	it
@@ -21747,6 +22444,7 @@ peraltro	O	it
 poco	O	it
 attendibili	O	it
 .	O	it
+
 Perciò	O	it
 sono	O	it
 da	O	it
@@ -21756,6 +22454,7 @@ pura	O	it
 ricostruzione	O	it
 fantasiosa	O	it
 .	O	it
+
 Anche	O	it
 i	O	it
 personaggi	O	it
@@ -21763,6 +22462,7 @@ sono	O	it
 completamente	O	it
 inventati	O	it
 .	O	it
+
 La	O	it
 storia	O	it
 dell'	O	it
@@ -21777,6 +22477,7 @@ ha	O	it
 andamenti	O	it
 ciclici	O	it
 .	O	it
+
 Oggi	O	it
 mi	O	it
 sembra	O	it
@@ -21794,11 +22495,13 @@ per	O	it
 tanti	O	it
 aspetti	O	it
 .	O	it
+
 Volevo	O	it
 rappresentare	O	it
 scherzosamente	O	it
 questo	O	it
 .	O	it
+
 Avrei	O	it
 potuto	O	it
 allo	O	it
@@ -21820,6 +22523,7 @@ n'	O	it
 in	O	it
 abbondanza	O	it
 .	O	it
+
 Credo	O	it
 di	O	it
 aver	O	it
@@ -21840,6 +22544,7 @@ parlare	O	it
 di	O	it
 politica	O	it
 .	O	it
+
 La	O	it
 mia	O	it
 impressione	O	it
@@ -21853,6 +22558,7 @@ disorientata	O	it
 e	O	it
 delusa	O	it
 .	O	it
+
 Perché	O	it
 dietro	O	it
 le	O	it
@@ -21864,6 +22570,7 @@ sempre	O	it
 interessi	O	it
 personali	O	it
 .	O	it
+
 Preciso	O	it
 che	O	it
 l'	O	it
@@ -21916,6 +22623,7 @@ populi	O	it
 nient'	O	it
 altro	O	it
 .	O	it
+
 Mi	B-IDIOM	it
 rendo	I-IDIOM	it
 conto	I-IDIOM	it
@@ -21943,6 +22651,7 @@ di	O	it
 pubblicar-	O	it
 lo	O	it
 .	O	it
+
 Perché	O	it
 personalmente	O	it
 quando	O	it
@@ -21965,6 +22674,7 @@ a	O	it
 i	O	it
 giornali	O	it
 .	O	it
+
 La	O	it
 differenza	O	it
 è	O	it
@@ -21977,6 +22687,7 @@ può	O	it
 anche	O	it
 scherzare	O	it
 .	O	it
+
 L'	O	it
 altra	O	it
 differenza	O	it
@@ -22002,6 +22713,7 @@ stravolgono	O	it
 il	O	it
 senso	O	it
 .	O	it
+
 Con	O	it
 il	O	it
 blog	O	it
@@ -22011,6 +22723,7 @@ mi	O	it
 mai	O	it
 successo	O	it
 .	O	it
+
 Inoltre	O	it
 certi	O	it
 argomenti	O	it
@@ -22051,6 +22764,7 @@ credere	I-IDIOM	it
 !	O	it
 )	O	it
 .	O	it
+
 Non	O	it
 nascondo	O	it
 il	O	it
@@ -22094,6 +22808,7 @@ si	I-IDIOM	it
 la	I-IDIOM	it
 faccia	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 prima	O	it
 di	O	it
@@ -22128,6 +22843,7 @@ e	O	it
 buon	O	it
 senso	O	it
 .	O	it
+
 Posso	O	it
 anche	O	it
 dir-	O	it
@@ -22163,6 +22879,7 @@ agosto	O	it
 da	O	it
 Andrea	O	it
 .	O	it
+
 Penso	O	it
 che	O	it
 sarebbe	B-IDIOM	it
@@ -22191,6 +22908,7 @@ soliti	O	it
 luoghi	O	it
 comuni	O	it
 .	O	it
+
 Prova	O	it
 a	O	it
 leggere	O	it
@@ -22206,10 +22924,12 @@ i	O	it
 miei	O	it
 commenti	O	it
 .	O	it
+
 Credi	O	it
 sia	O	it
 facile	O	it
 ?	O	it
+
 Dietro	O	it
 c'	O	it
 è	O	it
@@ -22283,6 +23003,7 @@ unione	O	it
 ore	O	it
 21.00	O	it
 .	O	it
+
 Puoi	O	it
 anche	O	it
 venire	O	it
@@ -22296,6 +23017,7 @@ il	O	it
 carbone	O	it
 )	O	it
 .	O	it
+
 Ho	O	it
 cercato	O	it
 di	O	it
@@ -22309,6 +23031,7 @@ di	O	it
 la	O	it
 questione	O	it
 .	O	it
+
 Perché	O	it
 è	O	it
 una	O	it
@@ -22317,6 +23040,7 @@ che	O	it
 mi	O	it
 interessa	O	it
 !	O	it
+
 Perché	O	it
 nel	O	it
 in	O	it
@@ -22366,6 +23090,7 @@ trovare	O	it
 rimedi	O	it
 efficaci	O	it
 .	O	it
+
 Ho	O	it
 raccolto	O	it
 240	O	it
@@ -22396,6 +23121,7 @@ precedenza	O	it
 da	O	it
 altri	O	it
 .	O	it
+
 Questo	O	it
 documento	O	it
 è	O	it
@@ -22411,6 +23137,7 @@ commissione	O	it
 VIA	O	it
 Nazionale	O	it
 .	O	it
+
 Questo	O	it
 prima	O	it
 che	O	it
@@ -22426,6 +23153,7 @@ procura	O	it
 di	O	it
 Rovigo	O	it
 .	O	it
+
 Strana	O	it
 beffa	O	it
 nella	O	it
@@ -22437,6 +23165,7 @@ di	O	it
 la	O	it
 Memoria	O	it
 .	O	it
+
 A	O	it
 notar-	O	it
 la	O	it
@@ -22454,6 +23183,7 @@ in	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 Il	O	it
 giorno	O	it
 in	O	it
@@ -22494,6 +23224,7 @@ di	O	it
 Eluana	O	it
 Englaro	O	it
 .	O	it
+
 "	O	it
 Mi	B-IDIOM	it
 colpisce	I-IDIOM	it
@@ -22520,6 +23251,7 @@ di	O	it
 l'	O	it
 umano	O	it
 .	O	it
+
 Mostriamo	O	it
 la	O	it
 stessa	O	it
@@ -22541,6 +23273,7 @@ di	O	it
 la	O	it
 Shoah	O	it
 .	O	it
+
 Com'	O	it
 è	O	it
 possibile	O	it
@@ -22579,6 +23312,7 @@ su	O	it
 la	O	it
 Shoah	O	it
 ?	O	it
+
 Tra	O	it
 sessant'	O	it
 anni	O	it
@@ -22612,6 +23346,7 @@ di	O	it
 gli	O	it
 esclusi	O	it
 .	O	it
+
 C'	O	it
 è	O	it
 un	O	it
@@ -22632,6 +23367,7 @@ avallare	O	it
 qualsiasi	O	it
 tesi	O	it
 .	O	it
+
 Si	O	it
 pensa	O	it
 di	O	it
@@ -22654,6 +23390,7 @@ di	O	it
 l'	O	it
 uomo.	O	it
 "	O	it
+
 La	O	it
 differenza	O	it
 più	O	it
@@ -22715,6 +23452,7 @@ di	O	it
 il	O	it
 singolo	O	it
 .	O	it
+
 "	O	it
 Viene	O	it
 anche	O	it
@@ -22730,6 +23468,7 @@ una	O	it
 sapiente	O	it
 manipolazione	O	it
 .	O	it
+
 è	O	it
 come	O	it
 se	O	it
@@ -22753,6 +23492,7 @@ il	O	it
 chiacchiericcio	O	it
 mediatico	O	it
 .	O	it
+
 Non	O	it
 c'	O	it
 è	O	it
@@ -22780,6 +23520,7 @@ proposto	O	it
 come	O	it
 giusto	O	it
 .	O	it
+
 Anche	O	it
 se	O	it
 non	B-IDIOM	it
@@ -22793,6 +23534,7 @@ la	O	it
 parte	O	it
 giusta	O	it
 .	O	it
+
 Chi	O	it
 decide	O	it
 che	O	it
@@ -22804,6 +23546,7 @@ di	O	it
 essere	O	it
 vissuta	O	it
 ?	O	it
+
 La	O	it
 vita	O	it
 è	O	it
@@ -22815,6 +23558,7 @@ che	O	it
 c'	O	it
 è	O	it
 .	O	it
+
 Non	O	it
 c'	O	it
 è	O	it
@@ -22823,6 +23567,7 @@ altro	O	it
 da	O	it
 difendere	O	it
 .	O	it
+
 Siamo	O	it
 contro	O	it
 la	O	it
@@ -22837,6 +23582,7 @@ di	O	it
 l'	O	it
 eutanasia	O	it
 ?	O	it
+
 è	O	it
 la	O	it
 vita	O	it
@@ -22853,6 +23599,7 @@ me	O	it
 ne	O	it
 vado	O	it
 .	O	it
+
 L'	O	it
 assenza	O	it
 di	O	it
@@ -22873,6 +23620,7 @@ di	O	it
 l'	O	it
 umanità.	O	it
 "	O	it
+
 Susanna	O	it
 Tamaro	O	it
 ha	B-IDIOM	it
@@ -22884,6 +23632,7 @@ di	O	it
 il	O	it
 futuro	O	it
 .	O	it
+
 Crede	O	it
 che	O	it
 il	O	it
@@ -22909,6 +23658,7 @@ di	O	it
 la	O	it
 vita	O	it
 .	O	it
+
 Con	O	it
 la	O	it
 forza	O	it
@@ -22950,6 +23700,7 @@ una	O	it
 soluzione	O	it
 radicale	O	it
 .	O	it
+
 "	O	it
 Una	O	it
 bella	O	it
@@ -22960,6 +23711,7 @@ problema	O	it
 è	O	it
 risolto	O	it
 .	O	it
+
 Lo	O	it
 stato	O	it
 ha	O	it
@@ -22969,6 +23721,7 @@ pensa	O	it
 che	O	it
 risparmio	O	it
 .	O	it
+
 Si	O	it
 aprono	O	it
 così	O	it
@@ -22982,6 +23735,7 @@ desolazione	O	it
 orrore	O	it
 assoluto	O	it
 .	O	it
+
 La	O	it
 maschera	O	it
 dell'	O	it
@@ -23000,6 +23754,7 @@ di	O	it
 la	O	it
 morte	O	it
 .	O	it
+
 Tutti	O	it
 sono	O	it
 contro	O	it
@@ -23018,6 +23773,7 @@ e	O	it
 in	O	it
 galera	O	it
 .	O	it
+
 Non	O	it
 c'	O	it
 è	O	it
@@ -23061,6 +23817,7 @@ liberar-	O	it
 si	O	it
 "	O	it
 .	O	it
+
 La	O	it
 sentenza	O	it
 sul	O	it
@@ -23099,6 +23856,7 @@ in	O	it
 certe	O	it
 condizioni	O	it
 .	O	it
+
 "	O	it
 è	O	it
 una	O	it
@@ -23119,6 +23877,7 @@ diritto	O	it
 vale	O	it
 zero	O	it
 .	O	it
+
 Lui	O	it
 dice	O	it
 che	O	it
@@ -23127,6 +23886,7 @@ fa	O	it
 per	O	it
 amore	O	it
 .	O	it
+
 Ma	O	it
 il	O	it
 suo	O	it
@@ -23134,6 +23894,7 @@ non	O	it
 è	O	it
 amore	O	it
 .	O	it
+
 Allora	O	it
 perché	O	it
 non	O	it
@@ -23142,6 +23903,7 @@ la	O	it
 a	O	it
 casa	O	it
 ?	O	it
+
 Perché	O	it
 non	O	it
 assister-	O	it
@@ -23163,6 +23925,7 @@ chiamiamo	O	it
 la	O	it
 pace	O	it
 .	O	it
+
 Stare	O	it
 accanto	O	it
 ai	O	it
@@ -23180,6 +23943,7 @@ di	O	it
 vita	O	it
 straordinaria	O	it
 .	O	it
+
 Beppino	O	it
 Englaro	O	it
 ,	O	it
@@ -23195,6 +23959,7 @@ sinistra	O	it
 in	O	it
 ospedale	O	it
 .	O	it
+
 E	O	it
 i	O	it
 medici	O	it
@@ -23244,6 +24009,7 @@ atroce	O	it
 ....	O	it
 ]	O	it
 .	O	it
+
 Allora	O	it
 ,	O	it
 se	O	it
@@ -23260,6 +24026,7 @@ un'	O	it
 iniezione	O	it
 letale	O	it
 .	O	it
+
 La	O	it
 verità	O	it
 è	O	it
@@ -23275,6 +24042,7 @@ di	O	it
 l'	O	it
 umano	O	it
 .	O	it
+
 E	O	it
 l'	O	it
 ideologia	O	it
@@ -23310,9 +24078,11 @@ vi	O	it
 si	B-IDIOM	it
 oppone	I-IDIOM	it
 .	O	it
+
 Come	O	it
 sarebbe	O	it
 ?	O	it
+
 Vuoi	O	it
 metter-	O	it
 ti	O	it
@@ -23321,13 +24091,16 @@ le	O	it
 ragioni	O	it
 umanitarie	O	it
 ?	O	it
+
 Non	O	it
 puoi	O	it
 .	O	it
+
 è	O	it
 abominevole	O	it
 "	O	it
 .	O	it
+
 Ogni	O	it
 ricamo	O	it
 retorico	O	it
@@ -23341,6 +24114,7 @@ potrebbe	O	it
 confondere	O	it
 nessuno	O	it
 .	O	it
+
 La	O	it
 volontà	O	it
 del	O	it
@@ -23353,6 +24127,7 @@ volontà	O	it
 di	O	it
 Dio	O	it
 ?	O	it
+
 Questa	O	it
 ,	O	it
 e	O	it
@@ -23367,6 +24142,7 @@ si	O	it
 deve	O	it
 prendere	I-IDIOM	it
 .	O	it
+
 In	O	it
 uno	O	it
 Stato	O	it
@@ -23377,6 +24153,7 @@ dovrebbe	O	it
 suonare	O	it
 ovvia	O	it
 .	O	it
+
 La	O	it
 volontà	O	it
 di	O	it
@@ -23445,6 +24222,7 @@ la	O	it
 volontà	O	it
 divina	O	it
 .	O	it
+
 I	O	it
 cristiani	O	it
 valdesi	O	it
@@ -23480,6 +24258,7 @@ in	O	it
 l'	O	it
 Orbe	O	it
 .	O	it
+
 La	O	it
 Costituzione	O	it
 italiana	O	it
@@ -23534,6 +24313,7 @@ applicato	O	it
 il	O	it
 principio	O	it
 .	O	it
+
 La	O	it
 giaculatoria	O	it
 ricorrente	O	it
@@ -23565,6 +24345,7 @@ il	O	it
 dettato	O	it
 costituzionale	O	it
 .	O	it
+
 Applicare	O	it
 o	O	it
 togliere	O	it
@@ -23590,6 +24371,7 @@ presa	I-IDIOM	it
 da	O	it
 qualcuno	O	it
 .	O	it
+
 La	O	it
 decisione	O	it
 ,	O	it
@@ -23637,6 +24419,7 @@ natura	O	it
 non	O	it
 sopravviverebbe	O	it
 .	O	it
+
 Perciò	O	it
 ,	O	it
 se	O	it
@@ -23683,6 +24466,7 @@ fallibile	O	it
 come	O	it
 te	O	it
 .	O	it
+
 Dichiarare	O	it
 che	O	it
 di	O	it
@@ -23767,6 +24551,7 @@ te	O	it
 come	O	it
 sovrana	O	it
 .	O	it
+
 Ipocrisia	O	it
 ,	O	it
 ma	O	it
@@ -23842,6 +24627,7 @@ unici	O	it
 depositari	O	it
 autorizzati	O	it
 .	O	it
+
 Trascuriamo	O	it
 pure	O	it
 i	O	it
@@ -23900,6 +24686,7 @@ salto	O	it
 ontologico	O	it
 )	O	it
 .	O	it
+
 Qui	O	it
 si	B-IDIOM	it
 tratta	I-IDIOM	it
@@ -23914,6 +24701,7 @@ pretese	O	it
 di	O	it
 teocrazia	O	it
 .	O	it
+
 Il	O	it
 nudo	O	it
 fatto	O	it
@@ -23939,6 +24727,7 @@ il	O	it
 nostro	O	it
 paese	O	it
 .	O	it
+
 Su	O	it
 diritti	O	it
 così	O	it
@@ -23996,6 +24785,7 @@ vita	O	it
 ?	O	it
 )	O	it
 .	O	it
+
 Ma	O	it
 se	O	it
 l'	O	it
@@ -24073,6 +24863,7 @@ a	O	it
 il	O	it
 referendum	O	it
 .	O	it
+
 Se	O	it
 Dio	O	it
 avesse	O	it
@@ -24131,6 +24922,7 @@ sarebbe	O	it
 un	O	it
 paradiso	O	it
 .	O	it
+
 Dio	O	it
 però	O	it
 non	O	it
@@ -24158,6 +24950,7 @@ potessimo	O	it
 essere	O	it
 persone	O	it
 .	O	it
+
 Una	O	it
 certa	O	it
 Chiesa	O	it
@@ -24193,6 +24986,7 @@ a	O	it
 la	O	it
 persona	O	it
 .	O	it
+
 Pazienza	O	it
 se	O	it
 si	B-IDIOM	it
@@ -24220,6 +25014,7 @@ cattolici	O	it
 né	O	it
 credenti	O	it
 .	O	it
+
 Allora	O	it
 mi	O	it
 sembra	O	it
@@ -24239,6 +25034,7 @@ possano	O	it
 essere	O	it
 cattolici	O	it
 .	O	it
+
 Perché	O	it
 non	O	it
 è	O	it
@@ -24254,6 +25050,7 @@ credenze	O	it
 e	O	it
 libertà	O	it
 ?	O	it
+
 Come	O	it
 nell'	O	it
 in	O	it
@@ -24266,6 +25063,7 @@ cercato	O	it
 che	O	it
 accadesse	O	it
 .	O	it
+
 Come	O	it
 Cristiano	O	it
 ,	O	it
@@ -24318,6 +25116,7 @@ altri	O	it
 non	O	it
 hanno	O	it
 .	O	it
+
 La	O	it
 scienza	O	it
 aiuta	O	it
@@ -24356,6 +25155,7 @@ da	O	it
 quelle	O	it
 etniche	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -24410,6 +25210,7 @@ la	O	it
 morte	O	it
 )	O	it
 .	O	it
+
 Questa	O	it
 volontà	O	it
 di	O	it
@@ -24441,6 +25242,7 @@ la	O	it
 sua	O	it
 volontà	O	it
 .	O	it
+
 La	O	it
 parola	O	it
 REPUBBLICA	O	it
@@ -24481,6 +25283,7 @@ sono	O	it
 di	O	it
 tutti	O	it
 .	O	it
+
 Spazi	O	it
 condivisi	O	it
 da	O	it
@@ -24498,6 +25301,7 @@ da	O	it
 una	O	it
 maggioranza	O	it
 .	O	it
+
 Questi	O	it
 spazzi	O	it
 vengono	O	it
@@ -24516,6 +25320,7 @@ gli	O	it
 stessi	O	it
 diritti	I-IDIOM	it
 .	O	it
+
 Se	O	it
 vado	O	it
 a	O	it
@@ -24549,6 +25354,7 @@ lo	O	it
 stesso	O	it
 modo	O	it
 .	O	it
+
 Gesù	O	it
 non	O	it
 ha	O	it
@@ -24575,6 +25381,7 @@ e	O	it
 la	O	it
 condivisione	O	it
 .	O	it
+
 Anche	O	it
 nella	O	it
 in	O	it
@@ -24602,6 +25409,7 @@ ed	O	it
 il	O	it
 male	O	it
 .	O	it
+
 Riportato	O	it
 questo	O	it
 esempio	O	it
@@ -24640,6 +25448,7 @@ si	I-IDIOM	it
 come	O	it
 noi	O	it
 .	O	it
+
 La	O	it
 legge	O	it
 del	O	it
@@ -24677,6 +25486,7 @@ possano	O	it
 condivider-	O	it
 la	O	it
 .	O	it
+
 Da	O	it
 quello	O	it
 che	O	it
@@ -24706,6 +25516,7 @@ innamorati	O	it
 non	O	it
 obbligati	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -24756,6 +25567,7 @@ a	O	it
 il	O	it
 secondo	O	it
 .	O	it
+
 Questi	O	it
 fiumi	O	it
 di	O	it
@@ -24801,6 +25613,7 @@ da	O	it
 l'	O	it
 equatore	O	it
 .	O	it
+
 Dovrebbe	O	it
 essere	O	it
 possibile	O	it
@@ -24811,6 +25624,7 @@ da	O	it
 questi	O	it
 fiumi	O	it
 .	O	it
+
 E	O	it
 problema	O	it
 dell'	O	it
@@ -24833,6 +25647,7 @@ a	O	it
 le	O	it
 montagne.1a	O	it
 no	O	it
+
 "	O	it
 Una	O	it
 caratteristica	O	it
@@ -24882,6 +25697,7 @@ da	O	it
 l'	O	it
 uomo	O	it
 .	O	it
+
 I	O	it
 modi	O	it
 di	O	it
@@ -24891,6 +25707,7 @@ in	O	it
 alcuni	O	it
 dettagli	O	it
 .	O	it
+
 Il	O	it
 fondo	O	it
 consiste	O	it
@@ -24929,6 +25746,7 @@ di	O	it
 gli	O	it
 animali	O	it
 .	O	it
+
 Viene	O	it
 spesso	O	it
 aggiunto	O	it
@@ -24946,6 +25764,7 @@ o	O	it
 l'	O	it
 argilla	O	it
 .	O	it
+
 Lo	O	it
 stagno	O	it
 può	O	it
@@ -24970,6 +25789,7 @@ i	O	it
 centimetri.	O	it
 "	O	it
 2	O	it
+
 Knapen	O	it
 fu	O	it
 ispirato	O	it
@@ -25000,6 +25820,7 @@ in	O	it
 il	O	it
 1929	O	it
 .	O	it
+
 La	O	it
 struttura	O	it
 piramidale	O	it
@@ -25036,6 +25857,7 @@ su	O	it
 il	O	it
 fondo	O	it
 .	O	it
+
 Il	O	it
 suo	O	it
 volume	O	it
@@ -25117,6 +25939,7 @@ di	O	it
 il	O	it
 1931	O	it
 .	O	it
+
 Il	O	it
 massimo	O	it
 fu	O	it
@@ -25130,6 +25953,7 @@ a	O	it
 il	O	it
 giorno	O	it
 .	O	it
+
 Chaptal	O	it
 si	O	it
 ispirò	O	it
@@ -25182,6 +26006,7 @@ in	O	it
 il	O	it
 1900	O	it
 .	O	it
+
 Il	O	it
 condensatore	O	it
 di	O	it
@@ -25218,6 +26043,7 @@ mezzo	O	it
 d'	O	it
 altezza	O	it
 .	O	it
+
 La	O	it
 costruzione	O	it
 produsse	O	it
@@ -25250,6 +26076,7 @@ in	O	it
 la	O	it
 parete	O	it
 .	O	it
+
 "	O	it
 Ad	O	it
 esempio	O	it
@@ -25423,6 +26250,7 @@ cubo	O	it
 d'	O	it
 aria	O	it
 ...	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -25463,6 +26291,7 @@ di	O	it
 il	O	it
 Capo	O	it
 .	O	it
+
 D	O	it
 progetto	O	it
 di	O	it
@@ -25495,6 +26324,7 @@ di	O	it
 50-100	O	it
 chilovolt	O	it
 .	O	it
+
 I	O	it
 rednti	O	it
 schermanti	O	it
@@ -25516,6 +26346,7 @@ di	O	it
 30	O	it
 centimetri	O	it
 .	O	it
+
 Egli	O	it
 stimò	O	it
 che	O	it
@@ -25549,6 +26380,7 @@ sormonta	O	it
 la	O	it
 cima	O	it
 .	O	it
+
 La	O	it
 recinzione	O	it
 non	O	it
@@ -25556,6 +26388,7 @@ fu	O	it
 mai	O	it
 costruita	O	it
 .	O	it
+
 Le	O	it
 zone	O	it
 ideali	O	it
@@ -25610,6 +26443,7 @@ di	O	it
 il	O	it
 mare	O	it
 .	O	it
+
 Le	O	it
 reti	O	it
 che	O	it
@@ -25631,6 +26465,7 @@ gocce	O	it
 di	O	it
 nebbia	O	it
 .	O	it
+
 Due	O	it
 strati	O	it
 di	O	it
@@ -25664,6 +26499,7 @@ di	O	it
 le	O	it
 reti	O	it
 .	O	it
+
 La	O	it
 raccolta	O	it
 varia	O	it
@@ -25683,6 +26519,7 @@ di	O	it
 la	O	it
 nebbia	O	it
 .	O	it
+
 La	O	it
 trappola	O	it
 per	O	it
@@ -25709,6 +26546,7 @@ a	O	it
 il	O	it
 giorno	O	it
 .	O	it
+
 In	O	it
 estate	O	it
 ,	O	it
@@ -25726,6 +26564,7 @@ la	O	it
 produzione	O	it
 raddoppia	O	it
 .	O	it
+
 Questo	O	it
 idrogeno	O	it
 può	O	it
@@ -25741,6 +26580,7 @@ celle	O	it
 a	O	it
 combustibile	O	it
 .	O	it
+
 Questi	O	it
 dispositivi	O	it
 consentono	O	it
@@ -25809,6 +26649,7 @@ corrente	O	it
 e	O	it
 acqua	O	it
 .	O	it
+
 Le	O	it
 celle	O	it
 a	O	it
@@ -25830,6 +26671,7 @@ l'	O	it
 elettrolita	O	it
 utilizzato	O	it
 .	O	it
+
 Quattro	O	it
 tipi	O	it
 sono	O	it
@@ -25857,6 +26699,7 @@ H2	O	it
 "	O	it
 )	O	it
 .	O	it
+
 Sulle	O	it
 Su	O	it
 le	O	it
@@ -25866,6 +26709,7 @@ montate	O	it
 celle	O	it
 PEM	O	it
 .	O	it
+
 Una	O	it
 di	O	it
 queste	O	it
@@ -25896,6 +26740,7 @@ AFC	O	it
 kW	O	it
 )	O	it
 .	O	it
+
 L'	O	it
 impianto	O	it
 è	O	it
@@ -25918,6 +26763,7 @@ i	O	it
 due	O	it
 generatori	O	it
 .	O	it
+
 Questi	O	it
 sono	O	it
 connessi	O	it
@@ -26001,6 +26847,7 @@ in	O	it
 i	O	it
 serbatoi	O	it
 .	O	it
+
 Il	O	it
 NaBH4	O	it
 è	O	it
@@ -26037,6 +26884,7 @@ sviluppa	O	it
 calore	O	it
 )	O	it
 .	O	it
+
 A	O	it
 pH	O	it
 elevato	O	it
@@ -26074,6 +26922,7 @@ sicurezza	O	it
 l'	O	it
 H2	O	it
 .	O	it
+
 Quando	O	it
 si	O	it
 vuole	O	it
@@ -26095,6 +26944,7 @@ il	O	it
 gas	O	it
 necessario	O	it
 .	O	it
+
 L'	O	it
 impianto	O	it
 è	O	it
@@ -26151,6 +27001,7 @@ NaBH4	O	it
 e	O	it
 lampade	O	it
 .	O	it
+
 Il	O	it
 tutto	O	it
 immerso	O	it
@@ -26167,6 +27018,7 @@ di	O	it
 la	O	it
 Vallagarina	O	it
 .	O	it
+
 Il	O	it
 progetto	O	it
 prevede	O	it
@@ -26235,6 +27087,7 @@ di	O	it
 gas	O	it
 tecnici	O	it
 .	O	it
+
 Oggi	O	it
 le	O	it
 celle	O	it
@@ -26268,6 +27121,7 @@ i	O	it
 consumi	O	it
 privati	O	it
 .	O	it
+
 Stabilimenti	O	it
 industriali	O	it
 e	O	it
@@ -26321,6 +27175,7 @@ o	O	it
 di	O	it
 blackout	O	it
 .	O	it
+
 Ad	O	it
 esempio	O	it
 ,	O	it
@@ -26340,6 +27195,7 @@ a	O	it
 l'	O	it
 idrogeno	O	it
 .	O	it
+
 Grandi	O	it
 società	O	it
 quali	O	it
@@ -26401,6 +27257,7 @@ a	O	it
 35	O	it
 ore	O	it
 .	O	it
+
 Le	O	it
 maggiori	O	it
 case	O	it
@@ -26424,6 +27281,7 @@ autobus	O	it
 a	O	it
 idrogeno	O	it
 .	O	it
+
 Attualmente	O	it
 le	O	it
 vetture	O	it
@@ -26466,6 +27324,7 @@ e	O	it
 il	O	it
 2014	O	it
 .	O	it
+
 La	O	it
 California	O	it
 ,	O	it
@@ -26513,6 +27372,7 @@ a	O	it
 idrogeno	O	it
 »	O	it
 .	O	it
+
 "	O	it
 Vedo	O	it
 le	O	it
@@ -26539,6 +27399,7 @@ che	O	it
 sono	O	it
 vuote	O	it
 .	O	it
+
 La	O	it
 gente	O	it
 non	O	it
@@ -26547,6 +27408,7 @@ può	O	it
 più	O	it
 abitare	O	it
 .	O	it
+
 Ma	O	it
 vedo	O	it
 case	O	it
@@ -26567,6 +27429,7 @@ come	O	it
 i	O	it
 funghi	O	it
 .	O	it
+
 Resto	O	it
 perplesso	O	it
 e	O	it
@@ -26579,6 +27442,7 @@ di	O	it
 vita	O	it
 è	O	it
 ?	O	it
+
 Che	O	it
 cosa	O	it
 abbiamo	O	it
@@ -26587,16 +27451,19 @@ con	O	it
 questo	O	it
 progresso	O	it
 ?	O	it
+
 Ne	O	it
 vale	B-IDIOM	it
 la	I-IDIOM	it
 pena	I-IDIOM	it
 ?	O	it
+
 C'	O	it
 è	O	it
 un	O	it
 tornaconto	O	it
 ?	O	it
+
 Vediamo	O	it
 nelle	O	it
 in	O	it
@@ -26617,16 +27484,19 @@ su	O	it
 la	O	it
 bocca	O	it
 .	O	it
+
 È	O	it
 UN	O	it
 VIVERE	O	it
 QUESTO	O	it
 ?	O	it
+
 IO	O	it
 PENSO	O	it
 DI	O	it
 NO	O	it
 .	O	it
+
 Vorrei	O	it
 che	O	it
 tutti	O	it
@@ -26646,6 +27516,7 @@ su	O	it
 le	O	it
 montagne	O	it
 .	O	it
+
 E	O	it
 capire	O	it
 che	O	it
@@ -26664,6 +27535,7 @@ di	O	it
 produzione	O	it
 "	O	it
 .	O	it
+
 Indispensabile	O	it
 ,	O	it
 a	O	it
@@ -26692,6 +27564,7 @@ antropologici	O	it
 ,	O	it
 ecologici	O	it
 .	O	it
+
 Chiamando	O	it
 a	O	it
 questo	O	it
@@ -26749,6 +27622,7 @@ specifica	O	it
 realtà	O	it
 territoriale	O	it
 .	O	it
+
 CON	O	it
 PARTICOLARE	O	it
 ATTENZIONE	O	it
@@ -26780,6 +27654,7 @@ RESPONSABILI	O	it
 DI	O	it
 ASSOCIAZIONI	O	it
 .	O	it
+
 Per	O	it
 loro	O	it
 andrebbero	O	it
@@ -26807,6 +27682,7 @@ materiali	O	it
 ed	O	it
 extra-materiali.	O	it
 "	O	it
+
 "	O	it
 L'	O	it
 aggressione	O	it
@@ -26879,6 +27755,7 @@ non	O	it
 occupate	O	it
 )	O	it
 .	O	it
+
 Una	O	it
 vera	O	it
 e	O	it
@@ -26960,6 +27837,7 @@ di	O	it
 piano	O	it
 regolatore	O	it
 .	O	it
+
 Ma	O	it
 non	O	it
 viene	O	it
@@ -26979,6 +27857,7 @@ se	O	it
 stessa	O	it
 "	O	it
 .	O	it
+
 Ritorniamo	O	it
 ,	O	it
 almeno	O	it
@@ -26994,6 +27873,7 @@ a	O	it
 quel	O	it
 discorso	O	it
 .	O	it
+
 Usato	O	it
 ,	O	it
 stra	O	it
@@ -27007,13 +27887,16 @@ di	O	it
 vedere	O	it
 vero	O	it
 .	O	it
+
 Mancano	O	it
 i	O	it
 valori	O	it
 .	O	it
+
 Mancano	O	it
 ovunque	O	it
 .	O	it
+
 In	O	it
 molti	O	it
 individui	O	it
@@ -27036,6 +27919,7 @@ e	O	it
 via	O	it
 così	O	it
 .	O	it
+
 A	O	it
 cosa	O	it
 si	B-IDIOM	it
@@ -27048,11 +27932,13 @@ si	I-IDIOM	it
 sente	I-IDIOM	it
 persa	O	it
 ?	O	it
+
 Ai	O	it
 A	O	it
 i	O	it
 valori	O	it
 .	O	it
+
 Alla	O	it
 A	O	it
 la	O	it
@@ -27061,6 +27947,7 @@ idea	O	it
 di	O	it
 valore	O	it
 .	O	it
+
 Al	O	it
 A	O	it
 il	O	it
@@ -27080,6 +27967,7 @@ idea	O	it
 di	O	it
 VALORE	O	it
 .	O	it
+
 Il	O	it
 valore	O	it
 della	O	it
@@ -27102,6 +27990,7 @@ sono	O	it
 stati	O	it
 insegnati	O	it
 .	O	it
+
 O	O	it
 sarebbe	O	it
 meglio	O	it
@@ -27110,6 +27999,7 @@ dire	O	it
 INCULCATI	O	it
 "	O	it
 ?	O	it
+
 Si	O	it
 perchè	O	it
 a	O	it
@@ -27120,6 +28010,7 @@ hanno	O	it
 proprio	O	it
 INCULCATI	O	it
 .	O	it
+
 Ma	O	it
 se	O	it
 a	O	it
@@ -27152,6 +28043,7 @@ dove	O	it
 vai	O	it
 "	O	it
 ...	O	it
+
 A	O	it
 COSA	O	it
 CASPITA	O	it
@@ -27167,6 +28059,7 @@ crisi	O	it
 mistica	O	it
 "	O	it
 ?	O	it
+
 Ho	O	it
 semplificato	O	it
 ,	O	it
@@ -27175,6 +28068,7 @@ ne	O	it
 rendo	I-IDIOM	it
 conto	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 ho	O	it
 visto	O	it
@@ -27192,6 +28086,7 @@ di	O	it
 le	O	it
 persone	O	it
 .	O	it
+
 La	O	it
 gente	O	it
 per	O	it
@@ -27213,16 +28108,19 @@ le	O	it
 persone	O	it
 signori	O	it
 .	O	it
+
 è	O	it
 questo	O	it
 il	O	it
 LATO	O	it
 OSCURO	O	it
 .	O	it
+
 Carissimi	O	it
 bloggers	O	it
 grazie	O	it
 !	O	it
+
 devo	O	it
 dire	O	it
 che	O	it
@@ -27236,6 +28134,7 @@ una	O	it
 grande	O	it
 carica	I-IDIOM	it
 .	O	it
+
 Con	O	it
 Gerardo	O	it
 siamo	B-IDIOM	it
@@ -27248,6 +28147,7 @@ spazio	I-IDIOM	it
 a	O	it
 tutti	O	it
 .	O	it
+
 Ma	O	it
 se	O	it
 mettessimo	B-IDIOM	it
@@ -27257,6 +28157,7 @@ sarebbe	O	it
 forse	O	it
 censura	O	it
 ?	O	it
+
 Il	O	it
 fatto	O	it
 che	O	it
@@ -27276,6 +28177,7 @@ di	O	it
 i	O	it
 partiti	O	it
 .	O	it
+
 A	O	it
 voi	O	it
 il	O	it
@@ -27304,6 +28206,7 @@ che	O	it
 ha	O	it
 promesso	O	it
 .	O	it
+
 Chiaro	O	it
 che	O	it
 vale	O	it
@@ -27321,6 +28224,7 @@ linguaggio	O	it
 non	O	it
 offensivo	O	it
 .	O	it
+
 Ma	O	it
 questo	O	it
 spetterà	O	it
@@ -27337,11 +28241,13 @@ molto	O	it
 buon	O	it
 senso	O	it
 .	O	it
+
 Intanto	O	it
 due	O	it
 brevi	O	it
 flash	O	it
 .	O	it
+
 Se	O	it
 avete	O	it
 letto	O	it
@@ -27362,6 +28268,7 @@ a	O	it
 le	O	it
 comunali	O	it
 .	O	it
+
 Comunque	O	it
 non	O	it
 c'	O	it
@@ -27378,6 +28285,7 @@ la	O	it
 prossima	O	it
 settimana	O	it
 .	O	it
+
 Il	O	it
 centrodestra	O	it
 ,	O	it
@@ -27404,6 +28312,7 @@ le	O	it
 liste	O	it
 civiche	O	it
 .	O	it
+
 Come	O	it
 del	O	it
 di	O	it
@@ -27412,6 +28321,7 @@ resto	O	it
 il	O	it
 centrosinistra	O	it
 .	O	it
+
 Tutti	O	it
 sottovalutano	O	it
 le	O	it
@@ -27433,6 +28343,7 @@ scambio	O	it
 di	O	it
 voti	O	it
 .	O	it
+
 Ecco	O	it
 che	O	it
 allora	O	it
@@ -27464,6 +28375,7 @@ a	O	it
 i	O	it
 cittadini	O	it
 .	O	it
+
 Per	O	it
 non	O	it
 essere	B-IDIOM	it
@@ -27475,6 +28387,7 @@ giochi	I-IDIOM	it
 ma	O	it
 dentro	O	it
 .	O	it
+
 è	O	it
 importante	O	it
 soprattutto	O	it
@@ -27511,6 +28424,7 @@ in	O	it
 altre	O	it
 maniere	O	it
 .	O	it
+
 Sapere	O	it
 come	O	it
 e	O	it
@@ -27531,6 +28445,7 @@ si	O	it
 d'	I-IDIOM	it
 accordo	I-IDIOM	it
 .	O	it
+
 Vi	O	it
 assicuro	O	it
 che	O	it
@@ -27544,12 +28459,14 @@ a	I-IDIOM	it
 i	O	it
 consensi	O	it
 .	O	it
+
 Almeno	O	it
 finchè	O	it
 siamo	O	it
 in	O	it
 democrazia	O	it
 .	O	it
+
 Ho	O	it
 provato	O	it
 a	O	it
@@ -27605,6 +28522,7 @@ desiderio	O	it
 di	O	it
 felicità	O	it
 .	O	it
+
 Si	O	it
 passa	B-IDIOM	it
 dalla	O	it
@@ -27649,6 +28567,7 @@ significato	I-IDIOM	it
 seppure	O	it
 misterioso	O	it
 ?	O	it
+
 Ferito	O	it
 da	O	it
 questa	O	it
@@ -27706,6 +28625,7 @@ padre	O	it
 non	O	it
 avevo	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 stato	O	it
@@ -27746,6 +28666,7 @@ prima	O	it
 di	O	it
 tutto	O	it
 .	O	it
+
 Anna	O	it
 non	O	it
 si	B-IDIOM	it
@@ -27821,6 +28742,7 @@ quello	O	it
 che	O	it
 vediamo	O	it
 .	O	it
+
 Se	O	it
 non	O	it
 ci	O	it
@@ -27850,6 +28772,7 @@ che	O	it
 ci	O	it
 sia	O	it
 .	O	it
+
 Non	O	it
 è	O	it
 innanzitutto	O	it
@@ -27878,6 +28801,7 @@ che	O	it
 mi	O	it
 accadeva	O	it
 .	O	it
+
 è	O	it
 come	O	it
 se	O	it
@@ -27916,6 +28840,7 @@ me	O	it
 così	O	it
 "	O	it
 .	O	it
+
 Questa	O	it
 è	O	it
 una	O	it
@@ -27975,6 +28900,7 @@ apparenza	O	it
 di	O	it
 morte	O	it
 .	O	it
+
 Così	O	it
 è	O	it
 cambiato	O	it
@@ -27999,6 +28925,7 @@ solo	O	it
 gli	O	it
 handicappati	O	it
 .	O	it
+
 è	O	it
 successo	O	it
 così	O	it
@@ -28031,6 +28958,7 @@ compagnia	I-IDIOM	it
 ad	O	it
 Anna	O	it
 .	O	it
+
 Così	O	it
 è	O	it
 nata	O	it
@@ -28072,6 +29000,7 @@ lontano	O	it
 da	O	it
 casa	O	it
 .	O	it
+
 Dove	O	it
 ogni	O	it
 giorno	O	it
@@ -28084,6 +29013,7 @@ scuola	O	it
 di	O	it
 cucina	O	it
 .	O	it
+
 Gli	O	it
 amici	O	it
 di	O	it
@@ -28115,6 +29045,7 @@ una	O	it
 bimba	O	it
 così	O	it
 !	O	it
+
 Il	O	it
 fatto	O	it
 incontestabile	O	it
@@ -28194,6 +29125,7 @@ felicità	O	it
 ecc.	O	it
 ecc	O	it
 ...	O	it
+
 E	O	it
 non	O	it
 di	B-IDIOM	it
@@ -28294,6 +29226,7 @@ eroe	O	it
 omerico	O	it
 )	O	it
 .	O	it
+
 La	O	it
 risposta	B-IDIOM	it
 se	O	it
@@ -28305,6 +29238,7 @@ solo	O	it
 sig.	O	it
 Baruffaldi	O	it
 .	O	it
+
 Se	O	it
 le	O	it
 cittadine	O	it
@@ -28341,6 +29275,7 @@ di	O	it
 il	O	it
 territorio	O	it
 .	O	it
+
 Non	O	it
 per	O	it
 niente	O	it
@@ -28396,6 +29331,7 @@ città	O	it
 di	O	it
 ADRIA	O	it
 .	O	it
+
 Adria	O	it
 è	O	it
 rimasta	O	it
@@ -28429,6 +29365,7 @@ ne	O	it
 necesitavano	O	it
 )	O	it
 .	O	it
+
 Ora	O	it
 si	O	it
 scopre	O	it
@@ -28451,6 +29388,7 @@ decina	O	it
 di	O	it
 anni	O	it
 .	O	it
+
 Via	O	it
 Mons.	O	it
 Pozzato	O	it
@@ -28469,6 +29407,7 @@ progetto	O	it
 stato	O	it
 proposto	O	it
 .	O	it
+
 è	O	it
 necessrio	O	it
 che	O	it
@@ -28496,6 +29435,7 @@ soldi	O	it
 ?	O	it
 ?	O	it
 ?	O	it
+
 Quell'	O	it
 unico	O	it
 appalto	O	it
@@ -28524,6 +29464,7 @@ a	O	it
 grosse	O	it
 multiutility	O	it
 .	O	it
+
 Ero	O	it
 riuscito	O	it
 a	O	it
@@ -28597,6 +29538,7 @@ importo	O	it
 da	O	it
 dimostrare	O	it
 .	O	it
+
 Quando	O	it
 la	O	it
 realtà	O	it
@@ -28626,6 +29568,7 @@ per	O	it
 andare	I-IDIOM	it
 avanti	I-IDIOM	it
 .	O	it
+
 Soprattutto	O	it
 ,	O	it
 di	O	it
@@ -28656,6 +29599,7 @@ che	O	it
 senso	O	it
 ha	O	it
 ?	O	it
+
 La	O	it
 vita	O	it
 non	O	it
@@ -28664,6 +29608,7 @@ forse	O	it
 un	O	it
 inganno	O	it
 ?	O	it
+
 Il	O	it
 senso	O	it
 di	O	it
@@ -28692,6 +29637,7 @@ di	O	it
 la	O	it
 contraddizione	O	it
 .	O	it
+
 Ci	B-IDIOM	it
 troviamo	I-IDIOM	it
 smarriti	O	it
@@ -28714,6 +29660,7 @@ tutto	O	it
 è	O	it
 niente	O	it
 .	O	it
+
 Possiamo	O	it
 «	O	it
 riempire	O	it
@@ -28732,6 +29679,7 @@ persona	O	it
 come	O	it
 Eluana	O	it
 ?	O	it
+
 Possiamo	O	it
 sopportare	O	it
 la	O	it
@@ -28773,6 +29721,7 @@ un	O	it
 vuoto	O	it
 devastante	O	it
 .	O	it
+
 Neanche	O	it
 a	O	it
 Cristo	O	it
@@ -28805,11 +29754,13 @@ fatto	O	it
 la	O	it
 differenza	O	it
 ?	O	it
+
 Che	O	it
 fosse	O	it
 più	O	it
 bravo	O	it
 ?	O	it
+
 Che	O	it
 avesse	O	it
 più	O	it
@@ -28818,6 +29769,7 @@ morale	O	it
 di	O	it
 noi	O	it
 ?	O	it
+
 No	O	it
 ,	O	it
 tanto	O	it
@@ -28840,6 +29792,7 @@ risparmiata	O	it
 la	O	it
 croce	O	it
 .	O	it
+
 In	O	it
 Cristo	O	it
 è	O	it
@@ -28865,6 +29818,7 @@ con	O	it
 il	O	it
 Padre	O	it
 .	O	it
+
 Benedetto	O	it
 XVI	O	it
 ha	O	it
@@ -28884,6 +29838,7 @@ l'	O	it
 amore	O	it
 incondizionato	O	it
 .	O	it
+
 Ha	B-IDIOM	it
 bisogno	I-IDIOM	it
 di	O	it
@@ -28921,6 +29876,7 @@ Rm	O	it
 -39	O	it
 )	O	it
 .	O	it
+
 Se	O	it
 esiste	O	it
 questo	O	it
@@ -28960,6 +29916,7 @@ salvi	O	it
 26	O	it
 )	O	it
 .	O	it
+
 Del	O	it
 Di	O	it
 il	O	it
@@ -28976,6 +29933,7 @@ di	O	it
 ogni	O	it
 giorno	O	it
 .	O	it
+
 Non	O	it
 sono	O	it
 la	O	it
@@ -29023,6 +29981,7 @@ i	O	it
 documenti	O	it
 ecclesiastici	O	it
 .	O	it
+
 Giovani	O	it
 e	O	it
 meno	O	it
@@ -29066,6 +30025,7 @@ di	O	it
 la	O	it
 Chiesa	O	it
 .	O	it
+
 Anzi	O	it
 ,	O	it
 è	O	it
@@ -29095,6 +30055,7 @@ di	O	it
 il	O	it
 vangelo	O	it
 .	O	it
+
 Il	O	it
 caso	O	it
 Welby	O	it
@@ -29148,6 +30109,7 @@ segni	O	it
 più	O	it
 evidenti	O	it
 .	O	it
+
 Ma	O	it
 ,	O	it
 più	O	it
@@ -29184,6 +30146,7 @@ economici	O	it
 ,	O	it
 politici	O	it
 .	O	it
+
 Si	B-IDIOM	it
 manifesta	I-IDIOM	it
 così	O	it
@@ -29227,6 +30190,7 @@ amore	O	it
 e	O	it
 rispetto	O	it
 .	O	it
+
 Un	O	it
 biglietto	O	it
 ...	O	it
@@ -29240,6 +30204,7 @@ decina	O	it
 di	O	it
 anni	O	it
 .	O	it
+
 Hai	B-IDIOM	it
 ragione	I-IDIOM	it
 Gerardo	O	it
@@ -29252,11 +30217,13 @@ scritti	O	it
 pure	O	it
 male	O	it
 .	O	it
+
 In	O	it
 un	O	it
 italiano	O	it
 pessimo	O	it
 .	O	it
+
 Con	O	it
 le	O	it
 K	O	it
@@ -29292,6 +30259,7 @@ decentemente	O	it
 un	O	it
 sms	O	it
 .	O	it
+
 Per	O	it
 non	O	it
 parlare	O	it
@@ -29306,6 +30274,7 @@ li	O	it
 vede	O	it
 più	O	it
 ?	O	it
+
 Insomma	O	it
 ...	O	it
 avranno	B-IDIOM	it
@@ -29388,6 +30357,7 @@ pò	O	it
 di	O	it
 romanticismo	O	it
 .	O	it
+
 La	O	it
 scorsa	O	it
 settimana	O	it
@@ -29409,6 +30379,7 @@ Dandini	O	it
 e	O	it
 Vergassola	O	it
 .	O	it
+
 Peccato	O	it
 lo	O	it
 trasmettano	O	it
@@ -29423,6 +30394,7 @@ un	I-IDIOM	it
 suo	O	it
 perché	I-IDIOM	it
 .	O	it
+
 Il	O	it
 professor	O	it
 Canfora	O	it
@@ -29490,6 +30462,7 @@ governo	O	it
 in	O	it
 carica.	O	it
 "	O	it
+
 Secondo	O	it
 Canfora	O	it
 aver	O	it
@@ -29505,6 +30478,7 @@ un	O	it
 pò	O	it
 rincitrullito	O	it
 .	O	it
+
 Studiare	O	it
 la	O	it
 storia	O	it
@@ -29518,6 +30492,7 @@ un	O	it
 pò	O	it
 pungenti	O	it
 .	O	it
+
 è	O	it
 sempre	O	it
 "	O	it
@@ -29529,6 +30504,7 @@ storia	O	it
 dico	O	it
 io	O	it
 .	O	it
+
 Bisogna	O	it
 avere	O	it
 un	O	it
@@ -29539,6 +30515,7 @@ amare	O	it
 una	O	it
 materia	O	it
 .	O	it
+
 Perché	O	it
 se	O	it
 avessi	O	it
@@ -29557,6 +30534,7 @@ filologa	O	it
 anch'	O	it
 io	O	it
 .	O	it
+
 Invece	O	it
 io	O	it
 la	O	it
@@ -29568,6 +30546,7 @@ mai	O	it
 amata	O	it
 molto	O	it
 .	O	it
+
 La	O	it
 storia	O	it
 come	O	it
@@ -29580,6 +30559,7 @@ libri	O	it
 ,	O	it
 intendo	O	it
 .	O	it
+
 Ascoltare	O	it
 l'	O	it
 intervista	O	it
@@ -29593,6 +30573,7 @@ davvero	O	it
 fatto	O	it
 riflettere	O	it
 .	O	it
+
 Secondo	O	it
 Canfora	O	it
 "	O	it
@@ -29621,6 +30602,7 @@ si	O	it
 ripetono	O	it
 spesso	O	it
 .	O	it
+
 E	O	it
 l'	O	it
 Italia	O	it
@@ -29631,6 +30613,7 @@ a	O	it
 corrente	O	it
 alternata	O	it
 .	O	it
+
 Bisognerebbe	O	it
 guardare	B-IDIOM	it
 in	I-IDIOM	it
@@ -29641,6 +30624,7 @@ che	O	it
 siamo	O	it
 stati	O	it
 .	O	it
+
 L'	O	it
 Italia	O	it
 ,	O	it
@@ -29658,6 +30642,7 @@ per	O	it
 esempio	O	it
 "	O	it
 .	O	it
+
 Sono	O	it
 affermazioni	O	it
 forti	O	it
@@ -29665,6 +30650,7 @@ forti	O	it
 ma	O	it
 vere	O	it
 .	O	it
+
 Luigi	O	it
 Canfora	O	it
 ha	O	it
@@ -29684,6 +30670,7 @@ edito	O	it
 da	O	it
 RIZZOLI	O	it
 .	O	it
+
 Lo	O	it
 sapevate	O	it
 che	O	it
@@ -29695,6 +30682,7 @@ sacco	O	it
 di	O	it
 volte	O	it
 ?	O	it
+
 Esattamente	O	it
 dai	O	it
 da	O	it
@@ -29706,6 +30694,7 @@ l'	O	it
 antica	O	it
 Roma	O	it
 .	O	it
+
 Canfora	O	it
 che	O	it
 si	B-IDIOM	it
@@ -29732,6 +30721,7 @@ un	O	it
 noto	O	it
 professore	O	it
 .	O	it
+
 Il	O	it
 professore	O	it
 ha	O	it
@@ -29741,6 +30731,7 @@ a	O	it
 i	O	it
 suoi	O	it
 studenti	O	it
+
 "	O	it
 se	O	it
 il	O	it
@@ -29784,6 +30775,7 @@ quattro	O	it
 e	O	it
 mezzo	O	it
 .	O	it
+
 O	O	it
 è	O	it
 quattro	O	it
@@ -29791,6 +30783,7 @@ o	O	it
 è	O	it
 cinque.	O	it
 "	O	it
+
 E	O	it
 così	O	it
 Canfora	O	it
@@ -29800,6 +30793,7 @@ alcuni	O	it
 FALSI	O	it
 STORICI	O	it
 .	O	it
+
 "	O	it
 IL	O	it
 TESTAMENTO	O	it
@@ -29815,6 +30809,7 @@ PRENDERE	B-IDIOM	it
 IL	I-IDIOM	it
 POTERE	I-IDIOM	it
 .	O	it
+
 CAMBIANDO	O	it
 ...	O	it
 RISCRIVENDO	O	it
@@ -29823,6 +30818,7 @@ UN	O	it
 DISCORSO	O	it
 POLITICO	O	it
 .	O	it
+
 VISTO	O	it
 CHE	O	it
 ERA	O	it
@@ -29832,6 +30828,7 @@ DALLO	O	it
 STESSO	O	it
 LENIN	O	it
 .	O	it
+
 INSERIRE	O	it
 DUE	O	it
 ,	O	it
@@ -29857,6 +30854,7 @@ DI	O	it
 CONSEGUENZE	O	it
 IMPREVEDIBILI	O	it
 "	O	it
+
 Insomma	O	it
 un	O	it
 falso	O	it
@@ -29871,9 +30869,11 @@ cambia	O	it
 la	O	it
 storia	O	it
 .	O	it
+
 Secondo	O	it
 esempio	O	it
 .	O	it
+
 BISMARCK	O	it
 FECE	O	it
 MODIFICARE	O	it
@@ -29890,6 +30890,7 @@ AD	O	it
 INGAGGIARE	O	it
 GUERRA	O	it
 .	O	it
+
 DA	O	it
 LI	O	it
 LA	O	it
@@ -29898,6 +30899,7 @@ GUERRA	O	it
 FRANCO	O	it
 PRUSSIANA	O	it
 .	O	it
+
 A	O	it
 questa	O	it
 domanda	O	it
@@ -29927,6 +30929,7 @@ c'	O	it
 mai	O	it
 stata.	O	it
 "	O	it
+
 E	O	it
 il	O	it
 professore	O	it
@@ -29944,6 +30947,7 @@ CONQUISTATO	O	it
 LA	O	it
 GALLIA	O	it
 .	O	it
+
 SE	O	it
 NOI	O	it
 NON	O	it
@@ -30002,6 +31006,7 @@ STATO	O	it
 UN	O	it
 GENOCIDIO	O	it
 .	O	it
+
 BASTA	O	it
 FAR	O	it
 SCOMPARIRE	O	it
@@ -30017,6 +31022,7 @@ C'	O	it
 PIù	O	it
 "	O	it
 .	O	it
+
 Ecco	O	it
 perché	O	it
 per	O	it
@@ -30033,6 +31039,7 @@ l'	O	it
 ha	O	it
 detto	O	it
 .	O	it
+
 Non	O	it
 è	O	it
 una	O	it
@@ -30047,6 +31054,7 @@ questione	O	it
 di	O	it
 vita	O	it
 .	O	it
+
 Perché	O	it
 ,	O	it
 basta	O	it
@@ -30071,6 +31079,7 @@ a	I-IDIOM	it
 la	O	it
 storia	O	it
 .	O	it
+
 Quindi	O	it
 ,	O	it
 è	O	it
@@ -30081,6 +31090,7 @@ fosse	O	it
 mai	O	it
 accaduto	O	it
 .	O	it
+
 Canfora	O	it
 ha	O	it
 una	O	it
@@ -30091,6 +31101,7 @@ la	O	it
 parola	O	it
 democrazia	O	it
 .	O	it
+
 Afferma	O	it
 che	O	it
 siccome	O	it
@@ -30107,10 +31118,12 @@ quasi	O	it
 uno	O	it
 slogan	O	it
 .	O	it
+
 Quindi	O	it
 diventa	O	it
 insidiosa	O	it
 .	O	it
+
 Per	O	it
 questo	O	it
 è	O	it
@@ -30124,6 +31137,7 @@ quanti	O	it
 significati	B-IDIOM	it
 ha	I-IDIOM	it
 .	O	it
+
 Il	O	it
 professore	O	it
 racconta	O	it
@@ -30173,6 +31187,7 @@ da	O	it
 gli	O	it
 altri	O	it
 .	O	it
+
 Ma	O	it
 le	O	it
 democrazie	O	it
@@ -30188,8 +31203,10 @@ prospero	O	it
 non	O	it
 è	O	it
 .	O	it
+
 Sapete	O	it
 ?	O	it
+
 Ad	O	it
 ascoltare	O	it
 Canfora	O	it
@@ -30208,8 +31225,10 @@ storia	O	it
 si	O	it
 ripeta	O	it
 .	O	it
+
 Sempre	O	it
 .	O	it
+
 Una	O	it
 volta	O	it
 ,	O	it
@@ -30229,6 +31248,7 @@ cittadini	O	it
 e	O	it
 schiavi	O	it
 .	O	it
+
 Oggi	O	it
 la	O	it
 schiavitù	O	it
@@ -30248,12 +31268,14 @@ meccanismo	O	it
 lo	O	it
 stesso	O	it
 .	O	it
+
 Atene	O	it
 era	O	it
 un'	O	it
 aristocrazia	O	it
 allargata	O	it
 .	O	it
+
 Ventimila	O	it
 aristocratici	O	it
 avevano	O	it
@@ -30266,6 +31288,7 @@ altri	O	it
 erano	O	it
 fuori	O	it
 .	O	it
+
 Oggi	O	it
 il	O	it
 modello	O	it
@@ -30278,6 +31301,7 @@ in	O	it
 scala	O	it
 maggiore	O	it
 .	O	it
+
 quanta	O	it
 storia	O	it
 del	O	it
@@ -30289,6 +31313,7 @@ passato	O	it
 viene	O	it
 nascosta	O	it
 .	O	it
+
 ancora	O	it
 non	O	it
 si	O	it
@@ -30347,6 +31372,7 @@ di	O	it
 ordine	O	it
 mondiale	O	it
 .	O	it
+
 non	O	it
 dimentichiamo-	O	it
 ci	O	it
@@ -30388,6 +31414,7 @@ a	O	it
 livello	O	it
 economico	O	it
 .	O	it
+
 la	O	it
 paura	O	it
 della	O	it
@@ -30403,6 +31430,7 @@ per	O	it
 poter	O	it
 governare	O	it
 .	O	it
+
 leggere	O	it
 ed	O	it
 informar-	O	it
@@ -30418,6 +31446,7 @@ a	O	it
 il	O	it
 potere	O	it
 .	O	it
+
 "	O	it
 Apprendiamo	O	it
 dal	O	it
@@ -30483,6 +31512,7 @@ il	O	it
 terrorismo	O	it
 "	O	it
 .	O	it
+
 Ad	O	it
 affermar-	O	it
 lo	O	it
@@ -30511,6 +31541,7 @@ quale	O	it
 è	O	it
 presidente	O	it
 .	O	it
+
 I	O	it
 componenti	O	it
 dell'	O	it
@@ -30631,6 +31662,7 @@ hanno	O	it
 mai	O	it
 ottenuto	O	it
 .	O	it
+
 "	O	it
 In	O	it
 questo	O	it
@@ -30679,6 +31711,7 @@ di	O	it
 bassa	O	it
 lega	O	it
 .	O	it
+
 Ciò	O	it
 che	O	it
 offende	O	it
@@ -30715,6 +31748,7 @@ condannati	O	it
 per	O	it
 favoreggiamento	O	it
 .	O	it
+
 Se	O	it
 la	O	it
 classe	O	it
@@ -30768,6 +31802,7 @@ vittime	O	it
 di	O	it
 mafia	O	it
 .	O	it
+
 Le	O	it
 finalità	O	it
 del	O	it
@@ -30834,6 +31869,7 @@ loro	O	it
 memoria	O	it
 "	O	it
 .	O	it
+
 In	O	it
 conclusione	O	it
 di	O	it
@@ -30937,6 +31973,7 @@ dissenso	O	it
 sociale	O	it
 "	O	it
 .	O	it
+
 abbiamo	O	it
 talmente	O	it
 tante	O	it
@@ -30965,6 +32002,7 @@ di	O	it
 i	O	it
 giovani	O	it
 .	O	it
+
 concordo	O	it
 con	O	it
 Manlio	O	it
@@ -31012,8 +32050,10 @@ ed	O	it
 altri	O	it
 orrori	O	it
 .	O	it
+
 Italiani	O	it
 !	O	it
+
 purtroppo	O	it
 tanti	O	it
 se	O	it
@@ -31022,6 +32062,7 @@ sono	O	it
 votato	O	it
 Berlusconi	O	it
 .	O	it
+
 Ora	O	it
 quando	O	it
 finirà	O	it
@@ -31054,6 +32095,7 @@ non	O	it
 vanno	I-IDIOM	it
 bene	I-IDIOM	it
 .	O	it
+
 Il	O	it
 cambiamento	O	it
 parte	O	it
@@ -31089,6 +32131,7 @@ altrimenti	O	it
 li	O	it
 legittimiamo	O	it
 .	O	it
+
 Si	O	it
 può	O	it
 dire	O	it
@@ -31115,6 +32158,7 @@ con	O	it
 vero	O	it
 raziocinio	O	it
 .	O	it
+
 È	O	it
 esperienza	O	it
 di	O	it
@@ -31170,6 +32214,7 @@ cattiva	O	it
 e	O	it
 subdola	O	it
 .	O	it
+
 Ciò	O	it
 avviene	O	it
 per	O	it
@@ -31225,6 +32270,7 @@ realtà	O	it
 ci	O	it
 suggeriscono	O	it
 .	O	it
+
 La	O	it
 disparità	O	it
 di	O	it
@@ -31346,6 +32392,7 @@ la	O	it
 vita	O	it
 reale	O	it
 .	O	it
+
 E	O	it
 questa	O	it
 è	O	it
@@ -31397,6 +32444,7 @@ l'	O	it
 evoluzione	O	it
 sociale	O	it
 .	O	it
+
 Il	O	it
 destino	O	it
 dell'	O	it
@@ -31411,14 +32459,17 @@ di	O	it
 le	O	it
 risposte	O	it
 .	O	it
+
 SEMPRE	O	it
 .	O	it
+
 Su	O	it
 questo	O	it
 le	O	it
 do	B-IDIOM	it
 atto	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 Manlio	O	it
 ,	O	it
@@ -31440,6 +32491,7 @@ a	O	it
 certe	O	it
 cose	O	it
 .	O	it
+
 E	O	it
 di	O	it
 nuovo	O	it
@@ -31453,23 +32505,28 @@ ma	O	it
 di	O	it
 fede	O	it
 .	O	it
+
 Io	O	it
 trovo	O	it
 che	O	it
 sia	O	it
 diverso	O	it
 .	O	it
+
 Credere	O	it
 è	O	it
 mistero	O	it
 .	O	it
+
 Si	O	it
 crede	O	it
 e	O	it
 basta	O	it
 .	O	it
+
 Punto	O	it
 .	O	it
+
 è	O	it
 qualcosa	O	it
 che	O	it
@@ -31483,6 +32540,7 @@ ce	O	it
 l'	O	it
 hai	O	it
 .	O	it
+
 E	O	it
 non	O	it
 si	O	it
@@ -31491,10 +32549,12 @@ per	O	it
 mera	O	it
 consolazione	O	it
 .	O	it
+
 Ma	O	it
 per	O	it
 ispirazione	O	it
 .	O	it
+
 E	O	it
 non	O	it
 ha	B-IDIOM	it
@@ -31512,6 +32572,7 @@ catechismo	O	it
 i	O	it
 sacramenti	O	it
 .	O	it
+
 Almeno	O	it
 non	O	it
 nel	O	it
@@ -31520,6 +32581,7 @@ il	O	it
 mio	O	it
 caso	O	it
 .	O	it
+
 Cercare	O	it
 di	O	it
 trovare	O	it
@@ -31565,6 +32627,7 @@ me	O	it
 sempre	O	it
 piaciuto	O	it
 .	O	it
+
 Ce	B-IDIOM	it
 l'	I-IDIOM	it
 ho	I-IDIOM	it
@@ -31573,6 +32636,7 @@ in	I-IDIOM	it
 il	I-IDIOM	it
 sangue	I-IDIOM	it
 .	O	it
+
 Ma	O	it
 di	O	it
 fronte	O	it
@@ -31583,14 +32647,17 @@ io	O	it
 mi	B-IDIOM	it
 arrendo	I-IDIOM	it
 .	O	it
+
 E	O	it
 accetto	O	it
 .	O	it
+
 Anche	O	it
 se	O	it
 non	O	it
 capisco	O	it
 .	O	it
+
 Ammetto	O	it
 che	O	it
 ogni	O	it
@@ -31606,6 +32673,7 @@ a	O	it
 certe	O	it
 cose	O	it
 .	O	it
+
 Io	O	it
 spazio	O	it
 Manlio	O	it
@@ -31615,6 +32683,7 @@ questo	O	it
 il	O	it
 fatto	O	it
 .	O	it
+
 Leggo	O	it
 libri	O	it
 di	O	it
@@ -31624,6 +32693,7 @@ libri	O	it
 di	O	it
 cattolici	O	it
 .	O	it
+
 Ed	O	it
 è	O	it
 solo	O	it
@@ -31645,6 +32715,7 @@ che	O	it
 mi	O	it
 circonda	O	it
 .	O	it
+
 Nè	O	it
 destra	O	it
 ,	O	it
@@ -31661,6 +32732,7 @@ personale	O	it
 di	O	it
 vista	O	it
 .	O	it
+
 Perchè	O	it
 purtroppo	O	it
 come	O	it
@@ -31682,6 +32754,7 @@ cercato	O	it
 il	O	it
 consenso	O	it
 .	O	it
+
 in	O	it
 Italia	O	it
 si	O	it
@@ -31697,6 +32770,7 @@ a	O	it
 i	O	it
 cittadini	O	it
 .	O	it
+
 questo	O	it
 provocherà	B-IDIOM	it
 danni	I-IDIOM	it
@@ -31711,6 +32785,7 @@ si	O	it
 finivano	O	it
 mai	O	it
 .	O	it
+
 Anche	O	it
 sul	O	it
 su	O	it
@@ -31745,6 +32820,7 @@ di	O	it
 questi	O	it
 giorni	O	it
 .	O	it
+
 é	O	it
 vero	O	it
 che	O	it
@@ -31776,6 +32852,7 @@ Comune	O	it
 e	O	it
 Regione	O	it
 .	O	it
+
 altre	O	it
 come	O	it
 la	O	it
@@ -31797,6 +32874,7 @@ con	O	it
 quest'	O	it
 ultimo	O	it
 .	O	it
+
 Attendiamo	O	it
 caro	O	it
 dott.	O	it
@@ -31816,6 +32894,7 @@ la	O	it
 campagna	O	it
 elettorale	O	it
 .	O	it
+
 siamo	O	it
 curiosi	O	it
 di	O	it
@@ -31837,6 +32916,7 @@ e	O	it
 la	O	it
 risoluzione	O	it
 .	O	it
+
 Only	O	it
 the	O	it
 brave	O	it
@@ -31846,6 +32926,7 @@ on	O	it
 the	O	it
 blog	O	it
 .	O	it
+
 contributo	O	it
 ci	O	it
 sono	O	it
@@ -31881,6 +32962,7 @@ di	O	it
 prestazione	O	it
 energetica	O	it
 .	O	it
+
 ‘La	O	it
 logica	O	it
 che	O	it
@@ -31911,6 +32993,7 @@ il	O	it
 cosiddetto	O	it
 Negawatt	O	it
 .	O	it
+
 A	O	it
 fronte	O	it
 delle	O	it
@@ -31983,6 +33066,7 @@ la	O	it
 detrazione	O	it
 '	O	it
 .	O	it
+
 ‘Uno	O	it
 degli	O	it
 di	O	it
@@ -32067,6 +33151,7 @@ di	O	it
 il	O	it
 Governo	O	it
 .	O	it
+
 –	O	it
 continua	O	it
 Zaratti	O	it
@@ -32119,6 +33204,7 @@ a	O	it
 i	O	it
 cittadini	O	it
 .	O	it
+
 Con	O	it
 questo	O	it
 bando	O	it
@@ -32144,6 +33230,7 @@ massimo	O	it
 le	O	it
 procedure	O	it
 .	O	it
+
 Quindi	O	it
 sia	O	it
 lavori	O	it
@@ -32201,6 +33288,7 @@ gli	O	it
 impianti	O	it
 geotermici	O	it
 '	O	it
+
 Se	O	it
 dobbiamo	O	it
 fare	B-IDIOM	it
@@ -32229,6 +33317,7 @@ a	O	it
 i	O	it
 Polesani	O	it
 .	O	it
+
 Bravo	O	it
 ,	O	it
 ne	O	it
@@ -32236,6 +33325,7 @@ avevamo	B-IDIOM	it
 tanto	O	it
 bisogno	I-IDIOM	it
 !	O	it
+
 Allora	O	it
 ,	O	it
 più	O	it
@@ -32264,6 +33354,7 @@ di	O	it
 la	O	it
 centrale	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 stato	O	it
@@ -32290,6 +33381,7 @@ le	O	it
 associazioni	O	it
 ambientaliste	O	it
 .	O	it
+
 Anche	O	it
 di	O	it
 recente	O	it
@@ -32365,6 +33457,7 @@ medica	O	it
 in	O	it
 attività	O	it
 .	O	it
+
 Questi	O	it
 sono	O	it
 dati	O	it
@@ -32374,6 +33467,7 @@ e	O	it
 non	O	it
 balle	O	it
 .	O	it
+
 In	O	it
 secondo	O	it
 luogo	O	it
@@ -32403,6 +33497,7 @@ di	O	it
 il	O	it
 Po	O	it
 .	O	it
+
 è	O	it
 assolutamente	O	it
 contradditorio	O	it
@@ -32442,6 +33537,7 @@ a	O	it
 il	O	it
 turismo	O	it
 .	O	it
+
 Il	O	it
 centro	O	it
 destra	O	it
@@ -32477,6 +33573,7 @@ le	O	it
 coste	O	it
 Bassopolesane	O	it
 .	O	it
+
 Queste	O	it
 posizioni	O	it
 le	O	it
@@ -32493,6 +33590,7 @@ disorganiche	O	it
 ,	O	it
 demenziali	O	it
 .	O	it
+
 Qui	O	it
 si	O	it
 vuole	O	it
@@ -32509,6 +33607,7 @@ i	O	it
 suoi	O	it
 abitanti	O	it
 .	O	it
+
 Se	O	it
 il	O	it
 centro	O	it
@@ -32533,6 +33632,7 @@ partiti	O	it
 che	O	it
 tacciono	O	it
 .	O	it
+
 Sul	O	it
 Su	O	it
 il	O	it
@@ -32585,6 +33685,7 @@ andare	O	it
 a	O	it
 crabone	O	it
 .	O	it
+
 E	O	it
 che	O	it
 cosa	O	it
@@ -32593,8 +33694,10 @@ detto	O	it
 il	O	it
 Pd	O	it
 ?	O	it
+
 Nulla	O	it
 .	O	it
+
 La	O	it
 conclusione	O	it
 sembra	O	it
@@ -32620,6 +33723,7 @@ di	O	it
 il	O	it
 Bassopolesine	O	it
 .	O	it
+
 Da	O	it
 tutto	O	it
 questo	O	it
@@ -32637,6 +33741,7 @@ continua	O	it
 a	O	it
 fallire	O	it
 .	O	it
+
 Il	O	it
 mio	O	it
 motto	O	it
@@ -32652,6 +33757,7 @@ tutti	O	it
 a	I-IDIOM	it
 casa	I-IDIOM	it
 .	O	it
+
 La	O	it
 delibera	O	it
 della	O	it
@@ -32800,6 +33906,7 @@ da	O	it
 l'	O	it
 Enel	O	it
 .	O	it
+
 Nell'	O	it
 In	O	it
 l'	O	it
@@ -32839,6 +33946,7 @@ netta	O	it
 di	O	it
 1.902	O	it
 MWe/h.	O	it
+
 Per	O	it
 effetto	O	it
 della	O	it
@@ -32878,6 +33986,7 @@ elettrico	O	it
 netto	O	it
 )	O	it
 .	O	it
+
 Le	O	it
 biomasse	O	it
 (	O	it
@@ -32926,6 +34035,7 @@ produrranno	O	it
 circa	O	it
 95,19	O	it
 MWe/h.	O	it
+
 La	O	it
 producibilità	O	it
 elettrica	O	it
@@ -32947,6 +34057,7 @@ x	O	it
 828.153	O	it
 MWe	O	it
 .	O	it
+
 Questa	O	it
 quantità	O	it
 di	O	it
@@ -32992,6 +34103,7 @@ elettrico	O	it
 =	O	it
 75.361.923	O	it
 €/anno	O	it
+
 Per	O	it
 il	O	it
 periodo	O	it
@@ -33008,6 +34120,7 @@ x	O	it
 anni	O	it
 =	O	it
 1.130.428.845	O	it
+
 Per	O	it
 quanto	O	it
 riguarda	O	it
@@ -33035,6 +34148,7 @@ il	O	it
 in	O	it
 peso	O	it
 .	O	it
+
 Su	O	it
 4.000.000	O	it
 t	O	it
@@ -33080,6 +34194,7 @@ dell	O	it
 settembre	O	it
 1997	O	it
 .	O	it
+
 L'	O	it
 Enel	O	it
 ,	O	it
@@ -33121,6 +34236,7 @@ Commissione	O	it
 Regionale	O	it
 V.I.A	O	it
 ...	O	it
+
 80.000	O	it
 t	O	it
 x	O	it
@@ -33153,6 +34269,7 @@ totale	O	it
 di	O	it
 1.238.428.845	O	it
 €.	O	it
+
 Inoltre	O	it
 dovendo	O	it
 l'	O	it
@@ -33267,6 +34384,7 @@ ammonterebbe	O	it
 a	O	it
 451.744.020	O	it
 €	O	it
+
 L'	O	it
 Enel	O	it
 investe	O	it
@@ -33349,11 +34467,13 @@ da	O	it
 fonti	O	it
 rinnovabili	O	it
 .	O	it
+
 Tutto	O	it
 questo	O	it
 è	O	it
 pazzesco	O	it
 .	O	it
+
 Nell'	O	it
 In	O	it
 l'	O	it
@@ -33458,6 +34578,7 @@ le	O	it
 seguenti	O	it
 condizioni	O	it
 :	O	it
+
 Ci	O	it
 saranno	O	it
 a	O	it
@@ -33521,6 +34642,7 @@ CDR	O	it
 191210	O	it
 )	O	it
 .	O	it
+
 A	O	it
 pag.	O	it
 31	O	it
@@ -33572,12 +34694,14 @@ viciniore	O	it
 !	O	it
 !	O	it
 !	O	it
+
 Questa	O	it
 affermazione	O	it
 resta	O	it
 senza	O	it
 commento	O	it
 .	O	it
+
 Grazie	O	it
 all'	O	it
 a	O	it
@@ -33616,6 +34740,7 @@ e	O	it
 di	O	it
 compassione	O	it
 .	O	it
+
 Il	O	it
 tutto	O	it
 è	O	it
@@ -33623,6 +34748,7 @@ vergognoso	O	it
 ed	O	it
 inaccettabile	O	it
 !	O	it
+
 quello	O	it
 che	O	it
 scrive	O	it
@@ -33767,6 +34893,7 @@ i	O	it
 morti	O	it
 morissero	O	it
 .	O	it
+
 Credo	O	it
 ,	O	it
 anzi	O	it
@@ -33815,6 +34942,7 @@ di	O	it
 le	O	it
 Idee	O	it
 .	O	it
+
 Ho	O	it
 visto	O	it
 in	O	it
@@ -33846,6 +34974,7 @@ di	O	it
 i	O	it
 giorni	O	it
 .	O	it
+
 Lei	O	it
 deve	O	it
 sapere	O	it
@@ -33870,6 +34999,7 @@ amico	O	it
 ,	O	it
 Marotta	O	it
 ?	O	it
+
 Le	O	it
 devo	O	it
 dire	O	it
@@ -33919,6 +35049,7 @@ il	O	it
 risparmio	O	it
 energetico	O	it
 .	O	it
+
 Ovviamente	O	it
 anche	O	it
 io	O	it
@@ -33944,6 +35075,7 @@ questo	O	it
 il	O	it
 punto	O	it
 .	O	it
+
 Che	O	it
 cosa	O	it
 vuol	O	it
@@ -33965,6 +35097,7 @@ futuro	O	it
 ,	O	it
 come	O	it
 ?	O	it
+
 Ognuno	O	it
 ha	O	it
 la	O	it
@@ -33984,6 +35117,7 @@ stato	O	it
 pensato	O	it
 prima	O	it
 ?	O	it
+
 Credo	O	it
 è	O	it
 qui	O	it
@@ -34040,6 +35174,7 @@ la	O	it
 più	O	it
 efficente	O	it
 .	O	it
+
 Vengo	B-IDIOM	it
 al	O	it
 a	I-IDIOM	it
@@ -34165,6 +35300,7 @@ per	O	it
 fare	O	it
 questo	O	it
 ?	O	it
+
 Solo	O	it
 ora	O	it
 arrivate	O	it
@@ -34180,6 +35316,7 @@ quello	O	it
 che	O	it
 è	O	it
 .	O	it
+
 Cara	O	it
 Rosa	O	it
 ammettiamo-	O	it
@@ -34214,6 +35351,7 @@ ambientale	O	it
 ed	O	it
 energetico	O	it
 .	O	it
+
 Come	O	it
 prima	O	it
 cosa	O	it
@@ -34315,6 +35453,7 @@ di	O	it
 gli	O	it
 amici	O	it
 .	O	it
+
 in	O	it
 luoghi	O	it
 così	O	it
@@ -34433,6 +35572,7 @@ toccato	O	it
 come	O	it
 presente	O	it
 .	O	it
+
 Forse	O	it
 un	O	it
 momento	O	it
@@ -34500,6 +35640,7 @@ non	O	it
 spingere	O	it
 "	O	it
 .	O	it
+
 comprendo	O	it
 il	O	it
 tuo	O	it
@@ -34550,6 +35691,7 @@ malumore	O	it
 la	O	it
 positività	O	it
 .	O	it
+
 Potrei	O	it
 finger-	O	it
 me	O	it
@@ -34673,6 +35815,7 @@ me	O	it
 languore	O	it
 ma	O	it
 .	O	it
+
 Un	O	it
 che	O	it
 di	O	it
@@ -34879,6 +36022,7 @@ gli	O	it
 occhi	O	it
 di	O	it
 .	O	it
+
 Non	O	it
 sono	O	it
 uno	O	it
@@ -34888,6 +36032,7 @@ lo	O	it
 vorrei	O	it
 essere	O	it
 ...	O	it
+
 1	O	it
 -	O	it
 a	O	it
@@ -34999,6 +36144,7 @@ il	O	it
 7	O	it
 feb	O	it
 .	O	it
+
 Punto	O	it
 secondo	O	it
 Io	O	it
@@ -35019,6 +36165,7 @@ i	O	it
 loro	O	it
 problemi	O	it
 .	O	it
+
 Ieri	O	it
 ho	O	it
 consigliato	O	it
@@ -35045,6 +36192,7 @@ a	O	it
 centro	O	it
 ippico	O	it
 .	O	it
+
 Oggi	O	it
 ho	O	it
 protocollato	O	it
@@ -35076,6 +36224,7 @@ di	O	it
 primo	O	it
 grado	O	it
 .	O	it
+
 Non	O	it
 serve	O	it
 la	O	it
@@ -35102,6 +36251,7 @@ la	O	it
 nostra	O	it
 lista	O	it
 .	O	it
+
 Punto	O	it
 terzo	O	it
 La	O	it
@@ -35129,6 +36279,7 @@ sarebbe	O	it
 da	O	it
 appoggiare	O	it
 ?	O	it
+
 Credo	O	it
 che	O	it
 la	O	it
@@ -35159,6 +36310,7 @@ il	O	it
 primo	O	it
 turno	O	it
 .	O	it
+
 Io	O	it
 sono	O	it
 coerente	O	it
@@ -35192,6 +36344,7 @@ per	O	it
 una	O	it
 poltrona	O	it
 .	O	it
+
 Chiedo	O	it
 ai	O	it
 a	O	it
@@ -35231,6 +36384,7 @@ con	O	it
 carisma	O	it
 "	O	it
 .	O	it
+
 Punto	O	it
 quarto	O	it
 Le	O	it
@@ -35271,6 +36425,7 @@ di	O	it
 il	O	it
 centro	O	it
 .	O	it
+
 Ogni	O	it
 argomento	O	it
 da	O	it
@@ -35281,6 +36436,7 @@ sua	O	it
 posizione	O	it
 logica	O	it
 .	O	it
+
 Ad	O	it
 esempio	O	it
 quando	O	it
@@ -35358,6 +36514,7 @@ lo	O	it
 vogliono	O	it
 fare	O	it
 .	O	it
+
 Non	O	it
 esiste	O	it
 un	O	it
@@ -35387,6 +36544,7 @@ mischiano	O	it
 i	O	it
 pensieri	O	it
 .	O	it
+
 Il	O	it
 dott.	O	it
 COSTA	O	it
@@ -35401,6 +36559,7 @@ chiesto	O	it
 di	O	it
 collaborare	O	it
 .	O	it
+
 Stiamo	O	it
 trovando	O	it
 un	O	it
@@ -35408,6 +36567,7 @@ punto	O	it
 di	O	it
 condivisione	O	it
 .	O	it
+
 Ultimo	O	it
 punto	O	it
 I	O	it
@@ -35445,6 +36605,7 @@ per	O	it
 il	O	it
 36%	O	it
 .	O	it
+
 Ho	O	it
 già	O	it
 inoltrato	O	it
@@ -35466,6 +36627,7 @@ per	O	it
 altri	O	it
 comuni	O	it
 .	O	it
+
 Con	O	it
 la	O	it
 volontà	O	it
@@ -35480,6 +36642,7 @@ si	O	it
 può	O	it
 fare	O	it
 .	O	it
+
 Circa	O	it
 LODO	O	it
 e	O	it
@@ -35513,6 +36676,7 @@ sig.a	O	it
 Barzan	O	it
 )	O	it
 .	O	it
+
 Comunque	O	it
 abbiamo	O	it
 lanciato	B-IDIOM	it
@@ -35526,6 +36690,7 @@ e	O	it
 quantomeno	O	it
 discusso	O	it
 .	O	it
+
 Parlare	O	it
 non	O	it
 ha	O	it
@@ -35535,6 +36700,7 @@ male	I-IDIOM	it
 a	O	it
 nessuno	O	it
 .	O	it
+
 Mmm	O	it
 ...	O	it
 di	O	it
@@ -35642,6 +36808,7 @@ di	O	it
 l'	O	it
 incazzatura	O	it
 .	O	it
+
 Mia	O	it
 mamma	O	it
 dice	O	it
@@ -35696,6 +36863,7 @@ passare	I-IDIOM	it
 Parole	O	it
 sante.	O	it
 "	O	it
+
 Questa	O	it
 è	O	it
 la	O	it
@@ -35712,6 +36880,7 @@ di	O	it
 via	O	it
 Panisperna	O	it
 .	O	it
+
 Le	O	it
 centrali	O	it
 nucleari	O	it
@@ -35747,6 +36916,7 @@ video	O	it
 anni	O	it
 '80	O	it
 .	O	it
+
 Le	O	it
 marce	O	it
 del	O	it
@@ -35762,6 +36932,7 @@ sono	O	it
 archeologia	O	it
 storica	O	it
 .	O	it
+
 Il	O	it
 nucleare	O	it
 ,	O	it
@@ -35782,6 +36953,7 @@ più	O	it
 un	O	it
 tabù	O	it
 .	O	it
+
 Lo	O	it
 dicono	O	it
 gli	O	it
@@ -35792,10 +36964,12 @@ tutto	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 Qualcosa	O	it
 è	O	it
 cambiato	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 il	O	it
@@ -35813,6 +36987,7 @@ ci	O	it
 siamo	O	it
 sbagliati	O	it
 .	O	it
+
 Le	O	it
 centrali	O	it
 nucleari	O	it
@@ -35826,6 +37001,7 @@ di	O	it
 anidride	O	it
 carbonica	O	it
 .	O	it
+
 Il	O	it
 concetto	O	it
 è	O	it
@@ -35847,6 +37023,7 @@ caro	O	it
 vecchio	O	it
 atomo	O	it
 .	O	it
+
 È	O	it
 quello	O	it
 che	O	it
@@ -35861,6 +37038,7 @@ inglesi	O	it
 pentiti	O	it
 »	O	it
 .	O	it
+
 Stephen	O	it
 Tindale	O	it
 ,	O	it
@@ -35884,6 +37062,7 @@ una	O	it
 conversione	O	it
 religiosa	O	it
 .	O	it
+
 Essere	O	it
 contro	O	it
 il	O	it
@@ -35914,6 +37093,7 @@ cambiamenti	O	it
 climatici	O	it
 »	O	it
 .	O	it
+
 E	O	it
 chi	O	it
 sono	O	it
@@ -35921,6 +37101,7 @@ gli	O	it
 altri	O	it
 tre	O	it
 ?	O	it
+
 Lord	O	it
 Chris	O	it
 Smith	O	it
@@ -35944,6 +37125,7 @@ per	O	it
 l'	O	it
 ambiente	O	it
 .	O	it
+
 Chris	O	it
 Goodall	O	it
 ,	O	it
@@ -35986,6 +37168,7 @@ finiremo	B-IDIOM	it
 tutti	O	it
 arrosto	I-IDIOM	it
 .	O	it
+
 Questi	O	it
 quattro	O	it
 cavalieri	O	it
@@ -36015,6 +37198,7 @@ mortali	O	it
 il	O	it
 nucleare	O	it
 .	O	it
+
 Lynas	O	it
 arriva	B-IDIOM	it
 perfino	O	it
@@ -36059,6 +37243,7 @@ il	O	it
 prezzo	I-IDIOM	it
 »	O	it
 .	O	it
+
 Gli	O	it
 ecologisti	O	it
 si	B-IDIOM	it
@@ -36080,6 +37265,7 @@ centrali	O	it
 a	O	it
 carbone	O	it
 .	O	it
+
 Quelle	O	it
 che	O	it
 hanno	O	it
@@ -36090,6 +37276,7 @@ di	O	it
 nebbia	O	it
 verde	O	it
 .	O	it
+
 Gli	O	it
 ecologisti	O	it
 ,	O	it
@@ -36112,6 +37299,7 @@ masnada	O	it
 di	O	it
 Savonarola	O	it
 .	O	it
+
 È	O	it
 stato	O	it
 il	O	it
@@ -36120,6 +37308,7 @@ grande	O	it
 errore	O	it
 ideologico	O	it
 .	O	it
+
 Hanno	O	it
 trasformato	O	it
 la	O	it
@@ -36145,6 +37334,7 @@ assolute	O	it
 di	O	it
 scomuniche	O	it
 .	O	it
+
 Questo	O	it
 è	O	it
 buono	O	it
@@ -36153,6 +37343,7 @@ questo	O	it
 è	O	it
 cattivo	O	it
 .	O	it
+
 Ma	O	it
 l'	O	it
 atomo	O	it
@@ -36169,6 +37360,7 @@ di	O	it
 Dio	O	it
 »	O	it
 .	O	it
+
 È	O	it
 solo	O	it
 l'	O	it
@@ -36182,10 +37374,12 @@ che	O	it
 c'	O	it
 è	O	it
 .	O	it
+
 Ora	O	it
 ,	O	it
 adesso	O	it
 .	O	it
+
 Come	O	it
 al	O	it
 a	O	it
@@ -36196,6 +37390,7 @@ il	I-IDIOM	it
 male	I-IDIOM	it
 minore	I-IDIOM	it
 .	O	it
+
 È	O	it
 pericoloso	O	it
 se	O	it
@@ -36222,11 +37417,13 @@ che	O	it
 vanno	O	it
 smaltite	O	it
 .	O	it
+
 E	O	it
 non	O	it
 è	O	it
 facile	O	it
 .	O	it
+
 Ma	O	it
 questo	O	it
 lo	O	it
@@ -36252,6 +37449,7 @@ nucleare	O	it
 a	O	it
 fissione	O	it
 .	O	it
+
 Qui	O	it
 ,	O	it
 in	O	it
@@ -36266,6 +37464,7 @@ di	O	it
 Chicco	O	it
 Testa	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -36289,9 +37488,11 @@ referendum	O	it
 anti	O	it
 nucleare	O	it
 .	O	it
+
 «	O	it
 Pentito	O	it
 ?	O	it
+
 Una	O	it
 volta	O	it
 ,	O	it
@@ -36312,6 +37513,7 @@ un'	O	it
 opinione	O	it
 sostenuta	O	it
 .	O	it
+
 Allora	O	it
 ero	O	it
 deputato	O	it
@@ -36339,6 +37541,7 @@ non	O	it
 pentir-	B-IDIOM	it
 si	I-IDIOM	it
 .	O	it
+
 Nelle	O	it
 In	O	it
 le	O	it
@@ -36350,12 +37553,14 @@ non	O	it
 dovrebbe	O	it
 esistere	O	it
 .	O	it
+
 Non	O	it
 sono	O	it
 argomento	O	it
 di	O	it
 fede	O	it
 .	O	it
+
 Non	O	it
 mi	O	it
 piacciono	O	it
@@ -36368,6 +37573,7 @@ contro	O	it
 i	O	it
 pentiti	O	it
 .	O	it
+
 E	O	it
 neppure	O	it
 le	O	it
@@ -36375,6 +37581,7 @@ Sante	O	it
 Inquisizioni	O	it
 »	O	it
 .	O	it
+
 Chicco	O	it
 Testa	O	it
 non	O	it
@@ -36382,11 +37589,13 @@ si	B-IDIOM	it
 è	O	it
 pentito	I-IDIOM	it
 .	O	it
+
 Ha	O	it
 solo	O	it
 cambiato	O	it
 idea	O	it
 .	O	it
+
 In	O	it
 mezzo	O	it
 ci	O	it
@@ -36397,6 +37606,7 @@ senza	O	it
 centrali	O	it
 nucleari	O	it
 .	O	it
+
 Tutti	O	it
 gli	O	it
 anti	O	it
@@ -36411,6 +37621,7 @@ di	O	it
 un	O	it
 pregiudizio	O	it
 .	O	it
+
 Gwyneth	O	it
 Cravens	O	it
 ,	O	it
@@ -36436,6 +37647,7 @@ di	O	it
 New	O	it
 York	O	it
 .	O	it
+
 È	O	it
 cresciuta	O	it
 a	O	it
@@ -36495,6 +37707,7 @@ da	O	it
 le	O	it
 radiazioni	O	it
 .	O	it
+
 Poi	O	it
 ho	O	it
 scoperto	O	it
@@ -36504,12 +37717,14 @@ fatti	O	it
 le	O	it
 cifre	O	it
 .	O	it
+
 E	O	it
 ho	O	it
 cambiato	O	it
 idea	O	it
 »	O	it
 .	O	it
+
 La	O	it
 luce	O	it
 arriva	O	it
@@ -36540,6 +37755,7 @@ il	O	it
 Nuovo	O	it
 Messico	O	it
 .	O	it
+
 «	O	it
 Un	O	it
 giorno	O	it
@@ -36557,6 +37773,7 @@ in	I-IDIOM	it
 completo	O	it
 disaccordo	I-IDIOM	it
 .	O	it
+
 Lui	O	it
 mi	O	it
 suggerì	O	it
@@ -36569,12 +37786,14 @@ i	O	it
 miei	O	it
 occhi	O	it
 .	O	it
+
 È	O	it
 quello	O	it
 che	O	it
 feci	O	it
 »	O	it
 .	O	it
+
 Il	O	it
 risultato	O	it
 è	O	it
@@ -36597,6 +37816,7 @@ rischi	O	it
 di	O	it
 malattie	O	it
 cardio-respiratorie.	O	it
+
 L'	O	it
 esempio	O	it
 migliore	O	it
@@ -36604,6 +37824,7 @@ migliore	O	it
 la	O	it
 Francia	O	it
 .	O	it
+
 «	O	it
 Il	O	it
 cielo	O	it
@@ -36616,6 +37837,7 @@ oggi	O	it
 pulito	O	it
 »	O	it
 .	O	it
+
 I	O	it
 monatti	O	it
 della	O	it
@@ -36630,6 +37852,7 @@ a	O	it
 il	O	it
 mondo	O	it
 .	O	it
+
 La	O	it
 rivincita	O	it
 del	O	it
@@ -36643,6 +37866,7 @@ fondo	O	it
 racconta	O	it
 questo	O	it
 .	O	it
+
 La	O	it
 paura	O	it
 è	O	it
@@ -36651,6 +37875,7 @@ fredde	O	it
 e	O	it
 siderali	O	it
 .	O	it
+
 È	O	it
 l'	O	it
 apocalisse	O	it
@@ -36665,6 +37890,7 @@ di	O	it
 il	O	it
 fuoco	O	it
 .	O	it
+
 È	O	it
 il	O	it
 surriscaldamento	O	it
@@ -36679,6 +37905,7 @@ inondano	O	it
 i	O	it
 continenti	O	it
 .	O	it
+
 È	O	it
 il	O	it
 futuro	O	it
@@ -36690,6 +37917,7 @@ con	O	it
 il	O	it
 mare	O	it
 .	O	it
+
 È	O	it
 la	O	it
 voglia	O	it
@@ -36707,6 +37935,7 @@ li	O	it
 diventare	O	it
 politica	O	it
 .	O	it
+
 È	O	it
 quel	O	it
 maledetto	O	it
@@ -36716,6 +37945,7 @@ in	O	it
 l'	O	it
 ozono	O	it
 .	O	it
+
 È	O	it
 la	O	it
 primavera	O	it
@@ -36725,6 +37955,7 @@ o	O	it
 troppo	O	it
 fredda	O	it
 .	O	it
+
 È	O	it
 la	O	it
 fine	O	it
@@ -36734,6 +37965,7 @@ le	O	it
 mezze	O	it
 stagioni	O	it
 .	O	it
+
 È	O	it
 il	O	it
 bagno	O	it
@@ -36750,6 +37982,7 @@ in	O	it
 il	O	it
 Mediterraneo	O	it
 .	O	it
+
 È	O	it
 il	O	it
 cielo	O	it
@@ -36765,6 +37998,7 @@ cade	B-IDIOM	it
 in	I-IDIOM	it
 testa	I-IDIOM	it
 .	O	it
+
 La	O	it
 fine	O	it
 del	O	it
@@ -36787,6 +38021,7 @@ ad	O	it
 annunciar-	O	it
 la	O	it
 .	O	it
+
 Il	O	it
 titolo	O	it
 è	O	it
@@ -36812,6 +38047,7 @@ che	O	it
 scrivono	O	it
 assieme	O	it
 .	O	it
+
 Per	O	it
 ribadire	O	it
 l'	O	it
@@ -36856,6 +38092,7 @@ la	O	it
 lingua	O	it
 italiana	O	it
 .	O	it
+
 Un	O	it
 segno	O	it
 di	O	it
@@ -36865,6 +38102,7 @@ miseria	O	it
 e	O	it
 nobiltà	O	it
 .	O	it
+
 Mi	O	it
 ha	O	it
 fatto	O	it
@@ -36887,11 +38125,13 @@ da	O	it
 la	O	it
 politica	O	it
 .	O	it
+
 Che	O	it
 non	O	it
 ci	O	it
 sono	O	it
 .	O	it
+
 Grandi	O	it
 mattatori	O	it
 sono	O	it
@@ -36902,6 +38142,7 @@ e	O	it
 Fabio	O	it
 Panetto	O	it
 .	O	it
+
 Con	O	it
 la	O	it
 presenza	O	it
@@ -36948,6 +38189,7 @@ accettasse	O	it
 l'	O	it
 invito	O	it
 .	O	it
+
 Per	O	it
 ora	O	it
 Spinello	O	it
@@ -36985,6 +38227,7 @@ le	O	it
 elezioni	O	it
 locali	O	it
 .	O	it
+
 La	O	it
 discussione	O	it
 sul	O	it
@@ -37003,6 +38246,7 @@ di	O	it
 gli	O	it
 alleati	O	it
 .	O	it
+
 Presente	O	it
 come	O	it
 capogruppo	O	it
@@ -37037,6 +38281,7 @@ coalizione	O	it
 di	O	it
 centrosinistra	O	it
 .	O	it
+
 L'	O	it
 Idv	O	it
 guidata	O	it
@@ -37063,6 +38308,7 @@ la	O	it
 sua	O	it
 consistenza	O	it
 .	O	it
+
 Nel	O	it
 In	O	it
 il	O	it
@@ -37077,6 +38323,7 @@ conferma	O	it
 o	O	it
 smentita	O	it
 .	O	it
+
 Qualche	O	it
 nome	O	it
 gira	O	it
@@ -37091,6 +38338,7 @@ a	I-IDIOM	it
 lo	I-IDIOM	it
 scoperto	I-IDIOM	it
 .	O	it
+
 Intanto	O	it
 mancano	O	it
 quattro	O	it
@@ -37116,6 +38364,7 @@ pubblici	O	it
 con	O	it
 contradditorio	O	it
 .	O	it
+
 Vedere	O	it
 i	O	it
 politici	O	it
@@ -37147,6 +38396,7 @@ essere	O	it
 cosa	O	it
 ottima	O	it
 .	O	it
+
 Almeno	O	it
 nelle	O	it
 in	O	it
@@ -37158,6 +38408,7 @@ ancora	O	it
 la	O	it
 preferenza	O	it
 .	O	it
+
 Progetto	O	it
 Nuovo	O	it
 si	B-IDIOM	it
@@ -37183,6 +38434,7 @@ il	O	it
 dott.	O	it
 Lucianò	O	it
 .	O	it
+
 Roberto	O	it
 Scarparo	O	it
 resta	O	it
@@ -37203,6 +38455,7 @@ a	O	it
 la	O	it
 candidatura	O	it
 .	O	it
+
 resta	O	it
 sempre	O	it
 il	O	it
@@ -37221,6 +38474,7 @@ a	O	it
 livello	O	it
 regionale	O	it
 .	O	it
+
 Chiara	O	it
 la	O	it
 volontà	O	it
@@ -37264,6 +38518,7 @@ caso	O	it
 di	O	it
 vittoria	O	it
 .	O	it
+
 Per	O	it
 quanto	O	it
 criticato	O	it
@@ -37291,3 +38546,4 @@ quanti	O	it
 lo	O	it
 snobbano	O	it
 .	O	it
+
