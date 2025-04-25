@@ -1,35 +1,42 @@
-import spacy
-from spacy.cli.download import download as spacy_download
+import stanza
 
-def initialize(language):
-    if language == "English": #(1)
-        spacy_download("en_core_web_sm")
-        spacy_tagger = spacy.load("en_core_web_sm", exclude=["ner", "parser"])
+def initialize(use_gpu=True):
+    tr_nlp = stanza.Pipeline("tr", processors="tokenize,mwt,lemma", use_gpu=use_gpu)
+    it_nlp = stanza.Pipeline("it", processors="tokenize,mwt,lemma", use_gpu=use_gpu)
+    return tr_nlp, it_nlp
 
-    elif language == "Italian": #(2)
-        spacy_download("it_core_news_sm")
-        spacy_tagger = spacy.load("it_core_news_sm", exclude=["ner", "parser"])
-    elif language == "Turkish": #(3)
-        spacy_download("tr_core_news_sm")
-        spacy_tagger = spacy.load("tr_core_news_sm", exclude=["ner", "parser"])
-    return spacy_tagger
-
-
-def get_idioms(dataset, spacy_tagger):
+def get_idioms(dataset, tagger_dict):
     idioms = []
 
-    for elem in dataset:
+    for tokens, tags, langs in dataset:
         idiom = ""
-        for token, tag in zip(elem[0], elem[1]):
-            if tag == 1: #B tag
-                idiom += spacy_tagger(token)[0].lemma_
-            elif tag == 2: #I tag
-                idiom += spacy_tagger(token)[0].lemma_
 
-        if idiom != "":
+        # Group tokens by language
+        lang_tokens = {}
+        for idx, lng in enumerate(langs):
+            lang_tokens.setdefault(lng, []).append((idx, tokens[idx]))
+
+        # Process each language once
+        lemmas = [None] * len(tokens)
+        for lng, idx_token_pairs in lang_tokens.items():
+            sentence = " ".join([tok for _, tok in idx_token_pairs])
+            doc = tagger_dict[lng](sentence)
+            extracted_lemmas = [word.lemma for sent in doc.sentences for word in sent.words]
+
+            # Match lemmas to original token positions
+            for (idx, _), lemma in zip(idx_token_pairs, extracted_lemmas):
+                lemmas[idx] = lemma
+
+        # Now build the idiom
+        for lemma, tag in zip(lemmas, tags):
+            if tag in {1, 2} and lemma:
+                idiom += lemma + " "
+
+        if idiom.strip():
             idioms.append(idiom.strip())
-    
+
     return idioms
+
 
 def overlap_percentage_l1_in_l2(list1, list2):
     count_in = 0
