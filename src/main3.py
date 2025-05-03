@@ -155,10 +155,10 @@ if __name__=="__main__":
                     optimizer = optim.Adam(bert_model.parameters(), lr=0.00001),
                     labels_vocab=labels_vocab)
 
-    if mode == "train":
+    if mode in ["train", "update"]:
         trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = model_name)
 
     else:
-        trainer.evaluate(test_dataloader, "test")
+        trainer.evaluate(test_dataloader)
 
     

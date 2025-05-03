@@ -87,7 +87,7 @@ class Trainer():
             # save the model if the f1 score is better than the previous best
             if f1>record_dev:
                 record_dev = f1
-                torch.save(self.model.state_dict(), r"./checkpoints/"+modelname+".pt")
+                torch.save(self.model.state_dict(), r"./src/checkpoints/"+modelname+".pt")
                 patience = full_patience
             else:
                 patience -= 1
