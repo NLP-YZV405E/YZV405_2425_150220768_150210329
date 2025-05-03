@@ -23,6 +23,6 @@ import torch.optim as optim
 from transformers import BertTokenizer, BertModel, BertConfig
 from transformers import XLMRobertaTokenizer, XLMRobertaModel, XLMRobertaConfig
 #from TorchCRF import CRF
-import torchcrf
+from torchcrf import CRF
 import unicodedata
 import re
