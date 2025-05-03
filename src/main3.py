@@ -26,6 +26,8 @@ if __name__=="__main__":
     # get bert weights
     bert_model = BertModel.from_pretrained(model_name, config=bert_config)
 
+
+
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
     assert mode in ['train', 'update', 'test'], "Mode must be one of train, update, test"
@@ -37,15 +39,23 @@ if __name__=="__main__":
     if mode == "test" and dataset_selection == "ITU":
         assert False, "Test mode is not available for ITU dataset. Please use update mode instead."
 
+    model_name = input("Enter the model name (without .pt): ").strip()
+
     # test ve update için parametrelerin pathini alıcaz,
     # update -> mesela ID10M'de train ettik,  ITU ile parametreleri finetune etcez
     # test -> parametleri freezeleyip test edicez
     # farklı checkpointler yaparız, mesela after ID10M, after ID10M + ITU etc
 
     if mode in ["test","update"]:
+        # list available checkpoints
+        print("Available checkpoints:")
+        checkpoints = os.listdir("./src/checkpoints/")
+        for i, checkpoint in enumerate(checkpoints):
+            print(f"{i+1}. {checkpoint}")
         # load the model
-        checkpoint = input("Enter the path of the model: ").strip()
-        assert os.path.exists(checkpoint), "Model path does not exist"
+        checkpoint = input("Enter the checkpoint (without .pt): ").strip()
+        path = "./src/checkpoints/" + checkpoint + ".pt"
+        assert os.path.exists(path), "Model path does not exist"
 
     # get stanza tagger for both languages
     tagger_dict = initialize(use_gpu=True)
@@ -115,11 +125,10 @@ if __name__=="__main__":
                         params,
                         "cuda").cuda()
 
-    if mode=="test": 
-        my_model.load_state_dict(torch.load(f"./src/checkpoints/{checkpoint}"))
+    if mode in ["update", "test"]: 
+        my_model.load_state_dict(torch.load(f"./src/checkpoints/{checkpoint}.pt"))
     
     print(my_model)
-
 
     #trainer
     trainer = Trainer(model = my_model,
@@ -127,7 +136,7 @@ if __name__=="__main__":
                     labels_vocab=labels_vocab)
 
     if mode == "train":
-        trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = "deneme")
+        trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = model_name)
 
     else:
         trainer.evaluate(test_dataloader, "test")

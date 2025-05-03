@@ -87,14 +87,13 @@ class Trainer():
             # save the model if the f1 score is better than the previous best
             if f1>record_dev:
                 record_dev = f1
-                torch.save(self.model.state_dict(), "./src/checkpoints/"+modelname+".pt")
+                torch.save(self.model.state_dict(), r"./checkpoints/"+modelname+".pt")
                 patience = full_patience
             else:
                 patience -= 1
             
             print('\t[E: {:2d}] valid loss = {:0.4f}, f1-score = {:0.4f}, patience: {:2d}'.format(epoch+1, valid_loss, f1, patience))
             dev_loss_list.append(valid_loss)
-
 
         print("...Done!")
         return train_loss_list, dev_loss_list, f1_scores 
