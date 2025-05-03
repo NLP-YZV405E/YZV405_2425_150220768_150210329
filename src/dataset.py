@@ -32,16 +32,19 @@ class IdiomDataset(Dataset):
         print("Reading dataset...\n")
         with open(self.dataset_path, "r", encoding="utf-8") as f:
             for line in tqdm(f):
-                if line!="\n": 
-                    line = line.strip().split("\t")
-                    token = line[0]
-                    tag = line[1]
-                    lang = line[2]
-                    elem = {"token": token, "tag":tag, "lang":lang}
-                    sentence.append(elem)
+                if line.strip():
+                    token, tag, lang = line.strip().split("\t")
+                    sentence.append({"token":token,"tag":tag,"lang":lang})
+
                 else:
-                    sentences.append(sentence)
+                    if sentence: # prevent empty sentences
+                        sentences.append(sentence)
                     sentence = []
+
+            # also after the loop, in case file doesn’t end with a blank line:
+            if sentence:
+                sentences.append(sentence)
+
         print("Dataset read.\n")
         print("-" * 50+"\n")
         return sentences
