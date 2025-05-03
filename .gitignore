@@ -1,3 +1,2 @@
 # Ignore PyTorch model checkpoints
-/src/checkpoints/
-/*.pt
+/src/checkpoints/*.pt
