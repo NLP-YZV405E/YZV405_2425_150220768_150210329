@@ -5,22 +5,18 @@ from __init__ import *
 class Trainer():
     def __init__(self,
                 model:nn.Module, 
-                loss_function,
                 optimizer,
-                labels_vocab,
-                gradient_accumulation_steps):
+                labels_vocab):
         
         self.model = model
-        self.loss_function = loss_function
         self.optimizer = optimizer
         self.labels_vocab = labels_vocab
-        self.gradient_accumulation_steps = gradient_accumulation_steps
- 
+
     def padding_mask(self, batch):
         padding = torch.ones_like(batch)
         padding[batch == 0] = 0
         padding = padding.type(torch.uint8)
-        return padding
+        return padding.to(torch.bool)
  
     def train(self,
             train_dataset:Dataset, 
@@ -31,78 +27,79 @@ class Trainer():
         
         print("\nTraining...")
  
-        train_loss = 0.0
-        total_loss_train = []
-        total_loss_dev = []
+        
+        train_loss_list = []
+        dev_loss_list = []
+        f1_scores = []
+        # best f1 score
         record_dev = 0.0
         
         full_patience = patience
         
         modelname = modelname
- 
-        first_epoch = True
 
         for epoch in range(epochs):
-             if patience>0:
-                print(" Epoch {:03d}".format(epoch + 1))
+            if patience <= 0:
+                print("Stopping early (no more patience).")
+                break
 
-                epoch_loss = 0.0
-                self.model.train()
+            print(" Epoch {:03d}".format(epoch + 1))
+
+            train_loss = 0.0
+            self.model.train()
+            
+            count_batches = 0
+            self.optimizer.zero_grad()
+            
+            for words, labels, lang in tqdm(train_dataset):
+                count_batches+=1
                 
-                count_batches = 0
-                self.optimizer.zero_grad()
-                
-                for words, labels in tqdm(train_dataset):
-                    count_batches+=1
-                    batch_loss = 0.0
+                # add here language check
 
-                    batch_LL, _ = self.model(words, labels)
-                    batch_NLL = - torch.sum(batch_LL)/8
+                batch_LL, _ = self.model(words, labels)
+                # get negative log likelihood
+                batch_NLL = - torch.sum(batch_LL)/8
 
-                    if not math.isnan(batch_NLL.tolist()):
-                        batch_NLL.backward()
-                        torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1)
-                        epoch_loss += batch_NLL.tolist()
+                loss_val = batch_NLL.item()
 
-                    if count_batches % self.gradient_accumulation_steps == 0:
-                        self.optimizer.step()
-                        self.optimizer.zero_grad()
-
-
-                    '''predictions = self.model(words)                     
-                    predictions = predictions.view(-1, predictions.shape[-1])
-                    labels = labels.view(-1)
-
-                    batch_loss = self.loss_function(predictions, labels)
-                    if not math.isnan(batch_loss):
-                        batch_loss.backward()
-                        epoch_loss += batch_loss.tolist()
-
-                    if count_batches % self.gradient_accumulation_steps == 0:
-                        self.optimizer.step()
-                        self.optimizer.zero_grad()'''
+                # bazen batch_NLL NaN olabiliyor, bu durumda loss'u hesaplamıyoruz
+                if not math.isnan(loss_val):
+                    # calculate backpropagation
+                    batch_NLL.backward()
+                    # clip gradients to avoid exploding gradients
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1)
+                    # save the loss value for graph
+                    train_loss += loss_val
+                    # update weights
+                    self.optimizer.step()
+                    # clear gradients
+                    self.optimizer.zero_grad()
 
 
-                avg_epoch_loss = epoch_loss / len(train_dataset)
-                print('[E: {:2d}] train loss = {:0.4f}'.format(epoch+1, avg_epoch_loss))
+            avg_train_loss = train_loss / len(train_dataset)
+            train_loss_list.append(avg_train_loss)
+            print('[E: {:2d}] train loss = {:0.4f}'.format(epoch+1, avg_train_loss))
 
-                valid_loss, f1 = self.evaluate(valid_dataset)
+            valid_loss, f1 = self.evaluate(valid_dataset)
+            f1_scores.append(f1)
 
-                if f1>record_dev:
-                    record_dev = f1
-                    torch.save(self.model.state_dict(), "./src/checkpoints/"+modelname+".pt")
-                    patience = full_patience
-                else:
-                    patience -= 1
-                   
-                print('\t[E: {:2d}] valid loss = {:0.4f}, f1-score = {:0.4f}, patience: {:2d}'.format(epoch+1, valid_loss, f1, patience))
+
+            # save the model if the f1 score is better than the previous best
+            if f1>record_dev:
+                record_dev = f1
+                torch.save(self.model.state_dict(), "./src/checkpoints/"+modelname+".pt")
+                patience = full_patience
+            else:
+                patience -= 1
+            
+            print('\t[E: {:2d}] valid loss = {:0.4f}, f1-score = {:0.4f}, patience: {:2d}'.format(epoch+1, valid_loss, f1, patience))
+            dev_loss_list.append(valid_loss)
 
 
         print("...Done!")
-        return avg_epoch_loss
- 
+        return train_loss_list, dev_loss_list, f1_scores 
 
-    def evaluate(self, valid_dataset, split="dev"):
+    def evaluate(self, valid_dataset):
 
         valid_loss = 0.0
         all_predictions = list()
@@ -111,37 +108,31 @@ class Trainer():
          
         self.model.eval()
     
-        for words, labels, in tqdm(valid_dataset):
-            batch_loss = 0.0
-            self.optimizer.zero_grad()
-            
-            '''with torch.no_grad():
-                predictions = self.model(words)                    
+        for words, labels, lang in tqdm(valid_dataset):
 
-            predictions = predictions.view(-1, predictions.shape[-1])
-            
-            labels = labels.view(-1)       
-            batch_loss = self.loss_function(predictions, labels)'''
+            self.optimizer.zero_grad()
 
             with torch.no_grad():
                 batch_LL, predictions = self.model(words, labels)
 
             batch_NLL = - torch.sum(batch_LL)/8
 
+            val_loss = batch_NLL.item()
+
             predictions = predictions.view(-1, predictions.shape[-1])
             labels = labels.view(-1) 
-
  
             for i in range(len(predictions)):
                 if labels[i]!=0:
-                    all_predictions.append(labels_vocab_reverse[int(torch.argmax(predictions[i]))])
+                    current_prdiction = int(torch.argmax(predictions[i]))
+                    all_predictions.append(labels_vocab_reverse[current_prdiction])
                     all_labels.append(labels_vocab_reverse[int(labels[i])])
             
-            if not math.isnan(batch_NLL.tolist()):
-                valid_loss += batch_NLL.tolist()
+            if not math.isnan(val_loss):
+                valid_loss += val_loss
 
         f1 = f1_score(all_labels, all_predictions, average= 'macro')
         print(classification_report(all_labels, all_predictions, digits=3))
-        #print(f1)
+        print(f1)
         
         return valid_loss / len(valid_dataset), f1
