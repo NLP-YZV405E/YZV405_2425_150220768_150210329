@@ -39,8 +39,6 @@ if __name__=="__main__":
     if mode == "test" and dataset_selection == "ITU":
         assert False, "Test mode is not available for ITU dataset. Please use update mode instead."
 
-    model_name = input("Enter the model name (without .pt): ").strip()
-
     # test ve update için parametrelerin pathini alıcaz,
     # update -> mesela ID10M'de train ettik,  ITU ile parametreleri finetune etcez
     # test -> parametleri freezeleyip test edicez
@@ -56,6 +54,13 @@ if __name__=="__main__":
         checkpoint = input("Enter the checkpoint (without .pt): ").strip()
         path = "./src/checkpoints/" + checkpoint + ".pt"
         assert os.path.exists(path), "Model path does not exist"
+
+    model_name = None
+    if mode in ["train", "update"]:
+        model_name = input("Enter the model name (without .pt): ").strip()
+    
+    elif mode == "test":
+        model_name = checkpoint
 
     # get stanza tagger for both languages
     tagger_dict = initialize(use_gpu=True)
@@ -125,8 +130,23 @@ if __name__=="__main__":
                         params,
                         "cuda").cuda()
 
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
     if mode in ["update", "test"]: 
-        my_model.load_state_dict(torch.load(f"./src/checkpoints/{checkpoint}.pt"))
+
+        state = torch.load(f"./src/checkpoints/{checkpoint}.pt", map_location=device)
+
+        # drop the unexpected position_ids buffer
+        state.pop("bert_model.embeddings.position_ids", None)
+
+        # rename the old CRF keys to the new names:
+        state["CRF.transitions"]         = state.pop("CRF.trans_matrix")
+        state["CRF.start_transitions"]  = state.pop("CRF.start_trans")
+        state["CRF.end_transitions"]    = state.pop("CRF.end_trans")
+
+        # now load cleanly
+        my_model.load_state_dict(state)
+
     
     print(my_model)
 
