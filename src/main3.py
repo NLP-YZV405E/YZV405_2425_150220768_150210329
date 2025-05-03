@@ -1,10 +1,10 @@
-import random
-import os
-import numpy as np
-import torch
-from transformers import BertConfig, BertTokenizer, BertModel
-from utils import *
+from __init__ import *
 from dataset import IdiomDataset
+from collate import collate
+from model import IdiomExtractor
+from hparams import HParams
+from trainer import Trainer
+from utils import *
 
 
 if __name__=="__main__":
@@ -73,21 +73,63 @@ if __name__=="__main__":
         print("-" * 50 + "\n")
 
 
-    idioms_train, idioms_dev, idioms_test = None, None, None
+    # idioms_train, idioms_dev, idioms_test = None, None, None
+
+    # if mode in ["train", "update"]:
+    #     idioms_train = get_idioms(train_dataset, tagger_dict)
+    #     idioms_dev = get_idioms(dev_dataset, tagger_dict)
+    #     print(f"Idioms in train: {len(idioms_train)}")
+    #     print(f"Idioms in dev: {len(idioms_dev)}")
+    #     percentage_elements_in_train_also_in_dev = overlap_percentage_l1_in_l2(idioms_dev, idioms_train)
+    #     print(f"Percentage of idioms in train also in dev: {percentage_elements_in_train_also_in_dev}")
+    #     print("-" * 50 + "\n")
+    # else:
+    #     idioms_train = get_idioms(train_dataset, tagger_dict)
+    #     idioms_test = get_idioms(test_dataset, tagger_dict)
+    #     print(f"Idioms in test: {len(idioms_test)}")
+    #     percentage_elements_in_train_also_in_test = overlap_percentage_l1_in_l2(idioms_test, idioms_train)
+    #     print(f"Percentage of idioms in train also in test: {percentage_elements_in_train_also_in_test}")
+    #     print("-" * 50 + "\n")
+
+
+    #dataloader
 
     if mode in ["train", "update"]:
-        idioms_train = get_idioms(train_dataset, tagger_dict)
-        idioms_dev = get_idioms(dev_dataset, tagger_dict)
-        print(f"Idioms in train: {len(idioms_train)}")
-        print(f"Idioms in dev: {len(idioms_dev)}")
-        percentage_elements_in_train_also_in_dev = overlap_percentage_l1_in_l2(idioms_dev, idioms_train)
-        print(f"Percentage of idioms in train also in dev: {percentage_elements_in_train_also_in_dev}")
-        print("-" * 50 + "\n")
+        train_dataloader = DataLoader(train_dataset, batch_size=8, shuffle=True, collate_fn=collate)
+        dev_dataloader = DataLoader(dev_dataset, batch_size=8, collate_fn=collate)
+        print(f"length of train dataloader: {len(train_dataloader)}")
+        print(f"length of dev dataloader: {len(dev_dataloader)}")
     else:
-        idioms_train = get_idioms(train_dataset, tagger_dict)
-        idioms_test = get_idioms(test_dataset, tagger_dict)
-        print(f"Idioms in test: {len(idioms_test)}")
-        percentage_elements_in_train_also_in_test = overlap_percentage_l1_in_l2(idioms_test, idioms_train)
-        print(f"Percentage of idioms in train also in test: {percentage_elements_in_train_also_in_test}")
-        print("-" * 50 + "\n")
+        test_dataloader = DataLoader(test_dataset, batch_size=8, collate_fn=collate)
+        print(f"length of test dataloader: {len(test_dataloader)}")
+    
 
+    #instantiate the hyperparameters
+    params = HParams()
+
+
+    #instantiate the model
+    my_model = IdiomExtractor(bert_model, 
+                        bert_tokenizer, 
+                        bert_config, 
+                        params,
+                        "cuda").cuda()
+
+    if mode=="test": 
+        my_model.load_state_dict(torch.load(f"./src/checkpoints/{checkpoint}"))
+    
+    print(my_model)
+
+
+    #trainer
+    trainer = Trainer(model = my_model,
+                    optimizer = optim.Adam(bert_model.parameters(), lr=0.00001),
+                    labels_vocab=labels_vocab)
+
+    if mode == "train":
+        trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = "deneme")
+
+    else:
+        trainer.evaluate(test_dataloader, "test")
+
+    
