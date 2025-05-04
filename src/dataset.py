@@ -6,18 +6,17 @@ import re
 import torch
 
 class IdiomDataset(Dataset):
-    def __init__(self, dataset_path, tokenizer, labels_vocab, tagger_dict):
+    def __init__(self, dataset_path, labels_vocab, tagger_dict):
         super(IdiomDataset, self).__init__()
         self.dataset_path = dataset_path
-        self.tokenizer = tokenizer
         self.labels_vocab = labels_vocab
         self.tagger_dict = tagger_dict
 
-        self.sentences = self.get_sentences()
+        self.sentences = self._get_sentences()
         self.encoded_data = []
         self.encode_data()
 
-    def get_sentences(self):
+    def _get_sentences(self):
         """
         A function to read the dataset and return the sentences
         each sentence is a list of dictionaries, where each dictionary contains:
@@ -67,18 +66,12 @@ class IdiomDataset(Dataset):
                 labels.append(elem["tag"])
                 langs.append(elem["lang"])
             
-            vectorized_labels = [self.labels_vocab[label] for label in labels]
-            encoded_labels = torch.tensor(vectorized_labels)
+            vectorized_labels = [self.labels_vocab[label] for label in labels],
+            encoded_labels = torch.tensor(vectorized_labels,dtype=torch.long)
             self.encoded_data.append((words, encoded_labels, langs))
         
         print("Data encoded.\n")
         print("-" * 50+"\n")
-
-
-    def vectorize_words(self, input_vector, special_tokens=True) -> list:
-        encoded_words = self.tokenizer.encode(input_vector, add_special_tokens = special_tokens)
-
-        return encoded_words
 
     def __len__(self):
         return len(self.encoded_data)
