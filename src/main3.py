@@ -45,8 +45,8 @@ if __name__=="__main__":
         assert False, "Test mode is not available for ITU dataset. Please use update mode instead."
 
     # check dataset path
-    tr_path = r"./checkpoints/tr/"
-    it_path = r"./checkpoints/it/"
+    tr_path = r"./src/checkpoints/tr/"
+    it_path = r"./src/checkpoints/it/"
     os.makedirs(tr_path, exist_ok=True)
     os.makedirs(it_path, exist_ok=True)
 

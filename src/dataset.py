@@ -66,7 +66,7 @@ class IdiomDataset(Dataset):
                 labels.append(elem["tag"])
                 langs.append(elem["lang"])
             
-            vectorized_labels = [self.labels_vocab[label] for label in labels],
+            vectorized_labels = [self.labels_vocab[label] for label in labels]
             encoded_labels = torch.tensor(vectorized_labels,dtype=torch.long)
         
             lang2id = {"tr":0, "it":1}

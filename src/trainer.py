@@ -58,10 +58,10 @@ class Trainer:
             tr_batches = it_batches = 0
 
             for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
-                # Move to device
-                words  = words.to(device)
-                labels = labels.to(device)
-                langs  = langs.to(device)
+                
+                print(type(words))
+                print(type(labels))
+                print(type(langs))
 
                 tr_mask = (langs == 0)
                 it_mask = (langs == 1)
@@ -144,9 +144,6 @@ class Trainer:
 
         with torch.no_grad():
             for words, labels, langs in tqdm(valid_loader, desc="Evaluating"):
-                words  = words.to(device)
-                labels = labels.to(device)
-                langs  = langs.to(device)
 
                 tr_mask = (langs == 0)
                 it_mask = (langs == 1)
