@@ -68,8 +68,13 @@ class IdiomDataset(Dataset):
             
             vectorized_labels = [self.labels_vocab[label] for label in labels],
             encoded_labels = torch.tensor(vectorized_labels,dtype=torch.long)
-            self.encoded_data.append((words, encoded_labels, langs))
         
+            lang2id = {"tr":0, "it":1}
+            # lang tensor: "tr" → 0, "it" → 1
+            lang_ids = [lang2id[l] for l in langs]
+            langs_tensor = torch.tensor(lang_ids, dtype=torch.long)
+            self.encoded_data.append((words, encoded_labels, langs_tensor))
+
         print("Data encoded.\n")
         print("-" * 50+"\n")
 

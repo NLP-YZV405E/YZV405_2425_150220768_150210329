@@ -51,57 +51,84 @@ class Trainer():
             self.tr_model.train()
             self.it_model.train()
 
-            tr_loss_sum = it_loss_sum = total_loss_sum = 0.0
+            tr_loss = it_loss = total_loss = 0.0
+
             tr_batches = it_batches = 0
                 
             for words, labels, langs in tqdm(train_dataset):
 
+                tr_mask = (langs == 0).to(torch.bool)
+                it_mask = (langs == 1).to(torch.bool)
+
+                loss = 0
+                parts = 0
+
+                if tr_mask.any():
+                    # get the batch for the tr_model
+                    words_tr = words[tr_mask]
+                    labels_tr = labels[tr_mask]
+
+                    # get the loss and predictions
+                    tr_LL, _ = self.tr_model(words_tr, labels_tr)
+                    tr_NLL = - torch.sum(tr_LL)/ words_tr.size(0)
+
+                    tr_loss += tr_NLL.item()
+                    loss += tr_NLL
+                    parts += 1
+                    tr_batches += 1
 
 
+                if it_mask.any():
+                    # get the batch for the it_model
+                    words_it = words[it_mask]
+                    labels_it = labels[it_mask]
+                    # get the loss and predictions
+                    it_LL, _ = self.it_model(words_it, labels_it)
+                    it_NLL = - torch.sum(it_LL)/ words_it.size(0)
+                    it_loss += it_NLL.item()
+                    loss += it_NLL
+                    parts += 1
+                    it_batches += 1
 
+                loss = loss / parts
+                self.tr_optimizer.zero_grad()
+                self.it_optimizer.zero_grad()
+                loss.backward()
 
-                count_batches+=1
+                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), 1)
+                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), 1)
+
+                self.tr_optimizer.step()
+                self.it_optimizer.step()
+
+                total_loss += loss.item()
+
                 
-                # add here language check
 
-                batch_LL, _ = self.model(words, labels)
-                # get negative log likelihood
-                batch_NLL = - torch.sum(batch_LL)/8
+            avg_tr = tr_loss / tr_batches if tr_batches > 0 else 0
+            avg_it = it_loss / it_batches if it_batches > 0 else 0
+            train_loss = total_loss / (tr_batches+it_batches)
 
-                loss_val = batch_NLL.item()
-
-                # bazen batch_NLL NaN olabiliyor, bu durumda loss'u hesaplamıyoruz
-                if not math.isnan(loss_val):
-                    # calculate backpropagation
-                    batch_NLL.backward()
-                    # clip gradients to avoid exploding gradients
-                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1)
-                    # save the loss value for graph
-                    train_loss += loss_val
-                    # update weights
-                    self.optimizer.step()
-                    # clear gradients
-                    self.optimizer.zero_grad()
-
-
-            avg_train_loss = train_loss / len(train_dataset)
-            train_loss_list.append(avg_train_loss)
-            print('[E: {:2d}] train loss = {:0.4f}'.format(epoch+1, avg_train_loss))
+            train_loss_list.append(train_loss)
+            print('[E: {:2d}] train loss = {:0.4f}, tr_loss = {:0.4f}, it_loss = {:0.4f}'.format(epoch+1, train_loss, avg_tr, avg_it))
 
             valid_loss, f1 = self.evaluate(valid_dataset)
+            dev_loss_list.append(valid_loss)
             f1_scores.append(f1)
 
 
             # save the model if the f1 score is better than the previous best
             if f1>record_dev:
                 record_dev = f1
-                torch.save(self.model.state_dict(), r"./src/checkpoints/"+modelname+".pt")
+                torch.save({
+                    "tr_model": self.tr_model.state_dict(),
+                    "it_model": self.it_model.state_dict(),
+                }, r"./src/checkpoints/"+modelname+".pt")
                 patience = full_patience
             else:
                 patience -= 1
             
-            print('\t[E: {:2d}] valid loss = {:0.4f}, f1-score = {:0.4f}, patience: {:2d}'.format(epoch+1, valid_loss, f1, patience))
-            dev_loss_list.append(valid_loss)
+            print(f"\t[E:{epoch:02d}] valid_loss={valid_loss:.4f}  f1={f1:.4f}  patience={patience}")
 
         print("...Done!")
         return train_loss_list, dev_loss_list, f1_scores 
