@@ -24,7 +24,7 @@ if __name__=="__main__":
     it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
     it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
     # get bert weights
-    it_model = BertModel.from_pretrained(it_model_name, config=it_bert_config)
+    it_model = BertModel.from_pretrained(it_model_name, config=it_config)
 
 
     # Türkçe BERT
