@@ -19,14 +19,19 @@ if __name__=="__main__":
     torch.backends.cudnn.deterministic = True
 
     # create bert
-    model_name = 'bert-base-multilingual-cased'
+    it_model_name = 'bert-base-multilingual-cased'
     # output hidden states -> it helps to get hidden states from bert
-    bert_config = BertConfig.from_pretrained(model_name, output_hidden_states=True)
-    bert_tokenizer = BertTokenizer.from_pretrained(model_name)
+    it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
+    it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
     # get bert weights
-    bert_model = BertModel.from_pretrained(model_name, config=bert_config)
+    it_model = BertModel.from_pretrained(it_model_name, config=it_bert_config)
 
 
+    # Türkçe BERT
+    tr_model_name = "dbmdz/bert-base-turkish-128k-cased"
+    tr_config = BertConfig.from_pretrained(tr_model_name, output_hidden_states=True)
+    tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
+    tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
 
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
@@ -39,21 +44,41 @@ if __name__=="__main__":
     if mode == "test" and dataset_selection == "ITU":
         assert False, "Test mode is not available for ITU dataset. Please use update mode instead."
 
-    # test ve update için parametrelerin pathini alıcaz,
-    # update -> mesela ID10M'de train ettik,  ITU ile parametreleri finetune etcez
-    # test -> parametleri freezeleyip test edicez
-    # farklı checkpointler yaparız, mesela after ID10M, after ID10M + ITU etc
+    # check dataset path
+    tr_path = r"./checkpoints/tr/"
+    it_path = r"./checkpoints/it/"
+    os.makedirs(tr_path, exist_ok=True)
+    os.makedirs(it_path, exist_ok=True)
 
     if mode in ["test","update"]:
         # list available checkpoints
-        print("Available checkpoints:")
-        checkpoints = os.listdir("./src/checkpoints/")
+        print("Available tr checkpoints:")
+        checkpoints = os.listdir(tr_path)
         for i, checkpoint in enumerate(checkpoints):
             print(f"{i+1}. {checkpoint}")
+        print("none")
         # load the model
         checkpoint = input("Enter the checkpoint (without .pt): ").strip()
-        path = "./src/checkpoints/" + checkpoint + ".pt"
-        assert os.path.exists(path), "Model path does not exist"
+        if checkpoint == "none":
+            tr_path = None
+        else:
+            tr_path = "./src/checkpoints/" + checkpoint + ".pt"
+            assert os.path.exists(tr_path), "Model path does not exist"
+
+        print("\n")
+
+        print("Available it checkpoints:")
+        checkpoints = os.listdir(it_path)
+        for i, checkpoint in enumerate(checkpoints):
+            print(f"{i+1}. {checkpoint}")
+        print("none")
+        # load the model
+        checkpoint = input("Enter the checkpoint (without .pt): ").strip()
+        if checkpoint == "none":
+            it_path = None
+        else:
+            it_path = "./src/checkpoints/" + checkpoint + ".pt"
+            assert os.path.exists(it_path), "Model path does not exist"
 
     model_name = None
     if mode in ["train", "update"]:
@@ -76,14 +101,14 @@ if __name__=="__main__":
     # initialize the dataset
     train_dataset, dev_dataset, test_dataset = None, None, None
     if mode in ["train", "update"]:
-        train_dataset = IdiomDataset(train_file, bert_tokenizer, labels_vocab, tagger_dict)
-        dev_dataset = IdiomDataset(dev_file, bert_tokenizer, labels_vocab, tagger_dict)
+        train_dataset = IdiomDataset(train_file, labels_vocab, tagger_dict)
+        dev_dataset = IdiomDataset(dev_file, labels_vocab, tagger_dict)
         print(f"train sentences: {len(train_dataset)}")
         print(f"dev sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
     else:
-        train_dataset = IdiomDataset(train_file, bert_tokenizer, labels_vocab, tagger_dict)
-        test_dataset = IdiomDataset(test_file, bert_tokenizer, labels_vocab, tagger_dict) 
+        train_dataset = IdiomDataset(train_file, labels_vocab, tagger_dict)
+        test_dataset = IdiomDataset(test_file, labels_vocab, tagger_dict) 
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
 
@@ -110,12 +135,12 @@ if __name__=="__main__":
     #dataloader
 
     if mode in ["train", "update"]:
-        train_dataloader = DataLoader(train_dataset, batch_size=8, shuffle=True, collate_fn=collate)
-        dev_dataloader = DataLoader(dev_dataset, batch_size=8, collate_fn=collate)
+        train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=True, collate_fn=collate)
+        dev_dataloader = DataLoader(dev_dataset, batch_size=16, collate_fn=collate)
         print(f"length of train dataloader: {len(train_dataloader)}")
         print(f"length of dev dataloader: {len(dev_dataloader)}")
     else:
-        test_dataloader = DataLoader(test_dataset, batch_size=8, collate_fn=collate)
+        test_dataloader = DataLoader(test_dataset, batch_size=16, collate_fn=collate)
         print(f"length of test dataloader: {len(test_dataloader)}")
     
 
@@ -124,35 +149,53 @@ if __name__=="__main__":
 
 
     #instantiate the model
-    my_model = IdiomExtractor(bert_model, 
-                        bert_tokenizer, 
-                        bert_config, 
+    it_model = IdiomExtractor(it_model,
+                        it_tokenizer,
+                        it_config,
                         params,
                         "cuda").cuda()
-
+    
+    tr_model = IdiomExtractor(tr_model,
+                        tr_tokenizer,
+                        tr_config,
+                        params,
+                        "cuda").cuda()
+    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     if mode in ["update", "test"]: 
 
-        state = torch.load(f"./src/checkpoints/{checkpoint}.pt", map_location=device)
+        if it_path is not None:
+            it_state = torch.load(it_path, map_location=device)
 
-        # drop the unexpected position_ids buffer
-        state.pop("bert_model.embeddings.position_ids", None)
+            # drop the unexpected position_ids buffer
+            it_state.pop("bert_model.embeddings.position_ids", None)
 
-        # rename the old CRF keys to the new names:
-        state["CRF.transitions"]         = state.pop("CRF.trans_matrix")
-        state["CRF.start_transitions"]  = state.pop("CRF.start_trans")
-        state["CRF.end_transitions"]    = state.pop("CRF.end_trans")
+            # rename the old CRF keys to the new names:
+            it_state["CRF.transitions"]         = it_state.pop("CRF.trans_matrix")
+            it_state["CRF.start_transitions"]  = it_state.pop("CRF.start_trans")
+            it_state["CRF.end_transitions"]    = it_state.pop("CRF.end_trans")
 
-        # now load cleanly
-        my_model.load_state_dict(state)
+            # now load cleanly
+            it_model.load_state_dict(it_state)
 
+        if tr_path is not None:
+            tr_state = torch.load(tr_path, map_location=device)
+            tr_model.load_state_dict(tr_state)
     
-    print(my_model)
+    print("\n")
+    print("-" * 50)
+    print("Tr model summary:")
+    print(tr_model)
+    print("-" * 50 + "\n")
+    print("It model summary:")
+    print(it_model)
+    print("-" * 50 + "\n")
 
     #trainer
-    trainer = Trainer(model = my_model,
-                    optimizer = optim.Adam(bert_model.parameters(), lr=0.00001),
+    trainer = Trainer(tr_model = tr_model, it_model = it_model,
+                    tr_optimizer = optim.Adam(tr_model.parameters(), lr=0.0001),
+                    it_optimizer = optim.Adam(it_model.parameters(), lr=0.0001),
                     labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:

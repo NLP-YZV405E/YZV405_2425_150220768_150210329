@@ -4,12 +4,16 @@ from __init__ import *
 
 class Trainer():
     def __init__(self,
-                model:nn.Module, 
-                optimizer,
+                tr_model:nn.Module,
+                it_model:nn.Module, 
+                tr_optimizer,
+                it_optimizer,
                 labels_vocab):
         
-        self.model = model
-        self.optimizer = optimizer
+        self.tr_model = tr_model,
+        self.it_model = it_model,
+        self.tr_optimizer = tr_optimizer,
+        self.it_optimizer = it_optimizer,
         self.labels_vocab = labels_vocab
 
     def padding_mask(self, batch):
@@ -19,11 +23,11 @@ class Trainer():
         return padding.to(torch.bool)
  
     def train(self,
-            train_dataset:Dataset, 
-            valid_dataset:Dataset,
+            train_dataset:DataLoader, 
+            valid_dataset:DataLoader,
             epochs:int=1,
             patience:int=10,
-            modelname="idiom_expr_detector"):
+            modelname: str = "idiom_expr_detector"):
         
         print("\nTraining...")
  
@@ -36,7 +40,6 @@ class Trainer():
         
         full_patience = patience
         
-        modelname = modelname
 
         for epoch in range(epochs):
             if patience <= 0:
@@ -45,13 +48,18 @@ class Trainer():
 
             print(" Epoch {:03d}".format(epoch + 1))
 
-            train_loss = 0.0
-            self.model.train()
-            
-            count_batches = 0
-            self.optimizer.zero_grad()
-            
-            for words, labels, lang in tqdm(train_dataset):
+            self.tr_model.train()
+            self.it_model.train()
+
+            tr_loss_sum = it_loss_sum = total_loss_sum = 0.0
+            tr_batches = it_batches = 0
+                
+            for words, labels, langs in tqdm(train_dataset):
+
+
+
+
+
                 count_batches+=1
                 
                 # add here language check
