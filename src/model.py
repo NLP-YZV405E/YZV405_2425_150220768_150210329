@@ -39,13 +39,7 @@ class IdiomExtractor(nn.Module):
         self.CRF = CRF(hparams.num_classes,batch_first=True).cuda()
  
  
-    def forward(self, words, labels):
-        
-        # get the embeddings for the words
-        bert_embeddings = self.embedder.embed_sentences(words)
-        
-        # vectorleri aynı boyuta getirmek için padding yapıyoruz
-        bert_embeddings = pad_sequence(bert_embeddings, batch_first=True, padding_value=0)
+    def forward(self, bert_embeddings, labels):
 
         # paddlenmiş kısımlara attande etmemek için mask oluşturuyoruz
         mask = self.padding_mask(labels)
