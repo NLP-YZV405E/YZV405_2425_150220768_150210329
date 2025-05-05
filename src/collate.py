@@ -9,7 +9,7 @@ def collate(elems: tuple) -> tuple:
     words, label_seqs, lang_seqs = zip(*elems)
 
     pad_labels = pad_sequence(label_seqs, batch_first=True, padding_value=0)
-    pad_langs  = pad_sequence(lang_seqs,  batch_first=True, padding_value=0)
+    pad_langs  = pad_sequence(lang_seqs,  batch_first=True, padding_value=-1)
 
     # move both to the device
     pad_labels = pad_labels.to(device)
