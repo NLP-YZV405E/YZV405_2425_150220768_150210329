@@ -2,6 +2,7 @@ from __init__ import *
 from dataset import IdiomDataset
 from collate import collate
 from model import IdiomExtractor
+from bert_embedder import BERTEmbedder
 from hparams import HParams
 from trainer import Trainer
 from utils import *
@@ -24,14 +25,14 @@ if __name__=="__main__":
     it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
     it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
     # get bert weights
-    it_model = BertModel.from_pretrained(it_model_name, config=it_config)
+    hf_it_model = BertModel.from_pretrained(it_model_name, config=it_config)
 
 
     # Türkçe BERT
     tr_model_name = "dbmdz/bert-base-turkish-128k-cased"
     tr_config = BertConfig.from_pretrained(tr_model_name, output_hidden_states=True)
     tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
-    tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
+    hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
 
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
@@ -62,7 +63,7 @@ if __name__=="__main__":
         if checkpoint == "none":
             tr_path = None
         else:
-            tr_path = "./src/checkpoints/" + checkpoint + ".pt"
+            tr_path = tr_path + checkpoint + ".pt"
             assert os.path.exists(tr_path), "Model path does not exist"
 
         print("\n")
@@ -77,7 +78,7 @@ if __name__=="__main__":
         if checkpoint == "none":
             it_path = None
         else:
-            it_path = "./src/checkpoints/" + checkpoint + ".pt"
+            it_path = it_path + checkpoint + ".pt"
             assert os.path.exists(it_path), "Model path does not exist"
 
     model_name = None
@@ -149,19 +150,23 @@ if __name__=="__main__":
 
 
     #instantiate the model
-    it_model = IdiomExtractor(it_model,
+    it_model = IdiomExtractor(hf_it_model,
                         it_tokenizer,
                         it_config,
                         params,
                         "cuda").cuda()
     
-    tr_model = IdiomExtractor(tr_model,
+    tr_model = IdiomExtractor(hf_tr_model,
                         tr_tokenizer,
                         tr_config,
                         params,
                         "cuda").cuda()
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, device)
+    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, device)
+    
 
     if mode in ["update", "test"]: 
 
@@ -196,6 +201,8 @@ if __name__=="__main__":
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
                     tr_optimizer = optim.Adam(tr_model.parameters(), lr=0.0001),
                     it_optimizer = optim.Adam(it_model.parameters(), lr=0.0001),
+                    tr_embedder= tr_embedder,
+                    it_embedder= it_embedder,
                     labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
