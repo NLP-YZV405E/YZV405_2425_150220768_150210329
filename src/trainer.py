@@ -125,10 +125,8 @@ class Trainer:
 
             if f1 > record_dev:
                 record_dev = f1
-                torch.save({
-                    "tr_model": self.tr_model.state_dict(),
-                    "it_model": self.it_model.state_dict(),
-                }, f"./src/checkpoints/{modelname}.pt")
+                torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{modelname}.pt")
+                torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{modelname}.pt")
                 patience = full_patience
             else:
                 patience -= 1
