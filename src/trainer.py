@@ -18,14 +18,33 @@ class Trainer:
                  tr_embedder,
                  it_embedder,
                  labels_vocab: dict):
-        self.tr_model     = tr_model
-        self.it_model     = it_model
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        
+        # Validate labels_vocab
+        required_keys = {"<pad>", "B-IDIOM", "I-IDIOM", "O"}
+        if not all(key in labels_vocab for key in required_keys):
+            raise ValueError(f"labels_vocab must contain all required keys: {required_keys}")
+        
+        # Ensure models are on the correct device
+        self.tr_model = tr_model.to(self.device)
+        self.it_model = it_model.to(self.device)
+        
+        # Validate optimizers are configured with correct parameters
+        tr_optim_params = set(id(p) for group in tr_optimizer.param_groups for p in group['params'])
+        it_optim_params = set(id(p) for group in it_optimizer.param_groups for p in group['params'])
+        tr_model_params = set(id(p) for p in tr_model.parameters())
+        it_model_params = set(id(p) for p in it_model.parameters())
+        
+        if tr_optim_params != tr_model_params:
+            raise ValueError("tr_optimizer is not configured with the correct model parameters")
+        if it_optim_params != it_model_params:
+            raise ValueError("it_optimizer is not configured with the correct model parameters")
+        
         self.tr_optimizer = tr_optimizer
         self.it_optimizer = it_optimizer
         self.labels_vocab = labels_vocab
-        self.tr_embedder  = tr_embedder
-        self.it_embedder  = it_embedder
-        self.device       = "cuda" if torch.cuda.is_available() else "cpu"
+        self.tr_embedder = tr_embedder
+        self.it_embedder = it_embedder
 
     def padding_mask(self, batch: torch.Tensor) -> torch.BoolTensor:
         padding = torch.ones_like(batch)
@@ -43,12 +62,14 @@ class Trainer:
         train_loss_list = []
         dev_loss_list   = []
         f1_scores       = []
-        record_dev      = 0.0
+        record_dev_f1   = 0.0
+        record_dev_loss = float('inf')
         full_patience   = patience
+        best_epoch      = 0
 
         for epoch in range(1, epochs + 1):
             if patience <= 0:
-                print("Stopping early (no more patience).")
+                print(f"Stopping early (no more patience). Best model was from epoch {best_epoch}")
                 break
 
             print(f" Epoch {epoch:03d}")
@@ -87,19 +108,18 @@ class Trainer:
                 it_LL, _ = self.it_model(it_embs, it_labels)
 
                 # compute losses with zero-division guard
+                tr_NLL = torch.tensor(0.0, device=self.device)
+                it_NLL = torch.tensor(0.0, device=self.device)
+
                 if tr_mask.any().item():
                     tr_NLL = -tr_LL.sum() / tr_mask.sum().float()
                     tr_loss_sum += tr_NLL.item()
                     tr_batches  += 1
-                else:
-                    tr_NLL = torch.tensor(0.0, device=self.device)
 
                 if it_mask.any().item():
                     it_NLL = -it_LL.sum() / it_mask.sum().float()
                     it_loss_sum += it_NLL.item()
                     it_batches  += 1
-                else:
-                    it_NLL = torch.tensor(0.0, device=self.device)
 
                 loss = tr_NLL + it_NLL
 
@@ -111,9 +131,9 @@ class Trainer:
                 self.tr_optimizer.step()
                 self.it_optimizer.step()
 
-            # epoch-level averages
-            avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
-            avg_it    = it_loss_sum / it_batches if it_batches else 0.0
+            # epoch-level averages with safe division
+            avg_tr    = tr_loss_sum / max(tr_batches, 1)
+            avg_it    = it_loss_sum / max(it_batches, 1)
             avg_total = avg_tr + avg_it
 
             train_loss_list.append(avg_total)
@@ -123,15 +143,18 @@ class Trainer:
             dev_loss_list.append(valid_loss)
             f1_scores.append(f1)
 
-            if f1 > record_dev:
-                record_dev = f1
+            # Save model if F1 score improves or if F1 is equal but loss is lower
+            if f1 > record_dev_f1 or (f1 == record_dev_f1 and valid_loss < record_dev_loss):
+                record_dev_f1 = f1
+                record_dev_loss = valid_loss
+                best_epoch = epoch
                 torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{modelname}.pt")
                 torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{modelname}.pt")
                 patience = full_patience
+                print(f"\t[E:{epoch:02d}] New best model saved! F1={f1:.4f}, Loss={valid_loss:.4f}")
             else:
                 patience -= 1
-
-            print(f"\t[E:{epoch:02d}] valid_loss={valid_loss:.4f}  f1={f1:.4f}  patience={patience}")
+                print(f"\t[E:{epoch:02d}] valid_loss={valid_loss:.4f}  f1={f1:.4f}  patience={patience}")
 
         print("...Done!")
         return train_loss_list, dev_loss_list, f1_scores
@@ -171,31 +194,38 @@ class Trainer:
                 ll_tr, preds_tr = self.tr_model(tr_embs, tr_labels)
                 ll_it, preds_it = self.it_model(it_embs, it_labels)
 
+                # Update loss tracking for both languages
                 if tr_mask.any().item():
                     nll_tr = -ll_tr.sum() / tr_mask.sum().float()
                     tr_loss_sum += nll_tr.item()
                     tr_batches  += 1
+
                 if it_mask.any().item():
                     nll_it = -ll_it.sum() / it_mask.sum().float()
                     it_loss_sum += nll_it.item()
                     it_batches  += 1
 
-                # collect predictions
-                preds_flat = preds_tr.view(-1, preds_tr.size(-1))
-                labels_flat = tr_labels.view(-1)
-                for i in range(len(preds_flat)):
-                    if labels_flat[i] != 0:
-                        all_predictions.append(labels_vocab_reverse[int(torch.argmax(preds_flat[i]))])
-                        all_labels.append(labels_vocab_reverse[int(labels_flat[i])])
-                preds_flat = preds_it.view(-1, preds_it.size(-1))
-                labels_flat = it_labels.view(-1)
-                for i in range(len(preds_flat)):
-                    if labels_flat[i] != 0:
-                        all_predictions.append(labels_vocab_reverse[int(torch.argmax(preds_flat[i]))])
-                        all_labels.append(labels_vocab_reverse[int(labels_flat[i])])
+                # Get CRF predictions for Turkish samples
+                if tr_mask.any().item():
+                    tr_pred_seqs = self.tr_model.CRF.decode(preds_tr, mask=tr_mask)
+                    for pred_seq, label_seq, mask in zip(tr_pred_seqs, tr_labels, tr_mask):
+                        for p, l, m in zip(pred_seq, label_seq, mask):
+                            if m and l != 0:  # Only for real tokens (not padding)
+                                all_predictions.append(labels_vocab_reverse[p])
+                                all_labels.append(labels_vocab_reverse[int(l)])
 
-        avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
-        avg_it    = it_loss_sum / it_batches if it_batches else 0.0
+                # Get CRF predictions for Italian samples
+                if it_mask.any().item():
+                    it_pred_seqs = self.it_model.CRF.decode(preds_it, mask=it_mask)
+                    for pred_seq, label_seq, mask in zip(it_pred_seqs, it_labels, it_mask):
+                        for p, l, m in zip(pred_seq, label_seq, mask):
+                            if m and l != 0:  # Only for real tokens (not padding)
+                                all_predictions.append(labels_vocab_reverse[p])
+                                all_labels.append(labels_vocab_reverse[int(l)])
+
+        # Calculate average losses, handling the case where there might be no samples for a language
+        avg_tr = tr_loss_sum / max(tr_batches, 1)
+        avg_it = it_loss_sum / max(it_batches, 1)
         avg_total = avg_tr + avg_it
 
         print(f"[EVAL] tr_loss={avg_tr:.4f}, it_loss={avg_it:.4f}, total_loss={avg_total:.4f}")
