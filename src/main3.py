@@ -38,8 +38,8 @@ if __name__=="__main__":
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
     assert mode in ['train', 'update', 'test'], "Mode must be one of train, update, test"
     # select the dataset
-    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME): ").strip().upper()
-    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME'], "Dataset must be one of ID10M, ITU, PARSEME"
+    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, ALL_COMBINED): ").strip().upper()
+    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'ALL_COMBINED'], "Dataset must be one of ID10M, ITU, PARSEME, ALL_COMBINED"
 
     # we dont have test set for ITU dataset
     if mode == "test" and dataset_selection == "ITU":
