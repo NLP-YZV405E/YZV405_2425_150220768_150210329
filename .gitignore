@@ -2,3 +2,4 @@
 /src/checkpoints/it/*.pt
 /src/checkpoints/tr/*.pt
 !/src/checkpoints/
+/.tmp.driveupload
