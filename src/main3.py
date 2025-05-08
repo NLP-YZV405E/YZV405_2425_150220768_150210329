@@ -209,16 +209,6 @@ if __name__=="__main__":
         trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = model_name)
 
     else:
-        # Create predictions directory if it doesn't exist
-        os.makedirs("./src/predictions", exist_ok=True)
-        
-        # Run evaluation first to see metrics
-        print("Evaluating model on test data...")
         trainer.evaluate(test_dataloader)
-        
-        # Save predictions to CSV
-        print("Generating prediction.csv file...")
-        trainer.predict_and_save(test_dataloader, "./src/predictions/prediction.csv")
-        print("Prediction CSV file generated successfully!")
 
     
