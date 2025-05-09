@@ -133,15 +133,15 @@ def combine_tsv_files(tr_path, it_path, output_path):
 def combine_all_tsv_files(tsv1, tsv2, tsv3, output_path):
     # read the two TSV files and combine them
     with open(tsv1, "r", encoding="utf-8") as itu, \
-         open(tsv2, "r", encoding="utf-8") as parsame, \
+         open(tsv2, "r", encoding="utf-8") as parseme, \
          open(tsv3, "r", encoding="utf-8") as id10m, \
          open(output_path, "w", encoding="utf-8") as f_out:
 
         itu_lines = itu.readlines()
-        parsame_lines = parsame.readlines()
+        parseme_lines = parseme.readlines()
         id10m_lines = id10m.readlines()
 
-        f_out.writelines(itu_lines + parsame_lines + id10m_lines)
+        f_out.writelines(itu_lines + parseme_lines + id10m_lines)
 
 def add_language(path, outpath, lang):
     # add language to ID10M data
