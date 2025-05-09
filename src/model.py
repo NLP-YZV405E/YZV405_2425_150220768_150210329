@@ -69,7 +69,7 @@ class IdiomExtractor(nn.Module):
         mask[:, 0] = True
         
         # Apply batch norm before dropout (need to reshape for BatchNorm1d)
-        batch_size, seq_len, hidden_size = bert_embeddings.shape
+        
 
         # apply dropout -> bu saçma değilmiş gerekliymiş
         # ayrıca bertin kendi içinde layernormu var o yüzen layer norma gerek yok
@@ -78,18 +78,18 @@ class IdiomExtractor(nn.Module):
 
         if self.use_lstm:
             X,_ = self.lstm(X)
-            X = nn.functional.layer_norm(X, normalized_shape=[hidden_size])
+            X = nn.functional.layer_norm(X, normalized_shape=[self.hidden_size])
             X = self.dropout(X)
 
         
-        # Apply linear layer
+        # Apply linear layer, emissions.size = batch_size, number_of_classes
         emissions  = self.classifier(X)
 
         # eğer label yoksa (inference) decode etmemiz lazım
         if labels is None:
             return self.CRF.decode(emissions, mask=mask)
         
-        
+        # log_likelihood.shape = parch_size, label_length, number_of_classes ????
         log_likelihood = self.CRF.forward(emissions, labels, mask)
-
+        print(f"log_likelihood size: {log_likelihood.size}")
         return log_likelihood, emissions
