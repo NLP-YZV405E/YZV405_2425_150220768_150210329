@@ -82,6 +82,8 @@ class Trainer:
                     
                     tr_words = [words[i] for i in tr_indices.cpu().numpy()]
                     tr_labels_subset = labels[tr_indices]
+                    # first the first batch tr_words.size = 
+
                     
                     # tr_embedded -> [batch_size, seq_len, hidden_size]
                     tr_embedded = self.tr_embedder.embed_sentences(tr_words)
