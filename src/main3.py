@@ -35,10 +35,12 @@ if __name__=="__main__":
     hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
 
     # train, update or test mode selection
-    mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
+    #mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
+    mode = "train"
     assert mode in ['train', 'update', 'test'], "Mode must be one of train, update, test"
     # select the dataset
-    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, ALL_COMBINED): ").strip().upper()
+    #dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, ALL_COMBINED): ").strip().upper()
+    dataset_selection = "ITU"
     assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'COMBINED'], "Dataset must be one of ID10M, ITU, PARSEME, COMBINED"
 
     # check dataset path
@@ -79,7 +81,8 @@ if __name__=="__main__":
 
     model_name = None
     if mode in ["train", "update"]:
-        model_name = input("Enter the model name (without .pt): ").strip()
+        #model_name = input("Enter the model name (without .pt): ").strip()
+        model_name = "deneme"
     
     elif mode == "test":
         model_name = checkpoint
@@ -123,19 +126,24 @@ if __name__=="__main__":
     #instantiate the hyperparameters
     params = HParams()
 
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     #instantiate the model
     it_model = IdiomExtractor(hf_it_model,
-                        it_tokenizer,
                         it_config,
                         params,
-                        "cuda").cuda()
+                        DEVICE,
+                        useLSTM=False).cuda()
+    
+    it_model.freeze_bert()
     
     tr_model = IdiomExtractor(hf_tr_model,
-                        tr_tokenizer,
                         tr_config,
                         params,
-                        "cuda").cuda()
+                        DEVICE,
+                        useLSTM=False).cuda()
+    
+    tr_model.freeze_bert()
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

@@ -8,7 +8,7 @@ def collate(elems: tuple) -> tuple:
     # unzip the batch of triples
     words, label_seqs, lang_seqs = zip(*elems)
 
-    pad_labels = pad_sequence(label_seqs, batch_first=True, padding_value=0)
+    pad_labels = pad_sequence(label_seqs, batch_first=True, padding_value=-1)
     pad_langs  = pad_sequence(lang_seqs,  batch_first=True, padding_value=-1)
 
     # move both to the device

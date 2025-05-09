@@ -63,6 +63,12 @@ class Trainer:
                 labels = labels.to(self.device)
                 langs = langs.to(self.device)
 
+                # len(words) = 16, labels -> [16, 14], langs -> [16, 14]
+                # words -> list of list, words: [['Zaman', 'kazanmak', 'için', 'yaptığın', 'entrikalar', 'seni',
+                # 'kurtarmayacak', ',', 'eninde', 'sonunda', 'yakalayacak', 'seni', 'polis', '!'], ...]
+                # langs -> [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1], dil + pad, bunu değiştirelim
+                # labels -> [ 3,  3,  3,  3,  3,  1,  2,  3, -1, -1, -1, -1, -1, -1], idiom + pad, bu iyi
+
                 # .nonzero() ile zero olmayan indexleri alıyoruz, maskede kullanınca o dile ait indexler geliyor.
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
@@ -77,11 +83,19 @@ class Trainer:
                     tr_words = [words[i] for i in tr_indices.cpu().numpy()]
                     tr_labels_subset = labels[tr_indices]
                     
+                    # tr_embedded -> [batch_size, seq_len, hidden_size]
+                    tr_embedded = self.tr_embedder.embed_sentences(tr_words)
+                    print(f"tr_embedded shape: {len(tr_embedded)}")
+
+                    # tr_embs_shape = [batch_size, seq_len, hidden_size] -> 62, 14, 768
                     # get embeddings for Turkish data
+
                     tr_embs = pad_sequence(
-                        self.tr_embedder.embed_sentences(tr_words),
-                        batch_first=True, padding_value=0
+                        tr_embedded, batch_first=True, padding_value=-1
                     ).to(self.device)
+
+                    print(f"tr_embs shape: {tr_embs.shape}")
+
                     
                     # forward pass and loss calculation
                     tr_LL, _ = self.tr_model(tr_embs, tr_labels_subset)

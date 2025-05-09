@@ -93,11 +93,11 @@ if __name__=="__main__":
 
 
     #instantiate the model
-    my_model = IdiomExtractor(bert_model, 
-                        bert_tokenizer, 
+    my_model = IdiomExtractor(bert_model,  
                         bert_config, 
                         params,
-                        "cuda").cuda()
+                        device="cuda",
+                        useLSTM=False).cuda()
 
     if modality=="test": 
         my_model.load_state_dict(torch.load(f"./src/checkpoints/{checkpoint}"))
