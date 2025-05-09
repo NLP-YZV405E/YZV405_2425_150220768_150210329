@@ -39,11 +39,7 @@ if __name__=="__main__":
     assert mode in ['train', 'update', 'test'], "Mode must be one of train, update, test"
     # select the dataset
     dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, ALL_COMBINED): ").strip().upper()
-    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'ALL_COMBINED'], "Dataset must be one of ID10M, ITU, PARSEME, ALL_COMBINED"
-
-    # we dont have test set for ITU dataset
-    if mode == "test" and dataset_selection == "ITU":
-        assert False, "Test mode is not available for ITU dataset. Please use update mode instead."
+    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'COMBINED'], "Dataset must be one of ID10M, ITU, PARSEME, COMBINED"
 
     # check dataset path
     tr_path = r"./src/checkpoints/tr/"
@@ -108,30 +104,9 @@ if __name__=="__main__":
         print(f"dev sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
     else:
-        train_dataset = IdiomDataset(train_file, labels_vocab, tagger_dict)
         test_dataset = IdiomDataset(test_file, labels_vocab, tagger_dict) 
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
-
-
-    # idioms_train, idioms_dev, idioms_test = None, None, None
-
-    # if mode in ["train", "update"]:
-    #     idioms_train = get_idioms(train_dataset, tagger_dict)
-    #     idioms_dev = get_idioms(dev_dataset, tagger_dict)
-    #     print(f"Idioms in train: {len(idioms_train)}")
-    #     print(f"Idioms in dev: {len(idioms_dev)}")
-    #     percentage_elements_in_train_also_in_dev = overlap_percentage_l1_in_l2(idioms_dev, idioms_train)
-    #     print(f"Percentage of idioms in train also in dev: {percentage_elements_in_train_also_in_dev}")
-    #     print("-" * 50 + "\n")
-    # else:
-    #     idioms_train = get_idioms(train_dataset, tagger_dict)
-    #     idioms_test = get_idioms(test_dataset, tagger_dict)
-    #     print(f"Idioms in test: {len(idioms_test)}")
-    #     percentage_elements_in_train_also_in_test = overlap_percentage_l1_in_l2(idioms_test, idioms_train)
-    #     print(f"Percentage of idioms in train also in test: {percentage_elements_in_train_also_in_test}")
-    #     print("-" * 50 + "\n")
-
 
     #dataloader
 
@@ -141,7 +116,7 @@ if __name__=="__main__":
         print(f"length of train dataloader: {len(train_dataloader)}")
         print(f"length of dev dataloader: {len(dev_dataloader)}")
     else:
-        test_dataloader = DataLoader(test_dataset, batch_size=16, collate_fn=collate)
+        test_dataloader = DataLoader(test_dataset, batch_size=1, collate_fn=collate)
         print(f"length of test dataloader: {len(test_dataloader)}")
     
 
@@ -206,9 +181,9 @@ if __name__=="__main__":
                     labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, 100, patience=5, modelname = model_name)
+        trainer.train(train_dataloader, dev_dataloader, 100, patience=320, modelname = model_name)
 
     else:
-        trainer.evaluate(test_dataloader)
+        trainer.test(test_dataloader)
 
     

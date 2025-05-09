@@ -7,8 +7,8 @@ yükü	O	tr
 ağırlığı	O	tr
 ve	O	tr
 nostaljisi	O	tr
-içimize	B-IDIOM	tr
-çökecek	I-IDIOM	tr
+içimize	O	tr
+çökecek	O	tr
 .	O	tr
 
 Üç	O	tr
@@ -141,8 +141,8 @@ için	O	tr
 ,	O	tr
 artık	O	tr
 kimsenin	O	tr
-aklına	B-IDIOM	tr
-gelmeyecek	I-IDIOM	tr
+aklına	O	tr
+gelmeyecek	O	tr
 .	O	tr
 
 Yalnız	O	tr
@@ -214,11 +214,15 @@ dönüşecek	O	tr
 
 Alman	O	tr
 düşünürü	O	tr
-Hans_Magnus_Enzensberger	O	tr
+Hans	O	tr
+Magnus	O	tr
+Enzensberger	O	tr
 ,	O	tr
 bunu	O	tr
 "	O	tr
-21_._yüzyıl	O	tr
+21	O	tr
+.	O	tr
+yüzyıl	O	tr
 lüksü	O	tr
 'nü	O	tr
 sorguladığı	O	tr
@@ -231,9 +235,11 @@ anlatıyor	O	tr
 
 Tüm	O	tr
 ihtiyaçlarını	O	tr
-tatmin	B-IDIOM	tr
-etmiş	I-IDIOM	tr
-21_._yüzyıl	O	tr
+tatmin	O	tr
+etmiş	O	tr
+21	O	tr
+.	O	tr
+yüzyıl	O	tr
 insanı	O	tr
 için	O	tr
 "	O	tr
@@ -314,8 +320,8 @@ etiketi	O	tr
 altında	O	tr
 ,	O	tr
 paçavralarla	O	tr
-dolup	B-IDIOM	tr
-taşıyor	I-IDIOM	tr
+dolup	O	tr
+taşıyor	O	tr
 "	O	tr
 diyor	O	tr
 ;	O	tr
@@ -330,18 +336,18 @@ gerçek	O	tr
 anlamda	O	tr
 `	O	tr
 zor	O	tr
-ele	I-IDIOM	tr
-geçirilen	I-IDIOM	tr
+ele	O	tr
+geçirilen	O	tr
 ve	O	tr
-sahip	I-IDIOM	tr
-olmadıklarımızın	I-IDIOM	tr
+sahip	O	tr
+olmadıklarımızın	O	tr
 karşılığı	O	tr
 ise	O	tr
 ;	O	tr
 her	O	tr
 köşebaşında	O	tr
-karşımıza	I-IDIOM	tr
-çıkan	I-IDIOM	tr
+karşımıza	O	tr
+çıkan	O	tr
 hızlı	O	tr
 arabalar	O	tr
 ,	O	tr
@@ -405,8 +411,8 @@ başta	O	tr
 "	O	tr
 zaman	O	tr
 "	O	tr
-kıymete	B-IDIOM	tr
-biniyor	I-IDIOM	tr
+kıymete	O	tr
+biniyor	O	tr
 .	O	tr
 
 Arkadan	O	tr
@@ -489,8 +495,8 @@ bir	O	tr
 Alman	O	tr
 aristokrat	O	tr
 dostundan	O	tr
-söz	B-IDIOM	tr
-ediyordu	I-IDIOM	tr
+söz	O	tr
+ediyordu	O	tr
 geçen	O	tr
 gün	O	tr
 .	O	tr
@@ -514,8 +520,8 @@ birilerinden	O	tr
 kendisini	O	tr
 eve	O	tr
 bırakmalarını	O	tr
-rica	B-IDIOM	tr
-ediyor	I-IDIOM	tr
+rica	O	tr
+ediyor	O	tr
 sadece	O	tr
 .	O	tr
 Tatile	O	tr
@@ -549,7 +555,9 @@ daha	O	tr
 şimdiden	O	tr
 ,	O	tr
 "	O	tr
-21_._yüzyıl	O	tr
+21	O	tr
+.	O	tr
+yüzyıl	O	tr
 lükslerini	O	tr
 "	O	tr
 kovalamaya	O	tr
@@ -571,7 +579,9 @@ yarım	O	tr
 yamalak	O	tr
 yakalayıp	O	tr
 ,	O	tr
-21_._yüzyılın	O	tr
+21	O	tr
+.	O	tr
+yüzyılın	O	tr
 ucundan	O	tr
 tutan	O	tr
 biz	O	tr
@@ -690,25 +700,29 @@ Ve	O	tr
 onun	O	tr
 için	O	tr
 "	O	tr
-yeni	B-IDIOM	tr
-ufuklara	I-IDIOM	tr
+yeni	O	tr
+ufuklara	O	tr
 "	O	tr
-yelken	I-IDIOM	tr
-açıyor	I-IDIOM	tr
+yelken	O	tr
+açıyor	O	tr
 .	O	tr
 
-DOĞRU_Yol_Partisi	O	tr
+DOĞRU	O	tr
+Yol	O	tr
+Partisi	O	tr
 'nin	O	tr
 "	O	tr
 dedesi	O	tr
 "	O	tr
-Demokrat_Parti	O	tr
+Demokrat	O	tr
+Parti	O	tr
 .	O	tr
 
 "	O	tr
 Babası	O	tr
 "	O	tr
-Adalet_Partisi	O	tr
+Adalet	O	tr
+Partisi	O	tr
 .	O	tr
 
 "	O	tr
@@ -790,8 +804,8 @@ sorabiliyor	O	tr
 "	O	tr
 .	O	tr
 
-Kafa	B-IDIOM	tr
-tutabiliyor	I-IDIOM	tr
+Kafa	O	tr
+tutabiliyor	O	tr
 .	O	tr
 
 DEMOKRAT	O	tr
@@ -883,13 +897,16 @@ dinliyor	O	tr
 "	O	tr
 .	O	tr
 
-DOĞRU_Yol_Partisi	O	tr
+DOĞRU	O	tr
+Yol	O	tr
+Partisi	O	tr
 büyük	O	tr
 kongre	O	tr
 yaptı	O	tr
 .	O	tr
 
-Mehmet_Dülger	O	tr
+Mehmet	O	tr
+Dülger	O	tr
 "	O	tr
 genel	O	tr
 başkanlığa	O	tr
@@ -913,7 +930,8 @@ Yuhalandı	O	tr
 Sonra	O	tr
 Prof	O	tr
 .	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 konuştu	O	tr
 .	O	tr
 
@@ -979,7 +997,8 @@ mükemmeldi	O	tr
 harikaydı	O	tr
 .	O	tr
 
-Işın_Çelebi	O	tr
+Işın	O	tr
+Çelebi	O	tr
 "	O	tr
 genel	O	tr
 başkanlığa	O	tr
@@ -989,7 +1008,8 @@ dedi	O	tr
 .	O	tr
 
 Ardından	O	tr
-Mesut_Yılmaz	O	tr
+Mesut	O	tr
+Yılmaz	O	tr
 konuştu	O	tr
 .	O	tr
 
@@ -1001,8 +1021,8 @@ kucaklaşıp	O	tr
 öpüştüler	O	tr
 .	O	tr
 
-Resimler	B-IDIOM	tr
-çekildi	I-IDIOM	tr
+Resimler	O	tr
+çekildi	O	tr
 .	O	tr
 
 Ve	O	tr
@@ -1016,8 +1036,8 @@ demokrasinin	O	tr
 işlediğinin	O	tr
 belgesi	O	tr
 olarak	O	tr
-takdim	B-IDIOM	tr
-edildi	I-IDIOM	tr
+takdim	O	tr
+edildi	O	tr
 .	O	tr
 
 Kongre	O	tr
@@ -1069,7 +1089,8 @@ sorsak	O	tr
 -	O	tr
 1947	O	tr
 'de	O	tr
-Demokrat_Parti	O	tr
+Demokrat	O	tr
+Parti	O	tr
 'nin	O	tr
 büyük	O	tr
 kongresi	O	tr
@@ -1098,7 +1119,8 @@ yok	O	tr
 .	O	tr
 
 Büyük	O	tr
-Ankara_Oteli	O	tr
+Ankara	O	tr
+Oteli	O	tr
 yok	O	tr
 .	O	tr
 
@@ -1190,10 +1212,11 @@ yapılan	O	tr
 bir	O	tr
 kongre	O	tr
 .	O	tr
-ADALET_Partisi	O	tr
+ADALET	O	tr
+Partisi	O	tr
 tüzüğüne	O	tr
-göz	B-IDIOM	tr
-atıyoruz	I-IDIOM	tr
+göz	O	tr
+atıyoruz	O	tr
 .	O	tr
 Tüzük	O	tr
 emrediyor	O	tr
@@ -1287,7 +1310,8 @@ hamile	O	tr
 kalıyor	O	tr
 .	O	tr
 
-Şahin_Alpay	O	tr
+Şahin	O	tr
+Alpay	O	tr
 .	O	tr
 
 GALATASARAY	O	tr
@@ -1350,18 +1374,21 @@ maratonunu	O	tr
 önde	O	tr
 bitirme	O	tr
 olasılığının	O	tr
-yüzde_60	O	tr
+yüzde	O	tr
+60	O	tr
 ,	O	tr
 FB	O	tr
 'nin	O	tr
-yüzde_30	O	tr
+yüzde	O	tr
+30	O	tr
 ,	O	tr
 Trabzon	O	tr
 ve	O	tr
 Beşiktaş	O	tr
 'ın	O	tr
 toplam	O	tr
-yüzde_10	O	tr
+yüzde	O	tr
+10	O	tr
 olduğuna	O	tr
 dair	O	tr
 tahminler	O	tr
@@ -1381,12 +1408,15 @@ kişi	O	tr
 Beşiktaş	O	tr
 teknik	O	tr
 direktörü	O	tr
-Rasim_Kara	O	tr
+Rasim	O	tr
+Kara	O	tr
 .	O	tr
 
 Kara	O	tr
 ,	O	tr
-1994_-_95	O	tr
+1994	O	tr
+-	O	tr
+95	O	tr
 sezonunda	O	tr
 Beşiktaş	O	tr
 'ın	O	tr
@@ -1417,8 +1447,8 @@ Beşiktaşlı	O	tr
 "	O	tr
 fanatiklere	O	tr
 "	O	tr
-umut	B-IDIOM	tr
-vermeye	I-IDIOM	tr
+umut	O	tr
+vermeye	O	tr
 çalışıyor	O	tr
 .	O	tr
 
@@ -1495,7 +1525,8 @@ beklerim	O	tr
 kimileri	O	tr
 gibi	O	tr
 "	O	tr
-Rasim_Kara	O	tr
+Rasim	O	tr
+Kara	O	tr
 gitsin	O	tr
 "	O	tr
 diye	O	tr
@@ -1580,8 +1611,8 @@ yaptığı	O	tr
 için	O	tr
 Galatasaray	O	tr
 kulübüne	O	tr
-gıpta	B-IDIOM	tr
-ediyorum	I-IDIOM	tr
+gıpta	O	tr
+ediyorum	O	tr
 .	O	tr
 
 Beşiktaş	O	tr
@@ -1598,16 +1629,18 @@ izleyerek	O	tr
 şirketleşmeleri	O	tr
 birçok	O	tr
 bakımdan	O	tr
-önem	B-IDIOM	tr
-taşıyor	I-IDIOM	tr
+önem	O	tr
+taşıyor	O	tr
 .	O	tr
 
-Korkmaz_İlkorur	O	tr
+Korkmaz	O	tr
+İlkorur	O	tr
 Beşiktaş	O	tr
 için	O	tr
 yazmıştı	O	tr
 (	O	tr
-28_Şubat	O	tr
+28	O	tr
+Şubat	O	tr
 )	O	tr
 :	O	tr
 Bilet	O	tr
@@ -1789,7 +1822,8 @@ Barca	O	tr
 'nın	O	tr
 başkan	O	tr
 yardımcısı	O	tr
-Nicolau_Casaus	O	tr
+Nicolau	O	tr
+Casaus	O	tr
 ,	O	tr
 El	O	tr
 Barca	O	tr
@@ -1914,7 +1948,9 @@ Journal	O	tr
 yayımladığı	O	tr
 bir	O	tr
 dosyayı	O	tr
-20_Mayıs_1995	O	tr
+20	O	tr
+Mayıs	O	tr
+1995	O	tr
 'te	O	tr
 bu	O	tr
 sayfada	O	tr
@@ -1927,8 +1963,8 @@ Velhasıl	O	tr
 Galatasaray	O	tr
 'a	O	tr
 şirketleşmenin	O	tr
-öncülüğünü	B-IDIOM	tr
-yaptığı	I-IDIOM	tr
+öncülüğünü	O	tr
+yaptığı	O	tr
 için	O	tr
 candan	O	tr
 tebrikler	O	tr
@@ -1940,7 +1976,8 @@ Beşiktaş	O	tr
 başına	O	tr
 .	O	tr
 
-Hasan_Pulur	O	tr
+Hasan	O	tr
+Pulur	O	tr
 .	O	tr
 
 AĞZIMIZA	O	tr
@@ -1970,10 +2007,10 @@ korkmam	O	tr
 
 "	O	tr
 Bırak	O	tr
-ip	B-IDIOM	tr
-inceldiği	I-IDIOM	tr
-yerden	I-IDIOM	tr
-kopsun	I-IDIOM	tr
+ip	O	tr
+inceldiği	O	tr
+yerden	O	tr
+kopsun	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
@@ -2090,7 +2127,8 @@ bakalım	O	tr
 
 MİT	O	tr
 yetkilisi	O	tr
-Mehmet_Eymür	O	tr
+Mehmet	O	tr
+Eymür	O	tr
 'ün	O	tr
 gösterdiği	O	tr
 adreslere	O	tr
@@ -2105,7 +2143,8 @@ açık	O	tr
 söylüyor	O	tr
 :	O	tr
 "	O	tr
-Abdullah_Çatlı	O	tr
+Abdullah	O	tr
+Çatlı	O	tr
 'yı	O	tr
 önce	O	tr
 biz	O	tr
@@ -2165,7 +2204,9 @@ gün	O	tr
 Başbakanlık	O	tr
 eski	O	tr
 müsteşarı	O	tr
-Hasan_Celal_Güzel	O	tr
+Hasan	O	tr
+Celal	O	tr
+Güzel	O	tr
 'in	O	tr
 bir	O	tr
 söyleşisi	O	tr
@@ -2182,9 +2223,11 @@ anlatıyordu	O	tr
 
 1984	O	tr
 'te	O	tr
-Behçet_Cantürk	O	tr
+Behçet	O	tr
+Cantürk	O	tr
 ile	O	tr
-Dündar_Kılıç	O	tr
+Dündar	O	tr
+Kılıç	O	tr
 'ı	O	tr
 hem	O	tr
 MİT	O	tr
@@ -2193,7 +2236,9 @@ hem	O	tr
 polis	O	tr
 sorgulamış	O	tr
 ,	O	tr
-Hasan_Celal_Güzel	O	tr
+Hasan	O	tr
+Celal	O	tr
+Güzel	O	tr
 'e	O	tr
 göre	O	tr
 ,	O	tr
@@ -2219,7 +2264,9 @@ sonra	O	tr
 ne	O	tr
 olmuş	O	tr
 :	O	tr
-Hasan_Celal_Güzel	O	tr
+Hasan	O	tr
+Celal	O	tr
+Güzel	O	tr
 'den	O	tr
 dinleyin	O	tr
 :	O	tr
@@ -2282,7 +2329,9 @@ ne	O	tr
 yaptı	O	tr
 .	O	tr
 
-Hasan_Celal_Güzel	O	tr
+Hasan	O	tr
+Celal	O	tr
+Güzel	O	tr
 'e	O	tr
 göre	O	tr
 ,	O	tr
@@ -2304,8 +2353,8 @@ almak	O	tr
 için	O	tr
 irtibat	O	tr
 şeklinde	O	tr
-izah	B-IDIOM	tr
-edilmiş	I-IDIOM	tr
+izah	O	tr
+edilmiş	O	tr
 .	O	tr
 
 Ve	O	tr
@@ -2331,8 +2380,8 @@ gidemeyen	O	tr
 ,	O	tr
 bunların	O	tr
 mı	O	tr
-üzerine	B-IDIOM	tr
-gidecekti	I-IDIOM	tr
+üzerine	O	tr
+gidecekti	O	tr
 .	O	tr
 
 Sonra	O	tr
@@ -2344,17 +2393,17 @@ bile	O	tr
 "	O	tr
 Bu	O	tr
 devlet	O	tr
-ne	B-IDIOM	tr
-hale	I-IDIOM	tr
-geldi	I-IDIOM	tr
+ne	O	tr
+hale	O	tr
+geldi	O	tr
 .	O	tr
 "	O	tr
 demiyorlar	O	tr
 mı	O	tr
 ,	O	tr
 insanı	O	tr
-zıvanadan	I-IDIOM	tr
-çıkarıyorlar	I-IDIOM	tr
+zıvanadan	O	tr
+çıkarıyorlar	O	tr
 .	O	tr
 
 Devleti	O	tr
@@ -2376,8 +2425,8 @@ Susurluk	O	tr
 soruşturmasında	O	tr
 -	O	tr
 daha	O	tr
-soruşturma	B-IDIOM	tr
-açılmadı	I-IDIOM	tr
+soruşturma	O	tr
+açılmadı	O	tr
 ya	O	tr
 .	O	tr
 
@@ -2390,9 +2439,11 @@ iki	O	tr
 ölü	O	tr
 var	O	tr
 ,	O	tr
-Abdullah_Çatlı	O	tr
+Abdullah	O	tr
+Çatlı	O	tr
 ,	O	tr
-Hüseyin_Kocadağ	O	tr
+Hüseyin	O	tr
+Kocadağ	O	tr
 ,	O	tr
 yeter	O	tr
 de	O	tr
@@ -2421,7 +2472,8 @@ Yazıcıoğlu	O	tr
 
 Adam	O	tr
 bırakın	O	tr
-Mesut_Yılmaz	O	tr
+Mesut	O	tr
+Yılmaz	O	tr
 'ı	O	tr
 faka	O	tr
 bastırmayı	O	tr
@@ -2512,8 +2564,8 @@ bu	O	tr
 işin	O	tr
 sonu	O	tr
 da	O	tr
-fos	B-IDIOM	tr
-çıkarsa	I-IDIOM	tr
+fos	O	tr
+çıkarsa	O	tr
 .	O	tr
 
 Çıkarsa	O	tr
@@ -2525,7 +2577,8 @@ gerek	O	tr
 devletin	O	tr
 gücü	O	tr
 ,	O	tr
-Işık_Yurtçu	O	tr
+Işık	O	tr
+Yurtçu	O	tr
 gibi	O	tr
 gazetecilere	O	tr
 yeterken	O	tr
@@ -2583,7 +2636,8 @@ yılbaşı	O	tr
 sefaları	O	tr
 .	O	tr
 
-Neyzen_Tevfik	O	tr
+Neyzen	O	tr
+Tevfik	O	tr
 'in	O	tr
 ruhu	O	tr
 şadolsun	O	tr
@@ -2626,7 +2680,8 @@ Neşe	O	tr
 Düzel	O	tr
 .	O	tr
 
-Meral_Tamer	O	tr
+Meral	O	tr
+Tamer	O	tr
 .	O	tr
 
 Carousel	O	tr
@@ -2647,8 +2702,8 @@ milyondu	O	tr
 .	O	tr
 
 Tüketici	O	tr
-itiraz	B-IDIOM	tr
-etti	I-IDIOM	tr
+itiraz	O	tr
+etti	O	tr
 .	O	tr
 
 Elit	O	tr
@@ -2724,7 +2779,8 @@ köşesine	O	tr
 layık	O	tr
 .	O	tr
 
-Çağla_Katay	O	tr
+Çağla	O	tr
+Katay	O	tr
 ,	O	tr
 18	O	tr
 aralıkta	O	tr
@@ -2765,9 +2821,9 @@ takıldı	O	tr
 .	O	tr
 
 Ve	O	tr
-hayretler	B-IDIOM	tr
-içinde	I-IDIOM	tr
-kaldı	I-IDIOM	tr
+hayretler	O	tr
+içinde	O	tr
+kaldı	O	tr
 .	O	tr
 
 Tam	O	tr
@@ -2775,7 +2831,9 @@ aynı	O	tr
 oyuncağı	O	tr
 orada	O	tr
 sadece	O	tr
-2_milyon_liraya	O	tr
+2	O	tr
+milyon	O	tr
+liraya	O	tr
 satıyorlardı	O	tr
 .	O	tr
 
@@ -2810,8 +2868,8 @@ arayacağım	O	tr
 Bu	O	tr
 kadar	O	tr
 fahiş	O	tr
-fark	B-IDIOM	tr
-olmaz	I-IDIOM	tr
+fark	O	tr
+olmaz	O	tr
 ,	O	tr
 "	O	tr
 dedi	O	tr
@@ -2837,8 +2895,8 @@ Elit	O	tr
 kendisine	O	tr
 hiç	O	tr
 bir	O	tr
-zorluk	B-IDIOM	tr
-çıkarmamış	I-IDIOM	tr
+zorluk	O	tr
+çıkarmamış	O	tr
 .	O	tr
 
 Hatta	O	tr
@@ -2849,8 +2907,8 @@ yetkilisi	O	tr
 ,	O	tr
 oyuncağı	O	tr
 memnuniyetle	O	tr
-geri	B-IDIOM	tr
-alacağını	I-IDIOM	tr
+geri	O	tr
+alacağını	O	tr
 söylemiş	O	tr
 .	O	tr
 
@@ -2868,8 +2926,8 @@ vermiş	O	tr
 
 Ve	O	tr
 şimdi	O	tr
-sıkı	B-IDIOM	tr
-durun	I-IDIOM	tr
+sıkı	O	tr
+durun	O	tr
 .	O	tr
 
 Arkasından	O	tr
@@ -2877,8 +2935,8 @@ da	O	tr
 "	O	tr
 bunlara	O	tr
 zaten	O	tr
-zam	B-IDIOM	tr
-geldi	I-IDIOM	tr
+zam	O	tr
+geldi	O	tr
 ,	O	tr
 artık	O	tr
 6	O	tr
@@ -2942,7 +3000,8 @@ oyuncakçıdan	O	tr
 aldı	O	tr
 .	O	tr
 
-Melih_Özakat	O	tr
+Melih	O	tr
+Özakat	O	tr
 'ın	O	tr
 cep	O	tr
 telefonuna	O	tr
@@ -2951,11 +3010,12 @@ dışı	O	tr
 engeli	O	tr
 .	O	tr
 
-Türk_Telekom	O	tr
+Türk	O	tr
+Telekom	O	tr
 ,	O	tr
-vur	B-IDIOM	tr
-deyince	I-IDIOM	tr
-öldürdü	I-IDIOM	tr
+vur	O	tr
+deyince	O	tr
+öldürdü	O	tr
 .	O	tr
 
 Cep	O	tr
@@ -2976,7 +3036,8 @@ takan	O	tr
 aboneler	O	tr
 çoğalınca	O	tr
 ,	O	tr
-Türk_Telekom	O	tr
+Türk	O	tr
+Telekom	O	tr
 da	O	tr
 sıkı	O	tr
 denetime	O	tr
@@ -2989,8 +3050,8 @@ bazı	O	tr
 abonelere	O	tr
 yurtdışı	O	tr
 görüşme	O	tr
-izni	B-IDIOM	tr
-vermemeye	I-IDIOM	tr
+izni	O	tr
+vermemeye	O	tr
 başlamıştı	O	tr
 .	O	tr
 
@@ -2999,7 +3060,8 @@ yerinde	O	tr
 olsa	O	tr
 da	O	tr
 ,	O	tr
-Türk_Telekom	O	tr
+Türk	O	tr
+Telekom	O	tr
 'un	O	tr
 bu	O	tr
 konudaki	O	tr
@@ -3017,7 +3079,8 @@ tanınmış	O	tr
 simalarından	O	tr
 TÜSİAD	O	tr
 üyesi	O	tr
-Melih_Özakat	O	tr
+Melih	O	tr
+Özakat	O	tr
 ,	O	tr
 bunun	O	tr
 en	O	tr
@@ -3085,13 +3148,15 @@ kızgındı	O	tr
 .	O	tr
 
 Arkadaşımız	O	tr
-Nuray_Köroğlu	O	tr
+Nuray	O	tr
+Köroğlu	O	tr
 'nun	O	tr
 sorularını	O	tr
 yanıtlayan	O	tr
 Ericsson	O	tr
 bayii	O	tr
-Engin_Öztürk	O	tr
+Engin	O	tr
+Öztürk	O	tr
 ,	O	tr
 "	O	tr
 biz	O	tr
@@ -3112,20 +3177,24 @@ uyaramadık	O	tr
 dedi	O	tr
 .	O	tr
 
-İzmir_Konak_Türk_Telekom	O	tr
+İzmir	O	tr
+Konak	O	tr
+Türk	O	tr
+Telekom	O	tr
 müdürü	O	tr
-Veli_Demirel	O	tr
+Veli	O	tr
+Demirel	O	tr
 ise	O	tr
 "	O	tr
 satış	O	tr
-işlemleri	B-IDIOM	tr
+işlemleri	O	tr
 ,	O	tr
 cep	O	tr
 telefonu	O	tr
 satan	O	tr
 firmalar	O	tr
 tarafından	O	tr
-yapılıyor	I-IDIOM	tr
+yapılıyor	O	tr
 .	O	tr
 Dolayısıyla	O	tr
 telefon	O	tr
@@ -3148,8 +3217,8 @@ meblağlı	O	tr
 konuşmaları	O	tr
 abone	O	tr
 sonradan	O	tr
-kabul	I-IDIOM	tr
-etmiyor	I-IDIOM	tr
+kabul	O	tr
+etmiyor	O	tr
 .	O	tr
 Hem	O	tr
 aboneyi	O	tr
@@ -3224,11 +3293,13 @@ yatmaz	O	tr
 
 İstanbullu	O	tr
 okurumuz	O	tr
-İsmet_Dişli	O	tr
+İsmet	O	tr
+Dişli	O	tr
 ,	O	tr
 geçtiğimiz	O	tr
 temmuzda	O	tr
-Sabır_Oto	O	tr
+Sabır	O	tr
+Oto	O	tr
 adlı	O	tr
 bir	O	tr
 galeriden	O	tr
@@ -3288,8 +3359,8 @@ Taa	O	tr
 ki	O	tr
 7	O	tr
 eylülde	O	tr
-kaza	B-IDIOM	tr
-yapıncaya	I-IDIOM	tr
+kaza	O	tr
+yapıncaya	O	tr
 kadar	O	tr
 .	O	tr
 
@@ -3318,10 +3389,10 @@ güveniyordu	O	tr
 .	O	tr
 
 Ama	O	tr
-evdeki	B-IDIOM	tr
-hesap	I-IDIOM	tr
-çarşıya	I-IDIOM	tr
-uymadı	I-IDIOM	tr
+evdeki	O	tr
+hesap	O	tr
+çarşıya	O	tr
+uymadı	O	tr
 .	O	tr
 
 Halk	O	tr
@@ -3406,8 +3477,8 @@ neden	O	tr
 5	O	tr
 aydır	O	tr
 poliçesini	O	tr
-takip	B-IDIOM	tr
-etmemiş	I-IDIOM	tr
+takip	O	tr
+etmemiş	O	tr
 .	O	tr
 "	O	tr
 diyor	O	tr
@@ -3415,8 +3486,8 @@ diyor	O	tr
 
 Oysa	O	tr
 poliçeyi	O	tr
-takip	B-IDIOM	tr
-etmesi	I-IDIOM	tr
+takip	O	tr
+etmesi	O	tr
 gereken	O	tr
 tabii	O	tr
 ki	O	tr
@@ -3461,7 +3532,8 @@ bile	O	tr
 yok	O	tr
 .	O	tr
 
-Sabır_Oto	O	tr
+Sabır	O	tr
+Oto	O	tr
 da	O	tr
 üzerine	O	tr
 vazife	O	tr
@@ -3493,10 +3565,11 @@ suçlu	O	tr
 
 Sonra	O	tr
 da	O	tr
-Sabır_Oto	O	tr
+Sabır	O	tr
+Oto	O	tr
 tarafından	O	tr
-tahsil	B-IDIOM	tr
-edilen	I-IDIOM	tr
+tahsil	O	tr
+edilen	O	tr
 primleri	O	tr
 Halk	O	tr
 Sigorta	O	tr
@@ -3506,7 +3579,8 @@ için	O	tr
 .	O	tr
 
 Arkadaşımız	O	tr
-İlkay_Özcan	O	tr
+İlkay	O	tr
+Özcan	O	tr
 'ın	O	tr
 sorularını	O	tr
 yanıtlayan	O	tr
@@ -3514,7 +3588,8 @@ Halk	O	tr
 Sigorta	O	tr
 grup	O	tr
 başkanı	O	tr
-Timur_Erdemli	O	tr
+Timur	O	tr
+Erdemli	O	tr
 ,	O	tr
 olay	O	tr
 açığa	O	tr
@@ -3524,8 +3599,8 @@ Nida	O	tr
 Sigorta	O	tr
 'nın	O	tr
 acenteliğini	O	tr
-iptal	B-IDIOM	tr
-ettiklerini	I-IDIOM	tr
+iptal	O	tr
+ettiklerini	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -3534,8 +3609,8 @@ acenta	O	tr
 dışında	O	tr
 bir	O	tr
 yere	O	tr
-ödeme	B-IDIOM	tr
-yapmasının	I-IDIOM	tr
+ödeme	O	tr
+yapmasının	O	tr
 hiçbir	O	tr
 anlamı	O	tr
 olmadığını	O	tr
@@ -3587,17 +3662,18 @@ satınca	O	tr
 ,	O	tr
 sigorta	O	tr
 da	O	tr
-ödeme	B-IDIOM	tr
-yapmaktan	I-IDIOM	tr
+ödeme	O	tr
+yapmaktan	O	tr
 vazgeçti	O	tr
 .	O	tr
 
-Beyoğlu_Hastanesi	O	tr
+Beyoğlu	O	tr
+Hastanesi	O	tr
 'nde	O	tr
 .	O	tr
 kediler	O	tr
-cirit	B-IDIOM	tr
-atıyor	I-IDIOM	tr
+cirit	O	tr
+atıyor	O	tr
 .	O	tr
 
 Devlet	O	tr
@@ -3617,8 +3693,8 @@ değişik	O	tr
 koyun	O	tr
 koyuna	O	tr
 yatmak	O	tr
-zorunda	B-IDIOM	tr
-kalabiliyorlar	I-IDIOM	tr
+zorunda	O	tr
+kalabiliyorlar	O	tr
 .	O	tr
 
 Ama	O	tr
@@ -3630,7 +3706,9 @@ duymamışsınızdır	O	tr
 
 Kuledibi	O	tr
 'ndeki	O	tr
-İstanbul_Beyoğlu_Hastanesi	O	tr
+İstanbul	O	tr
+Beyoğlu	O	tr
+Hastanesi	O	tr
 'nde	O	tr
 kediler	O	tr
 koşturuyor	O	tr
@@ -3744,12 +3822,15 @@ diyor	O	tr
 .	O	tr
 
 Arkadaşımız	O	tr
-İlkay_Özcan	O	tr
+İlkay	O	tr
+Özcan	O	tr
 'ın	O	tr
 sorularını	O	tr
 yanıtlayan	O	tr
 başhekim	O	tr
-Sait_Rahmi_Öner	O	tr
+Sait	O	tr
+Rahmi	O	tr
+Öner	O	tr
 de	O	tr
 kedilerin	O	tr
 varlığını	O	tr
@@ -3775,7 +3856,8 @@ hastaneden	O	tr
 için	O	tr
 zaman	O	tr
 zaman	O	tr
-Beyoğlu_Belediyesi	O	tr
+Beyoğlu	O	tr
+Belediyesi	O	tr
 'nden	O	tr
 yardım	O	tr
 istediklerini	O	tr
@@ -3821,10 +3903,10 @@ kedilerle	O	tr
 nasıl	O	tr
 olup	O	tr
 da	O	tr
-başa	B-IDIOM	tr
-çıkamadığına	I-IDIOM	tr
-akıl	I-IDIOM	tr
-erdiremedik	I-IDIOM	tr
+başa	O	tr
+çıkamadığına	O	tr
+akıl	O	tr
+erdiremedik	O	tr
 .	O	tr
 
 Kediler	O	tr
@@ -3842,8 +3924,8 @@ evleri	O	tr
 ne	O	tr
 de	O	tr
 işyerlerini	O	tr
-istila	B-IDIOM	tr
-ettikleri	I-IDIOM	tr
+istila	O	tr
+ettikleri	O	tr
 pek	O	tr
 görülmüş	O	tr
 bir	O	tr
@@ -3860,8 +3942,8 @@ yerine	O	tr
 ,	O	tr
 farelere	O	tr
 karşı	O	tr
-önlem	B-IDIOM	tr
-olsun	I-IDIOM	tr
+önlem	O	tr
+olsun	O	tr
 diye	O	tr
 hastane	O	tr
 içinde	O	tr
@@ -3887,7 +3969,8 @@ tabelaya	O	tr
 halıcılık	O	tr
 yapan	O	tr
 okurumuz	O	tr
-Talat_Topçu	O	tr
+Talat	O	tr
+Topçu	O	tr
 ,	O	tr
 İhlas	O	tr
 Kargo	O	tr
@@ -3989,21 +4072,21 @@ kırıldı	O	tr
 İlk	O	tr
 2	O	tr
 seferinde	O	tr
-tazmin	B-IDIOM	tr
-edeceklerine	I-IDIOM	tr
+tazmin	O	tr
+edeceklerine	O	tr
 söz	O	tr
 verdiler	O	tr
 .	O	tr
 Ama	O	tr
-sözlerini	I-IDIOM	tr
-tutmadıkları	I-IDIOM	tr
+sözlerini	O	tr
+tutmadıkları	O	tr
 için	O	tr
 ben	O	tr
 kendi	O	tr
 cebimden	O	tr
 yaptırmak	O	tr
-zorunda	I-IDIOM	tr
-kaldım	I-IDIOM	tr
+zorunda	O	tr
+kaldım	O	tr
 .	O	tr
 "	O	tr
 Sen	O	tr
@@ -4017,9 +4100,9 @@ dediler	O	tr
 ,	O	tr
 ama	O	tr
 bu	O	tr
-vaadlerini	I-IDIOM	tr
+vaadlerini	O	tr
 de	O	tr
-tutmadılar	I-IDIOM	tr
+tutmadılar	O	tr
 ,	O	tr
 "	O	tr
 diye	O	tr
@@ -4031,8 +4114,8 @@ son	O	tr
 seferde	O	tr
 ise	O	tr
 tabelanın	O	tr
-tamir	B-IDIOM	tr
-edilecek	I-IDIOM	tr
+tamir	O	tr
+edilecek	O	tr
 tarafı	O	tr
 da	O	tr
 kalmamış	O	tr
@@ -4064,7 +4147,8 @@ alamamış	O	tr
 .	O	tr
 
 Arkadaşımız	O	tr
-İlkay_Özcan	O	tr
+İlkay	O	tr
+Özcan	O	tr
 'ın	O	tr
 sorunu	O	tr
 İhlas	O	tr
@@ -4116,8 +4200,8 @@ girmeden	O	tr
 neden	O	tr
 verdiği	O	tr
 zararı	O	tr
-tazmin	B-IDIOM	tr
-etmeye	I-IDIOM	tr
+tazmin	O	tr
+etmeye	O	tr
 yanaşmadığına	O	tr
 bir	O	tr
 açıklama	O	tr
@@ -4130,9 +4214,9 @@ Güçlü	O	tr
 
 YILBAŞINDAN	O	tr
 en	O	tr
-karlı	B-IDIOM	tr
+karlı	O	tr
 kimler	O	tr
-çıktı	I-IDIOM	tr
+çıktı	O	tr
 .	O	tr
 
 Bizlerin	O	tr
@@ -4195,8 +4279,8 @@ Ama	O	tr
 ortada	O	tr
 dolaşan	O	tr
 rakamlar	O	tr
-ilgi	B-IDIOM	tr
-çekici	I-IDIOM	tr
+ilgi	O	tr
+çekici	O	tr
 .	O	tr
 
 Piyango	O	tr
@@ -4224,15 +4308,19 @@ ediliyor	O	tr
 Bir	O	tr
 gece	O	tr
 için	O	tr
-İbrahim_Tatlıses	O	tr
+İbrahim	O	tr
+Tatlıses	O	tr
 16	O	tr
 milyar	O	tr
 ,	O	tr
-Sezen_Aksu	O	tr
-5_milyar	O	tr
+Sezen	O	tr
+Aksu	O	tr
+5	O	tr
+milyar	O	tr
 ,	O	tr
 Tarkan	O	tr
-3_milyar	O	tr
+3	O	tr
+milyar	O	tr
 ,	O	tr
 diğer	O	tr
 sanatçılar	O	tr
@@ -4243,8 +4331,8 @@ sıfırlı	O	tr
 ,	O	tr
 yani	O	tr
 milyarla	O	tr
-telaffuz	B-IDIOM	tr
-edilen	I-IDIOM	tr
+telaffuz	O	tr
+edilen	O	tr
 rakamlar	O	tr
 üzerinden	O	tr
 ücret	O	tr
@@ -4263,7 +4351,8 @@ arasında	O	tr
 şaşkın	O	tr
 ördeğe	O	tr
 döndürülen	O	tr
-Küçük_İbo	O	tr
+Küçük	O	tr
+İbo	O	tr
 bile	O	tr
 ,	O	tr
 bir	O	tr
@@ -4350,14 +4439,14 @@ kalan	O	tr
 bir	O	tr
 an	O	tr
 önce	O	tr
-köşe	B-IDIOM	tr
-dönme	I-IDIOM	tr
+köşe	O	tr
+dönme	O	tr
 hayali	O	tr
 ,	O	tr
 adeta	O	tr
 çocukların	O	tr
-kafasına	I-IDIOM	tr
-kazınmış	I-IDIOM	tr
+kafasına	O	tr
+kazınmış	O	tr
 .	O	tr
 
 Öyle	O	tr
@@ -4380,9 +4469,9 @@ gibi	O	tr
 modası	O	tr
 geçmiş	O	tr
 kavramların	O	tr
-yüzüne	B-IDIOM	tr
-bakan	I-IDIOM	tr
-yok	I-IDIOM	tr
+yüzüne	O	tr
+bakan	O	tr
+yok	O	tr
 .	O	tr
 
 Siyasileriyle	O	tr
@@ -4394,8 +4483,8 @@ bizler	O	tr
 de	O	tr
 bu	O	tr
 gidişe	O	tr
-alkış	B-IDIOM	tr
-tutuyoruz	I-IDIOM	tr
+alkış	O	tr
+tutuyoruz	O	tr
 .	O	tr
 
 Televizyonlar	O	tr
@@ -4448,8 +4537,8 @@ kar	O	tr
 üzerinde	O	tr
 niye	O	tr
 çıplak	O	tr
-pozlar	B-IDIOM	tr
-verdirip	I-IDIOM	tr
+pozlar	O	tr
+verdirip	O	tr
 yüz	O	tr
 milyonlar	O	tr
 savuruyor	O	tr
@@ -4489,8 +4578,8 @@ diye	O	tr
 İcraattan	O	tr
 çok	O	tr
 ,	O	tr
-laf	B-IDIOM	tr
-üreten	I-IDIOM	tr
+laf	O	tr
+üreten	O	tr
 politikacılar	O	tr
 ,	O	tr
 niye	O	tr
@@ -4576,8 +4665,8 @@ zahmete	O	tr
 katlansınlar	O	tr
 .	O	tr
 
-Hoşumuza	B-IDIOM	tr
-gitse	I-IDIOM	tr
+Hoşumuza	O	tr
+gitse	O	tr
 de	O	tr
 ,	O	tr
 gitmese	O	tr
@@ -4635,7 +4724,8 @@ mağdur	O	tr
 etmeyelim	O	tr
 .	O	tr
 
-Oktay_Akbal	O	tr
+Oktay	O	tr
+Akbal	O	tr
 .	O	tr
 
 "	O	tr
@@ -4699,8 +4789,8 @@ götürmeden	O	tr
 büyük	O	tr
 denizlere	O	tr
 /	O	tr
-Çabuk	B-IDIOM	tr
-ol	I-IDIOM	tr
+Çabuk	O	tr
+ol	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
@@ -4711,11 +4801,12 @@ ilk	O	tr
 günlerinde	O	tr
 şiirli	O	tr
 bir	O	tr
-başlangıç	B-IDIOM	tr
-yapmak	I-IDIOM	tr
+başlangıç	O	tr
+yapmak	O	tr
 .	O	tr
 
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 'ın	O	tr
 "	O	tr
 Aydın	O	tr
@@ -4754,8 +4845,8 @@ Duy	O	tr
 diyor	O	tr
 ,	O	tr
 "	O	tr
-Çabuk	B-IDIOM	tr
-ol	I-IDIOM	tr
+Çabuk	O	tr
+ol	O	tr
 "	O	tr
 diyor	O	tr
 .	O	tr
@@ -4790,8 +4881,8 @@ aydınlanıverdi	O	tr
 
 Tüm	O	tr
 karamsarlıkları	O	tr
-alt	B-IDIOM	tr
-edecek	I-IDIOM	tr
+alt	O	tr
+edecek	O	tr
 bir	O	tr
 eğitim	O	tr
 ordusu	O	tr
@@ -4918,7 +5009,8 @@ yaratacağız	O	tr
 Değerli	O	tr
 dost	O	tr
 şairim	O	tr
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 'ın	O	tr
 "	O	tr
 Aydın	O	tr
@@ -4928,12 +5020,12 @@ mısın	O	tr
 sorusuna	O	tr
 en	O	tr
 güzel	O	tr
-yanıtı	B-IDIOM	tr
+yanıtı	O	tr
 bilinçli	O	tr
 öğretmenlerimiz	O	tr
 işte	O	tr
 böyle	O	tr
-veriyorlar	I-IDIOM	tr
+veriyorlar	O	tr
 :	O	tr
 "	O	tr
 Yarını	O	tr
@@ -4963,15 +5055,16 @@ ne	O	tr
 diyor	O	tr
 :	O	tr
 "	O	tr
-12_Eylül	O	tr
+12	O	tr
+Eylül	O	tr
 'den	O	tr
 sonra	O	tr
 sistemli	O	tr
 bir	O	tr
 şekilde	O	tr
 okur	O	tr
-yok	B-IDIOM	tr
-edildi	I-IDIOM	tr
+yok	O	tr
+edildi	O	tr
 .	O	tr
 Yeni	O	tr
 okur	O	tr
@@ -4994,7 +5087,8 @@ yıllardır	O	tr
 karşı	O	tr
 karşıyayız	O	tr
 ,	O	tr
-12_Eylül	O	tr
+12	O	tr
+Eylül	O	tr
 öncesi	O	tr
 kitaplar	O	tr
 on	O	tr
@@ -5190,8 +5284,8 @@ muyuz	O	tr
 
 Elbet	O	tr
 sıra	O	tr
-hesap	B-IDIOM	tr
-sormaya	I-IDIOM	tr
+hesap	O	tr
+sormaya	O	tr
 da	O	tr
 gelecek	O	tr
 .	O	tr
@@ -5200,8 +5294,8 @@ gelecek	O	tr
 bile	O	tr
 bile	O	tr
 gerilik	O	tr
-çıkmazlarına	B-IDIOM	tr
-sokan	I-IDIOM	tr
+çıkmazlarına	O	tr
+sokan	O	tr
 politikacılar	O	tr
 tek	O	tr
 tek	O	tr
@@ -5306,11 +5400,13 @@ umursamazlığımızı	O	tr
 gösterir	O	tr
 .	O	tr
 
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 'ın	O	tr
 sevgili	O	tr
 oğlu	O	tr
-Aydın_Ilgaz	O	tr
+Aydın	O	tr
+Ilgaz	O	tr
 ,	O	tr
 babasının	O	tr
 şiirini	O	tr
@@ -5331,7 +5427,8 @@ mısın	O	tr
 "	O	tr
 ,	O	tr
 sanki	O	tr
-Aydın_Ilgaz	O	tr
+Aydın	O	tr
+Ilgaz	O	tr
 'a	O	tr
 ,	O	tr
 dolayısıyla	O	tr
@@ -5416,7 +5513,8 @@ kaldırdı	O	tr
 .	O	tr
 
 Cumhurbaşkanı	O	tr
-Süleyman_Demirel	O	tr
+Süleyman	O	tr
+Demirel	O	tr
 ,	O	tr
 yeni	O	tr
 yıla	O	tr
@@ -5438,12 +5536,14 @@ Nazmiye	O	tr
 Hanım	O	tr
 'ın	O	tr
 kardeşi	O	tr
-Ali_Şener	O	tr
+Ali	O	tr
+Şener	O	tr
 'in	O	tr
 çocukları	O	tr
 Mesut	O	tr
 ve	O	tr
-Uğur_Can	O	tr
+Uğur	O	tr
+Can	O	tr
 'ın	O	tr
 muziplikleriyle	O	tr
 keyfilnenen	O	tr
@@ -5490,7 +5590,8 @@ belirtti	O	tr
 
 ANAP	O	tr
 Lideri	O	tr
-Mesut_Yılmaz	O	tr
+Mesut	O	tr
+Yılmaz	O	tr
 ,	O	tr
 yeni	O	tr
 yıla	O	tr
@@ -5504,7 +5605,8 @@ girdi	O	tr
 Yılmaz	O	tr
 ,	O	tr
 eşi	O	tr
-Berna_Yılmaz	O	tr
+Berna	O	tr
+Yılmaz	O	tr
 ve	O	tr
 çocukları	O	tr
 Hasan	O	tr
@@ -5518,8 +5620,8 @@ basın	O	tr
 mensuplarına	O	tr
 yeni	O	tr
 yıl	O	tr
-pozu	B-IDIOM	tr
-verdi	I-IDIOM	tr
+pozu	O	tr
+verdi	O	tr
 .	O	tr
 
 1997	O	tr
@@ -5556,8 +5658,8 @@ Yılmaz	O	tr
 'de	O	tr
 de	O	tr
 bu	O	tr
-acıların	B-IDIOM	tr
-çekilmemesini	I-IDIOM	tr
+acıların	O	tr
+çekilmemesini	O	tr
 diledi	O	tr
 .	O	tr
 
@@ -5574,8 +5676,8 @@ alarak	O	tr
 birkaç	O	tr
 gün	O	tr
 ayrılığın	O	tr
-hasretini	B-IDIOM	tr
-giderdi	I-IDIOM	tr
+hasretini	O	tr
+giderdi	O	tr
 .	O	tr
 
 Yılbaşı	O	tr
@@ -5589,12 +5691,14 @@ Sanayi	O	tr
 ve	O	tr
 Ticaret	O	tr
 Bakanı	O	tr
-Yalım_Erez	O	tr
+Yalım	O	tr
+Erez	O	tr
 ve	O	tr
 Milli	O	tr
 Savunma	O	tr
 Bakanı	O	tr
-Turhan_Tayan	O	tr
+Turhan	O	tr
+Tayan	O	tr
 'la	O	tr
 eşleri	O	tr
 de	O	tr
@@ -5614,19 +5718,23 @@ Taşanlar	O	tr
 ve	O	tr
 Emniyet	O	tr
 Müdürü	O	tr
-Ahmet_Demir	O	tr
+Ahmet	O	tr
+Demir	O	tr
 'le	O	tr
 birlikte	O	tr
 geçiren	O	tr
 Erez	O	tr
 'le	O	tr
 eşi	O	tr
-Feryal_Erez	O	tr
+Feryal	O	tr
+Erez	O	tr
 ve	O	tr
-Turhan_Tayan	O	tr
+Turhan	O	tr
+Tayan	O	tr
 'la	O	tr
 eşi	O	tr
-Güngör_Tayan	O	tr
+Güngör	O	tr
+Tayan	O	tr
 ,	O	tr
 saatler	O	tr
 24	O	tr
@@ -5643,14 +5751,17 @@ kutladı	O	tr
 Yeni	O	tr
 yıla	O	tr
 Göynük	O	tr
-Royal_Resord_Oteli	O	tr
+Royal	O	tr
+Resord	O	tr
+Oteli	O	tr
 balo	O	tr
 salonuna	O	tr
 eşiyle	O	tr
 birlikte	O	tr
 giren	O	tr
 işadamı	O	tr
-Sakıp_Sabancı	O	tr
+Sakıp	O	tr
+Sabancı	O	tr
 ,	O	tr
 yine	O	tr
 çevrenin	O	tr
@@ -5664,7 +5775,8 @@ resim	O	tr
 için	O	tr
 birbiriyle	O	tr
 yarıştığı	O	tr
-Sakıp_Sabancı	O	tr
+Sakıp	O	tr
+Sabancı	O	tr
 ,	O	tr
 örgülü	O	tr
 saçları	O	tr
@@ -5677,8 +5789,8 @@ manken	O	tr
 Ajda	O	tr
 'ya	O	tr
 yakın	O	tr
-ilgi	B-IDIOM	tr
-gösterdi	I-IDIOM	tr
+ilgi	O	tr
+gösterdi	O	tr
 .	O	tr
 
 Güzel	O	tr
@@ -5701,7 +5813,8 @@ arasında	O	tr
 ,	O	tr
 DYP	O	tr
 milletvekili	O	tr
-Hayri_Kozakçıoğlu	O	tr
+Hayri	O	tr
+Kozakçıoğlu	O	tr
 '	O	tr
 da	O	tr
 vardı	O	tr
@@ -5713,7 +5826,8 @@ Müziği	O	tr
 'nin	O	tr
 ünlü	O	tr
 sesi	O	tr
-Bülent_Ersoy	O	tr
+Bülent	O	tr
+Ersoy	O	tr
 ,	O	tr
 1997	O	tr
 yılını	O	tr
@@ -5730,7 +5844,8 @@ Gazinosu	O	tr
 geceyarısı	O	tr
 sahne	O	tr
 alan	O	tr
-Bülent_Ersoy	O	tr
+Bülent	O	tr
+Ersoy	O	tr
 ,	O	tr
 saatlerce	O	tr
 sahnede	O	tr
@@ -5788,23 +5903,26 @@ ismi	O	tr
 Emel	O	tr
 Sayın	O	tr
 'la	O	tr
-Muazzez_Abacı	O	tr
+Muazzez	O	tr
+Abacı	O	tr
 ,	O	tr
 peşpeşe	O	tr
 sahneye	O	tr
 çıkıp	O	tr
 davetlilere	O	tr
 müzik	O	tr
-ziyafeti	B-IDIOM	tr
-çekti	I-IDIOM	tr
+ziyafeti	O	tr
+çekti	O	tr
 .	O	tr
 
 Ünlü	O	tr
 sunucu	O	tr
-Erkan_Yolaç	O	tr
+Erkan	O	tr
+Yolaç	O	tr
 ,	O	tr
 eşi	O	tr
-Asuman_Tuğberk	O	tr
+Asuman	O	tr
+Tuğberk	O	tr
 ve	O	tr
 Abacı	O	tr
 'nın	O	tr
@@ -5838,9 +5956,12 @@ müziğin	O	tr
 iki	O	tr
 genç	O	tr
 starı	O	tr
-Burak_Kut	O	tr
+Burak	O	tr
+Kut	O	tr
 ve	O	tr
-Ferda_Anıl_Yarkın	O	tr
+Ferda	O	tr
+Anıl	O	tr
+Yarkın	O	tr
 ,	O	tr
 yeni	O	tr
 yılı	O	tr
@@ -5864,9 +5985,11 @@ sanatçı	O	tr
 gecenin	O	tr
 keyfini	O	tr
 işadamı	O	tr
-Nuri_Yönver	O	tr
+Nuri	O	tr
+Yönver	O	tr
 ve	O	tr
-Ayşe_Karasu	O	tr
+Ayşe	O	tr
+Karasu	O	tr
 'yla	O	tr
 paylaştı	O	tr
 .	O	tr
@@ -5903,7 +6026,10 @@ yılbaşı	O	tr
 eğlencelerinden	O	tr
 birisi	O	tr
 de	O	tr
-Ceylan_Inter_Continental_Oteli	O	tr
+Ceylan	O	tr
+Inter	O	tr
+Continental	O	tr
+Oteli	O	tr
 'nde	O	tr
 yaşandı	O	tr
 .	O	tr
@@ -5920,8 +6046,8 @@ show	O	tr
 ,	O	tr
 davetlilerin	O	tr
 büyük	O	tr
-ilgisini	B-IDIOM	tr
-çekti	I-IDIOM	tr
+ilgisini	O	tr
+çekti	O	tr
 .	O	tr
 
 1997	O	tr
@@ -5961,7 +6087,8 @@ Otel	O	tr
 'de	O	tr
 sahneye	O	tr
 çıkan	O	tr
-İbrahim_Tatlıses	O	tr
+İbrahim	O	tr
+Tatlıses	O	tr
 ,	O	tr
 ilginin	O	tr
 odak	O	tr
@@ -5980,8 +6107,8 @@ izlenen	O	tr
 yaptığı	O	tr
 esprilerle	O	tr
 izleyenleri	O	tr
-kırıp	B-IDIOM	tr
-geçirdi	I-IDIOM	tr
+kırıp	O	tr
+geçirdi	O	tr
 .	O	tr
 
 44	O	tr
@@ -6002,15 +6129,16 @@ davetliler	O	tr
 arasındaki	O	tr
 Orman	O	tr
 Bakanı	O	tr
-Halit_Dağlı	O	tr
+Halit	O	tr
+Dağlı	O	tr
 'nın	O	tr
 eşi	O	tr
 Şenay	O	tr
 Hanım	O	tr
 için	O	tr
 bir	O	tr
-türkü	B-IDIOM	tr
-okudu	I-IDIOM	tr
+türkü	O	tr
+okudu	O	tr
 .	O	tr
 
 En	O	tr
@@ -6022,16 +6150,20 @@ yarışması	O	tr
 İstanbul	O	tr
 'da	O	tr
 eğlencenin	O	tr
-doruğa	B-IDIOM	tr
-çıktığı	I-IDIOM	tr
+doruğa	O	tr
+çıktığı	O	tr
 yerlerden	O	tr
 birisi	O	tr
 de	O	tr
-Polat_Renaissance_Oteli	O	tr
+Polat	O	tr
+Renaissance	O	tr
+Oteli	O	tr
 'ydi	O	tr
 .	O	tr
 
-Mehmet_Ali_Erbil	O	tr
+Mehmet	O	tr
+Ali	O	tr
+Erbil	O	tr
 -	O	tr
 Çiğdem	O	tr
 Tunç	O	tr
@@ -6041,7 +6173,8 @@ otelin	O	tr
 yılbaşı	O	tr
 balosunda	O	tr
 ,	O	tr
-Demet_Sağıroğlu	O	tr
+Demet	O	tr
+Sağıroğlu	O	tr
 'yla	O	tr
 Muazzez	O	tr
 Ersoy	O	tr
@@ -6075,7 +6208,9 @@ Mezdeke	O	tr
 coşturdu	O	tr
 .	O	tr
 
-Polat_Renaisance_Oteli	O	tr
+Polat	O	tr
+Renaisance	O	tr
+Oteli	O	tr
 'nde	O	tr
 yeni	O	tr
 yıla	O	tr
@@ -6095,8 +6230,8 @@ grubunun	O	tr
 kıvrak	O	tr
 danslarıyla	O	tr
 iyice	O	tr
-kendilerinden	B-IDIOM	tr
-geçti	I-IDIOM	tr
+kendilerinden	O	tr
+geçti	O	tr
 .	O	tr
 
 Müziğin	O	tr
@@ -6159,8 +6294,8 @@ kimi	O	tr
 ,	O	tr
 kimi	O	tr
 de	O	tr
-dans	B-IDIOM	tr
-ederek	I-IDIOM	tr
+dans	O	tr
+ederek	O	tr
 yeni	O	tr
 yıla	O	tr
 girdi	O	tr
@@ -6169,7 +6304,8 @@ girdi	O	tr
 (	O	tr
 Fotoğraf	O	tr
 :	O	tr
-Neslihan_CUYAR	O	tr
+Neslihan	O	tr
+CUYAR	O	tr
 )	O	tr
 .	O	tr
 
@@ -6179,9 +6315,10 @@ Muhalefette	O	tr
 iken	O	tr
 rantiye	O	tr
 kesimine	O	tr
-savaş	B-IDIOM	tr
-açan	I-IDIOM	tr
-Refah_Partisi	O	tr
+savaş	O	tr
+açan	O	tr
+Refah	O	tr
+Partisi	O	tr
 ,	O	tr
 faiz	O	tr
 kazançlarının	O	tr
@@ -6192,8 +6329,8 @@ alınmasını	O	tr
 bir	O	tr
 yıl	O	tr
 erteleme	O	tr
-kararı	I-IDIOM	tr
-alması	I-IDIOM	tr
+kararı	O	tr
+alması	O	tr
 ,	O	tr
 TBMM	O	tr
 'de	O	tr
@@ -6214,7 +6351,8 @@ rantiye	O	tr
 kesimine	O	tr
 karşı	O	tr
 olan	O	tr
-Refah_Partisi	O	tr
+Refah	O	tr
+Partisi	O	tr
 'nin	O	tr
 liderliğindeki	O	tr
 Refahyol	O	tr
@@ -6231,11 +6369,13 @@ vergiyi	O	tr
 bir	O	tr
 yıl	O	tr
 erteleme	O	tr
-karar	B-IDIOM	tr
-aldı	I-IDIOM	tr
+karar	O	tr
+aldı	O	tr
 .	O	tr
 
-26_Aralık_1993	O	tr
+26	O	tr
+Aralık	O	tr
+1993	O	tr
 tarihindeki	O	tr
 yasayla	O	tr
 çıkan	O	tr
@@ -6257,8 +6397,8 @@ da	O	tr
 1998	O	tr
 'e	O	tr
 ertelenme	O	tr
-karar	B-IDIOM	tr
-alındı	I-IDIOM	tr
+karar	O	tr
+alındı	O	tr
 .	O	tr
 
 Ancak	O	tr
@@ -6270,7 +6410,9 @@ gerekiyor	O	tr
 .	O	tr
 
 Çünkü	O	tr
-12_Aralık_1993	O	tr
+12	O	tr
+Aralık	O	tr
+1993	O	tr
 tarihindeki	O	tr
 3946	O	tr
 sayılı	O	tr
@@ -6344,7 +6486,8 @@ CHP	O	tr
 ve	O	tr
 DSP	O	tr
 ,	O	tr
-Refah_Partisi	O	tr
+Refah	O	tr
+Partisi	O	tr
 'ni	O	tr
 kendi	O	tr
 söylemi	O	tr
@@ -6363,14 +6506,15 @@ ertelemesi	O	tr
 sırasında	O	tr
 iktidara	O	tr
 sert	O	tr
-muhalefet	B-IDIOM	tr
-yapan	I-IDIOM	tr
+muhalefet	O	tr
+yapan	O	tr
 ve	O	tr
 rantiyecilerin	O	tr
 hükümeti	O	tr
 olarak	O	tr
 şuçlayan	O	tr
-Refah_Partisi	O	tr
+Refah	O	tr
+Partisi	O	tr
 'nin	O	tr
 aynı	O	tr
 duruma	O	tr
@@ -6378,7 +6522,8 @@ düştüğünü	O	tr
 söyleyen	O	tr
 CHP	O	tr
 'li	O	tr
-Nihat_Matkap	O	tr
+Nihat	O	tr
+Matkap	O	tr
 ,	O	tr
 o	O	tr
 zamanın	O	tr
@@ -6392,10 +6537,11 @@ GASPI	O	tr
 
 Hükümet	O	tr
 yetkililerinin	O	tr
-iddia	B-IDIOM	tr
-ettiği	I-IDIOM	tr
+iddia	O	tr
+ettiği	O	tr
 gibi	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'nun	O	tr
 ,	O	tr
 rantiyeye	O	tr
@@ -6413,7 +6559,10 @@ erteledik	O	tr
 yönündeki	O	tr
 açıklamalarını	O	tr
 ,	O	tr
-Türkiye_Büyük_Millet_Meclisi	O	tr
+Türkiye	O	tr
+Büyük	O	tr
+Millet	O	tr
+Meclisi	O	tr
 'nin	O	tr
 yetkilerine	O	tr
 saygısızlık	O	tr
@@ -6429,8 +6578,8 @@ Cumhurbaşkanlığı	O	tr
 bakmanın	O	tr
 yetkilerine	O	tr
 de	O	tr
-saygısızlık	B-IDIOM	tr
-yapıldığını	I-IDIOM	tr
+saygısızlık	O	tr
+yapıldığını	O	tr
 anlatan	O	tr
 Matkap	O	tr
 ,	O	tr
@@ -6466,19 +6615,20 @@ TBMM	O	tr
 kanuna	O	tr
 karşı	O	tr
 sert	O	tr
-muhalefet	B-IDIOM	tr
-yapacaklarını	I-IDIOM	tr
+muhalefet	O	tr
+yapacaklarını	O	tr
 söyledi	O	tr
 .	O	tr
 
-Refah_Partisi	O	tr
+Refah	O	tr
+Partisi	O	tr
 'nin	O	tr
 ,	O	tr
 tamemen	O	tr
 rant	O	tr
 kesimine	O	tr
-teslim	B-IDIOM	tr
-olduğunu	I-IDIOM	tr
+teslim	O	tr
+olduğunu	O	tr
 belirten	O	tr
 Matkap	O	tr
 ,	O	tr
@@ -6504,17 +6654,19 @@ ne	O	tr
 
 ANAP	O	tr
 'lı	O	tr
-Işın_Çelebi	O	tr
+Işın	O	tr
+Çelebi	O	tr
 ise	O	tr
 ,	O	tr
 hükümetin	O	tr
-söz	B-IDIOM	tr
-verdiği	I-IDIOM	tr
+söz	O	tr
+verdiği	O	tr
 halde	O	tr
 asgari	O	tr
 ücretin	O	tr
 üzerindeki	O	tr
-yüzde_25	O	tr
+yüzde	O	tr
+25	O	tr
 'lik	O	tr
 vergiyi	O	tr
 kaldırmadığını	O	tr
@@ -6526,8 +6678,8 @@ yeralmayan	O	tr
 ve	O	tr
 her	O	tr
 seferinde	O	tr
-karşı	I-IDIOM	tr
-olduğunu	I-IDIOM	tr
+karşı	O	tr
+olduğunu	O	tr
 söylediği	O	tr
 rantiye	O	tr
 kesiminin	O	tr
@@ -6541,7 +6693,8 @@ söyledi	O	tr
 söyledi	O	tr
 :	O	tr
 "	O	tr
-Refah_Partisi	O	tr
+Refah	O	tr
+Partisi	O	tr
 1996	O	tr
 yılında	O	tr
 bütün	O	tr
@@ -6561,12 +6714,13 @@ biçimde	O	tr
 bir	O	tr
 siyasi	O	tr
 haraket	O	tr
-haline	B-IDIOM	tr
-geldi	I-IDIOM	tr
+haline	O	tr
+geldi	O	tr
 .	O	tr
 Altın	O	tr
 stoklarını	O	tr
-yüzde_6	O	tr
+yüzde	O	tr
+6	O	tr
 vergi	O	tr
 karşılığında	O	tr
 affı	O	tr
@@ -6589,13 +6743,15 @@ yaratılmıştır	O	tr
 .	O	tr
 Asgari	O	tr
 ücretten	O	tr
-yüzde_25	O	tr
+yüzde	O	tr
+25	O	tr
 vergi	O	tr
 alırken	O	tr
 ,	O	tr
 altın	O	tr
 stokçusuna	O	tr
-yüzde_6	O	tr
+yüzde	O	tr
+6	O	tr
 vergi	O	tr
 almak	O	tr
 rantiye	O	tr
@@ -6652,8 +6808,8 @@ yaratan	O	tr
 sıradan	O	tr
 bir	O	tr
 parti	O	tr
-haline	B-IDIOM	tr
-geldiğini	I-IDIOM	tr
+haline	O	tr
+geldiğini	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -6686,8 +6842,8 @@ Darphane	O	tr
 hatıra	O	tr
 para	O	tr
 programı	O	tr
-belli	B-IDIOM	tr
-oldu	I-IDIOM	tr
+belli	O	tr
+oldu	O	tr
 .	O	tr
 
 Aralarında	O	tr
@@ -6711,7 +6867,8 @@ programına	O	tr
 aldı	O	tr
 .	O	tr
 
-Zehra_GÜNGÖR	O	tr
+Zehra	O	tr
+GÜNGÖR	O	tr
 .	O	tr
 
 METAL	O	tr
@@ -6737,8 +6894,8 @@ hatıra	O	tr
 paraları	O	tr
 iki	O	tr
 yıl	O	tr
-tedavülde	B-IDIOM	tr
-tutacak	I-IDIOM	tr
+tedavülde	O	tr
+tutacak	O	tr
 olan	O	tr
 darphane	O	tr
 ,	O	tr
@@ -6788,7 +6945,8 @@ arasında	O	tr
 şimdilik	O	tr
 TEB	O	tr
 ve	O	tr
-Halk_Bankası	O	tr
+Halk	O	tr
+Bankası	O	tr
 bulunuyor	O	tr
 .	O	tr
 
@@ -6798,7 +6956,8 @@ hatıra	O	tr
 paralarının	O	tr
 Ankara	O	tr
 'da	O	tr
-Hazine_Vakfı	O	tr
+Hazine	O	tr
+Vakfı	O	tr
 aracılığıyla	O	tr
 da	O	tr
 satılması	O	tr
@@ -6840,7 +6999,8 @@ Ayrıca	O	tr
 çevre	O	tr
 yılı	O	tr
 nedeniyle	O	tr
-TEMA_Vakfı	O	tr
+TEMA	O	tr
+Vakfı	O	tr
 ile	O	tr
 işbirliği	O	tr
 yapılıp	O	tr
@@ -6917,7 +7077,8 @@ kaynak	O	tr
 paketi	O	tr
 hazırlatan	O	tr
 Başbakan	O	tr
-Necmettin_Erbakan	O	tr
+Necmettin	O	tr
+Erbakan	O	tr
 'ın	O	tr
 ,	O	tr
 şimdi	O	tr
@@ -6940,7 +7101,8 @@ hazırlattığı	O	tr
 
 Devlet	O	tr
 Bakanı	O	tr
-Sacit_Günbey	O	tr
+Sacit	O	tr
+Günbey	O	tr
 'e	O	tr
 bağlı	O	tr
 Sosyal	O	tr
@@ -6955,7 +7117,9 @@ hazırlanan	O	tr
 yardım	O	tr
 paketinde	O	tr
 ,	O	tr
-10_Ocak_1997	O	tr
+10	O	tr
+Ocak	O	tr
+1997	O	tr
 tarihinde	O	tr
 başlayacak	O	tr
 olan	O	tr
@@ -6974,8 +7138,8 @@ giyecek	O	tr
 yakacak	O	tr
 ve	O	tr
 nakit	O	tr
-yardımı	B-IDIOM	tr
-yapılması	I-IDIOM	tr
+yardımı	O	tr
+yapılması	O	tr
 öngörülüyor	O	tr
 .	O	tr
 
@@ -7025,7 +7189,9 @@ uba	O	tr
 )	O	tr
 .	O	tr
 
-Türk_-_İş	O	tr
+Türk	O	tr
+-	O	tr
+İş	O	tr
 'ten	O	tr
 SSK	O	tr
 raporu	O	tr
@@ -7035,19 +7201,22 @@ Türkiye	O	tr
 'deki	O	tr
 diyaliz	O	tr
 hastalarının	O	tr
-yüzde_86	O	tr
+yüzde	O	tr
+86	O	tr
 'sı	O	tr
 ,	O	tr
 by	O	tr
 -	O	tr
 pass	O	tr
 hastalarının	O	tr
-yüzde_80	O	tr
+yüzde	O	tr
+80	O	tr
 'i	O	tr
 ile	O	tr
 kanserli	O	tr
 hastaların	O	tr
-yüzde_90	O	tr
+yüzde	O	tr
+90	O	tr
 'ının	O	tr
 SSK	O	tr
 'nın	O	tr
@@ -7060,19 +7229,24 @@ sağlık	O	tr
 hizmetlerindeki	O	tr
 usülsüzlüklerin	O	tr
 kurumu	O	tr
-zarara	B-IDIOM	tr
-uğrattığı	I-IDIOM	tr
+zarara	O	tr
+uğrattığı	O	tr
 bildirildi	O	tr
 .	O	tr
 
-SSK_Yönetim_Kurulu	O	tr
+SSK	O	tr
+Yönetim	O	tr
+Kurulu	O	tr
 üyesi	O	tr
 ve	O	tr
-Türk_-_İş	O	tr
+Türk	O	tr
+-	O	tr
+İş	O	tr
 Genel	O	tr
 Mali	O	tr
 Sekreteri	O	tr
-Enver_Toçoğlu	O	tr
+Enver	O	tr
+Toçoğlu	O	tr
 tarafından	O	tr
 hazırlanan	O	tr
 SSK	O	tr
@@ -7081,7 +7255,8 @@ raporunda	O	tr
 1997	O	tr
 yılı	O	tr
 bütçesi	O	tr
-923_trilyon	O	tr
+923	O	tr
+trilyon	O	tr
 lira	O	tr
 olarak	O	tr
 belirlenen	O	tr
@@ -7122,8 +7297,8 @@ başka	O	tr
 bir	O	tr
 kuruluşun	O	tr
 bulunmadığına	O	tr
-dikkat	B-IDIOM	tr
-çekilen	I-IDIOM	tr
+dikkat	O	tr
+çekilen	O	tr
 SSK	O	tr
 raporunda	O	tr
 ,	O	tr
@@ -7136,8 +7311,8 @@ yılına	O	tr
 kadar	O	tr
 kurumun	O	tr
 finansmanına	O	tr
-katkı	I-IDIOM	tr
-yapmayan	I-IDIOM	tr
+katkı	O	tr
+yapmayan	O	tr
 ve	O	tr
 mali	O	tr
 yapıyı	O	tr
@@ -7162,7 +7337,8 @@ SSK	O	tr
 fonlarının	O	tr
 bugünkü	O	tr
 değerinin	O	tr
-2_katrilyon	O	tr
+2	O	tr
+katrilyon	O	tr
 liraya	O	tr
 ulaştığı	O	tr
 kaydedilen	O	tr
@@ -7204,7 +7380,8 @@ belirtildi	O	tr
 8	O	tr
 baraj	O	tr
 için	O	tr
-45_trilyon	O	tr
+45	O	tr
+trilyon	O	tr
 .	O	tr
 
 SIVAS	O	tr
@@ -7218,7 +7395,10 @@ barajın	O	tr
 bugünkü	O	tr
 maliyetleri	O	tr
 ile	O	tr
-45_trilyon_900_milyara	O	tr
+45	O	tr
+trilyon	O	tr
+900	O	tr
+milyara	O	tr
 malolacağı	O	tr
 ,	O	tr
 yalnızca	O	tr
@@ -7226,7 +7406,11 @@ bu	O	tr
 yıl	O	tr
 barajlar	O	tr
 için	O	tr
-1_trilyon_641_milyar_lira	O	tr
+1	O	tr
+trilyon	O	tr
+641	O	tr
+milyar	O	tr
+lira	O	tr
 para	O	tr
 harcandığı	O	tr
 ve	O	tr
@@ -7245,9 +7429,12 @@ miktarlar	O	tr
 şöyle	O	tr
 belirtildi	O	tr
 :	O	tr
-Kılıçkaya_Çamlıgöze_Barajı	O	tr
+Kılıçkaya	O	tr
+Çamlıgöze	O	tr
+Barajı	O	tr
 'na	O	tr
-200_milyar	O	tr
+200	O	tr
+milyar	O	tr
 ,	O	tr
 Gazibey	O	tr
 'e	O	tr
@@ -7258,31 +7445,36 @@ Suşehri	O	tr
 Sulama	O	tr
 Projesi	O	tr
 'ne	O	tr
-10_milyar	O	tr
+10	O	tr
+milyar	O	tr
 ,	O	tr
 İmranlı	O	tr
 'ya	O	tr
-75_milyar	O	tr
+75	O	tr
+milyar	O	tr
 ,	O	tr
 Karacalar	O	tr
 'a	O	tr
-25_milyar	O	tr
+25	O	tr
+milyar	O	tr
 ,	O	tr
 Özen	O	tr
 'e	O	tr
 55	O	tr
 milyar	O	tr
 ,	O	tr
-4_Eylül	O	tr
+4	O	tr
+Eylül	O	tr
 Barajı	O	tr
 'na	O	tr
-70_milyar	O	tr
+70	O	tr
+milyar	O	tr
 .	O	tr
 
 AEG	O	tr
 'yi	O	tr
-satın	B-IDIOM	tr
-alan	I-IDIOM	tr
+satın	O	tr
+alan	O	tr
 Electrolux	O	tr
 firması	O	tr
 aralarında	O	tr
@@ -7301,8 +7493,8 @@ Türkiye	O	tr
 'de	O	tr
 fabrika	O	tr
 kurma	O	tr
-kararı	I-IDIOM	tr
-aldı	I-IDIOM	tr
+kararı	O	tr
+aldı	O	tr
 .	O	tr
 
 Bu	O	tr
@@ -7320,17 +7512,20 @@ payını	O	tr
 koruyacak	O	tr
 .	O	tr
 
-Zehra_GÜNGÖR	O	tr
+Zehra	O	tr
+GÜNGÖR	O	tr
 .	O	tr
 
 BİR	O	tr
 süre	O	tr
 önce	O	tr
 ,	O	tr
-Peg_Profilo	O	tr
+Peg	O	tr
+Profilo	O	tr
 'daki	O	tr
 hisselerini	O	tr
-Jak_Kamhi	O	tr
+Jak	O	tr
+Kamhi	O	tr
 'ye	O	tr
 sattıktan	O	tr
 sonra	O	tr
@@ -7338,13 +7533,14 @@ Türkiye	O	tr
 pazarındaki	O	tr
 satış	O	tr
 hakkını	O	tr
-Aralık_1996	O	tr
+Aralık	O	tr
+1996	O	tr
 sonuna	O	tr
 kadar	O	tr
 Profilo	O	tr
 'yu	O	tr
-satın	B-IDIOM	tr
-alan	I-IDIOM	tr
+satın	O	tr
+alan	O	tr
 Bosch	O	tr
 -	O	tr
 Siemens	O	tr
@@ -7385,8 +7581,8 @@ Electrolux	O	tr
 AEG	O	tr
 'yi	O	tr
 dünyada	O	tr
-satın	B-IDIOM	tr
-almasıyla	I-IDIOM	tr
+satın	O	tr
+almasıyla	O	tr
 birlikte	O	tr
 AEG	O	tr
 markasının	O	tr
@@ -7403,22 +7599,26 @@ ise	O	tr
 ,	O	tr
 anlaşma	O	tr
 gereği	O	tr
-1_Ocak_1997	O	tr
+1	O	tr
+Ocak	O	tr
+1997	O	tr
 itibariyle	O	tr
 Türkiye	O	tr
 'de	O	tr
-satışlarının	B-IDIOM	tr
+satışlarının	O	tr
 tamamını	O	tr
 kendisi	O	tr
-yapacak	I-IDIOM	tr
+yapacak	O	tr
 .	O	tr
 
 32	O	tr
 yıldan	O	tr
 beri	O	tr
-Peg_Profilo	O	tr
+Peg	O	tr
+Profilo	O	tr
 ve	O	tr
-Bosch_Simens	O	tr
+Bosch	O	tr
+Simens	O	tr
 tarafından	O	tr
 Türkiye	O	tr
 'de	O	tr
@@ -7444,7 +7644,8 @@ AEG	O	tr
 Türkiye	O	tr
 Genel	O	tr
 Müdürü	O	tr
-Nazım_Çınar	O	tr
+Nazım	O	tr
+Çınar	O	tr
 'dan	O	tr
 alınan	O	tr
 bilgiye	O	tr
@@ -7455,7 +7656,8 @@ AEG	O	tr
 yılında	O	tr
 mevcut	O	tr
 olan	O	tr
-yüzde_7	O	tr
+yüzde	O	tr
+7	O	tr
 'lik	O	tr
 payını	O	tr
 koruyacak	O	tr
@@ -7469,12 +7671,14 @@ satacak	O	tr
 
 Pazarlanan	O	tr
 ürünlerin	O	tr
-yüzde_70	O	tr
+yüzde	O	tr
+70	O	tr
 'i	O	tr
 ithal	O	tr
 edilirken	O	tr
 ,	O	tr
-yüzde_30	O	tr
+yüzde	O	tr
+30	O	tr
 kadarı	O	tr
 da	O	tr
 Türkiye	O	tr
@@ -7501,7 +7705,8 @@ olduğunu	O	tr
 söyleyen	O	tr
 Genel	O	tr
 Müdür	O	tr
-Nazım_Çınar	O	tr
+Nazım	O	tr
+Çınar	O	tr
 ,	O	tr
 bunun	O	tr
 gerçekleşmesi	O	tr
@@ -7509,7 +7714,8 @@ için	O	tr
 Türkiye	O	tr
 pazar	O	tr
 paylarının	O	tr
-yüzde_10	O	tr
+yüzde	O	tr
+10	O	tr
 olması	O	tr
 gerektiğini	O	tr
 söyledi	O	tr
@@ -7552,19 +7758,20 @@ Yetkililer	O	tr
 geçtiklerinde	O	tr
 pazar	O	tr
 paylarının	O	tr
-yüzde_25	O	tr
+yüzde	O	tr
+25	O	tr
 olacağnı	O	tr
 da	O	tr
-telaffuz	B-IDIOM	tr
-ediyorlar	I-IDIOM	tr
+telaffuz	O	tr
+ediyorlar	O	tr
 .	O	tr
 
 Tamamı	O	tr
 iç	O	tr
 pazara	O	tr
 yönelik	O	tr
-üretim	B-IDIOM	tr
-yapacak	I-IDIOM	tr
+üretim	O	tr
+yapacak	O	tr
 olan	O	tr
 Electrolux	O	tr
 ,	O	tr
@@ -7598,13 +7805,20 @@ beyaz	O	tr
 eşya	O	tr
 üretimi	O	tr
 yapan	O	tr
-Peg_Profilo	O	tr
+Peg	O	tr
+Profilo	O	tr
 'nun	O	tr
 yüzde	O	tr
-46_'sını_97_.6_milyon_dolara	O	tr
+46	O	tr
+'sını	O	tr
+97	O	tr
+.6	O	tr
+milyon	O	tr
+dolara	O	tr
 Bosh	O	tr
 -	O	tr
-Siemens_Grubu	O	tr
+Siemens	O	tr
+Grubu	O	tr
 'na	O	tr
 sattı	O	tr
 .	O	tr
@@ -7612,7 +7826,8 @@ sattı	O	tr
 AEG	O	tr
 'nin	O	tr
 de	O	tr
-yüzde_20	O	tr
+yüzde	O	tr
+20	O	tr
 'lik	O	tr
 hissesini	O	tr
 satmasından	O	tr
@@ -7620,7 +7835,8 @@ sonra	O	tr
 Bosch	O	tr
 -	O	tr
 Siemens	O	tr
-yüzde_66	O	tr
+yüzde	O	tr
+66	O	tr
 'lık	O	tr
 çoğunluk	O	tr
 hissesine	O	tr
@@ -7630,12 +7846,15 @@ ulaştı	O	tr
 Şirketin	O	tr
 yönetim	O	tr
 kurulunda	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 Jak	O	tr
 ve	O	tr
-Samuel_Kamhi	O	tr
-25_Ocak_1996	O	tr
+Samuel	O	tr
+Kamhi	O	tr
+25	O	tr
+Ocak	O	tr
+1996	O	tr
 'da	O	tr
 koltuklarını	O	tr
 oğullarına	O	tr
@@ -7655,11 +7874,16 @@ Almanlara	O	tr
 geçti	O	tr
 .	O	tr
 
-ULUSLARARASI_Müteahhitler_Birliği	O	tr
+ULUSLARARASI	O	tr
+Müteahhitler	O	tr
+Birliği	O	tr
 ve	O	tr
-Türk_Müteahhitler_Birliği	O	tr
+Türk	O	tr
+Müteahhitler	O	tr
+Birliği	O	tr
 Başkanı	O	tr
-Kadir_Sever	O	tr
+Kadir	O	tr
+Sever	O	tr
 ,	O	tr
 Libya	O	tr
 'daki	O	tr
@@ -7673,7 +7897,9 @@ Aralık	O	tr
 ayında	O	tr
 ödenmesi	O	tr
 gereken	O	tr
-4_milyon_doları	O	tr
+4	O	tr
+milyon	O	tr
+doları	O	tr
 alamadıklarını	O	tr
 söyledi	O	tr
 .	O	tr
@@ -7696,7 +7922,8 @@ ana	O	tr
 kadar	O	tr
 Arap	O	tr
 -	O	tr
-Türk_Bankası	O	tr
+Türk	O	tr
+Bankası	O	tr
 'na	O	tr
 girmediğini	O	tr
 belirten	O	tr
@@ -7763,8 +7990,8 @@ Libya	O	tr
 üst	O	tr
 düzey	O	tr
 yetkilileriyle	O	tr
-diyalog	B-IDIOM	tr
-kurması	I-IDIOM	tr
+diyalog	O	tr
+kurması	O	tr
 gerektiğini	O	tr
 ifade	O	tr
 eden	O	tr
@@ -7777,8 +8004,8 @@ sorunun	O	tr
 kolay	O	tr
 kolay	O	tr
 çözülemeyeceğini	O	tr
-ifade	I-IDIOM	tr
-etti	I-IDIOM	tr
+ifade	O	tr
+etti	O	tr
 .	O	tr
 
 Sever	O	tr
@@ -7794,7 +8021,6 @@ her	O	tr
 yıl	O	tr
 alınan	O	tr
 yaklaşık	O	tr
-500_milyon__	O	tr
 dolarlık	O	tr
 petrolün	O	tr
 takasıyla	O	tr
@@ -7863,15 +8089,17 @@ Günde	O	tr
 2	O	tr
 bin	O	tr
 kamyonun	O	tr
-giriş	B-IDIOM	tr
-çıkış	I-IDIOM	tr
-yaptığı	I-IDIOM	tr
+giriş	O	tr
+çıkış	O	tr
+yaptığı	O	tr
 kapıda	O	tr
 aylık	O	tr
 ticaret	O	tr
 hacmi	O	tr
 2	O	tr
-.5_trilyon_lirayı	O	tr
+.5	O	tr
+trilyon	O	tr
+lirayı	O	tr
 geçiyor	O	tr
 .	O	tr
 
@@ -7879,16 +8107,21 @@ Her	O	tr
 bir	O	tr
 kamyon	O	tr
 ,	O	tr
-Kuzey_Irak	O	tr
+Kuzey	O	tr
+Irak	O	tr
 'a	O	tr
 yaptığı	O	tr
 tek	O	tr
 seferden	O	tr
-25_ile_100_milyon_lira	O	tr
+25	O	tr
+ile	O	tr
+100	O	tr
+milyon	O	tr
+lira	O	tr
 arasında	O	tr
 kar	O	tr
-elde	B-IDIOM	tr
-ediyor	I-IDIOM	tr
+elde	O	tr
+ediyor	O	tr
 .	O	tr
 
 Habur	O	tr
@@ -7896,7 +8129,9 @@ kapısından	O	tr
 aylık	O	tr
 döviz	O	tr
 girdisi	O	tr
-10_milyon_dolar	O	tr
+10	O	tr
+milyon	O	tr
+dolar	O	tr
 .	O	tr
 
 YIL	O	tr
@@ -8007,8 +8242,8 @@ yaptığı	O	tr
 baskınlarla	O	tr
 iki	O	tr
 kez	O	tr
-harabeye	B-IDIOM	tr
-dönen	I-IDIOM	tr
+harabeye	O	tr
+dönen	O	tr
 ve	O	tr
 onbinlerce	O	tr
 kişiyi	O	tr
@@ -8022,8 +8257,8 @@ halkı	O	tr
 kendine	O	tr
 çizilen	O	tr
 kadere	O	tr
-isyan	I-IDIOM	tr
-etmenin	I-IDIOM	tr
+isyan	O	tr
+etmenin	O	tr
 ,	O	tr
 yeniden	O	tr
 doğuşun	O	tr
@@ -8057,12 +8292,12 @@ güden	O	tr
 görüyoruz	O	tr
 .	O	tr
 
-Yüzlerden	B-IDIOM	tr
+Yüzlerden	O	tr
 mutsuzluk	O	tr
 değil	O	tr
 ,	O	tr
 umut	O	tr
-okunuyor	I-IDIOM	tr
+okunuyor	O	tr
 .	O	tr
 
 Terörden	O	tr
@@ -8101,11 +8336,13 @@ kalmıyor	O	tr
 bir	O	tr
 yandan	O	tr
 da	O	tr
-çaba	B-IDIOM	tr
-gösteriyor	I-IDIOM	tr
+çaba	O	tr
+gösteriyor	O	tr
 .	O	tr
 
-Şırnak_İşadamları_Derneği	O	tr
+Şırnak	O	tr
+İşadamları	O	tr
+Derneği	O	tr
 'nin	O	tr
 (	O	tr
 ŞIRGİAD	O	tr
@@ -8113,7 +8350,8 @@ gösteriyor	I-IDIOM	tr
 çabalarıyla	O	tr
 bölgeye	O	tr
 bir	O	tr
-Halk_Bankası	O	tr
+Halk	O	tr
+Bankası	O	tr
 şubesi	O	tr
 açılması	O	tr
 sağlanmış	O	tr
@@ -8123,8 +8361,8 @@ sağlanmış	O	tr
 bankalara	O	tr
 da	O	tr
 sürekli	O	tr
-başvuru	B-IDIOM	tr
-yapılıyor	I-IDIOM	tr
+başvuru	O	tr
+yapılıyor	O	tr
 .	O	tr
 
 Gerek	O	tr
@@ -8213,7 +8451,9 @@ ticaretinin	O	tr
 bedeli	O	tr
 yıllık	O	tr
 2	O	tr
-.5_milyar_dolar	O	tr
+.5	O	tr
+milyar	O	tr
+dolar	O	tr
 civarında	O	tr
 idi	O	tr
 .	O	tr
@@ -8235,8 +8475,8 @@ arttırmış	O	tr
 terör	O	tr
 olaylarının	O	tr
 artmasına	O	tr
-neden	B-IDIOM	tr
-olmuştu	I-IDIOM	tr
+neden	O	tr
+olmuştu	O	tr
 .	O	tr
 
 BM	O	tr
@@ -8256,8 +8496,8 @@ sınırlı	O	tr
 da	O	tr
 olsa	O	tr
 ticarete	O	tr
-izin	B-IDIOM	tr
-vermesiyle	I-IDIOM	tr
+izin	O	tr
+vermesiyle	O	tr
 durum	O	tr
 değişti	O	tr
 .	O	tr
@@ -8271,9 +8511,9 @@ günde	O	tr
 2	O	tr
 bin	O	tr
 kamyon	O	tr
-giriş	B-IDIOM	tr
-çıkış	I-IDIOM	tr
-yapıyor	I-IDIOM	tr
+giriş	O	tr
+çıkış	O	tr
+yapıyor	O	tr
 .	O	tr
 
 Kamyonlar	O	tr
@@ -8313,8 +8553,8 @@ mutad	O	tr
 dışı	O	tr
 depo	O	tr
 "	O	tr
-tabir	B-IDIOM	tr
-edilen	I-IDIOM	tr
+tabir	O	tr
+edilen	O	tr
 tanklarına	O	tr
 mazot	O	tr
 dolduruyor	O	tr
@@ -8351,15 +8591,20 @@ gerçekleşti	O	tr
 Her	O	tr
 bir	O	tr
 kamyonun	O	tr
-Kuzey_Irak	O	tr
+Kuzey	O	tr
+Irak	O	tr
 'ta	O	tr
 gidiş	O	tr
 ve	O	tr
 gelişinden	O	tr
-elde	B-IDIOM	tr
-ettiği	I-IDIOM	tr
+elde	O	tr
+ettiği	O	tr
 kar	O	tr
-25_-_100_milyon_lira	O	tr
+25	O	tr
+-	O	tr
+100	O	tr
+milyon	O	tr
+lira	O	tr
 arasında	O	tr
 değişiyor	O	tr
 .	O	tr
@@ -8404,8 +8649,8 @@ kamyon	O	tr
 sayısının	O	tr
 ikiye	O	tr
 katlanacağı	O	tr
-tahmin	B-IDIOM	tr
-ediliyor	I-IDIOM	tr
+tahmin	O	tr
+ediliyor	O	tr
 .	O	tr
 
 Habur	O	tr
@@ -8413,11 +8658,14 @@ sınır	O	tr
 kapısındaki	O	tr
 ticaret	O	tr
 günde	O	tr
-80_milyarı	O	tr
+80	O	tr
+milyarı	O	tr
 ,	O	tr
 ayda	O	tr
 2	O	tr
-.5_trilyon_lirayı	O	tr
+.5	O	tr
+trilyon	O	tr
+lirayı	O	tr
 buluyor	O	tr
 .	O	tr
 
@@ -8425,14 +8673,16 @@ Aylık	O	tr
 döviz	O	tr
 girdisi	O	tr
 ise	O	tr
-10_milyon_dolar	O	tr
+10	O	tr
+milyon	O	tr
+dolar	O	tr
 civarında	O	tr
 .	O	tr
 
 "	O	tr
 Büyüyünce	O	tr
-şoför	B-IDIOM	tr
-olacağım	I-IDIOM	tr
+şoför	O	tr
+olacağım	O	tr
 "	O	tr
 .	O	tr
 
@@ -8457,8 +8707,8 @@ bölgede	O	tr
 en	O	tr
 cazip	O	tr
 meslek	O	tr
-haline	B-IDIOM	tr
-getirdi	I-IDIOM	tr
+haline	O	tr
+getirdi	O	tr
 .	O	tr
 
 Şırnak	O	tr
@@ -8470,8 +8720,8 @@ Silopi	O	tr
 gayrimenkul	O	tr
 yerine	O	tr
 kamyona	O	tr
-yatırım	B-IDIOM	tr
-yapılıyor	I-IDIOM	tr
+yatırım	O	tr
+yapılıyor	O	tr
 .	O	tr
 
 Fiyatı	O	tr
@@ -8483,10 +8733,10 @@ lira	O	tr
 arasındaki	O	tr
 kamyonlar	O	tr
 adeta	O	tr
-peynir	B-IDIOM	tr
-ekmek	I-IDIOM	tr
-gibi	I-IDIOM	tr
-satılıyor	I-IDIOM	tr
+peynir	O	tr
+ekmek	O	tr
+gibi	O	tr
+satılıyor	O	tr
 bölgede	O	tr
 .	O	tr
 
@@ -8505,15 +8755,16 @@ hiç	O	tr
 değişmiyor	O	tr
 "	O	tr
 Kamyon	O	tr
-şoförü	B-IDIOM	tr
-olacağım	I-IDIOM	tr
+şoförü	O	tr
+olacağım	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
 
 Başbakan	O	tr
 Yardımcısı	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'in	O	tr
 ,	O	tr
 Ekonomiden	O	tr
@@ -8524,8 +8775,8 @@ olduğu	O	tr
 dönemden	O	tr
 bu	O	tr
 yana	O	tr
-gündeme	B-IDIOM	tr
-getirdiği	I-IDIOM	tr
+gündeme	O	tr
+getirdiği	O	tr
 ve	O	tr
 açılacağını	O	tr
 söylediği	O	tr
@@ -8533,26 +8784,30 @@ Altın	O	tr
 Rafinerisi	O	tr
 projesine	O	tr
 Başbakan	O	tr
-Necmettin_Erbakan	O	tr
+Necmettin	O	tr
+Erbakan	O	tr
 ,	O	tr
 "	O	tr
-el	I-IDIOM	tr
-attı	I-IDIOM	tr
+el	O	tr
+attı	O	tr
 "	O	tr
 .	O	tr
 
-Deniz_GÜÇER	O	tr
+Deniz	O	tr
+GÜÇER	O	tr
 -	O	tr
 ANKARA	O	tr
 .	O	tr
 
 BAŞBAKAN	O	tr
 Yardımcısı	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'in	O	tr
 Ekonomiden	O	tr
 sorumlu	O	tr
-Devlet_Bakanlığı	O	tr
+Devlet	O	tr
+Bakanlığı	O	tr
 döneminde	O	tr
 üzerinde	O	tr
 durduğu	O	tr
@@ -8566,10 +8821,11 @@ Rafinerisi	O	tr
 "	O	tr
 projesine	O	tr
 Başbakan	O	tr
-Necmettin_Erbakan	O	tr
+Necmettin	O	tr
+Erbakan	O	tr
 "	O	tr
-el	B-IDIOM	tr
-koydu	I-IDIOM	tr
+el	O	tr
+koydu	O	tr
 "	O	tr
 .	O	tr
 
@@ -8602,8 +8858,8 @@ talimatı	O	tr
 dönümlük	O	tr
 bir	O	tr
 arsa	O	tr
-satın	B-IDIOM	tr
-alındığı	I-IDIOM	tr
+satın	O	tr
+alındığı	O	tr
 öğrenilirken	O	tr
 ,	O	tr
 Altın	O	tr
@@ -8621,8 +8877,8 @@ hedefleniyor	O	tr
 Çiller	O	tr
 'in	O	tr
 kendisine	O	tr
-haber	B-IDIOM	tr
-verilmeden	I-IDIOM	tr
+haber	O	tr
+verilmeden	O	tr
 projeyi	O	tr
 RP	O	tr
 kanadının	O	tr
@@ -8636,8 +8892,8 @@ ekonomik	O	tr
 Konsey	O	tr
 'de	O	tr
 de	O	tr
-ele	I-IDIOM	tr
-alacağı	I-IDIOM	tr
+ele	O	tr
+alacağı	O	tr
 bildirildi	O	tr
 .	O	tr
 
@@ -8649,9 +8905,11 @@ ilgili	O	tr
 yürüten	O	tr
 Danışmanın	O	tr
 ,	O	tr
-Merkez_Bankası	O	tr
+Merkez	O	tr
+Bankası	O	tr
 Başkanı	O	tr
-Gazi_Erçel	O	tr
+Gazi	O	tr
+Erçel	O	tr
 ile	O	tr
 de	O	tr
 bir	O	tr
@@ -8669,7 +8927,8 @@ AKACAK	O	tr
 
 Uzun	O	tr
 süredir	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'in	O	tr
 gündeme	O	tr
 getirdiği	O	tr
@@ -8695,7 +8954,11 @@ altınlar	O	tr
 için	O	tr
 ons	O	tr
 başına	O	tr
-100_ile_150_dolar_arasında	O	tr
+100	O	tr
+ile	O	tr
+150	O	tr
+dolar	O	tr
+arasında	O	tr
 para	O	tr
 ödendiğini	O	tr
 belirterek	O	tr
@@ -8708,11 +8971,13 @@ başladığında	O	tr
 Türkiye	O	tr
 her	O	tr
 yıl	O	tr
-2_milyar_doları	O	tr
+2	O	tr
+milyar	O	tr
+doları	O	tr
 dışarı	O	tr
 akıtmak	O	tr
-zorunda	B-IDIOM	tr
-kalmayacak	I-IDIOM	tr
+zorunda	O	tr
+kalmayacak	O	tr
 "	O	tr
 ifadesini	O	tr
 kullandılar	O	tr
@@ -8779,7 +9044,9 @@ rafineri	O	tr
 sayesinde	O	tr
 de	O	tr
 yılda	O	tr
-2_milyar_dolar	O	tr
+2	O	tr
+milyar	O	tr
+dolar	O	tr
 kazanacağını	O	tr
 anlatan	O	tr
 yetkililer	O	tr
@@ -8838,8 +9105,8 @@ merkez	O	tr
 tarafından	O	tr
 gözlenecek	O	tr
 ve	O	tr
-onay	B-IDIOM	tr
-verilecek	I-IDIOM	tr
+onay	O	tr
+verilecek	O	tr
 .	O	tr
 
 Rafineri	O	tr
@@ -8863,8 +9130,8 @@ olacak	O	tr
 -	O	tr
 Uluslararası	O	tr
 alanda	O	tr
-faaliyet	B-IDIOM	tr
-gösteren	I-IDIOM	tr
+faaliyet	O	tr
+gösteren	O	tr
 firmalardan	O	tr
 biriyle	O	tr
 anlaşılacak	O	tr
@@ -8910,7 +9177,9 @@ bildirildi	O	tr
 
 Dil	O	tr
 Derneği	O	tr
-Ömer_Asım_Aksoy	O	tr
+Ömer	O	tr
+Asım	O	tr
+Aksoy	O	tr
 Ödülü	O	tr
 'nün	O	tr
 üçüncüsü	O	tr
@@ -8925,7 +9194,12 @@ verilecek	O	tr
 
 Ödüle	O	tr
 ,	O	tr
-1_Ocak_-_31_Aralık_1996	O	tr
+1	O	tr
+Ocak	O	tr
+-	O	tr
+31	O	tr
+Aralık	O	tr
+1996	O	tr
 tarihleri	O	tr
 arasında	O	tr
 yayımlanmış	O	tr
@@ -8962,11 +9236,13 @@ Fire	O	tr
 -	O	tr
 Yön	O	tr
 :	O	tr
-Edward_Zwick	O	tr
+Edward	O	tr
+Zwick	O	tr
 /	O	tr
 Gör	O	tr
 :	O	tr
-Roger_Deakins	O	tr
+Roger	O	tr
+Deakins	O	tr
 /	O	tr
 Sen	O	tr
 :	O	tr
@@ -8977,27 +9253,33 @@ Duncan	O	tr
 /	O	tr
 Müz	O	tr
 :	O	tr
-James_Horner	O	tr
+James	O	tr
+Horner	O	tr
 /	O	tr
 Oyn	O	tr
 :	O	tr
-Denzel_Washington	O	tr
+Denzel	O	tr
+Washington	O	tr
 (	O	tr
 Yrb	O	tr
 .	O	tr
 
-Nat_Serling	O	tr
+Nat	O	tr
+Serling	O	tr
 )	O	tr
 ,	O	tr
-Meg_Ryan	O	tr
+Meg	O	tr
+Ryan	O	tr
 (	O	tr
 Yzb	O	tr
 .	O	tr
 
-Karen_Walden	O	tr
+Karen	O	tr
+Walden	O	tr
 )	O	tr
 ,	O	tr
-Michael_Moriarty	O	tr
+Michael	O	tr
+Moriarty	O	tr
 (	O	tr
 Gen	O	tr
 .	O	tr
@@ -9005,19 +9287,24 @@ Gen	O	tr
 Hersberg	O	tr
 )	O	tr
 ,	O	tr
-Lou_Diamond_Philipps	O	tr
+Lou	O	tr
+Diamond	O	tr
+Philipps	O	tr
 (	O	tr
 Monfriez	O	tr
 )	O	tr
 ,	O	tr
-Matt_Damon	O	tr
+Matt	O	tr
+Damon	O	tr
 (	O	tr
 Ilario	O	tr
 )	O	tr
 ,	O	tr
-Scott_Glen	O	tr
+Scott	O	tr
+Glen	O	tr
 (	O	tr
-Tony_Gartner	O	tr
+Tony	O	tr
+Gartner	O	tr
 )	O	tr
 .	O	tr
 
@@ -9037,49 +9324,59 @@ Dogs	O	tr
 
 Yön	O	tr
 :	O	tr
-Michael_Lehmann	O	tr
+Michael	O	tr
+Lehmann	O	tr
 /	O	tr
 Gör	O	tr
 :	O	tr
-Robert_Brinkman	O	tr
+Robert	O	tr
+Brinkman	O	tr
 /	O	tr
 Sen	O	tr
 :	O	tr
-Audrey_Wells	O	tr
+Audrey	O	tr
+Wells	O	tr
 /	O	tr
 Müz	O	tr
 :	O	tr
-Howard_Shore	O	tr
+Howard	O	tr
+Shore	O	tr
 )	O	tr
 /	O	tr
 Oyn	O	tr
 :	O	tr
-Janeane_Garofalo	O	tr
+Janeane	O	tr
+Garofalo	O	tr
 (	O	tr
 Dr	O	tr
 .	O	tr
 
-Abby_Barnes	O	tr
+Abby	O	tr
+Barnes	O	tr
 )	O	tr
 ,	O	tr
-Uma_Turman	O	tr
+Uma	O	tr
+Turman	O	tr
 (	O	tr
 Noelle	O	tr
 )	O	tr
 ,	O	tr
-Ben_Chaplin	O	tr
+Ben	O	tr
+Chaplin	O	tr
 (	O	tr
 Brain	O	tr
 )	O	tr
 .	O	tr
 
-FOLKLORAraştırmaları_Kurumu	O	tr
+FOLKLORAraştırmaları	O	tr
+Kurumu	O	tr
 ,	O	tr
 gazetemiz	O	tr
 yazarlarından	O	tr
 Prof	O	tr
 .	O	tr
-Talat_Halman	O	tr
+Talat	O	tr
+Halman	O	tr
 'a	O	tr
 "	O	tr
 Türk	O	tr
@@ -9093,7 +9390,9 @@ verdi	O	tr
 Kurum	O	tr
 Başkanı	O	tr
 Dr.	O	tr
-İrfan_Ünver_Nasrattınoğlu	O	tr
+İrfan	O	tr
+Ünver	O	tr
+Nasrattınoğlu	O	tr
 ,	O	tr
 ödül	O	tr
 gerekçesinde	O	tr
@@ -9117,11 +9416,13 @@ dost	O	tr
 :	O	tr
 Yunanlı	O	tr
 yazar	O	tr
-Elias_Petropulos	O	tr
+Elias	O	tr
+Petropulos	O	tr
 ve	O	tr
 Türk	O	tr
 ressam	O	tr
-Yüksel_Arslan	O	tr
+Yüksel	O	tr
+Arslan	O	tr
 .	O	tr
 
 HABER	O	tr
@@ -9147,15 +9448,15 @@ dünkü	O	tr
 Milliyet	O	tr
 'in	O	tr
 manşetinde	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 haber	O	tr
 ,	O	tr
 ülke	O	tr
 çapında	O	tr
 geniş	O	tr
-yankı	I-IDIOM	tr
-uyandırdı	I-IDIOM	tr
+yankı	O	tr
+uyandırdı	O	tr
 .	O	tr
 
 Siyasetten	O	tr
@@ -9187,11 +9488,19 @@ başladığı	O	tr
 gözleniyor	O	tr
 .	O	tr
 
-Atatürk_Kültür_,_Dil_ve_Tarih_Yüksek_Kurumu	O	tr
+Atatürk	O	tr
+Kültür	O	tr
+,	O	tr
+Dil	O	tr
+ve	O	tr
+Tarih	O	tr
+Yüksek	O	tr
+Kurumu	O	tr
 'nun	O	tr
 hazırladığı	O	tr
 ve	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'nda	O	tr
 imzaya	O	tr
 açıldığı	O	tr
@@ -9226,9 +9535,12 @@ görüşleri	O	tr
 özetle	O	tr
 şöyle	O	tr
 :	O	tr
-Şiar_Yalçın	O	tr
+Şiar	O	tr
+Yalçın	O	tr
 (	O	tr
-Yeni_Yüzyıl_Gazetesi	O	tr
+Yeni	O	tr
+Yüzyıl	O	tr
+Gazetesi	O	tr
 Yazarı	O	tr
 )	O	tr
 :	O	tr
@@ -9305,8 +9617,8 @@ işler	O	tr
 değil	O	tr
 .	O	tr
 Bunlarla	O	tr
-mücadele	B-IDIOM	tr
-etmek	I-IDIOM	tr
+mücadele	O	tr
+etmek	O	tr
 lazım	O	tr
 .	O	tr
 Bu	O	tr
@@ -9321,7 +9633,9 @@ olur	O	tr
 "	O	tr
 .	O	tr
 
-Mehmet_Ali_Erbil	O	tr
+Mehmet	O	tr
+Ali	O	tr
+Erbil	O	tr
 (	O	tr
 Sunucu	O	tr
 )	O	tr
@@ -9345,8 +9659,8 @@ kelime	O	tr
 yok	O	tr
 ,	O	tr
 `	O	tr
-teşekkür	B-IDIOM	tr
-ederim	I-IDIOM	tr
+teşekkür	O	tr
+ederim	O	tr
 '	O	tr
 var	O	tr
 .	O	tr
@@ -9385,8 +9699,8 @@ ve	O	tr
 ne	O	tr
 demek	O	tr
 istediğini	O	tr
-ifade	I-IDIOM	tr
-edebilecek	I-IDIOM	tr
+ifade	O	tr
+edebilecek	O	tr
 ,	O	tr
 ama	O	tr
 bunu	O	tr
@@ -9407,9 +9721,11 @@ olacak	O	tr
 "	O	tr
 .	O	tr
 
-Reha_Muhtar	O	tr
+Reha	O	tr
+Muhtar	O	tr
 (	O	tr
-Show_TV	O	tr
+Show	O	tr
+TV	O	tr
 Genel	O	tr
 Yayın	O	tr
 Yönetmeni	O	tr
@@ -9458,8 +9774,8 @@ bu	O	tr
 bir	O	tr
 formül	O	tr
 olarak	O	tr
-kabul	B-IDIOM	tr
-edilebilir	I-IDIOM	tr
+kabul	O	tr
+edilebilir	O	tr
 .	O	tr
 Yoksa	O	tr
 bir	O	tr
@@ -9470,16 +9786,17 @@ da	O	tr
 spiker	O	tr
 olmasına	O	tr
 kim	O	tr
-karar	I-IDIOM	tr
-verecek	I-IDIOM	tr
+karar	O	tr
+verecek	O	tr
 .	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'nun	O	tr
 saptadığı	O	tr
 kişiler	O	tr
 nasıl	O	tr
-karar	I-IDIOM	tr
-verebilirler	I-IDIOM	tr
+karar	O	tr
+verebilirler	O	tr
 .	O	tr
 O	O	tr
 televizyon	O	tr
@@ -9487,9 +9804,9 @@ kuruluşunun	O	tr
 yöneticileri	O	tr
 vardır	O	tr
 ve	O	tr
-kararı	I-IDIOM	tr
+kararı	O	tr
 onlar	O	tr
-verip	I-IDIOM	tr
+verip	O	tr
 sunucu	O	tr
 ve	O	tr
 spikerleri	O	tr
@@ -9498,7 +9815,8 @@ görevlendirmişlerdir	O	tr
 "	O	tr
 .	O	tr
 
-Ali_Kırca	O	tr
+Ali	O	tr
+Kırca	O	tr
 (	O	tr
 atv	O	tr
 Haber	O	tr
@@ -9549,8 +9867,8 @@ ki	O	tr
 yasaları	O	tr
 ve	O	tr
 yasakları	O	tr
-haklı	B-IDIOM	tr
-çıkarmıyor	I-IDIOM	tr
+haklı	O	tr
+çıkarmıyor	O	tr
 .	O	tr
 Buna	O	tr
 karşılık	O	tr
@@ -9574,8 +9892,8 @@ karşısında	O	tr
 sorumlu	O	tr
 bir	O	tr
 görev	O	tr
-yerine	I-IDIOM	tr
-getirenlere	I-IDIOM	tr
+yerine	O	tr
+getirenlere	O	tr
 hiçbir	O	tr
 şey	O	tr
 sormayacaksınız	O	tr
@@ -9583,8 +9901,8 @@ sormayacaksınız	O	tr
 Önüne	O	tr
 gelen	O	tr
 bu	O	tr
-işi	I-IDIOM	tr
-yapacak	I-IDIOM	tr
+işi	O	tr
+yapacak	O	tr
 ya	O	tr
 da	O	tr
 yapma	O	tr
@@ -9610,8 +9928,8 @@ olmalarının	O	tr
 tartışılır	O	tr
 ya	O	tr
 da	O	tr
-kabul	I-IDIOM	tr
-edilir	I-IDIOM	tr
+kabul	O	tr
+edilir	O	tr
 bir	O	tr
 yanı	O	tr
 yoktur	O	tr
@@ -9622,7 +9940,9 @@ yoktur	O	tr
 Defne	O	tr
 Samyeli	O	tr
 (	O	tr
-Kanal_D_Spikeri	O	tr
+Kanal	O	tr
+D	O	tr
+Spikeri	O	tr
 )	O	tr
 :	O	tr
 "	O	tr
@@ -9631,8 +9951,8 @@ ya	O	tr
 da	O	tr
 spikerlikte	O	tr
 bir	O	tr
-kıstasın	B-IDIOM	tr
-olması	I-IDIOM	tr
+kıstasın	O	tr
+olması	O	tr
 gerektiğine	O	tr
 inanıyorum	O	tr
 .	O	tr
@@ -9644,8 +9964,8 @@ var	O	tr
 Türkçe	O	tr
 konuşmak	O	tr
 ,	O	tr
-ifade	I-IDIOM	tr
-edebilmek	I-IDIOM	tr
+ifade	O	tr
+edebilmek	O	tr
 gibi	O	tr
 kıstasların	O	tr
 olması	O	tr
@@ -9665,8 +9985,8 @@ Bu	O	tr
 kurulun	O	tr
 tarafsız	O	tr
 bir	O	tr
-değerlendirme	I-IDIOM	tr
-yapabileceğine	I-IDIOM	tr
+değerlendirme	O	tr
+yapabileceğine	O	tr
 inanmıyorum	O	tr
 .	O	tr
 Televizyonlarda	O	tr
@@ -9683,11 +10003,11 @@ konuşmak	O	tr
 anlatmak	O	tr
 istediğini	O	tr
 iyi	O	tr
-ifade	I-IDIOM	tr
-etmek	I-IDIOM	tr
+ifade	O	tr
+etmek	O	tr
 konusunda	O	tr
-sıkıntı	I-IDIOM	tr
-yaşanıyor	I-IDIOM	tr
+sıkıntı	O	tr
+yaşanıyor	O	tr
 .	O	tr
 Bugüne	O	tr
 kadar	O	tr
@@ -9733,9 +10053,12 @@ olmamalı	O	tr
 "	O	tr
 .	O	tr
 
-Yasemin_Özdemir	O	tr
+Yasemin	O	tr
+Özdemir	O	tr
 (	O	tr
-Kanal_D_Spikeri	O	tr
+Kanal	O	tr
+D	O	tr
+Spikeri	O	tr
 )	O	tr
 :	O	tr
 "	O	tr
@@ -9798,7 +10121,8 @@ doğrudur	O	tr
 "	O	tr
 .	O	tr
 
-Savaş_Ay	O	tr
+Savaş	O	tr
+Ay	O	tr
 (	O	tr
 Gazeteci	O	tr
 -	O	tr
@@ -9813,9 +10137,9 @@ iyi	O	tr
 spiker	O	tr
 .	O	tr
 Bunun	O	tr
-kararını	B-IDIOM	tr
+kararını	O	tr
 halk	O	tr
-verir	I-IDIOM	tr
+verir	O	tr
 .	O	tr
 Milyarlar	O	tr
 döken	O	tr
@@ -9862,9 +10186,11 @@ BADEM	O	tr
 '	O	tr
 .	O	tr
 
-Gülgün_Feyman	O	tr
+Gülgün	O	tr
+Feyman	O	tr
 (	O	tr
-İnterstar_Spikeri	O	tr
+İnterstar	O	tr
+Spikeri	O	tr
 )	O	tr
 :	O	tr
 "	O	tr
@@ -9905,8 +10231,8 @@ geçmeli	O	tr
 .	O	tr
 Sertifikayla	O	tr
 topluma	O	tr
-verilecek	B-IDIOM	tr
-mesaj	I-IDIOM	tr
+verilecek	O	tr
+mesaj	O	tr
 ,	O	tr
 `	O	tr
 Bu	O	tr
@@ -9935,8 +10261,8 @@ geldi	O	tr
 Türkçe	O	tr
 üzerinde	O	tr
 gerçekten	O	tr
-kıyamet	I-IDIOM	tr
-kopuyor	I-IDIOM	tr
+kıyamet	O	tr
+kopuyor	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
@@ -9946,15 +10272,16 @@ kazandığı	O	tr
 parayı	O	tr
 ticarete	O	tr
 yatıran	O	tr
-İbrahim_Tatlıses	O	tr
+İbrahim	O	tr
+Tatlıses	O	tr
 şimdi	O	tr
 de	O	tr
 son	O	tr
 model	O	tr
 bir	O	tr
 uçak	O	tr
-satın	B-IDIOM	tr
-alıyor	I-IDIOM	tr
+satın	O	tr
+alıyor	O	tr
 .	O	tr
 
 Geçen	O	tr
@@ -9963,7 +10290,8 @@ Antalya	O	tr
 'dan	O	tr
 İstanbul	O	tr
 'a	O	tr
-Cavit_Çağlar	O	tr
+Cavit	O	tr
+Çağlar	O	tr
 'ın	O	tr
 uçağıyla	O	tr
 gelen	O	tr
@@ -9973,15 +10301,15 @@ rahat	O	tr
 yolculuktan	O	tr
 sonra	O	tr
 uçak	O	tr
-satın	B-IDIOM	tr
-almaya	I-IDIOM	tr
+satın	O	tr
+almaya	O	tr
 karar	O	tr
 .	O	tr
 
-Piyasaya	B-IDIOM	tr
+Piyasaya	O	tr
 yılan	O	tr
 zehiri	O	tr
-sürmeye	I-IDIOM	tr
+sürmeye	O	tr
 kalkan	O	tr
 iki	O	tr
 şebeke	O	tr
@@ -9999,7 +10327,8 @@ günlük	O	tr
 yaşam	O	tr
 .	O	tr
 
-Yaşar_ÇAKMAK	O	tr
+Yaşar	O	tr
+ÇAKMAK	O	tr
 .	O	tr
 
 SAHNEDEN	O	tr
@@ -10007,15 +10336,16 @@ kazandığı	O	tr
 parayı	O	tr
 ticarete	O	tr
 yatıran	O	tr
-İbrahim_Tatlıses	O	tr
+İbrahim	O	tr
+Tatlıses	O	tr
 şimdi	O	tr
 de	O	tr
 son	O	tr
 model	O	tr
 bir	O	tr
 uçak	O	tr
-satın	B-IDIOM	tr
-alıyor	I-IDIOM	tr
+satın	O	tr
+alıyor	O	tr
 .	O	tr
 
 Geçen	O	tr
@@ -10024,7 +10354,8 @@ Antalya	O	tr
 'dan	O	tr
 İstanbul	O	tr
 'a	O	tr
-Cavit_Çağlar	O	tr
+Cavit	O	tr
+Çağlar	O	tr
 'ın	O	tr
 uçağıyla	O	tr
 gelen	O	tr
@@ -10034,16 +10365,18 @@ rahat	O	tr
 yolculuktan	O	tr
 sonra	O	tr
 uçak	O	tr
-satın	B-IDIOM	tr
-almaya	I-IDIOM	tr
+satın	O	tr
+almaya	O	tr
 karar	O	tr
 verdi	O	tr
 .	O	tr
 
-Sun_Trade	O	tr
+Sun	O	tr
+Trade	O	tr
 firmasının	O	tr
 sahibi	O	tr
-Ali_Keleş	O	tr
+Ali	O	tr
+Keleş	O	tr
 'e	O	tr
 başvuran	O	tr
 Tatlıses	O	tr
@@ -10052,10 +10385,10 @@ inceledikten	O	tr
 sonra	O	tr
 hangi	O	tr
 uçağı	O	tr
-satın	B-IDIOM	tr
-alacağına	I-IDIOM	tr
-karar	I-IDIOM	tr
-verecek	I-IDIOM	tr
+satın	O	tr
+alacağına	O	tr
+karar	O	tr
+verecek	O	tr
 .	O	tr
 
 Öncelikle	O	tr
@@ -10080,8 +10413,8 @@ ekibiyle	O	tr
 birlikte	O	tr
 daha	O	tr
 rahat	O	tr
-hareket	B-IDIOM	tr
-edeceğini	I-IDIOM	tr
+hareket	O	tr
+edeceğini	O	tr
 ve	O	tr
 İstanbul	O	tr
 dışındaki	O	tr
@@ -10091,10 +10424,13 @@ gideceğini	O	tr
 söyledi	O	tr
 .	O	tr
 
-Sun_Trade	O	tr
+Sun	O	tr
+Trade	O	tr
 firmasının	O	tr
 sahibi	O	tr
-Ali_Keleş_Bee	O	tr
+Ali	O	tr
+Keleş	O	tr
+Bee	O	tr
 -	O	tr
 Cah	O	tr
 400	O	tr
@@ -10110,8 +10446,8 @@ ve	O	tr
 saatte	O	tr
 800	O	tr
 kilometre	O	tr
-hız	B-IDIOM	tr
-yaptığını	I-IDIOM	tr
+hız	O	tr
+yaptığını	O	tr
 anımsattı	O	tr
 .	O	tr
 
@@ -10127,7 +10463,9 @@ alıyor	O	tr
 
 Fiyatı	O	tr
 6	O	tr
-.5_milyon_dolar	O	tr
+.5	O	tr
+milyon	O	tr
+dolar	O	tr
 (	O	tr
 yaklaşık	O	tr
 700	O	tr
@@ -10137,9 +10475,11 @@ lira	O	tr
 olan	O	tr
 bu	O	tr
 uçaklardan	O	tr
-Mural_Demirel	O	tr
+Mural	O	tr
+Demirel	O	tr
 ve	O	tr
-Mustafa_Koç	O	tr
+Mustafa	O	tr
+Koç	O	tr
 da	O	tr
 sipariş	O	tr
 verdi	O	tr
@@ -10147,8 +10487,8 @@ verdi	O	tr
 
 Hiç	O	tr
 yakıt	O	tr
-ikmali	B-IDIOM	tr
-yapmadan	I-IDIOM	tr
+ikmali	O	tr
+yapmadan	O	tr
 beş	O	tr
 saat	O	tr
 havada	O	tr
@@ -10157,21 +10497,22 @@ uçak	O	tr
 dünyada	O	tr
 da	O	tr
 büyük	O	tr
-ilgi	I-IDIOM	tr
-görüyor	I-IDIOM	tr
+ilgi	O	tr
+görüyor	O	tr
 .	O	tr
 
 MİLLİ	O	tr
 Eğitim	O	tr
 Bakanı	O	tr
-Mehmet_Sağlam	O	tr
+Mehmet	O	tr
+Sağlam	O	tr
 'ın	O	tr
 üniversiteye	O	tr
 giriş	O	tr
 sisteminde	O	tr
-yapmak	B-IDIOM	tr
+yapmak	O	tr
 istediği	O	tr
-değişiklikler	I-IDIOM	tr
+değişiklikler	O	tr
 yeni	O	tr
 sorunları	O	tr
 beraberinde	O	tr
@@ -10180,7 +10521,8 @@ getiriyor	O	tr
 
 ÖSYM	O	tr
 Başkanı	O	tr
-Fethi_Toker	O	tr
+Fethi	O	tr
+Toker	O	tr
 ,	O	tr
 yeni	O	tr
 sistemle	O	tr
@@ -10192,17 +10534,18 @@ belirterek	O	tr
 ortaöğretimde	O	tr
 .	O	tr
 
-Türk___Silahlı_Kuvvetleri	O	tr
 'ne	O	tr
 yapılan	O	tr
-yüzde_40	O	tr
+yüzde	O	tr
+40	O	tr
 'luk	O	tr
 ek	O	tr
 zammın	O	tr
 ardından	O	tr
 zam	O	tr
 oranının	O	tr
-yüzde_72	O	tr
+yüzde	O	tr
+72	O	tr
 'ye	O	tr
 yükselmesiyle	O	tr
 birlikte	O	tr
@@ -10212,7 +10555,8 @@ mensuplarının	O	tr
 zam	O	tr
 oranlarının	O	tr
 da	O	tr
-yüzde_70	O	tr
+yüzde	O	tr
+70	O	tr
 'lere	O	tr
 çıkarılacağının	O	tr
 açıklanması	O	tr
@@ -10220,12 +10564,13 @@ açıklanması	O	tr
 düz	O	tr
 "	O	tr
 memuru	O	tr
-hayal	B-IDIOM	tr
-kırıklığına	I-IDIOM	tr
-uğrattı	I-IDIOM	tr
+hayal	O	tr
+kırıklığına	O	tr
+uğrattı	O	tr
 .	O	tr
 
-Deniz_GÜÇER	O	tr
+Deniz	O	tr
+GÜÇER	O	tr
 -	O	tr
 ANKARA	O	tr
 .	O	tr
@@ -10241,7 +10586,8 @@ zamla	O	tr
 birlikte	O	tr
 zam	O	tr
 oranının	O	tr
-yüzde_72	O	tr
+yüzde	O	tr
+72	O	tr
 olması	O	tr
 ,	O	tr
 Emniyet	O	tr
@@ -10249,8 +10595,8 @@ mensuplarına	O	tr
 da	O	tr
 aynı	O	tr
 oranda	O	tr
-zam	B-IDIOM	tr
-yapılacağının	I-IDIOM	tr
+zam	O	tr
+yapılacağının	O	tr
 açıklanmasıyla	O	tr
 birlikte	O	tr
 düz	O	tr
@@ -10299,8 +10645,8 @@ diğer	O	tr
 memurlara	O	tr
 da	O	tr
 ek	O	tr
-zam	B-IDIOM	tr
-yapabilmesi	I-IDIOM	tr
+zam	O	tr
+yapabilmesi	O	tr
 için	O	tr
 yetki	O	tr
 yasasının	O	tr
@@ -10310,8 +10656,8 @@ yani	O	tr
 Mart	O	tr
 ayına	O	tr
 kadar	O	tr
-karar	I-IDIOM	tr
-vermesi	I-IDIOM	tr
+karar	O	tr
+vermesi	O	tr
 gerekiyor	O	tr
 .	O	tr
 
@@ -10349,13 +10695,14 @@ oluşturuyor	O	tr
 BBP	O	tr
 Genel	O	tr
 Başkanı	O	tr
-Muhsin_Yazıcıoğlu	O	tr
+Muhsin	O	tr
+Yazıcıoğlu	O	tr
 'nun	O	tr
 emniyet	O	tr
 mensuplarına	O	tr
 ek	O	tr
-zam	B-IDIOM	tr
-yapılması	I-IDIOM	tr
+zam	O	tr
+yapılması	O	tr
 için	O	tr
 devreye	O	tr
 girmesinin	O	tr
@@ -10367,23 +10714,27 @@ Kamu	O	tr
 Sen	O	tr
 de	O	tr
 eylem	O	tr
-kararı	I-IDIOM	tr
-aldı	I-IDIOM	tr
+kararı	O	tr
+aldı	O	tr
 .	O	tr
 
-Türkiye_Kamu_-_Sen	O	tr
+Türkiye	O	tr
+Kamu	O	tr
+-	O	tr
+Sen	O	tr
 Genel	O	tr
 Başkanı	O	tr
-Resul_Akay	O	tr
+Resul	O	tr
+Akay	O	tr
 ,	O	tr
 "	O	tr
 Biri	O	tr
 yer	O	tr
 biri	O	tr
 bakar	O	tr
-kıyamet	B-IDIOM	tr
+kıyamet	O	tr
 bundan	O	tr
-kopar	I-IDIOM	tr
+kopar	O	tr
 .	O	tr
 Hükümete	O	tr
 bu	O	tr
@@ -10396,8 +10747,8 @@ zam	O	tr
 yapıyorsun	O	tr
 ,	O	tr
 emniyete	O	tr
-zam	I-IDIOM	tr
-yapıyorsun	I-IDIOM	tr
+zam	O	tr
+yapıyorsun	O	tr
 .	O	tr
 Ancak	O	tr
 olan	O	tr
@@ -10407,8 +10758,8 @@ memura	O	tr
 oluyor	O	tr
 .	O	tr
 Buna	O	tr
-izin	I-IDIOM	tr
-vermeyeceğiz	I-IDIOM	tr
+izin	O	tr
+vermeyeceğiz	O	tr
 "	O	tr
 diye	O	tr
 konuştu	O	tr
@@ -10431,8 +10782,8 @@ OHAL	O	tr
 'in	O	tr
 gösterilmesini	O	tr
 de	O	tr
-tepki	B-IDIOM	tr
-göstererek	I-IDIOM	tr
+tepki	O	tr
+göstererek	O	tr
 ,	O	tr
 "	O	tr
 Orada	O	tr
@@ -10442,8 +10793,8 @@ ile	O	tr
 Silahlı	O	tr
 kuvvetler	O	tr
 mensuplarına	O	tr
-zam	I-IDIOM	tr
-yapılmasına	I-IDIOM	tr
+zam	O	tr
+yapılmasına	O	tr
 tabii	O	tr
 ki	O	tr
 karşı	O	tr
@@ -10487,8 +10838,8 @@ Görev	O	tr
 başında	O	tr
 orada	O	tr
 insanlar	O	tr
-şehit	I-IDIOM	tr
-ediliyorlar	I-IDIOM	tr
+şehit	O	tr
+ediliyorlar	O	tr
 .	O	tr
 Hepsine	O	tr
 adil	O	tr
@@ -10502,13 +10853,15 @@ kullandı	O	tr
 Hükümetin	O	tr
 tüm	O	tr
 memurlara	O	tr
-yapacağı	B-IDIOM	tr
-yüzde_40	O	tr
+yapacağı	O	tr
+yüzde	O	tr
+40	O	tr
 'lık	O	tr
 ek	O	tr
-zammın	I-IDIOM	tr
+zammın	O	tr
 maliyetinin	O	tr
-300_trilyon	O	tr
+300	O	tr
+trilyon	O	tr
 lira	O	tr
 olacağı	O	tr
 belirtilirken	O	tr
@@ -10535,7 +10888,8 @@ yapılan	O	tr
 zam	O	tr
 Hazine	O	tr
 'ye	O	tr
-50_trilyon	O	tr
+50	O	tr
+trilyon	O	tr
 lira	O	tr
 ek	O	tr
 yük	O	tr
@@ -10550,8 +10904,8 @@ bütçe	O	tr
 "	O	tr
 korkusu	O	tr
 nedeniyle	O	tr
-zam	B-IDIOM	tr
-yapmayacağı	I-IDIOM	tr
+zam	O	tr
+yapmayacağı	O	tr
 belirtiliyor	O	tr
 .	O	tr
 
@@ -10564,13 +10918,15 @@ zam	O	tr
 MİLLİ	O	tr
 Eğitim	O	tr
 Bakanı	O	tr
-Mehmet_Sağlam	O	tr
+Mehmet	O	tr
+Sağlam	O	tr
 ,	O	tr
 öğretmenlerin	O	tr
 maaşlarında	O	tr
 bu	O	tr
 yıl	O	tr
-yüzde_70	O	tr
+yüzde	O	tr
+70	O	tr
 'e	O	tr
 varan	O	tr
 artışlar	O	tr
@@ -10582,7 +10938,8 @@ ders	O	tr
 ücretlerinin	O	tr
 de	O	tr
 ortalama	O	tr
-yüzde_300	O	tr
+yüzde	O	tr
+300	O	tr
 oranında	O	tr
 arttırılacağını	O	tr
 açıkladı	O	tr
@@ -10590,7 +10947,9 @@ açıkladı	O	tr
 
 Sağlam	O	tr
 ,	O	tr
-Demokrat_Eğitimciler_Sendikası	O	tr
+Demokrat	O	tr
+Eğitimciler	O	tr
+Sendikası	O	tr
 yöneticileriyle	O	tr
 sendika	O	tr
 üyesi	O	tr
@@ -10598,10 +10957,11 @@ bir	O	tr
 grup	O	tr
 öğretmeni	O	tr
 kabulde	O	tr
-yaptığı	B-IDIOM	tr
-konuşmada	I-IDIOM	tr
+yaptığı	O	tr
+konuşmada	O	tr
 ,	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'nda	O	tr
 Silahlı	O	tr
 Kuvvetler	O	tr
@@ -10617,8 +10977,8 @@ mensupları	O	tr
 ve	O	tr
 öğretmenlerin	O	tr
 maaşlarında	O	tr
-artış	I-IDIOM	tr
-yapılması	I-IDIOM	tr
+artış	O	tr
+yapılması	O	tr
 için	O	tr
 çalışmaların	O	tr
 sürdürüldüğünü	O	tr
@@ -10638,8 +10998,8 @@ diğerlerinin	O	tr
 ücret	O	tr
 artışının	O	tr
 çıkmayacağı	O	tr
-anlamına	I-IDIOM	tr
-gelmez	I-IDIOM	tr
+anlamına	O	tr
+gelmez	O	tr
 "	O	tr
 diye	O	tr
 konuştu	O	tr
@@ -10648,7 +11008,8 @@ konuştu	O	tr
 Bakanlığının	O	tr
 hazırladığı	O	tr
 çalışmaların	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'na	O	tr
 sunulduğunun	O	tr
 söyleyen	O	tr
@@ -10666,18 +11027,19 @@ bildirerek	O	tr
 ,	O	tr
 "	O	tr
 Önerimizin	O	tr
-kabul	B-IDIOM	tr
-edilmesinden	I-IDIOM	tr
+kabul	O	tr
+edilmesinden	O	tr
 sonra	O	tr
 ,	O	tr
 ek	O	tr
 ders	O	tr
 ücretlerinde	O	tr
 ortalama	O	tr
-yüzde_300	O	tr
+yüzde	O	tr
+300	O	tr
 oranında	O	tr
-artış	I-IDIOM	tr
-olacak	I-IDIOM	tr
+artış	O	tr
+olacak	O	tr
 "	O	tr
 dedi	O	tr
 .	O	tr
@@ -10734,7 +11096,8 @@ eğitim	O	tr
 öğretim	O	tr
 tazminatının	O	tr
 da	O	tr
-yüzde_110	O	tr
+yüzde	O	tr
+110	O	tr
 oranında	O	tr
 artırılacağını	O	tr
 söyledi	O	tr
@@ -10748,13 +11111,14 @@ sonra	O	tr
 ,	O	tr
 öğretmen	O	tr
 maaşlarında	O	tr
-yüzde_70	O	tr
+yüzde	O	tr
+70	O	tr
 'e	O	tr
 varan	O	tr
 artışlar	O	tr
 olacağını	O	tr
-ifade	B-IDIOM	tr
-etti	I-IDIOM	tr
+ifade	O	tr
+etti	O	tr
 .	O	tr
 
 SON	O	tr
@@ -10791,7 +11155,9 @@ yoğunlaşan	O	tr
 Grönland	O	tr
 'ın	O	tr
 Başbakanı	O	tr
-Lars_Emil_Johannsen	O	tr
+Lars	O	tr
+Emil	O	tr
+Johannsen	O	tr
 ,	O	tr
 .	O	tr
 
@@ -10808,7 +11174,8 @@ Benazir	O	tr
 'in	O	tr
 kayınpederi	O	tr
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 de	O	tr
 katıldı	O	tr
 .	O	tr
@@ -10830,7 +11197,8 @@ kondu	O	tr
 
 DIŞİŞLERİ	O	tr
 Bakanı	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'in	O	tr
 geçtiğimiz	O	tr
 ay	O	tr
@@ -10839,8 +11207,8 @@ Moskova	O	tr
 gerçekleştirdiği	O	tr
 ziyaret	O	tr
 sırasında	O	tr
-gündeme	B-IDIOM	tr
-getirdiği	I-IDIOM	tr
+gündeme	O	tr
+getirdiği	O	tr
 ve	O	tr
 "	O	tr
 Yumruğumu	O	tr
@@ -10888,13 +11256,14 @@ aratmayacak	O	tr
 yöntemlerle	O	tr
 casusluk	O	tr
 yaptıkları	O	tr
-ileri	B-IDIOM	tr
-sürüldü	I-IDIOM	tr
+ileri	O	tr
+sürüldü	O	tr
 .	O	tr
 
 Bulgaristan	O	tr
 Cumhurbaşkanı	O	tr
-Jelu_Jelev	O	tr
+Jelu	O	tr
+Jelev	O	tr
 ,	O	tr
 ülkenin	O	tr
 "	O	tr
@@ -10926,7 +11295,8 @@ tanımlanan	O	tr
 haftalık	O	tr
 haber	O	tr
 dergisi	O	tr
-Der_Spiegel	O	tr
+Der	O	tr
+Spiegel	O	tr
 'in	O	tr
 üst	O	tr
 kadrolarının	O	tr
@@ -10962,8 +11332,8 @@ hakkında	O	tr
 istihbarat	O	tr
 vermeye	O	tr
 zorladığı	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 Suriye	O	tr
@@ -11012,8 +11382,8 @@ Yardımcısı	O	tr
 Prof	O	tr
 .	O	tr
 Rozakis	O	tr
-istifa	B-IDIOM	tr
-etti	I-IDIOM	tr
+istifa	O	tr
+etti	O	tr
 .	O	tr
 
 Simitis	O	tr
@@ -11040,15 +11410,16 @@ tutanakla	O	tr
 gösterilip	O	tr
 eylemlerde	O	tr
 kullanıldığı	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 DYP	O	tr
 'li	O	tr
 Devlet	O	tr
 Bakanı	O	tr
-Salim_Ensarioğlu	O	tr
+Salim	O	tr
+Ensarioğlu	O	tr
 ,	O	tr
 Doğu	O	tr
 ve	O	tr
@@ -11058,12 +11429,14 @@ hedef	O	tr
 alan	O	tr
 "	O	tr
 Geri	O	tr
-Kalmış_Yöreler_Bakanlığı	O	tr
+Kalmış	O	tr
+Yöreler	O	tr
+Bakanlığı	O	tr
 "	O	tr
 oluşturulması	O	tr
 önerisininde	O	tr
-yer	B-IDIOM	tr
-aldığı	I-IDIOM	tr
+yer	O	tr
+aldığı	O	tr
 aşiret	O	tr
 raporunu	O	tr
 Çiller	O	tr
@@ -11079,31 +11452,37 @@ alınan	O	tr
 İstanbul	O	tr
 Emniyet	O	tr
 Müdürü	O	tr
-Kemal_Yazıcıoğlu	O	tr
+Kemal	O	tr
+Yazıcıoğlu	O	tr
 'nun	O	tr
 yerine	O	tr
 geçici	O	tr
 olarak	O	tr
 atanan	O	tr
-Ramazan_Er	O	tr
+Ramazan	O	tr
+Er	O	tr
 ,	O	tr
 görevine	O	tr
 başladı	O	tr
 .	O	tr
 
-İstanbul_Emniyet_Müdürlüğü	O	tr
-görevini	B-IDIOM	tr
+İstanbul	O	tr
+Emniyet	O	tr
+Müdürlüğü	O	tr
+görevini	O	tr
 vekaleten	O	tr
-yürüten	I-IDIOM	tr
-Erşen_Bahçekapılı	O	tr
+yürüten	O	tr
+Erşen	O	tr
+Bahçekapılı	O	tr
 'nın	O	tr
 d	O	tr
 .	O	tr
 
-Susurluk_Komisyonu	O	tr
+Susurluk	O	tr
+Komisyonu	O	tr
 'na	O	tr
-ifade	B-IDIOM	tr
-vermeye	I-IDIOM	tr
+ifade	O	tr
+vermeye	O	tr
 hazır	O	tr
 olduğunu	O	tr
 söyleyen	O	tr
@@ -11132,7 +11511,8 @@ gelen	O	tr
 skandalının	O	tr
 baş	O	tr
 aktörü	O	tr
-Ergun_Göknel	O	tr
+Ergun	O	tr
+Göknel	O	tr
 ,	O	tr
 40	O	tr
 aylık	O	tr
@@ -11141,7 +11521,8 @@ günleri	O	tr
 anlattı	O	tr
 .	O	tr
 
-KUZEY_Irak	O	tr
+KUZEY	O	tr
+Irak	O	tr
 'ın	O	tr
 Sinath	O	tr
 bölgesinde	O	tr
@@ -11212,7 +11593,9 @@ olan	O	tr
 uydu	O	tr
 kent	O	tr
 ,	O	tr
-8_milyar_dolara	O	tr
+8	O	tr
+milyar	O	tr
+dolara	O	tr
 malolacak	O	tr
 .	O	tr
 
@@ -11230,7 +11613,9 @@ araba	O	tr
 ve	O	tr
 cep	O	tr
 telefonlarının	O	tr
-Milli_İstihbarat_Teşkilatı	O	tr
+Milli	O	tr
+İstihbarat	O	tr
+Teşkilatı	O	tr
 (	O	tr
 MİT	O	tr
 )	O	tr
@@ -11239,8 +11624,8 @@ ve	O	tr
 iki	O	tr
 yıldır	O	tr
 dinlendiğini	O	tr
-ileri	B-IDIOM	tr
-sürerek	I-IDIOM	tr
+ileri	O	tr
+sürerek	O	tr
 "	O	tr
 MİT	O	tr
 'in	O	tr
@@ -11254,9 +11639,11 @@ ama	O	tr
 dinles	O	tr
 .	O	tr
 
-Anayasa_Mahkemesi	O	tr
+Anayasa	O	tr
+Mahkemesi	O	tr
 Başkanı	O	tr
-Yekta_Güngör	O	tr
+Yekta	O	tr
+Güngör	O	tr
 Özden	O	tr
 adaletin	O	tr
 yalnız	O	tr
@@ -11299,18 +11686,20 @@ kolu	O	tr
 ve	O	tr
 çenesini	O	tr
 kıran	O	tr
-Semra_Özal	O	tr
+Semra	O	tr
+Özal	O	tr
 'ın	O	tr
 aldığı	O	tr
 yeni	O	tr
 ayakkabının	O	tr
-kurbanı	B-IDIOM	tr
-olduğu	I-IDIOM	tr
-ortaya	I-IDIOM	tr
-çıktı	I-IDIOM	tr
+kurbanı	O	tr
+olduğu	O	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
-Efe_Özal	O	tr
+Efe	O	tr
+Özal	O	tr
 annesinin	O	tr
 aldığı	O	tr
 yeni	O	tr
@@ -11325,7 +11714,9 @@ korumuş	O	tr
 d	O	tr
 .	O	tr
 
-TÜRK_Dil_Kurumu	O	tr
+TÜRK	O	tr
+Dil	O	tr
+Kurumu	O	tr
 (	O	tr
 TDK	O	tr
 )	O	tr
@@ -11351,8 +11742,8 @@ isimli	O	tr
 ve	O	tr
 uydurukça	O	tr
 tabelalara	O	tr
-savaş	B-IDIOM	tr
-açtı	I-IDIOM	tr
+savaş	O	tr
+açtı	O	tr
 .	O	tr
 
 Sayısı	O	tr
@@ -11386,8 +11777,8 @@ dünkü	O	tr
 Milliyet	O	tr
 'in	O	tr
 manşetinde	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 haber	O	tr
 ,	O	tr
 ülke	O	tr
@@ -11434,8 +11825,8 @@ yarıya	O	tr
 yetişmesi	O	tr
 için	O	tr
 yoğun	O	tr
-çaba	B-IDIOM	tr
-harcıyor	I-IDIOM	tr
+çaba	O	tr
+harcıyor	O	tr
 .	O	tr
 
 ABD	O	tr
@@ -11449,26 +11840,28 @@ Rüştü	O	tr
 'nün	O	tr
 Samsunspor	O	tr
 sınavında	O	tr
-forma	B-IDIOM	tr
-giymesi	I-IDIOM	tr
+forma	O	tr
+giymesi	O	tr
 isteyen	O	tr
 yöneticiler	O	tr
 ,	O	tr
 askeri	O	tr
 yetkililerle	O	tr
-temasa	I-IDIOM	tr
-girdiler	I-IDIOM	tr
+temasa	O	tr
+girdiler	O	tr
 .	O	tr
 
-CİM_-_Bom	O	tr
+CİM	O	tr
+-	O	tr
+Bom	O	tr
 ,	O	tr
 ligin	O	tr
 ikinci	O	tr
 yarısı	O	tr
 için	O	tr
 dün	O	tr
-işbaşı	B-IDIOM	tr
-yaptı	I-IDIOM	tr
+işbaşı	O	tr
+yaptı	O	tr
 .	O	tr
 
 Sabah	O	tr
@@ -11491,7 +11884,8 @@ girdiler	O	tr
 
 Teknik	O	tr
 Direktör	O	tr
-Fatih_Terim	O	tr
+Fatih	O	tr
+Terim	O	tr
 ,	O	tr
 İspanya	O	tr
 kampında	O	tr
@@ -11503,8 +11897,8 @@ ve	O	tr
 futbolcularına	O	tr
 günde	O	tr
 üç	O	tr
-idman	B-IDIOM	tr
-yaptıracak	I-IDIOM	tr
+idman	O	tr
+yaptıracak	O	tr
 .	O	tr
 
 Futbol	O	tr
@@ -11559,8 +11953,8 @@ gittiği	O	tr
 Antalya	O	tr
 kampından	O	tr
 önce	O	tr
-sorunlar	B-IDIOM	tr
-yaşadı	I-IDIOM	tr
+sorunlar	O	tr
+yaşadı	O	tr
 .	O	tr
 
 İstanbul	O	tr
@@ -11577,7 +11971,8 @@ Trabzonspor	O	tr
 ,	O	tr
 Teknik	O	tr
 Direktör	O	tr
-Şenol_Güneş	O	tr
+Şenol	O	tr
+Güneş	O	tr
 'in	O	tr
 kararıyla	O	tr
 dünü	O	tr
@@ -11596,55 +11991,66 @@ açıklanan	O	tr
 Sheila	O	tr
 'yı	O	tr
 kesinlikle	O	tr
-transfer	B-IDIOM	tr
-etme	I-IDIOM	tr
-kararı	I-IDIOM	tr
-aldı	I-IDIOM	tr
+transfer	O	tr
+etme	O	tr
+kararı	O	tr
+aldı	O	tr
 .	O	tr
 
-Taha_Akyol	O	tr
+Taha	O	tr
+Akyol	O	tr
 .	O	tr
 
-Melih_Aşık	O	tr
+Melih	O	tr
+Aşık	O	tr
 .	O	tr
 
-Yalçın_Doğan	O	tr
+Yalçın	O	tr
+Doğan	O	tr
 .	O	tr
 
 Yavuz	O	tr
 Donat	O	tr
 .	O	tr
 
-Abbas_Güçlü	O	tr
+Abbas	O	tr
+Güçlü	O	tr
 .	O	tr
 
 Nail	O	tr
 Güreli	O	tr
 .	O	tr
 
-Doğan_Heper	O	tr
+Doğan	O	tr
+Heper	O	tr
 .	O	tr
 
-Sami_Kohen	O	tr
+Sami	O	tr
+Kohen	O	tr
 .	O	tr
 
-Altan_Öymen	O	tr
+Altan	O	tr
+Öymen	O	tr
 .	O	tr
 
-Hasan_Pulur	O	tr
+Hasan	O	tr
+Pulur	O	tr
 .	O	tr
 
 Derya	O	tr
 Sazak	O	tr
 .	O	tr
 
-Meral_Tamer	O	tr
+Meral	O	tr
+Tamer	O	tr
 .	O	tr
 
-Metin_Toker	O	tr
+Metin	O	tr
+Toker	O	tr
 .	O	tr
 
-Osman_Ulagay	O	tr
+Osman	O	tr
+Ulagay	O	tr
 .	O	tr
 
 "	O	tr
@@ -11661,7 +12067,8 @@ dalında	O	tr
 Altın	O	tr
 Portakal	O	tr
 kazanan	O	tr
-Yasemin_Alkaya	O	tr
+Yasemin	O	tr
+Alkaya	O	tr
 ,	O	tr
 uluslararası	O	tr
 arenada	O	tr
@@ -11694,7 +12101,8 @@ Nilüfer	O	tr
 ile	O	tr
 ünlü	O	tr
 politikacı	O	tr
-Gökberk_Ergenekon	O	tr
+Gökberk	O	tr
+Ergenekon	O	tr
 ,	O	tr
 daha	O	tr
 önce	O	tr
@@ -11749,13 +12157,13 @@ Son	O	tr
 bir	O	tr
 kaç	O	tr
 yıldır	O	tr
-moda	B-IDIOM	tr
-olup	I-IDIOM	tr
-olmamaya	I-IDIOM	tr
+moda	O	tr
+olup	O	tr
+olmamaya	O	tr
 bir	O	tr
 türlü	O	tr
-karar	I-IDIOM	tr
-veremeyen	I-IDIOM	tr
+karar	O	tr
+veremeyen	O	tr
 leopar	O	tr
 bu	O	tr
 kışın	O	tr
@@ -11775,8 +12183,8 @@ gerçek	O	tr
 kürk	O	tr
 giyiminin	O	tr
 çok	O	tr
-tepki	B-IDIOM	tr
-gördüğü	I-IDIOM	tr
+tepki	O	tr
+gördüğü	O	tr
 bu	O	tr
 yıllarda	O	tr
 sadece	O	tr
@@ -11798,7 +12206,8 @@ fetheden	O	tr
 pop	O	tr
 müziğin	O	tr
 süperstarlarından	O	tr
-Mustafa_Sandal	O	tr
+Mustafa	O	tr
+Sandal	O	tr
 ,	O	tr
 yoğun	O	tr
 konser	O	tr
@@ -11810,7 +12219,8 @@ vazgeçmiyor	O	tr
 .	O	tr
 
 Nişanlısı	O	tr
-Aslı_Berker	O	tr
+Aslı	O	tr
+Berker	O	tr
 'in	O	tr
 uzun	O	tr
 süredir	O	tr
@@ -11820,8 +12230,8 @@ olması	O	tr
 nedeniyle	O	tr
 gizli	O	tr
 gizli	O	tr
-çapkınlık	B-IDIOM	tr
-yapan	I-IDIOM	tr
+çapkınlık	O	tr
+yapan	O	tr
 Sandal	O	tr
 'ı	O	tr
 .	O	tr
@@ -11830,13 +12240,15 @@ Yaklaşık	O	tr
 beş	O	tr
 aydır	O	tr
 gazeteci	O	tr
-Kürşat_Başar	O	tr
+Kürşat	O	tr
+Başar	O	tr
 'la	O	tr
-beraber	B-IDIOM	tr
-olan	I-IDIOM	tr
+beraber	O	tr
+olan	O	tr
 ünlü	O	tr
 mankenlerden	O	tr
-Seray_Sever	O	tr
+Seray	O	tr
+Sever	O	tr
 ,	O	tr
 iki	O	tr
 haftalık	O	tr
@@ -11870,9 +12282,11 @@ Bir	O	tr
 yandan	O	tr
 .	O	tr
 
-Anayasa_Mahkemesi	O	tr
+Anayasa	O	tr
+Mahkemesi	O	tr
 Başkanı	O	tr
-Yekta_Güngör	O	tr
+Yekta	O	tr
+Güngör	O	tr
 Özden	O	tr
 adaletin	O	tr
 yalnız	O	tr
@@ -11880,8 +12294,8 @@ devletin	O	tr
 değil	O	tr
 ,	O	tr
 dünyanın	O	tr
-temil	B-IDIOM	tr
-olduğunu	I-IDIOM	tr
+temil	O	tr
+olduğunu	O	tr
 belirterek	O	tr
 ,	O	tr
 "	O	tr
@@ -11905,7 +12319,9 @@ inançtadır	O	tr
 dedi	O	tr
 .	O	tr
 
-Yekta_Güngör_ÖZDEN	O	tr
+Yekta	O	tr
+Güngör	O	tr
+ÖZDEN	O	tr
 .	O	tr
 
 GİDEREK	O	tr
@@ -12116,8 +12532,8 @@ hukuk	O	tr
 dışı	O	tr
 çözüm	O	tr
 olasılıklarını	O	tr
-gündeme	B-IDIOM	tr
-getirmektedir	I-IDIOM	tr
+gündeme	O	tr
+getirmektedir	O	tr
 .	O	tr
 
 Çevremizdeki	O	tr
@@ -12143,8 +12559,8 @@ kimi	O	tr
 de	O	tr
 kimsenin	O	tr
 toprağında	O	tr
-gözümüz	B-IDIOM	tr
-olmadığını	I-IDIOM	tr
+gözümüz	O	tr
+olmadığını	O	tr
 bilerek	O	tr
 gücümüzden	O	tr
 korkmaktadır	O	tr
@@ -12185,8 +12601,8 @@ kalkışmalarıdır	O	tr
 .	O	tr
 
 Siyasete	O	tr
-amaç	B-IDIOM	tr
-yapılma	I-IDIOM	tr
+amaç	O	tr
+yapılma	O	tr
 durumu	O	tr
 ilginçtir	O	tr
 .	O	tr
@@ -12262,7 +12678,8 @@ ulusal	O	tr
 dayanışmayı	O	tr
 güçlendirmek	O	tr
 ,	O	tr
-Türkiye_Cumhuriyeti	O	tr
+Türkiye	O	tr
+Cumhuriyeti	O	tr
 'nin	O	tr
 kuruluş	O	tr
 felsefesi	O	tr
@@ -12279,11 +12696,11 @@ düzeyini	O	tr
 aşmak	O	tr
 .	O	tr
 
-Karanlığa	B-IDIOM	tr
-düşmemek	I-IDIOM	tr
+Karanlığa	O	tr
+düşmemek	O	tr
 ,	O	tr
-yıkılıp	I-IDIOM	tr
-yitmemek	I-IDIOM	tr
+yıkılıp	O	tr
+yitmemek	O	tr
 için	O	tr
 bu	O	tr
 soylu	O	tr
@@ -12356,8 +12773,8 @@ pekişecek	O	tr
 yapı	O	tr
 ,	O	tr
 hepimizi	O	tr
-mutlu	B-IDIOM	tr
-kılacaktır	I-IDIOM	tr
+mutlu	O	tr
+kılacaktır	O	tr
 .	O	tr
 
 Ulusal	O	tr
@@ -12409,8 +12826,8 @@ birleşince	O	tr
 rejimin	O	tr
 karakteri	O	tr
 konusunda	O	tr
-endişeler	B-IDIOM	tr
-duyulmaktadır	I-IDIOM	tr
+endişeler	O	tr
+duyulmaktadır	O	tr
 .	O	tr
 
 Kıbrıs	O	tr
@@ -12419,10 +12836,12 @@ sözde	O	tr
 dostların	O	tr
 oyunları	O	tr
 ,	O	tr
-Avrupa_Birliği	O	tr
+Avrupa	O	tr
+Birliği	O	tr
 'nin	O	tr
 ve	O	tr
-Avrupa_Konseyi	O	tr
+Avrupa	O	tr
+Konseyi	O	tr
 'nin	O	tr
 hukukla	O	tr
 bağdaşmayan	O	tr
@@ -12463,12 +12882,13 @@ yazgıcılıktan	O	tr
 yaratıcılığa	O	tr
 geçen	O	tr
 yeni	O	tr
-Türkiye_Cumhuriyeti	O	tr
+Türkiye	O	tr
+Cumhuriyeti	O	tr
 devleti	O	tr
 ,	O	tr
 içte	O	tr
-kuracağı	B-IDIOM	tr
-düzenle	I-IDIOM	tr
+kuracağı	O	tr
+düzenle	O	tr
 ,	O	tr
 dış	O	tr
 düzensizlikleri	O	tr
@@ -12490,8 +12910,8 @@ partizanlık	O	tr
 yolsuzluk	O	tr
 söylentilerine	O	tr
 bile	O	tr
-olanak	B-IDIOM	tr
-tanımayacak	I-IDIOM	tr
+olanak	O	tr
+tanımayacak	O	tr
 ilke	O	tr
 ,	O	tr
 hukukun	O	tr
@@ -12539,14 +12959,14 @@ yasası	O	tr
 öncelik	O	tr
 ve	O	tr
 ivedilikle	O	tr
-ele	B-IDIOM	tr
-alınmalı	I-IDIOM	tr
+ele	O	tr
+alınmalı	O	tr
 ,	O	tr
 nicelikten	O	tr
 çok	O	tr
 niteliğe	O	tr
-önem	I-IDIOM	tr
-verilerek	I-IDIOM	tr
+önem	O	tr
+verilerek	O	tr
 demokratik	O	tr
 yapılanma	O	tr
 tamamlanmalıdır	O	tr
@@ -12637,8 +13057,8 @@ ulusal	O	tr
 buluşmak	O	tr
 ,	O	tr
 nitelikli	O	tr
-birey	B-IDIOM	tr
-olmanın	I-IDIOM	tr
+birey	O	tr
+olmanın	O	tr
 koşuludur	O	tr
 ,	O	tr
 düzey	O	tr
@@ -12655,8 +13075,8 @@ koruyarak	O	tr
 eğitime	O	tr
 ve	O	tr
 bilime	O	tr
-öncelik	B-IDIOM	tr
-tanıyarak	I-IDIOM	tr
+öncelik	O	tr
+tanıyarak	O	tr
 yapıyı	O	tr
 yenilemeli	O	tr
 ,	O	tr
@@ -12688,8 +13108,8 @@ düşmektedir	O	tr
 Kolluk	O	tr
 güçlerinin	O	tr
 yansızlığına	O	tr
-önem	B-IDIOM	tr
-verilmeli	I-IDIOM	tr
+önem	O	tr
+verilmeli	O	tr
 ,	O	tr
 özeleştirisiz	O	tr
 ,	O	tr
@@ -12702,8 +13122,8 @@ unutulmamalıdır	O	tr
 
 Üniversitelerin	O	tr
 özerkliği	O	tr
-sözde	B-IDIOM	tr
-kalmamalı	I-IDIOM	tr
+sözde	O	tr
+kalmamalı	O	tr
 ,	O	tr
 bozucu	O	tr
 elatmalardan	O	tr
@@ -12723,8 +13143,8 @@ bağlar	O	tr
 ,	O	tr
 onlara	O	tr
 böylece	O	tr
-layık	B-IDIOM	tr
-oluruz	I-IDIOM	tr
+layık	O	tr
+oluruz	O	tr
 .	O	tr
 
 Yinelemekte	O	tr
@@ -12787,12 +13207,13 @@ bu	O	tr
 inançtadır	O	tr
 .	O	tr
 
-Susurluk_Komisyonu	O	tr
+Susurluk	O	tr
+Komisyonu	O	tr
 'na	O	tr
-ifade	B-IDIOM	tr
-vermeye	I-IDIOM	tr
-hazır	I-IDIOM	tr
-olduğunu	I-IDIOM	tr
+ifade	O	tr
+vermeye	O	tr
+hazır	O	tr
+olduğunu	O	tr
 söyleyen	O	tr
 7	O	tr
 .	O	tr
@@ -12819,11 +13240,13 @@ SUSURLUK	O	tr
 'taki	O	tr
 kazanın	O	tr
 ardından	O	tr
-gündeme	B-IDIOM	tr
-gelen	I-IDIOM	tr
+gündeme	O	tr
+gelen	O	tr
 iddiaları	O	tr
 araştıran	O	tr
-TBMM_Susurluk_Komisyonu	O	tr
+TBMM	O	tr
+Susurluk	O	tr
+Komisyonu	O	tr
 'na	O	tr
 ifade	O	tr
 vermeye	O	tr
@@ -12833,9 +13256,11 @@ belirten	O	tr
 7	O	tr
 .	O	tr
 Cumhurbaşkanı	O	tr
-Kenan_Evren	O	tr
+Kenan	O	tr
+Evren	O	tr
 ,	O	tr
-Abdullah_Çatlı	O	tr
+Abdullah	O	tr
+Çatlı	O	tr
 'nın	O	tr
 adını	O	tr
 ilk	O	tr
@@ -12919,8 +13344,8 @@ sürdürdü	O	tr
 Ben	O	tr
 gelip	O	tr
 komisyonda	O	tr
-ifade	B-IDIOM	tr
-veririm	I-IDIOM	tr
+ifade	O	tr
+veririm	O	tr
 .	O	tr
 Benim	O	tr
 gocunacak	O	tr
@@ -12929,8 +13354,8 @@ yok	O	tr
 .	O	tr
 Clinton	O	tr
 da	O	tr
-ifade	I-IDIOM	tr
-veriyor	I-IDIOM	tr
+ifade	O	tr
+veriyor	O	tr
 .	O	tr
 Özel	O	tr
 Harp	O	tr
@@ -12946,7 +13371,9 @@ olaylarına	O	tr
 karıştıkları	O	tr
 söyleniyordu	O	tr
 .	O	tr
-Doğrudan_Genelkurmay_Başkanlığı	O	tr
+Doğrudan	O	tr
+Genelkurmay	O	tr
+Başkanlığı	O	tr
 'na	O	tr
 bağlı	O	tr
 çalışıyorlardı	O	tr
@@ -12957,8 +13384,8 @@ görüşüp	O	tr
 kendi	O	tr
 işlevlerine	O	tr
 dönmeleri	O	tr
-talimatı	I-IDIOM	tr
-verdim	I-IDIOM	tr
+talimatı	O	tr
+verdim	O	tr
 ve	O	tr
 harekat	O	tr
 başkanlığına	O	tr
@@ -12980,11 +13407,12 @@ tutanakla	O	tr
 gösterilip	O	tr
 eylemlerde	O	tr
 kullanıldığı	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
-Namık_DURUKAN	O	tr
+Namık	O	tr
+DURUKAN	O	tr
 -	O	tr
 DİYARBAKIR	O	tr
 .	O	tr
@@ -12997,8 +13425,8 @@ bir	O	tr
 iş	O	tr
 adamının	O	tr
 kaçırılmasıyla	O	tr
-ortaya	B-IDIOM	tr
-çıkan	I-IDIOM	tr
+ortaya	O	tr
+çıkan	O	tr
 ve	O	tr
 aralarında	O	tr
 üst	O	tr
@@ -13012,8 +13440,8 @@ korucu	O	tr
 ve	O	tr
 itirafçının	O	tr
 da	O	tr
-yer	I-IDIOM	tr
-aldığı	I-IDIOM	tr
+yer	O	tr
+aldığı	O	tr
 çeteyle	O	tr
 ilgili	O	tr
 soruşturmada	O	tr
@@ -13037,8 +13465,8 @@ faili	O	tr
 meçhul	O	tr
 cinayet	O	tr
 ,	O	tr
-adam	B-IDIOM	tr
-kaçırma	I-IDIOM	tr
+adam	O	tr
+kaçırma	O	tr
 ,	O	tr
 silah	O	tr
 ve	O	tr
@@ -13060,7 +13488,8 @@ kod	O	tr
 adlı	O	tr
 PKK	O	tr
 itirafçısı	O	tr
-Kahraman_Bilgiç	O	tr
+Kahraman	O	tr
+Bilgiç	O	tr
 'in	O	tr
 ,	O	tr
 tutulan	O	tr
@@ -13068,26 +13497,30 @@ bir	O	tr
 tutanakla	O	tr
 ölü	O	tr
 gösterildiği	O	tr
-ortaya	I-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 KÖYÜNE	O	tr
 GÖMMÜŞLER	O	tr
 .	O	tr
 
-Hakkari_Dağ	O	tr
+Hakkari	O	tr
+Dağ	O	tr
 Komando	O	tr
 Tugay	O	tr
 Komutanı	O	tr
 Tuğgeneral	O	tr
-Cengiz_Yıldırım	O	tr
+Cengiz	O	tr
+Yıldırım	O	tr
 ve	O	tr
 Bölük	O	tr
 Komutanı	O	tr
-Yüzbaşı_Cengiz_Yıldırım	O	tr
-imzasını	B-IDIOM	tr
-taşıyan	I-IDIOM	tr
+Yüzbaşı	O	tr
+Cengiz	O	tr
+Yıldırım	O	tr
+imzasını	O	tr
+taşıyan	O	tr
 bir	O	tr
 tutanakta	O	tr
 ,	O	tr
@@ -13099,8 +13532,8 @@ Bilgiç	O	tr
 bulunduğu	O	tr
 yere	O	tr
 roket	O	tr
-isabet	I-IDIOM	tr
-ettiği	I-IDIOM	tr
+isabet	O	tr
+ettiği	O	tr
 ve	O	tr
 elinde	O	tr
 bomba	O	tr
@@ -13166,8 +13599,8 @@ bazıları	O	tr
 ,	O	tr
 itirafları	O	tr
 ve	O	tr
-ele	B-IDIOM	tr
-geçirilen	I-IDIOM	tr
+ele	O	tr
+geçirilen	O	tr
 delillerle	O	tr
 belirlendi	O	tr
 .	O	tr
@@ -13180,12 +13613,12 @@ Bilgiç	O	tr
 `	O	tr
 vur	O	tr
 '	O	tr
-emrini	B-IDIOM	tr
+emrini	O	tr
 devlet	O	tr
 yetkililerinden	O	tr
-aldığını	I-IDIOM	tr
-iddia	I-IDIOM	tr
-etti	I-IDIOM	tr
+aldığını	O	tr
+iddia	O	tr
+etti	O	tr
 .	O	tr
 
 Bilgiç	O	tr
@@ -13202,8 +13635,8 @@ yetkili	O	tr
 ve	O	tr
 polislerin	O	tr
 de	O	tr
-yer	B-IDIOM	tr
-aldığı	I-IDIOM	tr
+yer	O	tr
+aldığı	O	tr
 çetede	O	tr
 iki	O	tr
 yıl	O	tr
@@ -13226,8 +13659,8 @@ cinayeti	O	tr
 ,	O	tr
 çetenin	O	tr
 işlediği	O	tr
-tespit	B-IDIOM	tr
-edildi	I-IDIOM	tr
+tespit	O	tr
+edildi	O	tr
 .	O	tr
 
 Çete	O	tr
@@ -13239,10 +13672,13 @@ süre	O	tr
 önce	O	tr
 yakalanan	O	tr
 korucubaşı	O	tr
-Mehmet_Emin_Ergen	O	tr
+Mehmet	O	tr
+Emin	O	tr
+Ergen	O	tr
 'le	O	tr
 korucu	O	tr
-Osman_Ergen	O	tr
+Osman	O	tr
+Ergen	O	tr
 de	O	tr
 tutuklandı	O	tr
 .	O	tr
@@ -13258,14 +13694,14 @@ yargılanıyor	O	tr
 .	O	tr
 
 Çetede	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 onlarca	O	tr
 kişi	O	tr
 hakkındaki	O	tr
 soruşturmanın	O	tr
-devam	I-IDIOM	tr
-ettiği	I-IDIOM	tr
+devam	O	tr
+ettiği	O	tr
 öğrenildi	O	tr
 .	O	tr
 
@@ -13284,7 +13720,8 @@ Bilgiç	O	tr
 sorgulayan	O	tr
 İstihbarat	O	tr
 Astsubayı	O	tr
-Hüseyin_Oğuz	O	tr
+Hüseyin	O	tr
+Oğuz	O	tr
 ,	O	tr
 sorgu	O	tr
 kasetlerini	O	tr
@@ -13296,8 +13733,8 @@ etti	O	tr
 
 Olaydan	O	tr
 sonra	O	tr
-tehdit	B-IDIOM	tr
-edildiği	I-IDIOM	tr
+tehdit	O	tr
+edildiği	O	tr
 öğrenilen	O	tr
 Oğuz	O	tr
 ,	O	tr
@@ -13347,24 +13784,26 @@ Bilgiç	O	tr
 ,	O	tr
 PKK	O	tr
 için	O	tr
-eylem	B-IDIOM	tr
-yaptığı	I-IDIOM	tr
+eylem	O	tr
+yaptığı	O	tr
 dönemde	O	tr
 bölgenin	O	tr
-önde	I-IDIOM	tr
-gelen	I-IDIOM	tr
+önde	O	tr
+gelen	O	tr
 isimlerinden	O	tr
 Halife	O	tr
 Akar	O	tr
 'ı	O	tr
 öldürdü	O	tr
 ve	O	tr
-Kuzey_Irak	O	tr
+Kuzey	O	tr
+Irak	O	tr
 'a	O	tr
 kaçtı	O	tr
 .	O	tr
 
-Mesut_Barzani	O	tr
+Mesut	O	tr
+Barzani	O	tr
 'nin	O	tr
 liderliğini	O	tr
 yaptığı	O	tr
@@ -13382,18 +13821,20 @@ ilçesinde	O	tr
 Türk	O	tr
 askeri	O	tr
 makamlara	O	tr
-teslim	B-IDIOM	tr
-edildi	I-IDIOM	tr
+teslim	O	tr
+edildi	O	tr
 .	O	tr
 
 .	O	tr
 
-Şeyhmus_ÇAKAN	O	tr
+Şeyhmus	O	tr
+ÇAKAN	O	tr
 -	O	tr
 DİYARBAKIR	O	tr
 .	O	tr
 
-KUZEY_Irak	O	tr
+KUZEY	O	tr
+Irak	O	tr
 'ın	O	tr
 Sinath	O	tr
 bölgesinde	O	tr
@@ -13521,8 +13962,8 @@ Hakurk	O	tr
 kampında	O	tr
 da	O	tr
 ağır	O	tr
-kayıplar	B-IDIOM	tr
-verdirildiği	I-IDIOM	tr
+kayıplar	O	tr
+verdirildiği	O	tr
 bildirildi	O	tr
 .	O	tr
 
@@ -13552,7 +13993,8 @@ Olağanüstü	O	tr
 Hal	O	tr
 Bölge	O	tr
 Valisi	O	tr
-Necati_Bilican	O	tr
+Necati	O	tr
+Bilican	O	tr
 `	O	tr
 Baklava	O	tr
 Dilimi	O	tr
@@ -13575,7 +14017,8 @@ bulunan	O	tr
 Ordu	O	tr
 Komutanı	O	tr
 Orgeneral	O	tr
-Rasim_Bedir	O	tr
+Rasim	O	tr
+Bedir	O	tr
 ,	O	tr
 yüksek	O	tr
 rütbeli	O	tr
@@ -13593,26 +14036,28 @@ Bedir	O	tr
 ,	O	tr
 Bölge	O	tr
 Valisi	O	tr
-Necati_Bilican	O	tr
+Necati	O	tr
+Bilican	O	tr
 ve	O	tr
 Asayiş	O	tr
 Komutanı	O	tr
 Korgeneral	O	tr
-Altay_Tokat	O	tr
+Altay	O	tr
+Tokat	O	tr
 'la	O	tr
 da	O	tr
 görüştü	O	tr
 .	O	tr
 
-Tespit	B-IDIOM	tr
-edilen	I-IDIOM	tr
+Tespit	O	tr
+edilen	O	tr
 150	O	tr
 kadar	O	tr
 PKK	O	tr
 'lının	O	tr
 etkisiz	O	tr
-hale	I-IDIOM	tr
-getirilmesi	I-IDIOM	tr
+hale	O	tr
+getirilmesi	O	tr
 amaçlanan	O	tr
 sınır	O	tr
 ötesi	O	tr
@@ -13625,7 +14070,9 @@ Bilican	O	tr
 operasyonunun	O	tr
 tamamlanmasıyla	O	tr
 birlikte	O	tr
-Türk_Silahlı_Kuvvetleri	O	tr
+Türk	O	tr
+Silahlı	O	tr
+Kuvvetleri	O	tr
 'ne	O	tr
 mensup	O	tr
 birliklerin	O	tr
@@ -13639,8 +14086,8 @@ birkaç	O	tr
 gün	O	tr
 içinde	O	tr
 gerçekleşeceğini	O	tr
-ifade	B-IDIOM	tr
-eden	I-IDIOM	tr
+ifade	O	tr
+eden	O	tr
 Bilican	O	tr
 ,	O	tr
 güvenlik	O	tr
@@ -13650,17 +14097,21 @@ sivil	O	tr
 halkın	O	tr
 zarar	O	tr
 görmemesine	O	tr
-itina	I-IDIOM	tr
-gösterdiğini	I-IDIOM	tr
-ifade	I-IDIOM	tr
-etti	I-IDIOM	tr
+itina	O	tr
+gösterdiğini	O	tr
+ifade	O	tr
+etti	O	tr
 .	O	tr
 
 Irak	O	tr
-Kürdistan_Demokrat_Partisi	O	tr
+Kürdistan	O	tr
+Demokrat	O	tr
+Partisi	O	tr
 Diyarbakır	O	tr
 Temsilcisi	O	tr
-Hacı_Salih_Hüseyin	O	tr
+Hacı	O	tr
+Salih	O	tr
+Hüseyin	O	tr
 ,	O	tr
 operasyonun	O	tr
 yapıldığı	O	tr
@@ -13675,7 +14126,8 @@ Bankalara	O	tr
 kredi	O	tr
 notu	O	tr
 veren	O	tr
-Thomson_Bankwatch	O	tr
+Thomson	O	tr
+Bankwatch	O	tr
 'ın	O	tr
 değerlendirmesine	O	tr
 göre	O	tr
@@ -13689,16 +14141,16 @@ bağlı	O	tr
 olduğu	O	tr
 sanayi	O	tr
 kuruluşlarını	O	tr
-finanse	B-IDIOM	tr
-etmede	I-IDIOM	tr
+finanse	O	tr
+etmede	O	tr
 kullanılıyor	O	tr
 .	O	tr
 
 Sonuçta	O	tr
 bankaların	O	tr
 karlılığı	O	tr
-bağlı	B-IDIOM	tr
-oldukları	I-IDIOM	tr
+bağlı	O	tr
+oldukları	O	tr
 grupların	O	tr
 karlılığı	O	tr
 ile	O	tr
@@ -13711,15 +14163,22 @@ Yurt	O	tr
 dışında	O	tr
 çalışan	O	tr
 işçiye	O	tr
-1_güne_2_,_5_dolar	O	tr
+1	O	tr
+güne	O	tr
+2	O	tr
+,	O	tr
+5	O	tr
+dolar	O	tr
 üzerinden	O	tr
 emeklilik	O	tr
-hakkı	B-IDIOM	tr
-tanıyan	I-IDIOM	tr
+hakkı	O	tr
+tanıyan	O	tr
 yasa	O	tr
 tasarısı	O	tr
 ,	O	tr
-1_milyarı_doları	O	tr
+1	O	tr
+milyarı	O	tr
+doları	O	tr
 bütçe	O	tr
 olmak	O	tr
 üzere	O	tr
@@ -13734,17 +14193,18 @@ sağlamayı	O	tr
 amaçlıyor	O	tr
 .	O	tr
 
-Türk___Silahlı_Kuvvetleri	O	tr
 'ne	O	tr
 yapılan	O	tr
-yüzde_40	O	tr
+yüzde	O	tr
+40	O	tr
 'luk	O	tr
 ek	O	tr
 zammın	O	tr
 ardından	O	tr
 zam	O	tr
 oranının	O	tr
-yüzde_72	O	tr
+yüzde	O	tr
+72	O	tr
 'ye	O	tr
 yükselmesiyle	O	tr
 birlikte	O	tr
@@ -13754,7 +14214,8 @@ mensuplarının	O	tr
 zam	O	tr
 oranlarının	O	tr
 da	O	tr
-yüzde_70	O	tr
+yüzde	O	tr
+70	O	tr
 'lere	O	tr
 çıkarılacağının	O	tr
 açıklanması	O	tr
@@ -13762,9 +14223,9 @@ açıklanması	O	tr
 düz	O	tr
 "	O	tr
 memuru	O	tr
-hayal	B-IDIOM	tr
-kırıklığına	I-IDIOM	tr
-uğrattı	I-IDIOM	tr
+hayal	O	tr
+kırıklığına	O	tr
+uğrattı	O	tr
 .	O	tr
 
 ÇALIŞMA	O	tr
@@ -13772,7 +14233,8 @@ ve	O	tr
 Sosyal	O	tr
 Güvenlik	O	tr
 Bakanı	O	tr
-Necati_Çelik	O	tr
+Necati	O	tr
+Çelik	O	tr
 ,	O	tr
 zorunlu	O	tr
 tasarruların	O	tr
@@ -13815,22 +14277,23 @@ kararı	O	tr
 ,	O	tr
 yeni	O	tr
 tartışmaları	O	tr
-gündeme	B-IDIOM	tr
-getirdi	I-IDIOM	tr
+gündeme	O	tr
+getirdi	O	tr
 .	O	tr
 
 Hükümet	O	tr
 yetkilileri	O	tr
 rantiye	O	tr
 kesimini	O	tr
-kayıt	B-IDIOM	tr
-altına	I-IDIOM	tr
-alacak	I-IDIOM	tr
+kayıt	O	tr
+altına	O	tr
+alacak	O	tr
 olan	O	tr
 beyan	O	tr
 zorunluluğunun	O	tr
 ertelenmesini	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 kararı	O	tr
 i	O	tr
 .	O	tr
@@ -13839,7 +14302,8 @@ Otomotiv	O	tr
 sanayicileri	O	tr
 AB	O	tr
 'nin	O	tr
-Gümrük_Birliği	O	tr
+Gümrük	O	tr
+Birliği	O	tr
 mevzuatı	O	tr
 çerçevesinde	O	tr
 bedelsiz	O	tr
@@ -13847,12 +14311,14 @@ otomobil	O	tr
 ithalatı	O	tr
 uygulamasının	O	tr
 bitmesine	O	tr
-izin	B-IDIOM	tr
-vermeyeceğinden	I-IDIOM	tr
+izin	O	tr
+vermeyeceğinden	O	tr
 endişeleniyorlar	O	tr
 .	O	tr
 
-TÜRK_-_İş	O	tr
+TÜRK	O	tr
+-	O	tr
+İş	O	tr
 ,	O	tr
 Ocak	O	tr
 ayından	O	tr
@@ -13868,7 +14334,8 @@ başlıyor	O	tr
 
 Bunlardan	O	tr
 ilki	O	tr
-5_Ocak	O	tr
+5	O	tr
+Ocak	O	tr
 tarihinde	O	tr
 Kızılay	O	tr
 Meydanı	O	tr
@@ -13882,14 +14349,16 @@ sahip	O	tr
 .	O	tr
 Demokratikleşme	O	tr
 için	O	tr
-mücadele	B-IDIOM	tr
-et	I-IDIOM	tr
+mücadele	O	tr
+et	O	tr
 "	O	tr
 mitingi	O	tr
 olacak	O	tr
 .	O	tr
 
-Türk_-_İş	O	tr
+Türk	O	tr
+-	O	tr
+İş	O	tr
 Genel	O	tr
 Başka	O	tr
 .	O	tr
@@ -13929,8 +14398,8 @@ Dolar	O	tr
 ve	O	tr
 Mark	O	tr
 karşılığında	O	tr
-imza	B-IDIOM	tr
-atan	I-IDIOM	tr
+imza	O	tr
+atan	O	tr
 pahalı	O	tr
 oyuncuların	O	tr
 başında	O	tr
@@ -14012,7 +14481,8 @@ ve	O	tr
 Kostadinov	O	tr
 'a	O	tr
 toplam	O	tr
-759_milyar	O	tr
+759	O	tr
+milyar	O	tr
 verdi	O	tr
 .	O	tr
 
@@ -14022,7 +14492,8 @@ Saray	O	tr
 'ın	O	tr
 cebinden	O	tr
 ise	O	tr
-Van_Gobbel	O	tr
+Van	O	tr
+Gobbel	O	tr
 ,	O	tr
 Knup	O	tr
 ,	O	tr
@@ -14034,13 +14505,16 @@ Filipescu	O	tr
 ile	O	tr
 Friedel	O	tr
 için	O	tr
-710_milyar	O	tr
+710	O	tr
+milyar	O	tr
 çıktı	O	tr
 .	O	tr
 
 Trabzonspor	O	tr
 ,	O	tr
-1996_-_97	O	tr
+1996	O	tr
+-	O	tr
+97	O	tr
 sezonunun	O	tr
 başında	O	tr
 yabancı	O	tr
@@ -14064,8 +14538,8 @@ ve	O	tr
 Arçil	O	tr
 'le	O	tr
 yeniden	O	tr
-sözleşme	B-IDIOM	tr
-yaparken	I-IDIOM	tr
+sözleşme	O	tr
+yaparken	O	tr
 ,	O	tr
 Nemzadse	O	tr
 ile	O	tr
@@ -14080,7 +14554,8 @@ lira	O	tr
 Ancak	O	tr
 Trabzonspor	O	tr
 ,	O	tr
-Faruk_Özak	O	tr
+Faruk	O	tr
+Özak	O	tr
 döneminde	O	tr
 yaptığı	O	tr
 bu	O	tr
@@ -14092,16 +14567,17 @@ arasında	O	tr
 Başkan	O	tr
 M	O	tr
 .	O	tr
-Ali_Yılmaz	O	tr
+Ali	O	tr
+Yılmaz	O	tr
 'ın	O	tr
 isteği	O	tr
 doğrultusunda	O	tr
 yeni	O	tr
 yabancılar	O	tr
 için	O	tr
-arayış	B-IDIOM	tr
-içine	I-IDIOM	tr
-girdi	I-IDIOM	tr
+arayış	O	tr
+içine	O	tr
+girdi	O	tr
 .	O	tr
 
 Yabancı	O	tr
@@ -14129,8 +14605,8 @@ tam	O	tr
 yedi	O	tr
 futbolcuya	O	tr
 kadrosunda	O	tr
-yer	B-IDIOM	tr
-verdi	I-IDIOM	tr
+yer	O	tr
+verdi	O	tr
 .	O	tr
 
 Ancak	O	tr
@@ -14162,21 +14638,28 @@ G	O	tr
 .	O	tr
 Saray	O	tr
 ile	O	tr
-Başkent_takımı_G_._Birliği	O	tr
+Başkent	O	tr
+takımı	O	tr
+G	O	tr
+.	O	tr
+Birliği	O	tr
 izledi	O	tr
 .	O	tr
 
-Van_Gobbel	O	tr
+Van	O	tr
+Gobbel	O	tr
 ve	O	tr
 Friedel	O	tr
 'dan	O	tr
 vazgeçen	O	tr
-Cim_-_Bom	O	tr
+Cim	O	tr
+-	O	tr
+Bom	O	tr
 ,	O	tr
 Knup	O	tr
 'u	O	tr
-elden	B-IDIOM	tr
-çıkarmak	I-IDIOM	tr
+elden	O	tr
+çıkarmak	O	tr
 için	O	tr
 kulüp	O	tr
 arıyor	O	tr
@@ -14194,11 +14677,13 @@ Fire	O	tr
 -	O	tr
 Yön	O	tr
 :	O	tr
-Edward_Zwick	O	tr
+Edward	O	tr
+Zwick	O	tr
 /	O	tr
 Gör	O	tr
 :	O	tr
-Roger_Deakins	O	tr
+Roger	O	tr
+Deakins	O	tr
 /	O	tr
 Sen	O	tr
 :	O	tr
@@ -14209,27 +14694,33 @@ Duncan	O	tr
 /	O	tr
 Müz	O	tr
 :	O	tr
-James_Horner	O	tr
+James	O	tr
+Horner	O	tr
 /	O	tr
 Oyn	O	tr
 :	O	tr
-Denzel_Washington	O	tr
+Denzel	O	tr
+Washington	O	tr
 (	O	tr
 Yrb	O	tr
 .	O	tr
 
-Nat_Serling	O	tr
+Nat	O	tr
+Serling	O	tr
 )	O	tr
 ,	O	tr
-Meg_Ryan	O	tr
+Meg	O	tr
+Ryan	O	tr
 (	O	tr
 Yzb	O	tr
 .	O	tr
 
-Karen_Walden	O	tr
+Karen	O	tr
+Walden	O	tr
 )	O	tr
 ,	O	tr
-Michael_Moriarty	O	tr
+Michael	O	tr
+Moriarty	O	tr
 (	O	tr
 Gen	O	tr
 .	O	tr
@@ -14237,25 +14728,31 @@ Gen	O	tr
 Hersberg	O	tr
 )	O	tr
 ,	O	tr
-Lou_Diamond_Philipps	O	tr
+Lou	O	tr
+Diamond	O	tr
+Philipps	O	tr
 (	O	tr
 Monfriez	O	tr
 )	O	tr
 ,	O	tr
-Matt_Damon	O	tr
+Matt	O	tr
+Damon	O	tr
 (	O	tr
 Ilario	O	tr
 )	O	tr
 ,	O	tr
-Scott_Glen	O	tr
+Scott	O	tr
+Glen	O	tr
 (	O	tr
-Tony_Gartner	O	tr
+Tony	O	tr
+Gartner	O	tr
 )	O	tr
 .	O	tr
 
 KAHRAMANIMIZ	O	tr
 Yarbay	O	tr
-Nat_Serling	O	tr
+Nat	O	tr
+Serling	O	tr
 ,	O	tr
 tam	O	tr
 bir	O	tr
@@ -14278,8 +14775,8 @@ askeri	O	tr
 on	O	tr
 yedi	O	tr
 yıldır	O	tr
-görev	B-IDIOM	tr
-yapmaktadır	I-IDIOM	tr
+görev	O	tr
+yapmaktadır	O	tr
 .	O	tr
 
 Körfez	O	tr
@@ -14293,8 +14790,8 @@ içinde	O	tr
 bulunduğu	O	tr
 tankı	O	tr
 vurma	O	tr
-emri	B-IDIOM	tr
-verir	I-IDIOM	tr
+emri	O	tr
+verir	O	tr
 .	O	tr
 
 Savaştan	O	tr
@@ -14303,7 +14800,8 @@ sonra	O	tr
 şehit	O	tr
 kadın	O	tr
 yüzbaşı	O	tr
-Karen_Walden	O	tr
+Karen	O	tr
+Walden	O	tr
 'a	O	tr
 Cesaret	O	tr
 Madalyası	O	tr
@@ -14326,8 +14824,8 @@ gerçek	O	tr
 gizlendiği	O	tr
 için	O	tr
 vicdan	O	tr
-azabı	B-IDIOM	tr
-çeker	I-IDIOM	tr
+azabı	O	tr
+çeker	O	tr
 ,	O	tr
 bir	O	tr
 yandan	O	tr
@@ -14344,8 +14842,8 @@ nasıl	O	tr
 kurtardığı	O	tr
 ve	O	tr
 öldüğünü	O	tr
-ortaya	I-IDIOM	tr
-çıkarmaya	I-IDIOM	tr
+ortaya	O	tr
+çıkarmaya	O	tr
 çalışır	O	tr
 .	O	tr
 
@@ -14404,8 +14902,8 @@ indirgeniyor	O	tr
 Onları	O	tr
 öldürünce	O	tr
 sevinç	O	tr
-çığlıkları	B-IDIOM	tr
-atan	I-IDIOM	tr
+çığlıkları	O	tr
+atan	O	tr
 askerlerin	O	tr
 mutluluğunu	O	tr
 `	O	tr
@@ -14435,8 +14933,8 @@ helikopterden	O	tr
 kurtulanlara	O	tr
 ateş	O	tr
 ederken	O	tr
-kahkaha	B-IDIOM	tr
-atıyor	I-IDIOM	tr
+kahkaha	O	tr
+atıyor	O	tr
 .	O	tr
 
 Bu	O	tr
@@ -14457,8 +14955,8 @@ korumaya	O	tr
 çalışan	O	tr
 ABD	O	tr
 ordusu	O	tr
-ne	B-IDIOM	tr
-yapsın	I-IDIOM	tr
+ne	O	tr
+yapsın	O	tr
 .	O	tr
 
 Askerler	O	tr
@@ -14467,22 +14965,22 @@ eninde	O	tr
 sonunda	O	tr
 insan	O	tr
 ,	O	tr
-hata	B-IDIOM	tr
-işleyebilirler	I-IDIOM	tr
+hata	O	tr
+işleyebilirler	O	tr
 .	O	tr
 
 Basın	O	tr
-üstüne	B-IDIOM	tr
+üstüne	O	tr
 bu	O	tr
 kadar	O	tr
-gitmese	I-IDIOM	tr
+gitmese	O	tr
 ,	O	tr
 kamuoyunun	O	tr
 bir	O	tr
 kısmı	O	tr
 savaş	O	tr
-karşıtı	I-IDIOM	tr
-olmasa	I-IDIOM	tr
+karşıtı	O	tr
+olmasa	O	tr
 Pentagon	O	tr
 bazı	O	tr
 olayları	O	tr
@@ -14524,37 +15022,45 @@ Dogs	O	tr
 
 Yön	O	tr
 :	O	tr
-Michael_Lehmann	O	tr
+Michael	O	tr
+Lehmann	O	tr
 /	O	tr
 Gör	O	tr
 :	O	tr
-Robert_Brinkman	O	tr
+Robert	O	tr
+Brinkman	O	tr
 /	O	tr
 Sen	O	tr
 :	O	tr
-Audrey_Wells	O	tr
+Audrey	O	tr
+Wells	O	tr
 /	O	tr
 Müz	O	tr
 :	O	tr
-Howard_Shore	O	tr
+Howard	O	tr
+Shore	O	tr
 )	O	tr
 /	O	tr
 Oyn	O	tr
 :	O	tr
-Janeane_Garofalo	O	tr
+Janeane	O	tr
+Garofalo	O	tr
 (	O	tr
 Dr	O	tr
 .	O	tr
 
-Abby_Barnes	O	tr
+Abby	O	tr
+Barnes	O	tr
 )	O	tr
 ,	O	tr
-Uma_Turman	O	tr
+Uma	O	tr
+Turman	O	tr
 (	O	tr
 Noelle	O	tr
 )	O	tr
 ,	O	tr
-Ben_Chaplin	O	tr
+Ben	O	tr
+Chaplin	O	tr
 (	O	tr
 Brain	O	tr
 )	O	tr
@@ -14610,8 +15116,8 @@ kalan	O	tr
 bazı	O	tr
 kadınlarda	O	tr
 komplekse	O	tr
-yol	B-IDIOM	tr
-açıyor	I-IDIOM	tr
+yol	O	tr
+açıyor	O	tr
 .	O	tr
 
 Plastik	O	tr
@@ -14646,9 +15152,9 @@ işkencelere	O	tr
 tutuluyor	O	tr
 .	O	tr
 
-Lokmalarını	B-IDIOM	tr
+Lokmalarını	O	tr
 bile	O	tr
-sayan	I-IDIOM	tr
+sayan	O	tr
 kadınlar	O	tr
 ise	O	tr
 `	O	tr
@@ -14679,7 +15185,8 @@ programı	O	tr
 yapan	O	tr
 veteriner	O	tr
 hekim	O	tr
-Abby_Barnes	O	tr
+Abby	O	tr
+Barnes	O	tr
 da	O	tr
 `	O	tr
 kompleks	O	tr
@@ -14793,8 +15300,8 @@ adamlardandır	O	tr
 :	O	tr
 Dış	O	tr
 görünüşe	O	tr
-önem	B-IDIOM	tr
-vermez	I-IDIOM	tr
+önem	O	tr
+vermez	O	tr
 ,	O	tr
 onun	O	tr
 için	O	tr
@@ -14822,7 +15329,8 @@ da	O	tr
 iyi	O	tr
 .	O	tr
 
-Howard_Shore	O	tr
+Howard	O	tr
+Shore	O	tr
 'un	O	tr
 bestelediği	O	tr
 ezginin	O	tr
@@ -14852,7 +15360,9 @@ seçimi	O	tr
 
 Dil	O	tr
 Derneği	O	tr
-Ömer_Asım_Aksoy	O	tr
+Ömer	O	tr
+Asım	O	tr
+Aksoy	O	tr
 Ödülü	O	tr
 'nün	O	tr
 üçüncüsü	O	tr
@@ -14867,7 +15377,12 @@ verilecek	O	tr
 
 Ödüle	O	tr
 ,	O	tr
-1_Ocak_-_31_Aralık_1996	O	tr
+1	O	tr
+Ocak	O	tr
+-	O	tr
+31	O	tr
+Aralık	O	tr
+1996	O	tr
 tarihleri	O	tr
 arasında	O	tr
 yayımlanmış	O	tr
@@ -14897,14 +15412,16 @@ alanlardaki	O	tr
 bir	O	tr
 bilimsel	O	tr
 yapıt	O	tr
-aday	B-IDIOM	tr
-gösterilebilir	I-IDIOM	tr
+aday	O	tr
+gösterilebilir	O	tr
 .	O	tr
 
 Son	O	tr
 başvuru	O	tr
 tarihi	O	tr
-31_Mayıs_1997	O	tr
+31	O	tr
+Mayıs	O	tr
+1997	O	tr
 olan	O	tr
 ödüle	O	tr
 aday	O	tr
@@ -14913,7 +15430,8 @@ yapıttan	O	tr
 altı	O	tr
 tanesinin	O	tr
 "	O	tr
-Dil_Derneği	O	tr
+Dil	O	tr
+Derneği	O	tr
 -	O	tr
 Konur	O	tr
 Sok	O	tr
@@ -14948,7 +15466,8 @@ Tel	O	tr
 83	O	tr
 60	O	tr
 .	O	tr
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 Gülmece	O	tr
 Öykü	O	tr
 Yarışması	O	tr
@@ -14956,12 +15475,16 @@ Yarışması	O	tr
 
 Çağdaş	O	tr
 Yaşamı	O	tr
-Destekleme_derneği_Bakırköy_Şubesi	O	tr
+Destekleme	O	tr
+derneği	O	tr
+Bakırköy	O	tr
+Şubesi	O	tr
 'nce	O	tr
 1997	O	tr
 yılı	O	tr
 için	O	tr
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 adına	O	tr
 bur	O	tr
 gülmece	O	tr
@@ -15005,9 +15528,14 @@ koşuluyla	O	tr
 ,	O	tr
 "	O	tr
 ÇYDD	O	tr
-Rıfat_Ilgaz_Gülmece_Öykü_Yarışması	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
+Gülmece	O	tr
+Öykü	O	tr
+Yarışması	O	tr
 ,	O	tr
-İstanbul_Cad	O	tr
+İstanbul	O	tr
+Cad	O	tr
 .	O	tr
 ,	O	tr
 Havlucular	O	tr
@@ -15052,17 +15580,19 @@ kazanan	O	tr
 bütün	O	tr
 yazarlara	O	tr
 ayrıca	O	tr
-Çınar_Yayınları	O	tr
+Çınar	O	tr
+Yayınları	O	tr
 tarafından	O	tr
-Rıfat_Ilgaz	O	tr
+Rıfat	O	tr
+Ilgaz	O	tr
 'ın	O	tr
 bütün	O	tr
 eserlerinden	O	tr
 oluşan	O	tr
 birer	O	tr
 set	O	tr
-armağan	B-IDIOM	tr
-edilecek	I-IDIOM	tr
+armağan	O	tr
+edilecek	O	tr
 .	O	tr
 
 Tel	O	tr
@@ -15072,17 +15602,22 @@ Tel	O	tr
 67	O	tr
 09	O	tr
 .	O	tr
-Behçet_Aysan	O	tr
+Behçet	O	tr
+Aysan	O	tr
 Şiir	O	tr
 Ödülü	O	tr
 .	O	tr
 
-Türk_Tabipleri_Birliği	O	tr
+Türk	O	tr
+Tabipleri	O	tr
+Birliği	O	tr
 'nin	O	tr
 (	O	tr
 TTB	O	tr
 )	O	tr
-2_Temmuz_1993	O	tr
+2	O	tr
+Temmuz	O	tr
+1993	O	tr
 'te	O	tr
 Sivas	O	tr
 'ta	O	tr
@@ -15090,7 +15625,8 @@ yitirdiğimiz	O	tr
 ,	O	tr
 şair	O	tr
 Dr.	O	tr
-Behçet_Aysan	O	tr
+Behçet	O	tr
+Aysan	O	tr
 ve	O	tr
 36	O	tr
 insanımızın	O	tr
@@ -15099,7 +15635,8 @@ her	O	tr
 yıl	O	tr
 düzenlediği	O	tr
 "	O	tr
-Behçet_Aysan	O	tr
+Behçet	O	tr
+Aysan	O	tr
 Şiir	O	tr
 Ödülü	O	tr
 "	O	tr
@@ -15115,15 +15652,20 @@ kurulu	O	tr
 Arif	O	tr
 damar	O	tr
 ,	O	tr
-Şükran_Kurdakul	O	tr
+Şükran	O	tr
+Kurdakul	O	tr
 ,	O	tr
-Emin_Özdemir	O	tr
+Emin	O	tr
+Özdemir	O	tr
 ,	O	tr
-Ahmet_Cemal	O	tr
+Ahmet	O	tr
+Cemal	O	tr
 ,	O	tr
-Ahmet_Telli	O	tr
+Ahmet	O	tr
+Telli	O	tr
 ve	O	tr
-Ahmet_Erhan	O	tr
+Ahmet	O	tr
+Erhan	O	tr
 'dan	O	tr
 oluşan	O	tr
 yarışmaya	O	tr
@@ -15146,7 +15688,9 @@ katılınabilir	O	tr
 Son	O	tr
 katılma	O	tr
 tarihi	O	tr
-1_Nisan_1997	O	tr
+1	O	tr
+Nisan	O	tr
+1997	O	tr
 olup	O	tr
 ,	O	tr
 yarışmaya	O	tr
@@ -15167,7 +15711,8 @@ adresi	O	tr
 :	O	tr
 TTB	O	tr
 ,	O	tr
-Mithatpaşa_Cad	O	tr
+Mithatpaşa	O	tr
+Cad	O	tr
 .	O	tr
 ,	O	tr
 No	O	tr
@@ -15189,13 +15734,15 @@ Tel	O	tr
 56	O	tr
 .	O	tr
 
-FOLKLORAraştırmaları_Kurumu	O	tr
+FOLKLORAraştırmaları	O	tr
+Kurumu	O	tr
 ,	O	tr
 gazetemiz	O	tr
 yazarlarından	O	tr
 Prof	O	tr
 .	O	tr
-Talat_Halman	O	tr
+Talat	O	tr
+Halman	O	tr
 'a	O	tr
 "	O	tr
 Türk	O	tr
@@ -15209,7 +15756,9 @@ verdi	O	tr
 Kurum	O	tr
 Başkanı	O	tr
 Dr.	O	tr
-İrfan_Ünver_Nasrattınoğlu	O	tr
+İrfan	O	tr
+Ünver	O	tr
+Nasrattınoğlu	O	tr
 ,	O	tr
 ödül	O	tr
 gerekçesinde	O	tr
@@ -15241,7 +15790,8 @@ tasarısını	O	tr
 sunmuş	O	tr
 olmasının	O	tr
 ,	O	tr
-Yunus_Emre	O	tr
+Yunus	O	tr
+Emre	O	tr
 'yi	O	tr
 İngilizceye	O	tr
 çevirmesinin	O	tr
@@ -15249,9 +15799,11 @@ ve	O	tr
 Kültür	O	tr
 Bakanı	O	tr
 'yken	O	tr
-Milli_Folklor_Enstitüsüne	O	tr
-yaptığı	B-IDIOM	tr
-hizmetlerin	I-IDIOM	tr
+Milli	O	tr
+Folklor	O	tr
+Enstitüsüne	O	tr
+yaptığı	O	tr
+hizmetlerin	O	tr
 bulunduğunu	O	tr
 belirtti	O	tr
 .	O	tr
@@ -15264,11 +15816,13 @@ dost	O	tr
 :	O	tr
 Yunanlı	O	tr
 yazar	O	tr
-Elias_Petropulos	O	tr
+Elias	O	tr
+Petropulos	O	tr
 ve	O	tr
 Türk	O	tr
 ressam	O	tr
-Yüksel_Arslan	O	tr
+Yüksel	O	tr
+Arslan	O	tr
 .	O	tr
 
 Mine	O	tr
@@ -15280,7 +15834,8 @@ Saulnier	O	tr
 1928	O	tr
 Atina	O	tr
 doğumlu	O	tr
-Elias_Petropulos	O	tr
+Elias	O	tr
+Petropulos	O	tr
 ,	O	tr
 ülkesi	O	tr
 Yunanistan	O	tr
@@ -15307,7 +15862,8 @@ yazar	O	tr
 
 Yunanistan	O	tr
 'a	O	tr
-göçen_Anadolu	O	tr
+göçen	O	tr
+Anadolu	O	tr
 Rumlarının	O	tr
 kültürünü	O	tr
 konu	O	tr
@@ -15357,8 +15913,8 @@ Eşcinsellik	O	tr
 Sözlüğü	O	tr
 gibi	O	tr
 araştırmalara	O	tr
-imzasını	B-IDIOM	tr
-atan	I-IDIOM	tr
+imzasını	O	tr
+atan	O	tr
 Petropulos	O	tr
 ,	O	tr
 sayısı	O	tr
@@ -15386,20 +15942,24 @@ hapis	O	tr
 cezasıyla	O	tr
 sonuçlanan	O	tr
 sayısız	O	tr
-dava	I-IDIOM	tr
-açıldı	I-IDIOM	tr
+dava	O	tr
+açıldı	O	tr
 .	O	tr
 
-Yüksel_Arslan	O	tr
+Yüksel	O	tr
+Arslan	O	tr
 ,	O	tr
 1933	O	tr
 İstanbul	O	tr
 doğumlu	O	tr
 .	O	tr
 
-Mazhar_Şevket_İpşiroğlu	O	tr
+Mazhar	O	tr
+Şevket	O	tr
+İpşiroğlu	O	tr
 ve	O	tr
-Sabahattin_Eyüboğlu	O	tr
+Sabahattin	O	tr
+Eyüboğlu	O	tr
 'nun	O	tr
 ısrarıyla	O	tr
 resme	O	tr
@@ -15416,10 +15976,10 @@ Sıkıntılara	O	tr
 "	O	tr
 başlıklı	O	tr
 ilk	O	tr
-sergisini	B-IDIOM	tr
+sergisini	O	tr
 1955	O	tr
 'te	O	tr
-açan	I-IDIOM	tr
+açan	O	tr
 sanatçı	O	tr
 ,	O	tr
 İstanbul	O	tr
@@ -15431,12 +15991,13 @@ Phallisme	O	tr
 adlı	O	tr
 sergiden	O	tr
 sonra	O	tr
-Andre_Breton	O	tr
+Andre	O	tr
+Breton	O	tr
 tarafından	O	tr
 Paris	O	tr
 'e	O	tr
-davet	I-IDIOM	tr
-edildi	I-IDIOM	tr
+davet	O	tr
+edildi	O	tr
 .	O	tr
 
 Halen	O	tr
@@ -15457,8 +16018,8 @@ Toprak	O	tr
 ve	O	tr
 kök	O	tr
 boyalarla	O	tr
-yaptığı	B-IDIOM	tr
-çalışmalarına	I-IDIOM	tr
+yaptığı	O	tr
+çalışmalarına	O	tr
 "	O	tr
 Artür	O	tr
 "	O	tr
@@ -15466,7 +16027,8 @@ adını	O	tr
 veren	O	tr
 sanatçı	O	tr
 ,	O	tr
-Karl_Marx	O	tr
+Karl	O	tr
+Marx	O	tr
 'ın	O	tr
 eserinden	O	tr
 esinlendiği	O	tr
@@ -15513,7 +16075,8 @@ yayınlandı	O	tr
 .	O	tr
 
 Arkadaşımız	O	tr
-Mine_Saulnier	O	tr
+Mine	O	tr
+Saulnier	O	tr
 ,	O	tr
 dostlukları	O	tr
 dillere	O	tr
@@ -15672,9 +16235,14 @@ tıktılar	O	tr
 götürdüler	O	tr
 .	O	tr
 
-1969_-_70_yıllarında_17_ay	O	tr
-hapis	B-IDIOM	tr
-yattım	I-IDIOM	tr
+1969	O	tr
+-	O	tr
+70	O	tr
+yıllarında	O	tr
+17	O	tr
+ay	O	tr
+hapis	O	tr
+yattım	O	tr
 .	O	tr
 
 Siyasilerle	O	tr
@@ -15701,8 +16269,8 @@ yayınladım	O	tr
 .	O	tr
 
 Tekrar	O	tr
-içeri	B-IDIOM	tr
-aldılar	I-IDIOM	tr
+içeri	O	tr
+aldılar	O	tr
 ,	O	tr
 bu	O	tr
 kez	O	tr
@@ -15718,8 +16286,8 @@ her	O	tr
 kitap	O	tr
 için	O	tr
 hapis	O	tr
-cezası	B-IDIOM	tr
-verdiler	I-IDIOM	tr
+cezası	O	tr
+verdiler	O	tr
 .	O	tr
 
 Toplam	O	tr
@@ -15763,8 +16331,8 @@ Yunanistan	O	tr
 yıl	O	tr
 geçince	O	tr
 hepsi	O	tr
-düştü	B-IDIOM	tr
-davaların	I-IDIOM	tr
+düştü	O	tr
+davaların	O	tr
 .	O	tr
 
 Askeri	O	tr
@@ -15841,7 +16409,8 @@ dönmeyi	O	tr
 hiç	O	tr
 düşünmüyorum	O	tr
 .	O	tr
-Yüksel_Arslan	O	tr
+Yüksel	O	tr
+Arslan	O	tr
 ,	O	tr
 siz	O	tr
 Fransa	O	tr
@@ -15865,21 +16434,22 @@ YA	O	tr
 1959	O	tr
 yılında	O	tr
 ,	O	tr
-Andre_Breton	O	tr
+Andre	O	tr
+Breton	O	tr
 bana	O	tr
 bir	O	tr
 mektup	O	tr
 yazarak	O	tr
 Paris	O	tr
 'te	O	tr
-açılacak	B-IDIOM	tr
+açılacak	O	tr
 olan	O	tr
 "	O	tr
 Gerçeküstücülük	O	tr
 "	O	tr
-sergisine	I-IDIOM	tr
-davet	I-IDIOM	tr
-etti	I-IDIOM	tr
+sergisine	O	tr
+davet	O	tr
+etti	O	tr
 .	O	tr
 Serginin	O	tr
 konusu	O	tr
@@ -15892,9 +16462,10 @@ Paris	O	tr
 'te	O	tr
 bir	O	tr
 galeri	O	tr
-sahibi	I-IDIOM	tr
-olan	I-IDIOM	tr
-Raymond_Cordier	O	tr
+sahibi	O	tr
+olan	O	tr
+Raymond	O	tr
+Cordier	O	tr
 ,	O	tr
 bir	O	tr
 Amerikalı	O	tr
@@ -15907,8 +16478,8 @@ Sade	O	tr
 adlı	O	tr
 tablomu	O	tr
 görüp	O	tr
-satın	I-IDIOM	tr
-almış	I-IDIOM	tr
+satın	O	tr
+almış	O	tr
 ve	O	tr
 Breton	O	tr
 'a	O	tr
@@ -15941,15 +16512,16 @@ gönderebildim	O	tr
 'de	O	tr
 Cordier	O	tr
 ,	O	tr
-sergi	I-IDIOM	tr
-açmam	I-IDIOM	tr
+sergi	O	tr
+açmam	O	tr
 için	O	tr
-davet	I-IDIOM	tr
-etti	I-IDIOM	tr
+davet	O	tr
+etti	O	tr
 .	O	tr
 Bu	O	tr
 kez	O	tr
-200_doları	O	tr
+200	O	tr
+doları	O	tr
 bulup	O	tr
 buluşturup	O	tr
 geldim	O	tr
@@ -15961,8 +16533,8 @@ kaldım	O	tr
 Sizin	O	tr
 için	O	tr
 de	O	tr
-dava	I-IDIOM	tr
-açılmış	I-IDIOM	tr
+dava	O	tr
+açılmış	O	tr
 mıydı	O	tr
 Türkiye	O	tr
 'de	O	tr
@@ -15975,8 +16547,8 @@ ama	O	tr
 ben	O	tr
 Elias	O	tr
 gibi	O	tr
-hapis	I-IDIOM	tr
-yatmadım	I-IDIOM	tr
+hapis	O	tr
+yatmadım	O	tr
 .	O	tr
 1967	O	tr
 yılında	O	tr
@@ -15987,8 +16559,8 @@ Kültür	O	tr
 Merkezi	O	tr
 'nde	O	tr
 bir	O	tr
-sergi	I-IDIOM	tr
-açmıştım	I-IDIOM	tr
+sergi	O	tr
+açmıştım	O	tr
 .	O	tr
 Biri	O	tr
 ,	O	tr
@@ -15998,8 +16570,8 @@ sergileniyor	O	tr
 .	O	tr
 "	O	tr
 diye	O	tr
-ihbar	I-IDIOM	tr
-etmiş	I-IDIOM	tr
+ihbar	O	tr
+etmiş	O	tr
 .	O	tr
 Öğle	O	tr
 zamanı	O	tr
@@ -16021,7 +16593,8 @@ Ankara	O	tr
 bürosuna	O	tr
 gittim	O	tr
 .	O	tr
-Orhan_Duru	O	tr
+Orhan	O	tr
+Duru	O	tr
 savcıya	O	tr
 telefon	O	tr
 etti	O	tr
@@ -16031,8 +16604,8 @@ Evet	O	tr
 ,	O	tr
 tablolara	O	tr
 biz	O	tr
-el	I-IDIOM	tr
-koyduk	I-IDIOM	tr
+el	O	tr
+koyduk	O	tr
 ,	O	tr
 bu	O	tr
 adam	O	tr
@@ -16081,8 +16654,8 @@ Ben	O	tr
 ,	O	tr
 "	O	tr
 Kara	O	tr
-mizah	I-IDIOM	tr
-yapıyorum	I-IDIOM	tr
+mizah	O	tr
+yapıyorum	O	tr
 ,	O	tr
 "	O	tr
 dedim	O	tr
@@ -16092,10 +16665,11 @@ bir	O	tr
 tablomun	O	tr
 Fransız	O	tr
 cumhurbaşkanı	O	tr
-George_Pompidou	O	tr
+George	O	tr
+Pompidou	O	tr
 tarafından	O	tr
-satın	I-IDIOM	tr
-alındığını	I-IDIOM	tr
+satın	O	tr
+alındığını	O	tr
 ve	O	tr
 Elysee	O	tr
 sarayına	O	tr
@@ -16140,8 +16714,8 @@ YA	O	tr
 -	O	tr
 Ben	O	tr
 de	O	tr
-pişman	I-IDIOM	tr
-olmadım	I-IDIOM	tr
+pişman	O	tr
+olmadım	O	tr
 .	O	tr
 İkiniz	O	tr
 de	O	tr
@@ -16232,8 +16806,8 @@ Ancak	O	tr
 sanat	O	tr
 olarak	O	tr
 neyi	O	tr
-icra	I-IDIOM	tr
-etmeyi	I-IDIOM	tr
+icra	O	tr
+etmeyi	O	tr
 seviyorsa	O	tr
 ,	O	tr
 onu	O	tr
@@ -16282,15 +16856,16 @@ olabilir	O	tr
 O	O	tr
 kadar	O	tr
 .	O	tr
-Yüksel_Arslan	O	tr
+Yüksel	O	tr
+Arslan	O	tr
 ,	O	tr
 siz	O	tr
 psikolojik	O	tr
 hastalıkları	O	tr
 sanat	O	tr
 eseri	O	tr
-haline	I-IDIOM	tr
-getirmekle	I-IDIOM	tr
+haline	O	tr
+getirmekle	O	tr
 ünlüsünüz	O	tr
 .	O	tr
 Özellikle	O	tr
@@ -16400,8 +16975,8 @@ erotik	O	tr
 boyut	O	tr
 önemli	O	tr
 bir	O	tr
-yer	I-IDIOM	tr
-tutuyor	I-IDIOM	tr
+yer	O	tr
+tutuyor	O	tr
 .	O	tr
 Niçin	O	tr
 erotizm	O	tr
@@ -16536,8 +17111,8 @@ ve	O	tr
 hiç	O	tr
 bir	O	tr
 şeyi	O	tr
-ciddiye	I-IDIOM	tr
-almıyorsunuz	I-IDIOM	tr
+ciddiye	O	tr
+almıyorsunuz	O	tr
 .	O	tr
 Oysa	O	tr
 yaşamlarınıza	O	tr
@@ -16674,8 +17249,8 @@ yazarak	O	tr
 geçiriyorum	O	tr
 .	O	tr
 Yani	O	tr
-oruç	I-IDIOM	tr
-tutup	I-IDIOM	tr
+oruç	O	tr
+tutup	O	tr
 yemek	O	tr
 tarifleri	O	tr
 yapıyorsunuz	O	tr
@@ -16795,8 +17370,8 @@ ortaya	O	tr
 İşgal	O	tr
 "	O	tr
 sözüne	O	tr
-dikkatinizi	I-IDIOM	tr
-çekerim	I-IDIOM	tr
+dikkatinizi	O	tr
+çekerim	O	tr
 .	O	tr
 Tüm	O	tr
 diğer	O	tr
@@ -16806,8 +17381,8 @@ yazarları	O	tr
 Selanik	O	tr
 'in	O	tr
 Yunan	O	tr
-eline	I-IDIOM	tr
-geçmesini	I-IDIOM	tr
+eline	O	tr
+geçmesini	O	tr
 "	O	tr
 Kurtuluş	O	tr
 "	O	tr
@@ -16821,8 +17396,8 @@ kavramına	O	tr
 karşı	O	tr
 ,	O	tr
 şu	O	tr
-soruyu	I-IDIOM	tr
-soruyordum	I-IDIOM	tr
+soruyu	O	tr
+soruyordum	O	tr
 hep	O	tr
 :	O	tr
 Kim	O	tr
@@ -16843,8 +17418,8 @@ Yunanlılar	O	tr
 hektarlık	O	tr
 bir	O	tr
 mezarlığı	O	tr
-talan	I-IDIOM	tr
-ettiler	I-IDIOM	tr
+talan	O	tr
+ettiler	O	tr
 .	O	tr
 Bütün	O	tr
 bu	O	tr
@@ -16852,7 +17427,8 @@ fotoğraflar	O	tr
 ,	O	tr
 bugün	O	tr
 Fransız	O	tr
-Milli_Kütüphanesi	O	tr
+Milli	O	tr
+Kütüphanesi	O	tr
 'ndedir	O	tr
 .	O	tr
 YA	O	tr
@@ -16867,14 +17443,15 @@ Bizde	O	tr
 de	O	tr
 6	O	tr
 -	O	tr
-7_Eylül	O	tr
+7	O	tr
+Eylül	O	tr
 'de	O	tr
 özellikle	O	tr
 ,	O	tr
 epeyce	O	tr
 kilise	O	tr
-tahrip	I-IDIOM	tr
-ettiler	I-IDIOM	tr
+tahrip	O	tr
+ettiler	O	tr
 .	O	tr
 Elias	O	tr
 ,	O	tr
@@ -16997,8 +17574,8 @@ ilericiydiler	O	tr
 .	O	tr
 
 Yunanlılar	O	tr
-nefret	B-IDIOM	tr
-etti	I-IDIOM	tr
+nefret	O	tr
+etti	O	tr
 onlardan	O	tr
 .	O	tr
 
@@ -17013,7 +17590,8 @@ var	O	tr
 
 Küçükken	O	tr
 ,	O	tr
-Eyüp_Bahariye	O	tr
+Eyüp	O	tr
+Bahariye	O	tr
 'de	O	tr
 en	O	tr
 iyi	O	tr
@@ -17028,7 +17606,9 @@ Yannis	O	tr
 
 6	O	tr
 -	O	tr
-7_Eylül_1959	O	tr
+7	O	tr
+Eylül	O	tr
+1959	O	tr
 olaylarından	O	tr
 sonra	O	tr
 ,	O	tr
@@ -17037,8 +17617,8 @@ Yannis	O	tr
 ailesi	O	tr
 Yunanistan	O	tr
 'a	O	tr
-göç	B-IDIOM	tr
-etti	I-IDIOM	tr
+göç	O	tr
+etti	O	tr
 .	O	tr
 
 Yannis	O	tr
@@ -17098,8 +17678,8 @@ vardı	O	tr
 toplumu	O	tr
 ,	O	tr
 politikacılar	O	tr
-düşman	B-IDIOM	tr
-etti	I-IDIOM	tr
+düşman	O	tr
+etti	O	tr
 birbirlerine	O	tr
 .	O	tr
 
@@ -17113,8 +17693,8 @@ milliyetçilik	O	tr
 olarak	O	tr
 sunuldu	O	tr
 ve	O	tr
-kabul	B-IDIOM	tr
-ettirildi	I-IDIOM	tr
+kabul	O	tr
+ettirildi	O	tr
 iki	O	tr
 ülke	O	tr
 halkına	O	tr
@@ -17220,8 +17800,8 @@ giyim	O	tr
 ve	O	tr
 gelenek	O	tr
 farklılıkları	O	tr
-dikkatimi	B-IDIOM	tr
-çekerdi	I-IDIOM	tr
+dikkatimi	O	tr
+çekerdi	O	tr
 hep	O	tr
 .	O	tr
 
@@ -17235,8 +17815,8 @@ babam	O	tr
 bir	O	tr
 Türk	O	tr
 evi	O	tr
-satın	B-IDIOM	tr
-aldı	I-IDIOM	tr
+satın	O	tr
+aldı	O	tr
 .	O	tr
 
 Benim	O	tr
@@ -17394,8 +17974,8 @@ Okulda	O	tr
 ,	O	tr
 göçmenin	O	tr
 söyledikleri	O	tr
-kafamı	B-IDIOM	tr
-karıştırıyordu	I-IDIOM	tr
+kafamı	O	tr
+karıştırıyordu	O	tr
 .	O	tr
 
 Bir	O	tr
@@ -17552,9 +18132,12 @@ sağlık	O	tr
 hizmetleri	O	tr
 için	O	tr
 günde	O	tr
-2_.6_milyar_dolar	O	tr
-harcama	B-IDIOM	tr
-yapılıyor	I-IDIOM	tr
+2	O	tr
+.6	O	tr
+milyar	O	tr
+dolar	O	tr
+harcama	O	tr
+yapılıyor	O	tr
 .	O	tr
 
 Bu	O	tr
@@ -17596,8 +18179,8 @@ günde	O	tr
 .87	O	tr
 milyon	O	tr
 kişi	O	tr
-ziyaret	B-IDIOM	tr
-ederken	I-IDIOM	tr
+ziyaret	O	tr
+ederken	O	tr
 ,	O	tr
 hastanelerin	O	tr
 acil	O	tr
@@ -17640,8 +18223,8 @@ ve	O	tr
 kişi	O	tr
 AIDS	O	tr
 'e	O	tr
-kurban	B-IDIOM	tr
-gidiyor	I-IDIOM	tr
+kurban	O	tr
+gidiyor	O	tr
 .	O	tr
 
 2	O	tr
@@ -17658,8 +18241,8 @@ yitirirken	O	tr
 1471	O	tr
 kişi	O	tr
 kansere	O	tr
-yenik	B-IDIOM	tr
-düşüyor	I-IDIOM	tr
+yenik	O	tr
+düşüyor	O	tr
 .	O	tr
 
 Günde	O	tr
@@ -17672,8 +18255,8 @@ kazaların	O	tr
 kişinin	O	tr
 de	O	tr
 cinayetlerin	O	tr
-kurbanı	B-IDIOM	tr
-olduğu	I-IDIOM	tr
+kurbanı	O	tr
+olduğu	O	tr
 ABD	O	tr
 'de	O	tr
 ,	O	tr
@@ -17744,13 +18327,19 @@ YAŞAMDAN	O	tr
 Sinema	O	tr
 gişelerine	O	tr
 hergün	O	tr
-146_.8_milyon_dolar	O	tr
+146	O	tr
+.8	O	tr
+milyon	O	tr
+dolar	O	tr
 ödeyen	O	tr
 ,	O	tr
 piyango	O	tr
 biletleri	O	tr
 için	O	tr
-78_.1_milyon_dolar	O	tr
+78	O	tr
+.1	O	tr
+milyon	O	tr
+dolar	O	tr
 harcayan	O	tr
 Amerikalılar	O	tr
 ,	O	tr
@@ -17759,20 +18348,25 @@ yazılım	O	tr
 programları	O	tr
 için	O	tr
 günde	O	tr
-18_.4_milyon_dolar	O	tr
+18	O	tr
+.4	O	tr
+milyon	O	tr
+dolar	O	tr
 ,	O	tr
 kitaplar	O	tr
 için	O	tr
-65_.2_milyon_dolar	O	tr
+65	O	tr
+.2	O	tr
+milyon	O	tr
+dolar	O	tr
 ,	O	tr
 eğlence	O	tr
 parkları	O	tr
 için	O	tr
 de	O	tr
-16_.2_milyon__	O	tr
 dolarlık	O	tr
-harcamada	B-IDIOM	tr
-bulunuyor	I-IDIOM	tr
+harcamada	O	tr
+bulunuyor	O	tr
 .	O	tr
 
 ABD	O	tr
@@ -17922,15 +18516,14 @@ gün	O	tr
 10	O	tr
 milyon	O	tr
 kez	O	tr
-telefon	B-IDIOM	tr
-ediliyor	I-IDIOM	tr
+telefon	O	tr
+ediliyor	O	tr
 .	O	tr
 
 Her	O	tr
 gün	O	tr
 yapılan	O	tr
 2	O	tr
-.3_milyar__	O	tr
 dolarlık	O	tr
 mal	O	tr
 ve	O	tr
@@ -17938,7 +18531,6 @@ hizmet	O	tr
 ihracata	O	tr
 karşılık	O	tr
 ,	O	tr
-2_.6_milyar__	O	tr
 dolarlık	O	tr
 ithalat	O	tr
 gerçekleşiyor	O	tr
@@ -17970,13 +18562,17 @@ ABD	O	tr
 reklam	O	tr
 için	O	tr
 günde	O	tr
-411_milyon_dolar	O	tr
+411	O	tr
+milyon	O	tr
+dolar	O	tr
 ,	O	tr
 araştırma	O	tr
 ve	O	tr
 geliştirme	O	tr
 için	O	tr
-463_milyon_dolar	O	tr
+463	O	tr
+milyon	O	tr
+dolar	O	tr
 harcanıyor	O	tr
 .	O	tr
 
@@ -18027,14 +18623,17 @@ hükümetlerinin	O	tr
 günlük	O	tr
 harcamaları	O	tr
 2	O	tr
-.1_milyar	O	tr
+.1	O	tr
+milyar	O	tr
 ,	O	tr
 federal	O	tr
 yönetimin	O	tr
 günlük	O	tr
 harcamaları	O	tr
 4	O	tr
-.2_milyar_dolara	O	tr
+.2	O	tr
+milyar	O	tr
+dolara	O	tr
 ulaşıyor	O	tr
 .	O	tr
 
@@ -18046,15 +18645,18 @@ savunma	O	tr
 için	O	tr
 her	O	tr
 gün	O	tr
-771_.5_milyon_dolar	O	tr
+771	O	tr
+.5	O	tr
+milyon	O	tr
+dolar	O	tr
 para	O	tr
 harcıyor	O	tr
 .	O	tr
 
-Piyasaya	B-IDIOM	tr
+Piyasaya	O	tr
 yılan	O	tr
 zehiri	O	tr
-sürmeye	I-IDIOM	tr
+sürmeye	O	tr
 kalkan	O	tr
 iki	O	tr
 şebeke	O	tr
@@ -18110,19 +18712,20 @@ Rusya	O	tr
 getirdikleri	O	tr
 zehirinin	O	tr
 tüpünü	O	tr
-150_dolardan	O	tr
+150	O	tr
+dolardan	O	tr
 pisayasa	O	tr
 sürmeye	O	tr
 kalkışan	O	tr
 çete	O	tr
 üyeleri	O	tr
-gözaltına	B-IDIOM	tr
-alındı	I-IDIOM	tr
+gözaltına	O	tr
+alındı	O	tr
 .	O	tr
 
 Polis	O	tr
-tuzak	B-IDIOM	tr
-kurdu	I-IDIOM	tr
+tuzak	O	tr
+kurdu	O	tr
 .	O	tr
 
 Kars	O	tr
@@ -18167,8 +18770,8 @@ polis	O	tr
 operasyonda	O	tr
 9	O	tr
 kişiyi	O	tr
-gözaltına	B-IDIOM	tr
-aldı	I-IDIOM	tr
+gözaltına	O	tr
+aldı	O	tr
 .	O	tr
 
 Çete	O	tr
@@ -18193,7 +18796,8 @@ Bursa	O	tr
 Emniyet	O	tr
 Müdür	O	tr
 Yardımcısı	O	tr
-İsmail_Özdemir	O	tr
+İsmail	O	tr
+Özdemir	O	tr
 ,	O	tr
 "	O	tr
 Zehir	O	tr
@@ -18207,8 +18811,8 @@ taktirde	O	tr
 çok	O	tr
 kötü	O	tr
 sonuçlar	O	tr
-ortaya	B-IDIOM	tr
-çıkar	I-IDIOM	tr
+ortaya	O	tr
+çıkar	O	tr
 .	O	tr
 Bu	O	tr
 nedenle	O	tr
@@ -18224,7 +18828,8 @@ zehiri	O	tr
 de	O	tr
 incelenmek	O	tr
 üzere	O	tr
-Tıp_Fakültesi	O	tr
+Tıp	O	tr
+Fakültesi	O	tr
 'ne	O	tr
 gönderildi	O	tr
 "	O	tr
@@ -18232,13 +18837,15 @@ diye	O	tr
 konuştu	O	tr
 .	O	tr
 
-Cem_KAÇMAZ	O	tr
+Cem	O	tr
+KAÇMAZ	O	tr
 .	O	tr
 
 MİLLİ	O	tr
 Eğitim	O	tr
 Bakanı	O	tr
-Mehmet_Sağlam	O	tr
+Mehmet	O	tr
+Sağlam	O	tr
 'ın	O	tr
 üniversiteye	O	tr
 giriş	O	tr
@@ -18254,7 +18861,8 @@ getiriyor	O	tr
 
 ÖSYM	O	tr
 Başkanı	O	tr
-Fethi_Toker	O	tr
+Fethi	O	tr
+Toker	O	tr
 ,	O	tr
 yeni	O	tr
 sistemle	O	tr
@@ -18338,11 +18946,12 @@ Sınavsız	O	tr
 girişin	O	tr
 mümkün	O	tr
 olmadığını	O	tr
-ifade	B-IDIOM	tr
-eden	I-IDIOM	tr
+ifade	O	tr
+eden	O	tr
 ÖSYM	O	tr
 Başkanı	O	tr
-Fethi_Toker	O	tr
+Fethi	O	tr
+Toker	O	tr
 ,	O	tr
 "	O	tr
 Yeni	O	tr
@@ -18364,14 +18973,15 @@ girişte	O	tr
 ortaöğretimde	O	tr
 not	O	tr
 sistemi	O	tr
-yüzde_50	O	tr
+yüzde	O	tr
+50	O	tr
 ağırlıklı	O	tr
 olarak	O	tr
 değerlendirilerek	O	tr
 ,	O	tr
 önemli	O	tr
-hale	I-IDIOM	tr
-getiriliyor	I-IDIOM	tr
+hale	O	tr
+getiriliyor	O	tr
 .	O	tr
 Bu	O	tr
 sağlıklı	O	tr
@@ -18448,8 +19058,8 @@ alınacak	O	tr
 Bir	O	tr
 de	O	tr
 yetenek	O	tr
-sınavı	B-IDIOM	tr
-yapılacağı	I-IDIOM	tr
+sınavı	O	tr
+yapılacağı	O	tr
 söyleniyor	O	tr
 .	O	tr
 Daha	O	tr
@@ -18488,7 +19098,8 @@ konuştu	O	tr
 
 Bulgaristan	O	tr
 Cumhurbaşkanı	O	tr
-Jelu_Jelev	O	tr
+Jelu	O	tr
+Jelev	O	tr
 ,	O	tr
 ülkenin	O	tr
 "	O	tr
@@ -18515,12 +19126,13 @@ SERVİSİ	O	tr
 
 BULGARİSTAN	O	tr
 Cumhurbaşkanı	O	tr
-Jelu_Jelev	O	tr
+Jelu	O	tr
+Jelev	O	tr
 ,	O	tr
 "	O	tr
-karşı	B-IDIOM	tr
-karşıya	I-IDIOM	tr
-bulundukları	I-IDIOM	tr
+karşı	O	tr
+karşıya	O	tr
+bulundukları	O	tr
 ekonomik	O	tr
 sorunlar	O	tr
 "	O	tr
@@ -18567,9 +19179,9 @@ adına	O	tr
 ,	O	tr
 durumdan	O	tr
 "	O	tr
-utanç	B-IDIOM	tr
+utanç	O	tr
 "	O	tr
-duyduğunu	I-IDIOM	tr
+duyduğunu	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -18593,7 +19205,8 @@ Halen	O	tr
 eski	O	tr
 komünistlerin	O	tr
 "	O	tr
-Sosyalist_Parti	O	tr
+Sosyalist	O	tr
+Parti	O	tr
 "	O	tr
 adı	O	tr
 ile	O	tr
@@ -18614,7 +19227,8 @@ görünümünde	O	tr
 
 Yıllık	O	tr
 enflasyonun	O	tr
-yüzde_300	O	tr
+yüzde	O	tr
+300	O	tr
 'ün	O	tr
 üzerinde	O	tr
 olduğu	O	tr
@@ -18657,11 +19271,12 @@ Kuru	O	tr
 ekmek	O	tr
 sıkıntısından	O	tr
 bile	O	tr
-söz	B-IDIOM	tr
-edilen	I-IDIOM	tr
+söz	O	tr
+edilen	O	tr
 ülkede	O	tr
 halkın	O	tr
-yüzde_80	O	tr
+yüzde	O	tr
+80	O	tr
 'i	O	tr
 "	O	tr
 yoksulluk	O	tr
@@ -18681,8 +19296,8 @@ SERVİSİ	O	tr
 SON	O	tr
 yılların	O	tr
 modası	O	tr
-haline	B-IDIOM	tr
-gelen	I-IDIOM	tr
+haline	O	tr
+gelen	O	tr
 "	O	tr
 ayrılıkçı	O	tr
 hareketler	O	tr
@@ -18712,13 +19327,15 @@ yoğunlaşan	O	tr
 Grönland	O	tr
 'ın	O	tr
 Başbakanı	O	tr
-Lars_Emil_Johannsen	O	tr
+Lars	O	tr
+Emil	O	tr
+Johannsen	O	tr
 ,	O	tr
 önceki	O	tr
 gün	O	tr
-yaptığı	B-IDIOM	tr
+yaptığı	O	tr
 bir	O	tr
-açıklamada	I-IDIOM	tr
+açıklamada	O	tr
 ,	O	tr
 Ada	O	tr
 halkı	O	tr
@@ -18824,8 +19441,8 @@ Km	O	tr
 .	O	tr
 kare	O	tr
 )	O	tr
-sahip	B-IDIOM	tr
-olan	I-IDIOM	tr
+sahip	O	tr
+olan	O	tr
 ve	O	tr
 Eskimo	O	tr
 kültürü	O	tr
@@ -18918,13 +19535,14 @@ Ada	O	tr
 Danimarka	O	tr
 vali	O	tr
 ile	O	tr
-temsil	B-IDIOM	tr
-ediliyor	I-IDIOM	tr
+temsil	O	tr
+ediliyor	O	tr
 .	O	tr
 
 Daha	O	tr
 önce	O	tr
-Avrupa_Topluluğu	O	tr
+Avrupa	O	tr
+Topluluğu	O	tr
 üyesi	O	tr
 de	O	tr
 olan	O	tr
@@ -19014,8 +19632,8 @@ tarafından	O	tr
 gerçekleştirildiği	O	tr
 konusunda	O	tr
 bir	O	tr
-açıklama	B-IDIOM	tr
-yapılmadı	I-IDIOM	tr
+açıklama	O	tr
+yapılmadı	O	tr
 .	O	tr
 
 Şam	O	tr
@@ -19033,8 +19651,8 @@ günü	O	tr
 sıralarında	O	tr
 Baramki	O	tr
 semtinde	O	tr
-meydana	B-IDIOM	tr
-geldi	I-IDIOM	tr
+meydana	O	tr
+geldi	O	tr
 .	O	tr
 
 Ajanslar	O	tr
@@ -19063,8 +19681,8 @@ ardından	O	tr
 bölgede	O	tr
 olağanüstü	O	tr
 güvenlik	O	tr
-önlemleri	B-IDIOM	tr
-alındığını	I-IDIOM	tr
+önlemleri	O	tr
+alındığını	O	tr
 kaydetti	O	tr
 .	O	tr
 
@@ -19081,7 +19699,10 @@ tanığı	O	tr
 ise	O	tr
 ,	O	tr
 sadece	O	tr
-El_-_Camia_Hastanesi	O	tr
+El	O	tr
+-	O	tr
+Camia	O	tr
+Hastanesi	O	tr
 'ne	O	tr
 15	O	tr
 ceset	O	tr
@@ -19115,10 +19736,12 @@ ve	O	tr
 minibüs	O	tr
 durağı	O	tr
 olan	O	tr
-El_İntilak	O	tr
+El	O	tr
+İntilak	O	tr
 'ta	O	tr
 ,	O	tr
-Trans_Tours	O	tr
+Trans	O	tr
+Tours	O	tr
 şirketine	O	tr
 ait	O	tr
 bir	O	tr
@@ -19136,8 +19759,8 @@ söyledi	O	tr
 Otobüsün	O	tr
 tavanını	O	tr
 tamamen	O	tr
-tahrip	B-IDIOM	tr
-eden	I-IDIOM	tr
+tahrip	O	tr
+eden	O	tr
 patlama	O	tr
 sırasında	O	tr
 ,	O	tr
@@ -19154,10 +19777,10 @@ yaralandığı	O	tr
 ,	O	tr
 ayrıca	O	tr
 binaların	O	tr
-hasar	I-IDIOM	tr
-gördüğü	I-IDIOM	tr
-öne	I-IDIOM	tr
-sürüldü	I-IDIOM	tr
+hasar	O	tr
+gördüğü	O	tr
+öne	O	tr
+sürüldü	O	tr
 .	O	tr
 
 Patlamanın	O	tr
@@ -19212,8 +19835,8 @@ gelen	O	tr
 patlamalardan	O	tr
 Türkiye	O	tr
 'yi	O	tr
-sorumlu	B-IDIOM	tr
-tuttuğunu	I-IDIOM	tr
+sorumlu	O	tr
+tuttuğunu	O	tr
 kaydetti	O	tr
 .	O	tr
 
@@ -19227,8 +19850,8 @@ Suriye	O	tr
 güçleri	O	tr
 bombalı	O	tr
 saldırılara	O	tr
-hedef	B-IDIOM	tr
-olmuştu	I-IDIOM	tr
+hedef	O	tr
+olmuştu	O	tr
 .	O	tr
 
 Suriyeli	O	tr
@@ -19248,8 +19871,8 @@ basın	O	tr
 da	O	tr
 patlama	O	tr
 konusunda	O	tr
-haber	B-IDIOM	tr
-vermedi	I-IDIOM	tr
+haber	O	tr
+vermedi	O	tr
 .	O	tr
 
 Doğu	O	tr
@@ -19276,8 +19899,8 @@ hakkında	O	tr
 istihbarat	O	tr
 vermeye	O	tr
 zorladığı	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 BERLİN	O	tr
@@ -19311,8 +19934,8 @@ kullandığı	O	tr
 konusunda	O	tr
 yeni	O	tr
 gerçekler	O	tr
-ortaya	B-IDIOM	tr
-çıkardı	I-IDIOM	tr
+ortaya	O	tr
+çıkardı	O	tr
 :	O	tr
 Eğitim	O	tr
 kurumlarına	O	tr
@@ -19336,8 +19959,8 @@ yakınları	O	tr
 ve	O	tr
 arkadaşları	O	tr
 hakkında	O	tr
-casusluk	I-IDIOM	tr
-yapmaya	I-IDIOM	tr
+casusluk	O	tr
+yapmaya	O	tr
 zorlamıştı	O	tr
 .	O	tr
 
@@ -19352,10 +19975,14 @@ yazarlarından	O	tr
 Protestan	O	tr
 din	O	tr
 bilimcisi	O	tr
-Rudi_Karl_Pahnke	O	tr
+Rudi	O	tr
+Karl	O	tr
+Pahnke	O	tr
 de	O	tr
 ,	O	tr
-Doğu_Almanya_Batı	O	tr
+Doğu	O	tr
+Almanya	O	tr
+Batı	O	tr
 'yla	O	tr
 birleştikten	O	tr
 sonra	O	tr
@@ -19383,11 +20010,11 @@ ancak	O	tr
 yaşında	O	tr
 bir	O	tr
 çocuğun	O	tr
-casusluk	B-IDIOM	tr
-yapabileceği	I-IDIOM	tr
+casusluk	O	tr
+yapabileceği	O	tr
 kimsenin	O	tr
-aklına	I-IDIOM	tr
-gelmezdi	I-IDIOM	tr
+aklına	O	tr
+gelmezdi	O	tr
 "	O	tr
 diyen	O	tr
 Pahnke	O	tr
@@ -19407,8 +20034,8 @@ olduğunu	O	tr
 görmüştü	O	tr
 .	O	tr
 
-Ortaya	B-IDIOM	tr
-çıkan	I-IDIOM	tr
+Ortaya	O	tr
+çıkan	O	tr
 tablodan	O	tr
 etkilenen	O	tr
 Pahnke	O	tr
@@ -19425,10 +20052,11 @@ fikrinin	O	tr
 'ta	O	tr
 Stasi	O	tr
 müdürü	O	tr
-Erich_Mielke	O	tr
+Erich	O	tr
+Mielke	O	tr
 tarafından	O	tr
-hayata	I-IDIOM	tr
-geçirildiğini	I-IDIOM	tr
+hayata	O	tr
+geçirildiğini	O	tr
 gösteriyordu	O	tr
 .	O	tr
 
@@ -19510,8 +20138,8 @@ bir	O	tr
 psikolojik	O	tr
 yara	O	tr
 taşıdığını	O	tr
-ortaya	B-IDIOM	tr
-koyuyor	I-IDIOM	tr
+ortaya	O	tr
+koyuyor	O	tr
 .	O	tr
 
 Siyasi	O	tr
@@ -19529,11 +20157,11 @@ biri	O	tr
 .	O	tr
 
 Eğitimine	O	tr
-devam	B-IDIOM	tr
-etmek	I-IDIOM	tr
+devam	O	tr
+etmek	O	tr
 ve	O	tr
-başına	I-IDIOM	tr
-gelenleri	I-IDIOM	tr
+başına	O	tr
+gelenleri	O	tr
 de	O	tr
 annesinden	O	tr
 saklamak	O	tr
@@ -19550,11 +20178,15 @@ Yakınları	O	tr
 ve	O	tr
 arkadaşları	O	tr
 hakkında	O	tr
-casusluk	I-IDIOM	tr
-yapmak	I-IDIOM	tr
+casusluk	O	tr
+yapmak	O	tr
 .	O	tr
 
-1981_-_1985_yılları_arasında	O	tr
+1981	O	tr
+-	O	tr
+1985	O	tr
+yılları	O	tr
+arasında	O	tr
 yakın	O	tr
 çevresiyle	O	tr
 ilgili	O	tr
@@ -19588,8 +20220,8 @@ süre	O	tr
 sonra	O	tr
 da	O	tr
 alkolizme	O	tr
-yenik	B-IDIOM	tr
-düştüm	I-IDIOM	tr
+yenik	O	tr
+düştüm	O	tr
 .	O	tr
 "	O	tr
 Bugün	O	tr
@@ -19609,8 +20241,8 @@ yarattığını	O	tr
 ve	O	tr
 evinden	O	tr
 dışarı	O	tr
-adım	I-IDIOM	tr
-atmak	I-IDIOM	tr
+adım	O	tr
+atmak	O	tr
 istemediğini	O	tr
 dile	O	tr
 getiriyor	O	tr
@@ -19652,7 +20284,8 @@ tanımlanan	O	tr
 haftalık	O	tr
 haber	O	tr
 dergisi	O	tr
-Der_Spiegel	O	tr
+Der	O	tr
+Spiegel	O	tr
 'in	O	tr
 üst	O	tr
 kadrolarının	O	tr
@@ -19701,8 +20334,8 @@ Nazi	O	tr
 yuvası	O	tr
 "	O	tr
 olduğu	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 "	O	tr
@@ -19710,8 +20343,8 @@ The	O	tr
 Independent	O	tr
 "	O	tr
 gazetesinde	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 ve	O	tr
 Alman	O	tr
 "	O	tr
@@ -19728,7 +20361,8 @@ haberde	O	tr
 yıldönümünü	O	tr
 kutlayacak	O	tr
 olan	O	tr
-Der_Spiegel	O	tr
+Der	O	tr
+Spiegel	O	tr
 dergisinin	O	tr
 yazı	O	tr
 işleri	O	tr
@@ -19753,14 +20387,20 @@ gün	O	tr
 belgelere	O	tr
 göre	O	tr
 ,	O	tr
-Der_Spiegel	O	tr
+Der	O	tr
+Spiegel	O	tr
 'in	O	tr
 dış	O	tr
 haberler	O	tr
 bölümünün	O	tr
 müdürlüğünü	O	tr
-1952_-_1959_yılları_arasında	O	tr
-Adolf_Hitler	O	tr
+1952	O	tr
+-	O	tr
+1959	O	tr
+yılları	O	tr
+arasında	O	tr
+Adolf	O	tr
+Hitler	O	tr
 'in	O	tr
 İngiltere	O	tr
 'yi	O	tr
@@ -19778,7 +20418,8 @@ amaçlı	O	tr
 bir	O	tr
 listesini	O	tr
 çıkaran	O	tr
-Horst_Mahnke	O	tr
+Horst	O	tr
+Mahnke	O	tr
 yaptı	O	tr
 .	O	tr
 
@@ -19788,7 +20429,8 @@ yardımcılarından	O	tr
 olan	O	tr
 Mahnke	O	tr
 ,	O	tr
-Nürnberg_Mahkemesi	O	tr
+Nürnberg	O	tr
+Mahkemesi	O	tr
 'nde	O	tr
 de	O	tr
 "	O	tr
@@ -19805,7 +20447,8 @@ suçuyla	O	tr
 yargılanmıştı	O	tr
 .	O	tr
 
-Der_Spiegel	O	tr
+Der	O	tr
+Spiegel	O	tr
 'in	O	tr
 diğer	O	tr
 bir	O	tr
@@ -19821,9 +20464,10 @@ Norveç	O	tr
 'te	O	tr
 Almanya	O	tr
 adına	O	tr
-casusluk	B-IDIOM	tr
-yapan	I-IDIOM	tr
-Georg_Wolff	O	tr
+casusluk	O	tr
+yapan	O	tr
+Georg	O	tr
+Wolff	O	tr
 'tu	O	tr
 .	O	tr
 
@@ -19875,11 +20519,16 @@ yansıtıyordu	O	tr
 Derginin	O	tr
 Berlin	O	tr
 muhabiri	O	tr
-Karl_Friedrich_Grosse	O	tr
+Karl	O	tr
+Friedrich	O	tr
+Grosse	O	tr
 ve	O	tr
-Latin_Amerika	O	tr
+Latin	O	tr
+Amerika	O	tr
 sorumlusu	O	tr
-Wilfried_von_Oven	O	tr
+Wilfried	O	tr
+von	O	tr
+Oven	O	tr
 da	O	tr
 geçmişlerine	O	tr
 yönelik	O	tr
@@ -19922,8 +20571,8 @@ için	O	tr
 kullandıkları	O	tr
 bir	O	tr
 kule	O	tr
-görevi	B-IDIOM	tr
-gördüğünü	I-IDIOM	tr
+görevi	O	tr
+gördüğünü	O	tr
 "	O	tr
 belirtti	O	tr
 .	O	tr
@@ -19948,8 +20597,8 @@ Yardımcısı	O	tr
 Prof	O	tr
 .	O	tr
 Rozakis	O	tr
-istifa	B-IDIOM	tr
-etti	I-IDIOM	tr
+istifa	O	tr
+etti	O	tr
 .	O	tr
 
 Simitis	O	tr
@@ -19976,13 +20625,14 @@ Prof	O	tr
 .	O	tr
 Hristos	O	tr
 Rozakis	O	tr
-istifa	B-IDIOM	tr
-etti	I-IDIOM	tr
+istifa	O	tr
+etti	O	tr
 .	O	tr
 
 Hükümet	O	tr
 Sözcüsü	O	tr
-Dimitris_Reppas	O	tr
+Dimitris	O	tr
+Reppas	O	tr
 ,	O	tr
 Dışişleri	O	tr
 Bakan	O	tr
@@ -19995,10 +20645,11 @@ Rozakis	O	tr
 istifasının	O	tr
 ,	O	tr
 Başbakan	O	tr
-Kostas_Simitis	O	tr
+Kostas	O	tr
+Simitis	O	tr
 tarafından	O	tr
-kabul	B-IDIOM	tr
-edildiğini	I-IDIOM	tr
+kabul	O	tr
+edildiğini	O	tr
 açıkladı	O	tr
 .	O	tr
 
@@ -20010,7 +20661,9 @@ Prof	O	tr
 Rozakis	O	tr
 'in	O	tr
 ,	O	tr
-18_Aralık_1996	O	tr
+18	O	tr
+Aralık	O	tr
+1996	O	tr
 tarihinde	O	tr
 bir	O	tr
 kalp	O	tr
@@ -20019,14 +20672,15 @@ geçirdiğini	O	tr
 ve	O	tr
 bu	O	tr
 nedenle	O	tr
-istifa	B-IDIOM	tr
-ettiğini	I-IDIOM	tr
+istifa	O	tr
+ettiğini	O	tr
 belirtti	O	tr
 .	O	tr
 
 Reppas	O	tr
 ,	O	tr
-Dışişleri_Bakanlığı	O	tr
+Dışişleri	O	tr
+Bakanlığı	O	tr
 'nda	O	tr
 ve	O	tr
 Simitis	O	tr
@@ -20045,8 +20699,8 @@ bir	O	tr
 anlaşmazlık	O	tr
 bulunmadığını	O	tr
 da	O	tr
-ileri	B-IDIOM	tr
-sürdü	I-IDIOM	tr
+ileri	O	tr
+sürdü	O	tr
 .	O	tr
 
 Başbakan	O	tr
@@ -20060,7 +20714,8 @@ Prof	O	tr
 Rozakis	O	tr
 'in	O	tr
 ,	O	tr
-15_Ocak	O	tr
+15	O	tr
+Ocak	O	tr
 'a	O	tr
 kadar	O	tr
 görevi	O	tr
@@ -20088,8 +20743,8 @@ yapılması	O	tr
 programlanan	O	tr
 toplantıda	O	tr
 da	O	tr
-hazır	B-IDIOM	tr
-bulunacağını	I-IDIOM	tr
+hazır	O	tr
+bulunacağını	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -20109,12 +20764,13 @@ diğer	O	tr
 dış	O	tr
 politika	O	tr
 konularında	O	tr
-anlaşmazlığa	B-IDIOM	tr
-düştüğü	I-IDIOM	tr
+anlaşmazlığa	O	tr
+düştüğü	O	tr
 bildirilen	O	tr
 Dışişleri	O	tr
 Bakanı	O	tr
-Teodoros_Pangalos	O	tr
+Teodoros	O	tr
+Pangalos	O	tr
 ise	O	tr
 ,	O	tr
 öğle	O	tr
@@ -20129,13 +20785,15 @@ görüştü	O	tr
 NEDENLERİ	O	tr
 .	O	tr
 
-15_Ocak_1997	O	tr
+15	O	tr
+Ocak	O	tr
+1997	O	tr
 tarihinden	O	tr
 sonra	O	tr
 ,	O	tr
 yerine	O	tr
-atama	B-IDIOM	tr
-yapılacağı	I-IDIOM	tr
+atama	O	tr
+yapılacağı	O	tr
 bildirilen	O	tr
 Prof	O	tr
 .	O	tr
@@ -20168,18 +20826,20 @@ konularında	O	tr
 ,	O	tr
 Dışişleri	O	tr
 Bakanı	O	tr
-Theodoros_Pangalos	O	tr
+Theodoros	O	tr
+Pangalos	O	tr
 ve	O	tr
 Savunma	O	tr
 Bakanı	O	tr
-Akis_Çohacopulos	O	tr
+Akis	O	tr
+Çohacopulos	O	tr
 ile	O	tr
-görüş	I-IDIOM	tr
-ayrılığına	I-IDIOM	tr
-düşmesi	I-IDIOM	tr
+görüş	O	tr
+ayrılığına	O	tr
+düşmesi	O	tr
 nedeniyle	O	tr
-istifa	I-IDIOM	tr
-ettiği	I-IDIOM	tr
+istifa	O	tr
+ettiği	O	tr
 bildirildi	O	tr
 .	O	tr
 
@@ -20196,7 +20856,8 @@ Benazir	O	tr
 'in	O	tr
 kayınpederi	O	tr
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 de	O	tr
 katıldı	O	tr
 .	O	tr
@@ -20226,16 +20887,19 @@ PAKİSTAN	O	tr
 ,	O	tr
 Devlet	O	tr
 Başkanı	O	tr
-Faruk_Leghari	O	tr
+Faruk	O	tr
+Leghari	O	tr
 tarafından	O	tr
 Başbakanlık	O	tr
 görevinden	O	tr
 alınan	O	tr
-Benazir_Butto	O	tr
+Benazir	O	tr
+Butto	O	tr
 'nun	O	tr
 kayınpederi	O	tr
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 'nin	O	tr
 ,	O	tr
 Karaçi	O	tr
@@ -20248,7 +20912,8 @@ Pakistan	O	tr
 radyosu	O	tr
 ,	O	tr
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 'nin	O	tr
 güneydeki	O	tr
 liman	O	tr
@@ -20280,7 +20945,8 @@ ise	O	tr
 ,	O	tr
 "	O	tr
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 'nin	O	tr
 tutuklama	O	tr
 emrinin	O	tr
@@ -20297,7 +20963,8 @@ yetindi	O	tr
 .	O	tr
 
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 hakkında	O	tr
 ,	O	tr
 "	O	tr
@@ -20319,17 +20986,23 @@ bulunuyor	O	tr
 .	O	tr
 
 Hakim	O	tr
-Ali_Zerdari	O	tr
+Ali	O	tr
+Zerdari	O	tr
 'nin	O	tr
 oğlu	O	tr
 ve	O	tr
-Benazir_Butto	O	tr
+Benazir	O	tr
+Butto	O	tr
 'nun	O	tr
 kocası	O	tr
-Asıf_Ali_Zerdari	O	tr
+Asıf	O	tr
+Ali	O	tr
+Zerdari	O	tr
 de	O	tr
 ,	O	tr
-5_Kasım_1996	O	tr
+5	O	tr
+Kasım	O	tr
+1996	O	tr
 'dan	O	tr
 bu	O	tr
 yana	O	tr
@@ -20342,7 +21015,8 @@ YOLSUZLUK	O	tr
 OPERASYONU	O	tr
 .	O	tr
 
-Benazir_Butto	O	tr
+Benazir	O	tr
+Butto	O	tr
 hükümetinin	O	tr
 devrilmesinden	O	tr
 sonra	O	tr
@@ -20375,19 +21049,21 @@ yetkilinin	O	tr
 daha	O	tr
 cezaevine	O	tr
 gönderildiği	O	tr
-ifade	B-IDIOM	tr
-edildi	I-IDIOM	tr
+ifade	O	tr
+edildi	O	tr
 .	O	tr
 
 Eyalet	O	tr
 yöneticilerinden	O	tr
-Aslam_Kureyşi	O	tr
+Aslam	O	tr
+Kureyşi	O	tr
 de	O	tr
 benzer	O	tr
 bir	O	tr
 yolsuzluk	O	tr
 iddiasıyla	O	tr
-Benazir_Butto	O	tr
+Benazir	O	tr
+Butto	O	tr
 'nun	O	tr
 kayınpederiyle	O	tr
 birlikte	O	tr
@@ -20437,8 +21113,8 @@ aratmayacak	O	tr
 yöntemlerle	O	tr
 casusluk	O	tr
 yaptıkları	O	tr
-ileri	B-IDIOM	tr
-sürüldü	I-IDIOM	tr
+ileri	O	tr
+sürüldü	O	tr
 .	O	tr
 
 DIŞ	O	tr
@@ -20457,8 +21133,8 @@ yapmakla	O	tr
 suçlanan	O	tr
 ve	O	tr
 ölüm	O	tr
-cezasına	B-IDIOM	tr
-çarptırılan	I-IDIOM	tr
+cezasına	O	tr
+çarptırılan	O	tr
 altı	O	tr
 subay	O	tr
 ile	O	tr
@@ -20470,7 +21146,9 @@ etkinliklerini	O	tr
 Amerikan	O	tr
 Merkezi	O	tr
 Haber	O	tr
-Alma_örgütü_CIA	O	tr
+Alma	O	tr
+örgütü	O	tr
+CIA	O	tr
 tarafından	O	tr
 sağlanan	O	tr
 ,	O	tr
@@ -20518,8 +21196,8 @@ olabileceği	O	tr
 yolunda	O	tr
 iddiaların	O	tr
 varlığından	O	tr
-söz	B-IDIOM	tr
-ettiler	I-IDIOM	tr
+söz	O	tr
+ettiler	O	tr
 .	O	tr
 
 Libya	O	tr
@@ -20539,16 +21217,18 @@ da	O	tr
 ,	O	tr
 Libya	O	tr
 lideri	O	tr
-Albay_Muammer_Kaddafi	O	tr
+Albay	O	tr
+Muammer	O	tr
+Kaddafi	O	tr
 'yi	O	tr
-hedef	B-IDIOM	tr
-alan	I-IDIOM	tr
+hedef	O	tr
+alan	O	tr
 bir	O	tr
 dizi	O	tr
 suikast	O	tr
 girişimi	O	tr
-ortaya	I-IDIOM	tr
-çıkarılmıştı	I-IDIOM	tr
+ortaya	O	tr
+çıkarılmıştı	O	tr
 .	O	tr
 
 Son	O	tr
@@ -20605,8 +21285,8 @@ unsurlarını	O	tr
 "	O	tr
 düşman	O	tr
 'a	O	tr
-teslim	B-IDIOM	tr
-ettiler	I-IDIOM	tr
+teslim	O	tr
+ettiler	O	tr
 .	O	tr
 
 TV	O	tr
@@ -20642,8 +21322,8 @@ kadınlarımızı	O	tr
 uykuda	O	tr
 öldüren	O	tr
 katillere	O	tr
-teslim	B-IDIOM	tr
-ettiler	I-IDIOM	tr
+teslim	O	tr
+ettiler	O	tr
 "	O	tr
 tanımlaması	O	tr
 yapıldı	O	tr
@@ -20684,14 +21364,16 @@ ve	O	tr
 ölmüştü	O	tr
 .	O	tr
 
-Akay_CEMAL	O	tr
+Akay	O	tr
+CEMAL	O	tr
 -	O	tr
 LEFKOŞA	O	tr
 .	O	tr
 
 DIŞİŞLERİ	O	tr
 Bakanı	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'in	O	tr
 geçtiğimiz	O	tr
 ay	O	tr
@@ -20700,8 +21382,8 @@ Moskova	O	tr
 gerçekleştirdiği	O	tr
 ziyaret	O	tr
 sırasında	O	tr
-gündeme	B-IDIOM	tr
-getirdiği	I-IDIOM	tr
+gündeme	O	tr
+getirdiği	O	tr
 ve	O	tr
 "	O	tr
 Yumruğumu	O	tr
@@ -20757,18 +21439,18 @@ gerginliği	O	tr
 daha	O	tr
 da	O	tr
 artıracağına	O	tr
-dikkat	B-IDIOM	tr
-çekmiş	I-IDIOM	tr
+dikkat	O	tr
+çekmiş	O	tr
 ve	O	tr
-yaptığı	I-IDIOM	tr
-görüşmelerde	I-IDIOM	tr
+yaptığı	O	tr
+görüşmelerde	O	tr
 Türkiye	O	tr
 'nin	O	tr
 bu	O	tr
 konudaki	O	tr
 kararlılığını	O	tr
-ortaya	I-IDIOM	tr
-koyarak	I-IDIOM	tr
+ortaya	O	tr
+koyarak	O	tr
 Rus	O	tr
 yetkilileri	O	tr
 Rumlar	O	tr
@@ -20776,16 +21458,16 @@ Rumlar	O	tr
 silah	O	tr
 satmama	O	tr
 konusunda	O	tr
-ikna	I-IDIOM	tr
-ettiğini	I-IDIOM	tr
+ikna	O	tr
+ettiğini	O	tr
 söylemişti	O	tr
 .	O	tr
 
 Ancak	O	tr
 Rusya	O	tr
 'dan	O	tr
-yapılan	B-IDIOM	tr
-açıklamalarda	I-IDIOM	tr
+yapılan	O	tr
+açıklamalarda	O	tr
 "	O	tr
 Rusya	O	tr
 'nın	O	tr
@@ -20845,7 +21527,8 @@ Klerides	O	tr
 'in	O	tr
 başkanlığında	O	tr
 toplanan	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 ,	O	tr
 S	O	tr
 -	O	tr
@@ -20854,8 +21537,8 @@ S	O	tr
 alınması	O	tr
 yönünde	O	tr
 bir	O	tr
-karar	B-IDIOM	tr
-vermiştir	I-IDIOM	tr
+karar	O	tr
+vermiştir	O	tr
 "	O	tr
 denildi	O	tr
 .	O	tr
@@ -20876,8 +21559,8 @@ alımına	O	tr
 girişmeleri	O	tr
 büyük	O	tr
 tepkilere	O	tr
-neden	B-IDIOM	tr
-olmuş	I-IDIOM	tr
+neden	O	tr
+olmuş	O	tr
 ,	O	tr
 Türkiye	O	tr
 ve	O	tr
@@ -20916,8 +21599,8 @@ silahlanmasının	O	tr
 ,	O	tr
 bölgede	O	tr
 istikrarı	O	tr
-ortadan	B-IDIOM	tr
-kaldıracak	I-IDIOM	tr
+ortadan	O	tr
+kaldıracak	O	tr
 gelişmelere	O	tr
 yol	O	tr
 açacağına	O	tr
@@ -20930,7 +21613,8 @@ Rusya	O	tr
 'nın	O	tr
 Lefkoşa	O	tr
 Büyükelçisi	O	tr
-Georgi_Muradov	O	tr
+Georgi	O	tr
+Muradov	O	tr
 ise	O	tr
 ,	O	tr
 Kıbrıs	O	tr
@@ -21011,7 +21695,8 @@ gelen	O	tr
 skandalının	O	tr
 baş	O	tr
 aktörü	O	tr
-Ergun_Göknel	O	tr
+Ergun	O	tr
+Göknel	O	tr
 ,	O	tr
 40	O	tr
 aylık	O	tr
@@ -21020,7 +21705,8 @@ günleri	O	tr
 anlattı	O	tr
 .	O	tr
 
-Arife_AVCU	O	tr
+Arife	O	tr
+AVCU	O	tr
 -	O	tr
 İSTANBUL	O	tr
 .	O	tr
@@ -21029,7 +21715,8 @@ Arife_AVCU	O	tr
 eski	O	tr
 Genel	O	tr
 Müdürü	O	tr
-Ergun_Göknel	O	tr
+Ergun	O	tr
+Göknel	O	tr
 ,	O	tr
 temiz	O	tr
 toplum	O	tr
@@ -21072,7 +21759,9 @@ dedi	O	tr
 .	O	tr
 
 Cezasını	O	tr
-Ankara_Yarıaçık_Cezaevi	O	tr
+Ankara	O	tr
+Yarıaçık	O	tr
+Cezaevi	O	tr
 'nde	O	tr
 çeken	O	tr
 Göknel	O	tr
@@ -21110,8 +21799,8 @@ abartıldı	O	tr
 .	O	tr
 Sonradan	O	tr
 birçok	O	tr
-olaylar	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+olaylar	O	tr
+çıktı	O	tr
 .	O	tr
 Bunlar	O	tr
 da	O	tr
@@ -21122,8 +21811,8 @@ ama	O	tr
 önemli	O	tr
 olan	O	tr
 doğrunun	O	tr
-ortaya	I-IDIOM	tr
-çıkması	I-IDIOM	tr
+ortaya	O	tr
+çıkması	O	tr
 .	O	tr
 Kim	O	tr
 masumsa	O	tr
@@ -21253,7 +21942,8 @@ Göknel	O	tr
 son	O	tr
 günlerinde	O	tr
 boşandığı	O	tr
-Feray_Göknel	O	tr
+Feray	O	tr
+Göknel	O	tr
 'le	O	tr
 ilgili	O	tr
 olarak	O	tr
@@ -21279,8 +21969,8 @@ Müjgan	O	tr
 tanışmamızdan	O	tr
 önce	O	tr
 boşanmaya	O	tr
-karar	B-IDIOM	tr
-vermişti	I-IDIOM	tr
+karar	O	tr
+vermişti	O	tr
 .	O	tr
 Kararına	O	tr
 saygı	O	tr
@@ -21335,8 +22025,8 @@ olduğu	O	tr
 için	O	tr
 cezaevinde	O	tr
 dahi	O	tr
-sıkıntılar	B-IDIOM	tr
-yaşıyorum	I-IDIOM	tr
+sıkıntılar	O	tr
+yaşıyorum	O	tr
 .	O	tr
 En	O	tr
 basiti	O	tr
@@ -21382,8 +22072,8 @@ soruyor	O	tr
 Bazıları	O	tr
 yeni	O	tr
 yeni	O	tr
-ortaya	I-IDIOM	tr
-çıkıyor	I-IDIOM	tr
+ortaya	O	tr
+çıkıyor	O	tr
 ,	O	tr
 en	O	tr
 önemlisi	O	tr
@@ -21415,8 +22105,8 @@ Birgün	O	tr
 gelecek	O	tr
 onlar	O	tr
 yanlış	O	tr
-hareket	I-IDIOM	tr
-ettiklerini	I-IDIOM	tr
+hareket	O	tr
+ettiklerini	O	tr
 anlayacak	O	tr
 ,	O	tr
 ama	O	tr
@@ -21461,10 +22151,13 @@ geldim	O	tr
 dedi	O	tr
 .	O	tr
 
-Erkan_YİĞİT	O	tr
+Erkan	O	tr
+YİĞİT	O	tr
 .	O	tr
 
-TÜRK_Dil_Kurumu	O	tr
+TÜRK	O	tr
+Dil	O	tr
+Kurumu	O	tr
 (	O	tr
 TDK	O	tr
 )	O	tr
@@ -21490,8 +22183,8 @@ isimli	O	tr
 ve	O	tr
 uydurukça	O	tr
 tabelalara	O	tr
-savaş	B-IDIOM	tr
-açtı	I-IDIOM	tr
+savaş	O	tr
+açtı	O	tr
 .	O	tr
 
 Sayısı	O	tr
@@ -21515,8 +22208,8 @@ TDK	O	tr
 'nın	O	tr
 yaptırdığı	O	tr
 araştırmalarda	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 görüşlerde	O	tr
 ,	O	tr
 dili	O	tr
@@ -21549,21 +22242,23 @@ başlattı	O	tr
 .	O	tr
 
 Dr.	O	tr
-Sanem_Alkibay	O	tr
+Sanem	O	tr
+Alkibay	O	tr
 ,	O	tr
-Kerime_Üstünova	O	tr
+Kerime	O	tr
+Üstünova	O	tr
 'nın	O	tr
 araştırmaları	O	tr
-üzerinde	B-IDIOM	tr
+üzerinde	O	tr
 önemle	O	tr
-duran	I-IDIOM	tr
+duran	O	tr
 ve	O	tr
 bunlara	O	tr
 yayın	O	tr
 organlarında	O	tr
 da	O	tr
-yer	I-IDIOM	tr
-veren	I-IDIOM	tr
+yer	O	tr
+veren	O	tr
 TDK	O	tr
 'nın	O	tr
 incelemelerinde	O	tr
@@ -21584,8 +22279,8 @@ adı	O	tr
 seçiminde	O	tr
 yabancı	O	tr
 sözcükleri	O	tr
-tercih	I-IDIOM	tr
-ettikleri	I-IDIOM	tr
+tercih	O	tr
+ettikleri	O	tr
 belirtildi	O	tr
 .	O	tr
 
@@ -21604,8 +22299,8 @@ oluşmaması	O	tr
 yabancı	O	tr
 isim	O	tr
 akımına	O	tr
-ayak	B-IDIOM	tr
-uydurma	I-IDIOM	tr
+ayak	O	tr
+uydurma	O	tr
 isteği	O	tr
 ,	O	tr
 tüketicinin	O	tr
@@ -21634,8 +22329,8 @@ sahipleri	O	tr
 arasında	O	tr
 da	O	tr
 bir	O	tr
-anket	I-IDIOM	tr
-yapıldığı	I-IDIOM	tr
+anket	O	tr
+yapıldığı	O	tr
 kaydedildi	O	tr
 .	O	tr
 
@@ -21644,7 +22339,8 @@ sonunda	O	tr
 büyük	O	tr
 kentlerde	O	tr
 firmaların	O	tr
-yüzde_45	O	tr
+yüzde	O	tr
+45	O	tr
 'e	O	tr
 yakınının	O	tr
 yabancı	O	tr
@@ -21653,7 +22349,8 @@ kullandığı	O	tr
 görüldü	O	tr
 .	O	tr
 
-Yüzde_altılık	O	tr
+Yüzde	O	tr
+altılık	O	tr
 bir	O	tr
 kesimin	O	tr
 ise	O	tr
@@ -21688,8 +22385,8 @@ imajını	O	tr
 vererek	O	tr
 yanıltma	O	tr
 eğilimi	O	tr
-içinde	B-IDIOM	tr
-oldukları	I-IDIOM	tr
+içinde	O	tr
+oldukları	O	tr
 görüldü	O	tr
 "	O	tr
 denildi	O	tr
@@ -21705,19 +22402,22 @@ olduğu	O	tr
 bu	O	tr
 dilin	O	tr
 tercihinin	O	tr
-yüzde_54	O	tr
+yüzde	O	tr
+54	O	tr
 .5	O	tr
 olduğu	O	tr
 kaydedildi	O	tr
 .	O	tr
 
 Bunu	O	tr
-yüzde_16	O	tr
+yüzde	O	tr
+16	O	tr
 .6	O	tr
 'yla	O	tr
 Fransızca	O	tr
 ,	O	tr
-yüzde_11	O	tr
+yüzde	O	tr
+11	O	tr
 .4	O	tr
 'le	O	tr
 İtalyancanın	O	tr
@@ -21732,13 +22432,13 @@ isimlerin	O	tr
 çok	O	tr
 az	O	tr
 kullanıldığı	O	tr
-ortaya	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
 Tüketicinin	O	tr
-ilgisini	B-IDIOM	tr
-çekmek	I-IDIOM	tr
+ilgisini	O	tr
+çekmek	O	tr
 için	O	tr
 anlamı	O	tr
 olmayan	O	tr
@@ -21755,7 +22455,8 @@ işletme	O	tr
 adlarının	O	tr
 da	O	tr
 örneklemin	O	tr
-yüzde_10	O	tr
+yüzde	O	tr
+10	O	tr
 'unu	O	tr
 oluşturduğu	O	tr
 anlaşıldı	O	tr
@@ -21764,7 +22465,7 @@ anlaşıldı	O	tr
 Uyduruk	O	tr
 tabela	O	tr
 isimlerine	O	tr
-örnek	B-IDIOM	tr
+örnek	O	tr
 olarak	O	tr
 "	O	tr
 lugi	O	tr
@@ -21776,7 +22477,7 @@ alba	O	tr
 ipem	O	tr
 "	O	tr
 gibileri	O	tr
-verildi	I-IDIOM	tr
+verildi	O	tr
 .	O	tr
 
 Araştırmada	O	tr
@@ -21799,8 +22500,8 @@ bunları	O	tr
 tabelalara	O	tr
 yazdırarak	O	tr
 belleklerde	O	tr
-yer	B-IDIOM	tr
-etmesini	I-IDIOM	tr
+yer	O	tr
+etmesini	O	tr
 sağlama	O	tr
 düşüncesi	O	tr
 içinde	O	tr
@@ -21812,8 +22513,8 @@ dilin	O	tr
 yabancılaşmasına	O	tr
 ve	O	tr
 yozlaşmasına	O	tr
-yol	I-IDIOM	tr
-açacağı	I-IDIOM	tr
+yol	O	tr
+açacağı	O	tr
 görüşünü	O	tr
 gündeme	O	tr
 getirmektedir	O	tr
@@ -21821,8 +22522,8 @@ getirmektedir	O	tr
 denilerek	O	tr
 şu	O	tr
 görüşlere	O	tr
-yer	I-IDIOM	tr
-verildi	I-IDIOM	tr
+yer	O	tr
+verildi	O	tr
 :	O	tr
 "	O	tr
 Haksız	O	tr
@@ -21836,8 +22537,8 @@ yeni	O	tr
 açılacak	O	tr
 işyerlerine	O	tr
 Türkçe	O	tr
-ad	I-IDIOM	tr
-verme	I-IDIOM	tr
+ad	O	tr
+verme	O	tr
 zorunluluğu	O	tr
 getirilmesi	O	tr
 yönünde	O	tr
@@ -21863,8 +22564,8 @@ Bir	O	tr
 an	O	tr
 önce	O	tr
 bunun	O	tr
-önüne	I-IDIOM	tr
-geçilmeli	I-IDIOM	tr
+önüne	O	tr
+geçilmeli	O	tr
 ,	O	tr
 tüm	O	tr
 yurtta	O	tr
@@ -21876,9 +22577,9 @@ Uluslar	O	tr
 dillerini	O	tr
 özel	O	tr
 yasalarla	O	tr
-koruma	I-IDIOM	tr
-altına	I-IDIOM	tr
-alırken	I-IDIOM	tr
+koruma	O	tr
+altına	O	tr
+alırken	O	tr
 bizdeki	O	tr
 bu	O	tr
 umursamazlık	O	tr
@@ -21901,11 +22602,11 @@ Niçin	O	tr
 koruyamıyor	O	tr
 ya	O	tr
 da	O	tr
-koruma	I-IDIOM	tr
-altına	I-IDIOM	tr
-alan	I-IDIOM	tr
-yasalar	I-IDIOM	tr
-çıkarmıyoruz	I-IDIOM	tr
+koruma	O	tr
+altına	O	tr
+alan	O	tr
+yasalar	O	tr
+çıkarmıyoruz	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
@@ -21916,8 +22617,8 @@ ayrıca	O	tr
 şu	O	tr
 ilginç	O	tr
 örneğe	O	tr
-yer	B-IDIOM	tr
-verildi	I-IDIOM	tr
+yer	O	tr
+verildi	O	tr
 :	O	tr
 "	O	tr
 Bursa	O	tr
@@ -21981,7 +22682,8 @@ DYP	O	tr
 'li	O	tr
 Devlet	O	tr
 Bakanı	O	tr
-Salim_Ensarioğlu	O	tr
+Salim	O	tr
+Ensarioğlu	O	tr
 ,	O	tr
 Doğu	O	tr
 ve	O	tr
@@ -21991,12 +22693,14 @@ hedef	O	tr
 alan	O	tr
 "	O	tr
 Geri	O	tr
-Kalmış_Yöreler_Bakanlığı	O	tr
+Kalmış	O	tr
+Yöreler	O	tr
+Bakanlığı	O	tr
 "	O	tr
 oluşturulması	O	tr
 önerisininde	O	tr
-yer	B-IDIOM	tr
-aldığı	I-IDIOM	tr
+yer	O	tr
+aldığı	O	tr
 aşiret	O	tr
 raporunu	O	tr
 Çiller	O	tr
@@ -22004,20 +22708,24 @@ raporunu	O	tr
 sundu	O	tr
 .	O	tr
 
-Murat_KUL	O	tr
+Murat	O	tr
+KUL	O	tr
 -	O	tr
 ANKARA	O	tr
 .	O	tr
 
 "	O	tr
-GİZLİ_Milli_Güvenlik_Kurulu	O	tr
+GİZLİ	O	tr
+Milli	O	tr
+Güvenlik	O	tr
+Kurulu	O	tr
 (	O	tr
 MGK	O	tr
 )	O	tr
 Raporu	O	tr
 'na	O	tr
-gösterdiği	B-IDIOM	tr
-tepkiyle	I-IDIOM	tr
+gösterdiği	O	tr
+tepkiyle	O	tr
 cumhuriyet	O	tr
 tarihinde	O	tr
 ilk	O	tr
@@ -22027,15 +22735,16 @@ MGK	O	tr
 raporunun	O	tr
 hükümet	O	tr
 tarafından	O	tr
-yok	I-IDIOM	tr
-sayılmasına	I-IDIOM	tr
-neden	I-IDIOM	tr
-olan	I-IDIOM	tr
+yok	O	tr
+sayılmasına	O	tr
+neden	O	tr
+olan	O	tr
 DYP	O	tr
 'li	O	tr
 Devlet	O	tr
 Bakanı	O	tr
-Salim_Ensarioğlu	O	tr
+Salim	O	tr
+Ensarioğlu	O	tr
 'nun	O	tr
 "	O	tr
 Güneydoğu	O	tr
@@ -22051,7 +22760,8 @@ başlıklı	O	tr
 değerlendirmesi	O	tr
 Başbakan	O	tr
 Yardımcısı	O	tr
-Tansu_Çiller	O	tr
+Tansu	O	tr
+Çiller	O	tr
 'e	O	tr
 sunuldu	O	tr
 .	O	tr
@@ -22080,8 +22790,8 @@ Değerlendirmesi	O	tr
 'nde	O	tr
 şu	O	tr
 görüşleri	O	tr
-dile	B-IDIOM	tr
-getirdi	I-IDIOM	tr
+dile	O	tr
+getirdi	O	tr
 :	O	tr
 "	O	tr
 Bugünkü	O	tr
@@ -22133,7 +22843,8 @@ alınması	O	tr
 ve	O	tr
 bu	O	tr
 belediyelere	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 kararıyla	O	tr
 bir	O	tr
 defaya	O	tr
@@ -22143,8 +22854,8 @@ para	O	tr
 yardımı	O	tr
 yapılması	O	tr
 "	O	tr
-yer	B-IDIOM	tr
-alıyor	I-IDIOM	tr
+yer	O	tr
+alıyor	O	tr
 .	O	tr
 
 Ensarioğlu	O	tr
@@ -22158,12 +22869,15 @@ hedef	O	tr
 alan	O	tr
 "	O	tr
 Geri	O	tr
-Kalmış_Yöreler_Bakanlığı	O	tr
+Kalmış	O	tr
+Yöreler	O	tr
+Bakanlığı	O	tr
 "	O	tr
 oluşturulması	O	tr
 yönündeki	O	tr
 önerisinin	O	tr
-Bakanlar_Kurulu	O	tr
+Bakanlar	O	tr
+Kurulu	O	tr
 'nda	O	tr
 görüşülmesi	O	tr
 bekleniyor	O	tr
@@ -22263,8 +22977,8 @@ komisyonun	O	tr
 uzman	O	tr
 ve	O	tr
 araştırmacıyı	O	tr
-istihdam	B-IDIOM	tr
-etmesi	I-IDIOM	tr
+istihdam	O	tr
+etmesi	O	tr
 ve	O	tr
 dönüşümlü	O	tr
 gruplar	O	tr
@@ -22292,7 +23006,9 @@ araba	O	tr
 ve	O	tr
 cep	O	tr
 telefonlarının	O	tr
-Milli_İstihbarat_Teşkilatı	O	tr
+Milli	O	tr
+İstihbarat	O	tr
+Teşkilatı	O	tr
 (	O	tr
 MİT	O	tr
 )	O	tr
@@ -22316,8 +23032,8 @@ ama	O	tr
 dinlese	O	tr
 daha	O	tr
 faydalı	O	tr
-iş	B-IDIOM	tr
-yapmış	I-IDIOM	tr
+iş	O	tr
+yapmış	O	tr
 olacak	O	tr
 "	O	tr
 dedi	O	tr
@@ -22366,10 +23082,12 @@ var	O	tr
 .	O	tr
 Bu	O	tr
 belgeleri	O	tr
-tasnif	B-IDIOM	tr
-ediyoruz	I-IDIOM	tr
+tasnif	O	tr
+ediyoruz	O	tr
 ,	O	tr
-ANAP_Genel_Merkezi	O	tr
+ANAP	O	tr
+Genel	O	tr
+Merkezi	O	tr
 'nde	O	tr
 bilgileri	O	tr
 inceleyip	O	tr
@@ -22388,12 +23106,13 @@ bulunuyor	O	tr
 
 Uyuşturucu	O	tr
 kaçakçısı	O	tr
-Hüseyin_Baybaşin	O	tr
+Hüseyin	O	tr
+Baybaşin	O	tr
 'in	O	tr
 iddialarını	O	tr
 araştırmaya	O	tr
-değer	B-IDIOM	tr
-gördüklerini	I-IDIOM	tr
+değer	O	tr
+gördüklerini	O	tr
 belirten	O	tr
 Okuyan	O	tr
 şunları	O	tr
@@ -22410,8 +23129,8 @@ veriyor	O	tr
 veriyor	O	tr
 .	O	tr
 Bunları	O	tr
-yok	I-IDIOM	tr
-saymak	I-IDIOM	tr
+yok	O	tr
+saymak	O	tr
 yanlıştır	O	tr
 ,	O	tr
 hepsinin	O	tr
@@ -22439,14 +23158,15 @@ doğruysa	O	tr
 o	O	tr
 şahıslarla	O	tr
 ilgili	O	tr
-işlem	I-IDIOM	tr
-yapılmalı	I-IDIOM	tr
+işlem	O	tr
+yapılmalı	O	tr
 .	O	tr
 "	O	tr
 .	O	tr
 
 Başbakan	O	tr
-Necmettin_Erbakan	O	tr
+Necmettin	O	tr
+Erbakan	O	tr
 'ın	O	tr
 altı	O	tr
 aylık	O	tr
@@ -22459,8 +23179,8 @@ tersini	O	tr
 yaparak	O	tr
 RP	O	tr
 tabanıyla	O	tr
-ayrı	B-IDIOM	tr
-düştüğünü	I-IDIOM	tr
+ayrı	O	tr
+düştüğünü	O	tr
 belirten	O	tr
 Okuyan	O	tr
 sözlerini	O	tr
@@ -22494,23 +23214,28 @@ alınan	O	tr
 İstanbul	O	tr
 Emniyet	O	tr
 Müdürü	O	tr
-Kemal_Yazıcıoğlu	O	tr
+Kemal	O	tr
+Yazıcıoğlu	O	tr
 'nun	O	tr
 yerine	O	tr
 geçici	O	tr
 olarak	O	tr
 atanan	O	tr
-Ramazan_Er	O	tr
+Ramazan	O	tr
+Er	O	tr
 ,	O	tr
 görevine	O	tr
 başladı	O	tr
 .	O	tr
 
-İstanbul_Emniyet_Müdürlüğü	O	tr
+İstanbul	O	tr
+Emniyet	O	tr
+Müdürlüğü	O	tr
 görevini	O	tr
 vekaleten	O	tr
 yürüten	O	tr
-Erşen_Bahçekapılı	O	tr
+Erşen	O	tr
+Bahçekapılı	O	tr
 'nın	O	tr
 dün	O	tr
 sabah	O	tr
@@ -22535,8 +23260,8 @@ Valisi	O	tr
 Rıdvan	O	tr
 Yenişen	O	tr
 'i	O	tr
-ziyaret	B-IDIOM	tr
-etti	I-IDIOM	tr
+ziyaret	O	tr
+etti	O	tr
 .	O	tr
 
 Asaleten	O	tr
@@ -22556,7 +23281,8 @@ olduğunu	O	tr
 anımsatan	O	tr
 Yenişen	O	tr
 ,	O	tr
-İçişleri_Bakanlığı	O	tr
+İçişleri	O	tr
+Bakanlığı	O	tr
 'nın	O	tr
 onayıyla	O	tr
 ,	O	tr
@@ -22577,16 +23303,20 @@ Gümüşhane	O	tr
 ,	O	tr
 Diyarbakır	O	tr
 ve	O	tr
-Ankara_Emniyet_Müdürlüğü	O	tr
+Ankara	O	tr
+Emniyet	O	tr
+Müdürlüğü	O	tr
 görevlerinde	O	tr
 bulunmuştu	O	tr
 .	O	tr
-Önder_ŞUŞOĞLU	O	tr
+Önder	O	tr
+ŞUŞOĞLU	O	tr
 -	O	tr
 İSTANBUL	O	tr
 .	O	tr
 
-Nurcan_DEMİRTAŞ	O	tr
+Nurcan	O	tr
+DEMİRTAŞ	O	tr
 -	O	tr
 İSTANBUL	O	tr
 .	O	tr
@@ -22601,18 +23331,20 @@ kolu	O	tr
 ve	O	tr
 çenesini	O	tr
 kıran	O	tr
-Semra_Özal	O	tr
+Semra	O	tr
+Özal	O	tr
 'ın	O	tr
 aldığı	O	tr
 yeni	O	tr
 ayakkabının	O	tr
-kurbanı	B-IDIOM	tr
-olduğu	I-IDIOM	tr
-ortaya	I-IDIOM	tr
-çıktı	I-IDIOM	tr
+kurbanı	O	tr
+olduğu	O	tr
+ortaya	O	tr
+çıktı	O	tr
 .	O	tr
 
-Efe_Özal	O	tr
+Efe	O	tr
+Özal	O	tr
 annesinin	O	tr
 aldığı	O	tr
 yeni	O	tr
@@ -22633,10 +23365,11 @@ dedi	O	tr
 .	O	tr
 
 Eşi	O	tr
-Zeynep_Özal	O	tr
+Zeynep	O	tr
+Özal	O	tr
 'la	O	tr
-ziyaret	B-IDIOM	tr
-ettiği	I-IDIOM	tr
+ziyaret	O	tr
+ettiği	O	tr
 annesinin	O	tr
 sağlık	O	tr
 durumunun	O	tr
@@ -22650,14 +23383,16 @@ an	O	tr
 istediğini	O	tr
 ifade	O	tr
 eden	O	tr
-Efe_Özal	O	tr
+Efe	O	tr
+Özal	O	tr
 şunları	O	tr
 söyledi	O	tr
 :	O	tr
 "	O	tr
 Aile	O	tr
 doktorumuz	O	tr
-Cengiz_Aslan	O	tr
+Cengiz	O	tr
+Aslan	O	tr
 annemin	O	tr
 bir	O	tr
 süre	O	tr
@@ -22700,14 +23435,17 @@ kaymış	O	tr
 "	O	tr
 .	O	tr
 
-Amerikan_Hastanesi	O	tr
+Amerikan	O	tr
+Hastanesi	O	tr
 Plastik	O	tr
 Cerrahi	O	tr
 Şefi	O	tr
 Prof	O	tr
 .	O	tr
 Dr.	O	tr
-Onur_Erol_Özal	O	tr
+Onur	O	tr
+Erol	O	tr
+Özal	O	tr
 'ın	O	tr
 rahatça	O	tr
 konuşabildiğini	O	tr
@@ -22722,8 +23460,8 @@ bir	O	tr
 iki	O	tr
 gün	O	tr
 içinde	O	tr
-taburcu	B-IDIOM	tr
-edilebileceğini	I-IDIOM	tr
+taburcu	O	tr
+edilebileceğini	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -22740,8 +23478,8 @@ geldiğini	O	tr
 kaydeden	O	tr
 Erol	O	tr
 "	O	tr
-dayak	B-IDIOM	tr
-yediği	I-IDIOM	tr
+dayak	O	tr
+yediği	O	tr
 "	O	tr
 yolundaki	O	tr
 iddiaların	O	tr
@@ -22782,8 +23520,8 @@ taktık	O	tr
 Çene	O	tr
 ve	O	tr
 kolda	O	tr
-meydana	B-IDIOM	tr
-gelen	I-IDIOM	tr
+meydana	O	tr
+gelen	O	tr
 kırılmalar	O	tr
 ,	O	tr
 düşmeyle	O	tr
@@ -22827,8 +23565,8 @@ soru	O	tr
 Özal	O	tr
 'a	O	tr
 estetik	O	tr
-ameliyat	B-IDIOM	tr
-yapmadıklarını	I-IDIOM	tr
+ameliyat	O	tr
+yapmadıklarını	O	tr
 belirterek	O	tr
 "	O	tr
 Özal	O	tr
@@ -22879,11 +23617,14 @@ olan	O	tr
 uydu	O	tr
 kent	O	tr
 ,	O	tr
-8_milyar_dolara	O	tr
+8	O	tr
+milyar	O	tr
+dolara	O	tr
 malolacak	O	tr
 .	O	tr
 
-Murat_KUL	O	tr
+Murat	O	tr
+KUL	O	tr
 -	O	tr
 ANKARA	O	tr
 .	O	tr
@@ -22895,15 +23636,15 @@ Ankara	O	tr
 olmak	O	tr
 üzere	O	tr
 büyükkentlerin	O	tr
-karşı	B-IDIOM	tr
-karşıya	I-IDIOM	tr
-bulunduğu	I-IDIOM	tr
+karşı	O	tr
+karşıya	O	tr
+bulunduğu	O	tr
 dev	O	tr
 problemleri	O	tr
 çözmek	O	tr
 için	O	tr
-harekete	I-IDIOM	tr
-geçen	I-IDIOM	tr
+harekete	O	tr
+geçen	O	tr
 RP	O	tr
 ,	O	tr
 "	O	tr
@@ -22948,16 +23689,20 @@ olarak	O	tr
 bilinen	O	tr
 Devlet	O	tr
 Bakanı	O	tr
-Fehim_Adak	O	tr
+Fehim	O	tr
+Adak	O	tr
 'ın	O	tr
 koordinatörlüğünde	O	tr
 hazırlanan	O	tr
 girişimin	O	tr
 başında	O	tr
-Başbakanlık_Başmüşaviri_Doç	O	tr
+Başbakanlık	O	tr
+Başmüşaviri	O	tr
+Doç	O	tr
 .	O	tr
 Dr.	O	tr
-Kamil_Eren	O	tr
+Kamil	O	tr
+Eren	O	tr
 bulunuyor	O	tr
 .	O	tr
 
@@ -22985,14 +23730,17 @@ olarak	O	tr
 Fransız	O	tr
 kamu	O	tr
 kuruluşu	O	tr
-Groupement_des_Villes_Nouvelles	O	tr
+Groupement	O	tr
+des	O	tr
+Villes	O	tr
+Nouvelles	O	tr
 de	O	tr
 France	O	tr
 (	O	tr
 GVNF	O	tr
 )	O	tr
-yer	B-IDIOM	tr
-alıyor	I-IDIOM	tr
+yer	O	tr
+alıyor	O	tr
 .	O	tr
 
 Fransız	O	tr
@@ -23019,7 +23767,8 @@ ilgili	O	tr
 olarak	O	tr
 Fransa	O	tr
 Büyükelçisi	O	tr
-Daniel_Lequartier	O	tr
+Daniel	O	tr
+Lequartier	O	tr
 ile	O	tr
 görüştük	O	tr
 .	O	tr
@@ -23033,8 +23782,8 @@ Projeye	O	tr
 her	O	tr
 türlü	O	tr
 teknik	O	tr
-desteği	B-IDIOM	tr
-sağlayacaklar	I-IDIOM	tr
+desteği	O	tr
+sağlayacaklar	O	tr
 "	O	tr
 diye	O	tr
 konuştu	O	tr
@@ -23084,9 +23833,12 @@ yaratılacak	O	tr
 .	O	tr
 
 Maliyeti	O	tr
-8_milyar_dolar	O	tr
+8	O	tr
+milyar	O	tr
+dolar	O	tr
 (	O	tr
-850_trilyon	O	tr
+850	O	tr
+trilyon	O	tr
 )	O	tr
 olan	O	tr
 ve	O	tr
@@ -23096,8 +23848,8 @@ ilk	O	tr
 altı	O	tr
 ayı	O	tr
 içinde	O	tr
-uygulamaya	B-IDIOM	tr
-konması	I-IDIOM	tr
+uygulamaya	O	tr
+konması	O	tr
 beklenen	O	tr
 projenin	O	tr
 16	O	tr
@@ -23156,7 +23908,8 @@ Yeni	O	tr
 'nin	O	tr
 yatırım	O	tr
 programının	O	tr
-yüzde_80	O	tr
+yüzde	O	tr
+80	O	tr
 'i	O	tr
 dış	O	tr
 kaynaktan	O	tr
@@ -23177,8 +23930,8 @@ tanıtılması	O	tr
 ve	O	tr
 uluslararası	O	tr
 piyasada	O	tr
-promosyonunun	B-IDIOM	tr
-yapılması	I-IDIOM	tr
+promosyonunun	O	tr
+yapılması	O	tr
 da	O	tr
 amaçlanıyor	O	tr
 .	O	tr
@@ -23196,14 +23949,19 @@ oluşan	O	tr
 Fransız	O	tr
 Lyonnaise	O	tr
 des	O	tr
-Eaux_Grubu	O	tr
+Eaux	O	tr
+Grubu	O	tr
 gerçekleştirecek	O	tr
 .	O	tr
 
 Fransız	O	tr
 Maliye	O	tr
 ve	O	tr
-Dış_Ekonomik_İlişkiler_Genel_Müdürlüğü	O	tr
+Dış	O	tr
+Ekonomik	O	tr
+İlişkiler	O	tr
+Genel	O	tr
+Müdürlüğü	O	tr
 'nün	O	tr
 desteği	O	tr
 altında	O	tr
@@ -23238,13 +23996,15 @@ Kamu	O	tr
 arsalarından	O	tr
 sorumlu	O	tr
 Başmüşavir	O	tr
-Kamil_Eren	O	tr
+Kamil	O	tr
+Eren	O	tr
 ,	O	tr
 projeyi	O	tr
 "	O	tr
 İstanbul	O	tr
 'u	O	tr
-Avrupa_Birliği	O	tr
+Avrupa	O	tr
+Birliği	O	tr
 periferisinin	O	tr
 en	O	tr
 büyük	O	tr
@@ -23329,7 +24089,8 @@ Trabzonspor	O	tr
 ,	O	tr
 Teknik	O	tr
 Direktör	O	tr
-Şenol_Güneş	O	tr
+Şenol	O	tr
+Güneş	O	tr
 'in	O	tr
 kararıyla	O	tr
 dünü	O	tr
@@ -23350,8 +24111,8 @@ Sheila	O	tr
 kesinlikle	O	tr
 transfer	O	tr
 etme	O	tr
-kararı	B-IDIOM	tr
-aldı	I-IDIOM	tr
+kararı	O	tr
+aldı	O	tr
 .	O	tr
 
 TRABZONSPOR	O	tr
@@ -23368,8 +24129,8 @@ hava	O	tr
 muhalefeti	O	tr
 nedeniyle	O	tr
 büyük	O	tr
-sorun	B-IDIOM	tr
-yaşadı	I-IDIOM	tr
+sorun	O	tr
+yaşadı	O	tr
 .	O	tr
 
 İstanbul	O	tr
@@ -23387,7 +24148,8 @@ futbolcular	O	tr
 ,	O	tr
 Trabzon	O	tr
 ve	O	tr
-İstanbul_Havalimanı	O	tr
+İstanbul	O	tr
+Havalimanı	O	tr
 'nda	O	tr
 iki	O	tr
 grup	O	tr
@@ -23401,7 +24163,8 @@ beklediler	O	tr
 
 Teknik	O	tr
 Direktör	O	tr
-Şenol_Güneş	O	tr
+Şenol	O	tr
+Güneş	O	tr
 ,	O	tr
 hava	O	tr
 muhalefetinden	O	tr
@@ -23419,8 +24182,8 @@ planladığı	O	tr
 çalışmayı	O	tr
 zorunlu	O	tr
 olarak	O	tr
-iptal	B-IDIOM	tr
-edeceğini	I-IDIOM	tr
+iptal	O	tr
+edeceğini	O	tr
 açıkladı	O	tr
 .	O	tr
 
@@ -23448,18 +24211,20 @@ Almanya	O	tr
 ameliyat	O	tr
 olan	O	tr
 kaleci	O	tr
-Metin_Mert	O	tr
+Metin	O	tr
+Mert	O	tr
 'in	O	tr
 de	O	tr
 çalışmalarına	O	tr
 Almanya	O	tr
 'da	O	tr
-devam	B-IDIOM	tr
-edeceği	I-IDIOM	tr
+devam	O	tr
+edeceği	O	tr
 bildirildi	O	tr
 .	O	tr
 
-Yönetim_Kurulu	O	tr
+Yönetim	O	tr
+Kurulu	O	tr
 tarafından	O	tr
 affedilen	O	tr
 Lemi	O	tr
@@ -23490,12 +24255,13 @@ Shelia	O	tr
 mutlaka	O	tr
 takıma	O	tr
 katılacağını	O	tr
-dile	B-IDIOM	tr
-getirdiler	I-IDIOM	tr
+dile	O	tr
+getirdiler	O	tr
 .	O	tr
 
 Asbaşkan	O	tr
-Necmettin_Aytekin	O	tr
+Necmettin	O	tr
+Aytekin	O	tr
 ,	O	tr
 bu	O	tr
 konuda	O	tr
@@ -23512,8 +24278,8 @@ herhangi	O	tr
 bir	O	tr
 olumsuzluğa	O	tr
 karşı	O	tr
-tedbirli	B-IDIOM	tr
-olmak	I-IDIOM	tr
+tedbirli	O	tr
+olmak	O	tr
 için	O	tr
 Almanya	O	tr
 'da	O	tr
@@ -23535,7 +24301,8 @@ itiraf	O	tr
 TRABZONSPOR	O	tr
 Teknik	O	tr
 Direktörü	O	tr
-Şenol_Güneş	O	tr
+Şenol	O	tr
+Güneş	O	tr
 ,	O	tr
 1996	O	tr
 yılının	O	tr
@@ -23621,8 +24388,8 @@ yarıya	O	tr
 yetişmesi	O	tr
 için	O	tr
 yoğun	O	tr
-çaba	B-IDIOM	tr
-harcıyor	I-IDIOM	tr
+çaba	O	tr
+harcıyor	O	tr
 .	O	tr
 
 ABD	O	tr
@@ -23643,11 +24410,13 @@ yöneticiler	O	tr
 ,	O	tr
 askeri	O	tr
 yetkililerle	O	tr
-temasa	B-IDIOM	tr
-girdiler	I-IDIOM	tr
+temasa	O	tr
+girdiler	O	tr
 .	O	tr
 
-FENERBAHÇE_Yönetim_Kurulu	O	tr
+FENERBAHÇE	O	tr
+Yönetim	O	tr
+Kurulu	O	tr
 ,	O	tr
 dün	O	tr
 birliğine	O	tr
@@ -23675,8 +24444,8 @@ kalecinin	O	tr
 bir	O	tr
 an	O	tr
 önce	O	tr
-antrenman	B-IDIOM	tr
-yapması	I-IDIOM	tr
+antrenman	O	tr
+yapması	O	tr
 amacıyla	O	tr
 askeri	O	tr
 yetkililerle	O	tr
@@ -23692,8 +24461,8 @@ Rüştü	O	tr
 ,	O	tr
 Samsunspor	O	tr
 maçında	O	tr
-forma	B-IDIOM	tr
-giyebilecek	I-IDIOM	tr
+forma	O	tr
+giyebilecek	O	tr
 .	O	tr
 
 Rüştü	O	tr
@@ -23702,10 +24471,11 @@ Manisa	O	tr
 '	O	tr
 da	O	tr
 birliğine	O	tr
-teslim	B-IDIOM	tr
-eden	I-IDIOM	tr
+teslim	O	tr
+eden	O	tr
 Menacer	O	tr
-Zafer_Göncüler	O	tr
+Zafer	O	tr
+Göncüler	O	tr
 genç	O	tr
 kaleciyi	O	tr
 ikinci	O	tr
@@ -23737,8 +24507,8 @@ aldırmayı	O	tr
 düşünüyoruz	O	tr
 .	O	tr
 İnşallah	O	tr
-izin	I-IDIOM	tr
-verilir	I-IDIOM	tr
+izin	O	tr
+verilir	O	tr
 ve	O	tr
 Rüştü	O	tr
 'de	O	tr
@@ -23762,8 +24532,8 @@ Seba	O	tr
 -	O	tr
 Kara	O	tr
 zirvesinde	O	tr
-tartışma	B-IDIOM	tr
-çıktı	I-IDIOM	tr
+tartışma	O	tr
+çıktı	O	tr
 ,	O	tr
 Özbilek	O	tr
 görevden	O	tr
@@ -23777,16 +24547,19 @@ kampı	O	tr
 öncesi	O	tr
 yapılan	O	tr
 Başkan	O	tr
-Süleyman_Seba	O	tr
+Süleyman	O	tr
+Seba	O	tr
 ile	O	tr
-Rasim_Kara	O	tr
+Rasim	O	tr
+Kara	O	tr
 toplantısında	O	tr
 tartışmalar	O	tr
 çıktığı	O	tr
 öğrenildi	O	tr
 .	O	tr
 
-Futbol_Komitesi	O	tr
+Futbol	O	tr
+Komitesi	O	tr
 üyelerinin	O	tr
 de	O	tr
 katıldığı	O	tr
@@ -23800,8 +24573,8 @@ ve	O	tr
 ikinci	O	tr
 yarıda	O	tr
 takımından	O	tr
-umutlu	B-IDIOM	tr
-olduğunu	I-IDIOM	tr
+umutlu	O	tr
+olduğunu	O	tr
 söyledi	O	tr
 .	O	tr
 
@@ -23836,11 +24609,13 @@ yaşandı	O	tr
 .	O	tr
 
 Başkan	O	tr
-Süleyman_Seba	O	tr
+Süleyman	O	tr
+Seba	O	tr
 ,	O	tr
 Teknik	O	tr
 Direktör	O	tr
-Rasim_Kara	O	tr
+Rasim	O	tr
+Kara	O	tr
 'ya	O	tr
 "	O	tr
 Bu	O	tr
@@ -23864,13 +24639,15 @@ lira	O	tr
 ceza	O	tr
 keselim	O	tr
 "	O	tr
-yanıtını	B-IDIOM	tr
-verince	I-IDIOM	tr
+yanıtını	O	tr
+verince	O	tr
 buna	O	tr
-Futbol_Komitesi	O	tr
+Futbol	O	tr
+Komitesi	O	tr
 üyelerinden	O	tr
 yönetici	O	tr
-İlker_Özbilek	O	tr
+İlker	O	tr
+Özbilek	O	tr
 karşı	O	tr
 çıktı	O	tr
 .	O	tr
@@ -23904,8 +24681,8 @@ Ancak	O	tr
 Özbilek	O	tr
 'in	O	tr
 önerisi	O	tr
-kabul	B-IDIOM	tr
-edilmedi	I-IDIOM	tr
+kabul	O	tr
+edilmedi	O	tr
 .	O	tr
 
 Toplantıdan	O	tr
@@ -23926,22 +24703,25 @@ gitti	O	tr
 ,	O	tr
 ancak	O	tr
 artık	O	tr
-Futbol_Komitesi	O	tr
+Futbol	O	tr
+Komitesi	O	tr
 'nde	O	tr
 görev	O	tr
 yapmayacağını	O	tr
 açıkladı	O	tr
 .	O	tr
 
-CİM_-_Bom	O	tr
+CİM	O	tr
+-	O	tr
+Bom	O	tr
 ,	O	tr
 ligin	O	tr
 ikinci	O	tr
 yarısı	O	tr
 için	O	tr
 dün	O	tr
-işbaşı	B-IDIOM	tr
-yaptı	I-IDIOM	tr
+işbaşı	O	tr
+yaptı	O	tr
 .	O	tr
 
 Sabah	O	tr
@@ -23958,13 +24738,14 @@ da	O	tr
 İspanya	O	tr
 'ya	O	tr
 giderek	O	tr
-kampa	B-IDIOM	tr
-girdiler	I-IDIOM	tr
+kampa	O	tr
+girdiler	O	tr
 .	O	tr
 
 Teknik	O	tr
 Direktör	O	tr
-Fatih_Terim	O	tr
+Fatih	O	tr
+Terim	O	tr
 ,	O	tr
 İspanya	O	tr
 kampında	O	tr
@@ -23976,8 +24757,8 @@ ve	O	tr
 futbolcularına	O	tr
 günde	O	tr
 üç	O	tr
-idman	B-IDIOM	tr
-yaptıracak	I-IDIOM	tr
+idman	O	tr
+yaptıracak	O	tr
 .	O	tr
 
 GALATASARAY	O	tr
@@ -24005,13 +24786,14 @@ da	O	tr
 İspanya	O	tr
 'ya	O	tr
 giderek	O	tr
-kampa	B-IDIOM	tr
-girdiler	I-IDIOM	tr
+kampa	O	tr
+girdiler	O	tr
 .	O	tr
 
 Teknik	O	tr
 Direktör	O	tr
-Fatih_Terim	O	tr
+Fatih	O	tr
+Terim	O	tr
 'in	O	tr
 İspanya	O	tr
 kampında	O	tr
@@ -24082,17 +24864,17 @@ hocası	O	tr
 'ya	O	tr
 gitmeden	O	tr
 önce	O	tr
-yaptığı	B-IDIOM	tr
-açıklamada	I-IDIOM	tr
+yaptığı	O	tr
+açıklamada	O	tr
 ,	O	tr
 "	O	tr
-Şampiyon	I-IDIOM	tr
-olmak	I-IDIOM	tr
+Şampiyon	O	tr
+olmak	O	tr
 için	O	tr
-elimizden	I-IDIOM	tr
-ne	I-IDIOM	tr
-geliyorsa	I-IDIOM	tr
-yapacağız	I-IDIOM	tr
+elimizden	O	tr
+ne	O	tr
+geliyorsa	O	tr
+yapacağız	O	tr
 .	O	tr
 Bu	O	tr
 hedefe	O	tr
@@ -24137,8 +24919,8 @@ küçük	O	tr
 bir	O	tr
 hataya	O	tr
 bile	O	tr
-meydan	I-IDIOM	tr
-vermemeliyiz	I-IDIOM	tr
+meydan	O	tr
+vermemeliyiz	O	tr
 "	O	tr
 dedi	O	tr
 .	O	tr
@@ -24258,8 +25040,8 @@ olarak	O	tr
 Mehmet	O	tr
 ve	O	tr
 Atilla	O	tr
-yer	B-IDIOM	tr
-alırken	I-IDIOM	tr
+yer	O	tr
+alırken	O	tr
 ,	O	tr
 PAF	O	tr
 takımından	O	tr
@@ -24285,7 +25067,8 @@ nedeniyle	O	tr
 gidemediler	O	tr
 .	O	tr
 
-Abbas_Güçlü	O	tr
+Abbas	O	tr
+Güçlü	O	tr
 .	O	tr
 
 YENİ	O	tr
@@ -24317,8 +25100,8 @@ günde	O	tr
 yazıp	O	tr
 yazmama	O	tr
 konusunda	O	tr
-kıvrandım	B-IDIOM	tr
-durdum	I-IDIOM	tr
+kıvrandım	O	tr
+durdum	O	tr
 .	O	tr
 
 Birkaç	O	tr
@@ -24357,8 +25140,8 @@ mü	O	tr
 "	O	tr
 O	O	tr
 da	O	tr
-cevap	B-IDIOM	tr
-veriyor	I-IDIOM	tr
+cevap	O	tr
+veriyor	O	tr
 .	O	tr
 
 "	O	tr
@@ -24379,7 +25162,8 @@ Kim	O	tr
 ne	O	tr
 derse	O	tr
 desin	O	tr
-İbrahim_Tatlıses	O	tr
+İbrahim	O	tr
+Tatlıses	O	tr
 ,	O	tr
 türkücü	O	tr
 olarak	O	tr
@@ -24420,8 +25204,8 @@ kırmasına	O	tr
 ,	O	tr
 bu	O	tr
 sözler	O	tr
-neden	B-IDIOM	tr
-oluyor	I-IDIOM	tr
+neden	O	tr
+oluyor	O	tr
 .	O	tr
 
 Biraz	O	tr
@@ -24456,13 +25240,15 @@ küfrettikçe	O	tr
 ,	O	tr
 karşısındakini	O	tr
 aşağıladıkça	O	tr
-pirim	B-IDIOM	tr
-yapıyor	I-IDIOM	tr
+pirim	O	tr
+yapıyor	O	tr
 .	O	tr
 
-Zeki_Alasya	O	tr
+Zeki	O	tr
+Alasya	O	tr
 -	O	tr
-Metin_Akpınar	O	tr
+Metin	O	tr
+Akpınar	O	tr
 ikilisi	O	tr
 de	O	tr
 ,	O	tr
@@ -24492,15 +25278,16 @@ yapmadılar	O	tr
 yapamadılar	O	tr
 .	O	tr
 
-Kemal_Sunal	O	tr
+Kemal	O	tr
+Sunal	O	tr
 farklı	O	tr
 mı	O	tr
 .	O	tr
 
 O	O	tr
 da	O	tr
-küfür	B-IDIOM	tr
-ettikçe	I-IDIOM	tr
+küfür	O	tr
+ettikçe	O	tr
 daha	O	tr
 fazla	O	tr
 izleniyor	O	tr
@@ -24552,7 +25339,8 @@ acayiptir	O	tr
 gidiyoruz	O	tr
 .	O	tr
 
-Cem_Karaca	O	tr
+Cem	O	tr
+Karaca	O	tr
 'nın	O	tr
 bir	O	tr
 şarkısı	O	tr
@@ -24609,7 +25397,8 @@ olan	O	tr
 Milli	O	tr
 Eğitim	O	tr
 Bakanı	O	tr
-Mehmet_Sağlam	O	tr
+Mehmet	O	tr
+Sağlam	O	tr
 ve	O	tr
 haber	O	tr
 ,	O	tr
@@ -24680,15 +25469,15 @@ sistem	O	tr
 aylarca	O	tr
 önce	O	tr
 de	O	tr
-gündeme	B-IDIOM	tr
-geldi	I-IDIOM	tr
+gündeme	O	tr
+geldi	O	tr
 ve	O	tr
 uygulanırlığı	O	tr
 olmadığı	O	tr
 için	O	tr
-üzerinde	I-IDIOM	tr
+üzerinde	O	tr
 bile	O	tr
-durulmadı	I-IDIOM	tr
+durulmadı	O	tr
 .	O	tr
 
 Çiller	O	tr
@@ -24705,7 +25494,8 @@ kadar	O	tr
 inandırıcı	O	tr
 olduysa	O	tr
 ,	O	tr
-Mehmet_Sağlam	O	tr
+Mehmet	O	tr
+Sağlam	O	tr
 'ın	O	tr
 sözleri	O	tr
 ve	O	tr
@@ -24718,8 +25508,8 @@ kalıcı	O	tr
 olacak	O	tr
 .	O	tr
 
-Manşeti	B-IDIOM	tr
-atan	I-IDIOM	tr
+Manşeti	O	tr
+atan	O	tr
 ,	O	tr
 Sabah	O	tr
 gibi	O	tr
@@ -24744,8 +25534,8 @@ mu	O	tr
 "	O	tr
 diye	O	tr
 yüzlerce	O	tr
-telefon	B-IDIOM	tr
-geldi	I-IDIOM	tr
+telefon	O	tr
+geldi	O	tr
 .	O	tr
 
 Keşke	O	tr
@@ -24773,12 +25563,12 @@ kalmalıdır	O	tr
 .	O	tr
 
 Eğitime	O	tr
-gönül	B-IDIOM	tr
-verenler	I-IDIOM	tr
+gönül	O	tr
+verenler	O	tr
 de	O	tr
 ,	O	tr
-raiting	I-IDIOM	tr
-yapıyor	I-IDIOM	tr
+raiting	O	tr
+yapıyor	O	tr
 diye	O	tr
 balon	O	tr
 haberlere	O	tr
@@ -24788,7 +25578,8 @@ yönelirlerse	O	tr
 yandık	O	tr
 .	O	tr
 
-Taha_Akyol	O	tr
+Taha	O	tr
+Akyol	O	tr
 .	O	tr
 
 TÜRKİYE	O	tr
@@ -24810,9 +25601,9 @@ Komisyonu	O	tr
 dinlenecek	O	tr
 .	O	tr
 
-Susurluk___Araştırma_Komisyonu	O	tr
 Başkanı	O	tr
-Mehmet_Elkatmış	O	tr
+Mehmet	O	tr
+Elkatmış	O	tr
 diyor	O	tr
 ki	O	tr
 :	O	tr
@@ -24969,7 +25760,8 @@ cinayetle	O	tr
 öldürülmüş	O	tr
 MİT	O	tr
 'çi	O	tr
-Tarık_Ümit	O	tr
+Tarık	O	tr
+Ümit	O	tr
 'in	O	tr
 kızını	O	tr
 dinleyeceğiz	O	tr
@@ -24980,7 +25772,9 @@ Yaprak	O	tr
 TV	O	tr
 '	O	tr
 sahibi	O	tr
-Mehmet_Ali_Yaprak	O	tr
+Mehmet	O	tr
+Ali	O	tr
+Yaprak	O	tr
 'ı	O	tr
 dinleyeceğiz	O	tr
 .	O	tr
@@ -24988,7 +25782,8 @@ dinleyeceğiz	O	tr
 Özel	O	tr
 Harekat	O	tr
 'tan	O	tr
-İbrahim_Şahin	O	tr
+İbrahim	O	tr
+Şahin	O	tr
 'i	O	tr
 dinleyeceğiz	O	tr
 .	O	tr
@@ -25001,7 +25796,8 @@ sayfayı	O	tr
 geçmiş	O	tr
 .	O	tr
 
-Mesut_Yılmaz	O	tr
+Mesut	O	tr
+Yılmaz	O	tr
 'ın	O	tr
 ifadesi	O	tr
 90	O	tr
@@ -25063,8 +25859,8 @@ yok	O	tr
 
 Ama	O	tr
 mahkemeye	O	tr
-müracaat	B-IDIOM	tr
-edip	I-IDIOM	tr
+müracaat	O	tr
+edip	O	tr
 `	O	tr
 delil	O	tr
 tesbiti	O	tr
@@ -25084,8 +25880,8 @@ vardır	O	tr
 .	O	tr
 
 Yasalarda	O	tr
-yer	B-IDIOM	tr
-alan	I-IDIOM	tr
+yer	O	tr
+alan	O	tr
 bütün	O	tr
 `	O	tr
 soruşturma	O	tr
@@ -25097,8 +25893,8 @@ bu	O	tr
 şekilde	O	tr
 adli	O	tr
 süreçlerden	O	tr
-istifade	I-IDIOM	tr
-edeceğimiz	I-IDIOM	tr
+istifade	O	tr
+edeceğimiz	O	tr
 için	O	tr
 ,	O	tr
 yetkisizlikten	O	tr
@@ -25149,8 +25945,8 @@ samimiyetle	O	tr
 istiyor	O	tr
 .	O	tr
 
-Gayret	B-IDIOM	tr
-ediyor	I-IDIOM	tr
+Gayret	O	tr
+ediyor	O	tr
 .	O	tr
 
 Rejimin	O	tr
@@ -25237,8 +26033,8 @@ kapris	O	tr
 değil	O	tr
 görev	O	tr
 bilinciyle	O	tr
-hareket	B-IDIOM	tr
-eder	I-IDIOM	tr
+hareket	O	tr
+eder	O	tr
 .	O	tr
 
 Anayasa	O	tr
@@ -25276,7 +26072,6 @@ demek	O	tr
 değildir	O	tr
 .	O	tr
 
-Susurluk___Araştırma_Komisyonu	O	tr
 ,	O	tr
 işini	O	tr
 titizlikle	O	tr
@@ -25311,21 +26106,26 @@ hukuk	O	tr
 devletidir	O	tr
 .	O	tr
 
-Osman_Ulagay	O	tr
+Osman	O	tr
+Ulagay	O	tr
 .	O	tr
 
-Konrad_Adenauer_Vakfı	O	tr
+Konrad	O	tr
+Adenauer	O	tr
+Vakfı	O	tr
 Türkiye	O	tr
 Temsilcisi	O	tr
-Max_Georg_Meier	O	tr
+Max	O	tr
+Georg	O	tr
+Meier	O	tr
 tepeden	O	tr
 inme	O	tr
 verilen	O	tr
 hizmetlerin	O	tr
 KOBİ	O	tr
 'lere	O	tr
-faydası	B-IDIOM	tr
-dokunmayacağını	I-IDIOM	tr
+faydası	O	tr
+dokunmayacağını	O	tr
 ,	O	tr
 örgütlenmenin	O	tr
 tabandan	O	tr
@@ -25380,7 +26180,9 @@ neleri	O	tr
 görüyorsunuz	O	tr
 .	O	tr
 
-Max_Georg_Meier	O	tr
+Max	O	tr
+Georg	O	tr
+Meier	O	tr
 :	O	tr
 Bunların	O	tr
 başında	O	tr
@@ -25561,8 +26363,8 @@ KOBİ	O	tr
 için	O	tr
 örgütlenme	O	tr
 ,	O	tr
-lobi	B-IDIOM	tr
-yapma	I-IDIOM	tr
+lobi	O	tr
+yapma	O	tr
 gibi	O	tr
 konularda	O	tr
 çok	O	tr
@@ -25585,8 +26387,8 @@ için	O	tr
 önce	O	tr
 KOBİ	O	tr
 'lerin	O	tr
-temsil	B-IDIOM	tr
-edilmesi	I-IDIOM	tr
+temsil	O	tr
+edilmesi	O	tr
 lazım	O	tr
 .	O	tr
 
@@ -25633,8 +26435,8 @@ bağlı	O	tr
 odalar	O	tr
 da	O	tr
 aktif	O	tr
-hale	B-IDIOM	tr
-geldi	I-IDIOM	tr
+hale	O	tr
+geldi	O	tr
 .	O	tr
 
 Diğer	O	tr
@@ -25676,8 +26478,8 @@ aralıklarla	O	tr
 -	O	tr
 15	O	tr
 işadamı	O	tr
-biraraya	B-IDIOM	tr
-gelsin	I-IDIOM	tr
+biraraya	O	tr
+gelsin	O	tr
 ,	O	tr
 konuşsun	O	tr
 ,	O	tr
@@ -25696,8 +26498,8 @@ ve	O	tr
 siyasi	O	tr
 güç	O	tr
 olduğunda	O	tr
-ortaya	B-IDIOM	tr
-çıkar	I-IDIOM	tr
+ortaya	O	tr
+çıkar	O	tr
 .	O	tr
 
 Ama	O	tr
@@ -25725,20 +26527,22 @@ kalacaklar	O	tr
 .	O	tr
 
 Biz	O	tr
-Konrad_Adenauer_Vakfı	O	tr
+Konrad	O	tr
+Adenauer	O	tr
+Vakfı	O	tr
 olarak	O	tr
 örgütlenme	O	tr
 konusunda	O	tr
 epey	O	tr
-destek	B-IDIOM	tr
-verdik	I-IDIOM	tr
+destek	O	tr
+verdik	O	tr
 ama	O	tr
 beklediğimiz	O	tr
 o	O	tr
 KOBİ	O	tr
 TÜSİAD	O	tr
 'ı	O	tr
-ortaya	I-IDIOM	tr
-çıkmadı	I-IDIOM	tr
+ortaya	O	tr
+çıkmadı	O	tr
 .	O	tr
 

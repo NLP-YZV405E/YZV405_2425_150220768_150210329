@@ -40,55 +40,85 @@ def itu_to_tsv(input_csv, output_tsv):
             except Exception as e:
                 print(f"Error in row: {e}")
 
+def itu_to_tsv_test(input_csv, output_tsv):
+    df = pd.read_csv(input_csv)
+    
+    # check if the output directory exists, if not create it
+    os.makedirs(os.path.dirname(output_tsv), exist_ok=True)
+
+    with open(output_tsv, 'w', encoding='utf-8') as fout:
+        for _, row in df.iterrows():
+            # Extract the relevant columns
+            tokens = ast.literal_eval(row['tokenized_sentence'])
+            indices = ["" for _ in range(len(tokens))]
+            language = row['language']
+
+            # add a space between each sentence
+            for token, index in zip(tokens, indices):
+                fout.write(f"{token}\t{index}\t{language}\n")
+            fout.write("\n")
+            
+
 def parse_cupt(file_path):
+    """
+    Parse a CUpt file, splitting on '_' **only** when both sides are non-empty.
+    Returns List of sentences, each a list of (word, is_idiom) tuples.
+    """
     sentences = []
     sentence = []
-    
+
     with open(file_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            # Skip comments and empty lines
-            if line.startswith("#") or line == "":
-                # if end of sentence and sentence is not empty, add it to sentences and reset
-                if line == "" and sentence:
+            if line.startswith("#") or not line:
+                if not line and sentence:
                     sentences.append(sentence)
                     sentence = []
                 continue
-            # Split the line into columns and append to the current sentence
-            columns = line.split('\t')
-            sentence.append(columns)
-    
+
+            cols = line.split("\t")
+            form = cols[1]
+            is_idiom = form.endswith("*")
+            if is_idiom:
+                form = form[:-1]
+
+            # only split when parts are both non-empty
+            if "_" in form:
+                parts = form.split("_")
+                if len(parts) > 1 and all(len(p) > 0 for p in parts):
+                    for part in parts:
+                        sentence.append((part, is_idiom))
+                else:
+                    continue
+            else:
+                sentence.append((form, is_idiom))
+
     if sentence:
         sentences.append(sentence)
-    
     return sentences
 
 
-def tranform_cupt_to_tsv(input_path, output_path, lang):
-    
-    cupt_data = parse_cupt(input_path)
+def transform_cupt_to_tsv(input_path, output_path, lang):
+    data = parse_cupt(input_path)
 
-    with open(output_path, "w", encoding="utf-8") as file:
-        for sentence in cupt_data:
-            switch = False
-            for token in sentence:
-                # Skip empty tokens
-                if token[1] == "_":
-                    continue
-                # add word to the file
-                file.write(token[1] + "\t")
-                # if token ends with * then its not idiom
-                if token[-1] =="*":
-                    file.write("O\t")
-                # first token will get B-IDIOM and the rest I-IDIOM
-                elif token[-1] != "O" and switch == False:
-                    file.write("B-IDIOM\t")
-                    switch = True
+    with open(output_path, "w", encoding="utf-8") as out:
+        for sentence in data:
+            in_idiom = False
+            for word, is_idiom in sentence:
+                # now 'word' is a string, and 'is_idiom' is the bool flag
+                if not is_idiom:
+                    tag = "O"
                 else:
-                    file.write("I-IDIOM\t")
-                file.write(lang + "\n")
-            # add a space between each sentence
-            file.write("\n")
+                    if not in_idiom:
+                        tag = "B-IDIOM"
+                        in_idiom = True
+                    else:
+                        tag = "I-IDIOM"
+
+                # write only strings
+                out.write(word + "\t" + tag + "\t" + lang + "\n")
+            out.write("\n")
+
 
 def combine_tsv_files(tr_path, it_path, output_path):
     # read the two TSV files and combine them
@@ -99,6 +129,19 @@ def combine_tsv_files(tr_path, it_path, output_path):
         tr_lines = f_tr.readlines()
         it_lines = f_it.readlines()
         f_out.writelines(tr_lines + it_lines)
+
+def combine_all_tsv_files(tsv1, tsv2, tsv3, output_path):
+    # read the two TSV files and combine them
+    with open(tsv1, "r", encoding="utf-8") as itu, \
+         open(tsv2, "r", encoding="utf-8") as parsame, \
+         open(tsv3, "r", encoding="utf-8") as id10m, \
+         open(output_path, "w", encoding="utf-8") as f_out:
+
+        itu_lines = itu.readlines()
+        parsame_lines = parsame.readlines()
+        id10m_lines = id10m.readlines()
+
+        f_out.writelines(itu_lines + parsame_lines + id10m_lines)
 
 def add_language(path, outpath, lang):
     # add language to ID10M data
