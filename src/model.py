@@ -97,7 +97,7 @@ class IdiomExtractor(nn.Module):
     def padding_mask(self, labels: torch.Tensor) -> torch.Tensor:
 
         # create a bool mask: True for real tokens, False for padding
-        mask = labels.ne(-1)            # shape: (batch, seq_len), dtype=bool
+        mask = labels.ne(0)            # shape: (batch, seq_len), dtype=bool
         # CRF requires the first timestep unmasked
         mask[:, 0] = True
         return mask    
