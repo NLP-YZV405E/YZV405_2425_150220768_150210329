@@ -82,14 +82,26 @@ class IdiomExtractor(nn.Module):
             X = self.dropout(X)
 
         
-        # Apply linear layer, emissions.size = batch_size, number_of_classes
+        # Apply linear layer, 
         emissions  = self.classifier(X)
+        
+        # print(f"emissions shape: {emissions.shape}")
+        # emissions shape: torch.Size([7, 14, 4])
 
         # eğer label yoksa (inference) decode etmemiz lazım
         if labels is None:
+            # return highest probability sequence
             return self.CRF.decode(emissions, mask=mask)
         
-        # log_likelihood.shape = parch_size, label_length, number_of_classes ????
-        log_likelihood = self.CRF.forward(emissions, labels, mask)
-        print(f"log_likelihood size: {log_likelihood.size}")
+        
+        # log likelihood loss fonksiyonumuz, burdan backward ile backpropagate ediyoruz
+        log_likelihood = self.CRF(emissions, labels, mask)
+        print(f"log_likelihood shape: {log_likelihood.shape}")
+        print(f"log_likelihood: {log_likelihood}")
+
+        # print(f"log_likelihood shape: {log_likelihood.shape}")
+        # tensor(-102.7468, device='cuda:0', grad_fn=<SumBackward0>)
+
         return log_likelihood, emissions
+    
+    
