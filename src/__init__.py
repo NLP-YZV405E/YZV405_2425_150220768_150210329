@@ -24,3 +24,4 @@ from transformers import XLMRobertaTokenizer, XLMRobertaModel, XLMRobertaConfig
 from torchcrf import CRF
 import unicodedata
 import re
+import torch.nn.functional as F
