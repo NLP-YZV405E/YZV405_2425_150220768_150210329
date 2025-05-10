@@ -3,3 +3,5 @@
 /src/checkpoints/tr/*.pt
 !/src/checkpoints/
 /.tmp.driveupload
+src/src/checkpoints/it/deneme.pt
+*.pt
