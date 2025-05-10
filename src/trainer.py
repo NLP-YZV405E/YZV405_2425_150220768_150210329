@@ -17,7 +17,8 @@ class Trainer:
                  it_optimizer,
                  tr_embedder,
                  it_embedder,
-                 labels_vocab: dict):
+                 labels_vocab: dict,
+                 modelname = "idiom_expr_detector"):
         self.tr_model     = tr_model
         self.it_model     = it_model
         self.tr_optimizer = tr_optimizer
@@ -25,6 +26,7 @@ class Trainer:
         self.labels_vocab = labels_vocab
         self.tr_embedder  = tr_embedder
         self.it_embedder  = it_embedder
+        self.modelname    = modelname
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
 
     def padding_mask(self, batch: torch.Tensor) -> torch.BoolTensor:
@@ -35,13 +37,12 @@ class Trainer:
     def train(self,
               train_loader: DataLoader,
               valid_loader: DataLoader,
-              epochs: int = 1,
-              patience: int = 20,
-              modelname: str = "idiom_expr_detector"):
+              epochs: int = 20,
+              patience: int = 10):
 
         print("\nTraining...")
         train_loss_list = []
-        dev_loss_list   = []
+        dev_acc_list    = []
         f1_scores       = []
         record_dev      = 0.0
         full_patience   = patience
@@ -51,7 +52,7 @@ class Trainer:
                 print("Stopping early (no more patience).")
                 break
 
-            print(f" Epoch {epoch:03d}")
+            print(f" Epoch {epoch:03d}, patience: {patience}")
             self.tr_model.train()
             self.it_model.train()
 
@@ -60,305 +61,209 @@ class Trainer:
             tr_batches  = it_batches  = 0
 
             for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
-                labels = labels.to(self.device)
-                langs = langs.to(self.device)
 
-                # len(words) = 16, labels -> [16, 14], langs -> [16, 14]
-                # words -> list of list, words: [['Zaman', 'kazanmak', 'için', 'yaptığın', 'entrikalar', 'seni',
-                # 'kurtarmayacak', ',', 'eninde', 'sonunda', 'yakalayacak', 'seni', 'polis', '!'], ...]
-                # langs -> [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1], dil + pad, bunu değiştirelim
-                # labels -> [ 3,  3,  3,  3,  3,  1,  2,  3, -1, -1, -1, -1, -1, -1], idiom + pad, bu iyi
+                batch_size, seq_len = labels.shape
+                device = labels.device
+                hidden_size = self.tr_embedder.bert_model.config.hidden_size
 
-                # .nonzero() ile zero olmayan indexleri alıyoruz, maskede kullanınca o dile ait indexler geliyor.
+                # get indices of turkish and italian sentences
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
-                
-                # loss değerlerini 0 la
-                tr_loss = torch.tensor(0.0, device=self.device)
-                it_loss = torch.tensor(0.0, device=self.device)
-                
-                # if there are turkish data in the batch
+
+                # eğer tr dilinde cümle varsa
                 if len(tr_indices) > 0:
-                    
-                    tr_words = [words[i] for i in tr_indices.cpu().numpy()]
-                    tr_labels_subset = labels[tr_indices]
-                    # first the first batch tr_words.size = 
+                    # tr dilindeki cümlelerin labels'ını al
+                    tr_labels = labels[tr_indices]
+                    # tr dilindeki cümleleri al
+                    tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
+                    # cümleleri embed et
+                    tr_embeds = self.tr_embedder.embed_sentences(tr_sents)
+                    # cümleleri paddingle
+                    tr_embs = pad_sequence(tr_embeds, batch_first=True, padding_value=0).to(device)
+                    # eğer tr dilindeki cümlelerin uzunluğu seq_len'den küçükse, seq_len'e pad et
+                    if tr_embs.size(1) < seq_len:
+                        pad_amt = seq_len - tr_embs.size(1)
+                        tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
+                else:
+                    # eğer tr dilinde cümle yoksa, 0'larla doldur
+                    tr_embs = torch.zeros((0, seq_len, hidden_size), device=device)
 
-                    
-                    # tr_embedded -> [batch_size, seq_len, hidden_size]
-                    tr_embedded = self.tr_embedder.embed_sentences(tr_words)
-                    print(f"tr_embedded shape: {len(tr_embedded)}")
-
-                    # tr_embs_shape = [batch_size, seq_len, hidden_size] -> 62, 14, 768
-                    # get embeddings for Turkish data
-
-                    tr_embs = pad_sequence(
-                        tr_embedded, batch_first=True, padding_value=-1
-                    ).to(self.device)
-
-                    print(f"tr_embs shape: {tr_embs.shape}")
-
-                    
-                    # forward pass and loss calculation
-                    tr_LL, _ = self.tr_model(tr_embs, tr_labels_subset)
-                    tr_NLL = -tr_LL.sum() / len(tr_indices)
-                    tr_loss_sum += tr_NLL.item()
-                    tr_batches += 1
-                    tr_loss = tr_NLL
-                
-                # if there are italian data in the batch
                 if len(it_indices) > 0:
-                    it_words = [words[i] for i in it_indices.cpu().numpy()]
-                    it_labels_subset = labels[it_indices]
-                    
-                    # get embeddings for italian data
-                    it_embs = pad_sequence(
-                        self.it_embedder.embed_sentences(it_words),
-                        batch_first=True, padding_value=0
-                    ).to(self.device)
-                    
-                    # forward pass and loss calculation
-                    it_LL, _ = self.it_model(it_embs, it_labels_subset)
-                    it_NLL = -it_LL.sum() / len(it_indices)
-                    it_loss_sum += it_NLL.item()
+                    it_labels = labels[it_indices]
+                    it_sents  = [words[i] for i in it_indices.cpu().numpy()]
+                    it_embeds = self.it_embedder.embed_sentences(it_sents)
+                    it_embs   = pad_sequence(it_embeds, batch_first=True, padding_value=0).to(device)
+                    if it_embs.size(1) < seq_len:
+                        pad_amt = seq_len - it_embs.size(1)
+                        it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
+                else:
+                    it_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+
+                tr_NLL = 0
+                it_NLL = 0
+
+                if len(tr_indices) > 0:
+                    tr_LL, _ = self.tr_model(tr_embs, tr_labels)
+                    tr_NLL = -tr_LL
+                    tr_batches += 1
+                
+                if len(it_indices) > 0:
+                    it_LL, _ = self.it_model(it_embs, it_labels)
+                    it_NLL = -it_LL
                     it_batches += 1
-                    it_loss = it_NLL
-                
-                # combine the losses
-                loss = tr_loss + it_loss
-                
+
+                print(f"tr_NLL: {tr_NLL}")
+                print(f"it_NLL: {it_NLL}")
+                loss = tr_NLL + it_NLL
+                print(f"loss: {loss}")
+
+                tr_loss_sum += tr_NLL
+                it_loss_sum += it_NLL
+
+
+                tr_optimizer = self.tr_optimizer.Adam(self.tr_model.parameters(), lr=0.00001)
+                it_optimizer = self.it_optimizer.Adam(self.it_model.parameters(), lr=0.00001)
+
                 # Optimizer step
-                self.tr_optimizer.zero_grad()
-                self.it_optimizer.zero_grad()
+                tr_optimizer.zero_grad()
+                it_optimizer.zero_grad()
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), 1)
                 torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), 1)
-                self.tr_optimizer.step()
-                self.it_optimizer.step()
+                tr_optimizer.step()
+                it_optimizer.step()
+
 
             # epoch-level averages
-            avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
+            avg_tr    = tr_loss_sum / epoch if tr_batches else 0.0
             avg_it    = it_loss_sum / it_batches if it_batches else 0.0
             avg_total = avg_tr + avg_it
 
             train_loss_list.append(avg_total)
             print(f"[E:{epoch:02d}] train tr_loss={avg_tr:.4f}, it_loss={avg_it:.4f}, total={avg_total:.4f}")
 
-            valid_loss, f1 = self.evaluate(valid_loader)
-            dev_loss_list.append(valid_loss)
-            f1_scores.append(f1)
+            dev_acc, dev_f1 = self.evaluate(valid_loader)
+            dev_acc_list.append(dev_acc)
+            f1_scores.append(dev_f1)
 
-            if f1 > record_dev:
-                record_dev = f1
-                torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{modelname}.pt")
-                torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{modelname}.pt")
+            if dev_f1 > record_dev:
+                record_dev = dev_f1
+                torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{self.modelname}.pt")
+                torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{self.modelname}.pt")
                 patience = full_patience
             else:
                 patience -= 1
 
-            print(f"\t[E:{epoch:02d}] valid_loss={valid_loss:.4f}  f1={f1:.4f}  patience={patience}")
-
         print("...Done!")
-        return train_loss_list, dev_loss_list, f1_scores
+        return train_loss_list, dev_acc_list, f1_scores
 
     def evaluate(self, valid_loader: DataLoader):
+
+        # put models to eval mode
         self.tr_model.eval()
         self.it_model.eval()
 
-        tr_loss_sum = it_loss_sum = 0.0
-        tr_batches  = it_batches  = 0
+        # lists to hold predictions and labels
         all_predictions = []
         all_labels      = []
-        labels_vocab_reverse = {v: k for k, v in self.labels_vocab.items()}
+        all_tr_predictions = []
+        all_it_predictions = []
+        all_tr_labels = []
+        all_it_labels = []
 
         with torch.no_grad():
             for words, labels, langs in tqdm(valid_loader, desc="Evaluating"):
-                labels = labels.to(self.device)
-                langs  = langs.to(self.device)
+                batch_size, seq_len = labels.shape
+                device = labels.device
+                hidden_size = self.tr_embedder.bert_model.config.hidden_size
 
-                # Split data by language while keeping original indices
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
-                
-                # Process Turkish data if available
+
                 if len(tr_indices) > 0:
-                    # Select Turkish data
-                    tr_words = [words[i] for i in tr_indices.cpu().numpy()]
-                    tr_labels_subset = labels[tr_indices]
-                    
-                    # Get embeddings for Turkish data
-                    tr_embs = pad_sequence(
-                        self.tr_embedder.embed_sentences(tr_words),
-                        batch_first=True, padding_value=0
-                    ).to(self.device)
-                    
-                    # Forward pass for Turkish model
-                    ll_tr, preds_tr = self.tr_model(tr_embs, tr_labels_subset)
-                    nll_tr = -ll_tr.sum() / len(tr_indices)
-                    tr_loss_sum += nll_tr.item()
-                    tr_batches += 1
-                    
-                    # Collect predictions for Turkish data
-                    preds_flat = preds_tr.view(-1, preds_tr.size(-1))
-                    labels_flat = tr_labels_subset.view(-1)
-                    for i in range(len(preds_flat)):
-                        if labels_flat[i] != 0:
-                            all_predictions.append(labels_vocab_reverse[int(torch.argmax(preds_flat[i]))])
-                            all_labels.append(labels_vocab_reverse[int(labels_flat[i])])
-                
-                # Process Italian data if available
-                if len(it_indices) > 0:
-                    # Select Italian data
-                    it_words = [words[i] for i in it_indices.cpu().numpy()]
-                    it_labels_subset = labels[it_indices]
-                    
-                    # Get embeddings for Italian data
-                    it_embs = pad_sequence(
-                        self.it_embedder.embed_sentences(it_words),
-                        batch_first=True, padding_value=0
-                    ).to(self.device)
-                    
-                    # Forward pass for Italian model
-                    ll_it, preds_it = self.it_model(it_embs, it_labels_subset)
-                    nll_it = -ll_it.sum() / len(it_indices)
-                    it_loss_sum += nll_it.item()
-                    it_batches += 1
-                    
-                    # Collect predictions for Italian data
-                    preds_flat = preds_it.view(-1, preds_it.size(-1))
-                    labels_flat = it_labels_subset.view(-1)
-                    for i in range(len(preds_flat)):
-                        if labels_flat[i] != 0:
-                            all_predictions.append(labels_vocab_reverse[int(torch.argmax(preds_flat[i]))])
-                            all_labels.append(labels_vocab_reverse[int(labels_flat[i])])
-
-        avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
-        avg_it    = it_loss_sum / it_batches if it_batches else 0.0
-        avg_total = avg_tr + avg_it
-
-        print(f"[EVAL] tr_loss={avg_tr:.4f}, it_loss={avg_it:.4f}, total_loss={avg_total:.4f}")
-        print(classification_report(all_labels, all_predictions, digits=3, zero_division=0))
-        f1 = f1_score(all_labels, all_predictions, average='macro', zero_division=0)
-        print(f"Macro F1: {f1:.4f}")
-
-        return avg_total, f1
-    
-    def test(self, valid_loader: DataLoader):
-        self.tr_model.eval()
-        self.it_model.eval()
-
-        tr_loss_sum = it_loss_sum = 0.0
-        tr_batches  = it_batches  = 0
-        
-        # Lists to store results in order
-        ordered_predictions = []
-        ordered_labels = []
-        ordered_words = []
-        ordered_langs = []
-        sample_indices = []
-        
-        # For metrics calculation
-        all_predictions = []
-        all_labels = []
-        
-        labels_vocab_reverse = {v: k for k, v in self.labels_vocab.items()}
-        
-        # Sample index counter
-        sample_idx = 0
-
-        with torch.no_grad():
-            for words, labels, langs in tqdm(valid_loader, desc="Testing"):
-                # Since batch size is 1, we can simplify by taking the first item
-                word = words[0]  # Single sentence 
-                label = labels.to(self.device)  # Shape: [1, seq_len]
-                lang = langs.to(self.device)[0]  # Single language indicator
-                
-                # Determine language (0=Turkish, 1=Italian)
-                is_turkish = (lang.item() == 0)
-                
-                if is_turkish:
-                    # Process Turkish sample
-                    tr_embs = pad_sequence(
-                        self.tr_embedder.embed_sentences([word]),
-                        batch_first=True, padding_value=0
-                    ).to(self.device)
-                    
-                    # Forward pass
-                    ll_tr, preds_tr = self.tr_model(tr_embs, label)
-                    nll_tr = -ll_tr.sum()
-                    tr_loss_sum += nll_tr.item()
-                    tr_batches += 1
-                    
-                    # Collect predictions
-                    preds = []
-                    true_labels = []
-                    
-                    # Process each token
-                    for j in range(preds_tr.size(1)):
-                        if j < label.size(1) and label[0, j] != 0:
-                            pred_label = labels_vocab_reverse[int(torch.argmax(preds_tr[0, j]))]
-                            true_label = labels_vocab_reverse[int(label[0, j])]
-                            
-                            preds.append(pred_label)
-                            true_labels.append(true_label)
-                            
-                            # Add to flat lists for metrics
-                            all_predictions.append(pred_label)
-                            all_labels.append(true_label)
+                    tr_sents   = [words[i] for i in tr_indices.cpu().numpy()]
+                    tr_embeds  = self.tr_embedder.embed_sentences(tr_sents)
+                    tr_embs    = pad_sequence(tr_embeds, batch_first=True, padding_value=0).to(device)
+                    if tr_embs.size(1) < seq_len:
+                        pad_amt = seq_len - tr_embs.size(1)
+                        tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    # Process Italian sample
-                    it_embs = pad_sequence(
-                        self.it_embedder.embed_sentences([word]),
-                        batch_first=True, padding_value=0
-                    ).to(self.device)
-                    
-                    # Forward pass
-                    ll_it, preds_it = self.it_model(it_embs, label)
-                    nll_it = -ll_it.sum()
-                    it_loss_sum += nll_it.item()
-                    it_batches += 1
-                    
-                    # Collect predictions
-                    preds = []
-                    true_labels = []
-                    
-                    # Process each token
-                    for j in range(preds_it.size(1)):
-                        if j < label.size(1) and label[0, j] != 0:
-                            pred_label = labels_vocab_reverse[int(torch.argmax(preds_it[0, j]))]
-                            true_label = labels_vocab_reverse[int(label[0, j])]
-                            
-                            preds.append(pred_label)
-                            true_labels.append(true_label)
-                            
-                            # Add to flat lists for metrics
-                            all_predictions.append(pred_label)
-                            all_labels.append(true_label)
-                
-                # Store results in order
-                ordered_predictions.append(preds)
-                ordered_labels.append(true_labels)
-                ordered_words.append(word)
-                ordered_langs.append("tr" if is_turkish else "it")
-                sample_indices.append(sample_idx)
-                
-                # Increment sample counter
-                sample_idx += 1
+                    tr_embs = torch.zeros((0, seq_len, hidden_size), device=device)
 
-        # Calculate metrics
-        avg_tr = tr_loss_sum / tr_batches if tr_batches else 0.0
-        avg_it = it_loss_sum / it_batches if it_batches else 0.0
-        avg_total = avg_tr + avg_it
+                if len(it_indices) > 0:
+                    it_sents  = [words[i] for i in it_indices.cpu().numpy()]
+                    it_embeds = self.it_embedder.embed_sentences(it_sents)
+                    it_embs   = pad_sequence(it_embeds, batch_first=True, padding_value=0).to(device)
+                    if it_embs.size(1) < seq_len:
+                        pad_amt = seq_len - it_embs.size(1)
+                        it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
+                else:
+                    it_embs = torch.zeros((0, seq_len, hidden_size), device=device)
 
-        print(f"[TEST] tr_loss={avg_tr:.4f}, it_loss={avg_it:.4f}, total_loss={avg_total:.4f}")
-        print(classification_report(all_labels, all_predictions, digits=3, zero_division=0))
-        f1 = f1_score(all_labels, all_predictions, average='macro', zero_division=0)
-        print(f"Macro F1: {f1:.4f}")
-        
-        # Save predictions to CSV
-        self._save_predictions_to_csv(sample_indices, ordered_words, ordered_predictions, ordered_labels, ordered_langs)
+                # forward passes, getting list-of-lists predictions
+                tr_decode = self.tr_model(tr_embs, None)
+                it_decode = self.it_model(it_embs, None)
 
-        return all_labels, all_predictions
+                # turn those into (N_lang, seq_len) tensors
+                tr_pred = self.decode_to_tensor(tr_decode, seq_len, device)
+                it_pred = self.decode_to_tensor(it_decode, seq_len, device)
+
+                # reassemble the full batch predictions (batch_size, seq_len) 
+                full_pred = torch.full(
+                    (batch_size, seq_len),
+                    fill_value=0,
+                    dtype=torch.long,
+                    device=device
+                )
+
+                # get the full predicions while keeping original order
+                full_pred[tr_indices] = tr_pred
+                full_pred[it_indices] = it_pred
+
+                # accumulate for global scores
+                valid_mask   = labels.ne(0)  # ignore padding
+                flat_mask = valid_mask.view(-1)
+                flat_pred = full_pred.view(-1)[flat_mask]
+                flat_lbl  = labels.view(-1)[flat_mask]
+                all_predictions.extend(flat_pred.cpu().tolist())
+                all_labels.extend(flat_lbl.cpu().tolist())
+                all_tr_predictions.extend(tr_pred.cpu().tolist())
+                all_it_predictions.extend(it_pred.cpu().tolist())
+                all_tr_labels.extend(labels[tr_indices].cpu().tolist())
+                all_it_labels.extend(labels[it_indices].cpu().tolist())
+
+            # --- compute overall Accuracy & F1 ---
+            print("\n")
+            full_accuracy = accuracy_score(all_labels, all_predictions)
+            full_f1       = f1_score(all_labels, all_predictions,
+                                    average='macro', zero_division=0)
+            print(f"Full Accuracy: {full_accuracy:.4f}, Full F1: {full_f1:.4f}")
+            print(classification_report(all_tr_labels, all_tr_predictions,zero_division=0,digits=4))
+            print("\n")
+
+            tr_accuracy = accuracy_score(all_tr_labels, all_tr_predictions)
+            tr_f1       = f1_score(all_tr_labels, all_tr_predictions,
+                                    average='macro', zero_division=0)
+            print(f"TR Accuracy: {tr_accuracy:.4f}, TR F1: {tr_f1:.4f}")
+            print(classification_report(all_labels, all_predictions,zero_division=0,digits=4))
+            print("\n")
+
+            it_accuracy = accuracy_score(all_it_labels, all_it_predictions)
+            it_f1       = f1_score(all_it_labels, all_it_predictions,
+                                    average='macro', zero_division=0)
+            print(f"IT Accuracy: {it_accuracy:.4f}, IT F1: {it_f1:.4f}")
+            print(classification_report(all_it_labels, all_it_predictions,zero_division=0,digits=4))
+            print("\n")
+
+            #
+            # save_predictions_to_csv
+            # self._save_predictions_to_csv(tr_indices, tr_sents, all_tr_predictions, all_tr_labels, "tr")
+            # self._save_predictions_to_csv(it_indices, it_sents, all_it_predictions, all_it_labels, "it")
+        # return the actual values you computed
+        return full_accuracy, full_f1
+
+    
+
     
     def _save_predictions_to_csv(self, indices, words, predictions, true_labels, languages):
         """
@@ -399,3 +304,33 @@ class Trainer:
         csv_path = "./results/predictions.csv"
         df.to_csv(csv_path, index=False)
         print(f"Predictions saved to {csv_path}")
+
+    def decode_to_tensor(self, decode_out, seq_len, device):
+        # 1) list of lists → list of 1D tensors
+        token_tensors = [torch.tensor(seq, dtype=torch.long, device=device)
+                        for seq in decode_out]
+        # 2) hiç prediction yoksa boş tensor
+        if not token_tensors:
+            return torch.zeros((0, seq_len), dtype=torch.long, device=device)
+        # 3) pad_sequence ile batch_first ve padding_value=-1
+        padded = pad_sequence(token_tensors, batch_first=True, padding_value=-1)
+        # 4) eğer hâlâ seq_len’den kısa ise sağa pad et
+        if padded.size(1) < seq_len:
+            pad_amt = seq_len - padded.size(1)
+            padded = F.pad(padded, (0, pad_amt), value=-1)
+        return padded
+    
+    def embed_and_pad(self, words, indices, embedder):
+        if len(indices) == 0:
+            return torch.zeros((0, seq_len, hidden_size), device=device)
+        # gather sentences
+        sents = [words[i] for i in indices.cpu().numpy()]
+        embs = embedder.embed_sentences(sents)
+        embs = pad_sequence(embs, batch_first=True, padding_value=0).to(device)
+        # right-pad to seq_len if needed
+        if embs.size(1) < seq_len:
+            pad_amt = seq_len - embs.size(1)
+            embs = F.pad(embs, (0, 0, 0, pad_amt))
+        return embs
+
+    
