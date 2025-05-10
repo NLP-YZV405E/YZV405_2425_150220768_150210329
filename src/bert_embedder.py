@@ -37,15 +37,23 @@ class BERTEmbedder:
     token_type_ids = []
 
     # en uzun cümleye göre padding yapıyoruz
-    max_len = max([len(self._tokenize_sentence(s)[0]) for s in sentences]) 
+    raw_max = max([len(self._tokenize_sentence(s)[0]) for s in sentences]) 
+    max_model_len = self.bert_model.config.max_position_embeddings  # genelde 512
+    max_len = min(raw_max, max_model_len)
 
     for sentence in sentences:
 
       # encode olmuş sentence ve kelimeleri merge etmek için indexleri alıyoruz
       encoded_sentence, to_merge_wordpiece = self._tokenize_sentence(sentence)
 
+      if len(encoded_sentence) > max_len:
+          encoded_sentence = encoded_sentence[:max_len-1] + [self.bert_tokenizer.sep_token_id]
+          to_merge_wordpiece = [
+              [i for i in idxs if i < max_len-1]
+              for idxs in to_merge_wordpiece
+          ]
+
       # paddlenmiş kelimelere attende etmicez ilk n kelime 1 kalan max-n kelime 0
-      # 1 lere attend ediyoruz
       att_mask = [1] * len(encoded_sentence)
       att_mask = att_mask + [0] * (max_len - len(encoded_sentence))
 
@@ -120,28 +128,29 @@ class BERTEmbedder:
       return merged_output
   
 
- 
+
   # aggregated_layers has shape: shape batch_size x sequence_length x hidden_size
-  def _merge_embeddings(self, aggregated_layers:List[List[float]],
-                          to_merge_wordpieces:List[List[int]]):
-    
-
+  def _merge_embeddings(self, aggregated_layers, to_merge_wordpieces):
     merged_output = []
-    # first we remove the [CLS] and [SEP] tokens from the output embeddings
-    token_embeddings = aggregated_layers[:, 1:-1 ,:]
+    # Remove [CLS] ve [SEP]
+    # aggregated_layers: (batch_size, seq_len, hidden_size)
+    token_embeddings = aggregated_layers[:, 1:-1, :]  # (batch, seq_len−2, hidden)
 
-    # tokenlarla hangi indexlerde başlayıp bittiklerini alıyoruz
     for sent_embs, merge_idxs in zip(token_embeddings, to_merge_wordpieces):
       word_vectors = []
-      # her kelimenin başlayıp bittiği index için
+      # Her kelime için
       for idxs in merge_idxs:
-          # average all subtoken embeddings for that word
-          # BERT often splits a word into several pieces (“playing” → “play” + “##ing”),
-          # and each piece gets its own hidden‐state embedding
-          # kelimeyi oluşturan parçaların embeddinglerinin meanini alıyoruz
-          # bana garip geldi but if it works who am i to judge
-          word_vectors.append(torch.mean(sent_embs[idxs], dim=0))
-      # stack → Tensor(shape=(num_words, hidden_size))
-      merged_output.append(torch.stack(word_vectors).to(self.device))
-
+          # Orijinal dizide CLS 0. pozisyondaydı, biz onu attık → tüm indeksleri -1’le kaydır
+          valid = [i - 1 for i in idxs if 1 <= i < aggregated_layers.size(1)-1]
+          if not valid:
+              # Bazen tüm parçalar SEP/CLS dışında kalmayabilir, atla
+              continue
+          # Artık valid tümüyle 0 ≤ i < sent_embs.size(0) aralığında
+          piece_vecs = sent_embs[valid]         # (num_subtokens, hidden)
+          word_vectors.append(piece_vecs.mean(0))
+      if word_vectors:
+          merged_output.append(torch.stack(word_vectors).to(self.device))
+      else:
+          # Eğer hiç subtoken kalmadıysa, örn. çok uzun cümle kırpılınca…
+          merged_output.append(torch.zeros((0, aggregated_layers.size(2)), device=self.device))
     return merged_output

@@ -11,6 +11,7 @@ class IdiomDataset(Dataset):
         self.dataset_path = dataset_path
         self.labels_vocab = labels_vocab
         self.tagger_dict = tagger_dict
+        self.MAX_LEN = 512
 
         self.sentences = self._get_sentences()
         self.encoded_data = []
@@ -65,6 +66,12 @@ class IdiomDataset(Dataset):
                     words.append("UNK")
                 labels.append(elem["tag"])
                 langs.append(elem["lang"])
+
+            # truncate all three in lock-step 
+            words  = words[:self.MAX_LEN]
+            labels = labels[:self.MAX_LEN]
+            langs  = langs[:self.MAX_LEN]
+
             
             vectorized_labels = [self.labels_vocab[label] for label in labels]
             encoded_labels = torch.tensor(vectorized_labels,dtype=torch.long)

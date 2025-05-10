@@ -1,6 +1,7 @@
 import pandas as pd
 import ast
 import os
+import re
 
 def itu_to_tsv(input_csv, output_tsv):
     df = pd.read_csv(input_csv)
@@ -60,41 +61,56 @@ def itu_to_tsv_test(input_csv, output_tsv):
             
 
 def parse_cupt(file_path):
-    """
-    Parse a CUpt file, splitting on '_' **only** when both sides are non-empty.
-    Returns List of sentences, each a list of (word, is_idiom) tuples.
-    """
     sentences = []
     sentence = []
-
     with open(file_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
+
+            # skip the comment lines and empty lines
             if line.startswith("#") or not line:
+                            
+                # end of sentence
                 if not line and sentence:
                     sentences.append(sentence)
                     sentence = []
                 continue
 
             cols = line.split("\t")
-            form = cols[1]
-            is_idiom = form.endswith("*")
-            if is_idiom:
-                form = form[:-1]
+            
+            # skip lines with less than 2 columns
+            if len (cols) < 2:
+                continue
+            
+            token_id = cols[0]
+            word = cols[1]
+            label = cols[-1]
+
+            # bazı linelar 17-18 gibi isimlendirilmiş geç onları
+            if re.fullmatch(r"\d+-\d+", token_id):
+                continue
+                
+            # boş kelimeleri ve _ olanları atla
+            if word in ["", "_", "(", ")", "[", "]", "{", "}","-"]:
+                continue
+
+            is_idiom = label != "*"       
 
             # only split when parts are both non-empty
-            if "_" in form:
-                parts = form.split("_")
+            if "_" in word:
+                parts = word.split("_")
                 if len(parts) > 1 and all(len(p) > 0 for p in parts):
                     for part in parts:
                         sentence.append((part, is_idiom))
                 else:
                     continue
             else:
-                sentence.append((form, is_idiom))
+                sentence.append((word, is_idiom))
+        
 
     if sentence:
         sentences.append(sentence)
+
     return sentences
 
 
