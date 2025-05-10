@@ -133,7 +133,7 @@ class Trainer:
 
 
             # epoch-level averages
-            avg_tr    = tr_loss_sum / epoch if tr_batches else 0.0
+            avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
             avg_it    = it_loss_sum / it_batches if it_batches else 0.0
             avg_total = avg_tr + avg_it
 
@@ -273,6 +273,7 @@ class Trainer:
             # self._save_predictions_to_csv(tr_indices, tr_sents, all_tr_predictions, all_tr_labels, "tr")
             # self._save_predictions_to_csv(it_indices, it_sents, all_it_predictions, all_it_labels, "it")
         # return the actual values you computed
+            
         return full_accuracy, full_f1
 
     
