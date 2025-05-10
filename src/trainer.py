@@ -112,17 +112,15 @@ class Trainer:
                     it_NLL = -it_LL
                     it_batches += 1
 
-                print(f"tr_NLL: {tr_NLL}")
-                print(f"it_NLL: {it_NLL}")
+
                 loss = tr_NLL + it_NLL
-                print(f"loss: {loss}")
 
                 tr_loss_sum += tr_NLL
                 it_loss_sum += it_NLL
 
 
-                tr_optimizer = self.tr_optimizer.Adam(self.tr_model.parameters(), lr=0.00001)
-                it_optimizer = self.it_optimizer.Adam(self.it_model.parameters(), lr=0.00001)
+                tr_optimizer = self.tr_optimizer
+                it_optimizer = self.it_optimizer
 
                 # Optimizer step
                 tr_optimizer.zero_grad()
@@ -226,11 +224,26 @@ class Trainer:
                 flat_pred = full_pred.view(-1)[flat_mask]
                 flat_lbl  = labels.view(-1)[flat_mask]
                 all_predictions.extend(flat_pred.cpu().tolist())
-                all_labels.extend(flat_lbl.cpu().tolist())
-                all_tr_predictions.extend(tr_pred.cpu().tolist())
-                all_it_predictions.extend(it_pred.cpu().tolist())
-                all_tr_labels.extend(labels[tr_indices].cpu().tolist())
-                all_it_labels.extend(labels[it_indices].cpu().tolist())
+                all_labels     .extend(flat_lbl.cpu().tolist())
+
+                # 1) make masks for non-pad tokens
+                tr_valid_mask = labels[tr_indices].ne(0)   # shape: (n_tr_sents, seq_len)
+                it_valid_mask = labels[it_indices].ne(0)
+
+                # 2) extract only the valid (non-zero) tokens
+                tr_flat_pred  = tr_pred.masked_select(tr_valid_mask)    # 1D tensor of all TR predictions
+                tr_flat_label = labels[tr_indices].masked_select(tr_valid_mask)
+
+                it_flat_pred  = it_pred.masked_select(it_valid_mask)
+                it_flat_label = labels[it_indices].masked_select(it_valid_mask)
+
+                # 3) extend your global lists with the flattened Python lists
+                all_tr_predictions.extend(tr_flat_pred.cpu().tolist())
+                all_tr_labels     .extend(tr_flat_label.cpu().tolist())
+
+                all_it_predictions.extend(it_flat_pred.cpu().tolist())
+                all_it_labels     .extend(it_flat_label.cpu().tolist())
+
 
             # --- compute overall Accuracy & F1 ---
             print("\n")
