@@ -96,8 +96,8 @@ class IdiomExtractor(nn.Module):
         
         # log likelihood loss fonksiyonumuz, burdan backward ile backpropagate ediyoruz
         log_likelihood = self.CRF(emissions, labels, mask)
-        print(f"log_likelihood shape: {log_likelihood.shape}")
-        print(f"log_likelihood: {log_likelihood}")
+        # print(f"log_likelihood shape: {log_likelihood.shape}")
+        # print(f"log_likelihood: {log_likelihood}")
 
         # print(f"log_likelihood shape: {log_likelihood.shape}")
         # tensor(-102.7468, device='cuda:0', grad_fn=<SumBackward0>)
