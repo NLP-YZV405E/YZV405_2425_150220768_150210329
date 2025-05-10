@@ -11,9 +11,7 @@ import random
 import numpy as np
 from typing import List, Dict
 import json
-from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
+from sklearn.metrics import accuracy_score, f1_score, classification_report
 '''from seqeval.metrics import accuracy_score
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score'''
