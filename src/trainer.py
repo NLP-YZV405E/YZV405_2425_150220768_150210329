@@ -162,8 +162,8 @@ class Trainer:
 
             if dev_f1 > record_dev:
                 record_dev = dev_f1
-                torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{self.modelname}.pt")
-                torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{self.modelname}.pt")
+                tr_state_dict = self.tr_model.state_dict()
+                it_state_dict = self.it_model.state_dict()
                 patience = full_patience
 
             else:
@@ -271,6 +271,9 @@ class Trainer:
         plt.legend()
         plt.savefig(f"{self.result_dir}/it_loss.png")
         plt.close()
+
+        torch.save(tr_state_dict, f"./src/checkpoints/tr/{self.modelname}.pt")
+        torch.save(it_state_dict, f"./src/checkpoints/it/{self.modelname}.pt")
 
         print("...Done!")
         return train_loss_list, dev_acc_list, f1_scores
