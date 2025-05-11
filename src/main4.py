@@ -18,7 +18,8 @@ if __name__ == "__main__":
     torch.backends.cudnn.deterministic = True
 
     # create bert
-    it_model_name = 'bert-base-multilingual-cased'
+    # it_model_name = 'bert-base-multilingual-cased'
+    it_model_name = 'dbmdz/bert-base-italian-cased'
     # output hidden states -> it helps to get hidden states from bert
     it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
     it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
