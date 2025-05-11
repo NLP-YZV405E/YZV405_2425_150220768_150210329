@@ -6,3 +6,6 @@ class HParams():
     num_layers = 2
     use_lstm = True
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    batch_size = 16
+    lr = 0.0005
+    epoch = 100

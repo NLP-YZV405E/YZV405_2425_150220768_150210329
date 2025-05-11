@@ -107,20 +107,26 @@ if __name__ == "__main__":
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
 
+    #instantiate the hyperparameters
+    params = HParams()
+
+    if dataset_selection == "COMBINED":
+        batch_size = 128
+    else:
+        batch_size = params.batch_size
+
     #dataloader
 
     if mode in ["train", "update"]:
-        train_dataloader = DataLoader(train_dataset, batch_size=128, shuffle=True, collate_fn=collate)
-        dev_dataloader = DataLoader(dev_dataset, batch_size=128, collate_fn=collate)
+        train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=collate)
+        dev_dataloader = DataLoader(dev_dataset, batch_size=batch_size, collate_fn=collate)
+        test_dataloader = DataLoader(test_dataset, batch_size=1, collate_fn=collate)
         print(f"length of train dataloader: {len(train_dataloader)}")
         print(f"length of dev dataloader: {len(dev_dataloader)}")
     else:
         test_dataloader = DataLoader(test_dataset, batch_size=1, collate_fn=collate)
         print(f"length of test dataloader: {len(test_dataloader)}")
 
-
-    #instantiate the hyperparameters
-    params = HParams()
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -135,49 +141,34 @@ if __name__ == "__main__":
 
     tr_model.freeze_bert()
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, device)
-    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, device)
-
-
-
-
-
+    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
+    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
 
     if mode in ["update", "test"]: 
 
         if it_path is not None:
-            it_state = torch.load(it_path, map_location=device)
-            if checkpoint_it == 'italian':
-                
-                # drop the unexpected position_ids buffer if you are using id10m weights
-                it_state.pop("bert_model.embeddings.position_ids", None)
-
-                # rename the old CRF keys to the new names:
-                it_state["CRF.transitions"]         = it_state.pop("CRF.trans_matrix")
-                it_state["CRF.start_transitions"]  = it_state.pop("CRF.start_trans")
-                it_state["CRF.end_transitions"]    = it_state.pop("CRF.end_trans")
+            it_state = torch.load(it_path, map_location=DEVICE)
 
             # now load cleanly
             it_model.load_state_dict(it_state)
 
         if tr_path is not None:
-            tr_state = torch.load(tr_path, map_location=device)
+            tr_state = torch.load(tr_path, map_location=DEVICE)
             tr_model.load_state_dict(tr_state)
 
 
-
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
-                tr_optimizer = optim.Adam(tr_model.parameters(), lr=0.0005),
-                it_optimizer = optim.Adam(it_model.parameters(), lr=0.0005),
+                tr_optimizer = optim.Adam(tr_model.parameters(), params.lr),
+                it_optimizer = optim.Adam(it_model.parameters(), params.lr),
                 tr_embedder= tr_embedder,
                 it_embedder= it_embedder,
                 modelname = model_name,
                 labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, 150, patience=10)
-
-
+        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=15)
+        trainer.test(test_dataloader, it_path, tr_path)
+        
+    if mode == "test":
+        trainer.test(test_dataloader, it_path, tr_path)
     

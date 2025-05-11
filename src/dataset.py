@@ -6,12 +6,13 @@ import re
 import torch
 
 class IdiomDataset(Dataset):
-    def __init__(self, dataset_path, labels_vocab, tagger_dict):
+    def __init__(self, dataset_path, labels_vocab, tagger_dict, is_test=False):
         super(IdiomDataset, self).__init__()
         self.dataset_path = dataset_path
         self.labels_vocab = labels_vocab
         self.tagger_dict = tagger_dict
         self.MAX_LEN = 512
+        self.is_test = is_test
 
         self.sentences = self._get_sentences()
         self.encoded_data = []
@@ -72,8 +73,12 @@ class IdiomDataset(Dataset):
             labels = labels[:self.MAX_LEN]
             langs  = langs[:self.MAX_LEN]
 
-            
-            vectorized_labels = [self.labels_vocab[label] for label in labels]
+            if self.is_test:
+                # fill labels with empty int
+                vectorized_labels = [0] * len(words)
+            else :
+                vectorized_labels = [self.labels_vocab[label] for label in labels]
+
             encoded_labels = torch.tensor(vectorized_labels,dtype=torch.long)
         
             lang2id = {"tr":0, "it":1}
