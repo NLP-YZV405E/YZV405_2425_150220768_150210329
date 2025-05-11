@@ -12,8 +12,9 @@ class IdiomExtractor(nn.Module):
         pprint(hparams)
 
         self.bert = bert_model
-        self.use_lstm = hparams.use_lstm
         self.hidden_size = bert_model.config.hidden_size
+        self.use_lstm = hparams.use_lstm
+
 
         # lstm and bert output dimension will be the same
         if self.use_lstm:
@@ -74,7 +75,6 @@ class IdiomExtractor(nn.Module):
         # apply dropout -> bu saçma değilmiş gerekliymiş
         # ayrıca bertin kendi içinde layernormu var o yüzen layer norma gerek yok
         X = self.dropout(bert_embeddings)
-
 
         if self.use_lstm:
             X,_ = self.lstm(X)

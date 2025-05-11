@@ -16,17 +16,18 @@ if __name__ == "__main__":
     torch.cuda.manual_seed(SEED)
     # gpuda bazen randomluk olabiliyormuş onu kaldırmak için
     torch.backends.cudnn.deterministic = True
+    CUDA_LAUNCH_BLOCKING=1
 
     #instantiate the hyperparameters
     params = HParams()
 
-    # create bert
-    it_model_name = 'dbmdz/bert-base-italian-cased'
-    # output hidden states -> it helps to get hidden states from bert
-    it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
-    it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
-    # get bert weights
-    hf_it_model = BertModel.from_pretrained(it_model_name, config=it_config)
+    # # create bert
+    # it_model_name = 'dbmdz/bert-base-italian-cased'
+    # # output hidden states -> it helps to get hidden states from bert
+    # it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
+    # it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
+    # # get bert weights
+    # hf_it_model = BertModel.from_pretrained(it_model_name, config=it_config)
 
 
     # Türkçe BERT
@@ -35,21 +36,17 @@ if __name__ == "__main__":
     tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
     hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
 
-    # # create bert
-    # # it_model_name = 'bert-base-multilingual-cased'
-    # it_model_name = 'dbmdz/bert-base-italian-xxl-cased'
-    # # output hidden states -> it helps to get hidden states from bert
-    # it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
-    # it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
-    # # get bert weights
-    # hf_it_model = BertModel.from_pretrained(it_model_name, config=it_config)
+    # create bert
+    it_model_name = 'dbmdz/bert-base-italian-xxl-cased'
+    it_config = AutoConfig.from_pretrained(it_model_name, output_hidden_states=True)
+    it_tokenizer = AutoTokenizer.from_pretrained(it_model_name)
+    hf_it_model = AutoModel.from_pretrained(it_model_name, config=it_config)
 
-
-    # # Türkçe BERT
+    # # Turkish E5-Large
     # tr_model_name = "ytu-ce-cosmos/turkish-e5-large"
-    # tr_config = BertConfig.from_pretrained(tr_model_name, output_hidden_states=True)
-    # tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
-    # hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
+    # tr_config = AutoConfig.from_pretrained(tr_model_name, output_hidden_states=True)
+    # tr_tokenizer = AutoTokenizer.from_pretrained(tr_model_name)
+    # hf_tr_model = AutoModel.from_pretrained(tr_model_name, config=tr_config)
 
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()

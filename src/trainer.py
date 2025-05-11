@@ -33,6 +33,8 @@ class Trainer:
         self.tr_embedder  = tr_embedder
         self.it_embedder  = it_embedder
         self.modelname    = modelname
+        self.tr_hidden = tr_embedder.bert_model.config.hidden_size
+        self.it_hidden = it_embedder.bert_model.config.hidden_size
         self.params = HParams()
         self.result_dir   = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
@@ -77,7 +79,7 @@ class Trainer:
 
                 batch_size, seq_len = labels.shape
                 device = labels.device
-                hidden_size = self.tr_embedder.bert_model.config.hidden_size
+
 
                 # get indices of turkish and italian sentences
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
@@ -99,7 +101,7 @@ class Trainer:
                         tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
                     # eğer tr dilinde cümle yoksa, 0'larla doldur
-                    tr_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
 
                 if len(it_indices) > 0:
                     it_labels = labels[it_indices]
@@ -110,7 +112,7 @@ class Trainer:
                         pad_amt = seq_len - it_embs.size(1)
                         it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    it_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
 
                 tr_NLL = 0
                 it_NLL = 0
@@ -307,7 +309,6 @@ class Trainer:
             for words, labels, langs in tqdm(valid_loader, desc="Evaluating"):
                 batch_size, seq_len = labels.shape
                 device = labels.device
-                hidden_size = self.tr_embedder.bert_model.config.hidden_size
 
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
@@ -321,7 +322,7 @@ class Trainer:
                         pad_amt = seq_len - tr_embs.size(1)
                         tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    tr_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
 
                 if len(it_indices) > 0:
                     it_batches += 1
@@ -332,7 +333,7 @@ class Trainer:
                         pad_amt = seq_len - it_embs.size(1)
                         it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    it_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
 
                 # forward passes, getting list-of-lists predictions
                 tr_decode = self.tr_model(tr_embs, None)
@@ -493,7 +494,6 @@ class Trainer:
             for words, labels, langs in tqdm(test_loader, desc="Evaluating"):
                 batch_size, seq_len = labels.shape
                 device = labels.device
-                hidden_size = self.tr_embedder.bert_model.config.hidden_size
 
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
@@ -506,7 +506,7 @@ class Trainer:
                         pad_amt = seq_len - tr_embs.size(1)
                         tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    tr_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
 
                 if len(it_indices) > 0:
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
@@ -516,7 +516,7 @@ class Trainer:
                         pad_amt = seq_len - it_embs.size(1)
                         it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
                 else:
-                    it_embs = torch.zeros((0, seq_len, hidden_size), device=device)
+                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
 
                 # forward passes, getting list-of-lists predictions
                 tr_decode = self.tr_model(tr_embs, None)
