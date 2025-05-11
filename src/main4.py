@@ -17,8 +17,10 @@ if __name__ == "__main__":
     # gpuda bazen randomluk olabiliyormuş onu kaldırmak için
     torch.backends.cudnn.deterministic = True
 
+    #instantiate the hyperparameters
+    params = HParams()
+
     # create bert
-    # it_model_name = 'bert-base-multilingual-cased'
     it_model_name = 'dbmdz/bert-base-italian-cased'
     # output hidden states -> it helps to get hidden states from bert
     it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
@@ -32,6 +34,22 @@ if __name__ == "__main__":
     tr_config = BertConfig.from_pretrained(tr_model_name, output_hidden_states=True)
     tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
     hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
+
+    # # create bert
+    # # it_model_name = 'bert-base-multilingual-cased'
+    # it_model_name = 'dbmdz/bert-base-italian-xxl-cased'
+    # # output hidden states -> it helps to get hidden states from bert
+    # it_config = BertConfig.from_pretrained(it_model_name, output_hidden_states=True)
+    # it_tokenizer = BertTokenizer.from_pretrained(it_model_name)
+    # # get bert weights
+    # hf_it_model = BertModel.from_pretrained(it_model_name, config=it_config)
+
+
+    # # Türkçe BERT
+    # tr_model_name = "ytu-ce-cosmos/turkish-e5-large"
+    # tr_config = BertConfig.from_pretrained(tr_model_name, output_hidden_states=True)
+    # tr_tokenizer = BertTokenizer.from_pretrained(tr_model_name)
+    # hf_tr_model = BertModel.from_pretrained(tr_model_name, config=tr_config)
 
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
@@ -92,7 +110,13 @@ if __name__ == "__main__":
     dev_file = main_path + "dev.tsv"
     test_file = main_path + "test.tsv"
 
-    labels_vocab = {"<pad>":0, "B-IDIOM":1, "I-IDIOM":2, "O":3}
+
+    if params.num_classes == 3:
+        print("3 classes")
+        labels_vocab = {"<pad>":0, "B-IDIOM":1, "I-IDIOM":1, "O":2}
+
+    elif params.num_classes == 4:
+        labels_vocab = {"<pad>":0, "B-IDIOM":1, "I-IDIOM":2, "O":3}
 
     # initialize the dataset
     train_dataset, dev_dataset, test_dataset = None, None, None
@@ -108,8 +132,7 @@ if __name__ == "__main__":
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
 
-    #instantiate the hyperparameters
-    params = HParams()
+    
 
     if dataset_selection == "COMBINED":
         batch_size = 128
@@ -167,7 +190,7 @@ if __name__ == "__main__":
                 labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=20)
+        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=10)
         trainer.test(test_dataloader)
         
     if mode == "test":
