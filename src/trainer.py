@@ -205,7 +205,7 @@ class Trainer:
         )
 
         epochs = list(range(1, len(train_loss_list) + 1))
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(25, 5))
         sns.lineplot(x=epochs, y=train_loss_list, label="Train Loss")
         sns.lineplot(x=epochs, y=dev_loss_list,    label="Dev Loss")
         min_idx = int(np.argmin(dev_loss_list)) + 1
@@ -229,7 +229,7 @@ class Trainer:
             fname="tr_loss.png", label="Train Loss"
         )
 
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(25, 5))
         sns.lineplot(x=list(range(1, len(tr_train_loss_list) + 1)),
                     y=tr_train_loss_list, label="Train Loss")
         sns.lineplot(x=list(range(1, len(dev_tr_loss_list) + 1)),
@@ -255,7 +255,7 @@ class Trainer:
             fname="it_loss.png", label="Train Loss"
         )
         # overlay dev_it_loss
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(25, 5))
         sns.lineplot(x=list(range(1, len(it_train_loss_list) + 1)),
                     y=it_train_loss_list, label="Train Loss")
         sns.lineplot(x=list(range(1, len(dev_it_loss_list) + 1)),
@@ -440,7 +440,7 @@ class Trainer:
                         buffer.seek(0)
                         results_text = buffer.getvalue()
                         fig = plt.figure()
-                        fig.set_size_inches(20,10)
+                        fig.set_size_inches(10,10)
                         plt.axis('off')
                         plt.text(0, 1, results_text, verticalalignment='top', fontsize=10, fontfamily='monospace')
                         plt.tight_layout()
@@ -589,7 +589,7 @@ class Trainer:
 
     def plot_with_max(self, x, y, title, ylabel, fname, label=None):
         epochs = list(range(1, len(y) + 1))
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(25, 5))
         sns.lineplot(x=epochs, y=y, label=label)
         # find max
         max_idx = int(np.argmax(y)) + 1
