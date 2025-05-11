@@ -16,7 +16,7 @@ class BERTEmbedder:
     self.bert_model = bert_model
     self.bert_model.to(device)
     # modeli eval modunda çalıştırıyoruz embedderi eğitmiyoruz.
-    self.bert_model.eval()
+    # self.bert_model.eval()
     self.bert_tokenizer = bert_tokenizer
     self.device = device
  

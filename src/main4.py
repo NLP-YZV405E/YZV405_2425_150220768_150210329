@@ -155,12 +155,14 @@ if __name__ == "__main__":
     it_model = IdiomExtractor(hf_it_model,
                         params).cuda()
 
-    it_model.freeze_bert()
+    # it_model.freeze_bert()
+    it_model.unfreeze_bert()
 
     tr_model = IdiomExtractor(hf_tr_model,
                         params).cuda()
 
-    tr_model.freeze_bert()
+    # tr_model.freeze_bert()
+    tr_model.unfreeze_bert()
 
     it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
     tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)

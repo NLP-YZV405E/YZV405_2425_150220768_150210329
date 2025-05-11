@@ -40,6 +40,9 @@ class Trainer:
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
 
+        tr_embedder.bert_model.train()
+        it_embedder.bert_model.train()
+
     def padding_mask(self, batch: torch.Tensor) -> torch.BoolTensor:
         padding = torch.ones_like(batch)
         padding[batch == 0] = 0
