@@ -7,16 +7,16 @@ import ast  # For safely evaluating the string representation of lists
 # Define input and output directories
 reference_dir = os.path.join('/app/input', 'ref')
 prediction_dir = os.path.join('/app/input', 'res')
-score_dir = '/app/output'
+score_dir = '/Users/berkekurt/Documents/GitHub/YZV405_2425_150220768_150210329/results'
 
 print("Reading prediction.csv")
 
 prediction_file = os.path.join(prediction_dir, 'prediction.csv')
 truth_file = os.path.join(reference_dir, 'ground_truth.csv')
 
-# Load CSV files
-prediction_df = pd.read_csv(prediction_file)
-truth_df = pd.read_csv(truth_file)
+# Load CSV files, sadece bu iki satır değişti ve üstteki score_dir değişti
+prediction_df = pd.read_csv("/Users/berkekurt/Documents/GitHub/YZV405_2425_150220768_150210329/results/predictions.csv")
+truth_df = pd.read_csv("/Users/berkekurt/Documents/GitHub/YZV405_2425_150220768_150210329/data/public_data/eval.csv")
 
 print("prediction.csv file is successfully read")
 

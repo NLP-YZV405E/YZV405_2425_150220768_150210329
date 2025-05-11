@@ -168,8 +168,8 @@ if __name__ == "__main__":
 
 
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
-                tr_optimizer = optim.Adam(tr_model.parameters(), lr=0.0001),
-                it_optimizer = optim.Adam(it_model.parameters(), lr=0.0001),
+                tr_optimizer = optim.Adam(tr_model.parameters(), lr=0.0005),
+                it_optimizer = optim.Adam(it_model.parameters(), lr=0.0005),
                 tr_embedder= tr_embedder,
                 it_embedder= it_embedder,
                 modelname = model_name,

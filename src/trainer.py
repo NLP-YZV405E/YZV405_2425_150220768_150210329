@@ -1,3 +1,8 @@
+import json
+import os
+import pandas as pd
+from scoring import scoring_program
+
 import model
 import math
 from __init__ import *
@@ -169,6 +174,11 @@ class Trainer:
         all_tr_labels = []
         all_it_labels = []
 
+        # for prediction.csv
+        csv_rows   = []                      # rows that will become prediction.csv
+        global_idx = 0                      # running sample id counter
+
+
         with torch.no_grad():
             for words, labels, langs in tqdm(valid_loader, desc="Evaluating"):
                 batch_size, seq_len = labels.shape
@@ -217,6 +227,30 @@ class Trainer:
                 # get the full predicions while keeping original order
                 full_pred[tr_indices] = tr_pred
                 full_pred[it_indices] = it_pred
+
+                # for prediction.csv
+                # --------------------------------------------------
+                # >>>>> CHANGED START (collect per‑sentence CSV rows)
+                for row_idx in range(batch_size):
+                    # mask to ignore padding
+                    valid_tok_mask = labels[row_idx].ne(0)
+                    sent_pred      = full_pred[row_idx][valid_tok_mask]
+                    # indices where prediction is NOT label 0
+                    pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in [0, 3]]
+                    if not pred_indices:
+                        pred_indices = [-1]
+                    # determine language str
+                    lang_str = "tr" if langs[row_idx].item() == 0 else "it"
+                    # append row
+                    csv_rows.append({
+                        "id": global_idx,
+                        "indices": json.dumps(pred_indices),
+                        "language": lang_str
+                    })
+                    global_idx += 1
+                # <<<<< CHANGED END
+                # --------------------------------------------------
+                    
 
                 # accumulate for global scores
                 valid_mask   = labels.ne(0)  # ignore padding
@@ -273,6 +307,23 @@ class Trainer:
             # self._save_predictions_to_csv(tr_indices, tr_sents, all_tr_predictions, all_tr_labels, "tr")
             # self._save_predictions_to_csv(it_indices, it_sents, all_it_predictions, all_it_labels, "it")
         # return the actual values you computed
+            
+
+        # for prediction.csv
+        # >>>>> CHANGED START (actually write the CSV if a path is given)
+        save_csv_path = "./results/predictions.csv" 
+        if save_csv_path is not None:
+            os.makedirs(os.path.dirname(save_csv_path), exist_ok=True)
+            pd.DataFrame(csv_rows).to_csv(save_csv_path, index=False)
+            print(f"Predictions saved to {save_csv_path}")
+        # <<<<< CHANGED END
+            
+        scores = scoring_program(
+        truth_file="./data/public_data/eval.csv",
+        prediction_file="./results/predictions.csv",
+        score_output="./results/scores.json"  # or omit this arg to skip writing
+        )
+        print(scores)
             
         return full_accuracy, full_f1
 
@@ -346,5 +397,7 @@ class Trainer:
             pad_amt = seq_len - embs.size(1)
             embs = F.pad(embs, (0, 0, 0, pad_amt))
         return embs
+    
+
 
     
