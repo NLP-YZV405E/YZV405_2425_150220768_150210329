@@ -416,7 +416,7 @@ class Trainer:
                 pd.DataFrame(csv_rows).to_csv(f"{self.result_dir}/predictions.csv", index=False)
                 scores = scoring_program(
                     truth_file=r"./data/public_data/eval.csv",
-                    prediction_file=f"{self.result_dir}/predictions.csv",
+                    prediction_file=f"{self.result_dir}/prediction.csv",
                     score_output=f"{self.result_dir}/scores.json"
                 )
 
@@ -437,7 +437,8 @@ class Trainer:
                         # Page 1: Text Metrics
                         buffer.seek(0)
                         results_text = buffer.getvalue()
-                        fig = plt.figure(figsize=(10, 10))
+                        fig = plt.figure()
+                        fig.set_size_inches(20,10)
                         plt.axis('off')
                         plt.text(0, 1, results_text, verticalalignment='top', fontsize=10, fontfamily='monospace')
                         plt.tight_layout()
