@@ -99,11 +99,12 @@ if __name__ == "__main__":
     if mode in ["train", "update"]:
         train_dataset = IdiomDataset(train_file, labels_vocab, tagger_dict)
         dev_dataset = IdiomDataset(dev_file, labels_vocab, tagger_dict)
+        test_dataset = IdiomDataset(test_file, labels_vocab, tagger_dict, is_test=True) 
         print(f"train sentences: {len(train_dataset)}")
         print(f"dev sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
     else:
-        test_dataset = IdiomDataset(test_file, labels_vocab, tagger_dict) 
+        test_dataset = IdiomDataset(test_file, labels_vocab, tagger_dict, is_test=True) 
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
 

@@ -75,7 +75,7 @@ class IdiomDataset(Dataset):
 
             if self.is_test:
                 # fill labels with empty int
-                vectorized_labels = [0] * len(words)
+                vectorized_labels = [-1] * len(words)
             else :
                 vectorized_labels = [self.labels_vocab[label] for label in labels]
 
