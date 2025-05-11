@@ -437,7 +437,8 @@ class Trainer:
                         # Page 1: Text Metrics
                         buffer.seek(0)
                         results_text = buffer.getvalue()
-                        fig = plt.figure(figsize=(10, 10))
+                        fig = plt.figure()
+                        fig.set_size_inches(20,10)
                         plt.axis('off')
                         plt.text(0, 1, results_text, verticalalignment='top', fontsize=10, fontfamily='monospace')
                         plt.tight_layout()
