@@ -13,6 +13,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from sklearn.metrics import classification_report, f1_score
+from hparams import HParams
 
 class Trainer:
     def __init__(self,
@@ -32,6 +33,7 @@ class Trainer:
         self.tr_embedder  = tr_embedder
         self.it_embedder  = it_embedder
         self.modelname    = modelname
+        self.params = HParams()
         self.result_dir   = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
@@ -363,7 +365,11 @@ class Trainer:
                     valid_tok_mask = labels[row_idx].ne(0)
                     sent_pred      = full_pred[row_idx][valid_tok_mask]
                     # indices where prediction is NOT label 0
-                    pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in [0, 3]]
+                    if self.params.num_classes == 3:
+                        not_token_labels = [0, 2]
+                    else:
+                        not_token_labels = [0, 3]
+                    pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in not_token_labels]
                     if not pred_indices:
                         pred_indices = [-1]
                     # determine language str
@@ -384,43 +390,39 @@ class Trainer:
                 all_predictions.extend(flat_pred.cpu().tolist())
                 all_labels     .extend(flat_lbl.cpu().tolist())
 
-                # 1) make masks for non-pad tokens
                 tr_valid_mask = labels[tr_indices].ne(0)   # shape: (n_tr_sents, seq_len)
                 it_valid_mask = labels[it_indices].ne(0)
 
-                # 2) extract only the valid (non-zero) tokens
                 tr_flat_pred  = tr_pred.masked_select(tr_valid_mask)    # 1D tensor of all TR predictions
                 tr_flat_label = labels[tr_indices].masked_select(tr_valid_mask)
 
                 it_flat_pred  = it_pred.masked_select(it_valid_mask)
                 it_flat_label = labels[it_indices].masked_select(it_valid_mask)
 
-                # 3) extend your global lists with the flattened Python lists
                 all_tr_predictions.extend(tr_flat_pred.cpu().tolist())
                 all_tr_labels     .extend(tr_flat_label.cpu().tolist())
 
                 all_it_predictions.extend(it_flat_pred.cpu().tolist())
                 all_it_labels     .extend(it_flat_label.cpu().tolist())
 
-            tr_f1 = f1_score(all_tr_labels, all_tr_predictions, average='macro', zero_division=0)
-            it_f1 = f1_score(all_it_labels, all_it_predictions, average='macro', zero_division=0)
-            full_f1 = f1_score(all_labels, all_predictions, average='macro', zero_division=0)
             tr_accuracy = accuracy_score(all_tr_labels, all_tr_predictions)
             it_accuracy = accuracy_score(all_it_labels, all_it_predictions)
             full_accuracy = accuracy_score(all_labels, all_predictions)
 
-            print(f"TR F1: {tr_f1:.4f}, IT F1: {it_f1:.4f}, Full F1: {full_f1:.4f}")
-
-
-            if full_f1 > record_dev:
-                pd.DataFrame(csv_rows).to_csv(f"{self.result_dir}/predictions.csv", index=False)
-                scores = scoring_program(
+            pd.DataFrame(csv_rows).to_csv(f"{self.result_dir}/prediction.csv", index=False)
+            scores = scoring_program(
                     truth_file=r"./data/public_data/eval.csv",
                     prediction_file=f"{self.result_dir}/prediction.csv",
                     score_output=f"{self.result_dir}/scores.json"
                 )
 
-                print(f"Scoring program: {scores}")
+            tr_f1 = scores["f1-score-tr"]
+            it_f1 = scores["f1-score-it"]
+            full_f1 = scores["f1-score-avg"]
+
+            print(f"TR F1: {tr_f1:.4f}, IT F1: {it_f1:.4f}, Full F1: {full_f1:.4f}")
+
+            if full_f1 > record_dev:
 
                 with io.StringIO() as buffer:
                     print(f"Scoring program: {scores}", file=buffer)
@@ -542,7 +544,11 @@ class Trainer:
                     valid_tok_mask = labels[row_idx].ne(0)
                     sent_pred      = full_pred[row_idx][valid_tok_mask]
                     # indices where prediction is NOT label 0
-                    pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in [0, 3]]
+                    if self.params.num_classes == 3:
+                        not_token_labels = [0, 2]
+                    else:
+                        not_token_labels = [0, 3]
+                    pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in not_token_labels]
                     if not pred_indices:
                         pred_indices = [-1]
                     # determine language str
@@ -557,7 +563,7 @@ class Trainer:
 
         # for prediction.csv
         # >>>>> CHANGED START (actually write the CSV if a path is given)
-        save_csv_path = f"{self.result_dir}/test/predictions.csv"
+        save_csv_path = f"{self.result_dir}/test/prediction.csv"
         os.makedirs(os.path.dirname(save_csv_path), exist_ok=True)
         pd.DataFrame(csv_rows).to_csv(save_csv_path, index=False)
         print(f"Predictions saved to {save_csv_path}")
