@@ -167,8 +167,8 @@ if __name__ == "__main__":
 
     if mode in ["train", "update"]:
         trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=20)
-        trainer.test(test_dataloader, it_path, tr_path)
+        trainer.test(test_dataloader)
         
     if mode == "test":
-        trainer.test(test_dataloader, it_path, tr_path)
+        trainer.test(test_dataloader)
     
