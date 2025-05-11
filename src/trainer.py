@@ -420,57 +420,59 @@ class Trainer:
                     score_output=f"{self.result_dir}/scores.json"
                 )
 
-            with io.StringIO() as buffer:
-                print(f"Scoring program: {scores}", file=buffer)
-                print(f"Full Accuracy: {full_accuracy:.4f}, Full F1: {full_f1:.4f}", file=buffer)
-                print(classification_report(all_labels, all_predictions,zero_division=0,digits=4), file=buffer)
-                print("\n", file=buffer)
-                print(f"TR Accuracy: {tr_accuracy:.4f}, TR F1: {tr_f1:.4f}", file=buffer)
-                print(classification_report(all_tr_labels, all_tr_predictions,zero_division=0,digits=4), file=buffer)
-                print("\n", file=buffer)
-                print(f"IT Accuracy: {it_accuracy:.4f}, IT F1: {it_f1:.4f}", file=buffer)
-                print(classification_report(all_it_labels, all_it_predictions,zero_division=0,digits=4), file=buffer)
-                filename = f"{self.result_dir}/results.pdf"
-                with PdfPages(filename, "w") as pdf:
-                    # Page 1: Text Metrics
-                    buffer.seek(0)
-                    results_text = buffer.getvalue()
-                    fig = plt.figure(figsize=(10, 10))
-                    plt.axis('off')
-                    plt.text(0, 1, results_text, verticalalignment='top', fontsize=10, fontfamily='monospace')
-                    plt.tight_layout()
-                    pdf.savefig(fig)
-                    plt.close(fig)
+                print(f"Scoring program: {scores}")
 
-                    # Page 2: Confusion Matrix
-                    conf_matrix_full = confusion_matrix(all_labels, all_predictions)
-                    conf_matrix_tr = confusion_matrix(all_tr_labels, all_tr_predictions)
-                    conf_matrix_it = confusion_matrix(all_it_labels, all_it_predictions)
-                    fig, axes = plt.subplots(1, 3, figsize=(12, 4))
-                    axes[0].set_title("Confusion Matrix (full)")
-                    axes[0].set_xlabel("Predicted Class")
-                    axes[0].set_ylabel("True Class")
+                with io.StringIO() as buffer:
+                    print(f"Scoring program: {scores}", file=buffer)
+                    print(f"Full Accuracy: {full_accuracy:.4f}, Full F1: {full_f1:.4f}", file=buffer)
+                    print(classification_report(all_labels, all_predictions,zero_division=0,digits=4), file=buffer)
+                    print("\n", file=buffer)
+                    print(f"TR Accuracy: {tr_accuracy:.4f}, TR F1: {tr_f1:.4f}", file=buffer)
+                    print(classification_report(all_tr_labels, all_tr_predictions,zero_division=0,digits=4), file=buffer)
+                    print("\n", file=buffer)
+                    print(f"IT Accuracy: {it_accuracy:.4f}, IT F1: {it_f1:.4f}", file=buffer)
+                    print(classification_report(all_it_labels, all_it_predictions,zero_division=0,digits=4), file=buffer)
+                    filename = f"{self.result_dir}/results.pdf"
+                    with PdfPages(filename, "w") as pdf:
+                        # Page 1: Text Metrics
+                        buffer.seek(0)
+                        results_text = buffer.getvalue()
+                        fig = plt.figure(figsize=(10, 10))
+                        plt.axis('off')
+                        plt.text(0, 1, results_text, verticalalignment='top', fontsize=10, fontfamily='monospace')
+                        plt.tight_layout()
+                        pdf.savefig(fig)
+                        plt.close(fig)
 
-                    sns.heatmap(
-                        conf_matrix_full, annot=True, fmt='d', cmap='Blues', ax=axes[0]
-                    )
-                    axes[1].set_title("Confusion Matrix (TR)")
-                    axes[1].set_xlabel("Predicted Class")
-                    axes[1].set_ylabel("True Class")
+                        # Page 2: Confusion Matrix
+                        conf_matrix_full = confusion_matrix(all_labels, all_predictions)
+                        conf_matrix_tr = confusion_matrix(all_tr_labels, all_tr_predictions)
+                        conf_matrix_it = confusion_matrix(all_it_labels, all_it_predictions)
+                        fig, axes = plt.subplots(1, 3, figsize=(12, 4))
+                        axes[0].set_title("Confusion Matrix (full)")
+                        axes[0].set_xlabel("Predicted Class")
+                        axes[0].set_ylabel("True Class")
 
-                    sns.heatmap(
-                        conf_matrix_tr, annot=True, fmt='d', cmap='Blues',ax=axes[1]
-                    )
+                        sns.heatmap(
+                            conf_matrix_full, annot=True, fmt='d', cmap='Blues', ax=axes[0]
+                        )
+                        axes[1].set_title("Confusion Matrix (TR)")
+                        axes[1].set_xlabel("Predicted Class")
+                        axes[1].set_ylabel("True Class")
 
-                    axes[2].set_title("Confusion Matrix (IT)")
-                    axes[2].set_xlabel("Predicted Class")
-                    axes[2].set_ylabel("True Class")
-                    sns.heatmap(
-                        conf_matrix_it, annot=True, fmt='d', cmap='Blues', ax=axes[2]
-                    )
-                    plt.tight_layout()
-                    pdf.savefig(fig)
-                    plt.close(fig)
+                        sns.heatmap(
+                            conf_matrix_tr, annot=True, fmt='d', cmap='Blues',ax=axes[1]
+                        )
+
+                        axes[2].set_title("Confusion Matrix (IT)")
+                        axes[2].set_xlabel("Predicted Class")
+                        axes[2].set_ylabel("True Class")
+                        sns.heatmap(
+                            conf_matrix_it, annot=True, fmt='d', cmap='Blues', ax=axes[2]
+                        )
+                        plt.tight_layout()
+                        pdf.savefig(fig)
+                        plt.close(fig)
 
         return full_accuracy, full_f1, tr_loss_sum / tr_batches, it_loss_sum / it_batches
     
