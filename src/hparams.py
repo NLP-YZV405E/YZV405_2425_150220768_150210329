@@ -8,4 +8,4 @@ class HParams():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     batch_size = 16
     lr = 0.0005
-    epoch = 100
+    epoch = 150

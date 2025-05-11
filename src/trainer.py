@@ -32,7 +32,7 @@ class Trainer:
         self.tr_embedder  = tr_embedder
         self.it_embedder  = it_embedder
         self.modelname    = modelname
-        self.result_dir   = f"../results/{modelname}/"
+        self.result_dir   = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -412,7 +412,7 @@ class Trainer:
             if full_f1 > record_dev:
                 pd.DataFrame(csv_rows).to_csv(f"{self.result_dir}/predictions.csv", index=False)
                 scores = scoring_program(
-                    truth_file=r"../data/public_data/eval.csv",
+                    truth_file=r"./data/public_data/eval.csv",
                     prediction_file=f"{self.result_dir}/predictions.csv",
                     score_output=f"{self.result_dir}/scores.json"
                 )
