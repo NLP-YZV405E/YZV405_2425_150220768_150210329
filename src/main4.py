@@ -157,14 +157,14 @@ if __name__ == "__main__":
     #instantiate the model
     it_model = IdiomExtractor(hf_it_model, it_embedder, params).cuda()
 
-    # it_model.freeze_bert()
-    it_model.unfreeze_bert()
+    it_model.freeze_bert()
+    #it_model.unfreeze_bert()
 
 
     tr_model = IdiomExtractor(hf_tr_model, tr_embedder, params).cuda()
 
-    # tr_model.freeze_bert()
-    tr_model.unfreeze_bert()
+    tr_model.freeze_bert()
+    #tr_model.unfreeze_bert()
 
     if mode in ["update", "test"]: 
 
