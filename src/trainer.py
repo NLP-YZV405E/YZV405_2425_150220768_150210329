@@ -39,7 +39,7 @@ class Trainer:
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
         
         # Initialize mixed precision training
-        self.scaler = torch.cuda.amp.GradScaler(device_type=self.device)
+        self.scaler = torch.amp.GradScaler(device=self.device)
         
         # Initialize learning rate schedulers
         self.tr_scheduler = ReduceLROnPlateau(
