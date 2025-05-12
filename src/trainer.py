@@ -111,10 +111,9 @@ class Trainer:
                     tr_labels = labels[tr_indices]
                     tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
                     
-                    # Mixed precision training for Turkish model
                     with torch.amp.autocast(device_type=self.device):
                         tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
-                        tr_NLL = -tr_LL
+                        tr_NLL = tr_LL
                     
                     tr_batches += 1
 
@@ -122,10 +121,9 @@ class Trainer:
                     it_labels = labels[it_indices]
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
                     
-                    # Mixed precision training for Italian model
                     with torch.amp.autocast(device_type=self.device):
                         it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
-                        it_NLL = -it_LL
+                        it_NLL = it_LL
                     
                     it_batches += 1
 
