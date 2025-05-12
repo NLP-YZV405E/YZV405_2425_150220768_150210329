@@ -37,7 +37,10 @@ class Trainer:
         self.result_dir   = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
-
+        
+        # Initialize mixed precision training
+        self.scaler = torch.cuda.amp.GradScaler(device_type=self.device)
+        
         # Initialize learning rate schedulers
         self.tr_scheduler = ReduceLROnPlateau(
             self.tr_optimizer,
@@ -88,62 +91,66 @@ class Trainer:
             self.tr_model.train()
             self.it_model.train()
 
-            # epochtaki loss ve batch sayıları
             tr_loss_sum = it_loss_sum = 0
             tr_batches  = it_batches  = 0
 
             self.tr_model.bert_embedder.bert_model.train()
             self.it_model.bert_embedder.bert_model.train()
 
-            # 1) Başlangıç ağırlıklarını saklayın
-            initial_state = copy.deepcopy(self.tr_model.bert_embedder.bert_model.state_dict())
 
             for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
-                
                 batch_size, seq_len = labels.shape
-                device = labels.device
 
-                # get indices of turkish and italian sentences
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
 
                 tr_NLL = 0
                 it_NLL = 0
 
-                # eğer tr dilinde cümle varsa
                 if len(tr_indices) > 0:
                     tr_labels = labels[tr_indices]
                     tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
-                    tr_NLL = -tr_LL
+                    
+                    # Mixed precision training for Turkish model
+                    with torch.amp.autocast(device_type=self.device):
+                        tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+                        tr_NLL = -tr_LL
+                    
                     tr_batches += 1
 
                 if len(it_indices) > 0:
                     it_labels = labels[it_indices]
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
-                    it_NLL = -it_LL
+                    
+                    # Mixed precision training for Italian model
+                    with torch.amp.autocast(device_type=self.device):
+                        it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
+                        it_NLL = -it_LL
+                    
                     it_batches += 1
 
-                loss = tr_NLL + it_NLL
+                loss = (tr_NLL + it_NLL)
 
                 tr_loss_sum += tr_NLL
                 it_loss_sum += it_NLL
 
-                tr_optimizer = self.tr_optimizer
-                it_optimizer = self.it_optimizer
-
-                # Optimizer step with gradient clipping
-                tr_optimizer.zero_grad()
-                it_optimizer.zero_grad()
-                loss.backward()
+                # Gradient accumulation
+                self.scaler.scale(loss).backward()
                 
-                # Apply gradient clipping
-                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), self.params.gradient_clip)
-                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), self.params.gradient_clip)
-                
-                tr_optimizer.step()
-                it_optimizer.step()
+                if (tr_batches + it_batches):
+                    # Apply gradient clipping
+                    self.scaler.unscale_(self.tr_optimizer)
+                    self.scaler.unscale_(self.it_optimizer)
+                    torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), self.params.gradient_clip)
+                    torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), self.params.gradient_clip)
+                    
+                    # Update weights
+                    self.scaler.step(self.tr_optimizer)
+                    self.scaler.step(self.it_optimizer)
+                    self.scaler.update()
+                    
+                    self.tr_optimizer.zero_grad()
+                    self.it_optimizer.zero_grad()
 
             # Update learning rates based on validation performance
             dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
