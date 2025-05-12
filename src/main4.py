@@ -201,7 +201,7 @@ if __name__ == "__main__":
                 labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=15)
+        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=10)
         trainer.test(test_dataloader)
         
     if mode == "test":
