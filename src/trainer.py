@@ -39,7 +39,7 @@ class Trainer:
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
         
         # Initialize mixed precision training
-        self.scaler = torch.cuda.amp.GradScaler(device_type=self.device)
+        self.scaler = torch.amp.GradScaler(device=self.device)
         
         # Initialize learning rate schedulers
         self.tr_scheduler = ReduceLROnPlateau(
@@ -347,8 +347,8 @@ class Trainer:
                     it_loss = 0
 
                 # forward passes, getting list-of-lists predictions
-                tr_loss_sum += -tr_loss
-                it_loss_sum += -it_loss
+                tr_loss_sum += tr_loss
+                it_loss_sum += it_loss
 
                 # turn those into (N_lang, seq_len) tensors
                 tr_pred = self.decode_to_tensor(tr_decode, seq_len, device)
