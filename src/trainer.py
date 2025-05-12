@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 from scoring import scoring_program
+import copy
 
 import model
 import math
@@ -14,6 +15,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from sklearn.metrics import classification_report, f1_score
 from hparams import HParams
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 class Trainer:
     def __init__(self,
@@ -21,8 +23,6 @@ class Trainer:
                  it_model: nn.Module,
                  tr_optimizer,
                  it_optimizer,
-                 tr_embedder,
-                 it_embedder,
                  labels_vocab: dict,
                  modelname = "idiom_expr_detector"):
         self.tr_model     = tr_model
@@ -30,18 +30,32 @@ class Trainer:
         self.tr_optimizer = tr_optimizer
         self.it_optimizer = it_optimizer
         self.labels_vocab = labels_vocab
-        self.tr_embedder  = tr_embedder
-        self.it_embedder  = it_embedder
         self.modelname    = modelname
-        self.tr_hidden = tr_embedder.bert_model.config.hidden_size
-        self.it_hidden = it_embedder.bert_model.config.hidden_size
+        self.tr_hidden = tr_model.bert_embedder.bert_model.config.hidden_size
+        self.it_hidden = it_model.bert_embedder.bert_model.config.hidden_size
         self.params = HParams()
         self.result_dir   = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
 
-        tr_embedder.bert_model.train()
-        it_embedder.bert_model.train()
+        # Initialize learning rate schedulers
+        self.tr_scheduler = ReduceLROnPlateau(
+            self.tr_optimizer,
+            mode='max',
+            factor=self.params.scheduler_factor,
+            patience=self.params.scheduler_patience,
+            verbose=True
+        )
+        self.it_scheduler = ReduceLROnPlateau(
+            self.it_optimizer,
+            mode='max',
+            factor=self.params.scheduler_factor,
+            patience=self.params.scheduler_patience,
+            verbose=True
+        )
+
+        tr_model.bert_embedder.bert_model.train()
+        it_model.bert_embedder.bert_model.train()
 
     def padding_mask(self, batch: torch.Tensor) -> torch.BoolTensor:
         padding = torch.ones_like(batch)
@@ -78,110 +92,63 @@ class Trainer:
             tr_loss_sum = it_loss_sum = 0
             tr_batches  = it_batches  = 0
 
-            self.tr_embedder.bert_model.train()
-            self.it_embedder.bert_model.train()
+            self.tr_model.bert_embedder.bert_model.train()
+            self.it_model.bert_embedder.bert_model.train()
 
-            initial_q = (
-                self.tr_embedder
-                    .bert_model
-                    .encoder
-                    .layer[0]
-                    .attention
-                    .self
-                    .query
-                    .weight
-                    .detach()
-                    .cpu()
-                    .clone()
-            )
+            # 1) Başlangıç ağırlıklarını saklayın
+            initial_state = copy.deepcopy(self.tr_model.bert_embedder.bert_model.state_dict())
+
             for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
                 
                 batch_size, seq_len = labels.shape
                 device = labels.device
 
-
                 # get indices of turkish and italian sentences
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
 
+                tr_NLL = 0
+                it_NLL = 0
+
                 # eğer tr dilinde cümle varsa
                 if len(tr_indices) > 0:
-                    # tr dilindeki cümlelerin labels'ını al
                     tr_labels = labels[tr_indices]
-                    # tr dilindeki cümleleri al
                     tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                    # cümleleri embed et
-                    tr_embeds = self.tr_embedder.embed_sentences(tr_sents)
-                    # cümleleri paddingle
-                    tr_embs = pad_sequence(tr_embeds, batch_first=True, padding_value=0).to(device)
-                    # eğer tr dilindeki cümlelerin uzunluğu seq_len'den küçükse, seq_len'e pad et
-                    if tr_embs.size(1) < seq_len:
-                        pad_amt = seq_len - tr_embs.size(1)
-                        tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
-                else:
-                    # eğer tr dilinde cümle yoksa, 0'larla doldur
-                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
+                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+                    tr_NLL = -tr_LL
+                    tr_batches += 1
 
                 if len(it_indices) > 0:
                     it_labels = labels[it_indices]
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    it_embeds = self.it_embedder.embed_sentences(it_sents)
-                    it_embs   = pad_sequence(it_embeds, batch_first=True, padding_value=0).to(device)
-                    if it_embs.size(1) < seq_len:
-                        pad_amt = seq_len - it_embs.size(1)
-                        it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
-                else:
-                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
-
-                tr_NLL = 0
-                it_NLL = 0
-
-                if len(tr_indices) > 0:
-                    tr_LL, _ = self.tr_model(tr_embs, tr_labels)
-                    tr_NLL = -tr_LL
-                    tr_batches += 1
-                
-                if len(it_indices) > 0:
-                    it_LL, _ = self.it_model(it_embs, it_labels)
+                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
                     it_NLL = -it_LL
                     it_batches += 1
-
 
                 loss = tr_NLL + it_NLL
 
                 tr_loss_sum += tr_NLL
                 it_loss_sum += it_NLL
 
-
                 tr_optimizer = self.tr_optimizer
                 it_optimizer = self.it_optimizer
 
-                # Optimizer step
+                # Optimizer step with gradient clipping
                 tr_optimizer.zero_grad()
                 it_optimizer.zero_grad()
                 loss.backward()
-                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), 1)
-                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), 1)
+                
+                # Apply gradient clipping
+                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), self.params.gradient_clip)
+                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), self.params.gradient_clip)
+                
                 tr_optimizer.step()
                 it_optimizer.step()
 
-
-            final_q = (
-                self.tr_embedder
-                    .bert_model
-                    .encoder
-                    .layer[0]
-                    .attention
-                    .self
-                    .query
-                    .weight
-                    .detach()
-                    .cpu()
-            )
-            diff = final_q - initial_q
-            change_norm = diff.norm().item()
-
-            print(f"Epoch {epoch:2d} — Layer 0 Query Weight ΔL2 norm: {change_norm:.6f}")
+            # Update learning rates based on validation performance
+            dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+            self.tr_scheduler.step(dev_f1)
+            self.it_scheduler.step(dev_f1)
 
             # epoch-level averages
             avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
@@ -194,7 +161,6 @@ class Trainer:
             tr_train_loss_list.append(avg_tr)
             it_train_loss_list.append(avg_it)
             
-            dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
             dev_acc_list.append(dev_acc)
             f1_scores.append(dev_f1)
             dev_tr_loss_list.append(dev_tr_loss)
@@ -324,8 +290,8 @@ class Trainer:
         self.tr_model.eval()
         self.it_model.eval()
         
-        self.tr_embedder.bert_model.eval()
-        self.it_embedder.bert_model.eval()
+        self.tr_model.bert_embedder.bert_model.eval()
+        self.it_model.bert_embedder.bert_model.eval()
         # lists to hold predictions and labels
         all_predictions = []
         all_labels      = []
@@ -351,33 +317,29 @@ class Trainer:
                 tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
                 it_indices = (langs == 1).nonzero(as_tuple=True)[0]
 
+                tr_loss = it_loss = 0
+
                 if len(tr_indices) > 0:
                     tr_batches += 1
                     tr_sents   = [words[i] for i in tr_indices.cpu().numpy()]
-                    tr_embeds  = self.tr_embedder.embed_sentences(tr_sents)
-                    tr_embs    = pad_sequence(tr_embeds, batch_first=True, padding_value=0).to(device)
-                    if tr_embs.size(1) < seq_len:
-                        pad_amt = seq_len - tr_embs.size(1)
-                        tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
-                else:
-                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
+                    tr_decode = self.tr_model(tr_sents, None, seq_len)
+                    tr_loss,_ = self.tr_model(tr_sents, labels[tr_indices], seq_len)
+                
+                else: 
+                    tr_decode = []
+                    tr_loss = 0
 
                 if len(it_indices) > 0:
                     it_batches += 1
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    it_embeds = self.it_embedder.embed_sentences(it_sents)
-                    it_embs   = pad_sequence(it_embeds, batch_first=True, padding_value=0).to(device)
-                    if it_embs.size(1) < seq_len:
-                        pad_amt = seq_len - it_embs.size(1)
-                        it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
+                    it_decode = self.it_model(it_sents, None, seq_len)
+                    it_loss,_ = self.it_model(it_sents, labels[it_indices],seq_len)
+                
                 else:
-                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
+                    it_decode = []
+                    it_loss = 0
 
                 # forward passes, getting list-of-lists predictions
-                tr_decode = self.tr_model(tr_embs, None)
-                it_decode = self.it_model(it_embs, None)
-                tr_loss,_ = self.tr_model(tr_embs, labels[tr_indices])
-                it_loss,_ = self.it_model(it_embs, labels[it_indices])
                 tr_loss_sum += -tr_loss
                 it_loss_sum += -it_loss
 
@@ -524,8 +486,8 @@ class Trainer:
         self.tr_model.eval()
         self.it_model.eval()
 
-        self.tr_embedder.bert_model.eval()
-        self.it_embedder.bert_model.eval()
+        self.tr_model.bert_embedder.bert_model.eval()
+        self.it_model.bert_embedder.bert_model.eval()
 
         # for prediction.csv
         csv_rows   = []                      
@@ -541,27 +503,20 @@ class Trainer:
 
                 if len(tr_indices) > 0:
                     tr_sents   = [words[i] for i in tr_indices.cpu().numpy()]
-                    tr_embeds  = self.tr_embedder.embed_sentences(tr_sents)
-                    tr_embs    = pad_sequence(tr_embeds, batch_first=True, padding_value=0).to(device)
-                    if tr_embs.size(1) < seq_len:
-                        pad_amt = seq_len - tr_embs.size(1)
-                        tr_embs = F.pad(tr_embs, (0, 0, 0, pad_amt), "constant", 0)
+                    tr_decode = self.tr_model(tr_sents, None, seq_len)
+
                 else:
-                    tr_embs = torch.zeros((0, seq_len, self.tr_hidden), device=device)
+                    tr_decode = []
+
 
                 if len(it_indices) > 0:
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    it_embeds = self.it_embedder.embed_sentences(it_sents)
-                    it_embs   = pad_sequence(it_embeds, batch_first=True, padding_value=0).to(device)
-                    if it_embs.size(1) < seq_len:
-                        pad_amt = seq_len - it_embs.size(1)
-                        it_embs = F.pad(it_embs, (0, 0, 0, pad_amt), "constant", 0)
+                    it_decode = self.it_model(it_sents, None, seq_len)
+
                 else:
-                    it_embs = torch.zeros((0, seq_len, self.it_hidden), device=device)
+                    it_decode = []    
 
                 # forward passes, getting list-of-lists predictions
-                tr_decode = self.tr_model(tr_embs, None)
-                it_decode = self.it_model(it_embs, None)
 
                 # turn those into (N_lang, seq_len) tensors
                 tr_pred = self.decode_to_tensor(tr_decode, seq_len, device)
@@ -618,7 +573,7 @@ class Trainer:
             return torch.zeros((0, seq_len), dtype=torch.long, device=device)
         # 3) pad_sequence ile batch_first ve padding_value=-1
         padded = pad_sequence(token_tensors, batch_first=True, padding_value=-1)
-        # 4) eğer hâlâ seq_len’den kısa ise sağa pad et
+        # 4) eğer hâlâ seq_len'den kısa ise sağa pad et
         if padded.size(1) < seq_len:
             pad_amt = seq_len - padded.size(1)
             padded = F.pad(padded, (0, pad_amt), value=-1)

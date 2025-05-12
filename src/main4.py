@@ -151,28 +151,20 @@ if __name__ == "__main__":
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
+    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
+
     #instantiate the model
-    it_model = IdiomExtractor(hf_it_model,
-                        params).cuda()
+    it_model = IdiomExtractor(hf_it_model, it_embedder, params).cuda()
 
     # it_model.freeze_bert()
     it_model.unfreeze_bert()
 
 
-    tr_model = IdiomExtractor(hf_tr_model,
-                        params).cuda()
+    tr_model = IdiomExtractor(hf_tr_model, tr_embedder, params).cuda()
 
     # tr_model.freeze_bert()
     tr_model.unfreeze_bert()
-
-    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
-    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
-
-    for name, param in it_embedder.bert_model.named_parameters():
-        print(f"{name:60s} → requires_grad = {param.requires_grad}")
-
-    for name, param in tr_embedder.bert_model.named_parameters():
-        print(f"{name:60s} → requires_grad = {param.requires_grad}")
 
     if mode in ["update", "test"]: 
 
@@ -186,26 +178,30 @@ if __name__ == "__main__":
             tr_state = torch.load(tr_path, map_location=DEVICE)
             tr_model.load_state_dict(tr_state)
 
-    tr_optimizer = optim.Adam(
-        list(tr_model.parameters()) + list(tr_embedder.bert_model.parameters()),
-        lr=params.lr
+    tr_optimizer = optim.AdamW(
+        list(tr_model.parameters()),
+        lr=params.lr,
+        weight_decay=params.weight_decay,
+        betas=(0.9, 0.999),
+        eps=1e-8
     )
 
-    it_optimizer = optim.Adam(
-    list(it_model.parameters()) + list(it_embedder.bert_model.parameters()),
-    lr=params.lr
-)
+    it_optimizer = optim.AdamW(
+        list(it_model.parameters()),
+        lr=params.lr,
+        weight_decay=params.weight_decay,
+        betas=(0.9, 0.999),
+        eps=1e-8
+    )
 
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
                 tr_optimizer = tr_optimizer,
                 it_optimizer = it_optimizer,
-                tr_embedder= tr_embedder,
-                it_embedder= it_embedder,
                 modelname = model_name,
                 labels_vocab=labels_vocab)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=10)
+        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=15)
         trainer.test(test_dataloader)
         
     if mode == "test":

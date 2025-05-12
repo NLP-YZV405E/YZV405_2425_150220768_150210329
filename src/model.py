@@ -7,13 +7,16 @@ import torch.nn.functional as F
 class IdiomExtractor(nn.Module):
     def __init__(self,
                  bert_model,
+                 bert_embedder,
                  hparams):
         super(IdiomExtractor, self).__init__()
         pprint(hparams)
 
         self.bert = bert_model
         self.hidden_size = bert_model.config.hidden_size
+        self.bert_embedder = bert_embedder
         self.use_lstm = hparams.use_lstm
+        self.device = hparams.device
 
 
         # lstm and bert output dimension will be the same
@@ -56,7 +59,16 @@ class IdiomExtractor(nn.Module):
             param.requires_grad = True
         print("BERT model parameters have been unfrozen.")
     
-    def forward(self, bert_embeddings, labels):
+    def forward(self, sents, labels, seq_len=None):
+
+        # cümleleri embed et
+        bert_embeddings = self.bert_embedder.embed_sentences(sents)
+        # cümleleri paddingle
+        bert_embeddings = pad_sequence(bert_embeddings, batch_first=True, padding_value=0).to(self.device)
+        # eğer tr dilindeki cümlelerin uzunluğu seq_len'den küçükse, seq_len'e pad et
+        if bert_embeddings.size(1) < seq_len:
+            pad_amt = seq_len - bert_embeddings.size(1)
+            bert_embeddings = F.pad(bert_embeddings, (0, 0, 0, pad_amt), "constant", 0)
 
         # trainde label olacak ve pad edilmiş kısımlara attend etmemek için mask oluşturuyoruz
         if labels is not None:

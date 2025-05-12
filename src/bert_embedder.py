@@ -104,27 +104,27 @@ class BERTEmbedder:
       # we set output_all_encoded_layers to True cause we want to sum the representations of the last four hidden layers
 
       # bo grad çalıştırıyoruz train etmiyoruz (embedder çünkü)
-      with torch.no_grad():
+      #with torch.no_grad():
 
-        # bert output = (last_hidden_states, pooler_output, hidden_states)
-        # last_hidden_states = the sequence of hidden states of the last layer of the model
-        # pooler_output = the hidden states of the first token of the sequence (the CLS token)
-        # hidden_states = a tuple of FloatTensors, each of shape (batch_size x sequence_length x hidden_size)
-        bert_output = self.bert_model(input_ids=input_ids, 
-                                              token_type_ids=token_type_ids,
-                                              attention_mask=attention_mask,
-                                              output_hidden_states=True,
-                                              return_dict=True)
-        
-
-        # pick the last 4 layers of hidden_states, stack → shape (4, batch, seq, hidden_size)
-        last_hidden_states = bert_output[-1]
-        layers_to_sum = torch.stack([last_hidden_states[x] for x in [-1, -2, -3, -4]], dim=0)
-        summed_layers = torch.sum(layers_to_sum, dim=0)
-
-        # collapse subtoken pieces back to per-word embeddings
-        merged_output = self._merge_embeddings(summed_layers, to_merge_wordpieces)
+      # bert output = (last_hidden_states, pooler_output, hidden_states)
+      # last_hidden_states = the sequence of hidden states of the last layer of the model
+      # pooler_output = the hidden states of the first token of the sequence (the CLS token)
+      # hidden_states = a tuple of FloatTensors, each of shape (batch_size x sequence_length x hidden_size)
+      bert_output = self.bert_model(input_ids=input_ids, 
+                                            token_type_ids=token_type_ids,
+                                            attention_mask=attention_mask,
+                                            output_hidden_states=True,
+                                            return_dict=True)
       
+
+      # pick the last 4 layers of hidden_states, stack → shape (4, batch, seq, hidden_size)
+      last_hidden_states = bert_output[-1]
+      layers_to_sum = torch.stack([last_hidden_states[x] for x in [-1, -2, -3, -4]], dim=0)
+      summed_layers = torch.sum(layers_to_sum, dim=0)
+
+      # collapse subtoken pieces back to per-word embeddings
+      merged_output = self._merge_embeddings(summed_layers, to_merge_wordpieces)
+    
       return merged_output
   
 
@@ -140,7 +140,7 @@ class BERTEmbedder:
       word_vectors = []
       # Her kelime için
       for idxs in merge_idxs:
-          # Orijinal dizide CLS 0. pozisyondaydı, biz onu attık → tüm indeksleri -1’le kaydır
+          # Orijinal dizide CLS 0. pozisyondaydı, biz onu attık → tüm indeksleri -1'le kaydır
           valid = [i - 1 for i in idxs if 1 <= i < aggregated_layers.size(1)-1]
           if not valid:
               # Bazen tüm parçalar SEP/CLS dışında kalmayabilir, atla
