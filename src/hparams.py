@@ -1,11 +1,21 @@
 from __init__ import *
 class HParams():
-    dropout = 0.5
+    # Model Architecture Parameters
+    dropout = 0.3
     num_classes = 4
     bidirectional = True
-    num_layers = 2
+    num_layers = 3
     use_lstm = True
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    batch_size = 16
+    
+    # Training Parameters
+    batch_size = 32
     lr = 0.0005
-    epoch = 50
+    epoch = 100
+    
+    # New Parameters
+    warmup_steps = 1000
+    weight_decay = 0.01
+    gradient_clip = 1.0
+    scheduler_factor = 0.5
+    scheduler_patience = 3
