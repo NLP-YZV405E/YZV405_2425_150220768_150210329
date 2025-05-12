@@ -78,8 +78,24 @@ class Trainer:
             tr_loss_sum = it_loss_sum = 0
             tr_batches  = it_batches  = 0
 
-            for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
+            self.tr_embedder.bert_model.train()
+            self.it_embedder.bert_model.train()
 
+            initial_q = (
+                self.tr_embedder
+                    .bert_model
+                    .encoder
+                    .layer[0]
+                    .attention
+                    .self
+                    .query
+                    .weight
+                    .detach()
+                    .cpu()
+                    .clone()
+            )
+            for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
+                
                 batch_size, seq_len = labels.shape
                 device = labels.device
 
@@ -149,6 +165,23 @@ class Trainer:
                 tr_optimizer.step()
                 it_optimizer.step()
 
+
+            final_q = (
+                self.tr_embedder
+                    .bert_model
+                    .encoder
+                    .layer[0]
+                    .attention
+                    .self
+                    .query
+                    .weight
+                    .detach()
+                    .cpu()
+            )
+            diff = final_q - initial_q
+            change_norm = diff.norm().item()
+
+            print(f"Epoch {epoch:2d} — Layer 0 Query Weight ΔL2 norm: {change_norm:.6f}")
 
             # epoch-level averages
             avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
@@ -290,7 +323,9 @@ class Trainer:
         # put models to eval mode
         self.tr_model.eval()
         self.it_model.eval()
-
+        
+        self.tr_embedder.bert_model.eval()
+        self.it_embedder.bert_model.eval()
         # lists to hold predictions and labels
         all_predictions = []
         all_labels      = []
@@ -488,6 +523,9 @@ class Trainer:
         # put models to eval mode
         self.tr_model.eval()
         self.it_model.eval()
+
+        self.tr_embedder.bert_model.eval()
+        self.it_embedder.bert_model.eval()
 
         # for prediction.csv
         csv_rows   = []                      

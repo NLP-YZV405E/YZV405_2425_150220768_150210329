@@ -158,6 +158,7 @@ if __name__ == "__main__":
     # it_model.freeze_bert()
     it_model.unfreeze_bert()
 
+
     tr_model = IdiomExtractor(hf_tr_model,
                         params).cuda()
 
@@ -166,6 +167,12 @@ if __name__ == "__main__":
 
     it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
     tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
+
+    for name, param in it_embedder.bert_model.named_parameters():
+        print(f"{name:60s} → requires_grad = {param.requires_grad}")
+
+    for name, param in tr_embedder.bert_model.named_parameters():
+        print(f"{name:60s} → requires_grad = {param.requires_grad}")
 
     if mode in ["update", "test"]: 
 
@@ -179,10 +186,19 @@ if __name__ == "__main__":
             tr_state = torch.load(tr_path, map_location=DEVICE)
             tr_model.load_state_dict(tr_state)
 
+    tr_optimizer = optim.Adam(
+        list(tr_model.parameters()) + list(tr_embedder.bert_model.parameters()),
+        lr=params.lr
+    )
+
+    it_optimizer = optim.Adam(
+    list(it_model.parameters()) + list(it_embedder.bert_model.parameters()),
+    lr=params.lr
+)
 
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
-                tr_optimizer = optim.Adam(tr_model.parameters(), params.lr),
-                it_optimizer = optim.Adam(it_model.parameters(), params.lr),
+                tr_optimizer = tr_optimizer,
+                it_optimizer = it_optimizer,
                 tr_embedder= tr_embedder,
                 it_embedder= it_embedder,
                 modelname = model_name,
