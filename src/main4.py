@@ -214,7 +214,7 @@ if __name__ == "__main__":
 
     # Update training parameters for special modes
     train_bert = False
-    if mode == "train":
+    if mode in ["train", "update"]:
         train_bert = input("Do you want to train BERT after training task layers? (yes/no): ").strip().lower() == "yes"
         print(f"Will train BERT after task layers: {train_bert}")
     
@@ -231,10 +231,10 @@ if __name__ == "__main__":
         epochs = params.epoch
         if train_bert:
             # Add extra epochs for BERT training
-            trainer.train(train_dataloader, dev_dataloader, epochs, patience=15)
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=10)
         else:
             # Standard training, only task-specific layers
-            trainer.train(train_dataloader, dev_dataloader, epochs, patience=15)
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=10)
         
         trainer.test(test_dataloader)
         
