@@ -33,7 +33,7 @@ class IdiomExtractor(nn.Module):
         self.bert_embedder = bert_embedder
         self.use_lstm = hparams.use_lstm
         self.device = hparams.device
-        self.focal_loss_weight = 0.5  # Increased from 0.3 to better handle class imbalance
+        self.focal_loss_weight = hparams.focal_loss_weight
 
         # lstm and bert output dimension will be the same
         if self.use_lstm:
