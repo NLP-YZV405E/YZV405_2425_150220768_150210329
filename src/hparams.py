@@ -10,13 +10,14 @@ class HParams():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
     # Training Parameters
-    batch_size = 16
-    lr = 0.0001
-    epoch = 50
+    batch_size = 32
+    lr = 0.0005
+    epoch = 40
     
     # New Parameters
     warmup_steps = 1000
     weight_decay = 0.001
-    gradient_clip = 0.5
+    gradient_clip = 1
     scheduler_factor = 0.5
     scheduler_patience = 3
+    focal_loss_weight = 0.3 
