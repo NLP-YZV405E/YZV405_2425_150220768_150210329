@@ -151,58 +151,94 @@ if __name__ == "__main__":
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    it_embedder =  BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
-    tr_embedder =  BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
+    print("Initializing BERT embedders...")
+    it_embedder = BERTEmbedder(hf_it_model, it_tokenizer, DEVICE)
+    tr_embedder = BERTEmbedder(hf_tr_model, tr_tokenizer, DEVICE)
 
     #instantiate the model
+    print("Creating task models...")
     it_model = IdiomExtractor(it_embedder, params).cuda()
-
-    it_model.freeze_bert()
-    #it_model.unfreeze_bert()
-
     tr_model = IdiomExtractor(tr_embedder, params).cuda()
 
+    # Initially freeze BERT layers to train only task-specific components
+    print("Freezing BERT layers for initial training phase...")
+    it_model.freeze_bert()
     tr_model.freeze_bert()
-    #tr_model.unfreeze_bert()
+    
+    # Verify BERT layers are frozen
+    it_bert_trainable_params = sum(p.numel() for p in it_model.bert_embedder.bert_model.parameters() if p.requires_grad)
+    tr_bert_trainable_params = sum(p.numel() for p in tr_model.bert_embedder.bert_model.parameters() if p.requires_grad)
+    
+    total_it_params = sum(p.numel() for p in it_model.parameters())
+    total_tr_params = sum(p.numel() for p in tr_model.parameters())
+    
+    it_task_params = sum(p.numel() for p in it_model.parameters() if p.requires_grad)
+    tr_task_params = sum(p.numel() for p in tr_model.parameters() if p.requires_grad)
+    
+    print(f"Italian model parameters: {total_it_params:,} total, {it_task_params:,} trainable")
+    print(f"Turkish model parameters: {total_tr_params:,} total, {tr_task_params:,} trainable")
+    print(f"Italian BERT trainable parameters: {it_bert_trainable_params:,} (should be 0)")
+    print(f"Turkish BERT trainable parameters: {tr_bert_trainable_params:,} (should be 0)")
 
     if mode in ["update", "test"]: 
-
+        print("Loading pre-trained models...")
         if it_path is not None:
             it_state = torch.load(it_path, map_location=DEVICE)
-
             # now load cleanly
             it_model.load_state_dict(it_state)
+            print(f"Loaded Italian model from {it_path}")
 
         if tr_path is not None:
             tr_state = torch.load(tr_path, map_location=DEVICE)
             tr_model.load_state_dict(tr_state)
-
+            print(f"Loaded Turkish model from {tr_path}")
+    
+    # Create optimizers for task-specific layers only
+    print("Creating optimizers for task-specific layers...")
+    
     tr_optimizer = optim.AdamW(
-        list(tr_model.parameters()),
-        lr=params.lr,
+        [p for n, p in tr_model.named_parameters() if p.requires_grad],
+        lr=0.001,  # Higher learning rate for task-specific layers
         weight_decay=params.weight_decay,
         betas=(0.9, 0.999),
         eps=1e-8
     )
 
     it_optimizer = optim.AdamW(
-        list(it_model.parameters()),
-        lr=params.lr,
+        [p for n, p in it_model.named_parameters() if p.requires_grad],
+        lr=0.001,  # Higher learning rate for task-specific layers
         weight_decay=params.weight_decay,
         betas=(0.9, 0.999),
         eps=1e-8
     )
 
+    # Update training parameters for special modes
+    train_bert = False
+    if mode == "train":
+        train_bert = input("Do you want to train BERT after training task layers? (yes/no): ").strip().lower() == "yes"
+        print(f"Will train BERT after task layers: {train_bert}")
+    
+    print("Creating trainer...")
     trainer = Trainer(tr_model = tr_model, it_model = it_model,
                 tr_optimizer = tr_optimizer,
                 it_optimizer = it_optimizer,
                 modelname = model_name,
-                labels_vocab=labels_vocab)
+                labels_vocab = labels_vocab,
+                train_bert = train_bert)
 
     if mode in ["train", "update"]:
-        trainer.train(train_dataloader, dev_dataloader, params.epoch, patience=10)
+        print(f"Starting training with mode: {mode}")
+        epochs = params.epoch
+        if train_bert:
+            # Add extra epochs for BERT training
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=15)
+        else:
+            # Standard training, only task-specific layers
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=15)
+        
         trainer.test(test_dataloader)
         
     if mode == "test":
+        print("Starting evaluation...")
         trainer.test(test_dataloader)
     
