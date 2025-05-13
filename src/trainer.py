@@ -44,16 +44,16 @@ class Trainer:
         
         # Initialize mixed precision training with increased stability
         self.scaler = torch.amp.GradScaler(enabled=True, device=self.device, 
-                                        init_scale=2**10,  # More conservative initial scale
-                                        growth_factor=1.5,  # Slower growth rate (default 2.0)
-                                        backoff_factor=0.5,  # Same backoff rate
-                                        growth_interval=100)  # More conservative growth interval
+                                        init_scale=2**10,
+                                        growth_factor=1.5,  
+                                        backoff_factor=0.5, 
+                                        growth_interval=100) 
         
         # Create BERT optimizers (only used if train_bert=True)
         if self.train_bert:
-            # Even lower learning rate for BERT fine-tuning, especially for Turkish
-            tr_bert_lr = 5e-6  # Much lower learning rate for Turkish BERT
-            it_bert_lr = 1e-5  # Standard fine-tuning rate for Italian BERT
+            # lower learning rate for fintuning BERT
+            tr_bert_lr = 5e-6  # türkçe modeli bozulduğu için daha düşük lr
+            it_bert_lr = 5e-6 
 
             # Create separate optimizer groups for different BERT layers to enable gradual unfreezing
             tr_bert_params = []
@@ -282,7 +282,7 @@ class Trainer:
             current_patience = full_patience
             
             # Divide Phase 2 into 3 sub-phases for gradual unfreezing
-            epochs_per_unfreeze = max(phase2_epochs // 3, 1)  # At least 1 epoch per phase
+            epochs_per_unfreeze = max(phase2_epochs // 9, 1)  # At least 1 epoch per phase
             
             # Phase 2a: Unfreeze only the top layers
             self.bert_unfreeze_phase = 1
