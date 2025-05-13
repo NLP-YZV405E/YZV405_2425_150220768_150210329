@@ -24,7 +24,8 @@ class Trainer:
                  tr_optimizer,
                  it_optimizer,
                  labels_vocab: dict,
-                 modelname = "idiom_expr_detector"):
+                 modelname = "idiom_expr_detector",
+                 train_bert = False):
         self.tr_model     = tr_model
         self.it_model     = it_model
         self.tr_optimizer = tr_optimizer
@@ -38,8 +39,109 @@ class Trainer:
         os.makedirs(self.result_dir, exist_ok=True)
         self.device       = "cuda" if torch.cuda.is_available() else "cpu"
         
-        # Initialize mixed precision training
-        self.scaler = torch.amp.GradScaler(device=self.device)
+        # Flag for whether to train BERT layers after task layers
+        self.train_bert = train_bert
+        
+        # Initialize mixed precision training with increased stability
+        self.scaler = torch.amp.GradScaler(enabled=True, device=self.device, 
+                                        init_scale=2**10,  # More conservative initial scale
+                                        growth_factor=1.5,  # Slower growth rate (default 2.0)
+                                        backoff_factor=0.5,  # Same backoff rate
+                                        growth_interval=100)  # More conservative growth interval
+        
+        # Create BERT optimizers (only used if train_bert=True)
+        if self.train_bert:
+            # Even lower learning rate for BERT fine-tuning, especially for Turkish
+            tr_bert_lr = 5e-6  # Much lower learning rate for Turkish BERT
+            it_bert_lr = 1e-5  # Standard fine-tuning rate for Italian BERT
+
+            # Create separate optimizer groups for different BERT layers to enable gradual unfreezing
+            tr_bert_params = []
+            
+            # Create non-overlapping parameter groups for TR model
+            # Group 1: Top layers (layers -4 to -1)
+            top_layer_params = []
+            for i in range(-4, 0):
+                layer_params = list(self.tr_model.bert_embedder.bert_model.encoder.layer[i].parameters())
+                top_layer_params.extend(layer_params)
+            tr_bert_params.append({
+                'params': top_layer_params,
+                'lr': tr_bert_lr
+            })
+            
+            # Group 2: Middle layers (layers -8 to -5)
+            middle_layer_params = []
+            for i in range(-8, -4):
+                layer_params = list(self.tr_model.bert_embedder.bert_model.encoder.layer[i].parameters())
+                middle_layer_params.extend(layer_params)
+            tr_bert_params.append({
+                'params': middle_layer_params,
+                'lr': tr_bert_lr * 0.75
+            })
+            
+            # Group 3: Early layers and embeddings (everything else)
+            # First get all parameters
+            all_params = set(self.tr_model.bert_embedder.bert_model.parameters())
+            # Remove parameters already in groups 1 and 2
+            grouped_params = set(top_layer_params + middle_layer_params)
+            remaining_params = list(all_params - grouped_params)
+            
+            tr_bert_params.append({
+                'params': remaining_params,
+                'lr': tr_bert_lr * 0.5
+            })
+            
+            # Similar structure for Italian but with higher learning rates
+            it_bert_params = []
+            
+            # Group 1: Top layers (layers -4 to -1)
+            it_top_layer_params = []
+            for i in range(-4, 0):
+                layer_params = list(self.it_model.bert_embedder.bert_model.encoder.layer[i].parameters())
+                it_top_layer_params.extend(layer_params)
+            it_bert_params.append({
+                'params': it_top_layer_params,
+                'lr': it_bert_lr
+            })
+            
+            # Group 2: Middle layers (layers -8 to -5)
+            it_middle_layer_params = []
+            for i in range(-8, -4):
+                layer_params = list(self.it_model.bert_embedder.bert_model.encoder.layer[i].parameters())
+                it_middle_layer_params.extend(layer_params)
+            it_bert_params.append({
+                'params': it_middle_layer_params,
+                'lr': it_bert_lr * 0.75
+            })
+            
+            # Group 3: Early layers and embeddings (everything else)
+            # First get all parameters
+            it_all_params = set(self.it_model.bert_embedder.bert_model.parameters())
+            # Remove parameters already in groups 1 and 2
+            it_grouped_params = set(it_top_layer_params + it_middle_layer_params)
+            it_remaining_params = list(it_all_params - it_grouped_params)
+            
+            it_bert_params.append({
+                'params': it_remaining_params,
+                'lr': it_bert_lr * 0.5
+            })
+            
+            self.tr_bert_optimizer = torch.optim.AdamW(
+                tr_bert_params,
+                weight_decay=0.01,
+                betas=(0.9, 0.999),
+                eps=1e-8
+            )
+            
+            self.it_bert_optimizer = torch.optim.AdamW(
+                it_bert_params,
+                weight_decay=0.01,
+                betas=(0.9, 0.999),
+                eps=1e-8
+            )
+            
+            # Initialize flags for gradual unfreezing
+            self.bert_unfreeze_phase = 0  # 0: None unfrozen, 1: Top layers, 2: Middle, 3: All
         
         # Initialize learning rate schedulers
         self.tr_scheduler = ReduceLROnPlateau(
@@ -56,9 +158,27 @@ class Trainer:
             patience=self.params.scheduler_patience,
             verbose=True
         )
+        
+        if self.train_bert:
+            self.tr_bert_scheduler = ReduceLROnPlateau(
+                self.tr_bert_optimizer,
+                mode='max',
+                factor=self.params.scheduler_factor,
+                patience=self.params.scheduler_patience,
+                verbose=True
+            )
+            
+            self.it_bert_scheduler = ReduceLROnPlateau(
+                self.it_bert_optimizer,
+                mode='max',
+                factor=self.params.scheduler_factor,
+                patience=self.params.scheduler_patience,
+                verbose=True
+            )
 
-        tr_model.bert_embedder.bert_model.train()
-        it_model.bert_embedder.bert_model.train()
+        # Verify BERT frozen status
+        is_bert_frozen = not any(p.requires_grad for p in tr_model.bert_embedder.bert_model.parameters())
+        print("BERT layers are initially frozen:", is_bert_frozen)
 
     def padding_mask(self, batch: torch.Tensor) -> torch.BoolTensor:
         padding = torch.ones_like(batch)
@@ -68,8 +188,8 @@ class Trainer:
     def train(self,
               train_loader: DataLoader,
               valid_loader: DataLoader,
-              epochs: int = 50,
-              patience: int = 10):
+              epochs: int = 40,
+              patience: int = 25):
 
         print("\nTraining...")
         train_loss_list = []
@@ -80,108 +200,362 @@ class Trainer:
         dev_tr_loss_list = []
         dev_it_loss_list = []
         record_dev      = 0.0
-        full_patience   = patience
-
-        for epoch in range(1, epochs + 1):
-            if patience <= 0:
-                print("Stopping early (no more patience).")
-                break
-
-            print(f" Epoch {epoch:03d}, patience: {patience}")
-            self.tr_model.train()
-            self.it_model.train()
-
-            tr_loss_sum = it_loss_sum = 0
-            tr_batches  = it_batches  = 0
-
-            self.tr_model.bert_embedder.bert_model.train()
-            self.it_model.bert_embedder.bert_model.train()
-
-
-            for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
-                batch_size, seq_len = labels.shape
-
-                tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
-                it_indices = (langs == 1).nonzero(as_tuple=True)[0]
-
-                tr_NLL = 0
-                it_NLL = 0
-
-                if len(tr_indices) > 0:
-                    tr_labels = labels[tr_indices]
-                    tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                    
-                    with torch.amp.autocast(device_type=self.device):
-                        tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
-                        tr_NLL = tr_LL
-                    
-                    tr_batches += 1
-
-                if len(it_indices) > 0:
-                    it_labels = labels[it_indices]
-                    it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    
-                    with torch.amp.autocast(device_type=self.device):
-                        it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
-                        it_NLL = it_LL
-                    
-                    it_batches += 1
-
-                loss = (tr_NLL + it_NLL)
-
-                tr_loss_sum += tr_NLL
-                it_loss_sum += it_NLL
-
-                # Gradient accumulation
-                self.scaler.scale(loss).backward()
-                
-                if (tr_batches + it_batches):
-                    # Apply gradient clipping
-                    self.scaler.unscale_(self.tr_optimizer)
-                    self.scaler.unscale_(self.it_optimizer)
-                    torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), self.params.gradient_clip)
-                    torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), self.params.gradient_clip)
-                    
-                    # Update weights
-                    self.scaler.step(self.tr_optimizer)
-                    self.scaler.step(self.it_optimizer)
-                    self.scaler.update()
-                    
-                    self.tr_optimizer.zero_grad()
-                    self.it_optimizer.zero_grad()
-
-            # Update learning rates based on validation performance
-            dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
-            self.tr_scheduler.step(dev_f1)
-            self.it_scheduler.step(dev_f1)
-
-            # epoch-level averages
-            avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
-            avg_it    = it_loss_sum / it_batches if it_batches else 0.0
-            avg_total = avg_tr + avg_it
-
-            print(f"[E:{epoch:02d}] train tr_loss={avg_tr:.4f}, it_loss={avg_it:.4f}, total={avg_total:.4f}")
-
-            train_loss_list.append(avg_total)
-            tr_train_loss_list.append(avg_tr)
-            it_train_loss_list.append(avg_it)
+        
+        bert_weight_changes = []
+        
+        if self.train_bert:
+            print("=== PHASE 1: Training task-specific layers (BERT frozen) ===")
+            total_epochs = epochs
+            phase1_epochs = 15  # 50% of epochs for task layers
+            phase2_epochs = total_epochs - phase1_epochs  # Remaining for BERT fine-tuning
             
-            dev_acc_list.append(dev_acc)
-            f1_scores.append(dev_f1)
-            dev_tr_loss_list.append(dev_tr_loss)
-            dev_it_loss_list.append(dev_it_loss)
-
-            if dev_f1 > record_dev:
-                record_dev = dev_f1
-                tr_state_dict = self.tr_model.state_dict()
-                it_state_dict = self.it_model.state_dict()
-                patience = full_patience
-
-            else:
-                patience -= 1
-
-
-        # Convert all lists of tensors to lists of floats on CPU 
+            print(f"Task-specific training: {phase1_epochs} epochs")
+            print(f"BERT fine-tuning: {phase2_epochs} epochs")
+            
+            # Store best models from phase 1
+            best_tr_state_dict = None
+            best_it_state_dict = None
+            
+            # Phase 1: Train with frozen BERT
+            full_patience = patience
+            current_patience = full_patience
+            
+            for epoch in range(1, phase1_epochs + 1):
+                if current_patience <= 0:
+                    print("Stopping Phase 1 early (no more patience).")
+                    break
+                    
+                print(f" Epoch {epoch:03d}/{phase1_epochs}, patience: {current_patience}")
+                
+                # Ensure BERT is frozen
+                self.tr_model.freeze_bert()
+                self.it_model.freeze_bert()
+                
+                # Train for one epoch
+                tr_loss, it_loss = self._train_epoch(epoch, train_loader)
+                
+                tr_train_loss_list.append(tr_loss)
+                it_train_loss_list.append(it_loss)
+                train_loss_list.append(tr_loss + it_loss)
+                
+                # Evaluate on validation set
+                dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+                dev_acc_list.append(dev_acc)
+                f1_scores.append(dev_f1)
+                dev_tr_loss_list.append(dev_tr_loss)
+                dev_it_loss_list.append(dev_it_loss)
+                
+                # Update learning rates
+                self.tr_scheduler.step(dev_f1)
+                self.it_scheduler.step(dev_f1)
+                
+                # Check if we have a new best model
+                if dev_f1 > record_dev:
+                    record_dev = dev_f1
+                    best_tr_state_dict = copy.deepcopy(self.tr_model.state_dict())
+                    best_it_state_dict = copy.deepcopy(self.it_model.state_dict())
+                    current_patience = full_patience
+                    print(f"New best model! F1: {dev_f1:.4f}")
+                else:
+                    current_patience -= 1
+            
+            # Load best model from Phase 1
+            if best_tr_state_dict is not None:
+                self.tr_model.load_state_dict(best_tr_state_dict)
+                self.it_model.load_state_dict(best_it_state_dict)
+                print("Loaded best model from Phase 1 for BERT fine-tuning")
+            
+            # Save task-specific model before BERT fine-tuning
+            torch.save(best_tr_state_dict, f"./src/checkpoints/tr/{self.modelname}_task_only.pt")
+            torch.save(best_it_state_dict, f"./src/checkpoints/it/{self.modelname}_task_only.pt")
+            print(f"Saved task-only models to {self.modelname}_task_only.pt")
+            
+            # Reset patience for Phase 2
+            current_patience = full_patience
+            phase1_record_dev = record_dev
+            
+            # Phase 2: Gradual fine-tuning of BERT layers
+            print("\n=== PHASE 2: Gradually fine-tuning BERT layers ===")
+            
+            # Reset best performance for phase 2
+            record_dev = phase1_record_dev  
+            current_patience = full_patience
+            
+            # Divide Phase 2 into 3 sub-phases for gradual unfreezing
+            epochs_per_unfreeze = max(phase2_epochs // 3, 1)  # At least 1 epoch per phase
+            
+            # Phase 2a: Unfreeze only the top layers
+            self.bert_unfreeze_phase = 1
+            print("\n=== Phase 2a: Fine-tuning top BERT layers only ===")
+            
+            # Freeze all BERT layers first
+            for param in self.tr_model.bert_embedder.bert_model.parameters():
+                param.requires_grad = False
+            for param in self.it_model.bert_embedder.bert_model.parameters():
+                param.requires_grad = False
+                
+            # Unfreeze only the top 4 layers
+            for i in range(-4, 0):
+                for param in self.tr_model.bert_embedder.bert_model.encoder.layer[i].parameters():
+                    param.requires_grad = True
+                for param in self.it_model.bert_embedder.bert_model.encoder.layer[i].parameters():
+                    param.requires_grad = True
+                    
+            print("Unfrozen top 4 BERT layers for both models")
+            
+            # Train for the first sub-phase
+            for epoch in range(1, epochs_per_unfreeze + 1):
+                if current_patience <= 0:
+                    print("Stopping Phase 2a early (no more patience).")
+                    break
+                
+                print(f" BERT top layers fine-tuning epoch {epoch:03d}/{epochs_per_unfreeze}, patience: {current_patience}")
+                
+                # Train with top BERT layers unfrozen
+                tr_loss, it_loss = self._train_epoch_with_bert(epoch, train_loader)
+                
+                tr_train_loss_list.append(tr_loss)
+                it_train_loss_list.append(it_loss)
+                train_loss_list.append(tr_loss + it_loss)
+                
+                # Evaluate
+                dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+                dev_acc_list.append(dev_acc)
+                f1_scores.append(dev_f1)
+                dev_tr_loss_list.append(dev_tr_loss)
+                dev_it_loss_list.append(dev_it_loss)
+                
+                # Update learning rates
+                self.tr_scheduler.step(dev_f1)
+                self.it_scheduler.step(dev_f1)
+                self.tr_bert_scheduler.step(dev_f1)
+                self.it_bert_scheduler.step(dev_f1)
+                
+                # Check for new best model
+                if dev_f1 > record_dev:
+                    record_dev = dev_f1
+                    best_tr_state_dict = copy.deepcopy(self.tr_model.state_dict())
+                    best_it_state_dict = copy.deepcopy(self.it_model.state_dict())
+                    current_patience = full_patience
+                    print(f"New best model with top BERT layers fine-tuned! F1: {dev_f1:.4f}")
+                else:
+                    current_patience -= 1
+            
+            # Load best model from Phase 2a before proceeding
+            if best_tr_state_dict is not None:
+                self.tr_model.load_state_dict(best_tr_state_dict)
+                self.it_model.load_state_dict(best_it_state_dict)
+                print("Loaded best model from Phase 2a")
+                
+            # Reset patience
+            current_patience = full_patience
+            
+            # Phase 2b: Unfreeze middle layers too
+            self.bert_unfreeze_phase = 2
+            print("\n=== Phase 2b: Fine-tuning middle BERT layers ===")
+            
+            # Unfreeze middle 4 layers (layers 4-8 from top)
+            for i in range(-8, -4):
+                for param in self.tr_model.bert_embedder.bert_model.encoder.layer[i].parameters():
+                    param.requires_grad = True
+                for param in self.it_model.bert_embedder.bert_model.encoder.layer[i].parameters():
+                    param.requires_grad = True
+                    
+            print("Unfrozen middle 4 BERT layers for both models")
+            
+            # Train for the second sub-phase
+            for epoch in range(1, epochs_per_unfreeze + 1):
+                if current_patience <= 0:
+                    print("Stopping Phase 2b early (no more patience).")
+                    break
+                
+                print(f" BERT middle layers fine-tuning epoch {epoch:03d}/{epochs_per_unfreeze}, patience: {current_patience}")
+                
+                # Train with middle BERT layers unfrozen
+                tr_loss, it_loss = self._train_epoch_with_bert(epoch, train_loader)
+                
+                tr_train_loss_list.append(tr_loss)
+                it_train_loss_list.append(it_loss)
+                train_loss_list.append(tr_loss + it_loss)
+                
+                # Evaluate
+                dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+                dev_acc_list.append(dev_acc)
+                f1_scores.append(dev_f1)
+                dev_tr_loss_list.append(dev_tr_loss)
+                dev_it_loss_list.append(dev_it_loss)
+                
+                # Update learning rates
+                self.tr_scheduler.step(dev_f1)
+                self.it_scheduler.step(dev_f1)
+                self.tr_bert_scheduler.step(dev_f1)
+                self.it_bert_scheduler.step(dev_f1)
+                
+                # Check for new best model
+                if dev_f1 > record_dev:
+                    record_dev = dev_f1
+                    best_tr_state_dict = copy.deepcopy(self.tr_model.state_dict())
+                    best_it_state_dict = copy.deepcopy(self.it_model.state_dict())
+                    current_patience = full_patience
+                    print(f"New best model with middle BERT layers fine-tuned! F1: {dev_f1:.4f}")
+                else:
+                    current_patience -= 1
+            
+            # Load best model from Phase 2b before proceeding
+            if best_tr_state_dict is not None:
+                self.tr_model.load_state_dict(best_tr_state_dict)
+                self.it_model.load_state_dict(best_it_state_dict)
+                print("Loaded best model from Phase 2b")
+                
+            # Reset patience
+            current_patience = full_patience
+            
+            # Phase 2c: Unfreeze all layers (but with lowest learning rate for Turkish early layers)
+            self.bert_unfreeze_phase = 3
+            print("\n=== Phase 2c: Fine-tuning all BERT layers ===")
+            
+            # Unfreeze remaining layers
+            self.tr_model.unfreeze_bert()
+            self.it_model.unfreeze_bert()
+            
+            # Train for the final sub-phase
+            remaining_epochs = phase2_epochs - 2 * epochs_per_unfreeze
+            
+            for epoch in range(1, remaining_epochs + 1):
+                if current_patience <= 0:
+                    print("Stopping Phase 2c early (no more patience).")
+                    break
+                
+                print(f" BERT all layers fine-tuning epoch {epoch:03d}/{remaining_epochs}, patience: {current_patience}")
+                
+                # Track BERT weight changes
+                initial_q = (self.tr_model
+                    .bert_embedder
+                    .bert_model
+                    .encoder
+                    .layer[0]
+                    .attention
+                    .self
+                    .query
+                    .weight
+                    .detach()
+                    .cpu()
+                    .clone()
+                )
+                
+                # Train with all BERT layers unfrozen
+                tr_loss, it_loss = self._train_epoch_with_bert(epoch, train_loader)
+                
+                tr_train_loss_list.append(tr_loss)
+                it_train_loss_list.append(it_loss)
+                train_loss_list.append(tr_loss + it_loss)
+                
+                # Evaluate
+                dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+                dev_acc_list.append(dev_acc)
+                f1_scores.append(dev_f1)
+                dev_tr_loss_list.append(dev_tr_loss)
+                dev_it_loss_list.append(dev_it_loss)
+                
+                # Update learning rates
+                self.tr_scheduler.step(dev_f1)
+                self.it_scheduler.step(dev_f1)
+                self.tr_bert_scheduler.step(dev_f1)
+                self.it_bert_scheduler.step(dev_f1)
+                
+                # Calculate BERT weight changes
+                final_q = (
+                    self.tr_model.bert_embedder
+                        .bert_model
+                        .encoder
+                        .layer[0]
+                        .attention
+                        .self
+                        .query
+                        .weight
+                        .detach()
+                        .cpu()
+                )
+                diff = final_q - initial_q
+                change_norm = diff.norm().item()
+                bert_weight_changes.append(change_norm)
+                
+                print(f"BERT Weight ΔL2 norm: {change_norm:.6f}")
+                
+                # Check for new best model
+                if dev_f1 > record_dev:
+                    record_dev = dev_f1
+                    best_tr_state_dict = copy.deepcopy(self.tr_model.state_dict())
+                    best_it_state_dict = copy.deepcopy(self.it_model.state_dict())
+                    current_patience = full_patience
+                    print(f"New best model with all BERT layers fine-tuned! F1: {dev_f1:.4f}")
+                else:
+                    current_patience -= 1
+            
+            # Load best model from Phase 2c
+            if best_tr_state_dict is not None:
+                self.tr_model.load_state_dict(best_tr_state_dict)
+                self.it_model.load_state_dict(best_it_state_dict)
+            
+        else:
+            # Single phase training - only task-specific layers
+            print("=== Training only task-specific layers (BERT frozen) ===")
+            
+            full_patience = patience
+            current_patience = full_patience
+            
+            best_tr_state_dict = None
+            best_it_state_dict = None
+            
+            for epoch in range(1, epochs + 1):
+                if current_patience <= 0:
+                    print("Stopping early (no more patience).")
+                    break
+                
+                print(f" Epoch {epoch:03d}/{epochs}, patience: {current_patience}")
+                
+                # Ensure BERT is frozen
+                self.tr_model.freeze_bert()
+                self.it_model.freeze_bert()
+                
+                # Train for one epoch
+                tr_loss, it_loss = self._train_epoch(epoch, train_loader)
+                
+                tr_train_loss_list.append(tr_loss)
+                it_train_loss_list.append(it_loss)
+                train_loss_list.append(tr_loss + it_loss)
+                
+                # Evaluate
+                dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
+                dev_acc_list.append(dev_acc)
+                f1_scores.append(dev_f1)
+                dev_tr_loss_list.append(dev_tr_loss)
+                dev_it_loss_list.append(dev_it_loss)
+                
+                # Update learning rates
+                self.tr_scheduler.step(dev_f1)
+                self.it_scheduler.step(dev_f1)
+                
+                # Check for new best model
+                if dev_f1 > record_dev:
+                    record_dev = dev_f1
+                    best_tr_state_dict = copy.deepcopy(self.tr_model.state_dict())
+                    best_it_state_dict = copy.deepcopy(self.it_model.state_dict())
+                    current_patience = full_patience
+                    print(f"New best model! F1: {dev_f1:.4f}")
+                else:
+                    current_patience -= 1
+            
+            # Load best model
+            if best_tr_state_dict is not None:
+                self.tr_model.load_state_dict(best_tr_state_dict)
+                self.it_model.load_state_dict(best_it_state_dict)
+        
+        # Save final models
+        torch.save(self.tr_model.state_dict(), f"./src/checkpoints/tr/{self.modelname}.pt")
+        torch.save(self.it_model.state_dict(), f"./src/checkpoints/it/{self.modelname}.pt")
+        
+        # Convert tensor metrics to float lists
         dev_acc_list      = self.to_float_list(dev_acc_list)
         f1_scores         = self.to_float_list(f1_scores)
         train_loss_list   = self.to_float_list(train_loss_list)
@@ -189,34 +563,49 @@ class Trainer:
         it_train_loss_list= self.to_float_list(it_train_loss_list)
         dev_tr_loss_list  = self.to_float_list(dev_tr_loss_list)
         dev_it_loss_list  = self.to_float_list(dev_it_loss_list)
+        
+        # Plot BERT weight changes if we did BERT fine-tuning
+        if self.train_bert and bert_weight_changes:
+            plt.figure(figsize=(15, 5))
+            sns.lineplot(x=list(range(1, len(bert_weight_changes) + 1)), y=bert_weight_changes)
+            plt.title("BERT Weight Changes During Fine-tuning")
+            plt.xlabel("Epoch")
+            plt.ylabel("L2 Norm of Weight Change")
+            plt.xticks(range(1, len(bert_weight_changes) + 1))
+            plt.grid()
+            plt.savefig(f"{self.result_dir}/bert_weight_changes.png")
+            plt.close()
 
-        # compute combined dev loss
+        # Compute combined dev loss
         dev_loss_list = [t + i for t, i in zip(dev_tr_loss_list, dev_it_loss_list)]
 
-
-        #  Plot each metric with its max marker 
+        # Plot metrics with their max markers
+        # Plot accuracy
         self.plot_with_max(
             x=None, y=dev_acc_list,
             title="Dev Accuracy", ylabel="Accuracy",
             fname="dev_acc.png"
         )
 
+        # Plot F1 scores
         self.plot_with_max(
             x=None, y=f1_scores,
             title="Dev F1 Score", ylabel="F1 Score",
             fname="dev_f1.png"
         )
 
+        # Plot train vs dev loss
         self.plot_with_max(
             x=None, y=train_loss_list,
             title="Train vs Dev Loss", ylabel="Loss",
             fname="loss.png",
         )
 
+        # Plot combined train vs dev loss
         epochs = list(range(1, len(train_loss_list) + 1))
         plt.figure(figsize=(25, 5))
         sns.lineplot(x=epochs, y=train_loss_list, label="Train Loss")
-        sns.lineplot(x=epochs, y=dev_loss_list,    label="Dev Loss")
+        sns.lineplot(x=epochs, y=dev_loss_list, label="Dev Loss")
         min_idx = int(np.argmin(dev_loss_list)) + 1
         min_val = dev_loss_list[min_idx - 1]
         plt.axvline(min_idx, linestyle='--', color='green')
@@ -231,7 +620,7 @@ class Trainer:
         plt.savefig(f"{self.result_dir}/loss.png")
         plt.close()
 
-        # And similarly for the TR / IT splits:
+        # Plot TR train vs dev loss
         self.plot_with_max(
             x=None, y=tr_train_loss_list,
             title="Train vs Dev Loss (TR)", ylabel="Loss",
@@ -243,7 +632,7 @@ class Trainer:
                     y=tr_train_loss_list, label="Train Loss")
         sns.lineplot(x=list(range(1, len(dev_tr_loss_list) + 1)),
                     y=dev_tr_loss_list, label="Dev Loss")
-        # mark min dev_tr_loss
+        # Mark min dev_tr_loss
         min_idx = int(np.argmin(dev_tr_loss_list)) + 1
         min_val = dev_tr_loss_list[min_idx - 1]
         plt.axvline(min_idx, linestyle='--', color='green')
@@ -258,12 +647,14 @@ class Trainer:
         plt.savefig(f"{self.result_dir}/tr_loss.png")
         plt.close()
 
+        # Plot IT train vs dev loss
         self.plot_with_max(
             x=None, y=it_train_loss_list,
             title="Train vs Dev Loss (IT)", ylabel="Loss",
             fname="it_loss.png", label="Train Loss"
         )
-        # overlay dev_it_loss
+        
+        # Overlay dev_it_loss
         plt.figure(figsize=(25, 5))
         sns.lineplot(x=list(range(1, len(it_train_loss_list) + 1)),
                     y=it_train_loss_list, label="Train Loss")
@@ -283,11 +674,193 @@ class Trainer:
         plt.savefig(f"{self.result_dir}/it_loss.png")
         plt.close()
 
-        torch.save(tr_state_dict, f"./src/checkpoints/tr/{self.modelname}.pt")
-        torch.save(it_state_dict, f"./src/checkpoints/it/{self.modelname}.pt")
-
-        print("...Done!")
+        print("...Training complete!")
         return train_loss_list, dev_acc_list, f1_scores
+    
+    def _train_epoch(self, epoch, train_loader):
+        """Train for one epoch with BERT frozen"""
+        self.tr_model.train()
+        self.it_model.train()
+        
+        # Ensure BERT is in eval mode (frozen)
+        self.tr_model.bert_embedder.bert_model.eval()
+        self.it_model.bert_embedder.bert_model.eval()
+        
+        tr_loss_sum = it_loss_sum = 0
+        tr_batches = it_batches = 0
+        
+        for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
+            batch_size, seq_len = labels.shape
+            
+            tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
+            it_indices = (langs == 1).nonzero(as_tuple=True)[0]
+            
+            tr_NLL = it_NLL = 0
+            
+            # Process Turkish sentences
+            if len(tr_indices) > 0:
+                tr_labels = labels[tr_indices]
+                tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
+                
+                with torch.amp.autocast(device_type=self.device):
+                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+                    tr_NLL = tr_LL
+                
+                tr_batches += 1
+            
+            # Process Italian sentences
+            if len(it_indices) > 0:
+                it_labels = labels[it_indices]
+                it_sents = [words[i] for i in it_indices.cpu().numpy()]
+                
+                with torch.amp.autocast(device_type=self.device):
+                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
+                    it_NLL = it_LL
+                
+                it_batches += 1
+            
+            # Combined loss
+            loss = tr_NLL + it_NLL
+            
+            # Track losses
+            tr_loss_sum += tr_NLL.item() if isinstance(tr_NLL, torch.Tensor) else tr_NLL
+            it_loss_sum += it_NLL.item() if isinstance(it_NLL, torch.Tensor) else it_NLL
+            
+            # Zero gradients
+            self.tr_optimizer.zero_grad()
+            self.it_optimizer.zero_grad()
+            
+            # Backward pass with scale
+            self.scaler.scale(loss).backward()
+            
+            # Apply gradient clipping
+            if tr_batches > 0:
+                self.scaler.unscale_(self.tr_optimizer)
+                torch.nn.utils.clip_grad_norm_(
+                    [p for p in self.tr_model.parameters() if p.requires_grad], 
+                    self.params.gradient_clip
+                )
+            
+            if it_batches > 0:
+                self.scaler.unscale_(self.it_optimizer)
+                torch.nn.utils.clip_grad_norm_(
+                    [p for p in self.it_model.parameters() if p.requires_grad], 
+                    self.params.gradient_clip
+                )
+            
+            # Step optimizers
+            if tr_batches > 0:
+                self.scaler.step(self.tr_optimizer)
+            
+            if it_batches > 0:
+                self.scaler.step(self.it_optimizer)
+            
+            self.scaler.update()
+        
+        # Calculate epoch-level average losses
+        avg_tr = tr_loss_sum / tr_batches if tr_batches else 0.0
+        avg_it = it_loss_sum / it_batches if it_batches else 0.0
+        
+        print(f"[Epoch {epoch}] Train TR loss: {avg_tr:.4f}, IT loss: {avg_it:.4f}, Total: {avg_tr + avg_it:.4f}")
+        
+        return avg_tr, avg_it
+    
+    def _train_epoch_with_bert(self, epoch, train_loader):
+        """Train for one epoch with BERT unfrozen"""
+        self.tr_model.train()
+        self.it_model.train()
+        
+        # Ensure BERT is in train mode
+        self.tr_model.bert_embedder.bert_model.train()
+        self.it_model.bert_embedder.bert_model.train()
+        
+        tr_loss_sum = it_loss_sum = 0
+        tr_batches = it_batches = 0
+        
+        for words, labels, langs in tqdm(train_loader, desc=f"BERT fine-tuning epoch {epoch}"):
+            batch_size, seq_len = labels.shape
+            
+            tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
+            it_indices = (langs == 1).nonzero(as_tuple=True)[0]
+            
+            tr_NLL = it_NLL = 0
+            
+            # Process Turkish sentences
+            if len(tr_indices) > 0:
+                tr_labels = labels[tr_indices]
+                tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
+                
+                with torch.amp.autocast(device_type=self.device):
+                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+                    tr_NLL = tr_LL
+                
+                tr_batches += 1
+            
+            # Process Italian sentences
+            if len(it_indices) > 0:
+                it_labels = labels[it_indices]
+                it_sents = [words[i] for i in it_indices.cpu().numpy()]
+                
+                with torch.amp.autocast(device_type=self.device):
+                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
+                    it_NLL = it_LL
+                
+                it_batches += 1
+            
+            # Combined loss
+            loss = tr_NLL + it_NLL
+            
+            # Track losses
+            tr_loss_sum += tr_NLL.item() if isinstance(tr_NLL, torch.Tensor) else tr_NLL
+            it_loss_sum += it_NLL.item() if isinstance(it_NLL, torch.Tensor) else it_NLL
+            
+            # Zero all gradients including BERT optimizers
+            self.tr_optimizer.zero_grad()
+            self.it_optimizer.zero_grad()
+            self.tr_bert_optimizer.zero_grad()
+            self.it_bert_optimizer.zero_grad()
+            
+            # Backward pass with scale
+            self.scaler.scale(loss).backward()
+            
+            # Apply gradient clipping with adjusted values based on phase
+            if self.bert_unfreeze_phase == 1:
+                clip_value = 1.0  # More conservative for top layers only
+            elif self.bert_unfreeze_phase == 2:
+                clip_value = 0.5  # Even more conservative for middle layers
+            else:
+                clip_value = 0.1  # Most conservative for all layers
+                
+            if tr_batches > 0:
+                self.scaler.unscale_(self.tr_optimizer)
+                self.scaler.unscale_(self.tr_bert_optimizer)
+                # Apply stronger clip for Turkish model to prevent catastrophic forgetting
+                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), clip_value)
+            
+            if it_batches > 0:
+                self.scaler.unscale_(self.it_optimizer)
+                self.scaler.unscale_(self.it_bert_optimizer)
+                # Apply standard clip for Italian model
+                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), clip_value * 5)  # Higher clip for IT model
+            
+            # Step all optimizers
+            if tr_batches > 0:
+                self.scaler.step(self.tr_optimizer)
+                self.scaler.step(self.tr_bert_optimizer)
+            
+            if it_batches > 0:
+                self.scaler.step(self.it_optimizer)
+                self.scaler.step(self.it_bert_optimizer)
+            
+            self.scaler.update()
+        
+        # Calculate epoch-level average losses
+        avg_tr = tr_loss_sum / tr_batches if tr_batches else 0.0
+        avg_it = it_loss_sum / it_batches if it_batches else 0.0
+        
+        print(f"[BERT fine-tuning epoch {epoch}] Train TR loss: {avg_tr:.4f}, IT loss: {avg_it:.4f}, Total: {avg_tr + avg_it:.4f}")
+        
+        return avg_tr, avg_it
 
     def evaluate(self, valid_loader: DataLoader, record_dev):
 
