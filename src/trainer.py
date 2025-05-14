@@ -76,7 +76,7 @@ class Trainer:
                 middle_layer_params.extend(layer_params)
             tr_bert_params.append({
                 'params': middle_layer_params,
-                'lr': tr_bert_lr * 0.75
+                'lr': tr_bert_lr
             })
             
             # Group 3: Early layers and embeddings (everything else)
@@ -88,7 +88,7 @@ class Trainer:
             
             tr_bert_params.append({
                 'params': remaining_params,
-                'lr': tr_bert_lr * 0.5
+                'lr': tr_bert_lr
             })
             
             # Similar structure for Italian but with higher learning rates
@@ -128,14 +128,14 @@ class Trainer:
             
             self.tr_bert_optimizer = torch.optim.AdamW(
                 tr_bert_params,
-                weight_decay=0.01,
+                weight_decay=0.0005,
                 betas=(0.9, 0.999),
                 eps=1e-8
             )
             
             self.it_bert_optimizer = torch.optim.AdamW(
                 it_bert_params,
-                weight_decay=0.01,
+                weight_decay=0.0005,
                 betas=(0.9, 0.999),
                 eps=1e-8
             )
@@ -282,7 +282,7 @@ class Trainer:
             current_patience = full_patience
             
             # Divide Phase 2 into 3 sub-phases for gradual unfreezing
-            epochs_per_unfreeze = max(phase2_epochs // 9, 1)  # At least 1 epoch per phase
+            epochs_per_unfreeze = max(phase2_epochs // 5, 1)  # At least 1 epoch per phase
             
             # Phase 2a: Unfreeze only the top layers
             self.bert_unfreeze_phase = 1

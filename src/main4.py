@@ -231,10 +231,10 @@ if __name__ == "__main__":
         epochs = params.epoch
         if train_bert:
             # Add extra epochs for BERT training
-            trainer.train(train_dataloader, dev_dataloader, epochs, patience=10)
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=30)
         else:
             # Standard training, only task-specific layers
-            trainer.train(train_dataloader, dev_dataloader, epochs, patience=10)
+            trainer.train(train_dataloader, dev_dataloader, epochs, patience=30)
         
         trainer.test(test_dataloader)
         
