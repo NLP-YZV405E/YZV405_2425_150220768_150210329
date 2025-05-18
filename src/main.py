@@ -155,8 +155,8 @@ if __name__ == "__main__":
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
     elif test_mode == "dev":
-        test_dataset = IdiomDataset(dev_file, labels_vocab, is_test=True) 
-        print(f"test sentences: {len(test_dataset)}")
+        dev = IdiomDataset(dev_file, labels_vocab, is_test=True) 
+        print(f"test sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
 
     if dataset_selection == "COMBINED":
@@ -172,9 +172,11 @@ if __name__ == "__main__":
         test_dataloader = DataLoader(test_dataset, batch_size=1, collate_fn=collate)
         print(f"length of train dataloader: {len(train_dataloader)}")
         print(f"length of dev dataloader: {len(dev_dataloader)}")
-    else:
+    elif test_mode == "test":
         test_dataloader = DataLoader(test_dataset, batch_size=1, collate_fn=collate)
         print(f"length of test dataloader: {len(test_dataloader)}")
+    elif test_mode == "dev":
+        dev_dataloader = DataLoader(dev_dataset, batch_size=batch_size, collate_fn=collate)
 
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -268,7 +270,7 @@ if __name__ == "__main__":
         
     elif test_mode == "dev":
         print("Starting evaluation on dev set...")
-        acc, f1, trloss, it_loss = trainer.evaluate(test_dataloader, -1)
+        acc, f1, trloss, it_loss = trainer.evaluate(dev_dataloader, -1)
         print(f"F1 Score: {f1}")
 
     if test_mode == "test":

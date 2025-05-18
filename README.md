@@ -30,6 +30,9 @@ You can try out the model using our Google Colab notebook.
 - scikit-learn
 - tqdm
 
+You can install the required packages using pip and the `requirements.txt` file:
+
+
 ## Project Structure
 
 ```
@@ -60,6 +63,40 @@ You can try out the model using our Google Colab notebook.
 ├── proposal          # Project proposal documents
 ```
 
+## Datasets
+ 
+The system supports multiple datasets for training and evaluation:
+ 
+1. **ID10M Dataset**
+   - Created using the ID10M corpus
+   - Contains Turkish and Italian idiomatic expressions
+   - Used for training and evaluation
+ 
+2. **ITU Dataset**
+   - Created using the ITU corpus
+   - Contains Turkish idiomatic expressions
+   - Used for training and evaluation
+ 
+3. **PARSEME Dataset**
+   - From the PARSEME shared task
+   - Contains multilingual idiomatic expressions
+   - Used for training and evaluation
+ 
+4. **COMBINED Dataset**
+   - Combination of ITU, ID10M, and PARSEME datasets
+   - Largest dataset with diverse examples
+   - Used for training robust models
+ 
+5. **ITU_TRAIN_DEV Dataset**
+   - Special version of ITU dataset
+   - Combines training and development sets
+   - Used for training with more data
+ 
+Each dataset is stored in the `resources/` directory under its respective folder. The data is in TSV format with three columns:
+- Token: The word or token
+- Tag: The label (B-IDIOM, I-IDIOM, O)
+- Language: The language of the token (tr/it)
+
 ## Model Architecture
 
 The system uses a hybrid architecture combining:
@@ -68,6 +105,7 @@ The system uses a hybrid architecture combining:
 - Task-specific classification layers
 - CRF layer for sequence labeling
 - Focal Loss for handling class imbalance
+- Regularization techniques (e.g., Dropout, L2 Weight Decay) to prevent overfitting
 
 ## Hyperparameters Configuration
 
@@ -120,24 +158,19 @@ python src/main.py
 ```
 When prompted:
 - Select mode: "train"
-- Choose dataset: "ID10M", "ITU", "PARSEME", "COMBINED", or "ITU_TRAIN_DEV"
+- Choose dataset: "ID10M", "ITU", "PARSEME", "COMBINED", "ITU_TRAIN_DEV", "CUSTOM"
 - Enter model name
 - Choose whether to fine-tune BERT
 
 This mode trains new models from scratch without loading any existing checkpoints.
+To use a custom dataset:
+- Place your `train.csv`, `dev.csv`, and `test.csv` files into the `./data/CUSTOM/` folder.
+- `dev.csv` must contain labels (used for F1 score calculation), while `test.csv` should not contain labels (used for generating predictions).
+- To train a model using custom data, all three files (`train.csv`, `dev.csv`, and `test.csv`) are required.
+- To test the model with custom data, provide `dev.csv` (if `test_mode` is 'dev' for evaluation) or `test.csv` (if `test_mode` is 'test' for predictions).
+- Select "CUSTOM" when prompted for the dataset.
 
-2. **Testing Mode**:
-```bash
-python src/main.py
-```
-When prompted:
-- Select mode: "test"
-- Choose dataset
-- Select checkpoint to use for Turkish and Italian models
-
-This mode loads pre-trained models and performs inference without any training.
-
-3. **Update Mode**:
+2. **Update Mode**:
 ```bash
 python src/main.py
 ```
@@ -153,6 +186,18 @@ This mode loads existing checkpoints and continues training from those points. I
 - Fine-tuning existing models
 
 For both testing and updating modes, you can choose to use different checkpoints for Turkish and Italian models, or select "none" if you don't want to use a checkpoint for a particular language.
+
+2. **Testing Mode**:
+```bash
+python src/main.py
+```
+When prompted:
+- Select mode: "test"
+- Choose dataset
+- Choose testmode: "test" uses test.csv and returns only predictions. "dev" uses dev.csv and evaluates performance.
+- Select checkpoint to use for Turkish and Italian models
+
+This mode loads pre-trained models and performs inference without any training.
 
 ## Evaluation
 
