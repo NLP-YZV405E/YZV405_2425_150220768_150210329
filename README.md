@@ -254,8 +254,3 @@ Checkpoints are saved in:
 Efe Can Kırbıyık \
 Berke Kurt
 
-## Acknowledgments
-
-- BERT models from Hugging Face Transformers
-- Turkish BERT: dbmdz/bert-base-turkish-128k-cased
-- Italian BERT: dbmdz/bert-base-italian-xxl-cased 
