@@ -2,6 +2,12 @@
 
 This project implements a multilingual idiom detection system using BERT-based models for Turkish and Italian languages. The system is designed to identify idiomatic expressions in text using sequence labeling techniques.
 
+
+You can try out the model using our Google Colab notebook. 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XkrbL7KSuQN04tZ_Qv2VtLeNezH73jIC?usp=sharing)
+
+
 ## Features
 
 - Multilingual support for Turkish and Italian
