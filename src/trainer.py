@@ -1,21 +1,5 @@
-import json
-import os
-import pandas as pd
-from scoring import scoring_program
-import copy
-
-import model
-import math
 from __init__ import *
-
-import torch
-import torch.nn as nn
-from torch.nn.utils.rnn import pad_sequence
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from sklearn.metrics import classification_report, f1_score
 from hparams import HParams
-from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 class Trainer:
     def __init__(self,
@@ -26,18 +10,19 @@ class Trainer:
                  labels_vocab: dict,
                  modelname = "idiom_expr_detector",
                  train_bert = False):
-        self.tr_model     = tr_model
-        self.it_model     = it_model
+        
+        self.tr_model = tr_model
+        self.it_model = it_model
         self.tr_optimizer = tr_optimizer
         self.it_optimizer = it_optimizer
         self.labels_vocab = labels_vocab
-        self.modelname    = modelname
+        self.modelname = modelname
         self.tr_hidden = tr_model.bert_embedder.bert_model.config.hidden_size
         self.it_hidden = it_model.bert_embedder.bert_model.config.hidden_size
         self.params = HParams()
-        self.result_dir   = f"./results/{modelname}/"
+        self.result_dir = f"./results/{modelname}/"
         os.makedirs(self.result_dir, exist_ok=True)
-        self.device       = "cuda" if torch.cuda.is_available() else "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
         
         # Flag for whether to train BERT layers after task layers
         self.train_bert = train_bert
@@ -49,10 +34,10 @@ class Trainer:
                                         backoff_factor=0.5, 
                                         growth_interval=100) 
         
-        # Create BERT optimizers (only used if train_bert=True)
+        # Create bert optimizers for bert training
         if self.train_bert:
-            # lower learning rate for fintuning BERT
-            tr_bert_lr = 5e-6  # türkçe modeli bozulduğu için daha düşük lr
+            # Lower learning rate for fintuning BERT
+            tr_bert_lr = 5e-6  
             it_bert_lr = 5e-6 
 
             # Create separate optimizer groups for different BERT layers to enable gradual unfreezing
@@ -79,7 +64,7 @@ class Trainer:
                 'lr': tr_bert_lr
             })
             
-            # Group 3: Early layers and embeddings (everything else)
+            # Group 3: everything else
             # First get all parameters
             all_params = set(self.tr_model.bert_embedder.bert_model.parameters())
             # Remove parameters already in groups 1 and 2
@@ -91,7 +76,7 @@ class Trainer:
                 'lr': tr_bert_lr
             })
             
-            # Similar structure for Italian but with higher learning rates
+            # Similar structure for Italian
             it_bert_params = []
             
             # Group 1: Top layers (layers -4 to -1)
@@ -114,10 +99,9 @@ class Trainer:
                 'lr': it_bert_lr * 0.75
             })
             
-            # Group 3: Early layers and embeddings (everything else)
-            # First get all parameters
+            # Group 3: everything else
+            
             it_all_params = set(self.it_model.bert_embedder.bert_model.parameters())
-            # Remove parameters already in groups 1 and 2
             it_grouped_params = set(it_top_layer_params + it_middle_layer_params)
             it_remaining_params = list(it_all_params - it_grouped_params)
             
@@ -192,6 +176,7 @@ class Trainer:
               patience: int = 25):
 
         print("\nTraining...")
+        # Lists to save metrics
         train_loss_list = []
         tr_train_loss_list = []
         it_train_loss_list = []
@@ -206,7 +191,7 @@ class Trainer:
         if self.train_bert:
             print("=== PHASE 1: Training task-specific layers (BERT frozen) ===")
             total_epochs = epochs
-            phase1_epochs = 15  # 50% of epochs for task layers
+            phase1_epochs = 15  # 15 epochs for task layers
             phase2_epochs = total_epochs - phase1_epochs  # Remaining for BERT fine-tuning
             
             print(f"Task-specific training: {phase1_epochs} epochs")
@@ -282,7 +267,7 @@ class Trainer:
             current_patience = full_patience
             
             # Divide Phase 2 into 3 sub-phases for gradual unfreezing
-            epochs_per_unfreeze = max(phase2_epochs // 5, 1)  # At least 1 epoch per phase
+            epochs_per_unfreeze = max(phase2_epochs // 5, 1)
             
             # Phase 2a: Unfreeze only the top layers
             self.bert_unfreeze_phase = 1
@@ -318,7 +303,7 @@ class Trainer:
                 it_train_loss_list.append(it_loss)
                 train_loss_list.append(tr_loss + it_loss)
                 
-                # Evaluate
+                # Evaluate to get dev accuracy and F1 score
                 dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
                 dev_acc_list.append(dev_acc)
                 f1_scores.append(dev_f1)
