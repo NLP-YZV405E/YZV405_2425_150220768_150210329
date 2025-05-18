@@ -1,8 +1,6 @@
 from __init__ import *
 from bert_embedder import BERTEmbedder
-from pprint import pprint
-import torch.nn as nn
-import torch.nn.functional as F
+
 
 class FocalLoss(nn.Module):
     def __init__(self, alpha=1, gamma=2, reduction='mean'):
@@ -35,11 +33,11 @@ class IdiomExtractor(nn.Module):
         self.device = hparams.device
         self.focal_loss_weight = hparams.focal_loss_weight
 
-        # lstm and bert output dimension will be the same
+        # LSTM and BERT output dimension will be the same
         if self.use_lstm:
             self.lstm = nn.LSTM(
                 self.hidden_size, # input size = hidden size of bert -> 768
-                # output size = hidden size of lstm -> 768
+                # Output size = hidden size of lstm -> 768
                 self.hidden_size // 2 if hparams.bidirectional else self.hidden_size,
                 batch_first=True, # shape = (batch, seq_len, hidden_size)
                 bidirectional=hparams.bidirectional,
@@ -59,10 +57,10 @@ class IdiomExtractor(nn.Module):
             nn.Linear(128, hparams.num_classes),
         )
 
-        # dropout layer with 0.5 dropout rate
+        # Dropout layer with 0.5 dropout rate
         self.dropout = nn.Dropout(hparams.dropout)
 
-        # we use a CRF layer to model the dependencies between the labels
+        # We use a CRF layer to model the dependencies between the labels
         self.CRF = CRF(hparams.num_classes, batch_first=True).cuda()
         
         # Initialize focal loss
@@ -79,30 +77,26 @@ class IdiomExtractor(nn.Module):
         print("BERT model parameters have been unfrozen.")
     
     def forward(self, sents, labels, seq_len=None):
-        # cümleleri embed et
+        # Embed the sentences using BERT
         bert_embeddings = self.bert_embedder.embed_sentences(sents)
-        # cümleleri paddingle
+        # Pad the embeddings to the maximum sequence length in the batch
         bert_embeddings = pad_sequence(bert_embeddings, batch_first=True, padding_value=0).to(self.device)
-        # eğer tr dilindeki cümlelerin uzunluğu seq_len'den küçükse, seq_len'e pad et
+        # If length of the sentence is less than the max length, pad it with 0s
         if bert_embeddings.size(1) < seq_len:
             pad_amt = seq_len - bert_embeddings.size(1)
             bert_embeddings = F.pad(bert_embeddings, (0, 0, 0, pad_amt), "constant", 0)
 
-        # trainde label olacak ve pad edilmiş kısımlara attend etmemek için mask oluşturuyoruz
+        # create mask to not attend to padding tokens
         if labels is not None:
-            # padding olan kısımlara attande etmemek için mask oluşturuyoruz
             mask = labels.ne(0)
-        # test kısmında label olmayak bu yüzden tüm kısımlara attend etmemiz lazım
+        # Attend to all tokens if labels are not provided (test case)
         else:
             mask = torch.ones(bert_embeddings.shape[:2], dtype=torch.bool,
                               device=bert_embeddings.device)
-        # CRF ilk time‐step'in unmasked olmasını ister
+        # Unmask the first token 
         mask[:, 0] = True
         
-        # Apply batch norm before dropout (need to reshape for BatchNorm1d)
-        
-        # apply dropout -> bu saçma değilmiş gerekliymiş
-        # ayrıca bertin kendi içinde layernormu var o yüzen layer norma gerek yok
+        # Apply dropout 
         X = self.dropout(bert_embeddings)
 
         if self.use_lstm:
@@ -113,9 +107,9 @@ class IdiomExtractor(nn.Module):
         # Apply linear layer, 
         emissions = self.classifier(X)
         
-        # eğer label yoksa (inference) decode etmemiz lazım
+        # If labels are not provided, we are in inference mode
         if labels is None:
-            # return highest probability sequence
+            # Return highest probability sequence
             return self.CRF.decode(emissions, mask=mask)
         
         # CRF loss
