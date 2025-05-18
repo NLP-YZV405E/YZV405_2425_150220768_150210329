@@ -63,6 +63,30 @@ The system uses a hybrid architecture combining:
 - CRF layer for sequence labeling
 - Focal Loss for handling class imbalance
 
+## Hyperparameters Configuration
+
+The model's hyperparameters can be configured by modifying the parameters in `src/hparams.py`. The available parameters include:
+
+### Model Architecture Parameters
+- `dropout`: Dropout rate (default: 0.5)
+- `num_classes`: Number of output classes (default: 4)
+- `bidirectional`: Whether to use bidirectional LSTM (default: True)
+- `num_layers`: Number of LSTM layers (default: 3)
+- `use_lstm`: Whether to use LSTM layers (default: True)
+- `use_attention`: Whether to use attention mechanism (default: False)
+- `device`: Device to run the model on (default: "cuda" if available, else "cpu")
+
+### Training Parameters
+- `batch_size`: Batch size for training (default: 32)
+- `lr`: Learning rate (default: 0.001)
+- `epoch`: Number of training epochs (default: 50)
+- `warmup_steps`: Number of warmup steps (default: 1000)
+- `weight_decay`: Weight decay for regularization (default: 0.001)
+- `gradient_clip`: Gradient clipping value (default: 1)
+- `scheduler_factor`: Learning rate scheduler factor (default: 0.5)
+- `scheduler_patience`: Learning rate scheduler patience (default: 3)
+- `focal_loss_weight`: Weight for focal loss component (default: 0.3)
+
 ## Training Process
 
 The training process consists of two phases:
