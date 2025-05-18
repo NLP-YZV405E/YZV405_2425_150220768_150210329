@@ -52,9 +52,6 @@ This project implements a multilingual idiom detection system using BERT-based m
 ├── scoring_program    # Evaluation scoring program
 ├── papers            # Research papers and documentation
 ├── proposal          # Project proposal documents
-├── colab_requirements.txt    # Requirements for Google Colab
-├── berke_environment.yml     # Conda environment for Berke
-└── full_environment.yml      # Complete conda environment
 ```
 
 ## Model Architecture
