@@ -6,11 +6,10 @@ import re
 import torch
 
 class IdiomDataset(Dataset):
-    def __init__(self, dataset_path, labels_vocab, tagger_dict, is_test=False):
+    def __init__(self, dataset_path, labels_vocab, is_test=False):
         super(IdiomDataset, self).__init__()
         self.dataset_path = dataset_path
         self.labels_vocab = labels_vocab
-        self.tagger_dict = tagger_dict
         self.MAX_LEN = 512
         self.is_test = is_test
 
