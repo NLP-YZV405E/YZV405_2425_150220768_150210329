@@ -155,7 +155,7 @@ if __name__ == "__main__":
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
     elif test_mode == "dev":
-        dev = IdiomDataset(dev_file, labels_vocab, is_test=True) 
+        dev_dataset = IdiomDataset(dev_file, labels_vocab, is_test=True) 
         print(f"test sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
 
