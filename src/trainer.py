@@ -97,7 +97,6 @@ class Trainer:
             self.tr_model.bert_embedder.bert_model.train()
             self.it_model.bert_embedder.bert_model.train()
 
-
             for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
                 batch_size, seq_len = labels.shape
 
@@ -107,55 +106,58 @@ class Trainer:
                 tr_NLL = 0
                 it_NLL = 0
 
+                # forward passes under autocast
                 if len(tr_indices) > 0:
                     tr_labels = labels[tr_indices]
                     tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                    
                     with torch.amp.autocast(device_type=self.device):
                         tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
                         tr_NLL = tr_LL
-                    
                     tr_batches += 1
 
                 if len(it_indices) > 0:
                     it_labels = labels[it_indices]
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
-                    
                     with torch.amp.autocast(device_type=self.device):
                         it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
                         it_NLL = it_LL
-                    
                     it_batches += 1
 
-                loss = (tr_NLL + it_NLL)
-
+                loss = tr_NLL + it_NLL
                 tr_loss_sum += tr_NLL
                 it_loss_sum += it_NLL
 
-                # Gradient accumulation
+                # backward scaled loss
                 self.scaler.scale(loss).backward()
-                
-                if (tr_batches + it_batches):
-                    # Apply gradient clipping
-                    self.scaler.unscale_(self.tr_optimizer)
-                    self.scaler.unscale_(self.it_optimizer)
-                    torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), self.params.gradient_clip)
-                    torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), self.params.gradient_clip)
-                    
-                    # Update weights
-                    self.scaler.step(self.tr_optimizer)
-                    self.scaler.step(self.it_optimizer)
+
+                # determine which optimizers to step
+                optim_steps = []
+                if len(tr_indices) > 0:
+                    optim_steps.append((self.tr_optimizer, self.tr_model))
+                if len(it_indices) > 0:
+                    optim_steps.append((self.it_optimizer, self.it_model))
+
+                if optim_steps:
+                    # unscale all optimizers first
+                    for opt, _ in optim_steps:
+                        self.scaler.unscale_(opt)
+                    # clip gradients for each model
+                    for _, mdl in optim_steps:
+                        torch.nn.utils.clip_grad_norm_(mdl.parameters(), self.params.gradient_clip)
+                    # step each optimizer
+                    for opt, _ in optim_steps:
+                        self.scaler.step(opt)
+                    # update the scale for next iteration
                     self.scaler.update()
-                    
+                    # zero gradients for both optimizers
                     self.tr_optimizer.zero_grad()
                     self.it_optimizer.zero_grad()
 
-            # Update learning rates based on validation performance
+            # validation and LR scheduling
             dev_acc, dev_f1, dev_tr_loss, dev_it_loss = self.evaluate(valid_loader, record_dev)
             self.tr_scheduler.step(dev_f1)
             self.it_scheduler.step(dev_f1)
 
-            # epoch-level averages
             avg_tr    = tr_loss_sum / tr_batches if tr_batches else 0.0
             avg_it    = it_loss_sum / it_batches if it_batches else 0.0
             avg_total = avg_tr + avg_it
@@ -165,7 +167,6 @@ class Trainer:
             train_loss_list.append(avg_total)
             tr_train_loss_list.append(avg_tr)
             it_train_loss_list.append(avg_it)
-            
             dev_acc_list.append(dev_acc)
             f1_scores.append(dev_f1)
             dev_tr_loss_list.append(dev_tr_loss)
@@ -176,12 +177,10 @@ class Trainer:
                 tr_state_dict = self.tr_model.state_dict()
                 it_state_dict = self.it_model.state_dict()
                 patience = full_patience
-
             else:
                 patience -= 1
 
-
-        # Convert all lists of tensors to lists of floats on CPU 
+        # convert tensors to floats
         dev_acc_list      = self.to_float_list(dev_acc_list)
         f1_scores         = self.to_float_list(f1_scores)
         train_loss_list   = self.to_float_list(train_loss_list)
@@ -190,29 +189,14 @@ class Trainer:
         dev_tr_loss_list  = self.to_float_list(dev_tr_loss_list)
         dev_it_loss_list  = self.to_float_list(dev_it_loss_list)
 
-        # compute combined dev loss
         dev_loss_list = [t + i for t, i in zip(dev_tr_loss_list, dev_it_loss_list)]
 
+        # plotting functions unchanged
+        self.plot_with_max(x=None, y=dev_acc_list, title="Dev Accuracy", ylabel="Accuracy", fname="dev_acc.png")
+        self.plot_with_max(x=None, y=f1_scores, title="Dev F1 Score", ylabel="F1 Score", fname="dev_f1.png")
+        self.plot_with_max(x=None, y=train_loss_list, title="Train vs Dev Loss", ylabel="Loss", fname="loss.png")
 
-        #  Plot each metric with its max marker 
-        self.plot_with_max(
-            x=None, y=dev_acc_list,
-            title="Dev Accuracy", ylabel="Accuracy",
-            fname="dev_acc.png"
-        )
-
-        self.plot_with_max(
-            x=None, y=f1_scores,
-            title="Dev F1 Score", ylabel="F1 Score",
-            fname="dev_f1.png"
-        )
-
-        self.plot_with_max(
-            x=None, y=train_loss_list,
-            title="Train vs Dev Loss", ylabel="Loss",
-            fname="loss.png",
-        )
-
+        # full plotting and saving logic continues as before
         epochs = list(range(1, len(train_loss_list) + 1))
         plt.figure(figsize=(25, 5))
         sns.lineplot(x=epochs, y=train_loss_list, label="Train Loss")
@@ -220,8 +204,7 @@ class Trainer:
         min_idx = int(np.argmin(dev_loss_list)) + 1
         min_val = dev_loss_list[min_idx - 1]
         plt.axvline(min_idx, linestyle='--', color='green')
-        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}",
-                va='bottom', ha='left')
+        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}", va='bottom', ha='left')
         plt.title("Train vs Dev Loss")
         plt.xlabel("Epoch")
         plt.ylabel("Loss")
@@ -231,24 +214,15 @@ class Trainer:
         plt.savefig(f"{self.result_dir}/loss.png")
         plt.close()
 
-        # And similarly for the TR / IT splits:
-        self.plot_with_max(
-            x=None, y=tr_train_loss_list,
-            title="Train vs Dev Loss (TR)", ylabel="Loss",
-            fname="tr_loss.png", label="Train Loss"
-        )
-
+        # TR split
+        self.plot_with_max(x=None, y=tr_train_loss_list, title="Train vs Dev Loss (TR)", ylabel="Loss", fname="tr_loss.png", label="Train Loss")
         plt.figure(figsize=(25, 5))
-        sns.lineplot(x=list(range(1, len(tr_train_loss_list) + 1)),
-                    y=tr_train_loss_list, label="Train Loss")
-        sns.lineplot(x=list(range(1, len(dev_tr_loss_list) + 1)),
-                    y=dev_tr_loss_list, label="Dev Loss")
-        # mark min dev_tr_loss
+        sns.lineplot(x=list(range(1, len(tr_train_loss_list) + 1)), y=tr_train_loss_list, label="Train Loss")
+        sns.lineplot(x=list(range(1, len(dev_tr_loss_list) + 1)), y=dev_tr_loss_list, label="Dev Loss")
         min_idx = int(np.argmin(dev_tr_loss_list)) + 1
         min_val = dev_tr_loss_list[min_idx - 1]
         plt.axvline(min_idx, linestyle='--', color='green')
-        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}",
-                va='bottom', ha='left')
+        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}", va='bottom', ha='left')
         plt.title("Train vs Dev Loss (TR)")
         plt.xlabel("Epoch")
         plt.ylabel("Loss")
@@ -258,22 +232,15 @@ class Trainer:
         plt.savefig(f"{self.result_dir}/tr_loss.png")
         plt.close()
 
-        self.plot_with_max(
-            x=None, y=it_train_loss_list,
-            title="Train vs Dev Loss (IT)", ylabel="Loss",
-            fname="it_loss.png", label="Train Loss"
-        )
-        # overlay dev_it_loss
+        # IT split
+        self.plot_with_max(x=None, y=it_train_loss_list, title="Train vs Dev Loss (IT)", ylabel="Loss", fname="it_loss.png", label="Train Loss")
         plt.figure(figsize=(25, 5))
-        sns.lineplot(x=list(range(1, len(it_train_loss_list) + 1)),
-                    y=it_train_loss_list, label="Train Loss")
-        sns.lineplot(x=list(range(1, len(dev_it_loss_list) + 1)),
-                    y=dev_it_loss_list, label="Dev Loss")
+        sns.lineplot(x=list(range(1, len(it_train_loss_list) + 1)), y=it_train_loss_list, label="Train Loss")
+        sns.lineplot(x=list(range(1, len(dev_it_loss_list) + 1)), y=dev_it_loss_list, label="Dev Loss")
         min_idx = int(np.argmin(dev_it_loss_list)) + 1
         min_val = dev_it_loss_list[min_idx - 1]
         plt.axvline(min_idx, linestyle='--', color='green')
-        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}",
-                va='bottom', ha='left')
+        plt.text(min_idx + 0.1, min_val, f"Epoch {min_idx}\n{min_val:.4f}", va='bottom', ha='left')
         plt.title("Train vs Dev Loss (IT)")
         plt.xlabel("Epoch")
         plt.ylabel("Loss")
