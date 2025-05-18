@@ -12,8 +12,7 @@ class HParams():
     # Training Parameters
     batch_size = 32
     lr = 0.001
-    epoch = 70
-    # New Parameters
+    epoch = 50
     warmup_steps = 1000
     weight_decay = 0.001
     gradient_clip = 1
