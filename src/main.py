@@ -47,12 +47,39 @@ if __name__ == "__main__":
     it_tokenizer = AutoTokenizer.from_pretrained(it_model_name)
     hf_it_model = AutoModel.from_pretrained(it_model_name, config=it_config)
 
+    # select the dataset
+    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV): ").strip().upper()
+    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'COMBINED', "ITU_TRAIN_DEV", "CUSTOM"], "Dataset must be one of ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV"
+    
+    if dataset_selection == "CUSTOM":
+        print("You selected 'CUSTOM' dataset, please put your data into ./resources/CUSTOM/ folder.")
+        print("If you want to train or update the model, you need to provide train.csv, dev.csv, test.csv files in the folder.")
+        print("If you want to test the model, you need to provide test.csv or dev.csv file in the folder.")
+    
     # train, update or test mode selection
     mode = input("Do you want to train or test the model? (train, update, test): ").strip().lower()
     assert mode in ['train', 'update', 'test'], "Mode must be one of train, update, test"
-    # select the dataset
-    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV): ").strip().upper()
-    assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'COMBINED', "ITU_TRAIN_DEV"], "Dataset must be one of ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV"
+
+    test_mode = input("Select the dataset you want to test (test, dev): ").strip().lower()
+    assert test_mode in ['test', 'dev'], "Dataset must be one of test, dev"
+
+    # transform the custom dataset into tsv format
+    if dataset_selection == "CUSTOM":
+        in_path = r"./data/CUSTOM/"
+        out_path = r"./resources/CUSTOM/"
+        if mode in ["train", "update"]:
+            itu_to_tsv(in_path + "train.csv", out_path + "train.tsv")
+            itu_to_tsv(in_path + "dev.csv", out_path + "dev.tsv")
+            itu_to_tsv_test(in_path + "test.csv", out_path + "test.tsv")
+        
+        elif test_mode == "test":
+            itu_to_tsv_test(in_path + "test.csv", out_path + "test.tsv")
+        
+        elif test_mode == "dev":
+            itu_to_tsv(in_path + "dev.csv", out_path + "dev.tsv")
+
+        else:
+            raise ValueError("Invalid mode. Choose 'train', 'update' or 'test'.")
 
     # check dataset path
     tr_path = r"./src/checkpoints/tr/"
@@ -123,8 +150,12 @@ if __name__ == "__main__":
         print(f"train sentences: {len(train_dataset)}")
         print(f"dev sentences: {len(dev_dataset)}")
         print("-" * 50 + "\n")
-    else:
+    elif test_mode == "test":
         test_dataset = IdiomDataset(test_file, labels_vocab, is_test=True) 
+        print(f"test sentences: {len(test_dataset)}")
+        print("-" * 50 + "\n")
+    elif test_mode == "dev":
+        test_dataset = IdiomDataset(dev_file, labels_vocab, is_test=True) 
         print(f"test sentences: {len(test_dataset)}")
         print("-" * 50 + "\n")
 
@@ -235,7 +266,11 @@ if __name__ == "__main__":
         
         trainer.test(test_dataloader)
         
-    if mode == "test":
+    elif test_mode == "dev":
+        print("Starting evaluation on dev set...")
+        trainer.evaluate(test_dataloader)
+
+    if test_mode == "test":
         print("Starting evaluation...")
         trainer.test(test_dataloader)
     
