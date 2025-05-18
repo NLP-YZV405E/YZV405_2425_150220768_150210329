@@ -106,7 +106,9 @@ The training process consists of two phases:
 
 ## Usage
 
-1. **Training**:
+The system supports three main modes of operation: training, testing, and updating. Each mode serves a different purpose and has specific requirements.
+
+1. **Training Mode**:
 ```bash
 python src/main.py
 ```
@@ -116,25 +118,35 @@ When prompted:
 - Enter model name
 - Choose whether to fine-tune BERT
 
-2. **Testing**:
+This mode trains new models from scratch without loading any existing checkpoints.
+
+2. **Testing Mode**:
 ```bash
 python src/main.py
 ```
 When prompted:
 - Select mode: "test"
 - Choose dataset
-- Select checkpoint to use
+- Select checkpoint to use for Turkish and Italian models
 
-3. **Model Update**:
+This mode loads pre-trained models and performs inference without any training.
+
+3. **Update Mode**:
 ```bash
 python src/main.py
 ```
 When prompted:
 - Select mode: "update"
 - Choose dataset
-- Select checkpoint to update
+- Select checkpoint to update for Turkish and Italian models
 - Enter new model name
 - Choose whether to fine-tune BERT
+
+This mode loads existing checkpoints and continues training from those points. It's used when:
+- Continuing training from a previous checkpoint
+- Fine-tuning existing models
+
+For both testing and updating modes, you can choose to use different checkpoints for Turkish and Italian models, or select "none" if you don't want to use a checkpoint for a particular language.
 
 ## Evaluation
 
@@ -150,6 +162,35 @@ Results are saved in the `results/` directory, including:
 - Evaluation metrics
 - Visualization plots
 - Detailed classification reports
+
+## Results Organization
+
+All experiment results are saved in the `results/` directory. Each experiment gets its own folder with a naming convention that includes key information about the experiment:
+
+```
+results/
+└── datasetname_trmodelname_itmodelname_lr_.../
+    ├── prediction.csv          # Model predictions
+    ├── scores.json            # Evaluation scores
+    ├── results.pdf            # Detailed evaluation report
+    ├── dev_acc.png           # Development accuracy plot
+    ├── dev_f1.png            # Development F1 score plot
+    ├── loss.png              # Training vs validation loss plot
+    ├── tr_loss.png           # Turkish model loss plot
+    ├── it_loss.png           # Italian model loss plot
+    └── bert_weight_changes.png # BERT weight changes during fine-tuning
+```
+
+The folder name includes:
+- Dataset name (e.g., ID10M, ITU, PARSEME, COMBINED)
+- Turkish model name
+- Italian model name
+- Learning rate
+- Other relevant parameters
+
+For example: `itu_basetr_xxlit_0005_regulizer_focalloss_trainbertafter15_lowerlr_40epoch`
+
+Note: Not all experiment folders will contain the complete set of files shown above. Some folders might have fewer files if the training run was interrupted or if certain evaluation steps were skipped. The presence of specific files depends on the training progress and configuration.
 
 ## Model Checkpoints
 
