@@ -3,7 +3,8 @@ from tqdm import tqdm
 import torch
 import re
 
-
+# We implemented these but didnt use them (we were going to show how many of the
+# idioms in the test set are also in the training set)
 
 # def initialize(use_gpu=True):
 #     print("Initializing Stanza pipelines...")

@@ -16,6 +16,8 @@ class Trainer:
         self.tr_optimizer = tr_optimizer
         self.it_optimizer = it_optimizer
         self.labels_vocab = labels_vocab
+        self.tr_scaler = torch.amp.GradScaler()
+        self.it_scaler = torch.amp.GradScaler()
         self.modelname = modelname
         self.tr_hidden = tr_model.bert_embedder.bert_model.config.hidden_size
         self.it_hidden = it_model.bert_embedder.bert_model.config.hidden_size
@@ -503,7 +505,7 @@ class Trainer:
                 self.tr_model.freeze_bert()
                 self.it_model.freeze_bert()
                 
-                # Train for one epoch
+                # Train for current epoch
                 tr_loss, it_loss = self._train_epoch(epoch, train_loader)
                 
                 tr_train_loss_list.append(tr_loss)
@@ -675,72 +677,62 @@ class Trainer:
         tr_batches = it_batches = 0
         
         for words, labels, langs in tqdm(train_loader, desc=f"Epoch {epoch}"):
+            
             batch_size, seq_len = labels.shape
             
+            # Split indices by language
             tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
             it_indices = (langs == 1).nonzero(as_tuple=True)[0]
-            
-            tr_NLL = it_NLL = 0
-            
-            # Process Turkish sentences
+
+            tr_NLL = torch.tensor(0., device=self.device)
+            it_NLL = torch.tensor(0., device=self.device)
+
             if len(tr_indices) > 0:
-                tr_labels = labels[tr_indices]
-                tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                
-                with torch.amp.autocast(device_type=self.device):
-                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
-                    tr_NLL = tr_LL
-                
                 tr_batches += 1
-            
-            # Process Italian sentences
-            if len(it_indices) > 0:
-                it_labels = labels[it_indices]
-                it_sents = [words[i] for i in it_indices.cpu().numpy()]
-                
+                tr_labels = labels[tr_indices]
+                tr_sents  = [words[i] for i in tr_indices.cpu().numpy()]
                 with torch.amp.autocast(device_type=self.device):
-                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
-                    it_NLL = it_LL
-                
+                    tr_NLL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+
+            if len(it_indices) > 0:
                 it_batches += 1
-            
+                it_labels = labels[it_indices]
+                it_sents  = [words[i] for i in it_indices.cpu().numpy()]
+                with torch.amp.autocast(device_type=self.device):
+                    it_NLL, _ = self.it_model(it_sents, it_labels, seq_len)
+
             # Combined loss
             loss = tr_NLL + it_NLL
-            
-            # Track losses
-            tr_loss_sum += tr_NLL.item() if isinstance(tr_NLL, torch.Tensor) else tr_NLL
-            it_loss_sum += it_NLL.item() if isinstance(it_NLL, torch.Tensor) else it_NLL
-            
-            # Zero gradients
-            self.tr_optimizer.zero_grad()
-            self.it_optimizer.zero_grad()
-            
-            # Backward pass with scale
+            tr_loss_sum += tr_NLL.item()
+            it_loss_sum += it_NLL.item()
+
+            # Backward the combined loss
             self.scaler.scale(loss).backward()
-            
-            # Apply gradient clipping
-            if tr_batches > 0:
+
+            # Only unscale optimizers that saw gradients
+            if len(tr_indices) > 0:
                 self.scaler.unscale_(self.tr_optimizer)
                 torch.nn.utils.clip_grad_norm_(
-                    [p for p in self.tr_model.parameters() if p.requires_grad], 
+                    self.tr_model.parameters(),
                     self.params.gradient_clip
                 )
-            
-            if it_batches > 0:
+                self.scaler.step(self.tr_optimizer)
+
+            if len(it_indices) > 0:
                 self.scaler.unscale_(self.it_optimizer)
                 torch.nn.utils.clip_grad_norm_(
-                    [p for p in self.it_model.parameters() if p.requires_grad], 
+                    self.it_model.parameters(),
                     self.params.gradient_clip
                 )
-            
-            # Step optimizers
-            if tr_batches > 0:
-                self.scaler.step(self.tr_optimizer)
-            
-            if it_batches > 0:
                 self.scaler.step(self.it_optimizer)
-            
+
+            # update the scaler for next iteration
+            # it reduces the scale if loss is inf or nan in the previous iteration
             self.scaler.update()
+
+            # zero out both gradients
+            self.tr_optimizer.zero_grad()
+            self.it_optimizer.zero_grad()
         
         # Calculate epoch-level average losses
         avg_tr = tr_loss_sum / tr_batches if tr_batches else 0.0
@@ -767,76 +759,66 @@ class Trainer:
             
             tr_indices = (langs == 0).nonzero(as_tuple=True)[0]
             it_indices = (langs == 1).nonzero(as_tuple=True)[0]
-            
-            tr_NLL = it_NLL = 0
-            
-            # Process Turkish sentences
+            tr_NLL = torch.tensor(0., device=self.device)
+            it_NLL = torch.tensor(0., device=self.device)
+
             if len(tr_indices) > 0:
-                tr_labels = labels[tr_indices]
-                tr_sents = [words[i] for i in tr_indices.cpu().numpy()]
-                
-                with torch.amp.autocast(device_type=self.device):
-                    tr_LL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
-                    tr_NLL = tr_LL
-                
                 tr_batches += 1
-            
-            # Process Italian sentences
-            if len(it_indices) > 0:
-                it_labels = labels[it_indices]
-                it_sents = [words[i] for i in it_indices.cpu().numpy()]
-                
+                tr_labels = labels[tr_indices]
+                tr_sents  = [words[i] for i in tr_indices.cpu().numpy()]
                 with torch.amp.autocast(device_type=self.device):
-                    it_LL, _ = self.it_model(it_sents, it_labels, seq_len)
-                    it_NLL = it_LL
-                
+                    tr_NLL, _ = self.tr_model(tr_sents, tr_labels, seq_len)
+
+            if len(it_indices) > 0:
                 it_batches += 1
-            
-            # Combined loss
+                it_labels = labels[it_indices]
+                it_sents  = [words[i] for i in it_indices.cpu().numpy()]
+                with torch.amp.autocast(device_type=self.device):
+                    it_NLL, _ = self.it_model(it_sents, it_labels, seq_len)
+
             loss = tr_NLL + it_NLL
-            
-            # Track losses
-            tr_loss_sum += tr_NLL.item() if isinstance(tr_NLL, torch.Tensor) else tr_NLL
-            it_loss_sum += it_NLL.item() if isinstance(it_NLL, torch.Tensor) else it_NLL
-            
-            # Zero all gradients including BERT optimizers
+            tr_loss_sum += tr_NLL.item()
+            it_loss_sum += it_NLL.item()
+
+            # Zero all grads (model + BERT)
             self.tr_optimizer.zero_grad()
             self.it_optimizer.zero_grad()
             self.tr_bert_optimizer.zero_grad()
             self.it_bert_optimizer.zero_grad()
-            
-            # Backward pass with scale
+
             self.scaler.scale(loss).backward()
-            
-            # Apply gradient clipping with adjusted values based on phase
+
+            # Choose clip_value by phase
             if self.bert_unfreeze_phase == 1:
-                clip_value = 1.0  # More conservative for top layers only
+                clip_value = 1.0
             elif self.bert_unfreeze_phase == 2:
-                clip_value = 0.5  # Even more conservative for middle layers
+                clip_value = 0.5
             else:
-                clip_value = 0.1  # Most conservative for all layers
-                
-            if tr_batches > 0:
+                clip_value = 0.1
+
+            # Turkish optimizers
+            if len(tr_indices) > 0:
                 self.scaler.unscale_(self.tr_optimizer)
                 self.scaler.unscale_(self.tr_bert_optimizer)
-                # Apply stronger clip for Turkish model to prevent catastrophic forgetting
-                torch.nn.utils.clip_grad_norm_(self.tr_model.parameters(), clip_value)
-            
-            if it_batches > 0:
-                self.scaler.unscale_(self.it_optimizer)
-                self.scaler.unscale_(self.it_bert_optimizer)
-                # Apply standard clip for Italian model
-                torch.nn.utils.clip_grad_norm_(self.it_model.parameters(), clip_value * 5)  # Higher clip for IT model
-            
-            # Step all optimizers
-            if tr_batches > 0:
+                torch.nn.utils.clip_grad_norm_(
+                    self.tr_model.parameters(),
+                    clip_value
+                )
                 self.scaler.step(self.tr_optimizer)
                 self.scaler.step(self.tr_bert_optimizer)
-            
-            if it_batches > 0:
+
+            # Italian optimizers
+            if len(it_indices) > 0:
+                self.scaler.unscale_(self.it_optimizer)
+                self.scaler.unscale_(self.it_bert_optimizer)
+                torch.nn.utils.clip_grad_norm_(
+                    self.it_model.parameters(),
+                    clip_value
+                )
                 self.scaler.step(self.it_optimizer)
                 self.scaler.step(self.it_bert_optimizer)
-            
+
+            # Scale for next iteration
             self.scaler.update()
         
         # Calculate epoch-level average losses
@@ -849,13 +831,13 @@ class Trainer:
 
     def evaluate(self, valid_loader: DataLoader, record_dev):
 
-        # put models to eval mode
+        # Put models to eval mode
         self.tr_model.eval()
         self.it_model.eval()
         
         self.tr_model.bert_embedder.bert_model.eval()
         self.it_model.bert_embedder.bert_model.eval()
-        # lists to hold predictions and labels
+        # Lists to hold predictions and labels
         all_predictions = []
         all_labels      = []
         all_tr_predictions = []
@@ -868,9 +850,9 @@ class Trainer:
         tr_batches = 0
         it_batches = 0
 
-        # for prediction.csv
-        csv_rows   = []                      # rows that will become prediction.csv
-        global_idx = 0                      # running sample id counter
+        # For prediction.csv
+        csv_rows   = []
+        global_idx = 0                      
 
         with torch.no_grad():
             for words, labels, langs in tqdm(valid_loader, desc="Evaluating"):
@@ -902,15 +884,15 @@ class Trainer:
                     it_decode = []
                     it_loss = 0
 
-                # forward passes, getting list-of-lists predictions
+                # Forward passes, getting list-of-lists predictions
                 tr_loss_sum += tr_loss
                 it_loss_sum += it_loss
 
-                # turn those into (N_lang, seq_len) tensors
+                # Turn those into (N_lang, seq_len) tensors
                 tr_pred = self.decode_to_tensor(tr_decode, seq_len, device)
                 it_pred = self.decode_to_tensor(it_decode, seq_len, device)
 
-                # reassemble the full batch predictions (batch_size, seq_len) 
+                # Reassemble the full batch predictions (batch_size, seq_len) 
                 full_pred = torch.full(
                     (batch_size, seq_len),
                     fill_value=0,
@@ -918,17 +900,17 @@ class Trainer:
                     device=device
                 )
 
-                # get the full predicions while keeping original order
+                # Get the full predicions while keeping original order
                 full_pred[tr_indices] = tr_pred
                 full_pred[it_indices] = it_pred
 
-                # for prediction.csv
-                # collect per‑sentence CSV rows
+                # For prediction.csv
+                # Collect per‑sentence CSV rows
                 for row_idx in range(batch_size):
-                    # mask to ignore padding
+                    # Mask to ignore padding
                     valid_tok_mask = labels[row_idx].ne(0)
                     sent_pred      = full_pred[row_idx][valid_tok_mask]
-                    # indices where prediction is NOT label 0
+                    # Indices where prediction is NOT label 0
                     if self.params.num_classes == 3:
                         not_token_labels = [0, 2]
                     else:
@@ -936,9 +918,9 @@ class Trainer:
                     pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in not_token_labels]
                     if not pred_indices:
                         pred_indices = [-1]
-                    # determine language str
+                    # Determine language
                     lang_str = "tr" if langs[row_idx].item() == 0 else "it"
-                    # append row
+                    # Append row
                     csv_rows.append({
                         "id": global_idx,
                         "indices": json.dumps(pred_indices),
@@ -946,7 +928,7 @@ class Trainer:
                     })
                     global_idx += 1
 
-                # accumulate for global scores
+                # Accumulate for global scores
                 valid_mask   = labels.ne(0)  # ignore padding
                 flat_mask = valid_mask.view(-1)
                 flat_pred = full_pred.view(-1)[flat_mask]
@@ -957,7 +939,7 @@ class Trainer:
                 tr_valid_mask = labels[tr_indices].ne(0)   # shape: (n_tr_sents, seq_len)
                 it_valid_mask = labels[it_indices].ne(0)
 
-                tr_flat_pred  = tr_pred.masked_select(tr_valid_mask)    # 1D tensor of all TR predictions
+                tr_flat_pred  = tr_pred.masked_select(tr_valid_mask)
                 tr_flat_label = labels[tr_indices].masked_select(tr_valid_mask)
 
                 it_flat_pred  = it_pred.masked_select(it_valid_mask)
@@ -1045,14 +1027,13 @@ class Trainer:
     
     def test(self, test_loader: DataLoader):
 
-        # put models to eval mode
         self.tr_model.eval()
         self.it_model.eval()
 
         self.tr_model.bert_embedder.bert_model.eval()
         self.it_model.bert_embedder.bert_model.eval()
 
-        # for prediction.csv
+        # For prediction.csv
         csv_rows   = []                      
         global_idx = 0                
 
@@ -1079,13 +1060,13 @@ class Trainer:
                 else:
                     it_decode = []    
 
-                # forward passes, getting list-of-lists predictions
+                # Forward passes, getting list-of-lists predictions
 
-                # turn those into (N_lang, seq_len) tensors
+                # Turn those into (N_lang, seq_len) tensors
                 tr_pred = self.decode_to_tensor(tr_decode, seq_len, device)
                 it_pred = self.decode_to_tensor(it_decode, seq_len, device)
 
-                # reassemble the full batch predictions (batch_size, seq_len) 
+                # Reassemble the full batch predictions (batch_size, seq_len) 
                 full_pred = torch.full(
                     (batch_size, seq_len),
                     fill_value=0,
@@ -1093,16 +1074,16 @@ class Trainer:
                     device=device
                 )
 
-                # get the full predicions while keeping original order
+                # Get the full predicions while keeping original order
                 full_pred[tr_indices] = tr_pred
                 full_pred[it_indices] = it_pred
 
-                # collect per‑sentence CSV rows for prediction.csv
+                # Collect per‑sentence CSV rows for prediction.csv
                 for row_idx in range(batch_size):
-                    # mask to ignore padding
+                    # Mask to ignore padding
                     valid_tok_mask = labels[row_idx].ne(0)
                     sent_pred      = full_pred[row_idx][valid_tok_mask]
-                    # indices where prediction is NOT label 0
+                    # Indices where prediction is NOT label 0
                     if self.params.num_classes == 3:
                         not_token_labels = [0, 2]
                     else:
@@ -1110,9 +1091,9 @@ class Trainer:
                     pred_indices   = [i for i, lbl in enumerate(sent_pred.tolist()) if lbl not in not_token_labels]
                     if not pred_indices:
                         pred_indices = [-1]
-                    # determine language str
+                    # Determine language str
                     lang_str = "tr" if langs[row_idx].item() == 0 else "it"
-                    # append row
+                    # Append row
                     csv_rows.append({
                         "id": global_idx,
                         "indices": json.dumps(pred_indices),
@@ -1120,23 +1101,22 @@ class Trainer:
                     })
                     global_idx += 1
 
-        # for prediction.csv
-        # >>>>> CHANGED START (actually write the CSV if a path is given)
+        # For prediction.csv
         save_csv_path = f"{self.result_dir}/test/prediction.csv"
         os.makedirs(os.path.dirname(save_csv_path), exist_ok=True)
         pd.DataFrame(csv_rows).to_csv(save_csv_path, index=False)
         print(f"Predictions saved to {save_csv_path}")
 
     def decode_to_tensor(self, decode_out, seq_len, device):
-        # 1) list of lists → list of 1D tensors
+        # list of lists → list of 1D tensors
         token_tensors = [torch.tensor(seq, dtype=torch.long, device=device)
                         for seq in decode_out]
-        # 2) hiç prediction yoksa boş tensor
+        # hiç prediction yoksa boş tensor
         if not token_tensors:
             return torch.zeros((0, seq_len), dtype=torch.long, device=device)
-        # 3) pad_sequence ile batch_first ve padding_value=-1
+        # pad_sequence ile batch_first ve padding_value=-1
         padded = pad_sequence(token_tensors, batch_first=True, padding_value=-1)
-        # 4) eğer hâlâ seq_len'den kısa ise sağa pad et
+        # eğer hâlâ seq_len'den kısa ise sağa pad et
         if padded.size(1) < seq_len:
             pad_amt = seq_len - padded.size(1)
             padded = F.pad(padded, (0, pad_amt), value=-1)
