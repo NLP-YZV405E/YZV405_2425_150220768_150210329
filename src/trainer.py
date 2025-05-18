@@ -16,8 +16,6 @@ class Trainer:
         self.tr_optimizer = tr_optimizer
         self.it_optimizer = it_optimizer
         self.labels_vocab = labels_vocab
-        self.tr_scaler = torch.amp.GradScaler()
-        self.it_scaler = torch.amp.GradScaler()
         self.modelname = modelname
         self.tr_hidden = tr_model.bert_embedder.bert_model.config.hidden_size
         self.it_hidden = it_model.bert_embedder.bert_model.config.hidden_size
@@ -134,15 +132,13 @@ class Trainer:
             self.tr_optimizer,
             mode='max',
             factor=self.params.scheduler_factor,
-            patience=self.params.scheduler_patience,
-            verbose=True
+            patience=self.params.scheduler_patience
         )
         self.it_scheduler = ReduceLROnPlateau(
             self.it_optimizer,
             mode='max',
             factor=self.params.scheduler_factor,
-            patience=self.params.scheduler_patience,
-            verbose=True
+            patience=self.params.scheduler_patience
         )
         
         if self.train_bert:
@@ -868,7 +864,11 @@ class Trainer:
                     tr_batches += 1
                     tr_sents   = [words[i] for i in tr_indices.cpu().numpy()]
                     tr_decode = self.tr_model(tr_sents, None, seq_len)
-                    tr_loss,_ = self.tr_model(tr_sents, labels[tr_indices], seq_len)
+                    # Skip loss calculation for external evaluation to avoid label mismatch errors
+                    if record_dev > -1:  # This is during training
+                        tr_loss,_ = self.tr_model(tr_sents, labels[tr_indices], seq_len)
+                    else:
+                        tr_loss = 0
                 
                 else: 
                     tr_decode = []
@@ -878,7 +878,11 @@ class Trainer:
                     it_batches += 1
                     it_sents  = [words[i] for i in it_indices.cpu().numpy()]
                     it_decode = self.it_model(it_sents, None, seq_len)
-                    it_loss,_ = self.it_model(it_sents, labels[it_indices],seq_len)
+                    # Skip loss calculation for external evaluation to avoid label mismatch errors
+                    if record_dev > -1:  # This is during training
+                        it_loss,_ = self.it_model(it_sents, labels[it_indices],seq_len)
+                    else:
+                        it_loss = 0
                 
                 else:
                     it_decode = []

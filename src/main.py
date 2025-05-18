@@ -48,7 +48,7 @@ if __name__ == "__main__":
     hf_it_model = AutoModel.from_pretrained(it_model_name, config=it_config)
 
     # select the dataset
-    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV): ").strip().upper()
+    dataset_selection = input("Select the dataset (ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV, CUSTOM): ").strip().upper()
     assert dataset_selection in ['ID10M', 'ITU', 'PARSEME', 'COMBINED', "ITU_TRAIN_DEV", "CUSTOM"], "Dataset must be one of ID10M, ITU, PARSEME, COMBINED, ITU_TRAIN_DEV"
     
     if dataset_selection == "CUSTOM":
@@ -133,12 +133,12 @@ if __name__ == "__main__":
     dev_file = main_path + "dev.tsv"
     test_file = main_path + "test.tsv"
 
-
+    # Ensure all evaluation uses the same label vocabulary as the model
     if params.num_classes == 3:
         print("3 classes")
         labels_vocab = {"<pad>":0, "B-IDIOM":1, "I-IDIOM":1, "O":2}
-
     else:
+        print("4 classes")
         labels_vocab = {"<pad>":0, "B-IDIOM":1, "I-IDIOM":2, "O":3}
 
     # initialize the dataset
@@ -268,9 +268,12 @@ if __name__ == "__main__":
         
     elif test_mode == "dev":
         print("Starting evaluation on dev set...")
-        trainer.evaluate(test_dataloader)
+        acc, f1, trloss, it_loss = trainer.evaluate(test_dataloader, -1)
+        print(f"F1 Score: {f1}")
 
     if test_mode == "test":
         print("Starting evaluation...")
         trainer.test(test_dataloader)
     
+        
+
