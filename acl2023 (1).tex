@@ -1,0 +1,137 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+% In particular, the hyperref package requires pdfLaTeX in order to break URLs across lines.
+
+\documentclass[11pt]{article}
+
+% Remove the "review" option to generate the final version.
+\usepackage{ACL2023}
+
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out.
+% However, it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+
+\title{Token-Level Idiom Identification in Turkish and Italian: A Transformer-Based Approach}
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a seperate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+
+\author{
+Efe Can KIRBIYIK \and Berke Kurt \\
+Department of Artificial Intelligence and Data Engineering \\
+Istanbul Technical University \\
+\texttt{kirbiyike22@itu.edu.tr,  kurtbe21@itu.edu.tr}
+}
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Multi-word expressions (MWEs) pose significant challenges in Natural Language Processing due to their semantic and syntactic complexities. This paper addresses the task of token-level idiom identification in Turkish and Italian sentences, specifically focusing on distinguishing idiomatic usage from literal meaning. First, we present a comprehensive literature review highlighting recent advancements in transformer-based architectures. Building upon these insights, we propose an innovative methodology. Our approach aims to improve upon existing baselines by systematically integrating proven techniques from recent studies.
+\end{abstract}
+
+\section{Introduction}
+
+Multi-word expressions (MWEs) are combinations of words that work as a unified meaning unit, frequently breaking the semantic and syntactic norms that define their individual components. Although they occur quite frequently in languages, they are difficult to detect using conventional methods. Therefore, one of the most important objectives and significant challenges in the Natural Language Processing is recognizing and comprehending MWEs in context \citep{ID10M:2022}. Recent studies have explored innovative approaches to MWE identification and found that transformer based architectures are currently one of the most successive tools for MWE detection.
+
+In this paper, we will present the results of our extensive literature review and we will show state of the art in MWE identification techniques. Then we will present our own methodology to tackle the specific challenge of identifying idiom-related tokens within sentences in the ITU NLP Course's competition:
+\url{https://www.codabench.org/competitions/5986/}
+\section{Related Work}
+
+The automatic identification and classification of multiword expressions (MWEs), and idioms in particular, has attracted growing attention in the NLP community. Transformer-based sequence labeling methods have proven especially effective: \citet{ID10M:2022} recast idiom identification as a BIO-tagging task, extracting multiword expressions (MWEs) from Wiktionary for ten languages (including Italian), encoding tokens with mBERT, modeling sequence information via a BiLSTM, and decoding with a CRF to distinguish literal from idiomatic usages. Building on similar insights, \citet{Skvorc2022MICE} introduce MICE, a Bayesian ensemble of contextual-embedding models—ELMo, mBERT, and CroSloEngual-BERT—each feeding into a bi-GRU and softmax layer to predict idiomatic versus literal tokens. Their extensive multilingual evaluation demonstrates that combining diverse pretrained encoders yields robust performance across both token- and sentence-level tasks.
+
+Parallel to these model-centric advances, shared tasks have delivered high-quality corpora and evaluation frameworks for verbal MWEs. The PARSEME initiative launched a series of shared tasks on automatic identification of verbal MWEs (Savary et al., 2017; Ramisch et al., 2018, 2020), supplying multilingual datasets (including Turkish and several Italic languages) annotated with fine-grained MWE categories and offering standardized metrics for both known and unseen expressions \citep{savary-etal-2017-parseme}. 
+
+Beyond single-model approaches, ensembling multiple Transformer architectures has shown further gains. \citet{ensembleBERTRoBERTa:2022} fine-tune BERT and RoBERTa separately on an idiom-versus-literal classification corpus, then fuse their outputs via weighted voting to improve discrimination. This cross-architecture strategy highlights the complementary strengths of different pretrained models.
+
+Together, these works underscore the efficacy of multilingual pretrained encoders, sequence labeling frameworks, shared-task resources, and ensembling techniques for MWE identification. Our approach leverages their datasets, architectures, and evaluation metrics—adapting mBERT-based sequence tagging, contextual-embedding ensembles, PARSEME corpora, and cross-model voting—to advance idiom detection in Italian and Turkish, comparing against these established baselines.
+
+\section{dataset}
+
+\subsection{ITUdata}
+
+\subsection{ID10M data}
+
+\subsection{Parsame shared task data}
+
+
+\section{Model}
+
+
+\subsection{task formulation}
+
+\subsection{architecture}
+
+\section{experiments}
+
+\section{results}
+
+\section{conclusion}
+
+Our proposed solution is based on recent improvements in transformer-based architectures, especially taking advantage of BERT variants such as mBERT, XLM-RoBERTa, and DistilBERT \citealp{gamage2022bertidiom}, which have demonstrated state-of-the-art performance in idiom identification tasks. Initially, we will replicate the methodology proposed by \citealp{ID10M:2022} in their ID10M framework as our baseline. This approach provides a robust baseline due to its proven effectiveness across multiple languages. To enhance this baseline, we plan to explore several innovative modifications: 
+
+\subsection{Ensemble of Transformer Models:}
+Inspired by the work of \citealp{Skvorc2022MICE}, we plan to use an ensemble approach combining different transformer models such as mBERT, XLM-RoBERTa, and possibly language-specific models like Turkish BERT \cite{turkishbert2023} and Italian BERT. 
+
+\subsection{Exploring GRU vs LSTM: }
+While \citeauthor{ID10M:2022} utilized BiLSTM layers effectively, we intend to investigate whether using a bidirectional GRU layer can yield additional performance gains.
+
+\subsection{Pre-Finetuning with Domain-Specific Data:}
+To further enhance our model's performance, we plan to pre-finetune our transformer models on several datasets including the PARSEME multilingual corpus introduced by \citealp{savary-etal-2017-parseme} and the ID10M dataset introduced by \citealp{ID10M:2022}.
+
+By systematically combining these strategies, we aim to achieve state-of-the-art performance in token-level idiom identification tasks for Turkish and Italian languages while ensuring generalizability across unseen idiomatic expressions.
+\section{Limitations}
+
+Firstly, our biggest constraint is computational power. We think we can apply UHEM to train models, but we don't know whether our application will be accepted or not. Also, we have no idea how long it will take to train the model even if we use UHEM, which might constrain our ability to try different architectures. Secondly, we believe the labels in the training and test datasets are not good, so the model might not be able to learn them.
+
+
+
+
+
+\bibliographystyle{acl_natbib}
+\bibliography{anthology,custom}
+
+
+\end{document}
